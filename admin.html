@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>لوحة الإدارة | بوابة التمريض</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="dashboard.html">
+      <img src="assets/images/logo.png" alt="بوابة التمريض">
+      <span>بوابة التمريض</span>
+    </a>
+    <span class="badge">لوحة الإدارة</span>
+  </header>
+
+  <main class="page-container">
+    <span class="eyebrow">إدارة المحتوى</span>
+    <h1>لوحة الإدارة</h1>
+    <p class="muted">
+      نموذج واجهة لإدارة المحتوى. لا يمنح هذا النموذج صلاحيات إدارة حقيقية
+      بدون نظام تحقق وصلاحيات موصول بالخلفية.
+    </p>
+
+    <div class="feature-grid">
+      <a class="feature-card card-blue" href="subjects.html">
+        <span class="feature-icon">📚</span>
+        <h3>المواد والدروس</h3>
+        <p>استعراض هيكل المواد.</p>
+      </a>
+      <a class="feature-card card-purple" href="exams.html">
+        <span class="feature-icon">📝</span>
+        <h3>الامتحانات</h3>
+        <p>استعراض الامتحانات التدريبية.</p>
+      </a>
+      <a class="feature-card card-teal" href="simulation.html">
+        <span class="feature-icon">🏥</span>
+        <h3>المحاكاة العملية</h3>
+        <p>استعراض سيناريوهات التدريب.</p>
+      </a>
+      <a class="feature-card card-pink" href="community.html">
+        <span class="feature-icon">💬</span>
+        <h3>المجتمع</h3>
+        <p>استعراض منشورات المجتمع.</p>
+      </a>
+    </div>
+
+    <section class="content-card">
+      <h2>إضافة إعلان تجريبي</h2>
+      <form id="announcementForm">
+        <label for="announcement">نص الإعلان</label>
+        <textarea id="announcement" rows="3" required></textarea>
+        <button class="btn btn-primary" type="submit">حفظ الإعلان محليًا</button>
+      </form>
+      <p id="message" class="form-message"></p>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById("announcementForm").addEventListener("submit", e => {
+      e.preventDefault();
+
+      const text = document.getElementById("announcement").value.trim();
+      localStorage.setItem("bawabaAnnouncement", text);
+
+      document.getElementById("message").textContent =
+        "تم حفظ الإعلان في هذا المتصفح فقط.";
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>
