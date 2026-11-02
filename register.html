@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>إنشاء حساب | بوابة التمريض</title>
+  <link rel="icon" href="assets/images/logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="auth-page">
+  <a class="back-home" href="index.html">← العودة للرئيسية</a>
+
+  <main class="auth-layout">
+    <section class="auth-brand-panel">
+      <img src="assets/images/logo.png" alt="شعار بوابة التمريض">
+      <h1>ابدأ رحلتك</h1>
+      <p>أنشئ حسابك وابدأ التعلم والمراجعة والتدريب.</p>
+    </section>
+
+    <section class="auth-card">
+      <span class="eyebrow">حساب جديد</span>
+      <h2>إنشاء حساب طالب</h2>
+
+      <form id="registerForm">
+        <label for="name">الاسم بالكامل</label>
+        <input id="name" type="text" autocomplete="name" required>
+
+        <label for="email">البريد الإلكتروني</label>
+        <input id="email" type="email" autocomplete="email" required>
+
+        <label for="grade">الصف الدراسي</label>
+        <select id="grade" required>
+          <option value="">اختر الصف</option>
+          <option value="first">الأول الثانوي تمريض</option>
+          <option value="second">الثاني الثانوي تمريض</option>
+          <option value="third">الثالث الثانوي تمريض</option>
+        </select>
+
+        <label for="password">كلمة المرور</label>
+        <input id="password" type="password" minlength="6"
+               autocomplete="new-password" required>
+
+        <label for="confirmPassword">تأكيد كلمة المرور</label>
+        <input id="confirmPassword" type="password"
+               autocomplete="new-password" required>
+
+        <button class="btn btn-primary btn-block" type="submit">
+          إنشاء الحساب
+        </button>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+
+      <p class="auth-switch">
+        لديك حساب بالفعل؟ <a href="login.html">سجل الدخول</a>
+      </p>
+    </section>
+  </main>
+
+  <script type="module">
+    import { initializeApp } from
+      "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+    import {
+      getAuth,
+      createUserWithEmailAndPassword,
+      updateProfile
+    } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+    const firebaseConfig = {
+      apiKey: "YOUR_API_KEY",
+      authDomain: "YOUR_PROJECT.firebaseapp.com",
+      projectId: "YOUR_PROJECT_ID",
+      appId: "YOUR_APP_ID"
+    };
+
+    const form = document.getElementById("registerForm");
+    const message = document.getElementById("formMessage");
+
+    form.addEventListener("submit", async (event) => {
+      event.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const grade = document.getElementById("grade").value;
+      const password = document.getElementById("password").value;
+      const confirm = document.getElementById("confirmPassword").value;
+
+      if (password !== confirm) {
+        message.textContent = "كلمتا المرور غير متطابقتين.";
+        message.className = "form-message error";
+        return;
+      }
+
+      if (firebaseConfig.apiKey === "YOUR_API_KEY") {
+        message.textContent = "أضف إعدادات Firebase لتفعيل إنشاء الحساب.";
+        message.className = "form-message error";
+        return;
+      }
+
+      try {
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const result = await createUserWithEmailAndPassword(
+          auth, email, password
+        );
+
+        await updateProfile(result.user, { displayName: name });
+
+        // بيانات الصف تُحفظ محليًا في هذه النسخة التجريبية.
+        localStorage.setItem("bawabaProfile", JSON.stringify({
+          name, email, grade
+        }));
+
+        window.location.href = "dashboard.html";
+      } catch (error) {
+        message.textContent = "تعذر إنشاء الحساب. راجع البيانات وحاول مجددًا.";
+        message.className = "form-message error";
+      }
+    });
+  </script>
+</body>
+</html>
