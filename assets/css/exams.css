@@ -1,0 +1,98 @@
+.exam-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.exam-timer {
+  padding: 0.5rem 0.9rem;
+  border-radius: var(--radius-pill);
+  background: var(--orange-light);
+  color: #9a5a00;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+#examForm {
+  display: grid;
+  gap: var(--space-5);
+}
+
+#examForm fieldset {
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+}
+
+#examForm legend {
+  padding-inline: 0.5rem;
+  color: var(--navy);
+  font-weight: 900;
+}
+
+#examForm fieldset label {
+  cursor: pointer;
+}
+
+.exam-progress {
+  height: 8px;
+  margin-block: var(--space-4);
+  overflow: hidden;
+  border-radius: var(--radius-pill);
+  background: var(--surface-soft);
+}
+
+.exam-progress span {
+  display: block;
+  width: 0;
+  height: 100%;
+  background: var(--purple);
+}
+
+.result-card {
+  max-width: 650px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.score-circle {
+  display: grid;
+  width: 150px;
+  height: 150px;
+  margin: var(--space-5) auto;
+  place-items: center;
+  border: 10px solid var(--teal-light);
+  border-top-color: var(--teal);
+  border-radius: 50%;
+  background: var(--surface);
+}
+
+.score-circle strong {
+  color: var(--navy);
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.result-card .hero-actions {
+  justify-content: center;
+}
+
+@media (max-width: 600px) {
+  #examForm fieldset {
+    padding: var(--space-3);
+  }
+
+  .exam-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .score-circle {
+    width: 125px;
+    height: 125px;
+  }
+}
