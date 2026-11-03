@@ -1,376 +1,762 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101d43">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>بوابة التمريض | مستقبلك يبدأ هنا</title>
-  <meta name="description" content="منصة تعليمية مجانية لطلاب التمريض في مصر.">
+    <meta name="theme-color" content="#0b1728">
+    <meta name="description" content="بوابة التمريض - منصتك التعليمية المجانية لطلاب التمريض. دروس، ملخصات، اختبارات ومراجعات تساعدك تتعلم بشكل أفضل.">
 
-  <link rel="icon" href="assets/images/favicon.png">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/index.css">
+    <title>بوابة التمريض | طريقك للتميز</title>
+
+    <link rel="icon" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
-<body class="portal-home">
+<body>
 
-<header class="portal-header">
-  <a href="index.html" class="portal-brand">
-    <img src="assets/images/logo.png" alt="بوابة التمريض">
-    <span>بوابة <b>التمريض</b></span>
-  </a>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-container">
 
-  <nav class="portal-nav">
-    <a href="#learning">رحلتك الدراسية</a>
-    <a href="#features">مميزاتنا</a>
-    <a href="community.html">مجتمع الطلاب</a>
-  </nav>
+            <a href="index.html" class="brand" aria-label="بوابة التمريض">
+                <img src="assets/images/logo.png" alt="شعار بوابة التمريض">
+                <div class="brand-text">
+                    <span class="brand-name">بوابة التمريض</span>
+                    <span class="brand-caption">معاك في كل خطوة</span>
+                </div>
+            </a>
 
-  <div class="portal-header-actions">
-    <a href="login.html" class="portal-login">تسجيل الدخول</a>
-    <a href="register.html" class="portal-button portal-button-small">
-      ابدأ مجانًا <span>↗</span>
-    </a>
-  </div>
-</header>
+            <nav class="main-nav" id="mainNav">
+                <a href="#home" class="nav-link active">الرئيسية</a>
+                <a href="#features" class="nav-link">المميزات</a>
+                <a href="#classes" class="nav-link">الصفوف الدراسية</a>
+                <a href="#simulation" class="nav-link">المحاكاة العملية</a>
+            </nav>
 
-<main>
+            <div class="header-actions">
+                <a href="login.html" class="login-link">تسجيل الدخول</a>
+                <a href="register.html" class="btn btn-primary header-cta">
+                    ابدأ رحلتك
+                    <span aria-hidden="true">←</span>
+                </a>
+            </div>
 
-  <!-- HERO -->
-  <section class="portal-hero">
+            <button class="menu-toggle" id="menuToggle"
+                    aria-label="فتح القائمة"
+                    aria-expanded="false"
+                    aria-controls="mainNav">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-    <div class="hero-background-shape shape-a"></div>
-    <div class="hero-background-shape shape-b"></div>
+        </div>
+    </header>
 
-    <div class="portal-hero-content">
-      <div class="portal-eyebrow">
-        <span class="eyebrow-pulse"></span>
-        منصتك التعليمية لثانوي التمريض
-      </div>
 
-      <h1>
-        مش مجرد مذاكرة...
-        <span class="hero-highlight">دي رحلتك للمستقبل.</span>
-      </h1>
+    <main>
 
-      <p class="portal-hero-description">
-        افهم دروسك، اختبر نفسك، وجرّب المهارات العملية
-        في مكان واحد.
-      </p>
+        <!-- Hero -->
+        <section class="hero-section" id="home">
+            <div class="hero-background"></div>
 
-      <div class="portal-hero-actions">
-        <a href="register.html" class="portal-button portal-button-main">
-          ابدأ رحلتك دلوقتي
-          <span class="button-arrow">←</span>
-        </a>
+            <div class="container hero-container">
 
-        <a href="subjects.html" class="portal-button portal-button-outline">
-          اكتشف المنصة
-        </a>
-      </div>
+                <div class="hero-content">
 
-      <div class="hero-mini-info">
-        <div class="mini-info-icon">✓</div>
-        <span>مجانية بالكامل لطلاب التمريض في مصر</span>
-      </div>
-    </div>
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        منصتك التعليمية المجانية
+                    </div>
 
-    <!-- HERO VISUAL -->
-    <div class="portal-hero-visual">
+                    <h1>
+                        مستقبلك في التمريض
+                        <span>يبدأ من هنا</span>
+                    </h1>
 
-      <div class="hero-visual-glow"></div>
+                    <p class="hero-description">
+                        اتعلم، راجع، واختبر نفسك في مكان واحد.
+                        كل اللي تحتاجه في رحلتك الدراسية، بخطوات بسيطة
+                        وتجربة تعليمية مختلفة.
+                    </p>
 
-      <div class="hero-visual-ring ring-outer"></div>
-      <div class="hero-visual-ring ring-inner"></div>
+                    <div class="hero-actions">
+                        <a href="register.html" class="btn btn-primary btn-large">
+                            ابدأ التعلم مجانًا
+                            <span aria-hidden="true">←</span>
+                        </a>
 
-      <div class="hero-main-card">
-        <div class="hero-card-top">
-          <div>
-            <span class="hero-card-label">بوابة التمريض</span>
-            <h2>اتعلم بطريقتك</h2>
-          </div>
+                        <a href="#classes" class="btn btn-outline btn-large">
+                            اكتشف المحتوى
+                        </a>
+                    </div>
 
-          <div class="hero-card-logo">
-            <img src="assets/images/logo.png" alt="">
-          </div>
+                    <div class="hero-trust">
+                        <div class="trust-icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 3 4 6v5c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V6l-8-3Z"/>
+                                <path d="m8.5 12 2.2 2.2 4.8-5"/>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <strong>تعلم براحتك</strong>
+                            <span>محتوى تعليمي متاح لك</span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="hero-visual">
+
+                    <div class="visual-glow"></div>
+
+                    <div class="hero-main-card">
+
+                        <div class="visual-top">
+                            <div class="visual-label">
+                                <span class="visual-label-dot"></span>
+                                رحلتك التعليمية
+                            </div>
+
+                            <div class="visual-menu">•••</div>
+                        </div>
+
+                        <div class="visual-illustration">
+
+                            <div class="illustration-circle circle-one"></div>
+                            <div class="illustration-circle circle-two"></div>
+
+                            <div class="medical-cross">
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="book-illustration">
+                                <div class="book-page page-left"></div>
+                                <div class="book-page page-right"></div>
+                                <div class="book-spine"></div>
+                            </div>
+
+                            <div class="floating-symbol symbol-plus">+</div>
+                            <div class="floating-symbol symbol-star">✦</div>
+                            <div class="floating-symbol symbol-heart">♡</div>
+
+                        </div>
+
+                        <div class="visual-bottom">
+                            <div>
+                                <span class="visual-small-label">خطوة بخطوة</span>
+                                <h3>اتعلم بذكاء</h3>
+                            </div>
+
+                            <div class="visual-arrow">↗</div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="floating-card floating-card-top">
+                        <div class="floating-icon icon-blue">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21V5.5Z"/>
+                                <path d="M4 17a2.5 2.5 0 0 1 2.5-2.5H20"/>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <strong>مكتبة تعليمية</strong>
+                            <span>مصادرك في مكان واحد</span>
+                        </div>
+                    </div>
+
+
+                    <div class="floating-card floating-card-bottom">
+                        <div class="floating-icon icon-green">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 3v18M3 12h18"/>
+                                <circle cx="12" cy="12" r="9"/>
+                            </svg>
+                        </div>
+
+                        <div>
+                            <strong>تدريب عملي</strong>
+                            <span>افهم قبل ما تطبق</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="hero-bottom-line"></div>
+        </section>
+
+
+        <!-- Quick Access -->
+        <section class="quick-access-section">
+            <div class="container">
+
+                <div class="quick-access-grid">
+
+                    <a href="library.html" class="quick-item">
+                        <div class="quick-icon quick-icon-blue">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21V5.5Z"/>
+                                <path d="M4 17a2.5 2.5 0 0 1 2.5-2.5H20"/>
+                            </svg>
+                        </div>
+
+                        <div class="quick-text">
+                            <strong>المكتبة</strong>
+                            <span>ملخصات ومصادر</span>
+                        </div>
+
+                        <span class="quick-arrow">←</span>
+                    </a>
+
+
+                    <a href="exams.html" class="quick-item">
+                        <div class="quick-icon quick-icon-purple">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="4" y="3" width="16" height="18" rx="2"/>
+                                <path d="M8 8h8M8 12h3M8 16h8"/>
+                            </svg>
+                        </div>
+
+                        <div class="quick-text">
+                            <strong>الاختبارات</strong>
+                            <span>اختبر مستواك</span>
+                        </div>
+
+                        <span class="quick-arrow">←</span>
+                    </a>
+
+
+                    <a href="quick-revision.html" class="quick-item">
+                        <div class="quick-icon quick-icon-orange">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>
+                                <path d="m5.6 5.6 2.1 2.1m8.6 8.6 2.1 2.1m0-12.8-2.1 2.1m-8.6 8.6-2.1 2.1"/>
+                                <circle cx="12" cy="12" r="5"/>
+                            </svg>
+                        </div>
+
+                        <div class="quick-text">
+                            <strong>مراجعة سريعة</strong>
+                            <span>راجع أهم النقاط</span>
+                        </div>
+
+                        <span class="quick-arrow">←</span>
+                    </a>
+
+
+                    <a href="study-planner.html" class="quick-item">
+                        <div class="quick-icon quick-icon-green">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <rect x="3" y="5" width="18" height="16" rx="2"/>
+                                <path d="M16 3v4M8 3v4M3 10h18"/>
+                                <path d="m8 15 2 2 5-5"/>
+                            </svg>
+                        </div>
+
+                        <div class="quick-text">
+                            <strong>خطة المذاكرة</strong>
+                            <span>نظم وقتك</span>
+                        </div>
+
+                        <span class="quick-arrow">←</span>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Features -->
+        <section class="features-section section-padding" id="features">
+            <div class="container">
+
+                <div class="section-heading">
+                    <span class="section-eyebrow">تجربة تعليمية متكاملة</span>
+
+                    <h2>
+                        كل اللي تحتاجه
+                        <span>في مكان واحد</span>
+                    </h2>
+
+                    <p>
+                        أدوات بسيطة تساعدك تفهم دروسك، تتابع تقدمك،
+                        وتستعد لامتحاناتك بثقة.
+                    </p>
+                </div>
+
+
+                <div class="features-grid">
+
+                    <article class="feature-card feature-card-large">
+                        <div class="feature-card-top">
+                            <div class="feature-icon feature-icon-blue">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="11" cy="11" r="7"/>
+                                    <path d="m16 16 5 5"/>
+                                    <path d="M8 11h6M11 8v6"/>
+                                </svg>
+                            </div>
+
+                            <span class="feature-number">01</span>
+                        </div>
+
+                        <h3>ذاكر بطريقتك</h3>
+
+                        <p>
+                            وصل للدروس والملخصات والمصادر اللي محتاجها
+                            بسهولة، من غير ما تضيع وقتك في البحث.
+                        </p>
+
+                        <a href="library.html" class="feature-link">
+                            اكتشف المكتبة
+                            <span>←</span>
+                        </a>
+                    </article>
+
+
+                    <article class="feature-card">
+                        <div class="feature-card-top">
+                            <div class="feature-icon feature-icon-purple">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <rect x="4" y="3" width="16" height="18" rx="2"/>
+                                    <path d="M8 8h8M8 12h4M8 16h8"/>
+                                </svg>
+                            </div>
+
+                            <span class="feature-number">02</span>
+                        </div>
+
+                        <h3>اختبر نفسك</h3>
+
+                        <p>
+                            حل أسئلة متنوعة واعرف مستواك قبل الامتحان.
+                        </p>
+
+                        <a href="exams.html" class="feature-link">
+                            ابدأ الاختبار
+                            <span>←</span>
+                        </a>
+                    </article>
+
+
+                    <article class="feature-card">
+                        <div class="feature-card-top">
+                            <div class="feature-icon feature-icon-green">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="9"/>
+                                    <path d="M12 7v5l3 2"/>
+                                </svg>
+                            </div>
+
+                            <span class="feature-number">03</span>
+                        </div>
+
+                        <h3>نظم مذاكرتك</h3>
+
+                        <p>
+                            حدد أهدافك اليومية وخلي مذاكرتك منظمة.
+                        </p>
+
+                        <a href="study-planner.html" class="feature-link">
+                            خطط ليومك
+                            <span>←</span>
+                        </a>
+                    </article>
+
+
+                    <article class="feature-card">
+                        <div class="feature-card-top">
+                            <div class="feature-icon feature-icon-orange">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M12 3 14.8 9.2 21 12l-6.2 2.8L12 21l-2.8-6.2L3 12l6.2-2.8L12 3Z"/>
+                                </svg>
+                            </div>
+
+                            <span class="feature-number">04</span>
+                        </div>
+
+                        <h3>تحديات يومية</h3>
+
+                        <p>
+                            حافظ على حماسك مع تحديات تعليمية قصيرة.
+                        </p>
+
+                        <a href="daily-challenge.html" class="feature-link">
+                            شوف التحدي
+                            <span>←</span>
+                        </a>
+                    </article>
+
+
+                    <article class="feature-card">
+                        <div class="feature-card-top">
+                            <div class="feature-icon feature-icon-pink">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z"/>
+                                </svg>
+                            </div>
+
+                            <span class="feature-number">05</span>
+                        </div>
+
+                        <h3>مجتمع الطلاب</h3>
+
+                        <p>
+                            شارك أفكارك واستفد من خبرات زملائك.
+                        </p>
+
+                        <a href="community.html" class="feature-link">
+                            ادخل المجتمع
+                            <span>←</span>
+                        </a>
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Classes -->
+        <section class="classes-section section-padding" id="classes">
+            <div class="container">
+
+                <div class="section-heading section-heading-row">
+
+                    <div>
+                        <span class="section-eyebrow">ابدأ من صفك الدراسي</span>
+
+                        <h2>
+                            اختار
+                            <span>صفك الدراسي</span>
+                        </h2>
+
+                        <p>
+                            محتوى منظم يساعدك تتابع دراستك خطوة بخطوة.
+                        </p>
+                    </div>
+
+                    <a href="subjects.html" class="text-link">
+                        كل المواد
+                        <span>←</span>
+                    </a>
+
+                </div>
+
+
+                <div class="classes-grid">
+
+                    <a href="subjects.html?grade=1" class="class-card class-card-one">
+                        <div class="class-card-top">
+                            <span class="class-tag">المرحلة الأولى</span>
+
+                            <div class="class-arrow">↗</div>
+                        </div>
+
+                        <div class="class-illustration">
+                            <div class="class-circle"></div>
+
+                            <div class="class-book">
+                                <div></div>
+                                <div></div>
+                            </div>
+
+                            <span class="class-plus">+</span>
+                        </div>
+
+                        <div class="class-card-bottom">
+                            <span class="class-small">طلاب التمريض</span>
+                            <h3>الصف الأول الثانوي</h3>
+                            <span class="class-link">
+                                ابدأ التعلم
+                                <span>←</span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="subjects.html?grade=2" class="class-card class-card-two">
+                        <div class="class-card-top">
+                            <span class="class-tag">المرحلة الثانية</span>
+
+                            <div class="class-arrow">↗</div>
+                        </div>
+
+                        <div class="class-illustration">
+                            <div class="class-circle"></div>
+
+                            <div class="class-book">
+                                <div></div>
+                                <div></div>
+                            </div>
+
+                            <span class="class-plus">+</span>
+                        </div>
+
+                        <div class="class-card-bottom">
+                            <span class="class-small">طلاب التمريض</span>
+                            <h3>الصف الثاني الثانوي</h3>
+                            <span class="class-link">
+                                ابدأ التعلم
+                                <span>←</span>
+                            </span>
+                        </div>
+                    </a>
+
+
+                    <a href="subjects.html?grade=3" class="class-card class-card-three">
+                        <div class="class-card-top">
+                            <span class="class-tag">المرحلة الثالثة</span>
+
+                            <div class="class-arrow">↗</div>
+                        </div>
+
+                        <div class="class-illustration">
+                            <div class="class-circle"></div>
+
+                            <div class="class-book">
+                                <div></div>
+                                <div></div>
+                            </div>
+
+                            <span class="class-plus">+</span>
+                        </div>
+
+                        <div class="class-card-bottom">
+                            <span class="class-small">طلاب التمريض</span>
+                            <h3>الصف الثالث الثانوي</h3>
+                            <span class="class-link">
+                                ابدأ التعلم
+                                <span>←</span>
+                            </span>
+                        </div>
+                    </a>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Simulation -->
+        <section class="simulation-section section-padding" id="simulation">
+            <div class="container">
+
+                <div class="simulation-container">
+
+                    <div class="simulation-content">
+
+                        <span class="section-eyebrow">
+                            التعلم بالممارسة
+                        </span>
+
+                        <h2>
+                            افهم المهارة
+                            <span>قبل التطبيق</span>
+                        </h2>
+
+                        <p>
+                            تجربة تعليمية تفاعلية تساعدك تتعرف على خطوات
+                            المهارات التمريضية بطريقة مرئية ومنظمة،
+                            وتراجع المعلومات المرتبطة بكل درس عملي.
+                        </p>
+
+                        <a href="simulation.html" class="btn btn-light btn-large">
+                            اكتشف المحاكاة
+                            <span>←</span>
+                        </a>
+
+                    </div>
+
+
+                    <div class="simulation-visual">
+
+                        <div class="simulation-orbit orbit-one"></div>
+                        <div class="simulation-orbit orbit-two"></div>
+
+                        <div class="simulation-center">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 3v18M3 12h18"/>
+                            </svg>
+                        </div>
+
+                        <div class="simulation-node node-one">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v16H6.5A2.5 2.5 0 0 0 4 21V5.5Z"/>
+                                <path d="M4 17a2.5 2.5 0 0 1 2.5-2.5H20"/>
+                            </svg>
+                        </div>
+
+                        <div class="simulation-node node-two">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <circle cx="12" cy="12" r="9"/>
+                                <path d="M12 7v5l3 2"/>
+                            </svg>
+                        </div>
+
+                        <div class="simulation-node node-three">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="m5 12 4 4L19 6"/>
+                            </svg>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CTA -->
+        <section class="cta-section">
+            <div class="container">
+
+                <div class="cta-container">
+
+                    <div class="cta-decoration cta-decoration-one"></div>
+                    <div class="cta-decoration cta-decoration-two"></div>
+
+                    <div class="cta-content">
+                        <span class="cta-eyebrow">خطوتك الأولى تبدأ الآن</span>
+
+                        <h2>
+                            جاهز تبدأ رحلتك
+                            <span>في التمريض؟</span>
+                        </h2>
+
+                        <p>
+                            انضم لبوابة التمريض وابدأ رحلة تعلمك
+                            مع أدوات تساعدك تحقق أفضل استفادة.
+                        </p>
+
+                        <a href="register.html" class="btn btn-primary btn-large">
+                            إنشاء حساب مجاني
+                            <span>←</span>
+                        </a>
+                    </div>
+
+                    <div class="cta-symbol">
+                        <div class="cta-symbol-circle">
+                            <svg viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="M12 3v18M3 12h18"/>
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+                    <a href="index.html" class="brand">
+                        <img src="assets/images/logo.png" alt="شعار بوابة التمريض">
+
+                        <div class="brand-text">
+                            <span class="brand-name">بوابة التمريض</span>
+                            <span class="brand-caption">معاك في كل خطوة</span>
+                        </div>
+                    </a>
+
+                    <p>
+                        منصتك التعليمية المجانية لطلاب التمريض.
+                        تعلم، راجع، وطور مهاراتك خطوة بخطوة.
+                    </p>
+                </div>
+
+
+                <div class="footer-links">
+                    <h3>روابط سريعة</h3>
+                    <a href="#home">الرئيسية</a>
+                    <a href="#features">المميزات</a>
+                    <a href="#classes">الصفوف الدراسية</a>
+                    <a href="library.html">المكتبة التعليمية</a>
+                </div>
+
+
+                <div class="footer-links">
+                    <h3>حسابك</h3>
+                    <a href="login.html">تسجيل الدخول</a>
+                    <a href="register.html">إنشاء حساب</a>
+                    <a href="profile.html">الملف الشخصي</a>
+                    <a href="community.html">مجتمع الطلاب</a>
+                </div>
+
+
+                <div class="footer-links">
+                    <h3>ابدأ التعلم</h3>
+                    <a href="exams.html">الاختبارات</a>
+                    <a href="quick-revision.html">المراجعة السريعة</a>
+                    <a href="daily-challenge.html">التحدي اليومي</a>
+                    <a href="study-planner.html">خطة المذاكرة</a>
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear"></span> بوابة التمريض.
+                    جميع الحقوق محفوظة.
+                </p>
+
+                <p class="footer-note">
+                    صُممت لمساعدتك في رحلتك التعليمية
+                </p>
+
+            </div>
+
         </div>
 
-        <div class="hero-card-illustration">
-          <div class="illustration-orbit"></div>
+    </footer>
 
-          <div class="illustration-cross">
-            <span></span>
-            <b></b>
-          </div>
 
-          <div class="illustration-heart">♡</div>
-          <div class="illustration-spark spark-a">✦</div>
-          <div class="illustration-spark spark-b">✧</div>
-          <div class="illustration-spark spark-c">+</div>
-        </div>
+    <!-- JavaScript -->
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const mainNav = document.getElementById("mainNav");
 
-        <div class="hero-card-bottom">
-          <span>تعلم</span>
-          <i></i>
-          <span>راجع</span>
-          <i></i>
-          <span>اتدرّب</span>
-        </div>
-      </div>
+        menuToggle.addEventListener("click", function () {
+            const isOpen = mainNav.classList.toggle("is-open");
 
-      <div class="hero-floating-card floating-challenge">
-        <div class="floating-icon floating-purple">✦</div>
-        <div>
-          <strong>تحدي اليوم</strong>
-          <small>جاهز تختبر نفسك؟</small>
-        </div>
-      </div>
+            menuToggle.classList.toggle("is-active", isOpen);
+            menuToggle.setAttribute("aria-expanded", isOpen);
+        });
 
-      <div class="hero-floating-card floating-progress">
-        <div class="floating-icon floating-green">✓</div>
-        <div>
-          <strong>خطوة جديدة!</strong>
-          <small>كمّل رحلتك التعليمية</small>
-        </div>
-      </div>
+        document.querySelectorAll(".nav-link").forEach(function (link) {
+            link.addEventListener("click", function () {
+                mainNav.classList.remove("is-open");
+                menuToggle.classList.remove("is-active");
+                menuToggle.setAttribute("aria-expanded", "false");
+            });
+        });
 
-      <div class="hero-floating-number">01</div>
-    </div>
-
-    <div class="hero-bottom-note">
-      <span>01</span>
-      <div></div>
-      <span>رحلتك تبدأ من هنا</span>
-    </div>
-
-  </section>
-
-  <!-- QUICK ACCESS -->
-  <section class="portal-quick-access" id="features">
-
-    <a href="library.html" class="quick-access-item">
-      <div class="quick-access-icon quick-blue">
-        <svg viewBox="0 0 24 24">
-          <path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v17H6.5A2.5 2.5 0 0 0 4 22z"/>
-          <path d="M4 5.5v14A2.5 2.5 0 0 1 6.5 17H20"/>
-        </svg>
-      </div>
-      <div>
-        <strong>المكتبة</strong>
-        <small>ملخصات وملفات</small>
-      </div>
-      <span class="quick-arrow">↗</span>
-    </a>
-
-    <a href="exams.html" class="quick-access-item">
-      <div class="quick-access-icon quick-orange">
-        <svg viewBox="0 0 24 24">
-          <rect x="4" y="4" width="16" height="18" rx="2"/>
-          <path d="M9 2h6v4H9zM8 12l2 2 5-5M8 17h8"/>
-        </svg>
-      </div>
-      <div>
-        <strong>الامتحانات</strong>
-        <small>اختبر مستواك</small>
-      </div>
-      <span class="quick-arrow">↗</span>
-    </a>
-
-    <a href="simulation.html" class="quick-access-item">
-      <div class="quick-access-icon quick-teal">
-        <svg viewBox="0 0 24 24">
-          <path d="M12 3v18M3 12h18"/>
-          <rect x="3" y="3" width="18" height="18" rx="4"/>
-        </svg>
-      </div>
-      <div>
-        <strong>المحاكاة</strong>
-        <small>تدريب عملي تفاعلي</small>
-      </div>
-      <span class="quick-arrow">↗</span>
-    </a>
-
-    <a href="community.html" class="quick-access-item">
-      <div class="quick-access-icon quick-pink">
-        <svg viewBox="0 0 24 24">
-          <path d="M21 11.5a8.5 8.5 0 0 1-9 8.5 9 9 0 0 1-4-.9L3 21l1.9-4.4A8.5 8.5 0 1 1 21 11.5z"/>
-        </svg>
-      </div>
-      <div>
-        <strong>المجتمع</strong>
-        <small>اتعلم مع زمايلك</small>
-      </div>
-      <span class="quick-arrow">↗</span>
-    </a>
-
-  </section>
-
-  <!-- GRADES -->
-  <section class="portal-grades" id="learning">
-
-    <div class="portal-section-heading">
-      <div>
-        <span class="portal-section-kicker">اختار صفك الدراسي</span>
-        <h2>كل سنة.. <span>خطوة لقدام.</span></h2>
-      </div>
-
-      <a href="subjects.html" class="portal-text-link">
-        كل المواد <span>←</span>
-      </a>
-    </div>
-
-    <div class="portal-grade-grid">
-
-      <a href="subjects.html" class="portal-grade grade-one">
-        <div class="grade-card-head">
-          <span class="grade-index">01 / FIRST</span>
-          <span class="grade-card-arrow">↗</span>
-        </div>
-
-        <div class="grade-art">
-          <div class="grade-art-circle"></div>
-          <div class="grade-art-book">▤</div>
-          <span class="grade-art-star">✦</span>
-          <span class="grade-art-dot"></span>
-        </div>
-
-        <div class="grade-card-info">
-          <small>الصف الأول الثانوي</small>
-          <h3>أولى تمريض</h3>
-          <span class="grade-card-link">ابدأ التعلم ←</span>
-        </div>
-      </a>
-
-      <a href="subjects.html" class="portal-grade grade-two">
-        <div class="grade-card-head">
-          <span class="grade-index">02 / SECOND</span>
-          <span class="grade-card-arrow">↗</span>
-        </div>
-
-        <div class="grade-art">
-          <div class="grade-art-circle"></div>
-          <div class="grade-art-book">▤</div>
-          <span class="grade-art-star">✦</span>
-          <span class="grade-art-dot"></span>
-        </div>
-
-        <div class="grade-card-info">
-          <small>الصف الثاني الثانوي</small>
-          <h3>تانية تمريض</h3>
-          <span class="grade-card-link">ابدأ التعلم ←</span>
-        </div>
-      </a>
-
-      <a href="subjects.html" class="portal-grade grade-three">
-        <div class="grade-card-head">
-          <span class="grade-index">03 / THIRD</span>
-          <span class="grade-card-arrow">↗</span>
-        </div>
-
-        <div class="grade-art">
-          <div class="grade-art-circle"></div>
-          <div class="grade-art-book">▤</div>
-          <span class="grade-art-star">✦</span>
-          <span class="grade-art-dot"></span>
-        </div>
-
-        <div class="grade-card-info">
-          <small>الصف الثالث الثانوي</small>
-          <h3>تالتة تمريض</h3>
-          <span class="grade-card-link">ابدأ التعلم ←</span>
-        </div>
-      </a>
-
-    </div>
-  </section>
-
-  <!-- PRACTICAL SIMULATION -->
-  <section class="portal-practice">
-
-    <div class="practice-art">
-      <div class="practice-art-backdrop"></div>
-
-      <div class="practice-medical-card">
-        <div class="medical-card-top">
-          <span>SKILLS LAB</span>
-          <span class="medical-live-dot"></span>
-        </div>
-
-        <div class="medical-cross">
-          <span></span>
-          <b></b>
-        </div>
-
-        <div class="medical-wave">
-          <svg viewBox="0 0 300 80" preserveAspectRatio="none">
-            <path d="M0 40 H50 L70 40 L85 12 L105 68 L125 25 L145 48 L160 40 H300"/>
-          </svg>
-        </div>
-
-        <div class="medical-card-footer">
-          <span>محاكاة المهارات</span>
-          <span>↗</span>
-        </div>
-      </div>
-
-      <div class="practice-label practice-label-one">تعلّم</div>
-      <div class="practice-label practice-label-two">طبّق</div>
-      <div class="practice-star">✦</div>
-    </div>
-
-    <div class="practice-content">
-      <span class="portal-section-kicker">التعلم بالممارسة</span>
-
-      <h2>
-        مش بس تعرف الخطوات.
-        <span>جرّبها بنفسك.</span>
-      </h2>
-
-      <p>
-        محاكاة عملية تفاعلية مرتبطة بالدروس،
-        تخليك تتدرب على المهارات التمريضية خطوة بخطوة.
-      </p>
-
-      <a href="simulation.html" class="portal-button portal-button-dark">
-        اكتشف المحاكاة <span>←</span>
-      </a>
-    </div>
-
-  </section>
-
-  <!-- FINAL CTA -->
-  <section class="portal-final-cta">
-    <div class="final-cta-decoration">✦</div>
-
-    <div class="final-cta-content">
-      <span>بوابة التمريض</span>
-      <h2>مستقبلك يبدأ بخطوة.</h2>
-      <p>ابدأ رحلتك التعليمية النهارده.</p>
-    </div>
-
-    <a href="register.html" class="portal-button portal-button-white">
-      إنشاء حساب مجاني <span>←</span>
-    </a>
-  </section>
-
-</main>
-
-<footer class="portal-footer">
-  <a href="index.html" class="portal-brand">
-    <img src="assets/images/logo.png" alt="بوابة التمريض">
-    <span>بوابة <b>التمريض</b></span>
-  </a>
-
-  <p>منصة تعليمية لطلاب التمريض في مصر.</p>
-
-  <small>© <span id="portal-year"></span> بوابة التمريض</small>
-</footer>
-
-<script>
-  document.getElementById("portal-year").textContent =
-    new Date().getFullYear();
-</script>
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+    </script>
 
 </body>
 </html>
