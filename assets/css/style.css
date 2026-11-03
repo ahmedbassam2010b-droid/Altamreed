@@ -1,3 +1,262 @@
+/* ================================
+   BAWABET ALTAMREED
+   Global Styles
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+    --color-primary: #14b8a6;
+    --color-primary-dark: #0d9488;
+    --color-primary-light: #ccfbf1;
+
+    --color-navy: #0b1728;
+    --color-navy-light: #13243b;
+
+    --color-text: #1e293b;
+    --color-muted: #64748b;
+
+    --color-background: #ffffff;
+    --color-background-soft: #f8fafc;
+
+    --color-border: #e2e8f0;
+
+    --font-main: "Cairo", Tahoma, Arial, sans-serif;
+
+    --container-width: 1180px;
+
+    --radius-sm: 10px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+
+    --shadow-sm: 0 4px 16px rgba(15, 23, 42, 0.04);
+    --shadow-md: 0 12px 35px rgba(15, 23, 42, 0.08);
+    --shadow-lg: 0 25px 70px rgba(15, 23, 42, 0.12);
+
+    --transition: 0.25s ease;
+}
+
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: var(--font-main);
+    background: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+body,
+button,
+input,
+textarea,
+select {
+    font-family: var(--font-main);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+::selection {
+    background: var(--color-primary);
+    color: white;
+}
+
+
+/* Container */
+
+.container {
+    width: min(var(--container-width), calc(100% - 40px));
+    margin-inline: auto;
+}
+
+
+/* Buttons */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    min-height: 48px;
+    padding: 12px 24px;
+
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    transition:
+        transform var(--transition),
+        background var(--transition),
+        box-shadow var(--transition);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-primary {
+    color: #062c2a;
+    background: var(--color-primary);
+    box-shadow: 0 8px 20px rgba(20, 184, 166, 0.18);
+}
+
+.btn-primary:hover {
+    background: #2dd4bf;
+    box-shadow: 0 12px 25px rgba(20, 184, 166, 0.25);
+}
+
+.btn-outline {
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-light {
+    color: var(--color-navy);
+    background: white;
+}
+
+.btn-light:hover {
+    background: #f1f5f9;
+}
+
+.btn-large {
+    min-height: 56px;
+    padding: 15px 28px;
+    font-size: 15px;
+}
+
+
+/* Section */
+
+.section-padding {
+    padding: 100px 0;
+}
+
+.section-heading {
+    max-width: 650px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.section-eyebrow {
+    display: inline-block;
+    margin-bottom: 14px;
+
+    color: var(--color-primary-dark);
+
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: 0.2px;
+}
+
+.section-heading h2 {
+    color: var(--color-navy);
+
+    font-size: clamp(28px, 4vw, 42px);
+    font-weight: 900;
+    line-height: 1.45;
+}
+
+.section-heading h2 span {
+    color: var(--color-primary-dark);
+}
+
+.section-heading p {
+    margin-top: 16px;
+
+    color: var(--color-muted);
+
+    font-size: 15px;
+    line-height: 2;
+}
+
+
+/* SVG icons */
+
+svg {
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    .container {
+        width: min(100% - 32px, var(--container-width));
+    }
+
+    .section-padding {
+        padding: 70px 0;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading p {
+        font-size: 14px;
+    }
+
+    .btn-large {
+        min-height: 50px;
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: calc(100% - 28px);
+    }
+
+    .section-padding {
+        padding: 55px 0;
+    }
+}
+
+
 @import url("./variables.css");
 @import url("./reset.css");
 @import url("./global.css");
@@ -10,3 +269,4 @@
 @import url("./community.css");
 @import url("./simulation.css");
 @import url("./responsive.css");
+
