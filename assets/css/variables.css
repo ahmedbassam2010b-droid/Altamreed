@@ -1,76 +1,30 @@
 :root {
-  /* Brand */
-  --navy: #101d43;
-  --navy-2: #182b58;
-  --teal: #0796a6;
-  --teal-dark: #087987;
-  --teal-light: #e4f8fa;
+  --color-bg: #081421;
+  --color-surface: #101f30;
+  --color-surface-2: #0a1725;
+  --color-border: #24374a;
 
-  /* Colorful interface */
-  --purple: #7656d8;
-  --purple-light: #f0ebff;
-  --pink: #e65d9e;
-  --pink-light: #fff0f7;
-  --orange: #f49b38;
-  --orange-light: #fff4e5;
-  --green: #28a879;
-  --green-light: #e8f8f0;
-  --blue: #4388ed;
-  --blue-light: #edf4ff;
-  --yellow: #f4c84b;
-  --red: #df4e5b;
-  --red-light: #fff0f0;
+  --color-primary: #20c6b3;
+  --color-primary-hover: #0fa895;
+  --color-primary-soft: rgba(32, 198, 179, 0.12);
 
-  /* Surface */
-  --bg: #f6f8fc;
-  --surface: #ffffff;
-  --surface-soft: #f0f4fa;
-  --border: #e4e9f2;
+  --color-text: #f3f7fb;
+  --color-muted: #9aabba;
 
-  /* Text */
-  --text: #202b45;
-  --text-muted: #778198;
-  --text-light: #a0a8b8;
-  --white: #ffffff;
+  --color-success: #20c997;
+  --color-danger: #ff6b6b;
+  --color-warning: #ffc857;
 
-  /* Typography */
   --font-main: "Cairo", "Tahoma", sans-serif;
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 0.875rem;
-  --font-size-md: 1rem;
-  --font-size-lg: 1.125rem;
-  --font-size-xl: 1.375rem;
-  --font-size-2xl: 1.75rem;
-  --font-size-3xl: 2.25rem;
 
-  /* Spacing */
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.25rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-10: 2.5rem;
-  --space-12: 3rem;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
 
-  /* Radius */
-  --radius-sm: 0.5rem;
-  --radius-md: 0.875rem;
-  --radius-lg: 1.25rem;
-  --radius-xl: 1.75rem;
-  --radius-pill: 999px;
+  --shadow-card: 0 20px 60px rgba(0, 0, 0, 0.22);
 
-  /* Shadows */
-  --shadow-sm: 0 3px 12px rgb(16 29 67 / 5%);
-  --shadow-md: 0 8px 28px rgb(16 29 67 / 8%);
-  --shadow-lg: 0 18px 48px rgb(16 29 67 / 12%);
+  --container-width: 1150px;
 
-  /* Layout */
-  --container: 1200px;
-  --sidebar-width: 260px;
-  --header-height: 76px;
-
-  /* Motion */
-  --transition: 180ms ease;
+  --transition: 0.2s ease;
 }
