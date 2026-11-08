@@ -2,133 +2,84 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>لوحة الطالب | بوابة التمريض</title>
-  <link rel="icon" href="assets/images/logo.png">
-  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/components.css">
 </head>
-<body class="app-page">
-  <aside class="sidebar">
-    <a class="brand" href="dashboard.html">
-      <img src="assets/images/logo.png" alt="شعار بوابة التمريض">
-      <span>بوابة التمريض</span>
-    </a>
 
-    <nav class="side-nav">
-      <a class="active" href="dashboard.html">🏠 الرئيسية</a>
-      <a href="subjects.html">📚 المواد الدراسية</a>
-      <a href="library.html">📂 المكتبة</a>
-      <a href="bookmarks.html">🔖 المحفوظات</a>
-      <a href="study-planner.html">📅 جدول المذاكرة</a>
-      <a href="daily-challenge.html">⚡ التحدي اليومي</a>
-      <a href="exams.html">📝 الامتحانات</a>
-      <a href="simulation.html">🏥 المحاكاة العملية</a>
-      <a href="community.html">💬 مجتمع الطلاب</a>
-      <a href="profile.html">👤 ملفي الشخصي</a>
-    </nav>
+<body>
+  <div class="dashboard-layout">
+    <main class="dashboard-main container">
 
-    <a class="sidebar-logout" href="login.html">↩ تسجيل الخروج</a>
-  </aside>
-
-  <main class="dashboard-main">
-    <header class="dashboard-header">
-      <div>
-        <span class="eyebrow">لوحة الطالب</span>
-        <h1>أهلًا بيك، <span id="studentName">يا طالب التمريض</span> 👋</h1>
-        <p class="muted">جاهز تكمل إنجازاتك النهارده؟</p>
-      </div>
-      <a class="avatar-link" href="profile.html">👤</a>
-    </header>
-
-    <section class="stats-grid">
-      <article class="stat-card stat-purple">
-        <span>⭐ نقاط XP</span>
-        <strong id="xpValue">0</strong>
-        <small>استمر في التعلم</small>
-      </article>
-      <article class="stat-card stat-teal">
-        <span>📖 دروس مكتملة</span>
-        <strong id="lessonsValue">0</strong>
-        <small>خطوة جديدة في رحلتك</small>
-      </article>
-      <article class="stat-card stat-orange">
-        <span>📝 امتحانات</span>
-        <strong id="examsValue">0</strong>
-        <small>اختبر مستواك باستمرار</small>
-      </article>
-      <article class="stat-card stat-pink">
-        <span>🔥 سلسلة المذاكرة</span>
-        <strong id="streakValue">0</strong>
-        <small>يوم متواصل</small>
-      </article>
-    </section>
-
-    <section class="dashboard-section">
-      <div class="section-title-row">
+      <header class="dashboard-header">
         <div>
-          <span class="eyebrow">ابدأ من هنا</span>
-          <h2>أقسامك التعليمية</h2>
+          <h1>أهلاً بيك في بوابة التمريض 👋</h1>
+          <p style="color: var(--color-muted); margin-top: 6px;">
+            كمل رحلتك التعليمية وراجع دروسك.
+          </p>
         </div>
-        <a class="text-link" href="subjects.html">كل المواد ←</a>
-      </div>
 
-      <div class="feature-grid">
-        <a class="feature-card card-blue" href="subjects.html">
-          <span class="feature-icon">📚</span>
+        <div>
+          <span class="user-badge">
+            <span>👤</span>
+            <span id="studentName">الطالب</span>
+          </span>
+
+          <button id="logoutButton" class="btn btn-secondary"
+                  type="button" style="margin-top: 10px;">
+            تسجيل الخروج
+          </button>
+        </div>
+      </header>
+
+      <section class="dashboard-grid">
+
+        <a href="subjects.html" class="dashboard-card">
+          <div class="card-icon">📚</div>
           <h3>المواد الدراسية</h3>
-          <p>اختار مادتك وابدأ المذاكرة.</p>
+          <p>افتح موادك وابدأ مذاكرة الدروس.</p>
         </a>
-        <a class="feature-card card-purple" href="quick-revision.html">
-          <span class="feature-icon">🧠</span>
-          <h3>مراجعة سريعة</h3>
-          <p>راجع أهم المعلومات في وقت قصير.</p>
+
+        <a href="library.html" class="dashboard-card">
+          <div class="card-icon">📖</div>
+          <h3>المكتبة التعليمية</h3>
+          <p>ملخصات ومصادر تساعدك في المذاكرة.</p>
         </a>
-        <a class="feature-card card-orange" href="daily-challenge.html">
-          <span class="feature-icon">⚡</span>
-          <h3>التحدي اليومي</h3>
-          <p>جاوب على أسئلة اليوم.</p>
+
+        <a href="exams.html" class="dashboard-card">
+          <div class="card-icon">📝</div>
+          <h3>الاختبارات</h3>
+          <p>اختبر فهمك وتابع مستواك.</p>
         </a>
-        <a class="feature-card card-teal" href="simulation.html">
-          <span class="feature-icon">🏥</span>
-          <h3>تدريب عملي</h3>
-          <p>تدرّب على المهارات التمريضية.</p>
+
+        <a href="study-planner.html" class="dashboard-card">
+          <div class="card-icon">📅</div>
+          <h3>مخطط المذاكرة</h3>
+          <p>نظم وقتك وحدد مهامك الدراسية.</p>
         </a>
-      </div>
-    </section>
 
-    <section class="dashboard-section">
-      <div class="section-title-row">
-        <div>
-          <span class="eyebrow">خطتك</span>
-          <h2>مهام المذاكرة</h2>
-        </div>
-        <a class="text-link" href="study-planner.html">عرض الجدول ←</a>
-      </div>
-      <div id="dashboardTasks" class="task-list">
-        <div class="empty-state">
-          <span>📅</span>
-          <p>لسه مفيش مهام مذاكرة. أضف أول مهمة من جدول المذاكرة.</p>
-          <a class="btn btn-soft" href="study-planner.html">إضافة مهمة</a>
-        </div>
-      </div>
-    </section>
-  </main>
+        <a href="quick-revision.html" class="dashboard-card">
+          <div class="card-icon">⚡</div>
+          <h3>المراجعة السريعة</h3>
+          <p>راجع أهم النقاط قبل الاختبار.</p>
+        </a>
 
-  <script>
-    const profile = JSON.parse(localStorage.getItem("bawabaProfile") || "{}");
-    if (profile.name) {
-      document.getElementById("studentName").textContent = profile.name;
-    }
+        <a href="simulation.html" class="dashboard-card">
+          <div class="card-icon">🩺</div>
+          <h3>المحاكاة العملية</h3>
+          <p>تدرب على المهارات التمريضية بصورة تفاعلية.</p>
+        </a>
 
-    const progress = JSON.parse(
-      localStorage.getItem("bawabaProgress") ||
-      '{"xp":0,"lessons":0,"exams":0,"streak":0}'
-    );
+      </section>
+    </main>
+  </div>
 
-    document.getElementById("xpValue").textContent = progress.xp || 0;
-    document.getElementById("lessonsValue").textContent = progress.lessons || 0;
-    document.getElementById("examsValue").textContent = progress.exams || 0;
-    document.getElementById("streakValue").textContent = progress.streak || 0;
-  </script>
+  <script type="module" src="navigation.js"></script>
 </body>
 </html>
