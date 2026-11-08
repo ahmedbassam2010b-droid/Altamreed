@@ -1,108 +1,35 @@
-.auth-page {
-  min-height: 100vh;
-  background:
-    radial-gradient(circle at 15% 15%, rgb(7 150 166 / 10%), transparent 28%),
-    radial-gradient(circle at 85% 85%, rgb(118 86 216 / 10%), transparent 30%),
-    var(--bg);
+.auth-form {
+  width: 100%;
 }
 
-.back-home {
-  position: absolute;
-  top: 1.25rem;
-  right: 1.5rem;
-  color: var(--navy);
-  font-size: var(--font-size-sm);
-  font-weight: 800;
+.auth-submit {
+  width: 100%;
+  margin-top: 2px;
 }
 
-.auth-layout {
-  display: grid;
-  grid-template-columns: minmax(0, 0.9fr) minmax(360px, 1.1fr);
-  width: min(1050px, calc(100% - 2rem));
-  min-height: 100vh;
-  margin-inline: auto;
-  padding-block: 5rem 2rem;
-  align-items: center;
-  gap: clamp(2rem, 6vw, 5rem);
+.auth-divider {
+  height: 1px;
+  background: var(--color-border);
+  margin: 22px 0;
 }
 
-.auth-brand-panel {
-  text-align: center;
+.auth-footer a {
+  color: var(--color-primary);
+  font-weight: 700;
 }
 
-.auth-brand-panel img {
-  width: min(260px, 70%);
-  margin: 0 auto var(--space-5);
-  object-fit: contain;
+.auth-footer a:hover {
+  text-decoration: underline;
 }
 
-.auth-brand-panel h1 {
-  margin-bottom: var(--space-3);
+.password-note {
+  color: var(--color-muted);
+  font-size: 12px;
+  margin-top: 7px;
 }
 
-.auth-brand-panel p {
-  max-width: 420px;
-  margin-inline: auto;
-  color: var(--text-muted);
-}
-
-.auth-card {
-  padding: clamp(1.5rem, 5vw, 2.5rem);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-xl);
-  background: var(--surface);
-  box-shadow: var(--shadow-lg);
-}
-
-.auth-card h2 {
-  margin-bottom: var(--space-2);
-}
-
-.auth-card form {
-  display: grid;
-  gap: var(--space-4);
-  margin-top: var(--space-5);
-}
-
-.auth-switch {
-  margin-top: var(--space-5);
-  color: var(--text-muted);
-  font-size: var(--font-size-sm);
-  text-align: center;
-}
-
-.auth-switch a {
-  color: var(--teal-dark);
-  font-weight: 800;
-}
-
-@media (max-width: 760px) {
-  .auth-layout {
-    grid-template-columns: 1fr;
-    width: min(520px, calc(100% - 1.25rem));
-    padding-top: 5.5rem;
-    gap: var(--space-5);
-  }
-
-  .auth-brand-panel img {
-    width: 115px;
-    margin-bottom: var(--space-3);
-  }
-
-  .auth-brand-panel h1 {
-    font-size: 1.5rem;
-  }
-
-  .auth-brand-panel p {
-    font-size: var(--font-size-sm);
-  }
-
-  .auth-card {
-    padding: 1.25rem;
-  }
-
-  .back-home {
-    top: 1rem;
-    right: 1rem;
+@media (max-width: 480px) {
+  .auth-heading {
+    font-size: 21px;
   }
 }
