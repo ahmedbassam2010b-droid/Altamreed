@@ -1,13 +1,17 @@
 
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>أوبا! الصفحة مش هنا</title>
+    <title>الصفحة غير موجودة | بوابة التمريض</title>
+
+    <meta name="description" content="الصفحة التي تبحث عنها غير موجودة. ارجع إلى بوابة التمريض واستكشف المحتوى التعليمي.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <style>
         * {
@@ -17,81 +21,168 @@
         }
 
         body {
-            font-family: "Cairo", "Tahoma", sans-serif;
-            background: #f4f9ff;
-            color: #1e293b;
+            font-family: 'Cairo', sans-serif;
+            background: #f3f8ff;
+            color: #183153;
             min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 25px;
         }
 
-        .error-container {
+        .error-wrapper {
             width: 100%;
-            max-width: 650px;
-            text-align: center;
-            background: #ffffff;
-            padding: 45px 25px;
-            border-radius: 24px;
-            box-shadow: 0 10px 40px
-                        rgba(30, 100, 180, 0.08);
+            max-width: 1100px;
+            background: #fff;
+            border-radius: 25px;
+            overflow: hidden;
+            box-shadow: 0 15px 50px rgba(20, 80, 140, 0.09);
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 25px;
+            padding: 35px;
         }
 
         .illustration {
-            font-size: 85px;
-            margin-bottom: 20px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .illustration img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            display: block;
+        }
+
+        .message {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .brand {
+            color: #1267bd;
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 35px;
+        }
+
+        .brand span {
+            display: block;
+            color: #71849b;
+            font-size: 13px;
+            font-weight: 500;
         }
 
         h1 {
-            font-size: clamp(25px, 5vw, 36px);
-            color: #1677c8;
-            margin-bottom: 15px;
+            font-size: clamp(27px, 4vw, 40px);
+            font-weight: 800;
+            color: #0755a5;
+            margin-bottom: 20px;
+            line-height: 1.5;
         }
 
-        p {
-            color: #64748b;
-            font-size: 16px;
-            line-height: 1.9;
+        .description {
+            font-size: 17px;
+            color: #52647b;
+            line-height: 2;
             margin-bottom: 25px;
         }
 
-        .home-button {
-            display: inline-block;
-            background: #1677c8;
-            color: #ffffff;
+        .friendly-message {
+            background: #e8f3ff;
+            color: #1267bd;
+            padding: 14px;
+            border-radius: 40px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 15px 20px;
+            border-radius: 40px;
             text-decoration: none;
-            padding: 14px 30px;
-            border-radius: 12px;
+            font-weight: 700;
             font-size: 16px;
-            font-weight: bold;
             transition: 0.3s;
         }
 
-        .home-button:hover {
-            background: #105fa3;
+        .btn-primary {
+            background: #1267bd;
+            color: white;
+            box-shadow: 0 6px 18px rgba(18, 103, 189, 0.2);
+        }
+
+        .btn-primary:hover {
+            background: #084d96;
             transform: translateY(-3px);
         }
 
-        .secondary-link {
-            display: block;
-            margin-top: 20px;
-            color: #1677c8;
-            text-decoration: none;
-            font-size: 14px;
+        .btn-secondary {
+            color: #1267bd;
+            border: 2px solid #1267bd;
+            background: white;
         }
 
-        .secondary-link:hover {
-            text-decoration: underline;
+        .btn-secondary:hover {
+            background: #edf6ff;
+            transform: translateY(-2px);
         }
 
-        @media (max-width: 480px) {
-            .error-container {
-                padding: 35px 20px;
+        .footer {
+            text-align: center;
+            padding: 18px;
+            color: #71849b;
+            font-size: 13px;
+            border-top: 1px solid #edf2f8;
+        }
+
+        @media (max-width: 700px) {
+            body {
+                padding: 12px;
+            }
+
+            .content {
+                grid-template-columns: 1fr;
+                padding: 20px;
+                gap: 5px;
             }
 
             .illustration {
-                font-size: 65px;
+                max-width: 380px;
+                margin: auto;
+            }
+
+            .message {
+                padding: 10px 5px 25px;
+            }
+
+            .brand {
+                margin-bottom: 20px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .description {
+                font-size: 15px;
             }
         }
     </style>
@@ -99,28 +190,60 @@
 
 <body>
 
-    <main class="error-container">
+    <main class="error-wrapper">
 
-        <div class="illustration">
-            🩺
-        </div>
+        <section class="content">
 
-        <h1>أوبا! الصفحة مش هنا 👀</h1>
+            <!-- Cartoon Nurse Illustration -->
+            <div class="illustration">
+                <img
+                    src="nurse-404.png"
+                    alt="ممرض كرتوني يبحث عن الصفحة المفقودة"
+                >
+            </div>
 
-        <p>
-            يبدو إن الصفحة اللي بتدور عليها مش موجودة
-            أو اتنقلت لمكان تاني.
+            <!-- Error Message -->
+            <div class="message">
+
+                <div class="brand">
+                    🩺 بوابة التمريض
+                    <span>Bawabet Al Tamreed</span>
+                </div>
+
+                <h1>أوبا! الصفحة مش هنا 👀</h1>
+
+                <p class="description">
+                    يبدو إن الصفحة اللي بتدور عليها
+                    مش موجودة أو اتنقلت لمكان تاني.
+                    <br>
+                    متقلقش، نقدر نرجعك للمكان الصح!
+                </p>
+
+                <div class="friendly-message">
+                    😊 متقلقش، هنرجعك للمكان الصح!
+                </div>
+
+                <div class="buttons">
+
+                    <a href="/" class="btn btn-primary">
+                        🏠 العودة للصفحة الرئيسية
+                    </a>
+
+                    <a href="/courses" class="btn btn-secondary">
+                        🔍 استكشف المحتوى التعليمي
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer class="footer">
+            بوابة التمريض | Bawabet Al Tamreed
             <br>
-            متقلقش، نقدر نرجعك للمكان الصح!
-        </p>
-
-        <a href="/" class="home-button">
-            العودة للصفحة الرئيسية ←
-        </a>
-
-        <a href="/courses" class="secondary-link">
-            أو استكشف المحتوى التعليمي من جديد
-        </a>
+            معًا نحو مستقبل تمريضي أفضل 🩺
+        </footer>
 
     </main>
 
