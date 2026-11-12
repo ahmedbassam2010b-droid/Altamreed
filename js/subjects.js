@@ -4,8 +4,7 @@ import {
   collection,
   getDocs,
   query,
-  where,
-  orderBy
+  where
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
 import {
@@ -54,8 +53,7 @@ async function loadSubjects() {
   try {
     const subjectsQuery = query(
       collection(db, "subjects"),
-      where("published", "==", true),
-      orderBy("order", "asc")
+      where("published", "==", true)
     );
 
     const snapshot = await getDocs(subjectsQuery);
@@ -65,12 +63,17 @@ async function loadSubjects() {
       return;
     }
 
+    const records = snapshot.docs
+      .map((documentSnapshot) => ({
+        id: documentSnapshot.id,
+        data: documentSnapshot.data()
+      }))
+      .sort((a, b) => (Number(a.data.order) || 0) - (Number(b.data.order) || 0));
+
     const fragment = document.createDocumentFragment();
 
-    snapshot.forEach((documentSnapshot) => {
-      fragment.appendChild(
-        renderSubject(documentSnapshot.id, documentSnapshot.data())
-      );
+    records.forEach(({ id, data }) => {
+      fragment.appendChild(renderSubject(id, data));
     });
 
     subjectsGrid.appendChild(fragment);
