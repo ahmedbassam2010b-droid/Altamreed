@@ -1,4 +1,3 @@
-
 import { auth, db } from "./config.js";
 
 import {
@@ -24,7 +23,7 @@ function showMessage(message) {
 
 function renderSubject(subjectId, data) {
   const card = document.createElement("article");
-  card.className = "subject-card";
+  card.className = "dashboard-card subject-card";
 
   const title = document.createElement("h3");
   title.textContent = data.title || "مادة بدون اسم";
@@ -69,12 +68,9 @@ async function loadSubjects() {
     const fragment = document.createDocumentFragment();
 
     snapshot.forEach((documentSnapshot) => {
-      const subject = renderSubject(
-        documentSnapshot.id,
-        documentSnapshot.data()
+      fragment.appendChild(
+        renderSubject(documentSnapshot.id, documentSnapshot.data())
       );
-
-      fragment.appendChild(subject);
     });
 
     subjectsGrid.appendChild(fragment);
@@ -87,7 +83,7 @@ async function loadSubjects() {
 
 onAuthStateChanged(auth, (user) => {
   if (!user) {
-    window.location.href = "login.html";
+    window.location.replace("login.html");
     return;
   }
 
