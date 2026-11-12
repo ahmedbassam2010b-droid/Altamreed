@@ -1,12 +1,10 @@
-
 import { auth, db } from "./config.js";
 
 import {
   collection,
   getDocs,
   query,
-  where,
-  orderBy
+  where
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
 import {
@@ -24,7 +22,7 @@ function showMessage(message) {
 
 function renderSubject(subjectId, data) {
   const card = document.createElement("article");
-  card.className = "subject-card";
+  card.className = "dashboard-card subject-card";
 
   const title = document.createElement("h3");
   title.textContent = data.title || "مادة بدون اسم";
@@ -55,8 +53,7 @@ async function loadSubjects() {
   try {
     const subjectsQuery = query(
       collection(db, "subjects"),
-      where("published", "==", true),
-      orderBy("order", "asc")
+      where("published", "==", true)
     );
 
     const snapshot = await getDocs(subjectsQuery);
@@ -66,15 +63,17 @@ async function loadSubjects() {
       return;
     }
 
+    const records = snapshot.docs
+      .map((documentSnapshot) => ({
+        id: documentSnapshot.id,
+        data: documentSnapshot.data()
+      }))
+      .sort((a, b) => (Number(a.data.order) || 0) - (Number(b.data.order) || 0));
+
     const fragment = document.createDocumentFragment();
 
-    snapshot.forEach((documentSnapshot) => {
-      const subject = renderSubject(
-        documentSnapshot.id,
-        documentSnapshot.data()
-      );
-
-      fragment.appendChild(subject);
+    records.forEach(({ id, data }) => {
+      fragment.appendChild(renderSubject(id, data));
     });
 
     subjectsGrid.appendChild(fragment);
@@ -87,7 +86,7 @@ async function loadSubjects() {
 
 onAuthStateChanged(auth, (user) => {
   if (!user) {
-    window.location.href = "login.html";
+    window.location.replace("login.html");
     return;
   }
 

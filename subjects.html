@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="المواد الدراسية المنشورة في بوابة التمريض.">
+  <title>المواد الدراسية | بوابة التمريض</title>
+  <link rel="icon" href="assets/images/favicon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <main class="container" style="padding-block: 48px;">
+    <header class="dashboard-header">
+      <div>
+        <p class="eyebrow">التعلم المنظم</p>
+        <h1>المواد الدراسية</h1>
+        <p class="muted">اختر المادة لعرض الدروس المنشورة المرتبطة بها.</p>
+      </div>
+      <a class="btn btn-secondary" href="dashboard.html">لوحة الطالب</a>
+    </header>
+
+    <p id="subjectsMessage" class="form-message" role="status" aria-live="polite">جاري تحميل المواد...</p>
+    <section id="subjectsGrid" class="dashboard-grid" aria-label="قائمة المواد الدراسية"></section>
+  </main>
+  <script type="module" src="js/subjects.js"></script>
+</body>
+</html>

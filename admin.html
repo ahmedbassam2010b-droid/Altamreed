@@ -2,72 +2,95 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="لوحة إدارة محتوى بوابة التمريض.">
   <title>لوحة الإدارة | بوابة التمريض</title>
+  <link rel="icon" href="assets/images/favicon.png">
   <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .admin-shell { width:min(1120px, calc(100% - 32px)); margin:40px auto 72px; }
+    .admin-top { display:flex; align-items:center; justify-content:space-between; gap:16px; flex-wrap:wrap; margin-bottom:28px; }
+    .admin-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; align-items:start; }
+    .admin-panel { background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:22px; }
+    .admin-panel h2 { margin-bottom:16px; font-size:19px; }
+    .admin-form label { display:block; margin:12px 0 6px; font-weight:700; font-size:13px; }
+    .admin-form input,.admin-form textarea,.admin-form select { width:100%; padding:11px 12px; border:1px solid var(--color-border); border-radius:10px; background:var(--color-surface-2); color:var(--color-text); font:inherit; }
+    .admin-form textarea { min-height:120px; resize:vertical; }
+    .admin-form .check-row { display:flex; align-items:center; gap:9px; margin:14px 0; }
+    .admin-form .check-row input { width:auto; }
+    .admin-list { display:grid; gap:10px; }
+    .admin-list-item { padding:12px; border:1px solid var(--color-border); border-radius:12px; }
+    .admin-list-item p { color:var(--color-muted); font-size:12px; margin-top:4px; }
+    .admin-status { padding:12px 14px; border-radius:12px; margin:14px 0 20px; background:var(--color-surface-2); color:var(--color-muted); }
+    .admin-status[data-state="error"] { color:#ffc5c5; border:1px solid rgba(220,70,70,.35); }
+    .admin-status[data-state="success"] { color:#b8ffea; border:1px solid rgba(32,198,179,.3); }
+    .admin-muted { color:var(--color-muted); font-size:13px; }
+    @media(max-width:600px){ .admin-shell{margin-top:24px}.admin-panel{padding:16px} }
+  </style>
 </head>
 <body>
-  <header class="site-header">
-    <a class="brand" href="dashboard.html">
-      <img src="assets/images/logo.png" alt="بوابة التمريض">
-      <span>بوابة التمريض</span>
-    </a>
-    <span class="badge">لوحة الإدارة</span>
-  </header>
+  <main class="admin-shell">
+    <header class="admin-top">
+      <div>
+        <p class="eyebrow">BAWABET ALTAMREED</p>
+        <h1>لوحة إدارة المحتوى</h1>
+        <p class="admin-muted">إدارة المواد والدروس المنشورة في قاعدة البيانات الفعلية.</p>
+      </div>
+      <div>
+        <a class="btn btn-secondary" href="dashboard.html">لوحة الطالب</a>
+        <button id="adminLogout" class="btn btn-secondary" type="button">تسجيل الخروج</button>
+      </div>
+    </header>
 
-  <main class="page-container">
-    <span class="eyebrow">إدارة المحتوى</span>
-    <h1>لوحة الإدارة</h1>
-    <p class="muted">
-      نموذج واجهة لإدارة المحتوى. لا يمنح هذا النموذج صلاحيات إدارة حقيقية
-      بدون نظام تحقق وصلاحيات موصول بالخلفية.
-    </p>
+    <p id="adminStatus" class="admin-status" role="status" aria-live="polite">جاري التحقق من صلاحيات الإدارة...</p>
 
-    <div class="feature-grid">
-      <a class="feature-card card-blue" href="subjects.html">
-        <span class="feature-icon">📚</span>
-        <h3>المواد والدروس</h3>
-        <p>استعراض هيكل المواد.</p>
-      </a>
-      <a class="feature-card card-purple" href="exams.html">
-        <span class="feature-icon">📝</span>
-        <h3>الامتحانات</h3>
-        <p>استعراض الامتحانات التدريبية.</p>
-      </a>
-      <a class="feature-card card-teal" href="simulation.html">
-        <span class="feature-icon">🏥</span>
-        <h3>المحاكاة العملية</h3>
-        <p>استعراض سيناريوهات التدريب.</p>
-      </a>
-      <a class="feature-card card-pink" href="community.html">
-        <span class="feature-icon">💬</span>
-        <h3>المجتمع</h3>
-        <p>استعراض منشورات المجتمع.</p>
-      </a>
-    </div>
+    <section id="adminWorkspace" hidden>
+      <div class="admin-grid">
+        <section class="admin-panel">
+          <h2>إضافة مادة دراسية</h2>
+          <form id="subjectForm" class="admin-form">
+            <label for="subjectTitle">اسم المادة</label>
+            <input id="subjectTitle" maxlength="150" required>
+            <label for="subjectDescription">وصف المادة</label>
+            <textarea id="subjectDescription" maxlength="2000"></textarea>
+            <label for="subjectGrade">الصف الدراسي</label>
+            <input id="subjectGrade" maxlength="80" placeholder="مثال: الصف الأول الثانوي التمريض">
+            <label for="subjectTerm">الفصل الدراسي</label>
+            <input id="subjectTerm" maxlength="80" placeholder="مثال: الفصل الدراسي الأول">
+            <label for="subjectOrder">ترتيب العرض</label>
+            <input id="subjectOrder" type="number" min="0" step="1" value="1" required>
+            <label class="check-row"><input id="subjectPublished" type="checkbox"> نشر المادة للطلاب</label>
+            <button id="subjectSubmit" class="btn btn-primary btn-block" type="submit">حفظ المادة في Firestore</button>
+          </form>
+        </section>
 
-    <section class="content-card">
-      <h2>إضافة إعلان تجريبي</h2>
-      <form id="announcementForm">
-        <label for="announcement">نص الإعلان</label>
-        <textarea id="announcement" rows="3" required></textarea>
-        <button class="btn btn-primary" type="submit">حفظ الإعلان محليًا</button>
-      </form>
-      <p id="message" class="form-message"></p>
+        <section class="admin-panel">
+          <h2>إضافة درس إلى مادة</h2>
+          <form id="lessonForm" class="admin-form">
+            <label for="lessonSubject">المادة</label>
+            <select id="lessonSubject" required>
+              <option value="">اختر المادة</option>
+            </select>
+            <label for="lessonTitle">عنوان الدرس</label>
+            <input id="lessonTitle" maxlength="180" required>
+            <label for="lessonContent">محتوى الدرس</label>
+            <textarea id="lessonContent" required placeholder="أدخل محتوى الدرس المعتمد من المنهج الفعلي."></textarea>
+            <label for="lessonOrder">ترتيب الدرس داخل المادة</label>
+            <input id="lessonOrder" type="number" min="0" step="1" value="1" required>
+            <label class="check-row"><input id="lessonPublished" type="checkbox"> نشر الدرس للطلاب</label>
+            <button id="lessonSubmit" class="btn btn-primary btn-block" type="submit">حفظ الدرس في Firestore</button>
+          </form>
+        </section>
+      </div>
+
+      <section class="admin-panel" style="margin-top:20px">
+        <h2>المواد المسجلة</h2>
+        <div id="subjectsAdminList" class="admin-list">
+          <p class="admin-muted">جاري تحميل المواد...</p>
+        </div>
+      </section>
     </section>
   </main>
-
-  <script>
-    document.getElementById("announcementForm").addEventListener("submit", e => {
-      e.preventDefault();
-
-      const text = document.getElementById("announcement").value.trim();
-      localStorage.setItem("bawabaAnnouncement", text);
-
-      document.getElementById("message").textContent =
-        "تم حفظ الإعلان في هذا المتصفح فقط.";
-      e.target.reset();
-    });
-  </script>
+  <script type="module" src="js/admin.js"></script>
 </body>
 </html>

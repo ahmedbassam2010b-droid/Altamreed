@@ -1,4 +1,3 @@
-
 import { auth, db } from "./config.js";
 
 import {
@@ -6,7 +5,8 @@ import {
   getDocs,
   query,
   where,
-  orderBy
+  doc,
+  getDoc
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
 import {
@@ -38,11 +38,21 @@ async function loadLessons() {
   showMessage("جاري تحميل الدروس...");
 
   try {
+    const subjectSnapshot = await getDoc(doc(db, "subjects", subjectId));
+    if (!subjectSnapshot.exists() || subjectSnapshot.data().published !== true) {
+      showMessage("المادة غير موجودة أو لم تعد منشورة.");
+      return;
+    }
+
+    const subjectData = subjectSnapshot.data();
+    if (subjectTitle) {
+      subjectTitle.textContent = subjectData.title || "دروس المادة";
+    }
+
     const lessonsQuery = query(
       collection(db, "lessons"),
       where("subjectId", "==", subjectId),
-      where("published", "==", true),
-      orderBy("order", "asc")
+      where("published", "==", true)
     );
 
     const snapshot = await getDocs(lessonsQuery);
@@ -52,22 +62,26 @@ async function loadLessons() {
       return;
     }
 
+    const records = snapshot.docs
+      .map((documentSnapshot) => ({
+        id: documentSnapshot.id,
+        data: documentSnapshot.data()
+      }))
+      .sort((a, b) => (Number(a.data.order) || 0) - (Number(b.data.order) || 0));
+
     const fragment = document.createDocumentFragment();
 
-    snapshot.forEach((documentSnapshot) => {
-      const lessonData = documentSnapshot.data();
-
+    records.forEach(({ data }) => {
       const item = document.createElement("article");
-      item.className = "lesson-card";
+      item.className = "dashboard-card lesson-card";
 
       const title = document.createElement("h3");
-      title.textContent = lessonData.title || "درس بدون عنوان";
+      title.textContent = data.title || "درس بدون عنوان";
 
-      const link = document.createElement("a");
-      link.href = `lesson.html?id=${encodeURIComponent(documentSnapshot.id)}`;
-      link.textContent = "فتح الدرس";
+      const status = document.createElement("p");
+      status.textContent = "تفاصيل عرض الدرس ستتاح بعد اعتماد مخطط محتوى الدروس.";
 
-      item.append(title, link);
+      item.append(title, status);
       fragment.appendChild(item);
     });
 
@@ -81,7 +95,7 @@ async function loadLessons() {
 
 onAuthStateChanged(auth, (user) => {
   if (!user) {
-    window.location.href = "login.html";
+    window.location.replace("login.html");
     return;
   }
 
