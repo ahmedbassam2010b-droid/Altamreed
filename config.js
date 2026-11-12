@@ -1,8 +1,13 @@
-// config.js
-// إعدادات مشروع Firebase - بوابة التمريض
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
-import { getAuth } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
+import {
+  getAuth
+} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+
+import {
+  getFirestore
+} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBBlU_cOXeoAVFvd5ONr1e0AoJPXzc7a",
@@ -14,8 +19,13 @@ const firebaseConfig = {
   measurementId: "G-N0BSLZ4WDJ"
 };
 
+// Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
+// Authentication
 const auth = getAuth(app);
 
-export { app, auth };
+// Cloud Firestore
+const db = getFirestore(app);
+
+export { app, auth, db };
