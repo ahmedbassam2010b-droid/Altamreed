@@ -5,6 +5,19 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap');
 
+@import url("../../css/variables.css");
+@import url("../../css/reset.css");
+@import url("../../css/global.css");
+@import url("../../css/layout.css");
+@import url("../../css/components.css");
+@import url("../../css/auth.css");
+@import url("../../css/dashboard.css");
+@import url("../../css/lessons.css");
+@import url("../../css/exams.css");
+@import url("../../css/community.css");
+@import url("../../css/simulation.css");
+@import url("../../css/responsive.css");
+
 :root {
     --color-primary: #14b8a6;
     --color-primary-dark: #0d9488;
@@ -257,16 +270,4 @@ svg {
 }
 
 
-@import url("../../css/variables.css");
-@import url("../../css/reset.css");
-@import url("../../css/global.css");
-@import url("../../css/layout.css");
-@import url("../../css/components.css");
-@import url("../../css/auth.css");
-@import url("../../css/dashboard.css");
-@import url("../../css/lessons.css");
-@import url("../../css/exams.css");
-@import url("../../css/community.css");
-@import url("../../css/simulation.css");
-@import url("../../css/responsive.css");
 
