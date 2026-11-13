@@ -26,7 +26,7 @@ function showMessage(message) {
   }
 }
 
-async function loadLessons() {
+async function loadLessons(user) {
   if (!lessonsList) return;
 
   if (!subjectId) {
@@ -38,8 +38,11 @@ async function loadLessons() {
   showMessage("جاري تحميل الدروس...");
 
   try {
+    const profile = await getDoc(doc(db, "users", user.uid));
+    const gradeId = profile.exists() ? profile.data().gradeId : "";
+    if (!gradeId) { window.location.replace("register.html"); return; }
     const subjectSnapshot = await getDoc(doc(db, "subjects", subjectId));
-    if (!subjectSnapshot.exists() || subjectSnapshot.data().published !== true) {
+    if (!subjectSnapshot.exists() || subjectSnapshot.data().published !== true || subjectSnapshot.data().gradeId !== gradeId) {
       showMessage("المادة غير موجودة أو لم تعد منشورة.");
       return;
     }
@@ -52,7 +55,8 @@ async function loadLessons() {
     const lessonsQuery = query(
       collection(db, "lessons"),
       where("subjectId", "==", subjectId),
-      where("published", "==", true)
+      where("published", "==", true),
+      where("gradeId", "==", gradeId)
     );
 
     const snapshot = await getDocs(lessonsQuery);
@@ -99,5 +103,5 @@ onAuthStateChanged(auth, (user) => {
     return;
   }
 
-  loadLessons();
+  loadLessons(user);
 });
