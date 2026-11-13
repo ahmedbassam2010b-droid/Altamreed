@@ -13,3 +13,5 @@
 .xp-history-item{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
 .xp-positive{color:#65e0cf;font-weight:900}
 .xp-muted{color:#9aabba;font-size:12px}
+
+.xp-badge>div{white-space:pre-line}
