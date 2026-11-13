@@ -10,7 +10,7 @@ import {
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBBlU_cOXeoAVFvd5ONr1e0AoJPXzc7a",
+  apiKey: "AIzaSyBBlU_cOXeoAVFvd5ONr1e0AoJPXzc7zLQ",
   authDomain: "bawabet-altamreed.firebaseapp.com",
   projectId: "bawabet-altamreed",
   storageBucket: "bawabet-altamreed.firebasestorage.app",
