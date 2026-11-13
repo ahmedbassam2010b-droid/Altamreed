@@ -163,7 +163,7 @@ if (googleButton) {
 }
 if (saveGoogleGradeButton) {
   saveGoogleGradeButton.addEventListener("click", async () => {
-    if (!currentGoogleUser) return showMessage("سجّل الدخول باستخدام Google أولًا.");
+    if (!currentGoogleUser) return showMessage("سجّل الدخول أولًا.");
     const gradeId = googleGradeSelect.value;
     if (!activeGrades.some(g => g.id === gradeId)) return showMessage("اختار صفك الدراسي.");
     saveGoogleGradeButton.disabled = true;
