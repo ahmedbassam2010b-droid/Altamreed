@@ -4,7 +4,7 @@ import {
   GoogleAuthProvider, signInWithPopup, signInWithRedirect
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 import {
-  collection, getDocs, doc, getDoc, setDoc, updateDoc, serverTimestamp
+  collection, getDocs, doc, getDoc, setDoc, updateDoc, query, where, serverTimestamp
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
 const form = document.getElementById("registerForm");
@@ -49,7 +49,7 @@ function fillGradeSelect(select) {
   select.disabled = !activeGrades.length;
 }
 async function loadGrades() {
-  const snapshot = await getDocs(collection(db, "grades"));
+  const snapshot = await getDocs(query(collection(db, "grades"), where("active", "==", true)));
   activeGrades = snapshot.docs
     .map(d => ({ id: d.id, ...d.data() }))
     .filter(g => g.active === true && typeof g.name === "string" && g.name.trim())
