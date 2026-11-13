@@ -22,9 +22,14 @@ service cloud.firestore {
   }
   match /publicProfiles/{uid}{
    allow read:if signedIn();
-   allow create:if owns(uid)&&request.resource.data.keys().hasOnly(['displayName','xp','updatedAt'])&&request.resource.data.xp==0;
+   allow create:if isAdmin()||(owns(uid)&&request.resource.data.keys().hasOnly(['displayName','xp','updatedAt'])&&request.resource.data.xp==0);
    allow update:if isAdmin()||(owns(uid)&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(['displayName','updatedAt']));
    allow delete:if isAdmin();
+  }
+  match /xpTransactions/{id}{
+   allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);
+   allow create:if isAdmin()&&request.resource.data.uid is string&&request.resource.data.amount is int&&request.resource.data.amount>0&&request.resource.data.reason is string;
+   allow update,delete:if false;
   }
   match /subjects/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
   match /lessons/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
