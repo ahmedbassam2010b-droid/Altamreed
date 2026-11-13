@@ -15,6 +15,8 @@ export const BADGES = [
   { id: "first_exam", title: "أول اختبار", description: "الحصول على أول مكافأة من اختبار معتمد", icon: "📝", test: ({ examCount }) => examCount >= 1 },
   { id: "perfect_exam", title: "العقل المتميز", description: "تحقيق 100% في اختبار معتمد", icon: "🧠", test: ({ perfectExam }) => perfectExam },
   { id: "challenge_10", title: "بطل التحديات", description: "حل 10 تحديات يومية صحيحة ومعتمدة", icon: "🏆", test: ({ challengeCount }) => challengeCount >= 10 },
+  { id: "streak_7", title: "المثابر", description: "7 أيام متتالية من النشاط التعليمي المعتمد", icon: "🔥", test: ({ streakDays }) => streakDays >= 7 },
+  { id: "streak_30", title: "صاحب الاستمرارية", description: "30 يومًا متتاليًا من النشاط التعليمي المعتمد", icon: "🌟", test: ({ streakDays }) => streakDays >= 30 },
   { id: "xp_100", title: "بداية قوية", description: "جمع 100 نقطة خبرة", icon: "⭐", test: ({ xp }) => xp >= 100 },
   { id: "xp_500", title: "صاحب عزيمة", description: "جمع 500 نقطة خبرة", icon: "💎", test: ({ xp }) => xp >= 500 },
   { id: "xp_1000", title: "المتفوق", description: "جمع 1000 نقطة خبرة", icon: "🥇", test: ({ xp }) => xp >= 1000 },
@@ -38,4 +40,24 @@ export function getExamXp(percentage = 0) {
   if (score >= 70) return 20;
   if (score >= 50) return 10;
   return 0;
+}
+
+export function getVerifiedStreak(transactions = [], timeZone = "Africa/Cairo") {
+  const formatter = new Intl.DateTimeFormat("en-CA", { timeZone, year: "numeric", month: "2-digit", day: "2-digit" });
+  const days = [...new Set(transactions.filter(item => item.createdAt?.toDate).map(item => formatter.format(item.createdAt.toDate())))].sort().reverse();
+  if (!days.length) return 0;
+  const today = formatter.format(new Date());
+  const yesterdayDate = new Date();
+  yesterdayDate.setDate(yesterdayDate.getDate() - 1);
+  const yesterday = formatter.format(yesterdayDate);
+  if (days[0] !== today && days[0] !== yesterday) return 0;
+  let streak = 0;
+  let expected = new Date(days[0] + "T00:00:00Z");
+  for (const day of days) {
+    const key = expected.toISOString().slice(0, 10);
+    if (day !== key) break;
+    streak += 1;
+    expected.setUTCDate(expected.getUTCDate() - 1);
+  }
+  return streak;
 }
