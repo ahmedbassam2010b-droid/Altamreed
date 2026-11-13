@@ -48,7 +48,8 @@ export function getVerifiedStreak(transactions = [], timeZone = "Africa/Cairo") 
     const part = type => parts.find(item => item.type === type)?.value || "00";
     return part("year") + "-" + part("month") + "-" + part("day");
   };
-  const days = [...new Set(transactions.filter(item => item.createdAt?.toDate).map(item => dateKey(item.createdAt.toDate())))].sort().reverse();
+  const verified = transactions.filter(item => ["exam", "challenge", "task"].includes(item.sourceType) && item.createdAt?.toDate);
+  const days = [...new Set(verified.map(item => dateKey(item.createdAt.toDate())))].sort().reverse();
   if (!days.length) return 0;
   const today = dateKey(new Date());
   const yesterdayDate = new Date(today + "T00:00:00Z");
