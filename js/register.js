@@ -4,7 +4,7 @@ import {
   GoogleAuthProvider, signInWithPopup, signInWithRedirect
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 import {
-  collection, getDocs, doc, getDoc, setDoc, serverTimestamp
+  collection, getDocs, doc, getDoc, setDoc, updateDoc, serverTimestamp
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
 const form = document.getElementById("registerForm");
@@ -75,13 +75,15 @@ async function saveStudentProfile(user, gradeId, displayName) {
     if (existing.data().gradeId && existing.data().gradeId !== grade.id) {
       throw new Error("GRADE_ALREADY_ASSIGNED");
     }
-    await setDoc(profileRef, profile, { merge: true });
+    await updateDoc(profileRef, { gradeId: grade.id, gradeName: grade.name, updatedAt: serverTimestamp() });
   } else {
     await setDoc(profileRef, { ...profile, xp: 0, createdAt: serverTimestamp() });
   }
-  await setDoc(doc(db, "publicProfiles", user.uid), {
-    displayName: profile.displayName, xp: 0, updatedAt: serverTimestamp()
-  }, { merge: true });
+  const publicRef = doc(db, "publicProfiles", user.uid);
+  const publicSnap = await getDoc(publicRef);
+  if (!publicSnap.exists()) {
+    await setDoc(publicRef, { displayName: profile.displayName, xp: 0, updatedAt: serverTimestamp() });
+  }
 }
 async function handleSignedInUser(user) {
   if (!user || creatingEmailAccount) return;
