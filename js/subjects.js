@@ -4,7 +4,9 @@ import {
   collection,
   getDocs,
   query,
-  where
+  where,
+  doc,
+  getDoc
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 
 import {
@@ -44,16 +46,20 @@ function renderSubject(subjectId, data) {
   return card;
 }
 
-async function loadSubjects() {
+async function loadSubjects(user) {
   if (!subjectsGrid) return;
 
   subjectsGrid.replaceChildren();
   showMessage("جاري تحميل المواد...");
 
   try {
+    const profile = await getDoc(doc(db, "users", user.uid));
+    const gradeId = profile.exists() ? profile.data().gradeId : "";
+    if (!gradeId) { window.location.replace("register.html"); return; }
     const subjectsQuery = query(
       collection(db, "subjects"),
-      where("published", "==", true)
+      where("published", "==", true),
+      where("gradeId", "==", gradeId)
     );
 
     const snapshot = await getDocs(subjectsQuery);
@@ -90,5 +96,5 @@ onAuthStateChanged(auth, (user) => {
     return;
   }
 
-  loadSubjects();
+  loadSubjects(user);
 });
