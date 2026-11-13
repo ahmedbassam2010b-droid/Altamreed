@@ -32,7 +32,7 @@
 - لا تحذف مستند المدير الموجود ولا تغيّر قواعد Firebase المنشورة قبل مراجعة النسخة الحالية ومقارنتها بهذه القواعد.
 
 ## مجموعات Firestore
-`admins`, `users`, `publicProfiles`, `subjects`, `lessons`, `exams`, `examResults`, `library`, `notifications`, `revisionCards`, `dailyChallenges`, `simulations`, `studyTasks`, `communityPosts`, `messages`.
+`admins`, `users`, `publicProfiles`, `subjects`, `lessons`, `exams`, `examAnswerKeys`, `examAttempts`, `examResults`, `library`, `notifications`, `revisionCards`, `dailyChallenges`, `challengeAnswerKeys`, `challengeResponses`, `simulations`, `studyTasks`, `communityPosts`, `messages`.
 
 ## التشغيل
 شغّل الموقع عبر استضافة صفحات ثابتة تدعم ES Modules وHTTPS، ثم اختبر الدخول والقراءة والكتابة على Firebase. يلزم اختبار قواعد Firestore المنشورة مع حساب طالب وحساب مدير قبل اعتماد النسخة النهائية.
