@@ -4,6 +4,7 @@ import {
   signInWithEmailAndPassword,
   onAuthStateChanged,
   GoogleAuthProvider,
+  signInWithPopup,
   signInWithRedirect
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 
@@ -86,7 +87,12 @@ if (googleButton) {
     try {
       const provider = new GoogleAuthProvider();
       provider.setCustomParameters({ prompt: "select_account" });
-      await signInWithRedirect(auth, provider);
+      try {
+        await signInWithPopup(auth, provider);
+      } catch (popupError) {
+        if (popupError.code !== "auth/popup-blocked") throw popupError;
+        await signInWithRedirect(auth, provider);
+      }
     } catch (error) {
       console.error("Google sign-in error:", error);
       showMessage(getArabicError(error.code));
