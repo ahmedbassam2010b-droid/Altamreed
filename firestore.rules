@@ -26,6 +26,16 @@ service cloud.firestore {
    allow update:if isAdmin()||(owns(uid)&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(['displayName','updatedAt']));
    allow delete:if isAdmin();
   }
+  function validTaskForStudent(taskId){return signedIn()&&userDocExists()&&exists(/databases/$(database)/documents/gamificationTasks/$(taskId))&&get(/databases/$(database)/documents/gamificationTasks/$(taskId)).data.get("published",false)==true&&get(/databases/$(database)/documents/gamificationTasks/$(taskId)).data.get("gradeId","")==studentGrade();}
+  match /gamificationTasks/{id}{
+   allow read:if isAdmin()||(resource.data.get("published",false)==true&&gradeAccess());
+   allow create,update,delete:if isAdmin();
+  }
+  match /gamificationSubmissions/{id}{
+   allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);
+   allow create:if signedIn()&&request.resource.data.uid==request.auth.uid&&request.resource.data.taskId is string&&request.resource.data.status=="pending"&&id==request.resource.data.taskId+"_"+request.auth.uid&&validTaskForStudent(request.resource.data.taskId);
+   allow update,delete:if isAdmin();
+  }
   match /xpTransactions/{id}{
    allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);
    allow create:if isAdmin()&&request.resource.data.uid is string&&request.resource.data.amount is int&&request.resource.data.amount>0&&request.resource.data.reason is string;
