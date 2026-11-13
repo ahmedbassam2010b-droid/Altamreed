@@ -43,19 +43,22 @@ export function getExamXp(percentage = 0) {
 }
 
 export function getVerifiedStreak(transactions = [], timeZone = "Africa/Cairo") {
-  const formatter = new Intl.DateTimeFormat("en-CA", { timeZone, year: "numeric", month: "2-digit", day: "2-digit" });
-  const days = [...new Set(transactions.filter(item => item.createdAt?.toDate).map(item => formatter.format(item.createdAt.toDate())))].sort().reverse();
+  const dateKey = value => {
+    const parts = new Intl.DateTimeFormat("en", { timeZone, year: "numeric", month: "2-digit", day: "2-digit" }).formatToParts(value);
+    const part = type => parts.find(item => item.type === type)?.value || "00";
+    return part("year") + "-" + part("month") + "-" + part("day");
+  };
+  const days = [...new Set(transactions.filter(item => item.createdAt?.toDate).map(item => dateKey(item.createdAt.toDate())))].sort().reverse();
   if (!days.length) return 0;
-  const today = formatter.format(new Date());
-  const yesterdayDate = new Date();
-  yesterdayDate.setDate(yesterdayDate.getDate() - 1);
-  const yesterday = formatter.format(yesterdayDate);
+  const today = dateKey(new Date());
+  const yesterdayDate = new Date(today + "T00:00:00Z");
+  yesterdayDate.setUTCDate(yesterdayDate.getUTCDate() - 1);
+  const yesterday = yesterdayDate.toISOString().slice(0, 10);
   if (days[0] !== today && days[0] !== yesterday) return 0;
   let streak = 0;
-  let expected = new Date(days[0] + "T00:00:00Z");
+  const expected = new Date(days[0] + "T00:00:00Z");
   for (const day of days) {
-    const key = expected.toISOString().slice(0, 10);
-    if (day !== key) break;
+    if (day !== expected.toISOString().slice(0, 10)) break;
     streak += 1;
     expected.setUTCDate(expected.getUTCDate() - 1);
   }
