@@ -61,6 +61,13 @@
           </div>
 
           <div class="form-group">
+            <label for="gradeId">الصف الدراسي</label>
+            <select id="gradeId" name="gradeId" required>
+              <option value="">جاري تحميل الصفوف...</option>
+            </select>
+          </div>
+
+          <div class="form-group">
             <label for="password">كلمة المرور</label>
             <input
               id="password"
@@ -92,6 +99,15 @@
             إنشاء الحساب
           </button>
         </form>
+
+        <section id="googleGradePanel" class="form-group" hidden>
+          <p class="auth-description">اختار صفك الدراسي لإكمال إنشاء حساب Google.</p>
+          <label for="googleGradeId">الصف الدراسي</label>
+          <select id="googleGradeId" required>
+            <option value="">جاري تحميل الصفوف...</option>
+          </select>
+          <button id="saveGoogleGradeButton" class="btn btn-primary btn-block" type="button">حفظ الصف وإكمال التسجيل</button>
+        </section>
 
         <div class="auth-divider"><span>أو</span></div>
         <button id="googleRegisterButton" class="btn btn-google btn-block" type="button">

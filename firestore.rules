@@ -1,0 +1,67 @@
+rules_version = '2';
+service cloud.firestore {
+ match /databases/{database}/documents {
+  function signedIn(){return request.auth!=null;}
+  function isAdmin(){return signedIn() && exists(/databases/$(database)/documents/admins/$(request.auth.uid)) && get(/databases/$(database)/documents/admins/$(request.auth.uid)).data.get("active", true)==true;}
+  function owns(uid){return signedIn() && request.auth.uid==uid;}
+  function userDocExists(){return signedIn() && exists(/databases/$(database)/documents/users/$(request.auth.uid));}
+  function studentGrade(){return userDocExists() ? get(/databases/$(database)/documents/users/$(request.auth.uid)).data.get("gradeId","") : "";}
+  function validGrade(gradeId){return gradeId is string && exists(/databases/$(database)/documents/grades/$(gradeId)) && get(/databases/$(database)/documents/grades/$(gradeId)).data.get("active",false)==true;}
+  function gradeAccess(){return signedIn() && userDocExists() && resource.data.get("gradeId","")!="" && resource.data.gradeId==studentGrade();}
+  match /admins/{uid}{allow get:if owns(uid);allow list,create,update,delete:if false;}
+  match /grades/{id}{
+   allow read:if isAdmin()||(signedIn()&&resource.data.get("active",false)==true);
+   allow create,update,delete:if isAdmin();
+  }
+  match /users/{uid}{
+   allow read:if owns(uid)||isAdmin();
+   allow create:if owns(uid)&&request.resource.data.uid==uid&&request.resource.data.gradeId is string&&validGrade(request.resource.data.gradeId);
+   allow update:if isAdmin()||(owns(uid)&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(['displayName','photoURL','updatedAt']))||(owns(uid)&&!resource.data.keys().hasAny(['gradeId'])&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(['gradeId','gradeName','updatedAt'])&&validGrade(request.resource.data.gradeId));
+   allow delete:if isAdmin();
+   match /bookmarks/{bookmarkId}{allow read,write:if owns(uid);}
+  }
+  match /publicProfiles/{uid}{
+   allow read:if signedIn();
+   allow create:if isAdmin()||(owns(uid)&&request.resource.data.keys().hasOnly(['displayName','xp','updatedAt'])&&request.resource.data.xp==0);
+   allow update:if isAdmin()||(owns(uid)&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(['displayName','updatedAt']));
+   allow delete:if isAdmin();
+  }
+  function validTaskForStudent(taskId){return signedIn()&&userDocExists()&&exists(/databases/$(database)/documents/gamificationTasks/$(taskId))&&get(/databases/$(database)/documents/gamificationTasks/$(taskId)).data.get("published",false)==true&&get(/databases/$(database)/documents/gamificationTasks/$(taskId)).data.get("gradeId","")==studentGrade();}
+  match /gamificationTasks/{id}{
+   allow read:if isAdmin()||(resource.data.get("published",false)==true&&gradeAccess());
+   allow create,update,delete:if isAdmin();
+  }
+  match /gamificationSubmissions/{id}{
+   allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);
+   allow create:if signedIn()&&request.resource.data.uid==request.auth.uid&&request.resource.data.taskId is string&&request.resource.data.status=="pending"&&id==request.resource.data.taskId+"_"+request.auth.uid&&validTaskForStudent(request.resource.data.taskId);
+   allow update,delete:if isAdmin();
+  }
+  match /xpTransactions/{id}{
+   allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);
+   allow create:if isAdmin()&&request.resource.data.uid is string&&request.resource.data.amount is int&&request.resource.data.amount>0&&request.resource.data.reason is string;
+   allow update,delete:if false;
+  }
+  match /subjects/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
+  match /lessons/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
+  match /exams/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
+  match /examAnswerKeys/{id}{allow read,write:if isAdmin();}
+  match /library/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
+  match /notifications/{id}{allow read:if isAdmin()||(signedIn()&&resource.data.published==true);allow create,update,delete:if isAdmin();}
+  match /revisionCards/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
+  match /dailyChallenges/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
+  match /challengeAnswerKeys/{id}{allow read,write:if isAdmin();}
+  match /simulations/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
+  match /studyTasks/{id}{
+   allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);
+   allow create:if signedIn()&&request.resource.data.uid==request.auth.uid;
+   allow update:if signedIn()&&resource.data.uid==request.auth.uid&&request.resource.data.uid==request.auth.uid;
+   allow delete:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);
+  }
+  match /examResults/{id}{allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow create,update,delete:if isAdmin();}
+  match /examAttempts/{id}{allow create:if signedIn()&&request.resource.data.uid==request.auth.uid&&request.resource.data.status=="pending"&&id==request.resource.data.examId+"_"+request.auth.uid&&!exists(/databases/$(database)/documents/examAttempts/$(request.resource.data.examId+"_"+request.auth.uid));allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow update,delete:if isAdmin();}
+  match /challengeResponses/{id}{allow create:if signedIn()&&request.resource.data.uid==request.auth.uid&&request.resource.data.status=="pending"&&id==request.resource.data.challengeId+"_"+request.auth.uid&&!exists(/databases/$(database)/documents/challengeResponses/$(request.resource.data.challengeId+"_"+request.auth.uid));allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow update,delete:if isAdmin();}
+  match /communityPosts/{id}{allow read:if signedIn();allow create:if signedIn()&&request.resource.data.uid==request.auth.uid;allow update,delete:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);}
+  match /messages/{id}{allow create:if signedIn()&&request.resource.data.uid==request.auth.uid;allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow update,delete:if isAdmin();}
+  match /{document=**}{allow read,write:if false;}
+ }
+}

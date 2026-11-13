@@ -1,175 +1,29 @@
-import { auth, db } from "./config.js";
-
-import {
-  onAuthStateChanged,
-  signOut
-} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
-
-import {
-  addDoc,
-  collection,
-  doc,
-  getDoc,
-  getDocs,
-  serverTimestamp
-} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
-
-const statusBox = document.getElementById("adminStatus");
-const workspace = document.getElementById("adminWorkspace");
-const subjectForm = document.getElementById("subjectForm");
-const lessonForm = document.getElementById("lessonForm");
-const subjectSelect = document.getElementById("lessonSubject");
-const subjectsList = document.getElementById("subjectsAdminList");
-const logoutButton = document.getElementById("adminLogout");
-
-function setStatus(message, state = "info") {
-  statusBox.textContent = message;
-  statusBox.dataset.state = state;
-}
-
-function setFormBusy(form, busy, idleText, busyText) {
-  const button = form.querySelector('button[type="submit"]');
-  button.disabled = busy;
-  button.textContent = busy ? busyText : idleText;
-}
-
-function appendSubjectOption(id, data) {
-  const option = document.createElement("option");
-  option.value = id;
-  option.textContent = data.title || "مادة بدون اسم";
-  subjectSelect.appendChild(option);
-}
-
-function renderSubject(id, data) {
-  const item = document.createElement("article");
-  item.className = "admin-list-item";
-
-  const title = document.createElement("strong");
-  title.textContent = data.title || "مادة بدون اسم";
-
-  const details = document.createElement("p");
-  details.textContent = [
-    data.grade || "",
-    data.term || "",
-    data.published === true ? "منشورة" : "مسودة"
-  ].filter(Boolean).join(" • ");
-
-  item.append(title, details);
-  return item;
-}
-
-async function loadSubjects() {
-  const snapshot = await getDocs(collection(db, "subjects"));
-  const records = snapshot.docs.map((item) => ({
-    id: item.id,
-    data: item.data()
-  }));
-
-  records.sort((a, b) => (Number(a.data.order) || 0) - (Number(b.data.order) || 0));
-
-  subjectSelect.replaceChildren(new Option("اختر المادة", ""));
-  subjectsList.replaceChildren();
-
-  if (records.length === 0) {
-    subjectsList.textContent = "لا توجد مواد حتى الآن. أضف مادة من النموذج بالأعلى.";
-    return;
-  }
-
-  records.forEach(({ id, data }) => {
-    appendSubjectOption(id, data);
-    subjectsList.appendChild(renderSubject(id, data));
-  });
-}
-
-subjectForm.addEventListener("submit", async (event) => {
-  event.preventDefault();
-  setFormBusy(subjectForm, true, "حفظ المادة في Firestore", "جاري الحفظ...");
-
-  try {
-    await addDoc(collection(db, "subjects"), {
-      title: document.getElementById("subjectTitle").value.trim(),
-      description: document.getElementById("subjectDescription").value.trim(),
-      grade: document.getElementById("subjectGrade").value.trim(),
-      term: document.getElementById("subjectTerm").value.trim(),
-      order: Number(document.getElementById("subjectOrder").value),
-      published: document.getElementById("subjectPublished").checked,
-      createdAt: serverTimestamp(),
-      updatedAt: serverTimestamp()
-    });
-
-    subjectForm.reset();
-    document.getElementById("subjectOrder").value = "1";
-    await loadSubjects();
-    setStatus("تم حفظ المادة بنجاح في Firestore.", "success");
-  } catch (error) {
-    console.error("Subject creation failed:", error);
-    setStatus("تعذر حفظ المادة. تحقق من صلاحيات المدير واتصال الإنترنت.", "error");
-  } finally {
-    setFormBusy(subjectForm, false, "حفظ المادة في Firestore", "جاري الحفظ...");
-  }
-});
-
-lessonForm.addEventListener("submit", async (event) => {
-  event.preventDefault();
-  setFormBusy(lessonForm, true, "حفظ الدرس في Firestore", "جاري الحفظ...");
-
-  try {
-    await addDoc(collection(db, "lessons"), {
-      subjectId: subjectSelect.value,
-      title: document.getElementById("lessonTitle").value.trim(),
-      content: document.getElementById("lessonContent").value.trim(),
-      order: Number(document.getElementById("lessonOrder").value),
-      published: document.getElementById("lessonPublished").checked,
-      createdAt: serverTimestamp(),
-      updatedAt: serverTimestamp()
-    });
-
-    lessonForm.reset();
-    document.getElementById("lessonOrder").value = "1";
-    await loadSubjects();
-    setStatus("تم حفظ الدرس بنجاح في Firestore.", "success");
-  } catch (error) {
-    console.error("Lesson creation failed:", error);
-    setStatus("تعذر حفظ الدرس. تحقق من صلاحيات المدير واتصال الإنترنت.", "error");
-  } finally {
-    setFormBusy(lessonForm, false, "حفظ الدرس في Firestore", "جاري الحفظ...");
-  }
-});
-
-onAuthStateChanged(auth, async (user) => {
-  if (!user) {
-    window.location.replace("login.html");
-    return;
-  }
-
-  try {
-    const adminSnapshot = await getDoc(doc(db, "admins", user.uid));
-
-    if (!adminSnapshot.exists()) {
-      setStatus("هذا الحساب غير مسجل كمدير. لا يمكنك الوصول إلى أدوات الإدارة.", "error");
-      return;
-    }
-
-    workspace.hidden = false;
-    setStatus("تم التحقق من صلاحيات الإدارة.", "success");
-    await loadSubjects();
-  } catch (error) {
-    console.error("Admin authorization check failed:", error);
-    setStatus(
-      "تعذر التحقق من صلاحيات الإدارة. راجع قاعدة Firestore للسماح للمدير بقراءة مستنده فقط.",
-      "error"
-    );
-  }
-});
-
-logoutButton.addEventListener("click", async () => {
-  logoutButton.disabled = true;
-  try {
-    await signOut(auth);
-    window.location.replace("login.html");
-  } catch (error) {
-    console.error("Admin logout failed:", error);
-    logoutButton.disabled = false;
-    setStatus("تعذر تسجيل الخروج. حاول مرة أخرى.", "error");
-  }
-});
+import {auth,db} from "./config.js";
+import {onAuthStateChanged,signOut} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
+import {collection,addDoc,getDocs,doc,getDoc,setDoc,deleteDoc,serverTimestamp,updateDoc,runTransaction} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+import {getExamXp} from "./gamification.js";
+const $=s=>document.querySelector(s),el=(t,c,x)=>{const n=document.createElement(t);if(c)n.className=c;if(x!==undefined)n.textContent=x;return n;},status=$("#adminStatus"),workspace=$("#adminWorkspace");
+function report(t,state="info"){status.textContent=t;status.dataset.state=state;}function val(id){return $("#"+id)?.value?.trim()||"";}function checked(id){return !!$("#"+id)?.checked;}function failed(e){console.error(e);report("تعذر تنفيذ العملية. راجع صلاحيات Firestore. "+(e.code||""),"error");}
+async function allowed(u){const s=await getDoc(doc(db,"admins",u.uid));return s.exists()&&s.data().active!==false;}
+let gradesCache=[];
+function addQuestion(){const w=el("fieldset","question-editor");w.innerHTML='<legend>سؤال</legend><label>نص السؤال<textarea class="q-text" required maxlength="1000"></textarea></label><div class="q-choices"></div><label>الإجابة الصحيحة<select class="q-correct"><option value="0">الأول</option><option value="1">الثاني</option><option value="2">الثالث</option><option value="3">الرابع</option></select></label><label>الدرجة<input class="q-points" type="number" min="1" value="1"></label><button type="button" class="btn btn-danger">حذف السؤال</button>';const box=w.querySelector(".q-choices");for(let i=0;i<4;i++){const l=el("label","","الاختيار "+(i+1)),inp=el("input");inp.className="q-choice";inp.required=true;l.append(inp);box.append(l);}w.querySelector("button").onclick=()=>w.remove();$("#questionsContainer").append(w);}
+async function commitReview({uid,sourceType,sourceId,amount,reason,percentage,mutate}){const profileRef=doc(db,"publicProfiles",uid),txId=(sourceType+"_"+sourceId).replace(/[\\/#?]/g,"_"),txRef=doc(db,"xpTransactions",txId);await runTransaction(db,async transaction=>{const [profileSnap,txSnap]=await Promise.all([transaction.get(profileRef),transaction.get(txRef)]);if(txSnap.exists())throw new Error("XP_ALREADY_AWARDED");if(amount>0&&!profileSnap.exists())throw new Error("PUBLIC_PROFILE_MISSING");if(mutate)mutate(transaction);if(amount>0){transaction.set(txRef,{uid,amount,sourceType,sourceId,reason,percentage:percentage??null,createdAt:serverTimestamp()});transaction.update(profileRef,{xp:(Number(profileSnap.data().xp)||0)+amount,updatedAt:serverTimestamp()});}});}
+async function gradeAttempt(id,data){try{const [examSnap,keySnap]=await Promise.all([getDoc(doc(db,"exams",data.examId)),getDoc(doc(db,"examAnswerKeys",data.examId))]);if(!examSnap.exists()||!keySnap.exists())return report("تعذر العثور على الاختبار أو مفتاح إجابته.","error");const qs=examSnap.data().questions||[],keys=keySnap.data().correctIndexes||[],review=qs.map((q,i)=>{const correctIndex=Number(keys[i]),selected=Number(data.answers?.[i]),points=Number(q.points)||1;return {question:q.text,selected,correctIndex,correct:selected===correctIndex,points};});const score=review.reduce((n,q)=>n+(q.correct?q.points:0),0),maxScore=review.reduce((n,q)=>n+q.points,0),percentage=maxScore?Math.round(score/maxScore*100):0,amount=getExamXp(percentage);await commitReview({uid:data.uid,sourceType:"exam",sourceId:id,amount,reason:"مكافأة نتيجة اختبار: "+(data.examTitle||examSnap.data().title||"اختبار"),percentage,mutate:transaction=>{transaction.set(doc(db,"examResults",id),{uid:data.uid,examId:data.examId,examTitle:data.examTitle||examSnap.data().title||"اختبار",score,maxScore,percentage,createdAt:serverTimestamp()});transaction.update(doc(db,"examAttempts",id),{status:"reviewed",score,maxScore,percentage,xpAwarded:amount,reviewedAt:serverTimestamp()});}});report("تم اعتماد النتيجة"+(amount?" وصرف "+amount+" XP":"؛ لا توجد مكافأة لهذه النسبة")+".","success");await refresh();}catch(e){if(e.message==="XP_ALREADY_AWARDED")report("تم صرف مكافأة هذه المحاولة بالفعل؛ لم يتم تكرارها.","error");else failed(e);}}
+async function reviewChallengeResponse(id,data){try{const keySnap=await getDoc(doc(db,"challengeAnswerKeys",data.challengeId));if(!keySnap.exists())return report("مفتاح إجابة التحدي غير موجود.","error");const correct=Number(data.selectedIndex)===Number(keySnap.data().correctIndex),amount=correct?10:0;await commitReview({uid:data.uid,sourceType:"challenge",sourceId:id,amount,reason:"إجابة صحيحة في التحدي اليومي",mutate:transaction=>transaction.update(doc(db,"challengeResponses",id),{status:"reviewed",isCorrect:correct,xpAwarded:amount,reviewedAt:serverTimestamp()})});report(correct?"إجابة صحيحة؛ تم اعتماد 10 XP.":"تمت مراجعة الإجابة؛ لا توجد نقاط لهذه المحاولة.","success");await refresh();}catch(e){if(e.message==="XP_ALREADY_AWARDED")report("سبق اعتماد مكافأة هذا التحدي.","error");else failed(e);}}
+async function reviewTaskSubmission(id,data,approve){try{if(!approve){await updateDoc(doc(db,"gamificationSubmissions",id),{status:"rejected",reviewedAt:serverTimestamp()});report("تم رفض طلب إنجاز المهمة.","success");await refresh();return;}const taskSnap=await getDoc(doc(db,"gamificationTasks",data.taskId));if(!taskSnap.exists())return report("المهمة الأصلية غير موجودة.","error");const task=taskSnap.data(),amount=Math.max(0,Math.min(100,Number(task.rewardXp)||0));if(!amount)return report("قيمة مكافأة المهمة غير صحيحة.","error");await commitReview({uid:data.uid,sourceType:"task",sourceId:id,amount,reason:"إتمام مهمة تعليمية: "+(task.title||"مهمة"),mutate:transaction=>transaction.update(doc(db,"gamificationSubmissions",id),{status:"approved",xpAwarded:amount,reviewedAt:serverTimestamp()})});report("تم اعتماد المهمة وصرف "+amount+" XP.","success");await refresh();}catch(e){if(e.message==="XP_ALREADY_AWARDED")report("سبق صرف مكافأة هذه المهمة.","error");else failed(e);}}
+async function listing(name,target,label){const box=$(target);if(!box)return;box.replaceChildren();const s=await getDocs(collection(db,name));if(s.empty){box.append(el("p","muted","لا توجد عناصر."));return;}s.docs.forEach(d=>{const data=d.data(),r=el("article","admin-item");r.append(el("strong","",label(data)),el("small","",d.id));const detail=data.body||data.content||data.question||data.description;if(detail)r.append(el("p","muted",String(detail).slice(0,220)));if(Array.isArray(data.answers))r.append(el("p","muted","إجابات الطالب (ترقيم الاختيار يبدأ من 1): "+data.answers.map(x=>Number(x)+1).join("، ")));if(name==="challengeResponses"&&Number.isInteger(data.selectedIndex))r.append(el("p","muted","اختيار الطالب: "+(data.selectedIndex+1)));if(["subjects","lessons","exams","library","revisionCards","dailyChallenges","simulations"].includes(name)&&!data.gradeId){const gradeSelect=el("select");gradeSelect.add(new Option("تحديد الصف",""));gradesCache.filter(g=>g.active!==false).forEach(g=>gradeSelect.add(new Option(g.name,g.id)));const assign=el("button","btn btn-secondary","ربط بالصف");assign.onclick=async()=>{if(!gradeSelect.value)return report("اختر الصف أولًا.","error");try{await updateDoc(doc(db,name,d.id),{gradeId:gradeSelect.value,updatedAt:serverTimestamp()});report("تم ربط المحتوى بالصف.","success");await refresh();}catch(e){failed(e);}};r.append(gradeSelect,assign);}if(typeof data.published==="boolean"){const t=el("button","btn btn-secondary",data.published?"إلغاء النشر":"نشر");t.onclick=async()=>{try{await updateDoc(doc(db,name,d.id),{published:!data.published,updatedAt:serverTimestamp()});report("تم تحديث حالة النشر.","success");await refresh();}catch(e){failed(e);}};r.append(t);}if(name==="examAttempts"&&data.status!=="reviewed"){const g=el("button","btn btn-primary","مراجعة وتصحيح");g.onclick=()=>gradeAttempt(d.id,data);r.append(g);}if(name==="gamificationSubmissions"&&data.status==="pending"){const approve=el("button","btn btn-primary","اعتماد وصرف المكافأة");approve.onclick=()=>reviewTaskSubmission(d.id,data,true);const reject=el("button","btn btn-danger","رفض الطلب");reject.onclick=()=>reviewTaskSubmission(d.id,data,false);r.append(approve,reject);}if(name==="gamificationSubmissions"&&data.status!=="pending")r.append(el("small","",data.status==="approved"?"تم الاعتماد — "+(data.xpAwarded||0)+" XP":"مرفوض"));if(name==="challengeResponses"&&data.status!=="reviewed"){const g=el("button","btn btn-primary","مراجعة واعتماد");g.onclick=()=>reviewChallengeResponse(d.id,data);r.append(g);}if(name==="examAttempts"&&data.status==="reviewed"&&Number(data.xpAwarded)>0)r.append(el("small","", "المكافأة: "+data.xpAwarded+" XP"));if(name==="challengeResponses"&&data.status==="reviewed")r.append(el("small","",data.isCorrect?"مكافأة: "+(data.xpAwarded||0)+" XP":"إجابة غير صحيحة"));if(name!=="users"&&name!=="xpTransactions"){const b=el("button","btn btn-danger","حذف");b.onclick=async()=>{if(confirm("تأكيد الحذف؟")){try{await deleteDoc(doc(db,name,d.id));r.remove();}catch(e){failed(e);}}};r.append(b);}box.append(r);});}
+async function refreshGrades(){const snapshot=await getDocs(collection(db,"grades"));const grades=snapshot.docs.map(d=>({id:d.id,...d.data()})).sort((a,b)=>(Number(a.order)||0)-(Number(b.order)||0));gradesCache=grades;const ids=["subjectYear","examGrade","resourceGrade","revisionGrade","challengeGrade","simulationGrade","gamificationTaskGrade"];ids.forEach(id=>{const s=$("#"+id);if(!s)return;s.replaceChildren(new Option("اختر الصف",""));grades.filter(g=>g.active!==false).forEach(g=>s.add(new Option(g.name,g.id)));});const box=$("#gradesList");if(box){box.replaceChildren();if(!grades.length)box.append(el("p","muted","لم تتم إضافة صفوف بعد."));grades.forEach(g=>{const row=el("div","admin-item");row.append(el("strong","",g.name||"صف بدون اسم"));const edit=el("button","btn btn-secondary","تعديل الاسم");edit.onclick=async()=>{const name=prompt("اكتب اسم الصف الجديد:",g.name||"");if(!name||!name.trim())return;try{await updateDoc(doc(db,"grades",g.id),{name:name.trim(),updatedAt:serverTimestamp()});report("تم تعديل الصف.","success");await refresh();}catch(e){failed(e);}};const toggle=el("button","btn btn-secondary",g.active===false?"تفعيل":"إيقاف");toggle.onclick=async()=>{try{await updateDoc(doc(db,"grades",g.id),{active:g.active===false,updatedAt:serverTimestamp()});report("تم تحديث حالة الصف.","success");await refresh();}catch(e){failed(e);}};row.append(edit,toggle);box.append(row);});}return grades;}
+async function refresh(){const grades=await refreshGrades();const subjectsSnapshot=await getDocs(collection(db,"subjects"));for(const d of subjectsSnapshot.docs){const data=d.data();if(!data.gradeId){const match=grades.find(g=>g.name===(data.year||data.grade));if(match)await updateDoc(doc(db,"subjects",d.id),{gradeId:match.id});}}const freshSubjects=await getDocs(collection(db,"subjects"));const lessonsSnapshot=await getDocs(collection(db,"lessons"));for(const d of freshSubjects.docs){const data=d.data();if(data.gradeId){for(const lessonDoc of lessonsSnapshot.docs){const ld=lessonDoc.data();if(ld.subjectId===d.id&&!ld.gradeId)await updateDoc(doc(db,"lessons",lessonDoc.id),{gradeId:data.gradeId});}}}const s=freshSubjects,sel=$("#lessonSubject"),examSel=$("#examSubject");sel.replaceChildren(new Option("اختر المادة",""));if(examSel)examSel.replaceChildren(new Option("اختبار عام",""));s.docs.forEach(d=>{sel.add(new Option(d.data().title||"مادة",d.id));if(examSel)examSel.add(new Option(d.data().title||"مادة",d.id));});await listing("subjects","#subjectsList",d=>d.title||"مادة");await listing("lessons","#lessonsList",d=>d.title||"درس");await listing("exams","#examsList",d=>d.title||"اختبار");await listing("examAttempts","#examAttemptsList",d=>(d.examTitle||"محاولة اختبار")+" — "+(d.status==="reviewed"?"تمت المراجعة":"قيد المراجعة"));await listing("challengeResponses","#challengeResponsesList",d=>"إجابة تحدٍ — "+(d.status||"قيد المراجعة"));await listing("library","#libraryList",d=>d.title||"مورد");await listing("users","#usersList",d=>(d.displayName||"طالب")+" — "+(d.email||""));await listing("messages","#messagesList",d=>(d.subject||"رسالة")+" — "+(d.email||d.uid||""));await listing("communityPosts","#communityList",d=>d.displayName||"مشاركة");await listing("notifications","#notificationsList",d=>d.title||"إشعار");await listing("revisionCards","#revisionList",d=>d.title||"مراجعة");await listing("dailyChallenges","#challengesList",d=>d.title||"تحدٍ");await listing("simulations","#simulationsList",d=>d.title||"محاكاة");await listing("xpTransactions","#xpTransactionsList",d=>(d.reason||"مكافأة XP")+" — "+(d.amount||0)+" نقطة");await listing("gamificationTasks","#gamificationTasksList",d=>(d.title||"مهمة")+" — "+(d.rewardXp||0)+" XP");await listing("gamificationSubmissions","#gamificationSubmissionsList",d=>"طلب إنجاز — "+(d.status||"قيد المراجعة"));}
+$("#adminLogout").onclick=async()=>{await signOut(auth);location.replace("admin-login.html");};$("#addQuestion").onclick=addQuestion;
+$("#gamificationTaskForm").onsubmit=async e=>{e.preventDefault();const gradeId=val("gamificationTaskGrade"),rewardXp=Number(val("gamificationTaskXp"));if(!gradesCache.some(g=>g.id===gradeId&&g.active!==false)||!Number.isInteger(rewardXp)||rewardXp<1||rewardXp>100)return report("اختر صفًا نشطًا وحدد مكافأة من 1 إلى 100 XP.","error");try{await addDoc(collection(db,"gamificationTasks"),{title:val("gamificationTaskTitle"),description:val("gamificationTaskDescription"),gradeId,rewardXp,published:checked("gamificationTaskPublished"),createdAt:serverTimestamp()});e.target.reset();report("تم حفظ المهمة التعليمية.","success");await refresh();}catch(x){failed(x);}};
+$("#manualXpForm").onsubmit=async e=>{e.preventDefault();const uid=val("manualXpUid"),amount=Number(val("manualXpAmount")),reason=val("manualXpReason");if(!uid||!Number.isInteger(amount)||amount<1||amount>500||reason.length<5)return report("أدخل UID صحيحًا ومكافأة من 1 إلى 500 وسببًا واضحًا.","error");try{const profileRef=doc(db,"publicProfiles",uid),txId=doc(collection(db,"xpTransactions")).id,txRef=doc(db,"xpTransactions",txId);await runTransaction(db,async transaction=>{const profileSnap=await transaction.get(profileRef);if(!profileSnap.exists())throw new Error("PUBLIC_PROFILE_MISSING");transaction.update(profileRef,{xp:(Number(profileSnap.data().xp)||0)+amount,updatedAt:serverTimestamp()});transaction.set(txRef,{uid,amount,sourceType:"manual",sourceId:txId,reason,createdAt:serverTimestamp()});});e.target.reset();report("تم تسجيل المكافأة وإضافة "+amount+" XP مع حفظ سجلها.","success");}catch(x){failed(x);}};
+$("#gradeForm").onsubmit=async e=>{e.preventDefault();const name=val("gradeName");if(name.length<3)return report("اكتب اسم الصف بشكل صحيح.","error");try{await addDoc(collection(db,"grades"),{name,active:true,order:Number(val("gradeOrder"))||1,createdAt:serverTimestamp()});e.target.reset();report("تمت إضافة الصف الدراسي.","success");await refresh();}catch(x){failed(x);}};
+$("#subjectForm").onsubmit=async e=>{e.preventDefault();try{const grade=gradesCache.find(g=>g.id===val("subjectYear"));if(!grade)return report("اختر صفًا دراسيًا صحيحًا.","error");await addDoc(collection(db,"subjects"),{title:val("subjectTitle"),gradeId:grade.id,year:grade.name,grade:grade.name,term:val("subjectTerm"),description:val("subjectDescription"),order:Number(val("subjectOrder"))||1,published:checked("subjectPublished"),createdAt:serverTimestamp()});e.target.reset();report("تم حفظ المادة.","success");await refresh();}catch(x){failed(x);}};
+$("#lessonForm").onsubmit=async e=>{e.preventDefault();try{const subjectSnap=await getDoc(doc(db,"subjects",val("lessonSubject")));if(!subjectSnap.exists())return report("المادة المختارة غير موجودة.","error");await addDoc(collection(db,"lessons"),{subjectId:val("lessonSubject"),gradeId:subjectSnap.data().gradeId,title:val("lessonTitle"),content:val("lessonContent"),order:Number(val("lessonOrder"))||1,published:checked("lessonPublished"),createdAt:serverTimestamp()});e.target.reset();report("تم حفظ الدرس.","success");await refresh();}catch(x){failed(x);}};
+$("#examForm").onsubmit=async e=>{e.preventDefault();const questions=[...document.querySelectorAll(".question-editor")].map(w=>({text:w.querySelector(".q-text").value.trim(),choices:[...w.querySelectorAll(".q-choice")].map(i=>i.value.trim()),points:Number(w.querySelector(".q-points").value)||1,correctIndex:Number(w.querySelector(".q-correct").value)}));if(!questions.length||questions.some(q=>!q.text||q.choices.some(c=>!c)))return report("أكمل سؤالًا واحدًا على الأقل والاختيارات الأربعة.","error");try{const publicQuestions=questions.map(({text,choices,points})=>({text,choices,points})),correctIndexes=questions.map(q=>q.correctIndex);const examSubjectId=val("examSubject");const subjectSnap=examSubjectId?await getDoc(doc(db,"subjects",examSubjectId)):null;const examGradeId=subjectSnap?.exists()?subjectSnap.data().gradeId:val("examGrade");if(!examGradeId)return report("اختر الصف الدراسي للاختبار.","error");const created=await addDoc(collection(db,"exams"),{gradeId:examGradeId,title:val("examTitle"),description:val("examDescription"),subjectId:examSubjectId,duration:Number(val("examDuration"))||30,questions:publicQuestions,published:false,createdAt:serverTimestamp()});await setDoc(doc(db,"examAnswerKeys",created.id),{examId:created.id,correctIndexes,createdAt:serverTimestamp()});if(checked("examPublished"))await updateDoc(doc(db,"exams",created.id),{published:true});e.target.reset();$("#questionsContainer").replaceChildren();report("تم إنشاء الاختبار وحفظ مفتاح الإجابة في مجموعة منفصلة خاصة بالإدارة. التصحيح الآلي متوقف على الخطة المجانية.","success");await refresh();}catch(x){failed(x);}};
+$("#libraryForm").onsubmit=async e=>{e.preventDefault();try{await addDoc(collection(db,"library"),{gradeId:val("resourceGrade"),title:val("resourceTitle"),description:val("resourceDescription"),type:val("resourceType"),url:val("resourceUrl"),published:checked("resourcePublished"),createdAt:serverTimestamp()});e.target.reset();report("تم حفظ المورد.","success");await refresh();}catch(x){failed(x);}};
+$("#noticeForm").onsubmit=async e=>{e.preventDefault();try{await addDoc(collection(db,"notifications"),{title:val("noticeTitle"),body:val("noticeBody"),published:checked("noticePublished"),createdAt:serverTimestamp()});e.target.reset();report("تم نشر الإشعار.","success");}catch(x){failed(x);}};
+$("#revisionForm").onsubmit=async e=>{e.preventDefault();try{await addDoc(collection(db,"revisionCards"),{gradeId:val("revisionGrade"),title:val("revisionTitle"),content:val("revisionContent"),published:checked("revisionPublished"),createdAt:serverTimestamp()});e.target.reset();report("تم حفظ بطاقة المراجعة.","success");}catch(x){failed(x);}};
+$("#challengeForm").onsubmit=async e=>{e.preventDefault();const choices=[0,1,2,3].map(i=>val("challengeChoice"+i));if(choices.some(x=>!x))return report("أكمل الاختيارات الأربعة.","error");try{const created=await addDoc(collection(db,"dailyChallenges"),{gradeId:val("challengeGrade"),title:val("challengeTitle"),question:val("challengeQuestion"),choices,published:false,createdAt:serverTimestamp()});await setDoc(doc(db,"challengeAnswerKeys",created.id),{challengeId:created.id,correctIndex:Number(val("challengeCorrect")),createdAt:serverTimestamp()});if(checked("challengePublished"))await updateDoc(doc(db,"dailyChallenges",created.id),{published:true});e.target.reset();report("تم حفظ التحدي ومفتاح إجابته المنفصل الخاص بالإدارة.","success");}catch(x){failed(x);}};
+$("#simulationForm").onsubmit=async e=>{e.preventDefault();try{const steps=val("simulationSteps").split(/\\r?\\n/).map(x=>x.trim()).filter(Boolean);if(!steps.length)return report("أضف خطوة واحدة على الأقل.","error");await addDoc(collection(db,"simulations"),{gradeId:val("simulationGrade"),title:val("simulationTitle"),description:val("simulationDescription"),steps,published:checked("simulationPublished"),createdAt:serverTimestamp()});e.target.reset();report("تم حفظ سيناريو المحاكاة.","success");}catch(x){failed(x);}};
+onAuthStateChanged(auth,async u=>{if(!u){location.replace("admin-login.html");return;}try{if(!(await allowed(u))){report("هذا الحساب غير مصرح له بدخول الإدارة.","error");await signOut(auth);return;}workspace.hidden=false;report("تم التحقق من صلاحيات المدير.","success");await refresh();}catch(e){failed(e);}});
