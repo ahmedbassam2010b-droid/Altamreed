@@ -35,8 +35,8 @@ service cloud.firestore {
    allow delete:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);
   }
   match /examResults/{id}{allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow create,update,delete:if isAdmin();}
-  match /examAttempts/{id}{allow create:if signedIn()&&request.resource.data.uid==request.auth.uid&&request.resource.data.status=="pending";allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow update,delete:if isAdmin();}
-  match /challengeResponses/{id}{allow create:if signedIn()&&request.resource.data.uid==request.auth.uid&&request.resource.data.status=="pending";allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow update,delete:if isAdmin();}
+  match /examAttempts/{id}{allow create:if signedIn()&&request.resource.data.uid==request.auth.uid&&request.resource.data.status=="pending"&&!exists(/databases/$(database)/documents/examAttempts/$(request.resource.data.examId+"_"+request.auth.uid));allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow update,delete:if isAdmin();}
+  match /challengeResponses/{id}{allow create:if signedIn()&&request.resource.data.uid==request.auth.uid&&request.resource.data.status=="pending"&&!exists(/databases/$(database)/documents/challengeResponses/$(request.resource.data.challengeId+"_"+request.auth.uid));allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow update,delete:if isAdmin();}
   match /communityPosts/{id}{
    allow read:if signedIn();
    allow create:if signedIn()&&request.resource.data.uid==request.auth.uid;
