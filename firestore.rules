@@ -10,7 +10,7 @@ service cloud.firestore {
   function gradeAccess(){return signedIn() && userDocExists() && resource.data.get("gradeId","")!="" && resource.data.gradeId==studentGrade();}
   match /admins/{uid}{allow get:if owns(uid);allow list,create,update,delete:if false;}
   match /grades/{id}{
-   allow read:if isAdmin()||(signedIn()&&resource.data.get("active",false)==true);
+   allow read:if isAdmin()||resource.data.get("active",false)==true;
    allow create,update,delete:if isAdmin();
   }
   match /users/{uid}{
