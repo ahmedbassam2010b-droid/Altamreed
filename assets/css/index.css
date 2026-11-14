@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap');
 /* Public landing page — mobile-first editorial identity */
 .landing-page{background:#edf2f8!important;color:#172b46!important;font-family:"Tajawal","Cairo",sans-serif!important}
 .mobile-site{width:100%;max-width:520px;min-height:100vh;margin:0 auto;background:#fbfcff;overflow:hidden;box-shadow:0 0 70px rgba(24,48,79,.09)}
@@ -43,7 +44,6 @@
 @media(prefers-reduced-motion:reduce){.quick-card{transition:none}}
 
 
-@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap');
 .info-page{padding:43px 24px 48px;background:#fbfcff;color:#263f59;min-height:55vh}
 .info-page>span{display:inline-block;padding:7px 12px;border-radius:999px;background:#e5f6f1;color:#159783;font-size:11px;font-weight:900}
 .info-page h1{margin:18px 0 18px;color:#193956;font-size:clamp(35px,10vw,48px);line-height:1.18;font-weight:1000;letter-spacing:-1px}
