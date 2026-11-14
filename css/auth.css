@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap');
 .auth-page{min-height:100vh;background:#eef3f9!important;color:#183451!important;font-family:"Tajawal","Cairo",sans-serif!important}
 .auth-page .page-center{min-height:100vh;padding:28px 16px;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 8% 12%,#dcecff 0,transparent 28%),radial-gradient(circle at 92% 88%,#d8f5ed 0,transparent 25%),#f4f7fb!important}
 .auth-page .auth-wrapper{width:100%;max-width:440px;margin:auto}
