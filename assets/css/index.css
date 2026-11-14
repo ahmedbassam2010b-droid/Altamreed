@@ -81,3 +81,22 @@
 .contact-method i{margin-top:7px;color:#2878df;font-size:10px;font-style:normal;font-weight:900}
 .contact-whatsapp>span{background:#e8f8ef}
 @media(max-width:360px){.about-founder img{height:170px}.about-visuals{gap:7px}}
+
+/* About page — four-image brand gallery */
+.brand-showcase{margin:32px -8px 12px;padding:20px 14px 18px;border-radius:25px;background:linear-gradient(145deg,#eff7ff 0%,#f1fbf8 55%,#fff5eb 100%);border:1px solid #e1edf5;overflow:hidden}
+.brand-showcase-head{text-align:center;margin:0 auto 17px;max-width:300px}
+.brand-showcase-head>span{display:inline-block;padding:6px 11px;border-radius:999px;background:#fff;color:#159783;font-size:10px;font-weight:900}
+.brand-showcase-head h2{margin:10px 0 5px!important;font-size:21px!important;line-height:1.35;color:#1d3d5b}
+.brand-showcase-head p{font-size:11px!important;line-height:1.8!important}
+.brand-gallery{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+.brand-card{margin:0;min-width:0;position:relative;overflow:hidden;border:1px solid #e2ebf3;border-radius:18px;background:#fff;box-shadow:0 8px 22px rgba(32,66,96,.07)}
+.brand-card img{display:block;width:100%;height:170px;object-fit:cover;background:#fff}
+.brand-card-logo img{object-fit:contain;padding:9px;background:linear-gradient(145deg,#fff,#edf8fb)}
+.brand-card-student img{object-fit:cover;object-position:center 30%}
+.brand-card-founder img{object-fit:cover;object-position:center 24%;background:#f7f9fc}
+.brand-card-collage{grid-column:1/-1}
+.brand-card-collage img{height:210px;object-fit:cover;object-position:center 23%}
+.brand-card figcaption{padding:10px 11px 12px;display:grid;gap:3px}
+.brand-card figcaption b{color:#24445f;font-size:12px;font-weight:1000}
+.brand-card figcaption small{color:#8497a9;font-size:9px;line-height:1.6}
+@media(min-width:700px){.brand-gallery{gap:14px}.brand-card img{height:205px}.brand-card-collage img{height:250px}}
