@@ -1,30 +1,13 @@
-:root {
-  --color-bg: #081421;
-  --color-surface: #101f30;
-  --color-surface-2: #0a1725;
-  --color-border: #24374a;
-
-  --color-primary: #20c6b3;
-  --color-primary-hover: #0fa895;
-  --color-primary-soft: rgba(32, 198, 179, 0.12);
-
-  --color-text: #f3f7fb;
-  --color-muted: #9aabba;
-
-  --color-success: #20c997;
-  --color-danger: #ff6b6b;
-  --color-warning: #ffc857;
-
-  --font-main: "Cairo", "Tahoma", sans-serif;
-
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 18px;
-  --radius-xl: 24px;
-
-  --shadow-card: 0 20px 60px rgba(0, 0, 0, 0.22);
-
-  --container-width: 1150px;
-
-  --transition: 0.2s ease;
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800;900&family=Tajawal:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap');
+:root{
+  color-scheme:light;
+  --color-bg:#f5f8ff;--color-surface:#ffffff;--color-surface-2:#f1f5fb;--color-border:#e3eaf4;
+  --color-primary:#2878e8;--color-primary-hover:#1764cf;--color-primary-soft:rgba(40,120,232,.12);
+  --color-text:#1c2b43;--color-muted:#718099;
+  --color-success:#16a779;--color-danger:#e45b68;--color-warning:#f2a93b;
+  --font-main:"Tajawal","Alexandria",Tahoma,sans-serif;--font-heading:"Alexandria","Tajawal",sans-serif;--font-latin:"Inter",sans-serif;
+  --radius-sm:10px;--radius-md:16px;--radius-lg:22px;--radius-xl:30px;
+  --shadow-card:0 12px 34px rgba(39,76,130,.09);--container-width:1200px;--transition:.22s cubic-bezier(.2,.8,.2,1);
+  --brand-blue:#2878e8;--brand-teal:#18b7aa;--brand-purple:#8a63df;--brand-orange:#f2a34a;--brand-pink:#e96b9b;--brand-green:#39b88a;
+  --soft-blue:#edf5ff;--soft-teal:#e9faf7;--soft-purple:#f3efff;--soft-orange:#fff4e7;--soft-pink:#fff0f5;--soft-green:#eaf9f1;
 }
