@@ -121,3 +121,26 @@ body[data-page="daily-challenge"] .platform-heading:after{content:"⚡";backgrou
 @media(max-width:760px){.platform-header{align-items:stretch;flex-direction:column;position:relative;padding:12px 16px}.platform-nav{gap:5px;overflow-x:auto;flex-wrap:nowrap;padding-bottom:5px}.platform-nav a{white-space:nowrap;padding:8px 10px}.platform-actions{width:100%;justify-content:space-between}.platform-root{margin-top:22px}.platform-heading{padding-left:78px}.platform-heading:after{left:0;width:62px;height:62px;border-radius:20px}.student-profile-hero{grid-template-columns:1fr}.student-profile-xp{justify-content:flex-start}.student-profile-columns{grid-template-columns:1fr}}
 @media(max-width:480px){.platform-root{width:calc(100% - 24px)}.platform-grid{grid-template-columns:1fr}.platform-card{min-height:150px}.platform-card h3{font-size:17px}.platform-heading h1{font-size:27px}.student-profile-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.student-profile-stat{padding:14px}.student-profile-stat strong{font-size:23px}}
 @media(prefers-reduced-motion:reduce){.platform-card,.btn,.platform-nav a{transition:none!important}}
+
+/* Section personalities — page-level accent systems */
+.platform-root[data-page="dashboard"] .platform-heading:after{content:"🚀";background:linear-gradient(145deg,#e7f1ff,#dff8f3)}
+.platform-root[data-page="subjects"] .platform-heading:after,.platform-root[data-page="subject"] .platform-heading:after{content:"📚";background:#f0eaff}
+.platform-root[data-page="lesson"] .platform-heading:after{content:"💡";background:#fff4df}
+.platform-root[data-page="library"] .platform-heading:after{content:"📖";background:#f2edff}
+.platform-root[data-page="exams"] .platform-heading:after,.platform-root[data-page="exam"] .platform-heading:after,.platform-root[data-page="exam-result"] .platform-heading:after{content:"📝";background:#fff0e5}
+.platform-root[data-page="community"] .platform-heading:after,.platform-root[data-page="group"] .platform-heading:after{content:"💬";background:#fff0f5}
+.platform-root[data-page="simulation"] .platform-heading:after{content:"🩺";background:#e7faf5}
+.platform-root[data-page="gamification"] .platform-heading:after{content:"🏆";background:#fff4df}
+.platform-root[data-page="study-planner"] .platform-heading:after{content:"🗓️";background:#edf5ff}
+.platform-root[data-page="daily-challenge"] .platform-heading:after{content:"⚡";background:#fff4e7}
+.platform-root[data-page="profile"] .platform-heading:after{content:"👤";background:#f2edff}
+.platform-root[data-page="bookmarks"] .platform-heading:after{content:"🔖";background:#fff0f5}
+.platform-root[data-page="notifications"] .platform-heading:after{content:"🔔";background:#fff4e7}
+.platform-root[data-page="messages"] .platform-heading:after{content:"✉️";background:#eaf9f1}
+.platform-root[data-page="leaderboard"] .platform-heading:after{content:"🥇";background:#fff4df}
+.platform-root[data-page="dashboard"] .platform-card:nth-child(3n+1){--card-accent:#2878e8;--card-soft:#edf5ff}
+.platform-root[data-page="dashboard"] .platform-card:nth-child(3n+2){--card-accent:#18b7aa;--card-soft:#e9faf7}
+.platform-root[data-page="dashboard"] .platform-card:nth-child(3n){--card-accent:#8a63df;--card-soft:#f3efff}
+.lesson-text{color:#3c506d;line-height:2.15;font-size:17px}
+.exam-form .btn{min-height:50px;padding-inline:25px}
+.admin-panel:nth-child(6n+1){border-top:4px solid #2878e8}.admin-panel:nth-child(6n+2){border-top:4px solid #18b7aa}.admin-panel:nth-child(6n+3){border-top:4px solid #8a63df}.admin-panel:nth-child(6n+4){border-top:4px solid #f2a34a}.admin-panel:nth-child(6n+5){border-top:4px solid #e96b9b}.admin-panel:nth-child(6n){border-top:4px solid #39b88a}
