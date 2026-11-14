@@ -1905,3 +1905,32 @@
         transition-duration: 0.01ms !important;
     }
 }
+
+/* ===== Landing page refresh: bright nursing EdTech ===== */
+.site-header{background:rgba(255,255,255,.94);border-bottom:1px solid #e6edf6;box-shadow:0 5px 22px rgba(31,70,120,.055);backdrop-filter:blur(18px)}
+.brand-name{color:#203958}.brand-caption{color:#8090a5}
+.main-nav{gap:23px}.nav-link{color:#60718a;font-size:13px}.nav-link:hover,.nav-link.active{color:#2878e8}.nav-link:after{background:#2878e8}
+.login-link{color:#435873}.menu-toggle{background:#edf4fc}.menu-toggle span{background:#34516f}
+.hero-section{background:linear-gradient(120deg,#f1f7ff 0%,#edf9f7 54%,#fff6eb 100%);color:#243b59}
+.hero-background{background:radial-gradient(circle at 80% 30%,rgba(40,120,232,.13),transparent 34%),radial-gradient(circle at 10% 90%,rgba(24,183,170,.12),transparent 35%)}
+.hero-content h1{color:#203958}.hero-content h1 span{color:#2878e8}
+.hero-description{color:#687d98}.hero-badge{color:#2670c8;background:#fff;border:1px solid #dceafa;box-shadow:0 5px 14px rgba(40,120,232,.07)}
+.badge-dot{background:#18b7aa;box-shadow:0 0 12px rgba(24,183,170,.45)}
+.hero-trust strong{color:#294461}.hero-trust span{color:#7a8ba1}
+.trust-icon{color:#168f84;background:#e4f8f3;border-color:#ccefe6}
+.btn-primary{color:#fff;background:linear-gradient(135deg,#347fe9,#246bd8);box-shadow:0 9px 22px rgba(40,120,232,.2)}.btn-primary:hover{background:linear-gradient(135deg,#286fd9,#1e5fc4)}
+.btn-outline{color:#2c527e;border:1px solid #c9d9ed;background:rgba(255,255,255,.75)}.btn-outline:hover{background:#fff}
+.hero-main-card{background:linear-gradient(145deg,#fff,#eef5ff);border:1px solid #dbe7f5;box-shadow:0 25px 65px rgba(43,78,125,.15)}
+.visual-label{color:#60748f}.visual-menu{color:#8c9bb0}.visual-bottom{border-color:#e1eaf5}.visual-small-label{color:#8393a8}.visual-bottom h3{color:#263e5e}.visual-arrow{color:#2878e8;background:#edf5ff}
+.circle-one{background:rgba(40,120,232,.08);border-color:rgba(40,120,232,.15)}.circle-two{background:rgba(24,183,170,.07);border-color:rgba(24,183,170,.28)}
+.medical-cross{background:#18b7aa;box-shadow:0 10px 25px rgba(24,183,170,.22)}
+.floating-card{box-shadow:0 15px 38px rgba(37,73,120,.14);border-color:#e3ebf5}
+.quick-access-section{background:#fff;border-color:#e5edf6}.quick-item{border-color:#e3ebf5;box-shadow:0 5px 16px rgba(43,78,125,.035)}
+.features-section{background:#f4f8ff}.feature-card{border-color:#e6edf6;box-shadow:0 7px 20px rgba(43,78,125,.035)}
+.classes-section{background:#fff}.section-heading h2{color:#203958}.section-heading p{color:#73849a}
+.simulation-container{background:linear-gradient(115deg,#e9f4ff,#e5faf4 55%,#fff2e5);border:1px solid #dceafa;box-shadow:0 15px 35px rgba(43,78,125,.08)}
+.simulation-content h2{color:#203958}.simulation-content p{color:#70829a}
+.cta-container{background:linear-gradient(120deg,#edf5ff,#e8faf5);border:1px solid #dceafa;box-shadow:0 15px 35px rgba(43,78,125,.07)}
+.cta-content h2{color:#203958}.cta-content p{color:#70829a}
+.site-footer{background:#203957;color:#dce7f5}.footer-brand p,.footer-links a{color:#b3c3d7}.footer-links h3{color:#fff}
+@media(max-width:850px){.main-nav{background:#fff;border-top:1px solid #e5edf6}.nav-link{color:#526984}.nav-link:hover,.nav-link.active{color:#2878e8}}
