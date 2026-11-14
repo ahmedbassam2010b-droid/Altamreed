@@ -25,3 +25,5 @@
 .auth-page .message:empty{display:none}
 .auth-page [hidden]{display:none!important}
 @media(max-width:380px){.auth-page .auth-card{padding:22px 17px}.auth-page .auth-heading{font-size:21px}}
+/* Keep success-message background unchanged; improve text contrast only. */
+.auth-page .message.success{color:#173B57!important}
