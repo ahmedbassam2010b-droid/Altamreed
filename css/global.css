@@ -1,54 +1,11 @@
-body {
-  min-height: 100vh;
-  font-family: var(--font-main);
-  background:
-    radial-gradient(circle at 15% 15%, #123344 0, transparent 35%),
-    radial-gradient(circle at 90% 85%, #103b3c 0, transparent 30%),
-    var(--color-bg);
-  color: var(--color-text);
-  line-height: 1.7;
-}
-
-a {
-  transition: color var(--transition);
-}
-
-a:hover {
-  color: var(--color-primary);
-}
-
-input,
-textarea,
-select {
-  width: 100%;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
-  padding: 13px 15px;
-  background: var(--color-surface-2);
-  color: var(--color-text);
-  outline: none;
-  transition:
-    border-color var(--transition),
-    box-shadow var(--transition);
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px var(--color-primary-soft);
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #718294;
-}
-
-button {
-  border: 0;
-}
-
-::selection {
-  color: #06201e;
-  background: var(--color-primary);
-}
+body{min-height:100vh;font-family:var(--font-main);background:radial-gradient(circle at 8% 0%,#eaf3ff 0,transparent 26%),radial-gradient(circle at 96% 12%,#e8faf6 0,transparent 24%),var(--color-bg);color:var(--color-text);line-height:1.75;font-size:16px}
+body,button,input,textarea,select{font-family:var(--font-main)}
+h1,h2,h3,h4{font-family:var(--font-heading);letter-spacing:-.35px}
+a{transition:color var(--transition),transform var(--transition)}
+a:hover{color:var(--color-primary)}
+input,textarea,select{width:100%;border:1px solid var(--color-border);border-radius:14px;padding:13px 15px;background:#fff;color:var(--color-text);outline:none;transition:border-color var(--transition),box-shadow var(--transition),background var(--transition)}
+input:focus,textarea:focus,select:focus{border-color:var(--color-primary);box-shadow:0 0 0 4px var(--color-primary-soft);background:#fff}
+input::placeholder,textarea::placeholder{color:#9aa8bb}
+button{border:0}
+::selection{color:#fff;background:var(--color-primary)}
+:focus-visible{outline:3px solid rgba(40,120,232,.35);outline-offset:3px}
