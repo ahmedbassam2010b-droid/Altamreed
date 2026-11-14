@@ -1,132 +1,21 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>إنشاء حساب | بوابة التمريض</title>
-  <meta name="description" content="أنشئ حسابك في بوابة التمريض التعليمية.">
-
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/layout.css">
-  <link rel="stylesheet" href="css/components.css">
-  <link rel="stylesheet" href="css/auth.css">
-</head>
-
-<body>
-  <main class="page-center">
-    <div class="auth-wrapper">
-
-      <header class="auth-brand">
-        <img src="assets/images/logo.png" alt="شعار بوابة التمريض"
-             onerror="this.style.display='none'">
-        <h1>بوابة التمريض</h1>
-        <p>حسابك الدراسي في مكان واحد</p>
-      </header>
-
-      <section class="auth-card">
-        <h2 class="auth-heading">إنشاء حساب جديد</h2>
-        <p class="auth-description">
-          اكتب بياناتك علشان تبدأ رحلتك التعليمية.
-        </p>
-
-        <div id="message" class="message" role="alert"></div>
-
-        <form id="registerForm" class="auth-form">
-          <div class="form-group">
-            <label for="fullName">الاسم بالكامل</label>
-            <input
-              id="fullName"
-              name="fullName"
-              type="text"
-              placeholder="اكتب اسمك"
-              autocomplete="name"
-              minlength="3"
-              required
-            >
-          </div>
-
-          <div class="form-group">
-            <label for="email">البريد الإلكتروني</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="name@example.com"
-              autocomplete="email"
-              required
-            >
-          </div>
-
-          <div class="form-group">
-            <label for="gradeId">الصف الدراسي</label>
-            <select id="gradeId" name="gradeId" required>
-              <option value="">جاري تحميل الصفوف...</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="password">كلمة المرور</label>
-            <input
-              id="password"
-              name="password"
-              type="password"
-              placeholder="6 أحرف على الأقل"
-              autocomplete="new-password"
-              minlength="6"
-              required
-            >
-            <p class="password-note">كلمة المرور يجب أن تكون 6 أحرف على الأقل.</p>
-          </div>
-
-          <div class="form-group">
-            <label for="confirmPassword">تأكيد كلمة المرور</label>
-            <input
-              id="confirmPassword"
-              name="confirmPassword"
-              type="password"
-              placeholder="اكتب كلمة المرور مرة أخرى"
-              autocomplete="new-password"
-              minlength="6"
-              required
-            >
-          </div>
-
-          <button id="registerButton" class="btn btn-primary btn-block auth-submit"
-                  type="submit">
-            إنشاء الحساب
-          </button>
-        </form>
-
-        <section id="googleGradePanel" class="form-group" hidden>
-          <p class="auth-description">اختار صفك الدراسي لإكمال إنشاء حساب Google.</p>
-          <label for="googleGradeId">الصف الدراسي</label>
-          <select id="googleGradeId" required>
-            <option value="">جاري تحميل الصفوف...</option>
-          </select>
-          <button id="saveGoogleGradeButton" class="btn btn-primary btn-block" type="button">حفظ الصف وإكمال التسجيل</button>
-        </section>
-
-        <div class="auth-divider"><span>أو</span></div>
-        <button id="googleRegisterButton" class="btn btn-google btn-block" type="button">
-          <svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5Z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.25 5.48-4.73 7.18l7.66 5.94c4.47-4.13 7.11-10.2 7.11-17.59Z"/><path fill="#FBBC05" d="M10.53 28.59A14.4 14.4 0 0 1 9.75 24c0-1.59.27-3.13.76-4.59l-7.98-6.19A23.9 23.9 0 0 0 0 24c0 3.87.93 7.52 2.56 10.78l7.97-6.19Z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.9-5.86l-7.66-5.94c-2.13 1.43-4.86 2.28-8.24 2.28-6.26 0-11.57-4.22-13.46-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48Z"/></svg>
-          المتابعة باستخدام Google
-        </button>
-
-        <p class="auth-footer">
-          عندك حساب بالفعل؟
-          <a href="login.html">تسجيل الدخول</a>
-        </p>
-      </section>
-
-      <a class="auth-home-link" href="index.html">
-        ← العودة إلى الصفحة الرئيسية
-      </a>
-    </div>
-  </main>
-
-  <script type="module" src="js/register.js"></script>
-</body>
-</html>
+<!doctype html>
+<html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="أنشئ حسابًا تعليميًا في بوابة التمريض للوصول إلى المحتوى والاختبارات."><meta name="robots" content="noindex,follow">
+<title>إنشاء حساب | بوابة التمريض</title><link rel="icon" href="assets/images/favicon.png">
+<link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/global.css"><link rel="stylesheet" href="css/layout.css"><link rel="stylesheet" href="css/components.css"><link rel="stylesheet" href="css/auth.css">
+</head><body class="auth-page"><main class="page-center"><div class="auth-wrapper">
+<header class="auth-brand"><img src="assets/images/logo.png" alt="شعار بوابة التمريض" onerror="this.style.display='none'"><h1>بوابة التمريض</h1><p>كل بداية حلوة بتبدأ بخطوة 🌱</p></header>
+<section class="auth-card"><h2 class="auth-heading">أنشئ حسابك</h2><p class="auth-description">بيانات بسيطة ونبدأ رحلتنا.</p>
+<div id="message" class="message" role="alert" aria-live="polite"></div>
+<form id="registerForm" class="auth-form">
+<div class="form-group"><label for="fullName">الاسم بالكامل</label><input id="fullName" name="fullName" type="text" placeholder="اكتب اسمك" autocomplete="name" minlength="3" required></div>
+<div class="form-group"><label for="email">البريد الإلكتروني</label><input id="email" name="email" type="email" placeholder="name@example.com" autocomplete="email" required></div>
+<div class="form-group"><label for="gradeId">الصف الدراسي</label><select id="gradeId" name="gradeId" required><option value="">جاري تحميل الصفوف...</option></select></div>
+<div class="form-group"><label for="password">كلمة المرور</label><input id="password" name="password" type="password" placeholder="6 أحرف على الأقل" autocomplete="new-password" minlength="6" required><p class="password-note">6 أحرف على الأقل.</p></div>
+<div class="form-group"><label for="confirmPassword">تأكيد كلمة المرور</label><input id="confirmPassword" name="confirmPassword" type="password" placeholder="اكتبها مرة تانية" autocomplete="new-password" minlength="6" required></div>
+<button id="registerButton" class="btn btn-primary btn-block auth-submit" type="submit">إنشاء الحساب ←</button></form>
+<section id="googleGradePanel" class="form-group" hidden><p class="auth-description">اختار صفك الدراسي لإكمال إنشاء حساب Google.</p><label for="googleGradeId">الصف الدراسي</label><select id="googleGradeId" required><option value="">جاري تحميل الصفوف...</option></select><button id="saveGoogleGradeButton" class="btn btn-primary btn-block" type="button">حفظ الصف وإكمال التسجيل</button></section>
+<div class="auth-divider"><span>أو</span></div><button id="googleRegisterButton" class="btn btn-google btn-block" type="button"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5Z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.25 5.48-4.73 7.18l7.66 5.94c4.47-4.13 7.11-10.2 7.11-17.59Z"/><path fill="#FBBC05" d="M10.53 28.59A14.4 14.4 0 0 1 9.75 24c0-1.59.27-3.13.76-4.59l-7.98-6.19A23.9 23.9 0 0 0 0 24c0 3.87.93 7.52 2.56 10.78l7.97-6.19Z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.9-5.86l-7.66-5.94c-2.13 1.43-4.86 2.28-8.24 2.28-6.26 0-11.57-4.22-13.46-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48Z"/></svg>المتابعة باستخدام Google</button>
+<p class="auth-footer">عندك حساب بالفعل؟ <a href="login.html">سجل دخولك</a></p></section>
+<a class="auth-home-link" href="index.html">← العودة للرئيسية</a></div></main><script type="module" src="js/register.js"></script></body></html>

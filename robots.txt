@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /admin-login.html
+Disallow: /dashboard.html
+Disallow: /profile.html
+Disallow: /exam.html
+Disallow: /exam-result.html
+Disallow: /messages.html
+Disallow: /notifications.html
+Disallow: /bookmarks.html
+
+Sitemap: https://bawabet-altamreed.com/sitemap.xml
