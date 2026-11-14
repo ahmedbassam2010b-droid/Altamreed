@@ -41,3 +41,22 @@
 .landing-footer{padding:28px 23px 22px;background:#17334f;color:#dce8f2}.footer-brand{font-size:17px;font-weight:1000}.footer-brand small{display:block;margin-top:4px;color:#9db2c5;font-size:10px;font-weight:600}.landing-footer nav{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0}.landing-footer nav a{color:#c2d2df;font-size:11px}.landing-footer>p{padding-top:15px;border-top:1px solid #ffffff18;color:#8fa6ba;font-size:9px}
 @media(min-width:700px){.landing-page{padding:24px 0}.mobile-site{border-radius:28px}.landing-header{border-radius:28px 28px 0 0}}
 @media(prefers-reduced-motion:reduce){.quick-card{transition:none}}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;600;700;800;900&display=swap');
+.info-page{padding:43px 24px 48px;background:#fbfcff;color:#263f59;min-height:55vh}
+.info-page>span{display:inline-block;padding:7px 12px;border-radius:999px;background:#e5f6f1;color:#159783;font-size:11px;font-weight:900}
+.info-page h1{margin:18px 0 18px;color:#193956;font-size:clamp(35px,10vw,48px);line-height:1.18;font-weight:1000;letter-spacing:-1px}
+.info-page h2{margin:27px 0 9px;color:#234665;font-size:18px;font-weight:1000}
+.info-page p,.info-page li{color:#6c8195;font-size:13px;line-height:2.05}
+.info-page ul{padding-right:20px;list-style:disc;margin:10px 0 20px}
+.info-page li{padding-right:3px;margin:4px 0}
+.info-page details{margin:11px 0;padding:15px 16px;border:1px solid #e3ebf3;border-radius:15px;background:#fff}
+.info-page summary{color:#294966;font-size:13px;font-weight:900;cursor:pointer;list-style:none}
+.info-page summary::-webkit-details-marker{display:none}
+.info-page summary:after{content:"+";float:left;color:#1ca58f;font-size:18px}
+.info-page details[open] summary:after{content:"−"}
+.info-page details p{margin-top:10px;font-size:12px}
+.info-action{display:flex;align-items:center;justify-content:center;width:max-content;max-width:100%;margin-top:24px;padding:13px 18px;border-radius:13px;background:#2878df;color:#fff;font-size:12px;font-weight:900}
+.info-back{display:inline-block;margin-top:18px;color:#2878df;font-size:12px;font-weight:900}
+.info-page .policy-date{margin-top:25px;padding-top:14px;border-top:1px solid #e8eef4;color:#9aaaba;font-size:10px}
