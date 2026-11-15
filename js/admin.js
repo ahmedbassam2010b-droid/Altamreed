@@ -86,7 +86,7 @@ $("#lessonForm").onsubmit=async e=>{
   if(!subjectSnap.exists())return report("المادة المختارة غير موجودة.","error");
   const contentBlocks=readLessonBlocks(),legacy=val("lessonContent");
   for(const block of contentBlocks){
-   if(block.type==="image"){try{const u=new URL(block.url);if(u.protocol!=="https:")throw new Error();}catch{return report("رابط الصورة غير صالح. استخدم رابط HTTP أو HTTPS مباشرًا.","error");}}
+   if(block.type==="image"){try{const u=new URL(block.url);if(u.protocol!=="https:")throw new Error();}catch{return report("رابط الصورة غير صالح. استخدم رابط صورة آمنًا يبدأ بـ HTTPS.","error");}}
    if(block.type==="table"&&block.rows.some(row=>row.length<2))return report("تأكد أن كل صف في الجدول يحتوي على عمودين على الأقل.","error");
   }
   if(!contentBlocks.length&&!legacy)return report("أضف وحدة محتوى واحدة على الأقل أو اكتب محتوى نصيًا.","error");
