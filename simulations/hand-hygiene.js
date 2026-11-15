@@ -78,7 +78,39 @@ async function buildScene(){const host=$("threeScene");try{const THREE=await imp
  const foam=new THREE.Group();for(let i=0;i<9;i++){const f=new THREE.Mesh(new THREE.SphereGeometry(.09+Math.random()*.04,12,12),mat("#f8ffff",.25));f.position.set((Math.random()-.5)*.7,2.04,.9+Math.random()*.25);foam.add(f);}foam.visible=false;scene3.add(foam);
  const tray=new THREE.Mesh(new THREE.BoxGeometry(1.1,.08,.5),mat("#d5e2ec"));tray.position.set(-2.2,1.82,.55);tray.visible=false;scene3.add(tray);
  const nailTool=new THREE.Mesh(new THREE.CylinderGeometry(.025,.045,.72,10),mat("#bd8b57"));nailTool.position.set(-.95,1.95,.95);nailTool.rotation.z=Math.PI/2.8;nailTool.visible=false;scene3.add(nailTool);
- sceneObjects={hands:new THREE.Group(),ring,water:flow,flow,droplets,foam,towel,tray,nailTool};sceneObjects.hands.add(palm,fingers,thumb,hand2);scene3.add(sceneObjects.hands);scene={renderer,scene3,camera,controls};scene.controls=controls;const reset=()=>{camera.position.set(5.4,4.1,7.4);controls.target.set(0,1.3,0);controls.update();};$("resetView").addEventListener("click",reset);
+ sceneObjects={hands:new THREE.Group(),ring,water:flow,flow,droplets,foam,towel,tray,nailTool};sceneObjects.hands.add(palm,fingers,thumb,hand2);scene3.add(sceneObjects.hands);scene={renderer,scene3,camera,controls};scene.controls=controls;
+  // Make the visible 3D objects themselves tappable (not only the floating labels).
+  const tagHotspot=(object,key)=>object.traverse(node=>{if(node.isMesh)node.userData.hotspot=key;});
+  tagHotspot(faucet,"faucet");
+  tagHotspot(dispenser,"soap");
+  tagHotspot(towel,"towel");
+  tagHotspot(sceneObjects.hands,"hands");
+  tagHotspot(tray,"tray");
+  tagHotspot(nailTool,"nails");
+  const raycaster=new THREE.Raycaster();
+  const pointer=new THREE.Vector2();
+  let pressPoint=null;
+  renderer.domElement.addEventListener("pointerdown",event=>{pressPoint={x:event.clientX,y:event.clientY};},{passive:true});
+  renderer.domElement.addEventListener("pointerup",event=>{
+    if(!pressPoint)return;
+    const moved=Math.hypot(event.clientX-pressPoint.x,event.clientY-pressPoint.y);
+    pressPoint=null;
+    if(moved>9)return; // A drag belongs to OrbitControls, a tap selects an object.
+    const rect=renderer.domElement.getBoundingClientRect();
+    pointer.x=((event.clientX-rect.left)/rect.width)*2-1;
+    pointer.y=-((event.clientY-rect.top)/rect.height)*2+1;
+    raycaster.setFromCamera(pointer,camera);
+    const hits=raycaster.intersectObjects(scene3.children,true);
+    const hit=hits.find(item=>item.object.visible&&item.object.userData.hotspot);
+    if(hit){
+      const target=hit.object.userData.hotspot;
+      setHint("تم تحديد "+({faucet:"الصنبور",soap:"موزع الصابون",towel:"المنشفة",hands:"اليدان",tray:"صينية الأدوات",nails:"الأظافر"}[target]||"العنصر")+".");
+      stationAction(target);
+    }else{
+      setHint("المس جسم الأداة أو أحد العناصر الظاهرة داخل المحطة مباشرة.");
+    }
+  },{passive:true});
+const reset=()=>{camera.position.set(5.4,4.1,7.4);controls.target.set(0,1.3,0);controls.update();};$("resetView").addEventListener("click",reset);
   const resize=()=>{const w=host.clientWidth,h=host.clientHeight;if(!w||!h)return;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h);};new ResizeObserver(resize).observe(host);const clock=new THREE.Clock();function animate(){requestAnimationFrame(animate);const t=clock.getElapsedTime();if(droplets.visible)droplets.children.forEach((d,i)=>{d.position.y=1.55+((t*.7+i*.13)%0.6);});controls.update();renderer.render(scene3,camera);}animate();}catch(error){console.warn("3D scene unavailable",error);$("sceneFallback").hidden=false;host.hidden=true;}}
 buildScene();renderStep();
 const cameraActions={left:()=>scene?.controls.rotateLeft(Math.PI/12),right:()=>scene?.controls.rotateLeft(-Math.PI/12),up:()=>scene?.controls.rotateUp(Math.PI/14),down:()=>scene?.controls.rotateUp(-Math.PI/14),in:()=>scene?.controls.dollyIn(1.18),out:()=>scene?.controls.dollyOut(1.18)};
