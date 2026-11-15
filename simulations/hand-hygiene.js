@@ -1,7 +1,3 @@
-import {auth,db} from "../js/config.js";
-import {onAuthStateChanged} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
-import {doc,getDoc,setDoc,serverTimestamp} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
-
 /* Lesson source: Fundamentals of Nursing, Lesson 03, supplied pages 3–8.
    This first prototype uses the book's Antiseptic Hand Wash table as its step order.
    The illustration's 40–60 second total duration is displayed as source context;
@@ -49,7 +45,7 @@ function renderStep(){if(rubTimer){clearInterval(rubTimer);rubTimer=null;}const 
 }
 function sceneSet(key,value){if(!scene)return;const o=sceneObjects;if(key==="water"){o.water.visible=value;o.flow.visible=value;}if(key==="wet"){o.hands.traverse(n=>{if(n.material?.color)n.material.color.set("#b6d9e9");});o.droplets.visible=true;}if(key==="soap"){o.foam.visible=true;}if(key==="rub"){o.hands.rotation.z=.12;o.foam.visible=true;}if(key==="rinse"){o.flow.visible=true;o.foam.visible=false;o.droplets.visible=true;}if(key==="dry"){o.towel.visible=true;o.droplets.visible=false;o.hands.traverse(n=>{if(n.material?.color)n.material.color.set("#e9bda2");});}if(key==="tapOff"){o.flow.visible=false;}if(key==="nails"&&o.nailTool)o.nailTool.visible=true;if(key==="jewelry")o.ring.visible=value;if(key==="tray")o.tray.visible=value;if(key==="position")o.hands.position.y=.12;}
 function finish(){const seconds=Math.round((Date.now()-startedAt)/1000);$("finalScore").textContent=Math.round(completed.size/steps.length*100)+"%";$("finalTime").textContent=Math.floor(seconds/60)+"m "+String(seconds%60).padStart(2,"0")+"s";$("finalTasks").textContent=completed.size+"/"+steps.length;$("reportList").replaceChildren();steps.forEach((s,i)=>{const r=document.createElement("div");r.textContent=(i+1)+". "+s.title;const tag=document.createElement("span");tag.textContent=completed.has(i)?"مكتملة":"غير مكتملة";r.append(tag);$("reportList").append(r);});ui.report.hidden=false;ui.report.scrollIntoView({behavior:"smooth",block:"start"});ui.next.disabled=true;$( "submitResult").disabled=completed.size!==steps.length;}
-async function waitForStudent(){if(auth.currentUser)return auth.currentUser;return new Promise((resolve,reject)=>{const timer=setTimeout(()=>{unsubscribe();reject(new Error("AUTH_TIMEOUT"));},12000);const unsubscribe=onAuthStateChanged(auth,user=>{if(user){clearTimeout(timer);unsubscribe();resolve(user);}});});}
+async function waitForStudent(auth,onAuthStateChanged){if(auth.currentUser)return auth.currentUser;return new Promise((resolve,reject)=>{let unsubscribe=()=>{};const timer=setTimeout(()=>{unsubscribe();reject(new Error("AUTH_TIMEOUT"));},12000);unsubscribe=onAuthStateChanged(auth,user=>{if(user){clearTimeout(timer);unsubscribe();resolve(user);}});});}
 $("submitResult").addEventListener("click",async()=>{
  const button=$("submitResult"),statusBox=$("submissionStatus");
  if(completed.size!==steps.length){statusBox.textContent="أكمل جميع الخطوات أولًا.";return;}
