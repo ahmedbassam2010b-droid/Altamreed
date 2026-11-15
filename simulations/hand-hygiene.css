@@ -21,3 +21,17 @@
 .hh-scene-hint{left:auto;right:14px;bottom:13px;max-width:43%;text-align:center}
 @media(max-width:520px){.hh-camera-controls{left:9px;bottom:10px;gap:6px}.hh-camera-pad{grid-template-columns:repeat(3,34px);grid-template-rows:repeat(2,33px);gap:4px;padding:5px;border-radius:13px}.hh-camera-zoom{gap:4px;padding:5px}.hh-camera-zoom button{width:32px;height:31px}.hh-camera-pad button{font-size:16px}.hh-camera-caption{font-size:8px;bottom:-19px}.hh-scene-hint{right:8px;bottom:12px;max-width:38%;font-size:8px;padding:6px}}
 @media(max-width:360px){.hh-camera-pad{grid-template-columns:repeat(3,29px);grid-template-rows:repeat(2,29px)}.hh-camera-zoom button{width:28px;height:28px}.hh-scene-hint{max-width:34%}}
+
+/* Direct manipulation + dedicated camera dock */
+.hh-scene-wrap{height:390px}
+.hh-camera-dock{display:flex;justify-content:center;align-items:center;min-height:100px;margin-top:10px;padding:12px 14px 20px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 7px 20px #315d9809}
+.hh-camera-controls{position:static;display:flex;align-items:center;gap:10px;direction:ltr}
+.hh-camera-caption{bottom:-18px}
+.hh-interaction-hint{margin:10px 2px 0;color:#647b96;font-size:11px;font-weight:700;text-align:center}
+.hh-scene-hotspots{position:absolute;inset:0;z-index:2;pointer-events:none}
+.hh-scene-hotspots button{position:absolute;left:var(--x);top:var(--y);transform:translate(-50%,-50%);pointer-events:auto;border:1px solid #b9d7f0;border-radius:20px;background:#ffffffdf;color:#245f9f;padding:7px 10px;font:800 10px var(--font);box-shadow:0 3px 12px #24466b20;backdrop-filter:blur(5px);touch-action:manipulation}
+.hh-scene-hotspots button:active{background:#dceeff;transform:translate(-50%,-50%) scale(.96)}
+.hh-object-row .hh-object{width:100%;cursor:pointer;text-align:right;font-family:var(--font);transition:.18s}
+.hh-object-row .hh-object.selected{border-color:#65b6f3;background:#edf7ff;box-shadow:0 0 0 2px #d7edff}
+.hh-object-row .hh-object:focus-visible,.hh-scene-hotspots button:focus-visible,.hh-camera-controls button:focus-visible{outline:3px solid #80bfff;outline-offset:2px}
+@media(max-width:520px){.hh-scene-wrap{height:310px}.hh-camera-dock{min-height:88px;padding:10px 8px 18px;margin-top:8px}.hh-camera-controls{gap:8px}.hh-camera-caption{font-size:8px}.hh-scene-hotspots button{font-size:9px;padding:6px 8px}.hh-object-row{grid-template-columns:repeat(2,minmax(0,1fr))}.hh-object-row .hh-object{min-height:67px}}

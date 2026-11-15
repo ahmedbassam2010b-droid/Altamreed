@@ -47,7 +47,7 @@ function renderStep(){if(rubTimer){clearInterval(rubTimer);rubTimer=null;}const 
  case "dry":ui.area.append(button("1 · تجفيف اليدين من الأصابع إلى أعلى الساعد",()=>{dryDone=true;sceneSet("dry",true);if(dryDone&&tapDone)complete("اكتمل التجفيف وإغلاق الصنبور باستخدام المنشفة كما يوضح الرسم.");else feedback("تم التجفيف. أكمل استخدام المنشفة لإغلاق الصنبور كما في الرسم التوضيحي.","good");},"primary-action"),button("2 · استخدام المنشفة لإغلاق الصنبور (كما في الرسم)",()=>{tapDone=true;sceneSet("tapOff",true);if(dryDone&&tapDone)complete("اكتمل التجفيف وإغلاق الصنبور باستخدام المنشفة كما يوضح الرسم.");else feedback("تم إغلاق الصنبور بالمنشفة. أكمل تجفيف اليدين والتخلص من المنشفة.","good");},""));break;
  }
 }
-function sceneSet(key,value){if(!scene)return;const o=sceneObjects;if(key==="water"){o.water.visible=value;o.flow.visible=value;}if(key==="wet"){o.hands.traverse(n=>{if(n.material?.color)n.material.color.set("#b6d9e9");});o.droplets.visible=true;}if(key==="soap"){o.foam.visible=true;}if(key==="rub"){o.hands.rotation.z=.12;o.foam.visible=true;}if(key==="rinse"){o.flow.visible=true;o.foam.visible=false;o.droplets.visible=true;}if(key==="dry"){o.towel.visible=true;o.droplets.visible=false;o.hands.traverse(n=>{if(n.material?.color)n.material.color.set("#e9bda2");});}if(key==="tapOff"){o.flow.visible=false;}if(key==="jewelry")o.ring.visible=value;if(key==="tray")o.tray.visible=value;if(key==="position")o.hands.position.y=.12;}
+function sceneSet(key,value){if(!scene)return;const o=sceneObjects;if(key==="water"){o.water.visible=value;o.flow.visible=value;}if(key==="wet"){o.hands.traverse(n=>{if(n.material?.color)n.material.color.set("#b6d9e9");});o.droplets.visible=true;}if(key==="soap"){o.foam.visible=true;}if(key==="rub"){o.hands.rotation.z=.12;o.foam.visible=true;}if(key==="rinse"){o.flow.visible=true;o.foam.visible=false;o.droplets.visible=true;}if(key==="dry"){o.towel.visible=true;o.droplets.visible=false;o.hands.traverse(n=>{if(n.material?.color)n.material.color.set("#e9bda2");});}if(key==="tapOff"){o.flow.visible=false;}if(key==="nails"&&o.nailTool)o.nailTool.visible=true;if(key==="jewelry")o.ring.visible=value;if(key==="tray")o.tray.visible=value;if(key==="position")o.hands.position.y=.12;}
 function finish(){const seconds=Math.round((Date.now()-startedAt)/1000);$("finalScore").textContent=Math.round(completed.size/steps.length*100)+"%";$("finalTime").textContent=Math.floor(seconds/60)+"m "+String(seconds%60).padStart(2,"0")+"s";$("finalTasks").textContent=completed.size+"/"+steps.length;$("reportList").replaceChildren();steps.forEach((s,i)=>{const r=document.createElement("div");r.textContent=(i+1)+". "+s.title;const tag=document.createElement("span");tag.textContent=completed.has(i)?"مكتملة":"غير مكتملة";r.append(tag);$("reportList").append(r);});ui.report.hidden=false;ui.report.scrollIntoView({behavior:"smooth",block:"start"});ui.next.disabled=true;$( "submitResult").disabled=completed.size!==steps.length;}
 async function waitForStudent(){if(auth.currentUser)return auth.currentUser;return new Promise((resolve,reject)=>{const timer=setTimeout(()=>{unsubscribe();reject(new Error("AUTH_TIMEOUT"));},12000);const unsubscribe=onAuthStateChanged(auth,user=>{if(user){clearTimeout(timer);unsubscribe();resolve(user);}});});}
 $("submitResult").addEventListener("click",async()=>{
@@ -80,7 +80,49 @@ async function buildScene(){const host=$("threeScene");try{const THREE=await imp
  const droplets=new THREE.Group();for(let i=0;i<14;i++){const d=new THREE.Mesh(new THREE.SphereGeometry(.035,8,8),new THREE.MeshBasicMaterial({color:"#5fc9f1"}));d.position.set((Math.random()-.5)*1.2,1.6+Math.random()*.5,.3+Math.random()*.7);droplets.add(d);}droplets.visible=false;scene3.add(droplets);
  const foam=new THREE.Group();for(let i=0;i<9;i++){const f=new THREE.Mesh(new THREE.SphereGeometry(.09+Math.random()*.04,12,12),mat("#f8ffff",.25));f.position.set((Math.random()-.5)*.7,2.04,.9+Math.random()*.25);foam.add(f);}foam.visible=false;scene3.add(foam);
  const tray=new THREE.Mesh(new THREE.BoxGeometry(1.1,.08,.5),mat("#d5e2ec"));tray.position.set(-2.2,1.82,.55);tray.visible=false;scene3.add(tray);
- sceneObjects={hands:new THREE.Group(),ring,water:flow,flow,droplets,foam,towel,tray};sceneObjects.hands.add(palm,fingers,thumb,hand2);scene3.add(sceneObjects.hands);scene={renderer,scene3,camera,controls};scene.controls=controls;const reset=()=>{camera.position.set(5.4,4.1,7.4);controls.target.set(0,1.3,0);controls.update();};$("resetView").addEventListener("click",reset);
+ const nailTool=new THREE.Mesh(new THREE.CylinderGeometry(.025,.045,.72,10),mat("#bd8b57"));nailTool.position.set(-.95,1.95,.95);nailTool.rotation.z=Math.PI/2.8;nailTool.visible=false;scene3.add(nailTool);
+ sceneObjects={hands:new THREE.Group(),ring,water:flow,flow,droplets,foam,towel,tray,nailTool};sceneObjects.hands.add(palm,fingers,thumb,hand2);scene3.add(sceneObjects.hands);scene={renderer,scene3,camera,controls};scene.controls=controls;const reset=()=>{camera.position.set(5.4,4.1,7.4);controls.target.set(0,1.3,0);controls.update();};$("resetView").addEventListener("click",reset);
   const cameraActions={left:()=>controls.rotateLeft(Math.PI/12),right:()=>controls.rotateLeft(-Math.PI/12),up:()=>controls.rotateUp(Math.PI/14),down:()=>controls.rotateUp(-Math.PI/14),in:()=>controls.dollyIn(1.18),out:()=>controls.dollyOut(1.18)};
-  host.parentElement.querySelectorAll("[data-camera]").forEach(control=>{control.addEventListener("click",()=>{const action=cameraActions[control.dataset.camera];if(!action)return;action();controls.update();});});const resize=()=>{const w=host.clientWidth,h=host.clientHeight;if(!w||!h)return;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h);};new ResizeObserver(resize).observe(host);const clock=new THREE.Clock();function animate(){requestAnimationFrame(animate);const t=clock.getElapsedTime();if(droplets.visible)droplets.children.forEach((d,i)=>{d.position.y=1.55+((t*.7+i*.13)%0.6);});controls.update();renderer.render(scene3,camera);}animate();}catch(error){console.warn("3D scene unavailable",error);$("sceneFallback").hidden=false;host.hidden=true;}}
+  document.querySelectorAll("[data-camera]").forEach(control=>{control.addEventListener("click",()=>{const action=cameraActions[control.dataset.camera];if(!action)return;action();controls.update();});});const resize=()=>{const w=host.clientWidth,h=host.clientHeight;if(!w||!h)return;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h);};new ResizeObserver(resize).observe(host);const clock=new THREE.Clock();function animate(){requestAnimationFrame(animate);const t=clock.getElapsedTime();if(droplets.visible)droplets.children.forEach((d,i)=>{d.position.y=1.55+((t*.7+i*.13)%0.6);});controls.update();renderer.render(scene3,camera);}animate();}catch(error){console.warn("3D scene unavailable",error);$("sceneFallback").hidden=false;host.hidden=true;}}
 buildScene();renderStep();
+
+/* Student-driven station interactions: tap a 3D station hotspot, then use the matching virtual tool. */
+const hint=$("interactionHint");
+let selectedTool=null;
+function setHint(message){if(hint)hint.textContent=message;}
+function chooseTool(name,el){
+ selectedTool=name;
+ document.querySelectorAll("[data-tool]").forEach(x=>x.classList.toggle("selected",x===el));
+ setHint("الأداة المختارة: "+name+" — المس العنصر المناسب داخل المحطة");
+ if(current===0){pickedEquipment.add(name);renderStep();}
+}
+document.querySelectorAll("[data-tool]").forEach(el=>el.addEventListener("click",()=>chooseTool(el.dataset.tool,el)));
+function stationAction(target){
+ const task=steps[current].task;
+ if(task==="equipment"&&target==="tray"){
+  if(pickedEquipment.has("Liquid or bar soap")&&pickedEquipment.has("Paper towels")&&pickedEquipment.has("Orangewood stick")&&pickedEquipment.has("Lotion")){sceneSet("tray",true);complete("وضعت الأدوات المطلوبة على صينية التجهيز.");}
+  else recordMistake("اختر الصابون والمنشفة الورقية وعود Orangewood وLotion من رف الأدوات أولًا.");
+ }else if(task==="stand"&&target==="hands"){sceneSet("position",true);complete("تم اتخاذ موضع الوقوف أمام الحوض.");}
+ else if(task==="jewelry"&&target==="hands"){sceneSet("jewelry",false);complete("تمت إزالة المجوهرات وتأمينها.");}
+ else if(task==="water"&&target==="faucet"){sceneSet("water",true);complete("تم تشغيل المياه. أكمل ضبط درجة الحرارة وقوة التدفق من لوحة المهمة.");}
+ else if(task==="wet"&&target==="hands"){sceneSet("wet",true);complete("تم تبليل اليدين والمعصمين.");}
+ else if(task==="soap"&&target==="soap"){
+  if(selectedTool==="Liquid or bar soap"||selectedTool==="Soap"){sceneSet("soap",true);complete("تم استخدام الصابون على اليدين.");}
+  else recordMistake("اختر الصابون من رف الأدوات أولًا، ثم المس موزع الصابون.");
+ }else if(task==="rub"&&target==="hands"){
+  const start=ui.area.querySelector("button");
+  if(start&&!start.disabled)start.click();
+  else feedback("مؤقت الفرك يعمل أو اكتمل بالفعل.","good");
+ }else if(task==="nails"&&target==="nails"){
+  if(selectedTool==="Orangewood stick"){sceneSet("nails",true);complete("استخدمت عود Orangewood لتنظيف أسفل الأظافر.");}
+  else recordMistake("اختر عود Orangewood من رف الأدوات أولًا.");
+ }else if(task==="rinse"&&target==="faucet"){sceneSet("rinse",true);complete("تم شطف اليدين باتجاه أطراف الأصابع.");}
+ else if(task==="dry"&&target==="towel"){
+  if(selectedTool==="Paper towels"){const b=ui.area.querySelector("button");if(b)b.click();else{dryDone=true;sceneSet("dry",true);feedback("تم التجفيف. أكمل إغلاق الصنبور بالمنشفة.","good");}}
+  else recordMistake("اختر المنشفة الورقية من رف الأدوات أولًا.");
+ }else if(task==="dry"&&target==="faucet"){
+  const buttons=ui.area.querySelectorAll("button");
+  if(buttons.length>1)buttons[1].click();else{tapDone=true;sceneSet("tapOff",true);if(dryDone)complete("اكتمل التجفيف وإغلاق الصنبور.");}
+ }else feedback("هذا العنصر غير مطلوب في الخطوة الحالية. راجع المهمة المحددة.","warn");
+}
+document.querySelectorAll("[data-hotspot]").forEach(el=>el.addEventListener("click",()=>stationAction(el.dataset.hotspot)));
