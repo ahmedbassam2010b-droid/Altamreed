@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f3f8ff">
+  <meta name="description" content="معمل تفاعلي لتعلّم Antiseptic Hand Wash من درس Hand Hygiene في Fundamentals of Nursing.">
+  <title>Hand Hygiene Lab | بوابة التمريض</title>
+  <link rel="stylesheet" href="hand-hygiene.css">
+</head>
+<body class="hh-body">
+  <header class="hh-topbar">
+    <a class="hh-brand" href="../simulation.html" aria-label="العودة للمحاكاة"><span class="hh-brand-mark">✚</span><span>بوابة التمريض<small>SKILLS LAB</small></span></a>
+    <div class="hh-top-meta"><span class="live-dot"></span> معمل تدريبي تفاعلي</div>
+    <a class="hh-exit" href="../simulation.html">خروج <span>↗</span></a>
+  </header>
+
+  <main class="hh-shell">
+    <section class="hh-intro">
+      <div>
+        <p class="hh-eyebrow">FUNDAMENTALS OF NURSING · LESSON 03</p>
+        <h1>Hand Hygiene <span>Lab</span></h1>
+        <p>Antiseptic Hand Wash · Soap &amp; Water · <strong>40–60 seconds</strong> (total duration shown in the book illustration)</p>
+      </div>
+      <div class="hh-intro-badge"><strong>01</strong><span>PROCEDURE<br>SIMULATION</span></div>
+    </section>
+
+    <section class="hh-progress-card" aria-label="تقدم المحاكاة">
+      <div class="hh-progress-top"><div><strong id="progressLabel">الخطوة 1 من 10</strong><small id="progressSub">جهّز الأدوات المطلوبة</small></div><strong id="progressPercent">0%</strong></div>
+      <div class="hh-progress-track"><span id="progressBar"></span></div>
+      <div class="hh-step-dots" id="stepDots" aria-label="خطوات الإجراء"></div>
+    </section>
+
+    <section class="hh-workspace">
+      <div class="hh-scene-column">
+        <div class="hh-scene-head"><div><span class="hh-live-pill">3D ENVIRONMENT</span><h2>محطة غسل اليدين</h2></div><button id="resetView" class="hh-icon-btn" type="button" title="إعادة زاوية المشهد">⟳</button></div>
+        <div class="hh-scene-wrap">
+          <div id="threeScene" class="hh-three-scene" aria-label="مشهد ثلاثي الأبعاد لحوض غسل اليدين"></div>
+          <div id="sceneFallback" class="hh-scene-fallback" hidden><div class="fallback-sink"><div class="fallback-tap"></div><div class="fallback-basin"></div><div class="fallback-hands">👐</div><span>Hand Hygiene Station</span></div></div>
+          <div class="hh-scene-hint"><span>↔</span> اسحب لتدوير المشهد · قرّب بإصبعين</div>
+          <div class="hh-scene-status" id="sceneStatus"><i></i> المحطة جاهزة</div>
+        </div>
+        <div class="hh-object-row">
+          <div class="hh-object"><span>🧴</span><b>Soap</b><small>الصابون</small></div>
+          <div class="hh-object"><span>🚰</span><b>Water</b><small>المياه</small></div>
+          <div class="hh-object"><span>🧻</span><b>Towel</b><small>المنشفة</small></div>
+          <div class="hh-object"><span>🪵</span><b>Orangewood</b><small>عود خشبي</small></div><div class="hh-object"><span>🧴</span><b>Lotion</b><small>مرطب</small></div>
+        </div>
+      </div>
+
+      <aside class="hh-task-column">
+        <div class="hh-task-card">
+          <div class="hh-task-kicker"><span>YOUR MISSION</span><span id="stepCounter">01 / 10</span></div>
+          <h2 id="stepTitle">Prepare the necessary equipment</h2>
+          <p id="stepDescription">جهّز المعدات اللازمة قبل البدء.</p>
+          <div class="hh-rationale"><span>WHY IT MATTERS</span><p id="stepRationale">To save time and effort.</p></div>
+          <div class="hh-action-area" id="actionArea"></div>
+          <div class="hh-feedback" id="feedback" role="status" aria-live="polite">ابدأ بتنفيذ المهمة المطلوبة.</div>
+          <div class="hh-nav-actions"><button id="previousStep" class="hh-secondary-btn" type="button" disabled>السابق</button><button id="nextStep" class="hh-primary-btn" type="button" disabled>الخطوة التالية <span>←</span></button></div>
+        </div>
+        <div class="hh-safety-note"><span>ⓘ</span><p>تدريب تعليمي افتراضي مبني على الصفحات المرفقة من الكتاب. لا يُعد بديلًا عن التدريب العملي المعتمد أو الإشراف السريري.</p></div>
+      </aside>
+    </section>
+
+    <section class="hh-report" id="finalReport" hidden>
+      <div class="hh-report-icon">🏅</div><p class="hh-eyebrow">SIMULATION COMPLETED</p><h2>أحسنت! انتهت المحاكاة</h2>
+      <p class="hh-report-copy">أكملت خطوات Antiseptic Hand Wash في المعمل التدريبي.</p>
+      <div class="hh-report-stats"><div><strong id="finalScore">100%</strong><small>إكمال الخطوات</small></div><div><strong id="finalTime">--</strong><small>الوقت المستغرق</small></div><div><strong id="finalTasks">10/10</strong><small>المهام المكتملة</small></div></div>
+      <div id="reportList" class="hh-report-list"></div>
+      <p id="submissionStatus" class="hh-feedback" role="status">يمكنك إرسال تقريرك للمراجعة بعد إكمال الخطوات.</p>
+      <button id="submitResult" class="hh-primary-btn" type="button">إرسال النتيجة للمراجعة</button>
+      <button id="restartSimulation" class="hh-primary-btn" type="button">إعادة المحاكاة ↻</button>
+    </section>
+
+    <footer class="hh-footer"><span>BAWABET AL TAMREED</span><span>Hand Hygiene · Lesson 03</span><a href="../simulation.html">العودة إلى المعمل ←</a></footer>
+  </main>
+  <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js"}}</script>
+  <script type="module" src="hand-hygiene.js"></script>
+</body>
+</html>
