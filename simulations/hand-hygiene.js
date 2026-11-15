@@ -51,7 +51,8 @@ $("submitResult").addEventListener("click",async()=>{
  if(completed.size!==steps.length){statusBox.textContent="أكمل جميع الخطوات أولًا.";return;}
  button.disabled=true;statusBox.textContent="جارٍ إرسال التقرير...";
  try{
-  const student=await waitForStudent(),simulationId="hand-hygiene-lesson-03",submissionRef=doc(db,"simulationSubmissions",simulationId+"_"+student.uid);
+  const [{auth,db},{onAuthStateChanged},{doc,getDoc,setDoc,serverTimestamp}]=await Promise.all([import("../js/config.js"),import("https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js"),import("https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js")]);
+  const student=await waitForStudent(auth,onAuthStateChanged),simulationId="hand-hygiene-lesson-03",submissionRef=doc(db,"simulationSubmissions",simulationId+"_"+student.uid);
   const existing=await getDoc(submissionRef);
   if(existing.exists()){statusBox.textContent=existing.data().status==="approved"?"تم اعتماد هذه المحاكاة بالفعل.":"سبق إرسال هذه المحاكاة وهي "+(existing.data().status==="pending"?"بانتظار مراجعة الإدارة.":"مرفوضة؛ تواصل مع الإدارة.");return;}
   await setDoc(submissionRef,{uid:student.uid,simulationId,lessonId:"fundamentals-lesson-03",completedSteps:completed.size,totalSteps:steps.length,score:Math.round(completed.size/steps.length*100),elapsedSeconds:Math.round((Date.now()-startedAt)/1000),mistakes:mistakes.slice(0,30),status:"pending",xpAwarded:0,createdAt:serverTimestamp()});
@@ -83,7 +84,7 @@ buildScene();renderStep();
 const cameraActions={left:()=>scene?.controls.rotateLeft(Math.PI/12),right:()=>scene?.controls.rotateLeft(-Math.PI/12),up:()=>scene?.controls.rotateUp(Math.PI/14),down:()=>scene?.controls.rotateUp(-Math.PI/14),in:()=>scene?.controls.dollyIn(1.18),out:()=>scene?.controls.dollyOut(1.18)};
 document.querySelectorAll("[data-camera]").forEach(control=>control.addEventListener("click",()=>{if(!scene){setHint("المجسم ثلاثي الأبعاد لم يكتمل تحميله بعد.");return;}cameraActions[control.dataset.camera]?.();scene.controls.update();}));
 
-document.querySelectorAll("[data-camera]").forEach(control=>control.addEventListener("click",()=>{if(!scene){setHint("المجسم ثلاثي الأبعاد لم يكتمل تحميله بعد. أعد تحميل الصفحة.");return;}cameraActions[control.dataset.camera]?.();scene.controls.update();}));
+
 
 /* Student-driven station interactions: tap a 3D station hotspot, then use the matching virtual tool. */
 const hint=$("interactionHint");
