@@ -19,6 +19,7 @@ service cloud.firestore {
    allow update:if isAdmin()||(owns(uid)&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(['displayName','photoURL','updatedAt']))||(owns(uid)&&!resource.data.keys().hasAny(['gradeId'])&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(['gradeId','gradeName','updatedAt'])&&validGrade(request.resource.data.gradeId));
    allow delete:if isAdmin();
    match /bookmarks/{bookmarkId}{allow read,write:if owns(uid);}
+   match /lessonProgress/{lessonId}{allow read,write:if owns(uid);}
   }
   match /publicProfiles/{uid}{
    allow read:if signedIn();
