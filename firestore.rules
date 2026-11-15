@@ -53,7 +53,7 @@ service cloud.firestore {
   match /simulations/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
   match /simulationSubmissions/{id}{
    allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);
-   allow create:if signedIn()
+   allow create:if signedIn()&&userDocExists()&&studentGrade()!=""&&validGrade(studentGrade())
      &&request.resource.data.keys().hasOnly(['uid','simulationId','lessonId','completedSteps','totalSteps','score','elapsedSeconds','mistakes','status','xpAwarded','createdAt'])
      &&request.resource.data.uid==request.auth.uid
      &&request.resource.data.simulationId=='hand-hygiene-lesson-03'
