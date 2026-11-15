@@ -36,8 +36,17 @@
         <div class="hh-scene-head"><div><span class="hh-live-pill">3D ENVIRONMENT</span><h2>محطة غسل اليدين</h2></div><button id="resetView" class="hh-icon-btn" type="button" title="إعادة زاوية المشهد">⟳</button></div>
         <div class="hh-scene-wrap">
           <div id="threeScene" class="hh-three-scene" aria-label="مشهد ثلاثي الأبعاد لحوض غسل اليدين"></div>
-          <div id="sceneFallback" class="hh-scene-fallback" hidden><div class="fallback-sink"><div class="fallback-tap"></div><div class="fallback-basin"></div><div class="fallback-hands">👐</div><span>Hand Hygiene Station</span></div></div>
-          <div class="hh-camera-controls" aria-label="أدوات التحكم في زاوية المجسم">
+          <div class="hh-scene-hotspots" aria-label="عناصر تفاعلية داخل المحطة">
+            <button type="button" data-hotspot="tray" style="--x:18%;--y:76%">صينية الأدوات</button>
+            <button type="button" data-hotspot="faucet" style="--x:54%;--y:37%">الصنبور</button>
+            <button type="button" data-hotspot="hands" style="--x:52%;--y:67%">اليدان</button>
+            <button type="button" data-hotspot="soap" style="--x:27%;--y:39%">موزع الصابون</button>
+            <button type="button" data-hotspot="towel" style="--x:78%;--y:42%">المنشفة</button>
+            <button type="button" data-hotspot="nails" style="--x:68%;--y:69%">الأظافر</button>
+          </div>
+          <div id="sceneFallback" class="hh-scene-fallback" hidden><div class="fallback-sink"><div class="fallback-tap"></div><div class="fallback-basin"></div><div class="fallback-hands">👐</div><span>Hand Hygiene Station</span></div></div></div>
+        <div class="hh-interaction-hint" id="interactionHint">المس عنصرًا في المشهد لتنفيذ المهمة، أو اختر أداة من الرف</div>
+        <div class="hh-camera-dock"><div class="hh-camera-controls" aria-label="أدوات التحكم في زاوية المجسم">
             <div class="hh-camera-pad">
               <button type="button" data-camera="up" aria-label="تحريك زاوية المشهد لأعلى">↑</button>
               <button type="button" data-camera="left" aria-label="تدوير المشهد لليسار">←</button>
@@ -51,8 +60,14 @@
             <span class="hh-camera-caption">تحكم بالأزرار أو اسحب المجسم</span>
           </div>
           <div class="hh-scene-status" id="sceneStatus"><i></i> المحطة جاهزة</div>
+        </div></div>
+        <div class="hh-object-row" id="toolRack">
+          <button class="hh-object" type="button" data-tool="Liquid or bar soap"><span>🧴</span><b>Soap</b><small>الصابون · اضغط للاختيار</small></button>
+          <button class="hh-object" type="button" data-tool="Water"><span>🚰</span><b>Water</b><small>المياه · اضغط للاختيار</small></button>
+          <button class="hh-object" type="button" data-tool="Paper towels"><span>🧻</span><b>Towel</b><small>المنشفة · اضغط للاختيار</small></button>
+          <button class="hh-object" type="button" data-tool="Orangewood stick"><span>🪵</span><b>Orangewood</b><small>عود خشبي · اضغط للاختيار</small></button>
+          <button class="hh-object" type="button" data-tool="Lotion"><span>🧴</span><b>Lotion</b><small>مرطب · اضغط للاختيار</small></button>
         </div>
-        <div class="hh-object-row">
           <div class="hh-object"><span>🧴</span><b>Soap</b><small>الصابون</small></div>
           <div class="hh-object"><span>🚰</span><b>Water</b><small>المياه</small></div>
           <div class="hh-object"><span>🧻</span><b>Towel</b><small>المنشفة</small></div>
