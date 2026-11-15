@@ -51,6 +51,21 @@ service cloud.firestore {
   match /dailyChallenges/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
   match /challengeAnswerKeys/{id}{allow read,write:if isAdmin();}
   match /simulations/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
+  match /simulationSubmissions/{id}{
+   allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);
+   allow create:if signedIn()
+     &&request.resource.data.keys().hasOnly(['uid','simulationId','lessonId','completedSteps','totalSteps','score','elapsedSeconds','mistakes','status','xpAwarded','createdAt'])
+     &&request.resource.data.uid==request.auth.uid
+     &&request.resource.data.simulationId=='hand-hygiene-lesson-03'
+     &&request.resource.data.lessonId=='fundamentals-lesson-03'
+     &&request.resource.data.completedSteps==10
+     &&request.resource.data.totalSteps==10
+     &&request.resource.data.score==100
+     &&request.resource.data.status=='pending'
+     &&request.resource.data.xpAwarded==0
+     &&id=='hand-hygiene-lesson-03_'+request.auth.uid;
+   allow update,delete:if isAdmin();
+  }
   match /studyTasks/{id}{
    allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);
    allow create:if signedIn()&&request.resource.data.uid==request.auth.uid;
