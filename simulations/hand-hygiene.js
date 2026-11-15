@@ -1,7 +1,3 @@
-import {auth,db} from "../js/config.js";
-import {onAuthStateChanged} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
-import {doc,getDoc,setDoc,serverTimestamp} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
-
 /* Lesson source: Fundamentals of Nursing, Lesson 03, supplied pages 3–8.
    This first prototype uses the book's Antiseptic Hand Wash table as its step order.
    The illustration's 40–60 second total duration is displayed as source context;
@@ -49,13 +45,14 @@ function renderStep(){if(rubTimer){clearInterval(rubTimer);rubTimer=null;}const 
 }
 function sceneSet(key,value){if(!scene)return;const o=sceneObjects;if(key==="water"){o.water.visible=value;o.flow.visible=value;}if(key==="wet"){o.hands.traverse(n=>{if(n.material?.color)n.material.color.set("#b6d9e9");});o.droplets.visible=true;}if(key==="soap"){o.foam.visible=true;}if(key==="rub"){o.hands.rotation.z=.12;o.foam.visible=true;}if(key==="rinse"){o.flow.visible=true;o.foam.visible=false;o.droplets.visible=true;}if(key==="dry"){o.towel.visible=true;o.droplets.visible=false;o.hands.traverse(n=>{if(n.material?.color)n.material.color.set("#e9bda2");});}if(key==="tapOff"){o.flow.visible=false;}if(key==="nails"&&o.nailTool)o.nailTool.visible=true;if(key==="jewelry")o.ring.visible=value;if(key==="tray")o.tray.visible=value;if(key==="position")o.hands.position.y=.12;}
 function finish(){const seconds=Math.round((Date.now()-startedAt)/1000);$("finalScore").textContent=Math.round(completed.size/steps.length*100)+"%";$("finalTime").textContent=Math.floor(seconds/60)+"m "+String(seconds%60).padStart(2,"0")+"s";$("finalTasks").textContent=completed.size+"/"+steps.length;$("reportList").replaceChildren();steps.forEach((s,i)=>{const r=document.createElement("div");r.textContent=(i+1)+". "+s.title;const tag=document.createElement("span");tag.textContent=completed.has(i)?"مكتملة":"غير مكتملة";r.append(tag);$("reportList").append(r);});ui.report.hidden=false;ui.report.scrollIntoView({behavior:"smooth",block:"start"});ui.next.disabled=true;$( "submitResult").disabled=completed.size!==steps.length;}
-async function waitForStudent(){if(auth.currentUser)return auth.currentUser;return new Promise((resolve,reject)=>{const timer=setTimeout(()=>{unsubscribe();reject(new Error("AUTH_TIMEOUT"));},12000);const unsubscribe=onAuthStateChanged(auth,user=>{if(user){clearTimeout(timer);unsubscribe();resolve(user);}});});}
+async function waitForStudent(auth,onAuthStateChanged){if(auth.currentUser)return auth.currentUser;return new Promise((resolve,reject)=>{let unsubscribe=()=>{};const timer=setTimeout(()=>{unsubscribe();reject(new Error("AUTH_TIMEOUT"));},12000);unsubscribe=onAuthStateChanged(auth,user=>{if(user){clearTimeout(timer);unsubscribe();resolve(user);}});});}
 $("submitResult").addEventListener("click",async()=>{
  const button=$("submitResult"),statusBox=$("submissionStatus");
  if(completed.size!==steps.length){statusBox.textContent="أكمل جميع الخطوات أولًا.";return;}
  button.disabled=true;statusBox.textContent="جارٍ إرسال التقرير...";
  try{
-  const student=await waitForStudent(),simulationId="hand-hygiene-lesson-03",submissionRef=doc(db,"simulationSubmissions",simulationId+"_"+student.uid);
+  const [{auth,db},{onAuthStateChanged},{doc,getDoc,setDoc,serverTimestamp}]=await Promise.all([import("../js/config.js"),import("https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js"),import("https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js")]);
+  const student=await waitForStudent(auth,onAuthStateChanged),simulationId="hand-hygiene-lesson-03",submissionRef=doc(db,"simulationSubmissions",simulationId+"_"+student.uid);
   const existing=await getDoc(submissionRef);
   if(existing.exists()){statusBox.textContent=existing.data().status==="approved"?"تم اعتماد هذه المحاكاة بالفعل.":"سبق إرسال هذه المحاكاة وهي "+(existing.data().status==="pending"?"بانتظار مراجعة الإدارة.":"مرفوضة؛ تواصل مع الإدارة.");return;}
   await setDoc(submissionRef,{uid:student.uid,simulationId,lessonId:"fundamentals-lesson-03",completedSteps:completed.size,totalSteps:steps.length,score:Math.round(completed.size/steps.length*100),elapsedSeconds:Math.round((Date.now()-startedAt)/1000),mistakes:mistakes.slice(0,30),status:"pending",xpAwarded:0,createdAt:serverTimestamp()});
@@ -82,9 +79,12 @@ async function buildScene(){const host=$("threeScene");try{const THREE=await imp
  const tray=new THREE.Mesh(new THREE.BoxGeometry(1.1,.08,.5),mat("#d5e2ec"));tray.position.set(-2.2,1.82,.55);tray.visible=false;scene3.add(tray);
  const nailTool=new THREE.Mesh(new THREE.CylinderGeometry(.025,.045,.72,10),mat("#bd8b57"));nailTool.position.set(-.95,1.95,.95);nailTool.rotation.z=Math.PI/2.8;nailTool.visible=false;scene3.add(nailTool);
  sceneObjects={hands:new THREE.Group(),ring,water:flow,flow,droplets,foam,towel,tray,nailTool};sceneObjects.hands.add(palm,fingers,thumb,hand2);scene3.add(sceneObjects.hands);scene={renderer,scene3,camera,controls};scene.controls=controls;const reset=()=>{camera.position.set(5.4,4.1,7.4);controls.target.set(0,1.3,0);controls.update();};$("resetView").addEventListener("click",reset);
-  const cameraActions={left:()=>controls.rotateLeft(Math.PI/12),right:()=>controls.rotateLeft(-Math.PI/12),up:()=>controls.rotateUp(Math.PI/14),down:()=>controls.rotateUp(-Math.PI/14),in:()=>controls.dollyIn(1.18),out:()=>controls.dollyOut(1.18)};
-  document.querySelectorAll("[data-camera]").forEach(control=>{control.addEventListener("click",()=>{const action=cameraActions[control.dataset.camera];if(!action)return;action();controls.update();});});const resize=()=>{const w=host.clientWidth,h=host.clientHeight;if(!w||!h)return;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h);};new ResizeObserver(resize).observe(host);const clock=new THREE.Clock();function animate(){requestAnimationFrame(animate);const t=clock.getElapsedTime();if(droplets.visible)droplets.children.forEach((d,i)=>{d.position.y=1.55+((t*.7+i*.13)%0.6);});controls.update();renderer.render(scene3,camera);}animate();}catch(error){console.warn("3D scene unavailable",error);$("sceneFallback").hidden=false;host.hidden=true;}}
+  const resize=()=>{const w=host.clientWidth,h=host.clientHeight;if(!w||!h)return;camera.aspect=w/h;camera.updateProjectionMatrix();renderer.setSize(w,h);};new ResizeObserver(resize).observe(host);const clock=new THREE.Clock();function animate(){requestAnimationFrame(animate);const t=clock.getElapsedTime();if(droplets.visible)droplets.children.forEach((d,i)=>{d.position.y=1.55+((t*.7+i*.13)%0.6);});controls.update();renderer.render(scene3,camera);}animate();}catch(error){console.warn("3D scene unavailable",error);$("sceneFallback").hidden=false;host.hidden=true;}}
 buildScene();renderStep();
+const cameraActions={left:()=>scene?.controls.rotateLeft(Math.PI/12),right:()=>scene?.controls.rotateLeft(-Math.PI/12),up:()=>scene?.controls.rotateUp(Math.PI/14),down:()=>scene?.controls.rotateUp(-Math.PI/14),in:()=>scene?.controls.dollyIn(1.18),out:()=>scene?.controls.dollyOut(1.18)};
+document.querySelectorAll("[data-camera]").forEach(control=>control.addEventListener("click",()=>{if(!scene){setHint("المجسم ثلاثي الأبعاد لم يكتمل تحميله بعد.");return;}cameraActions[control.dataset.camera]?.();scene.controls.update();}));
+
+
 
 /* Student-driven station interactions: tap a 3D station hotspot, then use the matching virtual tool. */
 const hint=$("interactionHint");
