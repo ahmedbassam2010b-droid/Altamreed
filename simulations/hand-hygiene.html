@@ -37,7 +37,19 @@
         <div class="hh-scene-wrap">
           <div id="threeScene" class="hh-three-scene" aria-label="مشهد ثلاثي الأبعاد لحوض غسل اليدين"></div>
           <div id="sceneFallback" class="hh-scene-fallback" hidden><div class="fallback-sink"><div class="fallback-tap"></div><div class="fallback-basin"></div><div class="fallback-hands">👐</div><span>Hand Hygiene Station</span></div></div>
-          <div class="hh-scene-hint"><span>↔</span> اسحب لتدوير المشهد · قرّب بإصبعين</div>
+          <div class="hh-camera-controls" aria-label="أدوات التحكم في زاوية المجسم">
+            <div class="hh-camera-pad">
+              <button type="button" data-camera="up" aria-label="تحريك زاوية المشهد لأعلى">↑</button>
+              <button type="button" data-camera="left" aria-label="تدوير المشهد لليسار">←</button>
+              <button type="button" data-camera="down" aria-label="تحريك زاوية المشهد لأسفل">↓</button>
+              <button type="button" data-camera="right" aria-label="تدوير المشهد لليمين">→</button>
+            </div>
+            <div class="hh-camera-zoom">
+              <button type="button" data-camera="in" aria-label="تكبير المجسم">＋</button>
+              <button type="button" data-camera="out" aria-label="تصغير المجسم">−</button>
+            </div>
+            <span class="hh-camera-caption">تحكم بالأزرار أو اسحب المجسم</span>
+          </div>
           <div class="hh-scene-status" id="sceneStatus"><i></i> المحطة جاهزة</div>
         </div>
         <div class="hh-object-row">
