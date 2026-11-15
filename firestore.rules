@@ -42,6 +42,7 @@ service cloud.firestore {
    allow update,delete:if false;
   }
   match /subjects/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
+  match /chapters/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
   match /lessons/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
   match /exams/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
   match /examAnswerKeys/{id}{allow read,write:if isAdmin();}
