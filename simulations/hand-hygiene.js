@@ -82,7 +82,7 @@ async function buildScene(){const host=$("threeScene");try{const THREE=await imp
 buildScene();renderStep();
 const cameraActions={left:()=>scene?.controls.rotateLeft(Math.PI/12),right:()=>scene?.controls.rotateLeft(-Math.PI/12),up:()=>scene?.controls.rotateUp(Math.PI/14),down:()=>scene?.controls.rotateUp(-Math.PI/14),in:()=>scene?.controls.dollyIn(1.18),out:()=>scene?.controls.dollyOut(1.18)};
 document.querySelectorAll("[data-camera]").forEach(control=>control.addEventListener("click",()=>{if(!scene){setHint("المجسم ثلاثي الأبعاد لم يكتمل تحميله بعد.");return;}cameraActions[control.dataset.camera]?.();scene.controls.update();}));
-const cameraActions={left:()=>scene?.controls.rotateLeft(Math.PI/12),right:()=>scene?.controls.rotateLeft(-Math.PI/12),up:()=>scene?.controls.rotateUp(Math.PI/14),down:()=>scene?.controls.rotateUp(-Math.PI/14),in:()=>scene?.controls.dollyIn(1.18),out:()=>scene?.controls.dollyOut(1.18)};
+
 document.querySelectorAll("[data-camera]").forEach(control=>control.addEventListener("click",()=>{if(!scene){setHint("المجسم ثلاثي الأبعاد لم يكتمل تحميله بعد. أعد تحميل الصفحة.");return;}cameraActions[control.dataset.camera]?.();scene.controls.update();}));
 
 /* Student-driven station interactions: tap a 3D station hotspot, then use the matching virtual tool. */
