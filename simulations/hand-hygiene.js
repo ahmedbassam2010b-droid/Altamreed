@@ -107,7 +107,7 @@ function stationAction(target){
  else if(task==="water"&&target==="faucet"){sceneSet("water",true);complete("تم تشغيل المياه. أكمل ضبط درجة الحرارة وقوة التدفق من لوحة المهمة.");}
  else if(task==="wet"&&target==="hands"){sceneSet("wet",true);complete("تم تبليل اليدين والمعصمين.");}
  else if(task==="soap"&&target==="soap"){
-  if(selectedTool==="Liquid or bar soap"||selectedTool==="Soap"){sceneSet("soap",true);complete("تم استخدام الصابون على اليدين.");}
+  if(selectedTool==="Liquid or bar soap"||selectedTool==="Soap"){sceneSet("soap",true);const apply=ui.area.querySelector(".primary-action");if(apply)apply.click();else feedback("تم وضع الصابون. أكّد النوع والكمية من لوحة المهمة.","good");}
   else recordMistake("اختر الصابون من رف الأدوات أولًا، ثم المس موزع الصابون.");
  }else if(task==="rub"&&target==="hands"){
   const start=ui.area.querySelector("button");
