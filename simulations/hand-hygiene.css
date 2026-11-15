@@ -4,3 +4,20 @@
 @media(max-width:850px){.hh-workspace{grid-template-columns:1fr}.hh-task-card{position:static}.hh-scene-wrap{height:390px}.hh-task-column{display:grid;grid-template-columns:1fr}.hh-safety-note{margin-top:10px}}
 @media(max-width:520px){.hh-topbar{height:60px;padding:0 14px}.hh-top-meta{font-size:10px}.hh-brand{font-size:13px}.hh-brand-mark{width:34px;height:34px}.hh-shell{width:calc(100% - 22px);margin:20px auto 35px}.hh-intro-badge{padding:8px 10px}.hh-intro-badge strong{font-size:22px}.hh-intro h1{font-size:27px}.hh-intro p:last-child{font-size:12px}.hh-progress-card{padding:14px}.hh-scene-wrap{height:310px;border-radius:17px}.hh-object-row{grid-template-columns:repeat(2,1fr)}.hh-object{padding:8px}.hh-task-card{padding:16px}.hh-task-card h2{font-size:17px}.hh-report{padding:20px 14px}.hh-report-stats{gap:6px}.hh-report-stats div{padding:10px 5px}.hh-report-stats strong{font-size:19px}.hh-footer{font-size:8px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important}}
+
+
+/* Accessible camera controls: buttons are the primary alternative to drag gestures. */
+.hh-camera-controls{position:absolute;left:14px;bottom:12px;z-index:3;display:flex;align-items:flex-end;gap:9px;direction:ltr}
+.hh-camera-pad{display:grid;grid-template-columns:repeat(3,38px);grid-template-rows:repeat(2,36px);gap:5px;padding:7px;background:#ffffffed;border:1px solid #dce8f4;border-radius:15px;box-shadow:0 5px 18px #315d9818;backdrop-filter:blur(8px)}
+.hh-camera-pad button,.hh-camera-zoom button{display:grid;place-items:center;border:1px solid #e1eaf4;border-radius:10px;background:#f5f9ff;color:#286fca;font:800 18px Inter,sans-serif;min-width:0;min-height:0;padding:0;touch-action:manipulation;user-select:none;-webkit-tap-highlight-color:transparent}
+.hh-camera-pad button:active,.hh-camera-zoom button:active{background:#dceeff;transform:scale(.96)}
+.hh-camera-pad [data-camera="up"]{grid-column:2;grid-row:1}
+.hh-camera-pad [data-camera="left"]{grid-column:1;grid-row:2}
+.hh-camera-pad [data-camera="down"]{grid-column:2;grid-row:2}
+.hh-camera-pad [data-camera="right"]{grid-column:3;grid-row:2}
+.hh-camera-zoom{display:grid;gap:5px;padding:6px;background:#ffffffed;border:1px solid #dce8f4;border-radius:13px;box-shadow:0 5px 18px #315d9818}
+.hh-camera-zoom button{width:36px;height:34px;font-size:21px}
+.hh-camera-caption{position:absolute;left:0;bottom:-21px;white-space:nowrap;color:#70849b;font-size:9px;background:#ffffffc9;padding:2px 6px;border-radius:6px;pointer-events:none}
+.hh-scene-hint{left:auto;right:14px;bottom:13px;max-width:43%;text-align:center}
+@media(max-width:520px){.hh-camera-controls{left:9px;bottom:10px;gap:6px}.hh-camera-pad{grid-template-columns:repeat(3,34px);grid-template-rows:repeat(2,33px);gap:4px;padding:5px;border-radius:13px}.hh-camera-zoom{gap:4px;padding:5px}.hh-camera-zoom button{width:32px;height:31px}.hh-camera-pad button{font-size:16px}.hh-camera-caption{font-size:8px;bottom:-19px}.hh-scene-hint{right:8px;bottom:12px;max-width:38%;font-size:8px;padding:6px}}
+@media(max-width:360px){.hh-camera-pad{grid-template-columns:repeat(3,29px);grid-template-rows:repeat(2,29px)}.hh-camera-zoom button{width:28px;height:28px}.hh-scene-hint{max-width:34%}}
