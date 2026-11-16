@@ -2484,167 +2484,289 @@
       "order": 7,
       "lessons": [
         {
-          "title": "Hypothalamus and Endocrine Glands",
+          "title": "Hypothalamus and Endocrine Glands | تحت المهاد والغدد الصماء",
           "order": 1,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Describe the hypothalamic–pituitary relationship in the source.",
+            "Identify the endocrine glands and hormones named.",
+            "Distinguish anterior and posterior pituitary roles as described."
           ],
           "keyTerms": [
             "Hypothalamus",
-            "Pituitary",
-            "Parathyroid"
+            "Pituitary gland",
+            "TRH",
+            "TSH",
+            "ADH",
+            "Oxytocin",
+            "Parathyroid",
+            "Insulin",
+            "Glucagon"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Endocrine control"
             },
             {
               "type": "paragraph",
-              "text": "The book explains that the hypothalamus controls many endocrine glands through hormones that reach the pituitary. It also mentions the parathyroid glands and calcium regulation."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يوضح الكتاب أن تحت المهاد يتحكم في كثير من الغدد الصماء عبر هرمونات تصل إلى النخامية، كما يذكر الغدد جار الدرقية وتنظيم الكالسيوم."
-            },
-            {
-              "type": "heading",
-              "text": "Study table | جدول للمراجعة"
+              "text": "The textbook explains that the hypothalamus controls many endocrine glands through hormones reaching the pituitary gland along the hypothalamic–pituitary axis. The pituitary then stimulates the thyroid, adrenal glands and gonads, and influences growth hormone and prolactin."
             },
             {
               "type": "table",
               "rows": [
                 [
                   "Structure",
-                  "Role in the source"
+                  "Role described in the book"
                 ],
                 [
                   "Hypothalamus",
-                  "Regulates many endocrine glands through the pituitary"
+                  "Regulates pituitary activity through releasing signals"
                 ],
                 [
-                  "Parathyroid",
-                  "Regulates calcium"
+                  "Anterior pituitary",
+                  "Secretes hormones that stimulate target glands; also relates to growth hormone and prolactin"
+                ],
+                [
+                  "Posterior pituitary",
+                  "Stores ADH and oxytocin, which are produced in the hypothalamus"
+                ],
+                [
+                  "Parathyroid glands",
+                  "Regulate calcium and phosphorus in bones and blood"
+                ],
+                [
+                  "Pancreas",
+                  "Secretes insulin and glucagon"
                 ]
               ]
             },
             {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "تحت المهاد ينظم الغدة النخامية، والنخامية تنظم غددًا أخرى. الفص الخلفي للنخامية يخزن ADH والأوكسيتوسين اللذين يصنعهما تحت المهاد."
+            },
+            {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Medicine names, doses and treatment recommendations are historical and are not current clinical instructions. | الأدوية والجرعات والتوصيات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
             }
           ]
         },
         {
-          "title": "Thyroid Gland Diseases",
+          "title": "Thyroid Gland Diseases | أمراض الغدة الدرقية",
           "order": 2,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Identify thyroid hormones and their regulatory axis.",
+            "Compare hyperthyroidism and hypothyroidism manifestations.",
+            "List the investigations described in the textbook."
           ],
           "keyTerms": [
-            "Thyroid",
+            "T3",
+            "T4",
+            "TSH",
+            "TRH",
             "Hyperthyroidism",
-            "Hypothyroidism"
+            "Hypothyroidism",
+            "Graves' disease"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Hormonal regulation"
             },
             {
               "type": "paragraph",
-              "text": "The chapter includes hyperthyroidism and hypothyroidism. Compare their manifestations, investigations and treatment categories as presented in the textbook."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يشمل الفصل فرط نشاط الغدة الدرقية وقصورها. قارن الأعراض والفحوصات وعناوين العلاج كما يعرضها الكتاب."
-            },
-            {
-              "type": "heading",
-              "text": "Study table | جدول للمراجعة"
+              "text": "The thyroid secretes T4 (thyroxine) and T3 (triiodothyronine) under stimulation by TSH from the anterior pituitary; TSH is itself regulated by TRH from the hypothalamus."
             },
             {
               "type": "table",
               "rows": [
                 [
                   "Condition",
-                  "Meaning"
+                  "Causes / manifestations described"
                 ],
                 [
                   "Hyperthyroidism",
-                  "Increased thyroid activity"
+                  "Graves' disease, toxic adenoma, toxic multinodular goitre, thyroiditis, thyroid tumours or pituitary tumours; anxiety, sweating, palpitations, fatigue, weight loss despite appetite, dyspnea, tremor and exophthalmos"
                 ],
                 [
                   "Hypothyroidism",
-                  "Reduced thyroid activity"
+                  "Autoimmune destruction/thyroiditis, radiotherapy, thyroidectomy, lithium or hypothalamic disorders; fatigue, cold intolerance, lethargy, weight gain, constipation, muscle/joint pain, hair loss, dry skin and bradycardia"
                 ]
               ]
             },
             {
-              "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
-            }
-          ]
-        },
-        {
-          "title": "Diabetes Mellitus (DM)",
-          "order": 3,
-          "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
-          ],
-          "keyTerms": [
-            "Diabetes mellitus",
-            "Blood glucose",
-            "Insulin"
-          ],
-          "contentBlocks": [
-            {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Investigations"
             },
             {
-              "type": "paragraph",
-              "text": "The book defines diabetes mellitus as metabolic diseases characterized by chronic elevation of blood glucose. It compares Type I and Type II and discusses nutrition, physical activity, glucose monitoring, insulin profiles and oral medicines."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يعرّف الكتاب السكري بأنه أمراض أيضية تتميز بارتفاع مزمن في جلوكوز الدم. ويقارن النوعين الأول والثاني ويتناول التغذية والنشاط ومتابعة السكر وأنواع الإنسولين والأدوية الفموية."
+              "type": "list",
+              "items": [
+                "TSH, free T4 and free T3.",
+                "Thyroid ultrasound.",
+                "Radioactive iodine or technetium scan.",
+                "Thyroid-related antibodies.",
+                "Fine-needle aspiration for pathological examination when indicated."
+              ]
             },
             {
               "type": "heading",
-              "text": "Study table | جدول للمراجعة"
+              "text": "Laboratory patterns"
             },
             {
               "type": "table",
               "rows": [
                 [
-                  "Topic",
-                  "What the chapter covers"
+                  "Pattern",
+                  "Free T3 / T4",
+                  "TSH"
                 ],
                 [
-                  "Types",
-                  "Type I and Type II comparison"
+                  "Hyperthyroidism",
+                  "Increased",
+                  "Typically reduced in primary thyroid overactivity"
                 ],
                 [
-                  "Management themes",
-                  "Nutrition, activity, glucose monitoring, insulin and oral medicines"
+                  "Hypothyroidism",
+                  "Decreased",
+                  "Increased in primary thyroid failure"
                 ]
               ]
             },
             {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "احفظ محور TRH ← TSH ← T3/T4. فرط النشاط يرتبط بزيادة الهرمونات وأعراض مثل الخفقان والرعشة، والقصور يرتبط بالتعب والبرد وزيادة الوزن وبطء القلب."
+            },
+            {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Medicine names, doses and treatment recommendations are historical and are not current clinical instructions. | الأدوية والجرعات والتوصيات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
+            }
+          ]
+        },
+        {
+          "title": "Diabetes Mellitus (DM) | داء السكري",
+          "order": 3,
+          "objectives": [
+            "Define diabetes mellitus and classify its types as in the source.",
+            "Identify symptoms and laboratory criteria printed in the book.",
+            "Summarize education, nutrition, activity and medication topics without using historical doses as prescriptions."
+          ],
+          "keyTerms": [
+            "Diabetes mellitus",
+            "Type 1",
+            "Type 2",
+            "Gestational diabetes",
+            "Insulin",
+            "HbA1c",
+            "DKA",
+            "Hypoglycemic agents"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Definition"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook describes diabetes mellitus as a group of metabolic diseases with chronic elevation of blood glucose and disturbed carbohydrate, fat and protein metabolism, caused by insufficient insulin secretion or reduced insulin effectiveness."
+            },
+            {
+              "type": "heading",
+              "text": "Classification"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Type",
+                  "Description in the source"
+                ],
+                [
+                  "Type 1",
+                  "Absolute insulin deficiency associated with autoimmune destruction of pancreatic cells"
+                ],
+                [
+                  "Type 2",
+                  "Insulin resistance, beta-cell dysfunction, increased intestinal glucose absorption and increased hepatic glucose production"
+                ],
+                [
+                  "Gestational",
+                  "Hyperglycemia first recognized during pregnancy; the book notes it often resolves after delivery"
+                ],
+                [
+                  "Other forms",
+                  "Associated with pancreatic disease, hormone excess, medicines, genetic factors or insulin-receptor defects"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Symptoms and investigations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Frequent urination and thirst.",
+                "Fatigue, increased appetite and weight loss (more prominent in the Type 1 comparison in the source).",
+                "Blurred vision, genital itching and numbness are also listed.",
+                "The textbook includes fasting, post-meal and random glucose thresholds and HbA1c monitoring; these printed thresholds are historical source values."
+              ]
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Source monitoring item",
+                  "Purpose"
+                ],
+                [
+                  "Capillary glucose",
+                  "Day-to-day monitoring"
+                ],
+                [
+                  "Fasting and 2-hour post-meal glucose",
+                  "Periodic assessment"
+                ],
+                [
+                  "HbA1c",
+                  "Longer-term glycemic assessment"
+                ],
+                [
+                  "Lipids and kidney function",
+                  "Assessment of associated risk and complications"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Treatment framework in the book"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Patient education about disease, symptoms and complications.",
+                "Foot-care education and glucose-monitoring skills.",
+                "Individualized nutrition planning.",
+                "Physical activity and smoking cessation are discussed.",
+                "Drug therapy section covers insulin and oral glucose-lowering drug classes."
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "السكري ارتفاع مزمن في سكر الدم بسبب نقص الإنسولين أو ضعف تأثيره. قارن بين النوع الأول والثاني وسكري الحمل، وراجع التثقيف الغذائي والعناية بالقدم ومتابعة السكر."
+            },
+            {
+              "type": "warning",
+              "title": "Clinical caution",
+              "text": "All diagnostic cutoffs, insulin schedules and drug details in this 2016–2020 source are historical study material. They must not be used to diagnose or dose treatment for an individual."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Medicine names, doses and treatment recommendations are historical and are not current clinical instructions. | الأدوية والجرعات والتوصيات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
             }
           ]
         }
@@ -2656,153 +2778,261 @@
       "order": 8,
       "lessons": [
         {
-          "title": "Typhoid Fever",
+          "title": "Typhoid Fever | حمى التيفويد",
           "order": 1,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Identify the organisms and transmission route described.",
+            "Summarize the week-by-week manifestations in the source.",
+            "List the investigations and prevention measures."
           ],
           "keyTerms": [
-            "Typhoid",
-            "Salmonella Typhi"
+            "Salmonella Typhi",
+            "Salmonella Paratyphi",
+            "Peyer's patches",
+            "Relative bradycardia",
+            "Rose spots",
+            "Blood culture",
+            "Widal test"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Cause and transmission"
             },
             {
               "type": "paragraph",
-              "text": "The book states that typhoid is acquired through food or drink contaminated with feces from a carrier and names Salmonella Typhi and Salmonella Paratyphi in the section. It then covers manifestations, diagnosis, treatment and prevention."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يذكر الكتاب انتقال التيفود عبر طعام أو شراب ملوث ببراز حامل للعدوى، ويسمي Salmonella Typhi وSalmonella Paratyphi، ثم يعرض الأعراض والتشخيص والعلاج والوقاية."
+              "text": "The book names Salmonella Typhi and Salmonella Paratyphi. Infection follows ingestion of food or drink contaminated by feces from a patient or carrier. It describes intestinal entry through Peyer's patches, followed by spread through blood to organs including liver, spleen, bone marrow and gallbladder; carriage may persist."
             },
             {
               "type": "heading",
-              "text": "Study table | جدول للمراجعة"
+              "text": "Clinical course described"
             },
             {
               "type": "table",
               "rows": [
                 [
-                  "Organism",
-                  "Name"
+                  "Period",
+                  "Features listed"
                 ],
                 [
-                  "Typhoid",
-                  "Salmonella Typhi"
+                  "First week",
+                  "Gradual fever rise, chills, headache, dizziness, limb pain, constipation or diarrhea, and relative bradycardia"
                 ],
                 [
-                  "Paratyphoid",
-                  "Salmonella Paratyphi"
+                  "End of first week",
+                  "Rose spots over upper abdomen/back, splenic enlargement and abdominal distension"
+                ],
+                [
+                  "Second week",
+                  "Possible complications including impaired concentration, peritonitis and osteomyelitis"
                 ]
               ]
             },
             {
+              "type": "heading",
+              "text": "Diagnosis and prevention"
+            },
+            {
+              "type": "list",
+              "items": [
+                "CBC may show leukopenia.",
+                "Blood culture is listed for the first week.",
+                "Stool culture is listed for the second week.",
+                "Widal test is discussed for the third week, with the source noting its limitations.",
+                "Prevention: vaccination, safe drinking water and health oversight of food handlers."
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "انتقال برازي فموي، وارتفاع تدريجي للحرارة، وقد يظهر Relative Bradycardia ثم Rose spots. توقيت المزارع كما يرتبه الكتاب: دم مبكرًا وبراز لاحقًا."
+            },
+            {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Medicine names, doses and treatment recommendations are historical and are not current clinical instructions. | الأدوية والجرعات والتوصيات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
             }
           ]
         },
         {
-          "title": "Measles",
+          "title": "Measles | الحصبة",
           "order": 2,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Describe the transmission and incubation period given.",
+            "Recognize the staged symptoms and Koplik spots.",
+            "List complications and prevention topics."
           ],
           "keyTerms": [
-            "Measles"
+            "Measles",
+            "Paramyxovirus",
+            "Droplets",
+            "Koplik spots",
+            "Photophobia",
+            "MMR"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Transmission and incubation"
             },
             {
               "type": "paragraph",
-              "text": "Study the source section on measles under transmission, manifestations, complications, diagnosis, treatment and prevention."
+              "text": "The source describes measles as a droplet-transmitted viral infection and gives an incubation period of about ten days. It notes transmission from the beginning of symptoms until the rash disappears."
+            },
+            {
+              "type": "heading",
+              "text": "Symptoms by day"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Time",
+                  "Features in the textbook"
+                ],
+                [
+                  "Day 1",
+                  "Fever, runny nose and increased eye secretions"
+                ],
+                [
+                  "Day 2",
+                  "Cough, photophobia and small white Koplik spots on buccal mucosa"
+                ],
+                [
+                  "After 3–4 days",
+                  "Red rash begins behind ears and forehead and spreads over the body"
+                ],
+                [
+                  "Day 6–7",
+                  "Fever falls and rash begins to fade"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Complications and prevention"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Otitis media and pneumonia.",
+                "Encephalitis, wasting and weight loss.",
+                "The book discusses isolation and MMR vaccination; it also mentions immunoglobulin for selected susceptible contacts."
+              ]
             },
             {
               "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "ادرس قسم الحصبة وفق الانتقال والمظاهر والمضاعفات والتشخيص والعلاج والوقاية كما ورد بالكتاب."
+              "title": "بالعربي",
+              "text": "العلامة المميزة التي يذكرها الكتاب: Koplik spots داخل الفم، يليها طفح يبدأ خلف الأذن والجبهة وينتشر."
             },
             {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Medicine names, doses and treatment recommendations are historical and are not current clinical instructions. | الأدوية والجرعات والتوصيات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
             }
           ]
         },
         {
-          "title": "Rubella (German Measles)",
+          "title": "Rubella (German Measles) | الحصبة الألمانية",
           "order": 3,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Identify the transmission and incubation period.",
+            "Summarize the manifestations listed.",
+            "Understand why infection during pregnancy is highlighted in the source."
           ],
           "keyTerms": [
-            "Rubella"
+            "Rubella",
+            "Toga virus",
+            "Droplets",
+            "Lymphadenopathy",
+            "MMR"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Transmission and clinical picture"
             },
             {
               "type": "paragraph",
-              "text": "Review rubella's specific features and the pregnancy-related points stated in the textbook, following its sequence of transmission, manifestations and prevention."
+              "text": "The book describes rubella as droplet-transmitted and gives an incubation period of approximately 18 days. It lists mild fever, rash beginning on the face and neck and spreading to the body and limbs, enlarged neck lymph nodes, joint pain and reduced platelets in adults."
             },
             {
               "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "راجع خصائص الحصبة الألمانية والنقاط المتعلقة بالحمل المذكورة في الكتاب، مع اتباع ترتيب الانتقال والمظاهر والوقاية."
+              "title": "بالعربي",
+              "text": "الحصبة الألمانية غالبًا ترتبط بحرارة بسيطة وطفح يبدأ بالوجه والرقبة مع تضخم العقد الليمفاوية بالرقبة."
+            },
+            {
+              "type": "heading",
+              "text": "Pregnancy and prevention"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source specifically highlights infection during early pregnancy because of potential fetal harm. It lists MMR vaccination as prevention. Its historical pregnancy-management statement is not reproduced as current advice; pregnancy exposure requires prompt specialist assessment."
             },
             {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Medicine names, doses and treatment recommendations are historical and are not current clinical instructions. | الأدوية والجرعات والتوصيات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
             }
           ]
         },
         {
-          "title": "Mumps",
+          "title": "Mumps | النكاف",
           "order": 4,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Describe the route of transmission and incubation period.",
+            "Recognize parotid swelling and associated symptoms.",
+            "List the complications named in the source."
           ],
           "keyTerms": [
             "Mumps",
-            "Parotid glands"
+            "Parotid gland",
+            "Submandibular gland",
+            "Orchitis",
+            "Oophoritis",
+            "Pancreatitis",
+            "Meningoencephalitis",
+            "MMR"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Transmission and symptoms"
             },
             {
               "type": "paragraph",
-              "text": "Organize the mumps section into transmission, clinical features, complications, diagnosis, treatment and prevention, using the textbook's wording and sequence."
+              "text": "The textbook describes droplet transmission and an incubation period of about 18 days. Symptoms include fever, pain at the angle of the jaw followed by painful parotid swelling, and possible swelling of the submandibular glands."
+            },
+            {
+              "type": "heading",
+              "text": "Complications"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Orchitis.",
+                "Oophoritis.",
+                "Pancreatitis.",
+                "Meningoencephalitis."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Management and prevention topics"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source mentions isolation, symptomatic care and MMR vaccination. Any treatment of complications requires current medical assessment."
             },
             {
               "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "نظم قسم النكاف إلى الانتقال والمظاهر والمضاعفات والتشخيص والعلاج والوقاية وفق ألفاظ وترتيب الكتاب."
+              "title": "بالعربي",
+              "text": "العلامة الأوضح للنكاف: ألم عند زاوية الفك يتبعه تورم مؤلم بالغدة النكافية."
             },
             {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Medicine names, doses and treatment recommendations are historical and are not current clinical instructions. | الأدوية والجرعات والتوصيات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
             }
           ]
         }
@@ -2814,91 +3044,187 @@
       "order": 9,
       "lessons": [
         {
-          "title": "Coma",
+          "title": "Coma | الغيبوبة",
           "order": 1,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Describe the brain structures involved in wakefulness in the source.",
+            "Recognize lateralizing neurological signs listed.",
+            "Summarize the assessment and nursing-care themes."
           ],
           "keyTerms": [
             "Coma",
-            "Level of consciousness",
-            "CPR"
+            "Reticular activating system",
+            "Cerebral cortex",
+            "Lateralizing signs",
+            "GCS",
+            "CSF",
+            "CT",
+            "MRI"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Physiology of wakefulness"
             },
             {
               "type": "paragraph",
-              "text": "The book discusses coma and includes clinical signs and a CPR subsection. Treat the CPR material as textbook theory for supervised professional training, not as instructions for unsupervised practice."
+              "text": "The book explains that wakefulness depends on the integrity of the reticular activating system, involving nuclei in the brain stem, hypothalamus and thalamus, and the integrity of the cerebral cortex."
+            },
+            {
+              "type": "heading",
+              "text": "Lateralizing neurological signs"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Facial asymmetry.",
+                "Unequal deep tendon reflexes.",
+                "Deviation of the eyes or turning of the head to one side.",
+                "Different muscle tone on the two sides.",
+                "Unequal pupils."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Assessment and investigations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Obtain history from relatives.",
+                "Measure blood pressure, pulse, temperature and respiratory rate.",
+                "Check blood glucose and observe breathing and skin findings.",
+                "Neurological examination.",
+                "CBC, liver and kidney function tests.",
+                "Lumbar puncture/CSF analysis when clinically indicated.",
+                "Brain CT or MRI."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Nursing care themes in the source"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Treat the underlying cause as directed by the medical team.",
+                "Regular repositioning and skin care to reduce pressure injury risk.",
+                "Maintain airway clearance and observe respiratory secretions.",
+                "Monitor fluid input and output.",
+                "Provide prescribed nutrition and fluids through appropriate clinical routes."
+              ]
             },
             {
               "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يعرض الكتاب الغيبوبة وعلاماتها، ويتضمن قسمًا عن الإنعاش القلبي الرئوي. تُدرس معلومات الإنعاش كنظرية ضمن تدريب مهني بإشراف، وليست تعليمات للتطبيق دون إشراف."
+              "title": "بالعربي",
+              "text": "الغيبوبة ليست تشخيص سبب واحد؛ الكتاب يركز على تقييم العلامات الحيوية والسكر والفحص العصبي والبحث عن السبب، مع منع مضاعفات الرقود."
             },
             {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Emergency context",
+              "text": "A person with reduced consciousness needs emergency medical assessment. This is a study summary, not a bedside protocol."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Medicine names, doses and treatment recommendations are historical and are not current clinical instructions. | الأدوية والجرعات والتوصيات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
             }
           ]
         },
         {
-          "title": "Meningitis",
+          "title": "Meningitis | التهاب السحايا",
           "order": 2,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Define meningitis and identify organisms listed.",
+            "Describe transmission and manifestations in the source.",
+            "List CSF findings and diagnostic methods described."
           ],
           "keyTerms": [
             "Meningitis",
-            "Meninges",
-            "Nasopharynx"
+            "Neisseria meningitidis",
+            "Haemophilus influenzae",
+            "Pneumococcus",
+            "Lumbar puncture",
+            "CSF",
+            "Petechiae",
+            "Purpura"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Definition and causes"
             },
             {
               "type": "paragraph",
-              "text": "The textbook defines meningitis as inflammation of the membranes surrounding the brain. It describes microbial causes and a route from the nasopharynx to the meninges through blood, followed by symptoms and diagnosis."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يعرّف الكتاب التهاب السحايا بأنه التهاب الأغشية المحيطة بالمخ، ويذكر أسبابًا ميكروبية وانتقالًا من البلعوم الأنفي إلى السحايا عبر الدم، ثم الأعراض والتشخيص."
+              "text": "Meningitis is inflammation of the membranes surrounding the brain. The textbook lists bacterial, viral, fungal and non-microbial causes and names Neisseria meningitidis, Haemophilus influenzae, Pneumococcus and Streptococcus among bacterial organisms."
             },
             {
               "type": "heading",
-              "text": "Study table | جدول للمراجعة"
+              "text": "Transmission and manifestations"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source describes droplet spread, especially in crowded settings. It lists fever, irritability, confusion, reduced concentration and consciousness, neck stiffness, purplish petechial/purpuric rash and possible seizures."
+            },
+            {
+              "type": "heading",
+              "text": "Diagnosis"
             },
             {
               "type": "table",
               "rows": [
                 [
-                  "Term",
-                  "Meaning"
+                  "CSF feature",
+                  "Pattern described in the source"
                 ],
                 [
-                  "Meningitis",
-                  "Inflammation of the meninges"
+                  "Neutrophils",
+                  "Increased"
                 ],
                 [
-                  "Nasopharynx",
-                  "A site mentioned in the described route"
+                  "Glucose",
+                  "Reduced"
+                ],
+                [
+                  "Protein",
+                  "Increased"
+                ],
+                [
+                  "Pressure",
+                  "Increased CSF pressure"
                 ]
               ]
             },
             {
+              "type": "list",
+              "items": [
+                "Lumbar puncture and CSF examination.",
+                "Gram stain to identify bacterial type.",
+                "Culture of CSF, blood, skin-lesion fluid and nasopharyngeal swab are listed."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Treatment and prevention topics"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook includes antimicrobial regimens and preventive treatment for contacts. These are historical and must not be used as current prescribing instructions; suspected meningitis requires urgent hospital assessment and current protocols."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "العلامات المهمة: حرارة، تيبس الرقبة، اضطراب الوعي، وقد يظهر طفح نزفي. الفحص المحوري المذكور هو تحليل السائل النخاعي بعد البزل القطني."
+            },
+            {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Urgent medical condition",
+              "text": "Suspected meningitis is an emergency. Do not delay emergency evaluation or rely on this historical lesson for treatment."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Medicine names, doses and treatment recommendations are historical and are not current clinical instructions. | الأدوية والجرعات والتوصيات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
             }
           ]
         }
@@ -3223,7 +3549,7 @@
     }
   ],
   "contentStatus": "draft_incomplete",
-  "contentStatusNote": "Chapters 1–6 and General Immunity expanded from the textbook. Chapters 7–10 remain to be expanded and visually reviewed; do not import as final.",
+  "contentStatusNote": "General immunity and chapters 1–9 expanded from the source. Chapter 10 dermatology/venereology remains to be expanded and visual assets still need final integration and QA.",
   "editorialPolicy": {
     "sourceOnly": true,
     "sourceTitle": "Internal Medicine, Fevers, Dermatology and Venereology — Second Year (2016–2020)",
@@ -3237,8 +3563,8 @@
     ]
   },
   "editorialVerification": {
-    "sourcePagesChecked": 65,
+    "sourcePagesChecked": 74,
     "sourcePagesTotal": 94,
-    "placeholdersRemaining": 15
+    "placeholdersRemaining": 6
   }
 }
