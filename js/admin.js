@@ -63,10 +63,11 @@ async function importSecondYearMedicalCurriculum(subjectId,publish){
  if(!subjectSnap.exists())throw new Error("SUBJECT_NOT_FOUND");
  const subject=subjectSnap.data();
  const gradeSnap=subject.gradeId?await getDoc(doc(db,"grades",subject.gradeId)):null;
- const gradeName=(gradeSnap&&gradeSnap.exists()?gradeSnap.data().name:"")+" "+(subject.year||"");
- if(!/second|ثاني|الثاني/i.test([gradeName,subject.title,subject.term].join(" ")))throw new Error("WRONG_GRADE");
- const existing=await getDocs(query(collection(db,"chapters"),where("subjectId","==",subjectId),where("sourceCurriculumId","==","internal-medicine-second-year-2016-2020")));
- if(!existing.empty)throw new Error("ALREADY_IMPORTED");
+ const gradeData=gradeSnap&&gradeSnap.exists()?gradeSnap.data():{};
+ const gradeName=[gradeData.name,gradeData.title,subject.year,subject.grade,subject.gradeName].filter(Boolean).join(" ");
+ if(!/second|ثاني|الثاني/i.test(gradeName))throw new Error("WRONG_GRADE");
+ const existing=await getDocs(query(collection(db,"chapters"),where("subjectId","==",subjectId)));
+ if(existing.docs.some(d=>d.data().sourceCurriculumId==="internal-medicine-second-year-2016-2020"))throw new Error("ALREADY_IMPORTED");
  const response=await fetch("content/second-year/internal-medicine-curriculum.json",{cache:"no-store"});
  if(!response.ok)throw new Error("CURRICULUM_FILE_NOT_FOUND");
  const curriculum=await response.json();
