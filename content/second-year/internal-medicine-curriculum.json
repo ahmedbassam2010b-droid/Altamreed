@@ -6,6 +6,107 @@
   "subjectTitle": "Internal Medicine, Fevers, Dermatology and Venereology",
   "chapters": [
     {
+      "title": "Preliminary Section — General Immunity",
+      "description": "المناعة العامة — قسم تمهيدي يسبق الفصل الأول في الكتاب.",
+      "order": 0,
+      "lessons": [
+        {
+          "title": "Immune Response | الاستجابة المناعية",
+          "order": 1,
+          "objectives": [
+            "Distinguish innate from acquired immunity.",
+            "Compare active and passive acquired immunity."
+          ],
+          "keyTerms": [
+            "Innate immunity",
+            "Adaptive immunity",
+            "Antigen",
+            "Antibodies",
+            "B lymphocytes",
+            "T lymphocytes",
+            "Immunoglobulin"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Methods of the body's resistance to disease"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Natural / Innate Immunity",
+                  "Acquired / Adaptive Immunity"
+                ],
+                [
+                  "Skin and mucous membranes",
+                  "Mucosal immune system (Peyer's patches)"
+                ],
+                [
+                  "Complement",
+                  "Antibodies"
+                ],
+                [
+                  "Neutrophils and macrophages",
+                  "Cellular components: B and T lymphocytes"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Types of acquired immunity"
+            },
+            {
+              "type": "subheading",
+              "text": "Active acquired immunity"
+            },
+            {
+              "type": "paragraph",
+              "text": "The book explains that exposure to an antigen leads the immune system to produce antibodies and form memory cells. Examples given include immunization with live attenuated or dead microbes and toxoids."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "المناعة النشطة تحدث عند تعرض الجهاز المناعي لمستضد فينتج أجسامًا مضادة وتتكون خلايا ذاكرة. ومن أمثلة الكتاب التحصين بميكروبات حية مضعفة أو ميتة أو بالذوفان."
+            },
+            {
+              "type": "subheading",
+              "text": "Passive acquired immunity"
+            },
+            {
+              "type": "paragraph",
+              "text": "A person receives ready-made antibodies or immune cells from another person. The textbook gives receiving immunoglobulin as an example."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "المناعة السلبية تحدث عند الحصول على أجسام مضادة جاهزة أو خلايا مناعية من شخص آخر؛ ومثال الكتاب إعطاء Immunoglobulin."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Type",
+                  "How it occurs",
+                  "Example in the book"
+                ],
+                [
+                  "Active",
+                  "The person's immune system responds to an antigen",
+                  "Immunization / toxoid"
+                ],
+                [
+                  "Passive",
+                  "Ready-made antibodies or immune cells are received",
+                  "Immunoglobulin"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "Chapter 1 — Heart and Blood Vessels Diseases",
       "description": "أمراض القلب والأوعية الدموية — ordered according to the textbook index.",
       "order": 1,
