@@ -673,15 +673,17 @@
       "order": 2,
       "lessons": [
         {
-          "title": "Bronchial Asthma",
+          "title": "Bronchial Asthma | الربو الشعبي",
           "order": 1,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Define bronchial asthma as presented in the source.",
+            "Classify the triggers listed in the textbook.",
+            "Describe manifestations, investigations and treatment headings."
           ],
           "keyTerms": [
             "Bronchial asthma",
+            "Bronchoconstriction",
+            "Viscous secretions",
             "Wheezing",
             "Pulmonary function tests",
             "ABG"
@@ -689,166 +691,393 @@
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Definition and mechanism"
             },
             {
               "type": "paragraph",
-              "text": "Asthma is described as recurrent breathing difficulty caused by bronchial narrowing and viscous secretions. Triggers listed include dust, feathers, animals, fungi, pollen, fumes, some foods and medicines, and exercise in children. Features include chest tightness, dyspnea, wheezing and cough."
+              "text": "The book describes bronchial asthma as recurrent attacks of breathing difficulty caused by repeated narrowing of the bronchi and the presence of viscous secretions within them. It may occur at any age."
             },
             {
               "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يصف الكتاب الربو بأنه نوبات متكررة من صعوبة التنفس بسبب ضيق الشعب وإفرازات لزجة. ومن المثيرات الغبار والريش والحيوانات والفطريات وحبوب اللقاح والأبخرة وبعض الأطعمة والأدوية والمجهود لدى الأطفال. وتشمل المظاهر ضيق الصدر والنهجان والصفير والسعال."
+              "title": "بالعربي",
+              "text": "الربو الشعبي نوبات متكررة من صعوبة التنفس ترتبط بضيق متكرر بالشعب الهوائية ووجود إفرازات لزجة داخلها."
             },
             {
               "type": "heading",
-              "text": "Study table | جدول للمراجعة"
+              "text": "Triggers and associated causes listed"
             },
             {
               "type": "table",
               "rows": [
                 [
-                  "Area",
-                  "Examples"
+                  "Group",
+                  "Examples stated in the book"
                 ],
                 [
-                  "Environmental",
-                  "Dust, feathers, animals, fungi, pollen, fumes"
+                  "Environmental allergens",
+                  "House dust, bird feathers, animals, airborne fungi and spring pollen"
                 ],
                 [
-                  "Other triggers",
-                  "Some foods, medicines, exercise in children"
+                  "Foods / additives",
+                  "Fish, milk, eggs, chocolate, flavour enhancers and preservatives"
                 ],
                 [
-                  "Investigations",
-                  "Chest X-ray, pulmonary function tests, ABG, CBC"
+                  "Medicines",
+                  "Aspirin and related painkillers"
+                ],
+                [
+                  "Other",
+                  "Exercise-related attacks in children; an adult form of unknown cause"
                 ]
               ]
             },
             {
+              "type": "heading",
+              "text": "Clinical manifestations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Chest tightness and difficulty breathing.",
+                "Wheezing during inspiration and expiration.",
+                "Sweating and exhaustion in severe attacks.",
+                "Cough with sputum.",
+                "In severe cases: cyanosis, low blood pressure and increased pulse.",
+                "The textbook notes that an attack may last hours or even days."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Investigations and management topics"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Chest X-ray, pulmonary function tests, arterial blood gases (ABG) and complete blood picture.",
+                "The treatment section discusses bronchodilators by inhaler or nebulizer, corticosteroids in severe cases, oxygen, and intensive care/ventilatory support in respiratory failure."
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "مفتاح المراجعة",
+              "text": "اربط الربو بثلاثية: ضيق الشعب + إفرازات لزجة + نوبات متكررة، ثم صنّف المحفزات إلى بيئية وغذائية ودوائية ومجهود."
+            },
+            {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Drug names and doses are historical source content, not current clinical instructions. Use current institutional protocols and qualified supervision. | مستند إلى كتاب 2016–2020؛ أسماء الأدوية والجرعات محتوى تاريخي وليست تعليمات علاجية حالية."
             }
           ]
         },
         {
-          "title": "Pulmonary Tuberculosis",
+          "title": "Pulmonary Tuberculosis | الدرن الرئوي",
           "order": 2,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Identify the causative organism and types named in the source.",
+            "Explain the epidemiological factors listed.",
+            "Summarize manifestations, diagnostic tests and care themes."
           ],
           "keyTerms": [
-            "Pulmonary tuberculosis",
-            "Transmission",
-            "Prevention"
+            "Mycobacterium tuberculosis",
+            "Pulmonary TB",
+            "Sputum examination",
+            "Tuberculin test",
+            "PCR",
+            "Isolation"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Definition and organism"
             },
             {
               "type": "paragraph",
-              "text": "Follow the textbook section in order: definition and causative infection, transmission, manifestations, investigations, treatment headings and prevention."
+              "text": "The source names Mycobacterium tuberculosis as the organism causing pulmonary tuberculosis and describes human and bovine types."
             },
             {
               "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "اتبع قسم الدرن الرئوي في الكتاب بالترتيب: التعريف والعدوى المسببة والانتقال والمظاهر والفحوصات والعلاج والوقاية."
-            },
-            {
-              "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
-            }
-          ]
-        },
-        {
-          "title": "Pneumonia",
-          "order": 3,
-          "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
-          ],
-          "keyTerms": [
-            "Pneumonia"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
-            },
-            {
-              "type": "paragraph",
-              "text": "Organize the source section under definition, causes, clinical manifestations, diagnosis, complications and treatment, retaining the book's terminology."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "نظم قسم الالتهاب الرئوي تحت التعريف والأسباب والمظاهر والتشخيص والمضاعفات والعلاج، مع الحفاظ على مصطلحات الكتاب."
-            },
-            {
-              "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
-            }
-          ]
-        },
-        {
-          "title": "Chronic Bronchitis and Pulmonary Emphysema (COPD)",
-          "order": 4,
-          "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
-          ],
-          "keyTerms": [
-            "Chronic bronchitis",
-            "Pulmonary emphysema"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
-            },
-            {
-              "type": "paragraph",
-              "text": "Compare the two chronic respiratory conditions using the textbook's definitions, manifestations, investigations and care points."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "قارن بين التهاب الشعب الهوائية المزمن والانتفاخ الرئوي وفق التعريفات والأعراض والفحوصات والرعاية الواردة بالكتاب."
+              "title": "بالعربي",
+              "text": "الميكروب المسبب للدرن هو Mycobacterium tuberculosis، ويذكر الكتاب النوع البشري والنوع المرتبط بالأبقار."
             },
             {
               "type": "heading",
-              "text": "Study table | جدول للمراجعة"
+              "text": "Epidemiological factors"
+            },
+            {
+              "type": "list",
+              "items": [
+                "The book notes greater frequency in the 5–15-year age period while emphasizing that all ages may be affected.",
+                "Both males and females may be affected.",
+                "Crowded, narrow, humid and poorly ventilated places.",
+                "Poor nutrition and associated conditions such as diabetes, AIDS and cancer.",
+                "Close contact with a person with pulmonary TB."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Manifestations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "General weakness, weight loss, loss of appetite, fever and night sweats.",
+                "Cough that may begin dry and later produce sputum; blood may sometimes appear.",
+                "Breathing difficulty and chest pain.",
+                "The source lists possible spread to intestines, heart, kidneys, brain, skin and lymph nodes."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Investigations"
             },
             {
               "type": "table",
               "rows": [
                 [
-                  "Condition",
-                  "Study focus"
+                  "Investigation",
+                  "Purpose / source detail"
                 ],
                 [
-                  "Chronic bronchitis",
-                  "Chronic bronchial inflammation"
+                  "Chest X-ray",
+                  "Radiological assessment"
                 ],
                 [
-                  "Pulmonary emphysema",
-                  "Changes in lung air spaces described by the source"
+                  "Sputum examination",
+                  "The book specifies repeated samples for detecting the TB organism"
+                ],
+                [
+                  "CBC and ESR",
+                  "Blood investigations listed"
+                ],
+                [
+                  "Tuberculin test",
+                  "The source says the result is read after 72 hours"
+                ],
+                [
+                  "Culture and sensitivity",
+                  "Identification and sensitivity assessment"
+                ],
+                [
+                  "Bactec / PCR",
+                  "Additional tests named in the text"
+                ],
+                [
+                  "Liver function tests",
+                  "ALT and AST monitoring is mentioned with rifampicin treatment"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Care and treatment topics"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook discusses nutrition, rest, smoking cessation, isolation when sputum is positive, management of accompanying illness, multidrug treatment and daily monitoring of vital signs, weight and appetite. Its medication regimen is historical and must not be used as a current treatment plan."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "أهم نقاط الدرس: عوامل الانتقال والازدحام وسوء التهوية، أعراض عامة وتنفسية، فحص البلغم والأشعة، والالتزام بالعزل والمتابعة وفق البروتوكول المعتمد."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Drug names and doses are historical source content, not current clinical instructions. Use current institutional protocols and qualified supervision. | مستند إلى كتاب 2016–2020؛ أسماء الأدوية والجرعات محتوى تاريخي وليست تعليمات علاجية حالية."
+            }
+          ]
+        },
+        {
+          "title": "Pneumonia | الالتهاب الرئوي",
+          "order": 3,
+          "objectives": [
+            "Define pneumonia using the book's description.",
+            "List routes of infection, manifestations and complications.",
+            "Identify investigations and supportive-care themes."
+          ],
+          "keyTerms": [
+            "Pneumonia",
+            "Pneumococci",
+            "Sputum",
+            "Respiratory failure",
+            "Chest X-ray"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Definition"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook defines pneumonia as acute inflammation of one or more lung lobes, attributed in this section to inhalation of pneumococci."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "الالتهاب الرئوي هو التهاب حاد يصيب فصًا واحدًا أو أكثر من الرئة، ويذكر الكتاب المكورات الرئوية ضمن السبب."
+            },
+            {
+              "type": "heading",
+              "text": "Transmission routes"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Air contaminated with bacteria.",
+                "Contaminated hospital equipment, with oxygen masks and laryngeal tubes given as examples."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Symptoms"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Sudden fever and chills.",
+                "Increased pulse and respiratory rate.",
+                "Cough that may begin dry and later produce mucoid sputum, sometimes blood-stained.",
+                "Difficulty breathing.",
+                "Acute chest-wall pain."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Complications"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Spread between lung lobes or to both lungs.",
+                "Respiratory failure.",
+                "Spread to organs such as heart, kidneys, brain and joints.",
+                "Acute heart failure."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Diagnosis and treatment themes"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Diagnosis",
+                  "Chest X-ray; CBC/blood picture; ESR; sputum examination"
+                ],
+                [
+                  "Care themes",
+                  "Bed rest, oxygen as prescribed, fever management, antibiotics selected by clinicians, fluids when needed, treatment of complications and vital-sign monitoring"
+                ]
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة بالعربي",
+              "text": "احفظ تسلسل: عدوى → حمى ورعشة وكحة وضيق نفس وألم صدري → أشعة وتحاليل وبلغم → متابعة العلامات الحيوية ومضاعفات التنفس والقلب."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Drug names and doses are historical source content, not current clinical instructions. Use current institutional protocols and qualified supervision. | مستند إلى كتاب 2016–2020؛ أسماء الأدوية والجرعات محتوى تاريخي وليست تعليمات علاجية حالية."
+            }
+          ]
+        },
+        {
+          "title": "Chronic Bronchitis and Pulmonary Emphysema (COPD) | التهاب الشعب المزمن والنفاخ الرئوي",
+          "order": 4,
+          "objectives": [
+            "Identify the causes of COPD listed in the source.",
+            "Recognize the chronic symptom pattern described.",
+            "Summarize the investigations and management themes."
+          ],
+          "keyTerms": [
+            "COPD",
+            "Chronic bronchitis",
+            "Pulmonary emphysema",
+            "Sputum",
+            "Cyanosis",
+            "Pulmonary function tests"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Causes"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Smoking in its different forms, including cigarettes, cigars and shisha.",
+                "Exposure to smoke and polluted dust.",
+                "Microbial infection accompanying the disease."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Clinical manifestations"
+            },
+            {
+              "type": "paragraph",
+              "text": "The book describes persistent cough for several months each year over two consecutive years. The cough may produce large amounts of viscous sputum, sometimes containing blood or pus. Dyspnea, wheezing, cyanosis—especially of the lips—and increased respiratory rate are also listed."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "النمط المهم في الكتاب: كحة مزمنة متكررة على مدار عامين، بلغم لزج، ضيق نفس وصفير، وقد يظهر زرَق خاصة حول الشفتين."
+            },
+            {
+              "type": "heading",
+              "text": "Investigations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Chest X-ray.",
+                "Pulmonary function tests.",
+                "Blood-gas analysis."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Management themes"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source emphasizes stopping smoking and avoiding dust and smoke, alongside clinician-directed medicines, inhaled bronchodilator preparations, oxygen when prescribed and management of infection. Medication names in the book are historical references."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Feature",
+                  "COPD pattern described"
+                ],
+                [
+                  "Main exposures",
+                  "Tobacco smoke, polluted air and dust"
+                ],
+                [
+                  "Cough",
+                  "Persistent over months and repeated years"
+                ],
+                [
+                  "Sputum",
+                  "Viscous; may contain blood or pus"
+                ],
+                [
+                  "Other findings",
+                  "Dyspnea, wheeze, cyanosis, raised respiratory rate"
+                ],
+                [
+                  "Tests",
+                  "Chest X-ray, pulmonary function, blood gases"
                 ]
               ]
             },
             {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Drug names and doses are historical source content, not current clinical instructions. Use current institutional protocols and qualified supervision. | مستند إلى كتاب 2016–2020؛ أسماء الأدوية والجرعات محتوى تاريخي وليست تعليمات علاجية حالية."
             }
           ]
         }
@@ -860,127 +1089,346 @@
       "order": 3,
       "lessons": [
         {
-          "title": "Gastrointestinal Bleeding",
+          "title": "Gastrointestinal Bleeding | نزيف الجهاز الهضمي",
           "order": 1,
           "objectives": [
-            "Explain the topic using the supplied textbook.",
-            "Identify manifestations, investigations and complications described in the source.",
-            "Review key terminology and nursing-care themes in the chapter."
+            "Differentiate upper and lower gastrointestinal bleeding causes listed.",
+            "Recognize hematemesis, melena and hematochezia.",
+            "List the clinical assessment and investigations in the source."
           ],
           "keyTerms": [
-            "Gastrointestinal bleeding",
             "Hematemesis",
             "Melena",
-            "Hematochezia"
+            "Hematochezia",
+            "CBC",
+            "Crossmatch",
+            "BUN",
+            "Creatinine",
+            "PT"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Textbook-based explanation"
+              "text": "Overview and causes"
             },
             {
               "type": "paragraph",
-              "text": "The textbook divides causes into upper-GI sources (esophagitis, esophageal varices or cancer, gastritis, gastric ulcer or cancer, duodenitis and duodenal ulcer) and lower-GI sources (colitis, ulcerative colitis, angiodysplasia, hemorrhoids, colon polyps, diverticulitis, ischemic colitis and colon cancer). It describes hematemesis, melena and hematochezia. Assessment includes vital signs and tests such as CBC, blood group and crossmatch, kidney and liver function, prothrombin time and electrolytes. The source outlines volume replacement and treatment of the cause."
-            },
-            {
-              "type": "keypoint",
-              "title": "شرح بالعربي",
-              "text": "يقسم الكتاب أسباب النزيف إلى علوي وسفلي. ويعرض ثلاث صور: القيء الدموي Hematemesis، والبراز الأسود Melena، والنزيف الشرجي Hematochezia. ويشمل التقييم العلامات الحيوية وتحاليل الدم ووظائف الكلى والكبد والتجلط والأملاح، ثم تعويض الدم والسوائل وعلاج السبب."
-            },
-            {
-              "type": "heading",
-              "text": "Comparison / revision table"
+              "text": "The textbook introduces gastrointestinal bleeding as a frequent emergency presentation. It divides causes into upper and lower gastrointestinal sources."
             },
             {
               "type": "table",
               "rows": [
                 [
-                  "Presentation",
-                  "Description in the textbook"
+                  "Upper GI causes",
+                  "Lower GI causes"
                 ],
                 [
-                  "Hematemesis",
-                  "Vomiting blood or coffee-ground material; usually upper GI source"
+                  "Esophagitis, esophageal varices, esophageal cancer",
+                  "Colitis / ulcerative colitis"
                 ],
                 [
-                  "Melena",
-                  "Black tarry stool; upper GI, small intestine or proximal colon source"
+                  "Gastritis, gastric ulcer, gastric cancer",
+                  "Angiodysplasia"
                 ],
                 [
-                  "Hematochezia",
-                  "Rectal bleeding; usually lower GI, sometimes severe upper GI bleeding"
+                  "Duodenitis and duodenal ulcer",
+                  "Hemorrhoids, colon polyps"
+                ],
+                [
+                  "—",
+                  "Diverticulitis, ischemic colitis, colon cancer"
                 ]
               ]
             },
             {
+              "type": "heading",
+              "text": "Clinical manifestations and bleeding forms"
+            },
+            {
+              "type": "paragraph",
+              "text": "General symptoms listed include dizziness, weakness, increased heart rate, sweating and difficulty breathing. The source describes three visible forms of bleeding:"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Term",
+                  "Appearance",
+                  "Usual source described"
+                ],
+                [
+                  "Hematemesis",
+                  "Vomiting blood or coffee-ground material",
+                  "Upper GI tract"
+                ],
+                [
+                  "Melena",
+                  "Black, tarry stool",
+                  "Upper GI tract, small intestine and up to mid-transverse colon"
+                ],
+                [
+                  "Hematochezia",
+                  "Rectal passage of blood",
+                  "Usually lower GI; may occur with severe upper GI bleeding"
+                ]
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "قيء دموي = Hematemesis، براز أسود قطراني = Melena، دم أحمر من المستقيم = Hematochezia. يذكر الكتاب أن النزيف العلوي الشديد قد يظهر أحيانًا كدم شرجي."
+            },
+            {
+              "type": "heading",
+              "text": "Assessment and investigations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Clinical assessment including blood pressure, pulse and temperature.",
+                "CBC.",
+                "Blood group and crossmatch.",
+                "Renal function: BUN and creatinine.",
+                "Liver function tests and serum albumin.",
+                "Prothrombin time and serum electrolytes."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Management pathway in the source"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source discusses restoration of circulating volume and blood replacement, large-bore IV access, isotonic saline, blood components when indicated, and treating the underlying cause. It also presents a diagnostic pathway using upper GI endoscopy, colonoscopy and small-bowel imaging depending on the suspected source."
+            },
+            {
               "type": "warning",
-              "title": "ملاحظة مهمة عن المصدر",
-              "text": "This lesson follows the supplied 2016–2020 textbook. Medication doses and treatment recommendations are historical textbook content, not current clinical instructions. | هذا الدرس مبني على كتاب 2016–2020. الجرعات والتوصيات العلاجية محتوى تاريخي من الكتاب وليست تعليمات علاجية حالية."
+              "title": "Emergency context",
+              "text": "Acute gastrointestinal bleeding is an emergency. This is a study summary, not a self-care guide; assessment and resuscitation require an emergency team and current hospital protocols."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Drug names and doses are historical source content, not current clinical instructions. Use current institutional protocols and qualified supervision. | مستند إلى كتاب 2016–2020؛ أسماء الأدوية والجرعات محتوى تاريخي وليست تعليمات علاجية حالية."
             }
           ]
         },
         {
-          "title": "Peptic Ulcer and Duodenal Ulcer",
+          "title": "Peptic and Duodenal Ulcer | قرحة المعدة والاثني عشر",
           "order": 2,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Explain the mucosal defect described in the source.",
+            "Identify the causes and H. pylori pathway shown in the book.",
+            "Compare gastric and duodenal ulcer pain patterns and list complications."
           ],
           "keyTerms": [
             "Peptic ulcer",
-            "Duodenal ulcer"
+            "Duodenal ulcer",
+            "Helicobacter pylori",
+            "Pepsin",
+            "Proton pump inhibitor",
+            "Urea breath test"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Definition and pathophysiology"
             },
             {
               "type": "paragraph",
-              "text": "Review peptic and duodenal ulcer under the textbook's headings: definition, causes, manifestations, investigations, complications and treatment."
+              "text": "The book describes peptic and duodenal ulcer as a weakness or defect in the mucous membrane lining the stomach or duodenum. It discusses gastric acid and pepsin and presents Helicobacter pylori as an important cause. The source's flow diagrams connect contaminated food or drink, bacterial colonization, chronic inflammation and ulcer formation."
             },
             {
               "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "راجع قرحة المعدة والاثني عشر وفق عناوين الكتاب: التعريف والأسباب والأعراض والفحوصات والمضاعفات والعلاج."
+              "title": "بالعربي",
+              "text": "القرحة هي ضعف أو تآكل في الغشاء المخاطي المبطن للمعدة أو الاثني عشر. يوضح الكتاب دور حمض المعدة والبيبسين، ويركز على عدوى H. pylori والالتهاب المزمن."
+            },
+            {
+              "type": "heading",
+              "text": "Causes listed"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Helicobacter pylori infection.",
+                "Painkillers and anti-rheumatic medicines.",
+                "Zollinger–Ellison syndrome.",
+                "Viral infections.",
+                "Radiation or chemotherapy.",
+                "Alcohol and spicy food are listed by the source.",
+                "Psychological stress and work-related factors are also mentioned."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Symptoms"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Feature",
+                  "Gastric ulcer",
+                  "Duodenal ulcer"
+                ],
+                [
+                  "Pain and food",
+                  "Pain may increase with food",
+                  "Pain may be relieved by food"
+                ],
+                [
+                  "Other symptoms",
+                  "Nausea or vomiting",
+                  "Nausea or vomiting"
+                ],
+                [
+                  "Possible associated finding",
+                  "Occult bleeding and iron-deficiency anemia",
+                  "Occult bleeding and iron-deficiency anemia"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Complications"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Hematemesis.",
+                "Obstruction at the pyloric opening between stomach and duodenum.",
+                "Perforation of the ulcer."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Diagnosis"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Upper gastrointestinal fibre-optic endoscopy.",
+                "H. pylori antibody testing in blood as listed by the source.",
+                "Biopsy obtained during endoscopy and examined microscopically.",
+                "Urea breath test.",
+                "Stool antigen test."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Treatment topics in the historical source"
+            },
+            {
+              "type": "paragraph",
+              "text": "The book discusses dietary measures, avoiding smoking and alcohol, acid-suppressing medicines and a combination regimen for H. pylori. Drug combinations and doses printed in the 2016–2020 book are historical and must not be treated as a current prescription."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي",
+              "text": "أهم مقارنة: ألم قرحة المعدة قد يزيد مع الطعام، بينما ألم قرحة الاثني عشر قد يتحسن معه. المضاعفات الثلاث المذكورة: النزيف، الانسداد، والانثقاب."
             },
             {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Drug names and doses are historical source content, not current clinical instructions. Use current institutional protocols and qualified supervision. | مستند إلى كتاب 2016–2020؛ أسماء الأدوية والجرعات محتوى تاريخي وليست تعليمات علاجية حالية."
             }
           ]
         },
         {
-          "title": "Acute Diarrhea",
+          "title": "Acute Diarrhea | الإسهال الحاد",
           "order": 3,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Classify the causative organisms into invasive and toxin-producing groups as in the book.",
+            "Describe the stool findings and diagnostic pathway shown.",
+            "Summarize fluid replacement and source-listed treatment topics."
           ],
           "keyTerms": [
-            "Acute diarrhea"
+            "Acute diarrhea",
+            "Dysentery",
+            "Shigella",
+            "Salmonella",
+            "Campylobacter jejuni",
+            "Entamoeba histolytica",
+            "Vibrio cholerae",
+            "E. coli"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Causes and classification"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Group",
+                  "Organisms listed"
+                ],
+                [
+                  "Invasive / destructive organisms affecting colon wall",
+                  "Shigella, Salmonella, Campylobacter jejuni, Entamoeba histolytica"
+                ],
+                [
+                  "Non-invasive toxin-producing organisms",
+                  "Vibrio cholerae and E. coli"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Clinical picture and investigation"
             },
             {
               "type": "paragraph",
-              "text": "Follow the source's discussion of acute diarrhea, arranging the material into causes, manifestations, assessment, complications and management."
+              "text": "The textbook diagram associates acute diarrhea with fever, abdominal pain and dysentery, defined there as stool accompanied by blood or mucus. Stool examination is used to guide the next diagnostic branch."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Stool result described",
+                  "Direction in the source diagram"
+                ],
+                [
+                  "Blood or white blood cells",
+                  "Consider bacterial pathogens such as Shigella, Salmonella and Campylobacter"
+                ],
+                [
+                  "Parasites / amoeba",
+                  "Parasite-directed treatment pathway"
+                ]
+              ]
             },
             {
               "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "اتبع شرح الإسهال الحاد في المصدر، ورتب المحتوى إلى الأسباب والمظاهر والتقييم والمضاعفات والتدبير."
+              "title": "بالعربي",
+              "text": "الدوسنتاريا هي إسهال مصحوب بدم أو مخاط حسب تعريف الكتاب. فحص البراز يساعد في توجيه البحث عن بكتيريا أو طفيليات."
+            },
+            {
+              "type": "heading",
+              "text": "Management themes"
+            },
+            {
+              "type": "paragraph",
+              "text": "The first treatment priority emphasized by the source is replacing lost fluids. It then lists pathogen-specific medicines for selected causes; those historical regimens and doses are not current treatment instructions."
+            },
+            {
+              "type": "list",
+              "items": [
+                "Assess fluid loss and replace fluids appropriately.",
+                "Use stool findings and clinical assessment to investigate the cause.",
+                "Treatment should be selected by a qualified clinician according to current guidance."
+              ]
             },
             {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "ملاحظة سريرية",
+              "text": "Diarrhea with blood, severe dehydration, persistent vomiting or marked weakness needs prompt medical assessment. This lesson is educational and does not provide a treatment prescription."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "Based on the supplied 2016–2020 textbook. Drug names and doses are historical source content, not current clinical instructions. Use current institutional protocols and qualified supervision. | مستند إلى كتاب 2016–2020؛ أسماء الأدوية والجرعات محتوى تاريخي وليست تعليمات علاجية حالية."
             }
           ]
         }
@@ -2212,7 +2660,7 @@
     }
   ],
   "contentStatus": "draft_incomplete",
-  "contentStatusNote": "Chapter 1 has been expanded from source pages 6–13. Remaining chapters still require source-by-source expansion and visual verification; do not import as a complete curriculum.",
+  "contentStatusNote": "General immunity and chapters 1–3 expanded from the source; chapters 4–10 remain to be completed and visually reviewed. Do not import as final.",
   "editorialPolicy": {
     "sourceOnly": true,
     "sourceTitle": "Internal Medicine, Fevers, Dermatology and Venereology — Second Year (2016–2020)",
@@ -2226,8 +2674,8 @@
     ]
   },
   "editorialVerification": {
-    "sourcePagesChecked": 8,
+    "sourcePagesChecked": 27,
     "sourcePagesTotal": 94,
-    "placeholdersRemaining": 31
+    "placeholdersRemaining": 25
   }
 }
