@@ -1,0 +1,1716 @@
+{
+  "schemaVersion": 1,
+  "sourceTitle": "Internal Medicine, Fevers, Dermatology and Venereology — Second Year (2016–2020)",
+  "sourcePages": 94,
+  "gradeLabel": "Second Year Nursing",
+  "subjectTitle": "Internal Medicine, Fevers, Dermatology and Venereology",
+  "chapters": [
+    {
+      "title": "Preliminary Section — General Immunity",
+      "description": "المناعة العامة — قسم تمهيدي يسبق الفصل الأول في الكتاب.",
+      "order": 0,
+      "lessons": [
+        {
+          "title": "Immune Response | الاستجابة المناعية",
+          "order": 1,
+          "objectives": [
+            "Distinguish innate from acquired immunity.",
+            "Compare active and passive acquired immunity."
+          ],
+          "keyTerms": [
+            "Innate immunity",
+            "Adaptive immunity",
+            "Antigen",
+            "Antibodies",
+            "B lymphocytes",
+            "T lymphocytes",
+            "Immunoglobulin"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Methods of the body's resistance to disease"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Natural / Innate Immunity",
+                  "Acquired / Adaptive Immunity"
+                ],
+                [
+                  "Skin and mucous membranes",
+                  "Mucosal immune system (Peyer's patches)"
+                ],
+                [
+                  "Complement",
+                  "Antibodies"
+                ],
+                [
+                  "Neutrophils and macrophages",
+                  "Cellular components: B and T lymphocytes"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Types of acquired immunity"
+            },
+            {
+              "type": "subheading",
+              "text": "Active acquired immunity"
+            },
+            {
+              "type": "paragraph",
+              "text": "The book explains that exposure to an antigen leads the immune system to produce antibodies and form memory cells. Examples given include immunization with live attenuated or dead microbes and toxoids."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "المناعة النشطة تحدث عند تعرض الجهاز المناعي لمستضد فينتج أجسامًا مضادة وتتكون خلايا ذاكرة. ومن أمثلة الكتاب التحصين بميكروبات حية مضعفة أو ميتة أو بالذوفان."
+            },
+            {
+              "type": "subheading",
+              "text": "Passive acquired immunity"
+            },
+            {
+              "type": "paragraph",
+              "text": "A person receives ready-made antibodies or immune cells from another person. The textbook gives receiving immunoglobulin as an example."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "المناعة السلبية تحدث عند الحصول على أجسام مضادة جاهزة أو خلايا مناعية من شخص آخر؛ ومثال الكتاب إعطاء Immunoglobulin."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Type",
+                  "How it occurs",
+                  "Example in the book"
+                ],
+                [
+                  "Active",
+                  "The person's immune system responds to an antigen",
+                  "Immunization / toxoid"
+                ],
+                [
+                  "Passive",
+                  "Ready-made antibodies or immune cells are received",
+                  "Immunoglobulin"
+                ]
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 1 — Heart and Blood Vessels Diseases",
+      "description": "أمراض القلب والأوعية الدموية — ordered according to the textbook index.",
+      "order": 1,
+      "lessons": [
+        {
+          "title": "Chest Pain and Ischemic Heart Disease",
+          "order": 1,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Angina pectoris",
+            "Atherosclerosis",
+            "Coronary arteries",
+            "Myocardial infarction"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook describes angina as squeezing, pressing or burning pain beneath the sternum associated with coronary narrowing due to atherosclerosis. Myocardial infarction is described as more severe and prolonged pain associated with complete coronary blockage and injury to part of the myocardium."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "الذبحة الصدرية ألم ضاغط أو حارق خلف عظمة القص يرتبط بضيق الشرايين التاجية وتصلبها. أما احتشاء عضلة القلب فيوصف بأنه ألم أشد وأطول يرتبط بانسداد كامل وتلف جزء من العضلة."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Feature",
+                  "Angina",
+                  "Myocardial infarction"
+                ],
+                [
+                  "Pain",
+                  "May be exertional or at rest",
+                  "More severe and prolonged"
+                ],
+                [
+                  "Mechanism in the book",
+                  "Coronary narrowing",
+                  "Complete coronary blockage"
+                ],
+                [
+                  "Associated features",
+                  "Sweating, nausea",
+                  "Sweating, nausea, vomiting, cold extremities"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Hypertension",
+          "order": 2,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Hypertension",
+            "Primary",
+            "Secondary"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The book defines hypertension as blood pressure of 140/90 or above on three different readings. It distinguishes primary hypertension from secondary forms associated with kidney, thyroid, adrenal, brain disorders or some medicines. Many cases have no specific symptoms."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يعرّف الكتاب ارتفاع ضغط الدم بقراءات 140/90 أو أكثر في ثلاث مناسبات مختلفة. ويميز بين النوع الأولي والثانوي المرتبط بأمراض الكلى أو الغدة الدرقية أو الكظرية أو المخ أو بعض الأدوية. وقد لا تظهر أعراض محددة."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Type",
+                  "Textbook description"
+                ],
+                [
+                  "Primary",
+                  "More than 90% of cases; associated with obesity, heredity, salt intake and smoking"
+                ],
+                [
+                  "Secondary",
+                  "May be related to renal, thyroid, adrenal or brain disorders, or medicines"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Heart Failure",
+          "order": 3,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Heart failure",
+            "Pulmonary edema"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Study the textbook's description of impaired cardiac function, its manifestations, investigations, complications and care headings. Keep the clinical features and terminology in the sequence used in the source."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "راجع شرح الكتاب لقصور وظيفة القلب، والمظاهر والفحوصات والمضاعفات والرعاية، مع الالتزام بالمصطلحات وترتيب المصدر."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Pericardial and Endocardial Diseases",
+          "order": 4,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Pericardium",
+            "Endocardium"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source groups disorders of the pericardium and endocardium in this section. Review the named conditions, clinical findings and diagnostic and management points in the textbook."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يجمع المصدر أمراض التامور والشغاف في هذا القسم؛ راجع الحالات والمظاهر والفحوصات والتدبير كما وردت في الكتاب."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 2 — Respiratory System Diseases",
+      "description": "أمراض الجهاز التنفسي — ordered according to the textbook index.",
+      "order": 2,
+      "lessons": [
+        {
+          "title": "Bronchial Asthma",
+          "order": 1,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Bronchial asthma",
+            "Wheezing",
+            "Pulmonary function tests",
+            "ABG"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Asthma is described as recurrent breathing difficulty caused by bronchial narrowing and viscous secretions. Triggers listed include dust, feathers, animals, fungi, pollen, fumes, some foods and medicines, and exercise in children. Features include chest tightness, dyspnea, wheezing and cough."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يصف الكتاب الربو بأنه نوبات متكررة من صعوبة التنفس بسبب ضيق الشعب وإفرازات لزجة. ومن المثيرات الغبار والريش والحيوانات والفطريات وحبوب اللقاح والأبخرة وبعض الأطعمة والأدوية والمجهود لدى الأطفال. وتشمل المظاهر ضيق الصدر والنهجان والصفير والسعال."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Area",
+                  "Examples"
+                ],
+                [
+                  "Environmental",
+                  "Dust, feathers, animals, fungi, pollen, fumes"
+                ],
+                [
+                  "Other triggers",
+                  "Some foods, medicines, exercise in children"
+                ],
+                [
+                  "Investigations",
+                  "Chest X-ray, pulmonary function tests, ABG, CBC"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Pulmonary Tuberculosis",
+          "order": 2,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Pulmonary tuberculosis",
+            "Transmission",
+            "Prevention"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Follow the textbook section in order: definition and causative infection, transmission, manifestations, investigations, treatment headings and prevention."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "اتبع قسم الدرن الرئوي في الكتاب بالترتيب: التعريف والعدوى المسببة والانتقال والمظاهر والفحوصات والعلاج والوقاية."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Pneumonia",
+          "order": 3,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Pneumonia"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Organize the source section under definition, causes, clinical manifestations, diagnosis, complications and treatment, retaining the book's terminology."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "نظم قسم الالتهاب الرئوي تحت التعريف والأسباب والمظاهر والتشخيص والمضاعفات والعلاج، مع الحفاظ على مصطلحات الكتاب."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Chronic Bronchitis and Pulmonary Emphysema",
+          "order": 4,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Chronic bronchitis",
+            "Pulmonary emphysema"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Compare the two chronic respiratory conditions using the textbook's definitions, manifestations, investigations and care points."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "قارن بين التهاب الشعب الهوائية المزمن والانتفاخ الرئوي وفق التعريفات والأعراض والفحوصات والرعاية الواردة بالكتاب."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Condition",
+                  "Study focus"
+                ],
+                [
+                  "Chronic bronchitis",
+                  "Chronic bronchial inflammation"
+                ],
+                [
+                  "Pulmonary emphysema",
+                  "Changes in lung air spaces described by the source"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 3 — Gastrointestinal Tract Diseases",
+      "description": "أمراض الجهاز الهضمي — ordered according to the textbook index.",
+      "order": 3,
+      "lessons": [
+        {
+          "title": "Peptic and Duodenal Ulcer",
+          "order": 1,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Peptic ulcer",
+            "Duodenal ulcer"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Review peptic and duodenal ulcer under the textbook's headings: definition, causes, manifestations, investigations, complications and treatment."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "راجع قرحة المعدة والاثني عشر وفق عناوين الكتاب: التعريف والأسباب والأعراض والفحوصات والمضاعفات والعلاج."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Acute Diarrhea",
+          "order": 2,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Acute diarrhea"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Follow the source's discussion of acute diarrhea, arranging the material into causes, manifestations, assessment, complications and management."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "اتبع شرح الإسهال الحاد في المصدر، ورتب المحتوى إلى الأسباب والمظاهر والتقييم والمضاعفات والتدبير."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 4 — Viral Hepatitis",
+      "description": "الالتهاب الكبدي الفيروسي — ordered according to the textbook index.",
+      "order": 4,
+      "lessons": [
+        {
+          "title": "Acute and Chronic Viral Hepatitis (A–E)",
+          "order": 1,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "HAV",
+            "HBV",
+            "HCV",
+            "HDV",
+            "HEV"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook compares acute and chronic viral hepatitis and discusses HAV, HBV, HCV, HDV and HEV. It distinguishes transmission routes and chronicity, then presents diagnostic methods and prevention."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يقارن الكتاب بين الالتهاب الكبدي الحاد والمزمن، ويعرض فيروسات A وB وC وD وE، مع توضيح طرق الانتقال وإمكانية المزمنة ثم الفحوصات والوقاية."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Virus",
+                  "Textbook distinction"
+                ],
+                [
+                  "HAV",
+                  "Food and contaminated water; generally acute"
+                ],
+                [
+                  "HBV",
+                  "Blood/body-fluid exposure; chronic infection may occur"
+                ],
+                [
+                  "HCV",
+                  "Blood exposure; chronic infection may occur"
+                ],
+                [
+                  "HDV",
+                  "Associated with hepatitis B"
+                ],
+                [
+                  "HEV",
+                  "Food/water route similar to HAV"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Schistosomiasis",
+          "order": 2,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Schistosomiasis"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Study the infection, clinical effects, investigations and management of schistosomiasis as placed in the liver chapter of the textbook."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "ادرس العدوى وتأثيراتها والفحوصات والتدبير للبلهارسيا كما وضعها الكتاب ضمن فصل الكبد."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Ascites",
+          "order": 3,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Ascites",
+            "Peritoneal cavity"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Ascites is defined in the source as accumulation of serous fluid in the peritoneal cavity, causing abdominal enlargement. Review the causes, assessment and management described in the book."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يعرّف المصدر الاستسقاء بأنه تجمع سائل مصلي في التجويف البريتوني يؤدي إلى زيادة حجم البطن. راجع الأسباب والتقييم والتدبير الوارد بالكتاب."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Term",
+                  "Meaning"
+                ],
+                [
+                  "Ascites",
+                  "Serous fluid accumulation in the peritoneal cavity"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Hepatic Coma (Hepatic Encephalopathy)",
+          "order": 4,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Hepatic coma",
+            "Hepatic encephalopathy"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook identifies hepatic coma as a serious complication of deteriorating liver function. Review the manifestations, precipitating factors, assessment and care points listed in the source."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يذكر الكتاب الغيبوبة الكبدية كمضاعفة خطيرة لتدهور وظائف الكبد. راجع المظاهر والعوامل المهيئة والتقييم والرعاية كما وردت بالمصدر."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 5 — The Urinary System",
+      "description": "الجهاز البولي — ordered according to the textbook index.",
+      "order": 5,
+      "lessons": [
+        {
+          "title": "Kidney Structure and Acute Pyelonephritis",
+          "order": 1,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Kidney",
+            "Nephron",
+            "Acute pyelonephritis"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source introduces the kidney and nephron before discussing acute pyelonephritis. The textbook states that each kidney contains about one million nephrons; review the infection section after the structural introduction."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يمهد المصدر بتركيب الكلية والنفرون قبل التهاب حوض الكلى الحاد. ويذكر الكتاب أن الكلية تحتوي نحو مليون نفرون؛ ثم تُراجع تفاصيل العدوى بعد المقدمة التشريحية."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Structure",
+                  "Textbook note"
+                ],
+                [
+                  "Kidney",
+                  "About one million nephrons"
+                ],
+                [
+                  "Nephron",
+                  "Includes glomerular and tubular components"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Chronic Renal Failure and Uraemic Syndrome",
+          "order": 2,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Chronic renal failure",
+            "Uraemia",
+            "Hyperkalemia"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The book groups uraemic manifestations across body systems: gastrointestinal symptoms, itching and jaundice-like discoloration, muscle weakness and gout, neurological changes, and fluid/electrolyte disturbances such as hyperkalemia."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يجمع الكتاب مظاهر اليوريميا عبر أجهزة الجسم: أعراض هضمية، حكة واصفرار، ضعف عضلي ونقرس، تغيرات عصبية، واضطراب السوائل والأملاح مثل ارتفاع البوتاسيوم."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "System",
+                  "Examples in the textbook"
+                ],
+                [
+                  "Gastrointestinal",
+                  "Poor appetite, nausea, vomiting, bleeding"
+                ],
+                [
+                  "Skin",
+                  "Itching, yellowish discoloration"
+                ],
+                [
+                  "Musculoskeletal",
+                  "Weakness, gout"
+                ],
+                [
+                  "Nervous",
+                  "Irritability, insomnia and severe neurological manifestations"
+                ],
+                [
+                  "Fluid/electrolytes",
+                  "Hyperkalemia and increased fluid volume"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 6 — Blood Diseases",
+      "description": "أمراض الدم — ordered according to the textbook index.",
+      "order": 6,
+      "lessons": [
+        {
+          "title": "Anemia and Complete Blood Count",
+          "order": 1,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Anemia",
+            "CBC",
+            "Hemoglobin"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook presents anemia and includes a table of normal CBC ranges. Study the definition, classification, causes, manifestations and investigations using the values and terminology printed in the book."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يعرض الكتاب الأنيميا ويورد جدولًا للقيم الطبيعية لصورة الدم الكاملة. ادرس التعريف والتصنيف والأسباب والأعراض والفحوصات وفق القيم والمصطلحات المطبوعة بالمصدر."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Blood Transfusion and Its Products",
+          "order": 2,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Blood transfusion",
+            "Blood products",
+            "Compatibility"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Follow the textbook's section on transfusion and blood products, including the components, indications, compatibility and precautions presented in the source."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "اتبع قسم نقل الدم ومشتقاته، بما يشمل المكونات والدواعي والتوافق والاحتياطات كما وردت في المصدر."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Blood Cancer (Leukemia)",
+          "order": 3,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Leukemia",
+            "ALL"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source describes leukemia and distinguishes types. It notes that children are commonly affected by acute lymphoblastic leukemia (ALL), while other patterns occur more often in older age groups."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يعرض المصدر اللوكيميا وأنواعها، ويذكر أن الأطفال غالبًا ما يصابون باللوكيميا الليمفاوية الحادة ALL، بينما تظهر أنماط أخرى أكثر في الأعمار الأكبر."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Type",
+                  "Textbook note"
+                ],
+                [
+                  "ALL",
+                  "Commonly affects children"
+                ],
+                [
+                  "Other types",
+                  "Some are more frequent in older age groups"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Bleeding Rate",
+          "order": 4,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Bleeding rate"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Preserve the textbook heading 'Bleeding rate' and study its definitions, measurements and interpretation exactly as given in the source section."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "حافظ على عنوان الكتاب «معدل النزف»، وادرس التعريفات والقياسات والتفسير كما وردت حرفيًا في القسم."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 7 — Endocrine Gland Diseases",
+      "description": "أمراض الغدد الصماء — ordered according to the textbook index.",
+      "order": 7,
+      "lessons": [
+        {
+          "title": "Hypothalamus and Endocrine Glands",
+          "order": 1,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Hypothalamus",
+            "Pituitary",
+            "Parathyroid"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The book explains that the hypothalamus controls many endocrine glands through hormones that reach the pituitary. It also mentions the parathyroid glands and calcium regulation."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يوضح الكتاب أن تحت المهاد يتحكم في كثير من الغدد الصماء عبر هرمونات تصل إلى النخامية، كما يذكر الغدد جار الدرقية وتنظيم الكالسيوم."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Structure",
+                  "Role in the source"
+                ],
+                [
+                  "Hypothalamus",
+                  "Regulates many endocrine glands through the pituitary"
+                ],
+                [
+                  "Parathyroid",
+                  "Regulates calcium"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Thyroid Gland Diseases",
+          "order": 2,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Thyroid",
+            "Hyperthyroidism",
+            "Hypothyroidism"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The chapter includes hyperthyroidism and hypothyroidism. Compare their manifestations, investigations and treatment categories as presented in the textbook."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يشمل الفصل فرط نشاط الغدة الدرقية وقصورها. قارن الأعراض والفحوصات وعناوين العلاج كما يعرضها الكتاب."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Condition",
+                  "Meaning"
+                ],
+                [
+                  "Hyperthyroidism",
+                  "Increased thyroid activity"
+                ],
+                [
+                  "Hypothyroidism",
+                  "Reduced thyroid activity"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Diabetes Mellitus",
+          "order": 3,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Diabetes mellitus",
+            "Blood glucose",
+            "Insulin"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The book defines diabetes mellitus as metabolic diseases characterized by chronic elevation of blood glucose. It compares Type I and Type II and discusses nutrition, physical activity, glucose monitoring, insulin profiles and oral medicines."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يعرّف الكتاب السكري بأنه أمراض أيضية تتميز بارتفاع مزمن في جلوكوز الدم. ويقارن النوعين الأول والثاني ويتناول التغذية والنشاط ومتابعة السكر وأنواع الإنسولين والأدوية الفموية."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Topic",
+                  "What the chapter covers"
+                ],
+                [
+                  "Types",
+                  "Type I and Type II comparison"
+                ],
+                [
+                  "Management themes",
+                  "Nutrition, activity, glucose monitoring, insulin and oral medicines"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 8 — Infectious Diseases",
+      "description": "الأمراض المعدية — ordered according to the textbook index.",
+      "order": 8,
+      "lessons": [
+        {
+          "title": "Typhoid Fever",
+          "order": 1,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Typhoid",
+            "Salmonella Typhi"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The book states that typhoid is acquired through food or drink contaminated with feces from a carrier and names Salmonella Typhi and Salmonella Paratyphi in the section. It then covers manifestations, diagnosis, treatment and prevention."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يذكر الكتاب انتقال التيفود عبر طعام أو شراب ملوث ببراز حامل للعدوى، ويسمي Salmonella Typhi وSalmonella Paratyphi، ثم يعرض الأعراض والتشخيص والعلاج والوقاية."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Organism",
+                  "Name"
+                ],
+                [
+                  "Typhoid",
+                  "Salmonella Typhi"
+                ],
+                [
+                  "Paratyphoid",
+                  "Salmonella Paratyphi"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Measles",
+          "order": 2,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Measles"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Study the source section on measles under transmission, manifestations, complications, diagnosis, treatment and prevention."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "ادرس قسم الحصبة وفق الانتقال والمظاهر والمضاعفات والتشخيص والعلاج والوقاية كما ورد بالكتاب."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Rubella (German Measles)",
+          "order": 3,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Rubella"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Review rubella's specific features and the pregnancy-related points stated in the textbook, following its sequence of transmission, manifestations and prevention."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "راجع خصائص الحصبة الألمانية والنقاط المتعلقة بالحمل المذكورة في الكتاب، مع اتباع ترتيب الانتقال والمظاهر والوقاية."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Mumps",
+          "order": 4,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Mumps",
+            "Parotid glands"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Organize the mumps section into transmission, clinical features, complications, diagnosis, treatment and prevention, using the textbook's wording and sequence."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "نظم قسم النكاف إلى الانتقال والمظاهر والمضاعفات والتشخيص والعلاج والوقاية وفق ألفاظ وترتيب الكتاب."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 9 — Nervous System Diseases",
+      "description": "أمراض الجهاز العصبي — ordered according to the textbook index.",
+      "order": 9,
+      "lessons": [
+        {
+          "title": "Coma and Cardiopulmonary Resuscitation Section",
+          "order": 1,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Coma",
+            "Level of consciousness",
+            "CPR"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The book discusses coma and includes clinical signs and a CPR subsection. Treat the CPR material as textbook theory for supervised professional training, not as instructions for unsupervised practice."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يعرض الكتاب الغيبوبة وعلاماتها، ويتضمن قسمًا عن الإنعاش القلبي الرئوي. تُدرس معلومات الإنعاش كنظرية ضمن تدريب مهني بإشراف، وليست تعليمات للتطبيق دون إشراف."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Meningitis",
+          "order": 2,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Meningitis",
+            "Meninges",
+            "Nasopharynx"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook defines meningitis as inflammation of the membranes surrounding the brain. It describes microbial causes and a route from the nasopharynx to the meninges through blood, followed by symptoms and diagnosis."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يعرّف الكتاب التهاب السحايا بأنه التهاب الأغشية المحيطة بالمخ، ويذكر أسبابًا ميكروبية وانتقالًا من البلعوم الأنفي إلى السحايا عبر الدم، ثم الأعراض والتشخيص."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Term",
+                  "Meaning"
+                ],
+                [
+                  "Meningitis",
+                  "Inflammation of the meninges"
+                ],
+                [
+                  "Nasopharynx",
+                  "A site mentioned in the described route"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 10 — Dermatological and Venereal Diseases",
+      "description": "الأمراض الجلدية والتناسلية — ordered according to the textbook index.",
+      "order": 10,
+      "lessons": [
+        {
+          "title": "Parasitic Skin Infections",
+          "order": 1,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Parasitic skin infection"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Study the parasitic skin-infection group, retaining the named examples, manifestations and care points from the textbook."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "ادرس مجموعة الأمراض الجلدية الطفيلية مع الحفاظ على الأمثلة والأعراض والرعاية المذكورة في الكتاب."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Viral Skin Infections",
+          "order": 2,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Viral skin infection"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Follow the textbook's viral skin-infection section and review each included condition, its characteristic findings and the care points in the source."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "اتبع قسم الأمراض الجلدية الفيروسية وراجع كل حالة وعلاماتها المميزة والرعاية المذكورة بالمصدر."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Bacterial Skin Infections",
+          "order": 3,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Bacterial skin infection"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "Review the bacterial skin conditions as a separate group, including their names, characteristic findings and management points as printed in the book."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "راجع الأمراض الجلدية البكتيرية كمجموعة مستقلة، بما يشمل الأسماء والعلامات المميزة والتدبير كما ورد بالكتاب."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Fungal Skin Infections and Superficial Mycoses",
+          "order": 4,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Superficial fungal infection",
+            "Skin mycosis"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook describes superficial fungal infections of the skin. It notes an inflamed area on the inner upper thighs with a defined, slightly raised border, and itching with skin breakdown between the toes."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يعرض الكتاب الفطريات الجلدية السطحية؛ ويذكر التهابًا بباطن أعلى الفخذ بحدود واضحة مرتفعة قليلًا، وحكة وتلفًا بالطبقات السطحية بين أصابع القدم."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Site",
+                  "Feature described"
+                ],
+                [
+                  "Inner upper thighs",
+                  "Defined, slightly raised border"
+                ],
+                [
+                  "Between toes",
+                  "Itching and breakdown of superficial skin layers"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Cutaneous Manifestations Associated with Internal Diseases",
+          "order": 5,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Cutaneous manifestations"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source has a separate section on skin symptoms associated with internal diseases. Keep the associations exactly as stated and do not infer additional links."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يفرد المصدر قسمًا للأعراض الجلدية المرتبطة ببعض الأمراض الداخلية. التزم بالارتباطات المذكورة دون استنتاج روابط إضافية."
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Venereal Diseases",
+          "order": 6,
+          "objectives": [
+            "Explain the core concepts presented in the textbook.",
+            "Identify the main manifestations and terminology in this topic.",
+            "Review the source-based classification or comparison."
+          ],
+          "keyTerms": [
+            "Venereal diseases",
+            "Syphilis",
+            "Gonorrhea"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Core explanation | الشرح الأساسي"
+            },
+            {
+              "type": "paragraph",
+              "text": "The book discusses sexually transmitted conditions including syphilis and gonorrhea, covering transmission and characteristic features. This is presented as health education in the textbook's academic context."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي | Key point",
+              "text": "يناقش الكتاب أمراضًا منقولة جنسيًا مثل الزهري والسيلان، مع الانتقال والخصائص المميزة، في إطار التثقيف الصحي الأكاديمي."
+            },
+            {
+              "type": "heading",
+              "text": "Study table | جدول للمراجعة"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Condition",
+                  "Topics in the source"
+                ],
+                [
+                  "Syphilis",
+                  "Stages and characteristic lesion"
+                ],
+                [
+                  "Gonorrhea",
+                  "Transmission, incubation and treatment"
+                ],
+                [
+                  "HIV/AIDS",
+                  "The textbook includes related review questions"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Source note | ملاحظة المصدر",
+              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
