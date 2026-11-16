@@ -59,35 +59,47 @@ async function refresh(){const grades=await refreshGrades();const freshSubjects=
 
 // One-time textbook curriculum importer. It writes through the signed-in admin session.
 async function importSecondYearMedicalCurriculum(subjectId,publish){
- const subjectSnap=await getDoc(doc(db,"subjects",subjectId));
- if(!subjectSnap.exists())throw new Error("SUBJECT_NOT_FOUND");
- const subject=subjectSnap.data();
- if(String(subject.title||"").trim().toLowerCase()!=="internal medicine")throw new Error("WRONG_SUBJECT");
- const gradeName=[subject.year,subject.grade,subject.gradeName].filter(Boolean).join(" ");
- if(!/second|ثاني|الثاني/i.test(gradeName))throw new Error("WRONG_GRADE");
- const existing=await getDocs(query(collection(db,"chapters"),where("subjectId","==",subjectId)));
- if(existing.docs.some(d=>d.data().sourceCurriculumId==="internal-medicine-second-year-2016-2020"))throw new Error("ALREADY_IMPORTED");
- const response=await fetch("content/second-year/internal-medicine-curriculum.json",{cache:"no-store"});
- if(!response.ok)throw new Error("CURRICULUM_FILE_NOT_FOUND");
- const curriculum=await response.json();
- if(curriculum.contentStatus!=="complete"||curriculum.editorialVerification?.sourcePagesChecked!==94||curriculum.editorialVerification?.placeholdersRemaining!==0)throw new Error("CURRICULUM_NOT_VERIFIED");
- let chapterCount=0,lessonCount=0;
- for(const chapter of curriculum.chapters){
-  const ch=await addDoc(collection(db,"chapters"),{subjectId,gradeId:subject.gradeId,title:chapter.title,description:chapter.description,order:chapter.order,published:!!publish,sourceCurriculumId:"internal-medicine-second-year-2016-2020",createdAt:serverTimestamp()});
-  chapterCount++;
-  for(const lesson of chapter.lessons){
-   await addDoc(collection(db,"lessons"),{subjectId,chapterId:ch.id,gradeId:subject.gradeId,title:lesson.title,content:"",contentBlocks:lesson.contentBlocks,objectives:lesson.objectives||[],keyTerms:lesson.keyTerms||[],order:lesson.order,published:!!publish,sourceCurriculumId:"internal-medicine-second-year-2016-2020",createdAt:serverTimestamp(),updatedAt:serverTimestamp()});
-   lessonCount++;
+ let phase="قراءة بيانات المادة";
+ try{
+  const subjectSnap=await getDoc(doc(db,"subjects",subjectId));
+  if(!subjectSnap.exists())throw new Error("SUBJECT_NOT_FOUND");
+  const subject=subjectSnap.data();
+  if(String(subject.title||"").trim().toLowerCase()!=="internal medicine")throw new Error("WRONG_SUBJECT");
+  const gradeName=[subject.year,subject.grade,subject.gradeName].filter(Boolean).join(" ");
+  if(!/second|ثاني|الثاني/i.test(gradeName))throw new Error("WRONG_GRADE");
+  const gradeId=subject.gradeId||"";
+  phase="فحص الفصول الموجودة";
+  const existing=await getDocs(query(collection(db,"chapters"),where("subjectId","==",subjectId)));
+  if(existing.docs.some(d=>d.data().sourceCurriculumId==="internal-medicine-second-year-2016-2020"))throw new Error("ALREADY_IMPORTED");
+  phase="تحميل ملف المنهج والتحقق منه";
+  const response=await fetch("content/second-year/internal-medicine-curriculum.json",{cache:"no-store"});
+  if(!response.ok)throw new Error("CURRICULUM_FILE_NOT_FOUND (HTTP "+response.status+")");
+  const curriculum=await response.json();
+  if(curriculum.contentStatus!=="complete"||curriculum.editorialVerification?.sourcePagesChecked!==94||curriculum.editorialVerification?.placeholdersRemaining!==0)throw new Error("CURRICULUM_NOT_VERIFIED");
+  let chapterCount=0,lessonCount=0;
+  for(const chapter of curriculum.chapters){
+   phase="إضافة الفصل: "+chapter.title;
+   const chapterData={subjectId,title:chapter.title,description:chapter.description||"",order:chapter.order,published:!!publish,sourceCurriculumId:"internal-medicine-second-year-2016-2020",createdAt:serverTimestamp()};
+   if(gradeId)chapterData.gradeId=gradeId;
+   const ch=await addDoc(collection(db,"chapters"),chapterData);
+   chapterCount++;
+   for(const lesson of chapter.lessons){
+    phase="إضافة المحاضرة: "+lesson.title;
+    const lessonData={subjectId,chapterId:ch.id,title:lesson.title,content:"",contentBlocks:lesson.contentBlocks||[],objectives:lesson.objectives||[],keyTerms:lesson.keyTerms||[],order:lesson.order,published:!!publish,sourceCurriculumId:"internal-medicine-second-year-2016-2020",createdAt:serverTimestamp(),updatedAt:serverTimestamp()};
+    if(gradeId)lessonData.gradeId=gradeId;
+    await addDoc(collection(db,"lessons"),lessonData);
+    lessonCount++;
+   }
   }
- }
- return {chapterCount,lessonCount};
+  return {chapterCount,lessonCount};
+ }catch(error){error.importPhase=phase;throw error;}
 }
 $("#medicalCurriculumImportForm")?.addEventListener("submit",async e=>{
  e.preventDefault();const subjectId=val("medicalCurriculumSubject"),publish=checked("medicalCurriculumPublish");
  if(!subjectId)return report("اختر مادة السنة الثانية أولًا.","error");
  const button=e.submitter; if(button)button.disabled=true;
  try{const result=await importSecondYearMedicalCurriculum(subjectId,publish);report("تم استيراد "+result.chapterCount+" فصول و"+result.lessonCount+" محاضرة. "+(publish?"المحتوى منشور للطلاب بعد تحديث الصفحة.":"المحتوى محفوظ كمسودة."),"success");await refresh();}
- catch(error){const messages={SUBJECT_NOT_FOUND:"المادة غير موجودة.",WRONG_SUBJECT:"اختر مادة Internal Medicine فقط.",WRONG_GRADE:"المادة المختارة لا تبدو مادة السنة الثانية. اختر مادة السنة الثانية.",ALREADY_IMPORTED:"سبق استيراد هذا المنهج لهذه المادة؛ لم تتم إضافة نسخة مكررة.",CURRICULUM_FILE_NOT_FOUND:"ملف المنهج غير موجود في إصدار الموقع الحالي.",CURRICULUM_NOT_VERIFIED:"لم يُسمح بالاستيراد: محتوى الكتاب لم يجتز بعد مراجعة الاكتمال والتحقق من خلوه من الفقرات المؤقتة."};report(messages[error.message]||("تعذر الاستيراد: "+(error.code||error.message)),"error");}
+ catch(error){const messages={SUBJECT_NOT_FOUND:"المادة غير موجودة.",WRONG_SUBJECT:"اختر مادة Internal Medicine فقط.",WRONG_GRADE:"المادة المختارة لا تبدو مادة السنة الثانية. اختر مادة السنة الثانية.",ALREADY_IMPORTED:"سبق استيراد هذا المنهج لهذه المادة؛ لم تتم إضافة نسخة مكررة.",CURRICULUM_FILE_NOT_FOUND:"ملف المنهج غير موجود في إصدار الموقع الحالي.",CURRICULUM_NOT_VERIFIED:"لم يُسمح بالاستيراد: محتوى الكتاب لم يجتز مراجعة الاكتمال."};const detail=[error.code||"no-code",error.message||String(error)].join(" — ");report((messages[error.message]||"تعذر الاستيراد")+" | المرحلة: "+(error.importPhase||"غير محددة")+" | "+detail,"error");console.error("Curriculum import failed",error); }
  finally{if(button)button.disabled=false;}
 });
 
