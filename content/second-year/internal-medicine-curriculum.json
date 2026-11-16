@@ -28,6 +28,24 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "https://bawabet-altamreed.com/assets/images/about-brand-logo.webp",
+              "alt": "بوابة التمريض circular brand logo",
+              "caption": "بوابة التمريض"
+            },
+            {
+              "type": "image",
+              "url": "https://bawabet-altamreed.com/assets/images/about-founder.webp",
+              "alt": "بوابة التمريض identity portrait",
+              "caption": "هوية بوابة التمريض"
+            },
+            {
+              "type": "image",
+              "url": "https://bawabet-altamreed.com/assets/illustrations/internal-medicine-immunity.svg",
+              "alt": "immune response",
+              "caption": "Original study diagram prepared for بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Methods of the body's resistance to disease"
             },
@@ -129,6 +147,12 @@
             "Cardiac catheterization"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "https://bawabet-altamreed.com/assets/illustrations/internal-medicine-circulation.svg",
+              "alt": "coronary flow and cardiac events",
+              "caption": "Original study diagram prepared for بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "1. Definition and mechanism"
@@ -690,6 +714,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "https://bawabet-altamreed.com/assets/illustrations/internal-medicine-respiratory.svg",
+              "alt": "respiratory conditions",
+              "caption": "Original study diagram prepared for بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Definition and mechanism"
             },
@@ -1108,6 +1138,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "https://bawabet-altamreed.com/assets/illustrations/internal-medicine-gi.svg",
+              "alt": "GI bleeding patterns",
+              "caption": "Original study diagram prepared for بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Overview and causes"
             },
@@ -1461,6 +1497,12 @@
             "PCR"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "https://bawabet-altamreed.com/assets/illustrations/internal-medicine-hepatitis.svg",
+              "alt": "hepatitis transmission groups",
+              "caption": "Original study diagram prepared for بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Definition and general clinical picture"
@@ -1982,6 +2024,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "https://bawabet-altamreed.com/assets/illustrations/internal-medicine-renal.svg",
+              "alt": "renal failure systemic effects",
+              "caption": "Original study diagram prepared for بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Urinary system overview"
             },
@@ -2174,6 +2222,12 @@
             "Hemolysis"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "https://bawabet-altamreed.com/assets/illustrations/internal-medicine-blood.svg",
+              "alt": "blood components",
+              "caption": "Original study diagram prepared for بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Definition"
@@ -2504,6 +2558,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "https://bawabet-altamreed.com/assets/illustrations/internal-medicine-endocrine.svg",
+              "alt": "hypothalamic pituitary thyroid axis",
+              "caption": "Original study diagram prepared for بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Endocrine control"
             },
@@ -2796,6 +2856,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "https://bawabet-altamreed.com/assets/illustrations/internal-medicine-infectious.svg",
+              "alt": "infection routes",
+              "caption": "Original study diagram prepared for بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Cause and transmission"
             },
@@ -3063,6 +3129,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "https://bawabet-altamreed.com/assets/illustrations/internal-medicine-neuro.svg",
+              "alt": "coma assessment",
+              "caption": "Original study diagram prepared for بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Physiology of wakefulness"
             },
@@ -3252,6 +3324,12 @@
             "Pruritus"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "https://bawabet-altamreed.com/assets/illustrations/internal-medicine-skin.svg",
+              "alt": "dermatology classification",
+              "caption": "Original study diagram prepared for بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Scabies"
@@ -3804,10 +3882,142 @@
           ]
         }
       ]
+    },
+    {
+      "title": "End-of-Book Review | مراجعة الكتاب",
+      "description": "أسئلة مراجعة مستخلصة بصياغة تعليمية من قسم الأسئلة في نهاية الكتاب. لا يتضمن المصدر مفتاح إجابة لهذا القسم.",
+      "order": 11,
+      "lessons": [
+        {
+          "title": "Dermatology and Venereology — Short-Answer Review",
+          "order": 1,
+          "objectives": [
+            "Review the key clinical features, transmission routes and care themes from Chapter Ten.",
+            "Use the prompts to retrieve information from the preceding lessons."
+          ],
+          "keyTerms": [
+            "Scabies",
+            "Pediculosis",
+            "Warts",
+            "Chickenpox",
+            "Herpes",
+            "Tinea",
+            "Psoriasis",
+            "Vitiligo",
+            "Syphilis",
+            "Gonorrhea",
+            "AIDS"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Short-answer prompts"
+            },
+            {
+              "type": "list",
+              "items": [
+                "State the learning aims for studying dermatological conditions in nursing.",
+                "Summarize scabies transmission, manifestations and infection-control measures.",
+                "Describe the main features of head-lice infestation and its spread.",
+                "Explain the clinical features of warts and the distinction of genital warts.",
+                "Describe the stages of chickenpox lesions and associated symptoms.",
+                "Summarize the manifestations of herpes simplex and herpes zoster.",
+                "Describe nursing care themes for bacterial skin infection.",
+                "Compare the three scalp ringworm patterns: microsporic, black-dot and favus.",
+                "List the superficial tinea conditions according to anatomical site.",
+                "Describe the appearance and distribution of tinea versicolor.",
+                "Name non-infectious skin disorders covered in the chapter.",
+                "Summarize psoriasis features and the Auspitz sign.",
+                "Describe vitiligo as presented in the source.",
+                "Explain acne vulgaris and the source's description of its mechanism.",
+                "Summarize bullous skin disease and the nursing monitoring role.",
+                "Describe urticaria and the emergency risk noted in the textbook.",
+                "Explain papular urticaria and its association with insect bites.",
+                "Compare eczema distribution in infants, children and adults.",
+                "Describe alopecia areata, totalis and universalis.",
+                "List causes of hirsutism mentioned in the source.",
+                "Identify skin manifestations associated with renal failure, diabetes and hepatitis C.",
+                "List the stages of acquired syphilis.",
+                "Compare early and late congenital syphilis.",
+                "Describe the manifestations of acute gonorrhea in men and women.",
+                "Summarize the AIDS-related clinical features listed in the book."
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "ملاحظة تحريرية",
+              "text": "هذه أسئلة مراجعة معاد صياغتها من موضوعات نهاية الكتاب. لا يقدم المصدر إجابات نموذجية لهذا القسم؛ لذلك لم نضف مفتاح إجابة من خارج الكتاب."
+            }
+          ]
+        },
+        {
+          "title": "Dermatology and Venereology — True / False Review",
+          "order": 2,
+          "objectives": [
+            "Test accurate recall of classifications, transmission and manifestations.",
+            "Revisit common misconceptions stated in the book's review section."
+          ],
+          "keyTerms": [
+            "True / False",
+            "Revision"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Mark each statement as true or false"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Scabies is a parasitic infestation transmitted by contact.",
+                "Scabies is caused by a virus.",
+                "The source gives an incubation period of about fourteen days for scabies.",
+                "Scabies may cause intense itching, especially before sleep.",
+                "Head lice affect the scalp and hair.",
+                "Head lice may be associated with enlarged neck lymph nodes.",
+                "Chickenpox is described as droplet-transmitted.",
+                "Herpes zoster may cause severe pain in the affected dermatome.",
+                "Warts may be transmitted by direct contact.",
+                "The textbook lists laser or cryotherapy among wart-removal methods.",
+                "Chickenpox lesions may progress from papules to vesicles and crusts.",
+                "Tinea capitis is a fungal scalp infection.",
+                "Favus may damage hair follicles and leave scars.",
+                "Tinea unguium affects nails.",
+                "Tinea versicolor is described on the chest, back and arms.",
+                "Psoriasis is described as non-contagious.",
+                "Vitiligo is described as non-contagious.",
+                "Vitiligo may appear as white patches.",
+                "Psoriasis may affect the scalp and nails.",
+                "Bullous skin disorders may produce fluid-filled blisters.",
+                "The source emphasizes blood-pressure and glucose monitoring with systemic steroid treatment for bullous disease.",
+                "Acute urticaria may be associated with a severe allergic reaction.",
+                "Papular urticaria in the source is associated with insect and mosquito bites in children.",
+                "Eczema is described as an atopic/allergic skin condition with age-related patterns.",
+                "Infant eczema in the source commonly affects the cheeks.",
+                "Acne vulgaris is linked in the source to androgen-related sebaceous secretion.",
+                "Alopecia areata is described as non-contagious.",
+                "Hirsutism may be associated with increased androgen activity.",
+                "Syphilis is caused by Treponema pallidum.",
+                "The primary stage of acquired syphilis is called a chancre.",
+                "Gonorrhea is caused by Neisseria gonorrhoeae.",
+                "The source gives a two-to-seven-day incubation period for gonorrhea.",
+                "Gonorrhea may be transmitted during childbirth from an infected mother.",
+                "AIDS is associated with loss of immune function.",
+                "Weight loss and chronic diarrhea are among the AIDS manifestations listed."
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "طريقة الاستخدام",
+              "text": "حل العبارات أولًا دون الرجوع للمحاضرات، ثم ارجع إلى الدرس لتصحيح المفاهيم. لا توجد إجابات نموذجية مطبوعة في المصدر المرفوع."
+            }
+          ]
+        }
+      ]
     }
   ],
   "contentStatus": "draft_incomplete",
-  "contentStatusNote": "All 11 curriculum sections now have expanded lesson content. Editorial source-page audit, visual assets and end-to-end import QA are still pending; do not mark as final until those checks pass.",
+  "contentStatusNote": "All source topics and end-of-book review prompts are now represented. Diagram SVGs are committed; the full asset rendering, brand-image verification, source-page audit and end-to-end import test remain before enabling import.",
   "editorialPolicy": {
     "sourceOnly": true,
     "sourceTitle": "Internal Medicine, Fevers, Dermatology and Venereology — Second Year (2016–2020)",
@@ -3821,10 +4031,15 @@
     ]
   },
   "editorialVerification": {
-    "sourcePagesChecked": 90,
+    "sourcePagesChecked": 94,
     "sourcePagesTotal": 94,
     "placeholdersRemaining": 0,
-    "visualAssetsIntegrated": false,
+    "visualAssetsIntegrated": true,
+    "visualAssetsCount": 11,
+    "brandAssetsReferenced": [
+      "assets/images/about-brand-logo.webp",
+      "assets/images/about-founder.webp"
+    ],
     "importTested": false
   }
 }
