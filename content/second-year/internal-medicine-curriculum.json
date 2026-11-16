@@ -1,12 +1,12 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "sourceTitle": "Internal Medicine, Fevers, Dermatology and Venereology — Second Year (2016–2020)",
   "sourcePages": 94,
   "gradeLabel": "Second Year Nursing",
-  "subjectTitle": "Internal Medicine, Fevers, Dermatology and Venereology",
+  "subjectTitle": "Internal Medicine",
   "chapters": [
     {
-      "title": "Preliminary Section — General Immunity",
+      "title": "General Immunity",
       "description": "المناعة العامة — قسم تمهيدي يسبق الفصل الأول في الكتاب.",
       "order": 0,
       "lessons": [
@@ -107,77 +107,135 @@
       ]
     },
     {
-      "title": "Chapter 1 — Heart and Blood Vessels Diseases",
-      "description": "أمراض القلب والأوعية الدموية — ordered according to the textbook index.",
+      "title": "Chapter 1 — Diseases of the Circulatory System",
+      "description": "أمراض الجهاز الدوري — بنفس ترتيب فهرس الكتاب.",
       "order": 1,
       "lessons": [
         {
-          "title": "Chest Pain and Ischemic Heart Disease",
+          "title": "Chest Pain — Angina Pectoris",
           "order": 1,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Explain the topic using the supplied textbook.",
+            "Identify manifestations, investigations and complications described in the source.",
+            "Review key terminology and nursing-care themes in the chapter."
           ],
           "keyTerms": [
             "Angina pectoris",
             "Atherosclerosis",
-            "Coronary arteries",
-            "Myocardial infarction"
+            "Coronary arteries"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Textbook-based explanation"
             },
             {
               "type": "paragraph",
-              "text": "The textbook describes angina as squeezing, pressing or burning pain beneath the sternum associated with coronary narrowing due to atherosclerosis. Myocardial infarction is described as more severe and prolonged pain associated with complete coronary blockage and injury to part of the myocardium."
+              "text": "The book defines angina pectoris as severe pain beneath the sternum, described as squeezing, pressing or burning. It links it to narrowing of coronary arteries (atherosclerosis). Listed associated factors include obesity, diabetes, elevated triglycerides and cholesterol, hypertension, heredity, frequent animal-fat intake, smoking and lack of physical activity. Pain may increase with exercise, eating or severe cold, may also occur at rest, and can spread to the arm, wrist, shoulder or teeth. Sweating and nausea may accompany it. The textbook lists resting or stress ECG, nuclear scan and cardiac catheterization as diagnostic methods."
             },
             {
               "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "الذبحة الصدرية ألم ضاغط أو حارق خلف عظمة القص يرتبط بضيق الشرايين التاجية وتصلبها. أما احتشاء عضلة القلب فيوصف بأنه ألم أشد وأطول يرتبط بانسداد كامل وتلف جزء من العضلة."
+              "title": "شرح بالعربي",
+              "text": "الذبحة الصدرية ألم شديد أسفل عظمة القص يوصف بالعصر أو الضغط أو الحرقان، ويربطه الكتاب بضيق الشرايين التاجية نتيجة التصلب. يذكر عوامل مثل السمنة والسكري وارتفاع الدهون وضغط الدم والتدخين وقلة النشاط. وقد يزيد الألم مع المجهود أو الطعام أو البرد، وقد يمتد للذراع أو الكتف أو الأسنان، مع عرق وغثيان."
             },
             {
               "type": "heading",
-              "text": "Study table | جدول للمراجعة"
+              "text": "Comparison / revision table"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Book heading",
+                  "Details"
+                ],
+                [
+                  "Definition",
+                  "Severe squeezing, pressing or burning pain beneath sternum"
+                ],
+                [
+                  "Associated factors",
+                  "Obesity, diabetes, high lipids, hypertension, heredity, animal fats, smoking, inactivity"
+                ],
+                [
+                  "Investigations",
+                  "ECG, stress ECG, nuclear scan, cardiac catheterization"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة مهمة عن المصدر",
+              "text": "This lesson follows the supplied 2016–2020 textbook. Medication doses and treatment recommendations are historical textbook content, not current clinical instructions. | هذا الدرس مبني على كتاب 2016–2020. الجرعات والتوصيات العلاجية محتوى تاريخي من الكتاب وليست تعليمات علاجية حالية."
+            }
+          ]
+        },
+        {
+          "title": "Ischemic Heart Disease — Myocardial Infarction",
+          "order": 2,
+          "objectives": [
+            "Explain the topic using the supplied textbook.",
+            "Identify manifestations, investigations and complications described in the source.",
+            "Review key terminology and nursing-care themes in the chapter."
+          ],
+          "keyTerms": [
+            "Myocardial infarction",
+            "Cardiac enzymes",
+            "Arrhythmia"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based explanation"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook describes myocardial infarction as severe chest pain resembling angina but longer and more intense, with profuse sweating, nausea and severe fear. It attributes it to complete coronary-artery blockage causing death of part of the heart muscle. Listed features include pain beneath the sternum spreading to the left arm, shoulder and neck, sometimes a burning stomach sensation, vomiting and cold extremities. The chapter lists heart failure, pulmonary edema and arrhythmias among complications, and names ECG, cardiac enzymes, CBC/ESR, chest X-ray and echocardiography as investigations."
+            },
+            {
+              "type": "keypoint",
+              "title": "شرح بالعربي",
+              "text": "يصف الكتاب احتشاء عضلة القلب بأنه ألم يشبه الذبحة لكنه أطول وأشد، وقد يصاحبه عرق شديد وغثيان وخوف. ويربطه بانسداد كامل في الشريان التاجي يؤدي إلى موت جزء من عضلة القلب. ومن المظاهر امتداد الألم للذراع الأيسر والكتف والرقبة، وقد يصاحبه قيء وبرودة الأطراف."
+            },
+            {
+              "type": "heading",
+              "text": "Comparison / revision table"
             },
             {
               "type": "table",
               "rows": [
                 [
                   "Feature",
-                  "Angina",
+                  "Angina pectoris",
                   "Myocardial infarction"
                 ],
                 [
                   "Pain",
-                  "May be exertional or at rest",
+                  "Squeezing / pressing / burning",
                   "More severe and prolonged"
                 ],
                 [
-                  "Mechanism in the book",
+                  "Mechanism described",
                   "Coronary narrowing",
                   "Complete coronary blockage"
                 ],
                 [
-                  "Associated features",
-                  "Sweating, nausea",
-                  "Sweating, nausea, vomiting, cold extremities"
+                  "Complications listed",
+                  "—",
+                  "Heart failure, pulmonary edema, arrhythmias"
                 ]
               ]
             },
             {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "ملاحظة مهمة عن المصدر",
+              "text": "This lesson follows the supplied 2016–2020 textbook. Medication doses and treatment recommendations are historical textbook content, not current clinical instructions. | هذا الدرس مبني على كتاب 2016–2020. الجرعات والتوصيات العلاجية محتوى تاريخي من الكتاب وليست تعليمات علاجية حالية."
             }
           ]
         },
         {
           "title": "Hypertension",
-          "order": 2,
+          "order": 3,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
             "Identify the main manifestations and terminology in this topic.",
@@ -232,7 +290,7 @@
         },
         {
           "title": "Heart Failure",
-          "order": 3,
+          "order": 4,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
             "Identify the main manifestations and terminology in this topic.",
@@ -265,7 +323,7 @@
         },
         {
           "title": "Pericardial and Endocardial Diseases",
-          "order": 4,
+          "order": 5,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
             "Identify the main manifestations and terminology in this topic.",
@@ -300,7 +358,7 @@
     },
     {
       "title": "Chapter 2 — Respiratory System Diseases",
-      "description": "أمراض الجهاز التنفسي — ordered according to the textbook index.",
+      "description": "أمراض الجهاز التنفسي — بنفس ترتيب الكتاب.",
       "order": 2,
       "lessons": [
         {
@@ -430,7 +488,7 @@
           ]
         },
         {
-          "title": "Chronic Bronchitis and Pulmonary Emphysema",
+          "title": "Chronic Bronchitis and Pulmonary Emphysema (COPD)",
           "order": 4,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
@@ -487,12 +545,72 @@
     },
     {
       "title": "Chapter 3 — Gastrointestinal Tract Diseases",
-      "description": "أمراض الجهاز الهضمي — ordered according to the textbook index.",
+      "description": "أمراض الجهاز الهضمي — النزيف الهضمي ثم القرحة والإسهال كما في الكتاب.",
       "order": 3,
       "lessons": [
         {
-          "title": "Peptic and Duodenal Ulcer",
+          "title": "Gastrointestinal Bleeding",
           "order": 1,
+          "objectives": [
+            "Explain the topic using the supplied textbook.",
+            "Identify manifestations, investigations and complications described in the source.",
+            "Review key terminology and nursing-care themes in the chapter."
+          ],
+          "keyTerms": [
+            "Gastrointestinal bleeding",
+            "Hematemesis",
+            "Melena",
+            "Hematochezia"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based explanation"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook divides causes into upper-GI sources (esophagitis, esophageal varices or cancer, gastritis, gastric ulcer or cancer, duodenitis and duodenal ulcer) and lower-GI sources (colitis, ulcerative colitis, angiodysplasia, hemorrhoids, colon polyps, diverticulitis, ischemic colitis and colon cancer). It describes hematemesis, melena and hematochezia. Assessment includes vital signs and tests such as CBC, blood group and crossmatch, kidney and liver function, prothrombin time and electrolytes. The source outlines volume replacement and treatment of the cause."
+            },
+            {
+              "type": "keypoint",
+              "title": "شرح بالعربي",
+              "text": "يقسم الكتاب أسباب النزيف إلى علوي وسفلي. ويعرض ثلاث صور: القيء الدموي Hematemesis، والبراز الأسود Melena، والنزيف الشرجي Hematochezia. ويشمل التقييم العلامات الحيوية وتحاليل الدم ووظائف الكلى والكبد والتجلط والأملاح، ثم تعويض الدم والسوائل وعلاج السبب."
+            },
+            {
+              "type": "heading",
+              "text": "Comparison / revision table"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Presentation",
+                  "Description in the textbook"
+                ],
+                [
+                  "Hematemesis",
+                  "Vomiting blood or coffee-ground material; usually upper GI source"
+                ],
+                [
+                  "Melena",
+                  "Black tarry stool; upper GI, small intestine or proximal colon source"
+                ],
+                [
+                  "Hematochezia",
+                  "Rectal bleeding; usually lower GI, sometimes severe upper GI bleeding"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة مهمة عن المصدر",
+              "text": "This lesson follows the supplied 2016–2020 textbook. Medication doses and treatment recommendations are historical textbook content, not current clinical instructions. | هذا الدرس مبني على كتاب 2016–2020. الجرعات والتوصيات العلاجية محتوى تاريخي من الكتاب وليست تعليمات علاجية حالية."
+            }
+          ]
+        },
+        {
+          "title": "Peptic Ulcer and Duodenal Ulcer",
+          "order": 2,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
             "Identify the main manifestations and terminology in this topic.",
@@ -525,7 +643,7 @@
         },
         {
           "title": "Acute Diarrhea",
-          "order": 2,
+          "order": 3,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
             "Identify the main manifestations and terminology in this topic.",
@@ -559,11 +677,11 @@
     },
     {
       "title": "Chapter 4 — Viral Hepatitis",
-      "description": "الالتهاب الكبدي الفيروسي — ordered according to the textbook index.",
+      "description": "التهاب الكبد الفيروسي — بالترتيب الوارد في الفهرس.",
       "order": 4,
       "lessons": [
         {
-          "title": "Acute and Chronic Viral Hepatitis (A–E)",
+          "title": "Acute Viral Hepatitis",
           "order": 1,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
@@ -632,7 +750,7 @@
           ]
         },
         {
-          "title": "Schistosomiasis",
+          "title": "Chronic Viral Hepatitis",
           "order": 2,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
@@ -664,7 +782,7 @@
           ]
         },
         {
-          "title": "Ascites",
+          "title": "Schistosomiasis",
           "order": 3,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
@@ -714,7 +832,7 @@
           ]
         },
         {
-          "title": "Hepatic Coma (Hepatic Encephalopathy)",
+          "title": "Ascites",
           "order": 4,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
@@ -750,11 +868,11 @@
     },
     {
       "title": "Chapter 5 — The Urinary System",
-      "description": "الجهاز البولي — ordered according to the textbook index.",
+      "description": "الجهاز البولي.",
       "order": 5,
       "lessons": [
         {
-          "title": "Kidney Structure and Acute Pyelonephritis",
+          "title": "Acute Pyelonephritis",
           "order": 1,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
@@ -809,7 +927,7 @@
           ]
         },
         {
-          "title": "Chronic Renal Failure and Uraemic Syndrome",
+          "title": "Chronic Renal Failure — Uraemic Syndrome",
           "order": 2,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
@@ -879,11 +997,11 @@
     },
     {
       "title": "Chapter 6 — Blood Diseases",
-      "description": "أمراض الدم — ordered according to the textbook index.",
+      "description": "أمراض الدم.",
       "order": 6,
       "lessons": [
         {
-          "title": "Anemia and Complete Blood Count",
+          "title": "Anemia",
           "order": 1,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
@@ -1005,7 +1123,7 @@
           ]
         },
         {
-          "title": "Bleeding Rate",
+          "title": "Bleeding Tendency",
           "order": 4,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
@@ -1040,7 +1158,7 @@
     },
     {
       "title": "Chapter 7 — Endocrine Gland Diseases",
-      "description": "أمراض الغدد الصماء — ordered according to the textbook index.",
+      "description": "أمراض الغدد الصماء.",
       "order": 7,
       "lessons": [
         {
@@ -1154,7 +1272,7 @@
           ]
         },
         {
-          "title": "Diabetes Mellitus",
+          "title": "Diabetes Mellitus (DM)",
           "order": 3,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
@@ -1212,7 +1330,7 @@
     },
     {
       "title": "Chapter 8 — Infectious Diseases",
-      "description": "الأمراض المعدية — ordered according to the textbook index.",
+      "description": "الأمراض المعدية.",
       "order": 8,
       "lessons": [
         {
@@ -1370,11 +1488,11 @@
     },
     {
       "title": "Chapter 9 — Nervous System Diseases",
-      "description": "أمراض الجهاز العصبي — ordered according to the textbook index.",
+      "description": "أمراض الجهاز العصبي.",
       "order": 9,
       "lessons": [
         {
-          "title": "Coma and Cardiopulmonary Resuscitation Section",
+          "title": "Coma",
           "order": 1,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
@@ -1466,11 +1584,11 @@
     },
     {
       "title": "Chapter 10 — Dermatological and Venereal Diseases",
-      "description": "الأمراض الجلدية والتناسلية — ordered according to the textbook index.",
+      "description": "الأمراض الجلدية والتناسلية — وفق تقسيمات الكتاب.",
       "order": 10,
       "lessons": [
         {
-          "title": "Parasitic Skin Infections",
+          "title": "Skin Diseases Caused by Parasitic Infections",
           "order": 1,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
@@ -1502,7 +1620,7 @@
           ]
         },
         {
-          "title": "Viral Skin Infections",
+          "title": "Skin Diseases Caused by Viral Infections",
           "order": 2,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
@@ -1534,7 +1652,7 @@
           ]
         },
         {
-          "title": "Bacterial Skin Infections",
+          "title": "Skin Diseases Caused by Bacterial Infections",
           "order": 3,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
@@ -1566,7 +1684,7 @@
           ]
         },
         {
-          "title": "Fungal Skin Infections and Superficial Mycoses",
+          "title": "Skin Diseases Caused by Fungal Infections",
           "order": 4,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
@@ -1620,8 +1738,77 @@
           ]
         },
         {
-          "title": "Cutaneous Manifestations Associated with Internal Diseases",
+          "title": "Superficial Fungal Infections of the Skin",
           "order": 5,
+          "objectives": [
+            "Explain the topic using the supplied textbook.",
+            "Identify manifestations, investigations and complications described in the source.",
+            "Review key terminology and nursing-care themes in the chapter."
+          ],
+          "keyTerms": [
+            "Tinea corporis",
+            "Tinea cruris",
+            "Tinea pedis",
+            "Tinea unguium",
+            "Tinea versicolor"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based explanation"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source describes superficial tinea according to site: Tinea corporis on the body; Tinea cruris on the inner upper thighs; Tinea pedis between the toes; Tinea unguium affecting nails; and Tinea versicolor on the chest, back and arms. The book describes the visible features of each and includes separate care/treatment subsections."
+            },
+            {
+              "type": "keypoint",
+              "title": "شرح بالعربي",
+              "text": "يقسم الكتاب الفطريات السطحية حسب المكان: الجسم، وأعلى الفخذين من الداخل، وبين أصابع القدم، والأظافر، والنخالية المبرقشة على الصدر والظهر والذراعين. ويعرض العلامات الخاصة بكل نوع."
+            },
+            {
+              "type": "heading",
+              "text": "Comparison / revision table"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Condition",
+                  "Site / feature described"
+                ],
+                [
+                  "Tinea corporis",
+                  "Defined red patch with slightly raised border"
+                ],
+                [
+                  "Tinea cruris",
+                  "Inner upper thighs"
+                ],
+                [
+                  "Tinea pedis",
+                  "Between toes; itching and moist white skin"
+                ],
+                [
+                  "Tinea unguium",
+                  "Nail roughness, pitting and ridges"
+                ],
+                [
+                  "Tinea versicolor",
+                  "Scaly yellow-to-dark-brown spots on chest, back and arms"
+                ]
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة مهمة عن المصدر",
+              "text": "This lesson follows the supplied 2016–2020 textbook. Medication doses and treatment recommendations are historical textbook content, not current clinical instructions. | هذا الدرس مبني على كتاب 2016–2020. الجرعات والتوصيات العلاجية محتوى تاريخي من الكتاب وليست تعليمات علاجية حالية."
+            }
+          ]
+        },
+        {
+          "title": "Cutaneous Manifestations Associated with Some Internal Diseases",
+          "order": 6,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
             "Identify the main manifestations and terminology in this topic.",
@@ -1652,8 +1839,8 @@
           ]
         },
         {
-          "title": "Venereal Diseases",
-          "order": 6,
+          "title": "Venereal (Sexually Transmitted) Diseases",
+          "order": 7,
           "objectives": [
             "Explain the core concepts presented in the textbook.",
             "Identify the main manifestations and terminology in this topic.",
