@@ -68,14 +68,26 @@ async function importSecondYearMedicalCurriculum(subjectId,publish){
   const gradeName=[subject.year,subject.grade,subject.gradeName].filter(Boolean).join(" ");
   if(!/second|ثاني|الثاني/i.test(gradeName))throw new Error("WRONG_GRADE");
   const gradeId=subject.gradeId||"";
-  phase="فحص الفصول الموجودة";
-  const existing=await getDocs(query(collection(db,"chapters"),where("subjectId","==",subjectId)));
-  if(existing.docs.some(d=>d.data().sourceCurriculumId==="internal-medicine-second-year-2016-2020"))throw new Error("ALREADY_IMPORTED");
   phase="تحميل ملف المنهج والتحقق منه";
   const response=await fetch("content/second-year/internal-medicine-curriculum.json",{cache:"no-store"});
   if(!response.ok)throw new Error("CURRICULUM_FILE_NOT_FOUND (HTTP "+response.status+")");
   const curriculum=await response.json();
   if(curriculum.contentStatus!=="complete"||curriculum.editorialVerification?.sourcePagesChecked!==94||curriculum.editorialVerification?.placeholdersRemaining!==0)throw new Error("CURRICULUM_NOT_VERIFIED");
+  phase="فحص محاولة الاستيراد السابقة";
+  const [existingChapters,existingLessons]=await Promise.all([
+   getDocs(query(collection(db,"chapters"),where("subjectId","==",subjectId))),
+   getDocs(query(collection(db,"lessons"),where("subjectId","==",subjectId)))
+  ]);
+  const sourceId="internal-medicine-second-year-2016-2020";
+  const priorChapters=existingChapters.docs.filter(d=>d.data().sourceCurriculumId===sourceId);
+  const priorLessons=existingLessons.docs.filter(d=>d.data().sourceCurriculumId===sourceId);
+  const expectedLessons=curriculum.chapters.reduce((n,c)=>n+(c.lessons||[]).length,0);
+  if(priorChapters.length||priorLessons.length){
+   if(priorChapters.length===curriculum.chapters.length&&priorLessons.length===expectedLessons)throw new Error("ALREADY_IMPORTED");
+   phase="تنظيف المحاولة السابقة غير المكتملة";
+   for(const item of priorLessons)await deleteDoc(doc(db,"lessons",item.id));
+   for(const item of priorChapters)await deleteDoc(doc(db,"chapters",item.id));
+  }
   let chapterCount=0,lessonCount=0;
   for(const chapter of curriculum.chapters){
    phase="إضافة الفصل: "+chapter.title;
