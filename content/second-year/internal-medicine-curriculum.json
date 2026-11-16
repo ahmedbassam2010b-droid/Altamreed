@@ -1899,5 +1899,19 @@
         }
       ]
     }
-  ]
+  ],
+  "contentStatus": "draft_incomplete",
+  "contentStatusNote": "Do not import: source-by-source expansion and editorial verification are not complete.",
+  "editorialPolicy": {
+    "sourceOnly": true,
+    "sourceTitle": "Internal Medicine, Fevers, Dermatology and Venereology — Second Year (2016–2020)",
+    "sourcePages": 94,
+    "requiredBeforeImport": [
+      "All chapter and subsection content transcribed into structured lessons from the supplied textbook",
+      "No placeholder or generic lesson paragraphs remain",
+      "English explanations and Arabic key-point explanations are present where supported by the source",
+      "Figures, comparison tables and source-supported diagrams are prepared",
+      "Lesson and chapter order is checked against the printed table of contents and body headings"
+    ]
+  }
 }

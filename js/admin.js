@@ -70,6 +70,7 @@ async function importSecondYearMedicalCurriculum(subjectId,publish){
  const response=await fetch("content/second-year/internal-medicine-curriculum.json",{cache:"no-store"});
  if(!response.ok)throw new Error("CURRICULUM_FILE_NOT_FOUND");
  const curriculum=await response.json();
+ if(curriculum.contentStatus!=="complete"||curriculum.editorialVerification?.sourcePagesChecked!==94||curriculum.editorialVerification?.placeholdersRemaining!==0)throw new Error("CURRICULUM_NOT_VERIFIED");
  let chapterCount=0,lessonCount=0;
  for(const chapter of curriculum.chapters){
   const ch=await addDoc(collection(db,"chapters"),{subjectId,gradeId:subject.gradeId,title:chapter.title,description:chapter.description,order:chapter.order,published:!!publish,sourceCurriculumId:"internal-medicine-second-year-2016-2020",createdAt:serverTimestamp()});
@@ -86,7 +87,7 @@ $("#medicalCurriculumImportForm")?.addEventListener("submit",async e=>{
  if(!subjectId)return report("اختر مادة السنة الثانية أولًا.","error");
  const button=e.submitter; if(button)button.disabled=true;
  try{const result=await importSecondYearMedicalCurriculum(subjectId,publish);report("تم استيراد "+result.chapterCount+" فصول و"+result.lessonCount+" محاضرة. "+(publish?"المحتوى منشور للطلاب بعد تحديث الصفحة.":"المحتوى محفوظ كمسودة."),"success");await refresh();}
- catch(error){const messages={SUBJECT_NOT_FOUND:"المادة غير موجودة.",WRONG_SUBJECT:"اختر مادة Internal Medicine فقط.",WRONG_GRADE:"المادة المختارة لا تبدو مادة السنة الثانية. اختر مادة السنة الثانية.",ALREADY_IMPORTED:"سبق استيراد هذا المنهج لهذه المادة؛ لم تتم إضافة نسخة مكررة.",CURRICULUM_FILE_NOT_FOUND:"ملف المنهج غير موجود في إصدار الموقع الحالي."};report(messages[error.message]||("تعذر الاستيراد: "+(error.code||error.message)),"error");}
+ catch(error){const messages={SUBJECT_NOT_FOUND:"المادة غير موجودة.",WRONG_SUBJECT:"اختر مادة Internal Medicine فقط.",WRONG_GRADE:"المادة المختارة لا تبدو مادة السنة الثانية. اختر مادة السنة الثانية.",ALREADY_IMPORTED:"سبق استيراد هذا المنهج لهذه المادة؛ لم تتم إضافة نسخة مكررة.",CURRICULUM_FILE_NOT_FOUND:"ملف المنهج غير موجود في إصدار الموقع الحالي.",CURRICULUM_NOT_VERIFIED:"لم يُسمح بالاستيراد: محتوى الكتاب لم يجتز بعد مراجعة الاكتمال والتحقق من خلوه من الفقرات المؤقتة."};report(messages[error.message]||("تعذر الاستيراد: "+(error.code||error.message)),"error");}
  finally{if(button)button.disabled=false;}
 });
 
