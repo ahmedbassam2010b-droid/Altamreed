@@ -1440,186 +1440,521 @@
       "order": 4,
       "lessons": [
         {
-          "title": "Acute Viral Hepatitis",
+          "title": "Acute Viral Hepatitis | الالتهاب الكبدي الفيروسي الحاد",
           "order": 1,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Describe the common manifestations of acute viral hepatitis.",
+            "Compare transmission routes of HAV, HBV, HCV, HDV and HEV as shown in the source.",
+            "Identify liver-function and virus-specific investigations listed."
           ],
           "keyTerms": [
             "HAV",
             "HBV",
             "HCV",
             "HDV",
-            "HEV"
+            "HEV",
+            "Jaundice",
+            "ALT",
+            "AST",
+            "Bilirubin",
+            "HBsAg",
+            "PCR"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Definition and general clinical picture"
             },
             {
               "type": "paragraph",
-              "text": "The textbook compares acute and chronic viral hepatitis and discusses HAV, HBV, HCV, HDV and HEV. It distinguishes transmission routes and chronicity, then presents diagnostic methods and prevention."
+              "text": "The book describes acute viral hepatitis as infection by hepatitis viruses A, B, D, C or E. Early symptoms may resemble influenza: marked fatigue, mild fever, muscle and joint aches. Nausea or repeated vomiting may follow. Jaundice of the sclera and sometimes skin, with dark tea-coloured urine, may then appear. The source says the acute symptoms commonly last about 4–6 weeks, while severity varies with age and virus type."
             },
             {
               "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يقارن الكتاب بين الالتهاب الكبدي الحاد والمزمن، ويعرض فيروسات A وB وC وD وE، مع توضيح طرق الانتقال وإمكانية المزمنة ثم الفحوصات والوقاية."
+              "title": "بالعربي",
+              "text": "تبدأ الأعراض غالبًا بإرهاق وحرارة بسيطة وآلام عضلية ومفصلية، ثم غثيان أو قيء، وقد يظهر اصفرار العين والجلد وتغير لون البول إلى الداكن."
             },
             {
               "type": "heading",
-              "text": "Study table | جدول للمراجعة"
+              "text": "Transmission comparison in the textbook"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Route",
+                  "HAV",
+                  "HEV",
+                  "HBV",
+                  "HDV",
+                  "HCV"
+                ],
+                [
+                  "Contaminated food / drink",
+                  "Yes",
+                  "Yes",
+                  "—",
+                  "—",
+                  "—"
+                ],
+                [
+                  "Household contact",
+                  "—",
+                  "—",
+                  "Yes",
+                  "Yes",
+                  "Yes"
+                ],
+                [
+                  "Needle / injected drugs",
+                  "—",
+                  "—",
+                  "Yes",
+                  "Yes",
+                  "Yes"
+                ],
+                [
+                  "Blood / dialysis",
+                  "Not typical in table*",
+                  "Not typical in table*",
+                  "Yes",
+                  "Yes",
+                  "Yes"
+                ],
+                [
+                  "Sexual / mother-to-child",
+                  "—",
+                  "—",
+                  "Yes",
+                  "Yes",
+                  "Yes"
+                ]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "*The source adds that transfusion during the incubation period may transmit HAV or HEV from an asymptomatic donor."
+            },
+            {
+              "type": "heading",
+              "text": "Virus-specific points"
             },
             {
               "type": "table",
               "rows": [
                 [
                   "Virus",
-                  "Textbook distinction"
+                  "Key points stated in the source"
                 ],
                 [
                   "HAV",
-                  "Food and contaminated water; generally acute"
+                  "Fecal–oral transmission through contaminated food and water; lifelong immunity after infection; the source says it does not become chronic."
                 ],
                 [
                   "HBV",
-                  "Blood/body-fluid exposure; chronic infection may occur"
-                ],
-                [
-                  "HCV",
-                  "Blood exposure; chronic infection may occur"
+                  "Blood and body-fluid transmission; mother-to-child transmission is described; may progress to chronic hepatitis, cirrhosis and liver tumours."
                 ],
                 [
                   "HDV",
-                  "Associated with hepatitis B"
+                  "Occurs only in people infected with HBV; may occur simultaneously or as superinfection."
+                ],
+                [
+                  "HCV",
+                  "Mainly blood-borne in the source; chronic progression and later cirrhosis/tumours are emphasized."
                 ],
                 [
                   "HEV",
-                  "Food/water route similar to HAV"
+                  "Fecal–oral pattern similar to HAV; the source highlights risk of severe acute liver disease in pregnancy."
                 ]
               ]
             },
             {
+              "type": "heading",
+              "text": "Investigations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Liver enzymes: ALT, AST, alkaline phosphatase and GGT.",
+                "Bilirubin; albumin and prothrombin time are noted as affected in severe liver failure.",
+                "HAV: anti-HAV IgM indicates acute infection; IgG indicates previous infection/immunity.",
+                "HBV: HBsAg, anti-HBs, HBeAg, anti-HBe, anti-HBc IgM/IgG and PCR are listed.",
+                "HCV: PCR detects virus; antibodies may appear later, according to the book.",
+                "HDV and HEV: IgM/IgG antibody tests are listed."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Prevention"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Vaccination against hepatitis A and B as stated in the source.",
+                "Personal and public hygiene.",
+                "Do not share personal items such as razors, scissors, hairbrushes or toothbrushes.",
+                "Sterilize surgical instruments and endoscopes."
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "مخطط للمراجعة",
+              "text": "HAV / HEV: طعام وماء ملوثان. HBV / HCV / HDV: مسارات مرتبطة بالدم أو سوائل الجسم وفق جدول الكتاب؛ وHDV لا يحدث دون HBV."
+            },
+            {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Historical source note | تنبيه",
+              "text": "Content is based on the 2016–2020 textbook. Medicine names, doses and treatment regimens are historical study references, not current clinical instructions. Follow current protocols and qualified supervision. | الأدوية والجرعات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
             }
           ]
         },
         {
-          "title": "Chronic Viral Hepatitis",
+          "title": "Chronic Viral Hepatitis | الالتهاب الكبدي الفيروسي المزمن",
           "order": 2,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "State the time definition of chronic hepatitis used by the book.",
+            "Identify the symptoms and complications listed.",
+            "Summarize investigations and management headings."
           ],
           "keyTerms": [
-            "Schistosomiasis"
+            "Chronic hepatitis",
+            "HBsAg",
+            "Anti-HBc IgG",
+            "Anti-HCV",
+            "PCR",
+            "Cirrhosis",
+            "Portal hypertension",
+            "Varices"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Definition"
             },
             {
               "type": "paragraph",
-              "text": "Study the infection, clinical effects, investigations and management of schistosomiasis as placed in the liver chapter of the textbook."
+              "text": "The source defines chronic hepatitis as persistence of acute hepatitis for more than six months and identifies hepatitis B and C as the viruses associated with this course."
             },
             {
               "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "ادرس العدوى وتأثيراتها والفحوصات والتدبير للبلهارسيا كما وضعها الكتاب ضمن فصل الكبد."
-            },
-            {
-              "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
-            }
-          ]
-        },
-        {
-          "title": "Schistosomiasis",
-          "order": 3,
-          "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
-          ],
-          "keyTerms": [
-            "Ascites",
-            "Peritoneal cavity"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
-            },
-            {
-              "type": "paragraph",
-              "text": "Ascites is defined in the source as accumulation of serous fluid in the peritoneal cavity, causing abdominal enlargement. Review the causes, assessment and management described in the book."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يعرّف المصدر الاستسقاء بأنه تجمع سائل مصلي في التجويف البريتوني يؤدي إلى زيادة حجم البطن. راجع الأسباب والتقييم والتدبير الوارد بالكتاب."
+              "title": "بالعربي",
+              "text": "وفق الكتاب، استمرار الالتهاب الكبدي لأكثر من ستة أشهر يعني الدخول في مرحلة الالتهاب المزمن، ويرتبط ذلك أساسًا بفيروسي B وC."
             },
             {
               "type": "heading",
-              "text": "Study table | جدول للمراجعة"
+              "text": "Symptoms"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Persistent fatigue.",
+                "Jaundice and sometimes dark urine.",
+                "Increase in abdominal size due to enlargement of liver and spleen.",
+                "Some patients have no obvious symptoms and are discovered during screening or investigations for another reason."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Complications"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Liver cirrhosis and portal hypertension.",
+                "Esophageal varices and ascites.",
+                "Hepatic encephalopathy/coma with worsening liver function.",
+                "Liver tumours."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Diagnosis"
             },
             {
               "type": "table",
               "rows": [
                 [
-                  "Term",
+                  "Assessment",
+                  "Findings / tests listed"
+                ],
+                [
+                  "Liver function",
+                  "Raised liver enzymes and bilirubin; reduced albumin; prolonged prothrombin time"
+                ],
+                [
+                  "Chronic hepatitis B",
+                  "HBsAg, anti-HBc IgG and PCR"
+                ],
+                [
+                  "Chronic hepatitis C",
+                  "Anti-HCV and PCR"
+                ],
+                [
+                  "Abdominal ultrasound",
+                  "Liver/spleen enlargement, cirrhosis, portal pressure changes, ascites and tumours"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Management topics"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook lists antiviral treatment options for chronic hepatitis B and C. These regimens reflect the publication period and must not be used as contemporary prescribing advice."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "ركز على حد الستة أشهر، ثم المضاعفات المرتبطة بتليف الكبد وارتفاع ضغط الوريد البابي والاستسقاء والاعتلال الدماغي."
+            },
+            {
+              "type": "warning",
+              "title": "Historical source note | تنبيه",
+              "text": "Content is based on the 2016–2020 textbook. Medicine names, doses and treatment regimens are historical study references, not current clinical instructions. Follow current protocols and qualified supervision. | الأدوية والجرعات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
+            }
+          ]
+        },
+        {
+          "title": "Schistosomiasis (Bilharziasis) | البلهارسيا",
+          "order": 3,
+          "objectives": [
+            "Explain the route of infection described in the source.",
+            "Differentiate urinary and intestinal/hepatic manifestations.",
+            "List diagnostic methods named in the book."
+          ],
+          "keyTerms": [
+            "Schistosomiasis",
+            "Cercaria",
+            "S. haematobium",
+            "S. mansoni",
+            "Portal hypertension",
+            "Esophageal varices"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Transmission and life cycle overview"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook explains that human infection follows contact with fresh water containing the cercaria stage. The cercaria penetrates the skin and migrates to blood vessels around the urinary bladder in S. haematobium or mesenteric vessels in S. mansoni. Mature worms produce eggs; eggs enter tissues and cause inflammation followed by fibrosis."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "تحدث العدوى عند ملامسة مياه عذبة تحتوي على طور السركاريا؛ تخترق الجلد ثم تنتقل للأوعية الدموية، وتؤدي البيوض إلى التهاب وتليف الأنسجة."
+            },
+            {
+              "type": "heading",
+              "text": "Clinical forms"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Species / site",
+                  "Manifestations listed"
+                ],
+                [
+                  "S. haematobium — urinary",
+                  "Blood in urine, urinary infections, bladder/ureter stones, hydronephrosis, renal failure and possible urinary tract tumours"
+                ],
+                [
+                  "S. mansoni — intestinal/hepatic",
+                  "Diarrhea, blood in stool, anemia, liver cirrhosis, enlarged spleen, portal hypertension and esophageal varices/bleeding"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Diagnosis and treatment topic"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Repeated urine examination for eggs.",
+                "Repeated stool examination for eggs.",
+                "Rectal snip and microscopic examination.",
+                "Antibodies against schistosoma in blood.",
+                "The source names praziquantel as treatment; this is a textbook reference, not a self-treatment instruction."
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "مقارنة مهمة",
+              "text": "S. haematobium يرتبط بالجهاز البولي والبول الدموي؛ S. mansoni يرتبط بالأمعاء والكبد وارتفاع ضغط الوريد البابي."
+            },
+            {
+              "type": "warning",
+              "title": "Historical source note | تنبيه",
+              "text": "Content is based on the 2016–2020 textbook. Medicine names, doses and treatment regimens are historical study references, not current clinical instructions. Follow current protocols and qualified supervision. | الأدوية والجرعات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
+            }
+          ]
+        },
+        {
+          "title": "Ascites | الاستسقاء البطني",
+          "order": 4,
+          "objectives": [
+            "Define ascites using the source.",
+            "List the causes and manifestations described.",
+            "Summarize monitoring and complications in cirrhotic ascites."
+          ],
+          "keyTerms": [
+            "Ascites",
+            "Peritoneal cavity",
+            "Cirrhosis",
+            "Spontaneous bacterial peritonitis",
+            "Hepatorenal syndrome"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Definition and causes"
+            },
+            {
+              "type": "paragraph",
+              "text": "Ascites is defined as accumulation of serous fluid in the peritoneal cavity, causing abdominal enlargement. The book lists heart failure, renal failure, liver failure, tuberculosis and peritoneal metastases as causes."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "الاستسقاء هو تجمع سائل مصلي داخل التجويف البريتوني، فيؤدي إلى زيادة حجم البطن."
+            },
+            {
+              "type": "heading",
+              "text": "Cirrhotic ascites: manifestations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Progressive increase in abdominal size.",
+                "Possible swelling of the feet.",
+                "Fatigue and breathing difficulty due to pressure on the diaphragm.",
+                "Loss of appetite, early satiety and indigestion.",
+                "Outward protrusion of the umbilicus in severe cases.",
+                "Prominent, tortuous abdominal wall veins."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Monitoring and complications"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source discusses salt restriction, diuretics and monitoring response through weight reduction, reduced foot swelling and smaller abdominal size. Complications listed are spontaneous bacterial peritonitis, refractory ascites and hepatorenal syndrome."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Complication",
                   "Meaning"
                 ],
                 [
-                  "Ascites",
-                  "Serous fluid accumulation in the peritoneal cavity"
+                  "Spontaneous bacterial peritonitis",
+                  "Infection involving ascitic fluid/peritoneum"
+                ],
+                [
+                  "Refractory ascites",
+                  "Ascites that does not respond to treatment"
+                ],
+                [
+                  "Hepatorenal syndrome",
+                  "Impaired kidney function associated with advanced liver disease"
                 ]
               ]
             },
             {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Historical source note | تنبيه",
+              "text": "Content is based on the 2016–2020 textbook. Medicine names, doses and treatment regimens are historical study references, not current clinical instructions. Follow current protocols and qualified supervision. | الأدوية والجرعات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
             }
           ]
         },
         {
-          "title": "Ascites",
-          "order": 4,
+          "title": "Hepatic Encephalopathy / Hepatic Coma | الاعتلال الدماغي الكبدي",
+          "order": 5,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Explain the relationship between severe liver dysfunction and altered brain function as described.",
+            "Identify precipitating factors and staged manifestations.",
+            "Recognize the intensive-care nature of the condition."
           ],
           "keyTerms": [
-            "Hepatic coma",
-            "Hepatic encephalopathy"
+            "Hepatic encephalopathy",
+            "Fetor hepaticus",
+            "Asterixis / hand tremor",
+            "Ascites",
+            "Variceal bleeding",
+            "Lactulose"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Definition"
             },
             {
               "type": "paragraph",
-              "text": "The textbook identifies hepatic coma as a serious complication of deteriorating liver function. Review the manifestations, precipitating factors, assessment and care points listed in the source."
+              "text": "The source describes hepatic coma as a serious complication of deteriorating liver function, associated with dysfunction of higher brain centres. It may occur in acute liver failure or chronic hepatic insufficiency."
             },
             {
               "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يذكر الكتاب الغيبوبة الكبدية كمضاعفة خطيرة لتدهور وظائف الكبد. راجع المظاهر والعوامل المهيئة والتقييم والرعاية كما وردت بالمصدر."
+              "title": "بالعربي",
+              "text": "الاعتلال الدماغي الكبدي اضطراب في وظائف المخ مرتبط بتدهور وظيفة الكبد، وقد يتدرج من تغيرات سلوكية إلى اضطراب شديد في الوعي."
+            },
+            {
+              "type": "heading",
+              "text": "Precipitating factors in chronic disease"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Respiratory, urinary or peritoneal infection.",
+                "Bleeding from esophageal/gastric varices or gastric ulcer.",
+                "Excessive diuretic use or excessive drainage of peritoneal fluid.",
+                "Excessive protein intake as listed in the historical source.",
+                "Severe constipation or diarrhea.",
+                "Sedative and hypnotic medicines."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Clinical stages described"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Stage",
+                  "Features described in the source"
+                ],
+                [
+                  "Early / pre-coma",
+                  "Personality and mood changes, irritability, forgetfulness, sleep disturbance, hand tremor, characteristic breath odour and slow speech"
+                ],
+                [
+                  "Progressive coma",
+                  "Increasing disorientation to time/place and people, followed by reduced responsiveness and deep coma"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Management context"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source lists treatment of precipitating causes, bowel-directed therapy, medication changes, management of gastrointestinal bleeding and intensive care for severe cases. These are complex hospital treatments and the historical list is not a clinical protocol."
             },
             {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Clinical safety",
+              "text": "Suspected hepatic encephalopathy is a medical emergency requiring urgent specialist assessment and hospital care. This lesson is for academic recognition only."
+            },
+            {
+              "type": "warning",
+              "title": "Historical source note | تنبيه",
+              "text": "Content is based on the 2016–2020 textbook. Medicine names, doses and treatment regimens are historical study references, not current clinical instructions. Follow current protocols and qualified supervision. | الأدوية والجرعات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
             }
           ]
         }
@@ -1631,124 +1966,186 @@
       "order": 5,
       "lessons": [
         {
-          "title": "Acute Pyelonephritis",
+          "title": "Acute Pyelonephritis | التهاب حوض الكلى الحاد",
           "order": 1,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Describe acute pyelonephritis as a urinary infection involving the kidney.",
+            "Identify the investigations and manifestations stated in the source.",
+            "Review the distinction between urinary infection and renal involvement."
           ],
           "keyTerms": [
-            "Kidney",
-            "Nephron",
-            "Acute pyelonephritis"
+            "Acute pyelonephritis",
+            "Urine analysis",
+            "Urine culture",
+            "White blood cell casts",
+            "Antibiotic sensitivity"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Urinary system overview"
             },
             {
               "type": "paragraph",
-              "text": "The source introduces the kidney and nephron before discussing acute pyelonephritis. The textbook states that each kidney contains about one million nephrons; review the infection section after the structural introduction."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يمهد المصدر بتركيب الكلية والنفرون قبل التهاب حوض الكلى الحاد. ويذكر الكتاب أن الكلية تحتوي نحو مليون نفرون؛ ثم تُراجع تفاصيل العدوى بعد المقدمة التشريحية."
+              "text": "The book introduces the urinary system as kidneys, ureters, urinary bladder and urethra. It describes the nephron as the kidney's functional unit, made up of glomerular and tubular components."
             },
             {
               "type": "heading",
-              "text": "Study table | جدول للمراجعة"
+              "text": "Investigation pathway"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Chemical and microscopic urine analysis.",
+                "Urine culture and sensitivity.",
+                "The source's urine microscopy table associates white blood cell casts with acute pyelonephritis."
+              ]
             },
             {
               "type": "table",
               "rows": [
                 [
-                  "Structure",
-                  "Textbook note"
+                  "Urine finding",
+                  "Association shown in the source"
                 ],
                 [
-                  "Kidney",
-                  "About one million nephrons"
+                  "White blood cell casts",
+                  "Acute pyelonephritis"
                 ],
                 [
-                  "Nephron",
-                  "Includes glomerular and tubular components"
+                  "Other urinary abnormalities",
+                  "Interpret alongside symptoms and culture findings"
                 ]
               ]
             },
             {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "أهم ما يبرزه الجزء المتاح من الكتاب: تحليل البول كيميائيًا ومجهريًا، ومزرعة البول والحساسية، مع ارتباط أسطوانات كرات الدم البيضاء بالتهاب حوض الكلى الحاد."
+            },
+            {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Source limitation",
+              "text": "The textbook pages available in this section provide only limited detail under the acute pyelonephritis heading. No additional symptoms or treatment details are inferred here."
+            },
+            {
+              "type": "warning",
+              "title": "Historical source note | تنبيه",
+              "text": "Content is based on the 2016–2020 textbook. Medicine names, doses and treatment regimens are historical study references, not current clinical instructions. Follow current protocols and qualified supervision. | الأدوية والجرعات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
             }
           ]
         },
         {
-          "title": "Chronic Renal Failure — Uraemic Syndrome",
+          "title": "Chronic Renal Failure and Uraemic Syndrome | الفشل الكلوي المزمن والمتلازمة اليوريمية",
           "order": 2,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Explain the systemic effects of chronic renal failure listed in the book.",
+            "Identify the diagnostic and treatable factors included in the source.",
+            "Compare the renal replacement options described."
           ],
           "keyTerms": [
             "Chronic renal failure",
             "Uraemia",
-            "Hyperkalemia"
+            "GFR",
+            "Creatinine",
+            "BUN",
+            "Hyperkalemia",
+            "Hemodialysis",
+            "Peritoneal dialysis"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Kidney functions and renal impairment"
             },
             {
               "type": "paragraph",
-              "text": "The book groups uraemic manifestations across body systems: gastrointestinal symptoms, itching and jaundice-like discoloration, muscle weakness and gout, neurological changes, and fluid/electrolyte disturbances such as hyperkalemia."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يجمع الكتاب مظاهر اليوريميا عبر أجهزة الجسم: أعراض هضمية، حكة واصفرار، ضعف عضلي ونقرس، تغيرات عصبية، واضطراب السوائل والأملاح مثل ارتفاع البوتاسيوم."
+              "text": "The source describes the kidneys as maintaining fluid and electrolyte balance and discusses glomerular filtration, creatinine and blood urea nitrogen as measures of renal function. Chronic renal failure is presented as a systemic condition affecting multiple organs."
             },
             {
               "type": "heading",
-              "text": "Study table | جدول للمراجعة"
+              "text": "Systemic effects described"
             },
             {
               "type": "table",
               "rows": [
                 [
                   "System",
-                  "Examples in the textbook"
+                  "Effects listed in the source"
                 ],
                 [
                   "Gastrointestinal",
-                  "Poor appetite, nausea, vomiting, bleeding"
+                  "Loss of appetite, nausea, vomiting, gastric ulcer and GI bleeding"
                 ],
                 [
-                  "Skin",
-                  "Itching, yellowish discoloration"
+                  "Blood",
+                  "Anemia, bleeding tendency and impaired white-cell function"
                 ],
                 [
-                  "Musculoskeletal",
-                  "Weakness, gout"
+                  "Respiratory",
+                  "Pleurisy, pneumonia and pulmonary effusion"
                 ],
                 [
-                  "Nervous",
-                  "Irritability, insomnia and severe neurological manifestations"
+                  "Cardiovascular",
+                  "Pericarditis, increased atherosclerosis risk and weakened heart muscle"
                 ],
                 [
-                  "Fluid/electrolytes",
-                  "Hyperkalemia and increased fluid volume"
+                  "Fluid / electrolytes",
+                  "Hyperkalemia, fluid overload, hyperphosphatemia, hypermagnesemia and acid–base imbalance"
                 ]
               ]
             },
             {
+              "type": "heading",
+              "text": "Diagnosis and reversible contributors"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Investigations described in the kidney-function section, including renal function testing.",
+                "Look for sudden blood-pressure elevation, urinary infection or obstruction, blood loss, heart failure, sepsis and nephrotoxic medicines.",
+                "The source also discusses diet and correction of fluid and electrolyte imbalance."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Renal replacement options"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Option",
+                  "Description in the book"
+                ],
+                [
+                  "Hemodialysis",
+                  "Described as access through an arteriovenous fistula, with scheduled sessions"
+                ],
+                [
+                  "Continuous ambulatory peritoneal dialysis",
+                  "Listed as another dialysis option, with particular suitability comments in the source"
+                ],
+                [
+                  "Kidney transplantation",
+                  "Listed as a renal replacement option"
+                ]
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "الفشل الكلوي المزمن لا يؤثر على الكلى فقط؛ ينعكس على الدم والقلب والتنفس والجهاز الهضمي وتوازن السوائل والأملاح."
+            },
+            {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Historical figures",
+              "text": "Dietary amounts, dialysis schedules and treatment details in this 2016–2020 book are historical curriculum material and must not be used as an individual treatment plan."
+            },
+            {
+              "type": "warning",
+              "title": "Historical source note | تنبيه",
+              "text": "Content is based on the 2016–2020 textbook. Medicine names, doses and treatment regimens are historical study references, not current clinical instructions. Follow current protocols and qualified supervision. | الأدوية والجرعات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
             }
           ]
         }
@@ -1760,156 +2157,322 @@
       "order": 6,
       "lessons": [
         {
-          "title": "Anemia",
+          "title": "Anemia | الأنيميا",
           "order": 1,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Define anemia using the textbook.",
+            "Classify the causes described.",
+            "Recognize symptoms and management headings in the source."
           ],
           "keyTerms": [
             "Anemia",
-            "CBC",
-            "Hemoglobin"
+            "Hemoglobin",
+            "RBC",
+            "Iron deficiency",
+            "Folate",
+            "Vitamin B12",
+            "Hemolysis"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Definition"
             },
             {
               "type": "paragraph",
-              "text": "The textbook presents anemia and includes a table of normal CBC ranges. Study the definition, classification, causes, manifestations and investigations using the values and terminology printed in the book."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يعرض الكتاب الأنيميا ويورد جدولًا للقيم الطبيعية لصورة الدم الكاملة. ادرس التعريف والتصنيف والأسباب والأعراض والفحوصات وفق القيم والمصطلحات المطبوعة بالمصدر."
-            },
-            {
-              "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
-            }
-          ]
-        },
-        {
-          "title": "Blood Transfusion and Its Products",
-          "order": 2,
-          "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
-          ],
-          "keyTerms": [
-            "Blood transfusion",
-            "Blood products",
-            "Compatibility"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
-            },
-            {
-              "type": "paragraph",
-              "text": "Follow the textbook's section on transfusion and blood products, including the components, indications, compatibility and precautions presented in the source."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "اتبع قسم نقل الدم ومشتقاته، بما يشمل المكونات والدواعي والتوافق والاحتياطات كما وردت في المصدر."
-            },
-            {
-              "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
-            }
-          ]
-        },
-        {
-          "title": "Blood Cancer (Leukemia)",
-          "order": 3,
-          "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
-          ],
-          "keyTerms": [
-            "Leukemia",
-            "ALL"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
-            },
-            {
-              "type": "paragraph",
-              "text": "The source describes leukemia and distinguishes types. It notes that children are commonly affected by acute lymphoblastic leukemia (ALL), while other patterns occur more often in older age groups."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يعرض المصدر اللوكيميا وأنواعها، ويذكر أن الأطفال غالبًا ما يصابون باللوكيميا الليمفاوية الحادة ALL، بينما تظهر أنماط أخرى أكثر في الأعمار الأكبر."
+              "text": "The source defines anemia as a reduction in red blood-cell number or hemoglobin below the normal range. It prints reference values for red-cell count and hemoglobin in its historical teaching table."
             },
             {
               "type": "heading",
-              "text": "Study table | جدول للمراجعة"
+              "text": "Causes"
             },
             {
               "type": "table",
               "rows": [
                 [
-                  "Type",
-                  "Textbook note"
+                  "Cause group",
+                  "Examples in the textbook"
                 ],
                 [
-                  "ALL",
-                  "Commonly affects children"
+                  "Iron deficiency",
+                  "Insufficient dietary iron, chronic bleeding and hookworm infection"
                 ],
                 [
-                  "Other types",
-                  "Some are more frequent in older age groups"
+                  "Vitamin deficiency",
+                  "Folic acid or vitamin B12 deficiency; the source also mentions vitamins C and E"
+                ],
+                [
+                  "Endocrine / marrow",
+                  "Thyroid hormone deficiency and bone-marrow involvement"
+                ],
+                [
+                  "Chronic illness",
+                  "Tuberculosis, cancer, renal failure and liver cirrhosis"
+                ],
+                [
+                  "Hemolysis",
+                  "Thalassemia, sickle-cell anemia and G6PD deficiency"
                 ]
               ]
             },
             {
+              "type": "heading",
+              "text": "Symptoms"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Fatigue with minimal exertion.",
+                "Memory difficulty, low mood and loss of appetite.",
+                "Chest pain/angina and shortness of breath.",
+                "Increased heart rate.",
+                "Pallor of skin and oral mucosa.",
+                "Dizziness, blurred vision and persistent headache."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Management topics"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source discusses rest, adequate nutrition, iron, vitamins and protein, treatment of the underlying cause, and transfusion in severe cases. Individual diagnosis and treatment require current clinical assessment."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "رتب أسباب الأنيميا إلى نقص الحديد، نقص الفيتامينات، أمراض مزمنة، مشكلات نخاع العظم، وتكسير كرات الدم الحمراء."
+            },
+            {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Historical source note | تنبيه",
+              "text": "Content is based on the 2016–2020 textbook. Medicine names, doses and treatment regimens are historical study references, not current clinical instructions. Follow current protocols and qualified supervision. | الأدوية والجرعات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
             }
           ]
         },
         {
-          "title": "Bleeding Tendency",
-          "order": 4,
+          "title": "Blood Transfusion and Its Products | نقل الدم ومشتقاته",
+          "order": 2,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "List the indications and risks of transfusion in the textbook.",
+            "Identify the bedside identity and compatibility checks emphasized.",
+            "Recognize the reaction signs listed in the source."
           ],
           "keyTerms": [
-            "Bleeding rate"
+            "Blood transfusion",
+            "ABO",
+            "Rh factor",
+            "Hemolysis",
+            "Packed red blood cells",
+            "Plasma",
+            "Platelets"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Indications listed"
             },
             {
-              "type": "paragraph",
-              "text": "Preserve the textbook heading 'Bleeding rate' and study its definitions, measurements and interpretation exactly as given in the source section."
+              "type": "list",
+              "items": [
+                "Severe anemia.",
+                "Leukemia.",
+                "Internal or external bleeding.",
+                "Hemophilia.",
+                "Accidents, injuries and burns."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Risks described"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Blood-group incompatibility and acute hemolysis.",
+                "Transmission of infections listed in the source.",
+                "Fever and allergic reactions.",
+                "Heart failure and pulmonary edema.",
+                "Low calcium and convulsions.",
+                "Electrolyte imbalance with possible rhythm disturbance."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Precautions emphasized by the source"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Carefully verify patient identity and the blood group and Rh factor on the blood bag.",
+                "Avoid vigorous shaking during transport.",
+                "Observe the patient closely at the beginning of transfusion.",
+                "The book lists breathlessness, chills, abdominal pain, rash and red urine among warning symptoms."
+              ]
             },
             {
               "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "حافظ على عنوان الكتاب «معدل النزف»، وادرس التعريفات والقياسات والتفسير كما وردت حرفيًا في القسم."
+              "title": "بالعربي",
+              "text": "أهم مبدأ تمريضي: التحقق الدقيق من هوية المريض والتوافق وفصيلة الدم وRh، مع الملاحظة المبكرة لأي علامات تفاعل."
             },
             {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Current practice",
+              "text": "Transfusion procedures, compatibility checks, administration rates and reaction management must follow current blood-bank policy and supervised clinical training; this historical text is not a transfusion protocol."
+            },
+            {
+              "type": "warning",
+              "title": "Historical source note | تنبيه",
+              "text": "Content is based on the 2016–2020 textbook. Medicine names, doses and treatment regimens are historical study references, not current clinical instructions. Follow current protocols and qualified supervision. | الأدوية والجرعات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
+            }
+          ]
+        },
+        {
+          "title": "Leukemia | اللوكيميا",
+          "order": 3,
+          "objectives": [
+            "Define leukemia as described in the source.",
+            "Identify the manifestations and investigations listed.",
+            "Summarize the supportive-care themes included in the book."
+          ],
+          "keyTerms": [
+            "Leukemia",
+            "Bone marrow",
+            "ALL",
+            "CML",
+            "CLL",
+            "CBC"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Definition"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook describes leukemia as a marked increase in white blood cells associated with a change in the bone marrow. It notes acute lymphoblastic leukemia (ALL) among childhood presentations and chronic leukemia types such as CML and CLL in older adults."
+            },
+            {
+              "type": "heading",
+              "text": "Manifestations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Fever, sore throat, body aches and bone pain.",
+                "Severe anemia, fatigue and exhaustion.",
+                "Enlargement of liver, spleen and lymph nodes.",
+                "Bleeding under the skin, from the nose or gums, and at other sites."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Diagnosis"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Blood picture may show increased white cells with reduced red cells and platelets.",
+                "Bone-marrow examination.",
+                "Sampling of liver, spleen or lymph nodes is also mentioned."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Care and treatment topics"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source discusses protective isolation, protective equipment for staff, blood or blood-product support, chemotherapy, radiotherapy in selected cases and bone-marrow transplantation."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "تظهر اللوكيميا في الكتاب كمرض مرتبط بنخاع العظم، وقد يجمع بين العدوى والأنيميا والنزيف وتضخم الكبد والطحال والعقد الليمفاوية."
+            },
+            {
+              "type": "warning",
+              "title": "Historical source note | تنبيه",
+              "text": "Content is based on the 2016–2020 textbook. Medicine names, doses and treatment regimens are historical study references, not current clinical instructions. Follow current protocols and qualified supervision. | الأدوية والجرعات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
+            }
+          ]
+        },
+        {
+          "title": "Bleeding Tendency | قابلية النزيف",
+          "order": 4,
+          "objectives": [
+            "Identify the main mechanisms causing bleeding tendency in the source.",
+            "Recognize external, skin and internal bleeding manifestations.",
+            "Summarize the treatment categories listed."
+          ],
+          "keyTerms": [
+            "Bleeding tendency",
+            "Platelets",
+            "Clotting factors",
+            "Hemophilia",
+            "Vitamin K",
+            "Bruising"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Definition and causes"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook describes bleeding tendency as a serious blood disorder that increases bleeding and may lead to anemia."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Mechanism",
+                  "Examples listed"
+                ],
+                [
+                  "Low platelet count",
+                  "Leukemia and bone-marrow involvement"
+                ],
+                [
+                  "Deficient clotting factors",
+                  "Hemophilia, liver disease and vitamin K deficiency"
+                ],
+                [
+                  "Blood-vessel disorders",
+                  "Some vascular diseases"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Manifestations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Bleeding from nose or gums.",
+                "Hematemesis, rectal bleeding or urinary bleeding.",
+                "Bruising or bleeding beneath the skin.",
+                "Internal bleeding, including cerebral or intestinal bleeding."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Treatment categories in the source"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source lists rest, transfusion of blood/plasma/platelets and vitamin K. It also warns about injection routes in patients with bleeding tendency. These are historical textbook points and must be interpreted through current clinical policy."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "الأسباب الرئيسية في الكتاب: نقص الصفائح، نقص عوامل التجلط، أو أمراض الأوعية. راقب النزيف الظاهر والكدمات واحتمال النزيف الداخلي."
+            },
+            {
+              "type": "warning",
+              "title": "Historical source note | تنبيه",
+              "text": "Content is based on the 2016–2020 textbook. Medicine names, doses and treatment regimens are historical study references, not current clinical instructions. Follow current protocols and qualified supervision. | الأدوية والجرعات الواردة مرجع تاريخي للمذاكرة وليست تعليمات علاجية حالية."
             }
           ]
         }
@@ -2660,7 +3223,7 @@
     }
   ],
   "contentStatus": "draft_incomplete",
-  "contentStatusNote": "General immunity and chapters 1–3 expanded from the source; chapters 4–10 remain to be completed and visually reviewed. Do not import as final.",
+  "contentStatusNote": "Chapters 1–6 and General Immunity expanded from the textbook. Chapters 7–10 remain to be expanded and visually reviewed; do not import as final.",
   "editorialPolicy": {
     "sourceOnly": true,
     "sourceTitle": "Internal Medicine, Fevers, Dermatology and Venereology — Second Year (2016–2020)",
@@ -2674,8 +3237,8 @@
     ]
   },
   "editorialVerification": {
-    "sourcePagesChecked": 27,
+    "sourcePagesChecked": 65,
     "sourcePagesTotal": 94,
-    "placeholdersRemaining": 25
+    "placeholdersRemaining": 15
   }
 }
