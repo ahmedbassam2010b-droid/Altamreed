@@ -52,22 +52,30 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Natural / Innate Immunity",
-                  "Acquired / Adaptive Immunity"
-                ],
-                [
-                  "Skin and mucous membranes",
-                  "Mucosal immune system (Peyer's patches)"
-                ],
-                [
-                  "Complement",
-                  "Antibodies"
-                ],
-                [
-                  "Neutrophils and macrophages",
-                  "Cellular components: B and T lymphocytes"
-                ]
+                {
+                  "cells": [
+                    "Natural / Innate Immunity",
+                    "Acquired / Adaptive Immunity"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Skin and mucous membranes",
+                    "Mucosal immune system (Peyer's patches)"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Complement",
+                    "Antibodies"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Neutrophils and macrophages",
+                    "Cellular components: B and T lymphocytes"
+                  ]
+                }
               ]
             },
             {
@@ -103,21 +111,27 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Type",
-                  "How it occurs",
-                  "Example in the book"
-                ],
-                [
-                  "Active",
-                  "The person's immune system responds to an antigen",
-                  "Immunization / toxoid"
-                ],
-                [
-                  "Passive",
-                  "Ready-made antibodies or immune cells are received",
-                  "Immunoglobulin"
-                ]
+                {
+                  "cells": [
+                    "Type",
+                    "How it occurs",
+                    "Example in the book"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Active",
+                    "The person's immune system responds to an antigen",
+                    "Immunization / toxoid"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Passive",
+                    "Ready-made antibodies or immune cells are received",
+                    "Immunoglobulin"
+                  ]
+                }
               ]
             }
           ]
@@ -199,30 +213,42 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Feature",
-                  "Textbook description"
-                ],
-                [
-                  "Site",
-                  "Beneath the sternum"
-                ],
-                [
-                  "Character",
-                  "Squeezing, pressing or burning"
-                ],
-                [
-                  "Possible triggers",
-                  "Exercise, meals and severe cold; may also occur at rest"
-                ],
-                [
-                  "Radiation",
-                  "Arm, wrist, shoulder or teeth"
-                ],
-                [
-                  "Associated symptoms",
-                  "Sweating and nausea"
-                ]
+                {
+                  "cells": [
+                    "Feature",
+                    "Textbook description"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Site",
+                    "Beneath the sternum"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Character",
+                    "Squeezing, pressing or burning"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Possible triggers",
+                    "Exercise, meals and severe cold; may also occur at rest"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Radiation",
+                    "Arm, wrist, shoulder or teeth"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Associated symptoms",
+                    "Sweating and nausea"
+                  ]
+                }
               ]
             },
             {
@@ -305,26 +331,36 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Complication",
-                  "Meaning for revision"
-                ],
-                [
-                  "Heart failure",
-                  "Impaired pumping function"
-                ],
-                [
-                  "Pulmonary edema",
-                  "Fluid accumulation in the lungs"
-                ],
-                [
-                  "Arrhythmias",
-                  "Disturbances of cardiac rhythm"
-                ],
-                [
-                  "Clot extension",
-                  "The source notes possible spread of the clot"
-                ]
+                {
+                  "cells": [
+                    "Complication",
+                    "Meaning for revision"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Heart failure",
+                    "Impaired pumping function"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Pulmonary edema",
+                    "Fluid accumulation in the lungs"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Arrhythmias",
+                    "Disturbances of cardiac rhythm"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Clot extension",
+                    "The source notes possible spread of the clot"
+                  ]
+                }
               ]
             },
             {
@@ -356,26 +392,34 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Point",
-                  "Angina",
-                  "Myocardial infarction"
-                ],
-                [
-                  "Mechanism described",
-                  "Coronary narrowing",
-                  "Complete coronary blockage"
-                ],
-                [
-                  "Pain",
-                  "Squeezing / pressure / burning",
-                  "Similar but longer and more intense"
-                ],
-                [
-                  "Complications listed",
-                  "Not detailed in the angina subsection",
-                  "Heart failure, pulmonary edema, arrhythmias"
-                ]
+                {
+                  "cells": [
+                    "Point",
+                    "Angina",
+                    "Myocardial infarction"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Mechanism described",
+                    "Coronary narrowing",
+                    "Complete coronary blockage"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Pain",
+                    "Squeezing / pressure / burning",
+                    "Similar but longer and more intense"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Complications listed",
+                    "Not detailed in the angina subsection",
+                    "Heart failure, pulmonary edema, arrhythmias"
+                  ]
+                }
               ]
             },
             {
@@ -422,18 +466,24 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Type",
-                  "Description in the textbook"
-                ],
-                [
-                  "Primary / essential",
-                  "More than 90% of cases; associated with obesity, heredity, high salt intake and smoking."
-                ],
-                [
-                  "Secondary",
-                  "Associated with renal disease or renal artery narrowing, thyroid or adrenal disorders, brain tumours, and some medicines such as corticosteroids."
-                ]
+                {
+                  "cells": [
+                    "Type",
+                    "Description in the textbook"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Primary / essential",
+                    "More than 90% of cases; associated with obesity, heredity, high salt intake and smoking."
+                  ]
+                },
+                {
+                  "cells": [
+                    "Secondary",
+                    "Associated with renal disease or renal artery narrowing, thyroid or adrenal disorders, brain tumours, and some medicines such as corticosteroids."
+                  ]
+                }
               ]
             },
             {
@@ -539,26 +589,36 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Finding",
-                  "Term / association"
-                ],
-                [
-                  "Shortness of breath",
-                  "Dyspnea"
-                ],
-                [
-                  "Swelling of feet",
-                  "Edema"
-                ],
-                [
-                  "Enlarged liver",
-                  "Hepatomegaly"
-                ],
-                [
-                  "Frothy sputum with breathlessness",
-                  "Pulmonary congestion / edema described by source"
-                ]
+                {
+                  "cells": [
+                    "Finding",
+                    "Term / association"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Shortness of breath",
+                    "Dyspnea"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Swelling of feet",
+                    "Edema"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Enlarged liver",
+                    "Hepatomegaly"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Frothy sputum with breathlessness",
+                    "Pulmonary congestion / edema described by source"
+                  ]
+                }
               ]
             },
             {
@@ -655,26 +715,36 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Learning area",
-                  "What the student should understand"
-                ],
-                [
-                  "Recognition",
-                  "Identify suspected cardiac and respiratory arrest and activate the emergency response."
-                ],
-                [
-                  "Airway and breathing",
-                  "Airway support and ventilation are components of resuscitation training."
-                ],
-                [
-                  "Circulation",
-                  "Chest compressions and monitoring are core resuscitation concepts."
-                ],
-                [
-                  "Safety",
-                  "Use current accredited BLS/ACLS training and local protocols; never rely on the old ratio or drug list in this textbook."
-                ]
+                {
+                  "cells": [
+                    "Learning area",
+                    "What the student should understand"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Recognition",
+                    "Identify suspected cardiac and respiratory arrest and activate the emergency response."
+                  ]
+                },
+                {
+                  "cells": [
+                    "Airway and breathing",
+                    "Airway support and ventilation are components of resuscitation training."
+                  ]
+                },
+                {
+                  "cells": [
+                    "Circulation",
+                    "Chest compressions and monitoring are core resuscitation concepts."
+                  ]
+                },
+                {
+                  "cells": [
+                    "Safety",
+                    "Use current accredited BLS/ACLS training and local protocols; never rely on the old ratio or drug list in this textbook."
+                  ]
+                }
               ]
             },
             {
@@ -739,26 +809,36 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Group",
-                  "Examples stated in the book"
-                ],
-                [
-                  "Environmental allergens",
-                  "House dust, bird feathers, animals, airborne fungi and spring pollen"
-                ],
-                [
-                  "Foods / additives",
-                  "Fish, milk, eggs, chocolate, flavour enhancers and preservatives"
-                ],
-                [
-                  "Medicines",
-                  "Aspirin and related painkillers"
-                ],
-                [
-                  "Other",
-                  "Exercise-related attacks in children; an adult form of unknown cause"
-                ]
+                {
+                  "cells": [
+                    "Group",
+                    "Examples stated in the book"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Environmental allergens",
+                    "House dust, bird feathers, animals, airborne fungi and spring pollen"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Foods / additives",
+                    "Fish, milk, eggs, chocolate, flavour enhancers and preservatives"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Medicines",
+                    "Aspirin and related painkillers"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Other",
+                    "Exercise-related attacks in children; an adult form of unknown cause"
+                  ]
+                }
               ]
             },
             {
@@ -863,38 +943,54 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Investigation",
-                  "Purpose / source detail"
-                ],
-                [
-                  "Chest X-ray",
-                  "Radiological assessment"
-                ],
-                [
-                  "Sputum examination",
-                  "The book specifies repeated samples for detecting the TB organism"
-                ],
-                [
-                  "CBC and ESR",
-                  "Blood investigations listed"
-                ],
-                [
-                  "Tuberculin test",
-                  "The source says the result is read after 72 hours"
-                ],
-                [
-                  "Culture and sensitivity",
-                  "Identification and sensitivity assessment"
-                ],
-                [
-                  "Bactec / PCR",
-                  "Additional tests named in the text"
-                ],
-                [
-                  "Liver function tests",
-                  "ALT and AST monitoring is mentioned with rifampicin treatment"
-                ]
+                {
+                  "cells": [
+                    "Investigation",
+                    "Purpose / source detail"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Chest X-ray",
+                    "Radiological assessment"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Sputum examination",
+                    "The book specifies repeated samples for detecting the TB organism"
+                  ]
+                },
+                {
+                  "cells": [
+                    "CBC and ESR",
+                    "Blood investigations listed"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Tuberculin test",
+                    "The source says the result is read after 72 hours"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Culture and sensitivity",
+                    "Identification and sensitivity assessment"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Bactec / PCR",
+                    "Additional tests named in the text"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Liver function tests",
+                    "ALT and AST monitoring is mentioned with rifampicin treatment"
+                  ]
+                }
               ]
             },
             {
@@ -991,14 +1087,18 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Diagnosis",
-                  "Chest X-ray; CBC/blood picture; ESR; sputum examination"
-                ],
-                [
-                  "Care themes",
-                  "Bed rest, oxygen as prescribed, fever management, antibiotics selected by clinicians, fluids when needed, treatment of complications and vital-sign monitoring"
-                ]
+                {
+                  "cells": [
+                    "Diagnosis",
+                    "Chest X-ray; CBC/blood picture; ESR; sputum examination"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Care themes",
+                    "Bed rest, oxygen as prescribed, fever management, antibiotics selected by clinicians, fluids when needed, treatment of complications and vital-sign monitoring"
+                  ]
+                }
               ]
             },
             {
@@ -1078,30 +1178,42 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Feature",
-                  "COPD pattern described"
-                ],
-                [
-                  "Main exposures",
-                  "Tobacco smoke, polluted air and dust"
-                ],
-                [
-                  "Cough",
-                  "Persistent over months and repeated years"
-                ],
-                [
-                  "Sputum",
-                  "Viscous; may contain blood or pus"
-                ],
-                [
-                  "Other findings",
-                  "Dyspnea, wheeze, cyanosis, raised respiratory rate"
-                ],
-                [
-                  "Tests",
-                  "Chest X-ray, pulmonary function, blood gases"
-                ]
+                {
+                  "cells": [
+                    "Feature",
+                    "COPD pattern described"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Main exposures",
+                    "Tobacco smoke, polluted air and dust"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Cough",
+                    "Persistent over months and repeated years"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Sputum",
+                    "Viscous; may contain blood or pus"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Other findings",
+                    "Dyspnea, wheeze, cyanosis, raised respiratory rate"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Tests",
+                    "Chest X-ray, pulmonary function, blood gases"
+                  ]
+                }
               ]
             },
             {
@@ -1154,26 +1266,36 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Upper GI causes",
-                  "Lower GI causes"
-                ],
-                [
-                  "Esophagitis, esophageal varices, esophageal cancer",
-                  "Colitis / ulcerative colitis"
-                ],
-                [
-                  "Gastritis, gastric ulcer, gastric cancer",
-                  "Angiodysplasia"
-                ],
-                [
-                  "Duodenitis and duodenal ulcer",
-                  "Hemorrhoids, colon polyps"
-                ],
-                [
-                  "—",
-                  "Diverticulitis, ischemic colitis, colon cancer"
-                ]
+                {
+                  "cells": [
+                    "Upper GI causes",
+                    "Lower GI causes"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Esophagitis, esophageal varices, esophageal cancer",
+                    "Colitis / ulcerative colitis"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Gastritis, gastric ulcer, gastric cancer",
+                    "Angiodysplasia"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Duodenitis and duodenal ulcer",
+                    "Hemorrhoids, colon polyps"
+                  ]
+                },
+                {
+                  "cells": [
+                    "—",
+                    "Diverticulitis, ischemic colitis, colon cancer"
+                  ]
+                }
               ]
             },
             {
@@ -1187,26 +1309,34 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Term",
-                  "Appearance",
-                  "Usual source described"
-                ],
-                [
-                  "Hematemesis",
-                  "Vomiting blood or coffee-ground material",
-                  "Upper GI tract"
-                ],
-                [
-                  "Melena",
-                  "Black, tarry stool",
-                  "Upper GI tract, small intestine and up to mid-transverse colon"
-                ],
-                [
-                  "Hematochezia",
-                  "Rectal passage of blood",
-                  "Usually lower GI; may occur with severe upper GI bleeding"
-                ]
+                {
+                  "cells": [
+                    "Term",
+                    "Appearance",
+                    "Usual source described"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Hematemesis",
+                    "Vomiting blood or coffee-ground material",
+                    "Upper GI tract"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Melena",
+                    "Black, tarry stool",
+                    "Upper GI tract, small intestine and up to mid-transverse colon"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Hematochezia",
+                    "Rectal passage of blood",
+                    "Usually lower GI; may occur with severe upper GI bleeding"
+                  ]
+                }
               ]
             },
             {
@@ -1302,26 +1432,34 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Feature",
-                  "Gastric ulcer",
-                  "Duodenal ulcer"
-                ],
-                [
-                  "Pain and food",
-                  "Pain may increase with food",
-                  "Pain may be relieved by food"
-                ],
-                [
-                  "Other symptoms",
-                  "Nausea or vomiting",
-                  "Nausea or vomiting"
-                ],
-                [
-                  "Possible associated finding",
-                  "Occult bleeding and iron-deficiency anemia",
-                  "Occult bleeding and iron-deficiency anemia"
-                ]
+                {
+                  "cells": [
+                    "Feature",
+                    "Gastric ulcer",
+                    "Duodenal ulcer"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Pain and food",
+                    "Pain may increase with food",
+                    "Pain may be relieved by food"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Other symptoms",
+                    "Nausea or vomiting",
+                    "Nausea or vomiting"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Possible associated finding",
+                    "Occult bleeding and iron-deficiency anemia",
+                    "Occult bleeding and iron-deficiency anemia"
+                  ]
+                }
               ]
             },
             {
@@ -1396,18 +1534,24 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Group",
-                  "Organisms listed"
-                ],
-                [
-                  "Invasive / destructive organisms affecting colon wall",
-                  "Shigella, Salmonella, Campylobacter jejuni, Entamoeba histolytica"
-                ],
-                [
-                  "Non-invasive toxin-producing organisms",
-                  "Vibrio cholerae and E. coli"
-                ]
+                {
+                  "cells": [
+                    "Group",
+                    "Organisms listed"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Invasive / destructive organisms affecting colon wall",
+                    "Shigella, Salmonella, Campylobacter jejuni, Entamoeba histolytica"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Non-invasive toxin-producing organisms",
+                    "Vibrio cholerae and E. coli"
+                  ]
+                }
               ]
             },
             {
@@ -1421,18 +1565,24 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Stool result described",
-                  "Direction in the source diagram"
-                ],
-                [
-                  "Blood or white blood cells",
-                  "Consider bacterial pathogens such as Shigella, Salmonella and Campylobacter"
-                ],
-                [
-                  "Parasites / amoeba",
-                  "Parasite-directed treatment pathway"
-                ]
+                {
+                  "cells": [
+                    "Stool result described",
+                    "Direction in the source diagram"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Blood or white blood cells",
+                    "Consider bacterial pathogens such as Shigella, Salmonella and Campylobacter"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Parasites / amoeba",
+                    "Parasite-directed treatment pathway"
+                  ]
+                }
               ]
             },
             {
@@ -1523,54 +1673,66 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Route",
-                  "HAV",
-                  "HEV",
-                  "HBV",
-                  "HDV",
-                  "HCV"
-                ],
-                [
-                  "Contaminated food / drink",
-                  "Yes",
-                  "Yes",
-                  "—",
-                  "—",
-                  "—"
-                ],
-                [
-                  "Household contact",
-                  "—",
-                  "—",
-                  "Yes",
-                  "Yes",
-                  "Yes"
-                ],
-                [
-                  "Needle / injected drugs",
-                  "—",
-                  "—",
-                  "Yes",
-                  "Yes",
-                  "Yes"
-                ],
-                [
-                  "Blood / dialysis",
-                  "Not typical in table*",
-                  "Not typical in table*",
-                  "Yes",
-                  "Yes",
-                  "Yes"
-                ],
-                [
-                  "Sexual / mother-to-child",
-                  "—",
-                  "—",
-                  "Yes",
-                  "Yes",
-                  "Yes"
-                ]
+                {
+                  "cells": [
+                    "Route",
+                    "HAV",
+                    "HEV",
+                    "HBV",
+                    "HDV",
+                    "HCV"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Contaminated food / drink",
+                    "Yes",
+                    "Yes",
+                    "—",
+                    "—",
+                    "—"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Household contact",
+                    "—",
+                    "—",
+                    "Yes",
+                    "Yes",
+                    "Yes"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Needle / injected drugs",
+                    "—",
+                    "—",
+                    "Yes",
+                    "Yes",
+                    "Yes"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Blood / dialysis",
+                    "Not typical in table*",
+                    "Not typical in table*",
+                    "Yes",
+                    "Yes",
+                    "Yes"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Sexual / mother-to-child",
+                    "—",
+                    "—",
+                    "Yes",
+                    "Yes",
+                    "Yes"
+                  ]
+                }
               ]
             },
             {
@@ -1584,30 +1746,42 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Virus",
-                  "Key points stated in the source"
-                ],
-                [
-                  "HAV",
-                  "Fecal–oral transmission through contaminated food and water; lifelong immunity after infection; the source says it does not become chronic."
-                ],
-                [
-                  "HBV",
-                  "Blood and body-fluid transmission; mother-to-child transmission is described; may progress to chronic hepatitis, cirrhosis and liver tumours."
-                ],
-                [
-                  "HDV",
-                  "Occurs only in people infected with HBV; may occur simultaneously or as superinfection."
-                ],
-                [
-                  "HCV",
-                  "Mainly blood-borne in the source; chronic progression and later cirrhosis/tumours are emphasized."
-                ],
-                [
-                  "HEV",
-                  "Fecal–oral pattern similar to HAV; the source highlights risk of severe acute liver disease in pregnancy."
-                ]
+                {
+                  "cells": [
+                    "Virus",
+                    "Key points stated in the source"
+                  ]
+                },
+                {
+                  "cells": [
+                    "HAV",
+                    "Fecal–oral transmission through contaminated food and water; lifelong immunity after infection; the source says it does not become chronic."
+                  ]
+                },
+                {
+                  "cells": [
+                    "HBV",
+                    "Blood and body-fluid transmission; mother-to-child transmission is described; may progress to chronic hepatitis, cirrhosis and liver tumours."
+                  ]
+                },
+                {
+                  "cells": [
+                    "HDV",
+                    "Occurs only in people infected with HBV; may occur simultaneously or as superinfection."
+                  ]
+                },
+                {
+                  "cells": [
+                    "HCV",
+                    "Mainly blood-borne in the source; chronic progression and later cirrhosis/tumours are emphasized."
+                  ]
+                },
+                {
+                  "cells": [
+                    "HEV",
+                    "Fecal–oral pattern similar to HAV; the source highlights risk of severe acute liver disease in pregnancy."
+                  ]
+                }
               ]
             },
             {
@@ -1715,26 +1889,36 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Assessment",
-                  "Findings / tests listed"
-                ],
-                [
-                  "Liver function",
-                  "Raised liver enzymes and bilirubin; reduced albumin; prolonged prothrombin time"
-                ],
-                [
-                  "Chronic hepatitis B",
-                  "HBsAg, anti-HBc IgG and PCR"
-                ],
-                [
-                  "Chronic hepatitis C",
-                  "Anti-HCV and PCR"
-                ],
-                [
-                  "Abdominal ultrasound",
-                  "Liver/spleen enlargement, cirrhosis, portal pressure changes, ascites and tumours"
-                ]
+                {
+                  "cells": [
+                    "Assessment",
+                    "Findings / tests listed"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Liver function",
+                    "Raised liver enzymes and bilirubin; reduced albumin; prolonged prothrombin time"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Chronic hepatitis B",
+                    "HBsAg, anti-HBc IgG and PCR"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Chronic hepatitis C",
+                    "Anti-HCV and PCR"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Abdominal ultrasound",
+                    "Liver/spleen enlargement, cirrhosis, portal pressure changes, ascites and tumours"
+                  ]
+                }
               ]
             },
             {
@@ -1794,18 +1978,24 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Species / site",
-                  "Manifestations listed"
-                ],
-                [
-                  "S. haematobium — urinary",
-                  "Blood in urine, urinary infections, bladder/ureter stones, hydronephrosis, renal failure and possible urinary tract tumours"
-                ],
-                [
-                  "S. mansoni — intestinal/hepatic",
-                  "Diarrhea, blood in stool, anemia, liver cirrhosis, enlarged spleen, portal hypertension and esophageal varices/bleeding"
-                ]
+                {
+                  "cells": [
+                    "Species / site",
+                    "Manifestations listed"
+                  ]
+                },
+                {
+                  "cells": [
+                    "S. haematobium — urinary",
+                    "Blood in urine, urinary infections, bladder/ureter stones, hydronephrosis, renal failure and possible urinary tract tumours"
+                  ]
+                },
+                {
+                  "cells": [
+                    "S. mansoni — intestinal/hepatic",
+                    "Diarrhea, blood in stool, anemia, liver cirrhosis, enlarged spleen, portal hypertension and esophageal varices/bleeding"
+                  ]
+                }
               ]
             },
             {
@@ -1889,22 +2079,30 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Complication",
-                  "Meaning"
-                ],
-                [
-                  "Spontaneous bacterial peritonitis",
-                  "Infection involving ascitic fluid/peritoneum"
-                ],
-                [
-                  "Refractory ascites",
-                  "Ascites that does not respond to treatment"
-                ],
-                [
-                  "Hepatorenal syndrome",
-                  "Impaired kidney function associated with advanced liver disease"
-                ]
+                {
+                  "cells": [
+                    "Complication",
+                    "Meaning"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Spontaneous bacterial peritonitis",
+                    "Infection involving ascitic fluid/peritoneum"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Refractory ascites",
+                    "Ascites that does not respond to treatment"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Hepatorenal syndrome",
+                    "Impaired kidney function associated with advanced liver disease"
+                  ]
+                }
               ]
             },
             {
@@ -1966,18 +2164,24 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Stage",
-                  "Features described in the source"
-                ],
-                [
-                  "Early / pre-coma",
-                  "Personality and mood changes, irritability, forgetfulness, sleep disturbance, hand tremor, characteristic breath odour and slow speech"
-                ],
-                [
-                  "Progressive coma",
-                  "Increasing disorientation to time/place and people, followed by reduced responsiveness and deep coma"
-                ]
+                {
+                  "cells": [
+                    "Stage",
+                    "Features described in the source"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Early / pre-coma",
+                    "Personality and mood changes, irritability, forgetfulness, sleep disturbance, hand tremor, characteristic breath odour and slow speech"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Progressive coma",
+                    "Increasing disorientation to time/place and people, followed by reduced responsiveness and deep coma"
+                  ]
+                }
               ]
             },
             {
@@ -2052,18 +2256,24 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Urine finding",
-                  "Association shown in the source"
-                ],
-                [
-                  "White blood cell casts",
-                  "Acute pyelonephritis"
-                ],
-                [
-                  "Other urinary abnormalities",
-                  "Interpret alongside symptoms and culture findings"
-                ]
+                {
+                  "cells": [
+                    "Urine finding",
+                    "Association shown in the source"
+                  ]
+                },
+                {
+                  "cells": [
+                    "White blood cell casts",
+                    "Acute pyelonephritis"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Other urinary abnormalities",
+                    "Interpret alongside symptoms and culture findings"
+                  ]
+                }
               ]
             },
             {
@@ -2117,30 +2327,42 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "System",
-                  "Effects listed in the source"
-                ],
-                [
-                  "Gastrointestinal",
-                  "Loss of appetite, nausea, vomiting, gastric ulcer and GI bleeding"
-                ],
-                [
-                  "Blood",
-                  "Anemia, bleeding tendency and impaired white-cell function"
-                ],
-                [
-                  "Respiratory",
-                  "Pleurisy, pneumonia and pulmonary effusion"
-                ],
-                [
-                  "Cardiovascular",
-                  "Pericarditis, increased atherosclerosis risk and weakened heart muscle"
-                ],
-                [
-                  "Fluid / electrolytes",
-                  "Hyperkalemia, fluid overload, hyperphosphatemia, hypermagnesemia and acid–base imbalance"
-                ]
+                {
+                  "cells": [
+                    "System",
+                    "Effects listed in the source"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Gastrointestinal",
+                    "Loss of appetite, nausea, vomiting, gastric ulcer and GI bleeding"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Blood",
+                    "Anemia, bleeding tendency and impaired white-cell function"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Respiratory",
+                    "Pleurisy, pneumonia and pulmonary effusion"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Cardiovascular",
+                    "Pericarditis, increased atherosclerosis risk and weakened heart muscle"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Fluid / electrolytes",
+                    "Hyperkalemia, fluid overload, hyperphosphatemia, hypermagnesemia and acid–base imbalance"
+                  ]
+                }
               ]
             },
             {
@@ -2162,22 +2384,30 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Option",
-                  "Description in the book"
-                ],
-                [
-                  "Hemodialysis",
-                  "Described as access through an arteriovenous fistula, with scheduled sessions"
-                ],
-                [
-                  "Continuous ambulatory peritoneal dialysis",
-                  "Listed as another dialysis option, with particular suitability comments in the source"
-                ],
-                [
-                  "Kidney transplantation",
-                  "Listed as a renal replacement option"
-                ]
+                {
+                  "cells": [
+                    "Option",
+                    "Description in the book"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Hemodialysis",
+                    "Described as access through an arteriovenous fistula, with scheduled sessions"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Continuous ambulatory peritoneal dialysis",
+                    "Listed as another dialysis option, with particular suitability comments in the source"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Kidney transplantation",
+                    "Listed as a renal replacement option"
+                  ]
+                }
               ]
             },
             {
@@ -2243,30 +2473,42 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Cause group",
-                  "Examples in the textbook"
-                ],
-                [
-                  "Iron deficiency",
-                  "Insufficient dietary iron, chronic bleeding and hookworm infection"
-                ],
-                [
-                  "Vitamin deficiency",
-                  "Folic acid or vitamin B12 deficiency; the source also mentions vitamins C and E"
-                ],
-                [
-                  "Endocrine / marrow",
-                  "Thyroid hormone deficiency and bone-marrow involvement"
-                ],
-                [
-                  "Chronic illness",
-                  "Tuberculosis, cancer, renal failure and liver cirrhosis"
-                ],
-                [
-                  "Hemolysis",
-                  "Thalassemia, sickle-cell anemia and G6PD deficiency"
-                ]
+                {
+                  "cells": [
+                    "Cause group",
+                    "Examples in the textbook"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Iron deficiency",
+                    "Insufficient dietary iron, chronic bleeding and hookworm infection"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Vitamin deficiency",
+                    "Folic acid or vitamin B12 deficiency; the source also mentions vitamins C and E"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Endocrine / marrow",
+                    "Thyroid hormone deficiency and bone-marrow involvement"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Chronic illness",
+                    "Tuberculosis, cancer, renal failure and liver cirrhosis"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Hemolysis",
+                    "Thalassemia, sickle-cell anemia and G6PD deficiency"
+                  ]
+                }
               ]
             },
             {
@@ -2479,22 +2721,30 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Mechanism",
-                  "Examples listed"
-                ],
-                [
-                  "Low platelet count",
-                  "Leukemia and bone-marrow involvement"
-                ],
-                [
-                  "Deficient clotting factors",
-                  "Hemophilia, liver disease and vitamin K deficiency"
-                ],
-                [
-                  "Blood-vessel disorders",
-                  "Some vascular diseases"
-                ]
+                {
+                  "cells": [
+                    "Mechanism",
+                    "Examples listed"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Low platelet count",
+                    "Leukemia and bone-marrow involvement"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Deficient clotting factors",
+                    "Hemophilia, liver disease and vitamin K deficiency"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Blood-vessel disorders",
+                    "Some vascular diseases"
+                  ]
+                }
               ]
             },
             {
@@ -2574,30 +2824,42 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Structure",
-                  "Role described in the book"
-                ],
-                [
-                  "Hypothalamus",
-                  "Regulates pituitary activity through releasing signals"
-                ],
-                [
-                  "Anterior pituitary",
-                  "Secretes hormones that stimulate target glands; also relates to growth hormone and prolactin"
-                ],
-                [
-                  "Posterior pituitary",
-                  "Stores ADH and oxytocin, which are produced in the hypothalamus"
-                ],
-                [
-                  "Parathyroid glands",
-                  "Regulate calcium and phosphorus in bones and blood"
-                ],
-                [
-                  "Pancreas",
-                  "Secretes insulin and glucagon"
-                ]
+                {
+                  "cells": [
+                    "Structure",
+                    "Role described in the book"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Hypothalamus",
+                    "Regulates pituitary activity through releasing signals"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Anterior pituitary",
+                    "Secretes hormones that stimulate target glands; also relates to growth hormone and prolactin"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Posterior pituitary",
+                    "Stores ADH and oxytocin, which are produced in the hypothalamus"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Parathyroid glands",
+                    "Regulate calcium and phosphorus in bones and blood"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Pancreas",
+                    "Secretes insulin and glucagon"
+                  ]
+                }
               ]
             },
             {
@@ -2641,18 +2903,24 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Condition",
-                  "Causes / manifestations described"
-                ],
-                [
-                  "Hyperthyroidism",
-                  "Graves' disease, toxic adenoma, toxic multinodular goitre, thyroiditis, thyroid tumours or pituitary tumours; anxiety, sweating, palpitations, fatigue, weight loss despite appetite, dyspnea, tremor and exophthalmos"
-                ],
-                [
-                  "Hypothyroidism",
-                  "Autoimmune destruction/thyroiditis, radiotherapy, thyroidectomy, lithium or hypothalamic disorders; fatigue, cold intolerance, lethargy, weight gain, constipation, muscle/joint pain, hair loss, dry skin and bradycardia"
-                ]
+                {
+                  "cells": [
+                    "Condition",
+                    "Causes / manifestations described"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Hyperthyroidism",
+                    "Graves' disease, toxic adenoma, toxic multinodular goitre, thyroiditis, thyroid tumours or pituitary tumours; anxiety, sweating, palpitations, fatigue, weight loss despite appetite, dyspnea, tremor and exophthalmos"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Hypothyroidism",
+                    "Autoimmune destruction/thyroiditis, radiotherapy, thyroidectomy, lithium or hypothalamic disorders; fatigue, cold intolerance, lethargy, weight gain, constipation, muscle/joint pain, hair loss, dry skin and bradycardia"
+                  ]
+                }
               ]
             },
             {
@@ -2676,21 +2944,27 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Pattern",
-                  "Free T3 / T4",
-                  "TSH"
-                ],
-                [
-                  "Hyperthyroidism",
-                  "Increased",
-                  "Typically reduced in primary thyroid overactivity"
-                ],
-                [
-                  "Hypothyroidism",
-                  "Decreased",
-                  "Increased in primary thyroid failure"
-                ]
+                {
+                  "cells": [
+                    "Pattern",
+                    "Free T3 / T4",
+                    "TSH"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Hyperthyroidism",
+                    "Increased",
+                    "Typically reduced in primary thyroid overactivity"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Hypothyroidism",
+                    "Decreased",
+                    "Increased in primary thyroid failure"
+                  ]
+                }
               ]
             },
             {
@@ -2739,26 +3013,36 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Type",
-                  "Description in the source"
-                ],
-                [
-                  "Type 1",
-                  "Absolute insulin deficiency associated with autoimmune destruction of pancreatic cells"
-                ],
-                [
-                  "Type 2",
-                  "Insulin resistance, beta-cell dysfunction, increased intestinal glucose absorption and increased hepatic glucose production"
-                ],
-                [
-                  "Gestational",
-                  "Hyperglycemia first recognized during pregnancy; the book notes it often resolves after delivery"
-                ],
-                [
-                  "Other forms",
-                  "Associated with pancreatic disease, hormone excess, medicines, genetic factors or insulin-receptor defects"
-                ]
+                {
+                  "cells": [
+                    "Type",
+                    "Description in the source"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Type 1",
+                    "Absolute insulin deficiency associated with autoimmune destruction of pancreatic cells"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Type 2",
+                    "Insulin resistance, beta-cell dysfunction, increased intestinal glucose absorption and increased hepatic glucose production"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Gestational",
+                    "Hyperglycemia first recognized during pregnancy; the book notes it often resolves after delivery"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Other forms",
+                    "Associated with pancreatic disease, hormone excess, medicines, genetic factors or insulin-receptor defects"
+                  ]
+                }
               ]
             },
             {
@@ -2777,26 +3061,36 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Source monitoring item",
-                  "Purpose"
-                ],
-                [
-                  "Capillary glucose",
-                  "Day-to-day monitoring"
-                ],
-                [
-                  "Fasting and 2-hour post-meal glucose",
-                  "Periodic assessment"
-                ],
-                [
-                  "HbA1c",
-                  "Longer-term glycemic assessment"
-                ],
-                [
-                  "Lipids and kidney function",
-                  "Assessment of associated risk and complications"
-                ]
+                {
+                  "cells": [
+                    "Source monitoring item",
+                    "Purpose"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Capillary glucose",
+                    "Day-to-day monitoring"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Fasting and 2-hour post-meal glucose",
+                    "Periodic assessment"
+                  ]
+                },
+                {
+                  "cells": [
+                    "HbA1c",
+                    "Longer-term glycemic assessment"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Lipids and kidney function",
+                    "Assessment of associated risk and complications"
+                  ]
+                }
               ]
             },
             {
@@ -2876,22 +3170,30 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Period",
-                  "Features listed"
-                ],
-                [
-                  "First week",
-                  "Gradual fever rise, chills, headache, dizziness, limb pain, constipation or diarrhea, and relative bradycardia"
-                ],
-                [
-                  "End of first week",
-                  "Rose spots over upper abdomen/back, splenic enlargement and abdominal distension"
-                ],
-                [
-                  "Second week",
-                  "Possible complications including impaired concentration, peritonitis and osteomyelitis"
-                ]
+                {
+                  "cells": [
+                    "Period",
+                    "Features listed"
+                  ]
+                },
+                {
+                  "cells": [
+                    "First week",
+                    "Gradual fever rise, chills, headache, dizziness, limb pain, constipation or diarrhea, and relative bradycardia"
+                  ]
+                },
+                {
+                  "cells": [
+                    "End of first week",
+                    "Rose spots over upper abdomen/back, splenic enlargement and abdominal distension"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Second week",
+                    "Possible complications including impaired concentration, peritonitis and osteomyelitis"
+                  ]
+                }
               ]
             },
             {
@@ -2952,26 +3254,36 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Time",
-                  "Features in the textbook"
-                ],
-                [
-                  "Day 1",
-                  "Fever, runny nose and increased eye secretions"
-                ],
-                [
-                  "Day 2",
-                  "Cough, photophobia and small white Koplik spots on buccal mucosa"
-                ],
-                [
-                  "After 3–4 days",
-                  "Red rash begins behind ears and forehead and spreads over the body"
-                ],
-                [
-                  "Day 6–7",
-                  "Fever falls and rash begins to fade"
-                ]
+                {
+                  "cells": [
+                    "Time",
+                    "Features in the textbook"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Day 1",
+                    "Fever, runny nose and increased eye secretions"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Day 2",
+                    "Cough, photophobia and small white Koplik spots on buccal mucosa"
+                  ]
+                },
+                {
+                  "cells": [
+                    "After 3–4 days",
+                    "Red rash begins behind ears and forehead and spreads over the body"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Day 6–7",
+                    "Fever falls and rash begins to fade"
+                  ]
+                }
               ]
             },
             {
@@ -3245,26 +3557,36 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "CSF feature",
-                  "Pattern described in the source"
-                ],
-                [
-                  "Neutrophils",
-                  "Increased"
-                ],
-                [
-                  "Glucose",
-                  "Reduced"
-                ],
-                [
-                  "Protein",
-                  "Increased"
-                ],
-                [
-                  "Pressure",
-                  "Increased CSF pressure"
-                ]
+                {
+                  "cells": [
+                    "CSF feature",
+                    "Pattern described in the source"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Neutrophils",
+                    "Increased"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Glucose",
+                    "Reduced"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Protein",
+                    "Increased"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Pressure",
+                    "Increased CSF pressure"
+                  ]
+                }
               ]
             },
             {
@@ -3366,21 +3688,27 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Condition",
-                  "Main site",
-                  "Characteristic clue"
-                ],
-                [
-                  "Scabies",
-                  "Finger webs and multiple body folds/sites",
-                  "Severe nocturnal itching; more than one household member may be affected"
-                ],
-                [
-                  "Head lice",
-                  "Scalp and hair",
-                  "Scalp itching with possible papules and neck-node enlargement"
-                ]
+                {
+                  "cells": [
+                    "Condition",
+                    "Main site",
+                    "Characteristic clue"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Scabies",
+                    "Finger webs and multiple body folds/sites",
+                    "Severe nocturnal itching; more than one household member may be affected"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Head lice",
+                    "Scalp and hair",
+                    "Scalp itching with possible papules and neck-node enlargement"
+                  ]
+                }
               ]
             },
             {
@@ -3410,31 +3738,41 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Condition",
-                  "Appearance / distribution",
-                  "Transmission or feature in source"
-                ],
-                [
-                  "Warts",
-                  "Small papules; may affect face, hands and feet",
-                  "Contact; usually not itchy; genital type also described"
-                ],
-                [
-                  "Chickenpox",
-                  "Papules become vesicles, then open and crust",
-                  "Droplets; mild fever; incubation about two weeks"
-                ],
-                [
-                  "Herpes simplex",
-                  "Small yellow vesicles with redness near mouth or nose; genital type also mentioned",
-                  "The source distinguishes oral/facial and genital forms"
-                ],
-                [
-                  "Herpes zoster",
-                  "Vesicles in a limited dermatome, often one side of trunk or face",
-                  "Severe local pain may persist after lesions disappear"
-                ]
+                {
+                  "cells": [
+                    "Condition",
+                    "Appearance / distribution",
+                    "Transmission or feature in source"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Warts",
+                    "Small papules; may affect face, hands and feet",
+                    "Contact; usually not itchy; genital type also described"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Chickenpox",
+                    "Papules become vesicles, then open and crust",
+                    "Droplets; mild fever; incubation about two weeks"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Herpes simplex",
+                    "Small yellow vesicles with redness near mouth or nose; genital type also mentioned",
+                    "The source distinguishes oral/facial and genital forms"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Herpes zoster",
+                    "Vesicles in a limited dermatome, often one side of trunk or face",
+                    "Severe local pain may persist after lesions disappear"
+                  ]
+                }
               ]
             },
             {
@@ -3539,22 +3877,30 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Pattern",
-                  "Description in the textbook"
-                ],
-                [
-                  "Microsporic / ectothrix",
-                  "Common in children; round or oval defined scalp patches with grey scales; hair breaks leaving short stubs"
-                ],
-                [
-                  "Black dot / endothrix",
-                  "Defined patch with mild follicular inflammation; hair breaks at scalp level, leaving black dots"
-                ],
-                [
-                  "Favus / kerion pattern",
-                  "Marked follicular inflammation, crusts or abscesses; untreated disease may destroy follicles and leave scarring alopecia"
-                ]
+                {
+                  "cells": [
+                    "Pattern",
+                    "Description in the textbook"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Microsporic / ectothrix",
+                    "Common in children; round or oval defined scalp patches with grey scales; hair breaks leaving short stubs"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Black dot / endothrix",
+                    "Defined patch with mild follicular inflammation; hair breaks at scalp level, leaving black dots"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Favus / kerion pattern",
+                    "Marked follicular inflammation, crusts or abscesses; untreated disease may destroy follicles and leave scarring alopecia"
+                  ]
+                }
               ]
             },
             {
@@ -3597,36 +3943,48 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Condition",
-                  "Site",
-                  "Feature described"
-                ],
-                [
-                  "Tinea corporis",
-                  "Body",
-                  "Defined red patch, slightly raised, with vesicles or fine scales at the edge"
-                ],
-                [
-                  "Tinea cruris",
-                  "Inner upper thighs",
-                  "Inflamed area with a defined, slightly raised border"
-                ],
-                [
-                  "Tinea pedis",
-                  "Between toes",
-                  "Itching, moist white superficial skin and sometimes foot odour"
-                ],
-                [
-                  "Tinea unguium",
-                  "Nails",
-                  "Roughness, pitting, ridges and loss of shine"
-                ],
-                [
-                  "Tinea versicolor",
-                  "Chest, back and arms",
-                  "Yellow-to-dark-brown scaly spots; source says usually no itching or inflammation"
-                ]
+                {
+                  "cells": [
+                    "Condition",
+                    "Site",
+                    "Feature described"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Tinea corporis",
+                    "Body",
+                    "Defined red patch, slightly raised, with vesicles or fine scales at the edge"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Tinea cruris",
+                    "Inner upper thighs",
+                    "Inflamed area with a defined, slightly raised border"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Tinea pedis",
+                    "Between toes",
+                    "Itching, moist white superficial skin and sometimes foot odour"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Tinea unguium",
+                    "Nails",
+                    "Roughness, pitting, ridges and loss of shine"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Tinea versicolor",
+                    "Chest, back and arms",
+                    "Yellow-to-dark-brown scaly spots; source says usually no itching or inflammation"
+                  ]
+                }
               ]
             },
             {
@@ -3677,46 +4035,66 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Condition",
-                  "Key description in the source"
-                ],
-                [
-                  "Psoriasis",
-                  "Non-contagious red papules/plaques with white scales; knees, elbows, lower back, scalp and nails may be affected; Auspitz sign is mentioned"
-                ],
-                [
-                  "Vitiligo",
-                  "Non-contagious white patches without itching"
-                ],
-                [
-                  "Bullous disorders",
-                  "Fluid-filled blisters that may open and leave ulcers"
-                ],
-                [
-                  "Acne vulgaris",
-                  "Adolescent acne associated in the source with androgen-related sebaceous secretion; face, chest and shoulders"
-                ],
-                [
-                  "Urticaria",
-                  "Wheals of varying sizes with severe itching; source warns of possible severe allergic reaction"
-                ],
-                [
-                  "Papular urticaria",
-                  "Children; insect or mosquito bites followed by itchy papules/vesicles"
-                ],
-                [
-                  "Atopic eczema",
-                  "Age-related patterns: cheeks in infants; flexures/neck in older children and adults"
-                ],
-                [
-                  "Alopecia areata",
-                  "Patchy hair loss; totalis affects scalp hair and universalis all body hair"
-                ],
-                [
-                  "Hirsutism",
-                  "Coarse hair in androgen-sensitive areas; source lists idiopathic, hereditary, medication, PCOS and prolactin-related causes"
-                ]
+                {
+                  "cells": [
+                    "Condition",
+                    "Key description in the source"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Psoriasis",
+                    "Non-contagious red papules/plaques with white scales; knees, elbows, lower back, scalp and nails may be affected; Auspitz sign is mentioned"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Vitiligo",
+                    "Non-contagious white patches without itching"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Bullous disorders",
+                    "Fluid-filled blisters that may open and leave ulcers"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Acne vulgaris",
+                    "Adolescent acne associated in the source with androgen-related sebaceous secretion; face, chest and shoulders"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Urticaria",
+                    "Wheals of varying sizes with severe itching; source warns of possible severe allergic reaction"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Papular urticaria",
+                    "Children; insect or mosquito bites followed by itchy papules/vesicles"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Atopic eczema",
+                    "Age-related patterns: cheeks in infants; flexures/neck in older children and adults"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Alopecia areata",
+                    "Patchy hair loss; totalis affects scalp hair and universalis all body hair"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Hirsutism",
+                    "Coarse hair in androgen-sensitive areas; source lists idiopathic, hereditary, medication, PCOS and prolactin-related causes"
+                  ]
+                }
               ]
             },
             {
@@ -3763,22 +4141,30 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Underlying condition",
-                  "Skin finding described in the book"
-                ],
-                [
-                  "Renal failure",
-                  "Generalized itching that may be severe"
-                ],
-                [
-                  "Diabetes mellitus",
-                  "Increased occurrence of bacterial, fungal or viral skin infections"
-                ],
-                [
-                  "Hepatitis C",
-                  "Severe itching, urticaria and lichen planus; violet papules and white oral mucosal streaks are described"
-                ]
+                {
+                  "cells": [
+                    "Underlying condition",
+                    "Skin finding described in the book"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Renal failure",
+                    "Generalized itching that may be severe"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Diabetes mellitus",
+                    "Increased occurrence of bacterial, fungal or viral skin infections"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Hepatitis C",
+                    "Severe itching, urticaria and lichen planus; violet papules and white oral mucosal streaks are described"
+                  ]
+                }
               ]
             },
             {
@@ -3822,26 +4208,36 @@
             {
               "type": "table",
               "rows": [
-                [
-                  "Acquired stage",
-                  "Description in the source"
-                ],
-                [
-                  "Primary",
-                  "Chancre / hard ulcer"
-                ],
-                [
-                  "Secondary",
-                  "Rash involving skin, mucous membranes and other organs"
-                ],
-                [
-                  "Tertiary",
-                  "May affect skin, mucous membranes, bones, joints and internal organs"
-                ],
-                [
-                  "Quaternary",
-                  "Cardiovascular syphilis and neurosyphilis"
-                ]
+                {
+                  "cells": [
+                    "Acquired stage",
+                    "Description in the source"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Primary",
+                    "Chancre / hard ulcer"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Secondary",
+                    "Rash involving skin, mucous membranes and other organs"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Tertiary",
+                    "May affect skin, mucous membranes, bones, joints and internal organs"
+                  ]
+                },
+                {
+                  "cells": [
+                    "Quaternary",
+                    "Cardiovascular syphilis and neurosyphilis"
+                  ]
+                }
               ]
             },
             {

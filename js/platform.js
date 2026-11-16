@@ -57,7 +57,7 @@ function appendLessonBlock(parent,block){
  if(type==="image"){try{const imageUrl=new URL(block.url||"");if(imageUrl.protocol!=="https:")return;const fig=el("figure","lesson-figure"),img=el("img","");img.src=imageUrl.href;img.alt=block.alt||block.caption||"صورة تعليمية";img.loading="lazy";img.referrerPolicy="no-referrer";fig.append(img);if(block.caption)fig.append(el("figcaption","",block.caption));parent.append(fig);}catch(error){console.warn("Skipped an invalid lesson image URL.");}return;}
  if(type==="keypoint"||type==="warning"){const box=el("aside",type==="warning"?"lesson-callout is-warning":"lesson-callout is-keypoint");box.append(el("strong","",block.title||(type==="warning"?"تنبيه":"نقطة مهمة")),el("p","",block.text||""));parent.append(box);return;}
  if(type==="list"){const list=el("ul","lesson-block-list");(block.items||[]).forEach(item=>list.append(el("li","",item)));parent.append(list);return;}
- if(type==="table"){const wrap=el("div","lesson-table-wrap"),table=el("table","lesson-content-table");(Array.isArray(block.rows)?block.rows:[]).forEach((row,i)=>{const tr=el("tr");(Array.isArray(row)?row:[]).forEach(cell=>tr.append(el(i===0?"th":"td","",cell)));table.append(tr);});wrap.append(table);parent.append(wrap);return;}
+ if(type==="table"){const wrap=el("div","lesson-table-wrap"),table=el("table","lesson-content-table");(Array.isArray(block.rows)?block.rows:[]).forEach((row,i)=>{const tr=el("tr"),cells=Array.isArray(row)?row:(Array.isArray(row?.cells)?row.cells:[]);cells.forEach(cell=>tr.append(el(i===0?"th":"td","",cell)));table.append(tr);});wrap.append(table);parent.append(wrap);return;}
  if(type==="divider")parent.append(el("hr","lesson-divider"));
 }
 async function lesson(){
