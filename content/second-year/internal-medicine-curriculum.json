@@ -3236,312 +3236,570 @@
       "order": 10,
       "lessons": [
         {
-          "title": "Skin Diseases Caused by Parasitic Infections",
+          "title": "Skin Diseases Caused by Parasitic Infections | الأمراض الجلدية الطفيلية",
           "order": 1,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Recognize scabies and pediculosis from the features described.",
+            "Compare transmission, distribution and manifestations.",
+            "Summarize infection-control themes in the textbook."
           ],
           "keyTerms": [
-            "Parasitic skin infection"
+            "Scabies",
+            "Sarcoptes scabiei",
+            "Pediculosis",
+            "Head lice",
+            "Papules",
+            "Pruritus"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Scabies"
             },
             {
               "type": "paragraph",
-              "text": "Study the parasitic skin-infection group, retaining the named examples, manifestations and care points from the textbook."
+              "text": "The source describes scabies as a contagious infestation caused by the scabies mite, with an incubation period stated as 14 days. It spreads through contact and commonly causes severe itching, especially before sleep. Small papules are described between the fingers and on limbs, armpits, thighs, genital area and under the breasts; the source notes that the face and upper back are usually spared."
             },
             {
               "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "ادرس مجموعة الأمراض الجلدية الطفيلية مع الحفاظ على الأمثلة والأعراض والرعاية المذكورة في الكتاب."
+              "title": "بالعربي",
+              "text": "الجرب عدوى طفيلية معدية تتميز بحكة شديدة تزداد قبل النوم، مع حطاطات صغيرة خاصة بين الأصابع ومناطق أخرى يحددها الكتاب."
             },
             {
-              "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
-            }
-          ]
-        },
-        {
-          "title": "Skin Diseases Caused by Viral Infections",
-          "order": 2,
-          "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
-          ],
-          "keyTerms": [
-            "Viral skin infection"
-          ],
-          "contentBlocks": [
-            {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "Pediculosis (head lice)"
             },
             {
               "type": "paragraph",
-              "text": "Follow the textbook's viral skin-infection section and review each included condition, its characteristic findings and the care points in the source."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "اتبع قسم الأمراض الجلدية الفيروسية وراجع كل حالة وعلاماتها المميزة والرعاية المذكورة بالمصدر."
-            },
-            {
-              "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
-            }
-          ]
-        },
-        {
-          "title": "Skin Diseases Caused by Bacterial Infections",
-          "order": 3,
-          "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
-          ],
-          "keyTerms": [
-            "Bacterial skin infection"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
-            },
-            {
-              "type": "paragraph",
-              "text": "Review the bacterial skin conditions as a separate group, including their names, characteristic findings and management points as printed in the book."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "راجع الأمراض الجلدية البكتيرية كمجموعة مستقلة، بما يشمل الأسماء والعلامات المميزة والتدبير كما ورد بالكتاب."
-            },
-            {
-              "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
-            }
-          ]
-        },
-        {
-          "title": "Skin Diseases Caused by Fungal Infections",
-          "order": 4,
-          "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
-          ],
-          "keyTerms": [
-            "Superficial fungal infection",
-            "Skin mycosis"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
-            },
-            {
-              "type": "paragraph",
-              "text": "The textbook describes superficial fungal infections of the skin. It notes an inflamed area on the inner upper thighs with a defined, slightly raised border, and itching with skin breakdown between the toes."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يعرض الكتاب الفطريات الجلدية السطحية؛ ويذكر التهابًا بباطن أعلى الفخذ بحدود واضحة مرتفعة قليلًا، وحكة وتلفًا بالطبقات السطحية بين أصابع القدم."
+              "text": "Head lice affect the scalp and hair. The book describes severe itching, scalp papules or boils and enlarged neck lymph nodes. It discusses careful hair washing, fine-toothed combing and anti-lice preparations."
             },
             {
               "type": "heading",
-              "text": "Study table | جدول للمراجعة"
+              "text": "Infection-control themes"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Avoid sharing personal bedding, clothing and tools.",
+                "The source emphasizes isolation precautions in hospital settings and notification of the relevant hospital administration.",
+                "It describes coordinated management of close household contacts and cleaning/washing of clothing and bedding."
+              ]
             },
             {
               "type": "table",
               "rows": [
                 [
-                  "Site",
-                  "Feature described"
+                  "Condition",
+                  "Main site",
+                  "Characteristic clue"
                 ],
                 [
-                  "Inner upper thighs",
-                  "Defined, slightly raised border"
+                  "Scabies",
+                  "Finger webs and multiple body folds/sites",
+                  "Severe nocturnal itching; more than one household member may be affected"
                 ],
                 [
-                  "Between toes",
-                  "Itching and breakdown of superficial skin layers"
+                  "Head lice",
+                  "Scalp and hair",
+                  "Scalp itching with possible papules and neck-node enlargement"
                 ]
               ]
             },
             {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "This lesson follows the supplied 2016–2020 textbook. Medication names and treatment details are historical study content, not current prescribing instructions. | أسماء الأدوية وتفاصيل العلاج الواردة مرجع تاريخي للمذاكرة وليست تعليمات وصف أو علاج حالية."
             }
           ]
         },
         {
-          "title": "Superficial Fungal Infections of the Skin",
+          "title": "Skin Diseases Caused by Viral Infections | الأمراض الجلدية الفيروسية",
+          "order": 2,
+          "objectives": [
+            "Identify the viral skin conditions covered by the source.",
+            "Compare their lesions, distribution and transmission.",
+            "Recognize postherpetic neuralgia as a term used in the book."
+          ],
+          "keyTerms": [
+            "Warts",
+            "Chickenpox",
+            "Herpes simplex",
+            "Herpes zoster",
+            "Vesicles",
+            "Postherpetic neuralgia"
+          ],
+          "contentBlocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Condition",
+                  "Appearance / distribution",
+                  "Transmission or feature in source"
+                ],
+                [
+                  "Warts",
+                  "Small papules; may affect face, hands and feet",
+                  "Contact; usually not itchy; genital type also described"
+                ],
+                [
+                  "Chickenpox",
+                  "Papules become vesicles, then open and crust",
+                  "Droplets; mild fever; incubation about two weeks"
+                ],
+                [
+                  "Herpes simplex",
+                  "Small yellow vesicles with redness near mouth or nose; genital type also mentioned",
+                  "The source distinguishes oral/facial and genital forms"
+                ],
+                [
+                  "Herpes zoster",
+                  "Vesicles in a limited dermatome, often one side of trunk or face",
+                  "Severe local pain may persist after lesions disappear"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Care and treatment topics"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook mentions lesion care and clinician-directed topical or systemic treatments for these conditions. Its drug names and treatment recommendations are historical and are not reproduced as current instructions."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "فرّق بين الثآليل الحطاطية، وجديري الماء الذي يمر بمراحل حطاطة ثم حويصلة ثم قشرة، والهربس البسيط، والحزام الناري الذي يتبع مسارًا عصبيًا وقد يترك ألمًا بعد اختفاء الطفح."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "This lesson follows the supplied 2016–2020 textbook. Medication names and treatment details are historical study content, not current prescribing instructions. | أسماء الأدوية وتفاصيل العلاج الواردة مرجع تاريخي للمذاكرة وليست تعليمات وصف أو علاج حالية."
+            }
+          ]
+        },
+        {
+          "title": "Skin Diseases Caused by Bacterial Infections | الأمراض الجلدية البكتيرية",
+          "order": 3,
+          "objectives": [
+            "Explain the skin-barrier concept described in the source.",
+            "Recognize the pustule-to-furuncle progression.",
+            "Identify contributing conditions and care themes."
+          ],
+          "keyTerms": [
+            "Bacterial skin infection",
+            "Pustule",
+            "Furuncle",
+            "Skin barrier",
+            "Diabetes mellitus",
+            "Eczema"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Pathogenesis and appearance"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook explains that intact healthy skin is a barrier to bacterial invasion. Skin damage from scratching associated with scabies or eczema, and internal illnesses such as diabetes or kidney disease, may contribute. It describes small pustules that enlarge, become raised and fill with pus, forming boils (furuncles); lesions may spread to other areas."
+            },
+            {
+              "type": "heading",
+              "text": "Management themes"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Address the underlying cause of itching or skin damage.",
+                "The source discusses oral antibiotics and local antiseptic/antibiotic preparations.",
+                "Prevent spread and maintain appropriate skin hygiene and wound care."
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "سلامة الجلد حاجز مهم. الخدوش والحكة وبعض الأمراض الداخلية قد تساعد على حدوث العدوى؛ وقد تبدأ ببثور صديدية وتكبر لتكوّن دمامل."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "This lesson follows the supplied 2016–2020 textbook. Medication names and treatment details are historical study content, not current prescribing instructions. | أسماء الأدوية وتفاصيل العلاج الواردة مرجع تاريخي للمذاكرة وليست تعليمات وصف أو علاج حالية."
+            }
+          ]
+        },
+        {
+          "title": "Skin Diseases Caused by Fungal Infections | الفطريات الجلدية وفطريات فروة الرأس",
+          "order": 4,
+          "objectives": [
+            "Identify the sites affected by fungal infection.",
+            "Differentiate the scalp patterns described in the textbook.",
+            "Recognize the complications of neglected favus."
+          ],
+          "keyTerms": [
+            "Fungal infection",
+            "Tinea capitis",
+            "Ectothrix",
+            "Endothrix",
+            "Black dot",
+            "Favus",
+            "Scutula"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Sites and groups"
+            },
+            {
+              "type": "paragraph",
+              "text": "The book explains that fungi may affect the scalp, skin surface or nails. Scalp infection is discussed under Tinea capitis and its related patterns."
+            },
+            {
+              "type": "heading",
+              "text": "Tinea capitis patterns"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Pattern",
+                  "Description in the textbook"
+                ],
+                [
+                  "Microsporic / ectothrix",
+                  "Common in children; round or oval defined scalp patches with grey scales; hair breaks leaving short stubs"
+                ],
+                [
+                  "Black dot / endothrix",
+                  "Defined patch with mild follicular inflammation; hair breaks at scalp level, leaving black dots"
+                ],
+                [
+                  "Favus / kerion pattern",
+                  "Marked follicular inflammation, crusts or abscesses; untreated disease may destroy follicles and leave scarring alopecia"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Favus (Tinea favosa)"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source describes dry, brittle yellow crusts with raised edges and a depressed centre, a characteristic odour and dusty-looking hair that may not break. Neglected disease may destroy follicles and leave permanent scars."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "أهم مقارنة بفروة الرأس: ectothrix يترك شعرًا مكسورًا قصيرًا، black-dot يكسر الشعر عند سطح الفروة، وfavus قد يسبب تلف البصيلات وندبات."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "This lesson follows the supplied 2016–2020 textbook. Medication names and treatment details are historical study content, not current prescribing instructions. | أسماء الأدوية وتفاصيل العلاج الواردة مرجع تاريخي للمذاكرة وليست تعليمات وصف أو علاج حالية."
+            }
+          ]
+        },
+        {
+          "title": "Superficial Fungal Infections of the Skin | الفطريات السطحية",
           "order": 5,
           "objectives": [
-            "Explain the topic using the supplied textbook.",
-            "Identify manifestations, investigations and complications described in the source.",
-            "Review key terminology and nursing-care themes in the chapter."
+            "Classify superficial tinea by anatomical site.",
+            "Identify the characteristic appearance described for each type.",
+            "Compare the site-based names in the source."
           ],
           "keyTerms": [
             "Tinea corporis",
             "Tinea cruris",
             "Tinea pedis",
             "Tinea unguium",
-            "Tinea versicolor"
+            "Tinea versicolor",
+            "Onychomycosis"
           ],
           "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "Textbook-based explanation"
-            },
-            {
-              "type": "paragraph",
-              "text": "The source describes superficial tinea according to site: Tinea corporis on the body; Tinea cruris on the inner upper thighs; Tinea pedis between the toes; Tinea unguium affecting nails; and Tinea versicolor on the chest, back and arms. The book describes the visible features of each and includes separate care/treatment subsections."
-            },
-            {
-              "type": "keypoint",
-              "title": "شرح بالعربي",
-              "text": "يقسم الكتاب الفطريات السطحية حسب المكان: الجسم، وأعلى الفخذين من الداخل، وبين أصابع القدم، والأظافر، والنخالية المبرقشة على الصدر والظهر والذراعين. ويعرض العلامات الخاصة بكل نوع."
-            },
-            {
-              "type": "heading",
-              "text": "Comparison / revision table"
-            },
             {
               "type": "table",
               "rows": [
                 [
                   "Condition",
-                  "Site / feature described"
+                  "Site",
+                  "Feature described"
                 ],
                 [
                   "Tinea corporis",
-                  "Defined red patch with slightly raised border"
+                  "Body",
+                  "Defined red patch, slightly raised, with vesicles or fine scales at the edge"
                 ],
                 [
                   "Tinea cruris",
-                  "Inner upper thighs"
+                  "Inner upper thighs",
+                  "Inflamed area with a defined, slightly raised border"
                 ],
                 [
                   "Tinea pedis",
-                  "Between toes; itching and moist white skin"
+                  "Between toes",
+                  "Itching, moist white superficial skin and sometimes foot odour"
                 ],
                 [
                   "Tinea unguium",
-                  "Nail roughness, pitting and ridges"
+                  "Nails",
+                  "Roughness, pitting, ridges and loss of shine"
                 ],
                 [
                   "Tinea versicolor",
-                  "Scaly yellow-to-dark-brown spots on chest, back and arms"
+                  "Chest, back and arms",
+                  "Yellow-to-dark-brown scaly spots; source says usually no itching or inflammation"
                 ]
               ]
             },
             {
+              "type": "heading",
+              "text": "Study the site-name relationship"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook groups superficial fungal infections according to the body site affected. The names are therefore useful memory cues: corporis—body; cruris—groin/upper inner thigh; pedis—foot; unguium—nails; versicolor—colour-varied patches on trunk and arms."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "اربط اسم النوع بالمكان: corporis الجسم، cruris أعلى الفخذ من الداخل، pedis القدم وبين الأصابع، unguium الأظافر، versicolor الصدر والظهر والذراعين."
+            },
+            {
               "type": "warning",
-              "title": "ملاحظة مهمة عن المصدر",
-              "text": "This lesson follows the supplied 2016–2020 textbook. Medication doses and treatment recommendations are historical textbook content, not current clinical instructions. | هذا الدرس مبني على كتاب 2016–2020. الجرعات والتوصيات العلاجية محتوى تاريخي من الكتاب وليست تعليمات علاجية حالية."
+              "title": "Treatment note",
+              "text": "The source lists antifungal medicines and durations. These are historical textbook details; diagnosis and treatment require current clinical assessment."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "This lesson follows the supplied 2016–2020 textbook. Medication names and treatment details are historical study content, not current prescribing instructions. | أسماء الأدوية وتفاصيل العلاج الواردة مرجع تاريخي للمذاكرة وليست تعليمات وصف أو علاج حالية."
             }
           ]
         },
         {
-          "title": "Cutaneous Manifestations Associated with Some Internal Diseases",
+          "title": "Non-Infectious Skin Diseases | الأمراض الجلدية غير المعدية",
           "order": 6,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "Differentiate the non-infectious skin conditions included in the book.",
+            "Recognize characteristic lesions and distribution.",
+            "Identify the monitoring role highlighted for selected treatments."
           ],
           "keyTerms": [
-            "Cutaneous manifestations"
+            "Psoriasis",
+            "Vitiligo",
+            "Pemphigus",
+            "Pemphigoid",
+            "Acne vulgaris",
+            "Urticaria",
+            "Eczema",
+            "Alopecia areata",
+            "Hirsutism"
           ],
           "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
-            },
-            {
-              "type": "paragraph",
-              "text": "The source has a separate section on skin symptoms associated with internal diseases. Keep the associations exactly as stated and do not infer additional links."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يفرد المصدر قسمًا للأعراض الجلدية المرتبطة ببعض الأمراض الداخلية. التزم بالارتباطات المذكورة دون استنتاج روابط إضافية."
-            },
-            {
-              "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
-            }
-          ]
-        },
-        {
-          "title": "Venereal (Sexually Transmitted) Diseases",
-          "order": 7,
-          "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
-          ],
-          "keyTerms": [
-            "Venereal diseases",
-            "Syphilis",
-            "Gonorrhea"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
-            },
-            {
-              "type": "paragraph",
-              "text": "The book discusses sexually transmitted conditions including syphilis and gonorrhea, covering transmission and characteristic features. This is presented as health education in the textbook's academic context."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يناقش الكتاب أمراضًا منقولة جنسيًا مثل الزهري والسيلان، مع الانتقال والخصائص المميزة، في إطار التثقيف الصحي الأكاديمي."
-            },
-            {
-              "type": "heading",
-              "text": "Study table | جدول للمراجعة"
-            },
             {
               "type": "table",
               "rows": [
                 [
                   "Condition",
-                  "Topics in the source"
+                  "Key description in the source"
                 ],
                 [
-                  "Syphilis",
-                  "Stages and characteristic lesion"
+                  "Psoriasis",
+                  "Non-contagious red papules/plaques with white scales; knees, elbows, lower back, scalp and nails may be affected; Auspitz sign is mentioned"
                 ],
                 [
-                  "Gonorrhea",
-                  "Transmission, incubation and treatment"
+                  "Vitiligo",
+                  "Non-contagious white patches without itching"
                 ],
                 [
-                  "HIV/AIDS",
-                  "The textbook includes related review questions"
+                  "Bullous disorders",
+                  "Fluid-filled blisters that may open and leave ulcers"
+                ],
+                [
+                  "Acne vulgaris",
+                  "Adolescent acne associated in the source with androgen-related sebaceous secretion; face, chest and shoulders"
+                ],
+                [
+                  "Urticaria",
+                  "Wheals of varying sizes with severe itching; source warns of possible severe allergic reaction"
+                ],
+                [
+                  "Papular urticaria",
+                  "Children; insect or mosquito bites followed by itchy papules/vesicles"
+                ],
+                [
+                  "Atopic eczema",
+                  "Age-related patterns: cheeks in infants; flexures/neck in older children and adults"
+                ],
+                [
+                  "Alopecia areata",
+                  "Patchy hair loss; totalis affects scalp hair and universalis all body hair"
+                ],
+                [
+                  "Hirsutism",
+                  "Coarse hair in androgen-sensitive areas; source lists idiopathic, hereditary, medication, PCOS and prolactin-related causes"
                 ]
               ]
             },
             {
+              "type": "heading",
+              "text": "Nursing observations emphasized"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source highlights skin care and monitoring when systemic corticosteroids are used for bullous disease, including blood pressure and blood/urine glucose. It also discusses avoiding triggers in urticaria and managing underlying causes where relevant."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "هذه المجموعة غير معدية حسب تصنيف الكتاب. احفظ العلامة المميزة لكل مرض، وخصوصًا الصدفية بقشورها البيضاء، البهاق ببقعه البيضاء، والشرى بانتبارات وحكة."
+            },
+            {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Body-image note",
+              "text": "These conditions are presented for medical recognition and nursing education. Appearance alone is not enough for diagnosis; assessment belongs to qualified clinicians."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "This lesson follows the supplied 2016–2020 textbook. Medication names and treatment details are historical study content, not current prescribing instructions. | أسماء الأدوية وتفاصيل العلاج الواردة مرجع تاريخي للمذاكرة وليست تعليمات وصف أو علاج حالية."
+            }
+          ]
+        },
+        {
+          "title": "Cutaneous Manifestations Associated with Internal Diseases | المظاهر الجلدية المصاحبة للأمراض الداخلية",
+          "order": 7,
+          "objectives": [
+            "Identify the three systemic conditions linked to skin findings in the source.",
+            "Summarize the associated manifestations without adding unsupported associations."
+          ],
+          "keyTerms": [
+            "Renal failure",
+            "Pruritus",
+            "Diabetes mellitus",
+            "Hepatitis C",
+            "Urticaria",
+            "Lichen planus"
+          ],
+          "contentBlocks": [
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Underlying condition",
+                  "Skin finding described in the book"
+                ],
+                [
+                  "Renal failure",
+                  "Generalized itching that may be severe"
+                ],
+                [
+                  "Diabetes mellitus",
+                  "Increased occurrence of bacterial, fungal or viral skin infections"
+                ],
+                [
+                  "Hepatitis C",
+                  "Severe itching, urticaria and lichen planus; violet papules and white oral mucosal streaks are described"
+                ]
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "الكتاب يربط الفشل الكلوي بالحكة، والسكري بزيادة العدوى الجلدية، والتهاب الكبد C بالحكة والشرى والحزاز المسطح."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "This lesson follows the supplied 2016–2020 textbook. Medication names and treatment details are historical study content, not current prescribing instructions. | أسماء الأدوية وتفاصيل العلاج الواردة مرجع تاريخي للمذاكرة وليست تعليمات وصف أو علاج حالية."
+            }
+          ]
+        },
+        {
+          "title": "Venereal Diseases | الأمراض المنقولة جنسيًا",
+          "order": 8,
+          "objectives": [
+            "Identify the causative organisms and transmission routes named.",
+            "Summarize syphilis stages and gonorrhea manifestations described.",
+            "Recognize the AIDS-related features listed in the source."
+          ],
+          "keyTerms": [
+            "Treponema pallidum",
+            "Syphilis",
+            "Chancre",
+            "Neisseria gonorrhoeae",
+            "Gonorrhea",
+            "HIV",
+            "AIDS"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Syphilis"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source identifies Treponema pallidum as the causative spirochete and distinguishes acquired from congenital syphilis. It lists sexual contact, contact with lesions and blood transfusion as transmission routes for acquired infection."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Acquired stage",
+                  "Description in the source"
+                ],
+                [
+                  "Primary",
+                  "Chancre / hard ulcer"
+                ],
+                [
+                  "Secondary",
+                  "Rash involving skin, mucous membranes and other organs"
+                ],
+                [
+                  "Tertiary",
+                  "May affect skin, mucous membranes, bones, joints and internal organs"
+                ],
+                [
+                  "Quaternary",
+                  "Cardiovascular syphilis and neurosyphilis"
+                ]
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "Congenital syphilis is described as transplacental transmission. The book divides it into early congenital disease during the first two years and late manifestations beginning around the fourth or fifth year."
+            },
+            {
+              "type": "heading",
+              "text": "Gonorrhea"
+            },
+            {
+              "type": "paragraph",
+              "text": "Gonorrhea is attributed to Neisseria gonorrhoeae. The source gives an incubation period of 2–7 days and describes sexual transmission and transmission during childbirth. In men it lists purulent urethral discharge, redness/inflammation at the urethral opening, dysuria and increased frequency. In women it lists urethral/vaginal discharge, cervicitis, dysuria and pus from the cervical opening."
+            },
+            {
+              "type": "heading",
+              "text": "AIDS"
+            },
+            {
+              "type": "paragraph",
+              "text": "The book describes AIDS as a viral disease associated with loss of immune function and lists transmission through sexual contact or blood. Features include weight loss, chronic diarrhea, pneumonia, generalized lymph-node enlargement and opportunistic infections."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "الزهري: Treponema pallidum ومراحله تبدأ بالـchancre. السيلان: Neisseria gonorrhoeae وإفرازات صديدية وحرقان بول. AIDS: نقص مناعة مع عدوى متكررة وأعراض عامة."
+            },
+            {
+              "type": "warning",
+              "title": "Sensitive health topic",
+              "text": "This is non-graphic academic health education. For symptoms or possible exposure, seek confidential care from a qualified healthcare professional; historical treatments in the book are not current prescriptions."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "This lesson follows the supplied 2016–2020 textbook. Medication names and treatment details are historical study content, not current prescribing instructions. | أسماء الأدوية وتفاصيل العلاج الواردة مرجع تاريخي للمذاكرة وليست تعليمات وصف أو علاج حالية."
             }
           ]
         }
@@ -3549,7 +3807,7 @@
     }
   ],
   "contentStatus": "draft_incomplete",
-  "contentStatusNote": "General immunity and chapters 1–9 expanded from the source. Chapter 10 dermatology/venereology remains to be expanded and visual assets still need final integration and QA.",
+  "contentStatusNote": "All 11 curriculum sections now have expanded lesson content. Editorial source-page audit, visual assets and end-to-end import QA are still pending; do not mark as final until those checks pass.",
   "editorialPolicy": {
     "sourceOnly": true,
     "sourceTitle": "Internal Medicine, Fevers, Dermatology and Venereology — Second Year (2016–2020)",
@@ -3563,8 +3821,10 @@
     ]
   },
   "editorialVerification": {
-    "sourcePagesChecked": 74,
+    "sourcePagesChecked": 90,
     "sourcePagesTotal": 94,
-    "placeholdersRemaining": 6
+    "placeholdersRemaining": 0,
+    "visualAssetsIntegrated": false,
+    "importTested": false
   }
 }
