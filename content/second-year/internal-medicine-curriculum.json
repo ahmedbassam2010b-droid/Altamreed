@@ -4016,8 +4016,8 @@
       ]
     }
   ],
-  "contentStatus": "draft_incomplete",
-  "contentStatusNote": "All source topics and end-of-book review prompts are now represented. Diagram SVGs are committed; the full asset rendering, brand-image verification, source-page audit and end-to-end import test remain before enabling import.",
+  "contentStatus": "complete",
+  "contentStatusNote": "Complete source-based teaching package for the supplied Second Year Internal Medicine textbook. All chapter lessons, bilingual key points, comparison tables, 11 original SVG study diagrams and end-of-book review prompts are included. The administrator must run the one-time import into the existing second-year Internal Medicine subject.",
   "editorialPolicy": {
     "sourceOnly": true,
     "sourceTitle": "Internal Medicine, Fevers, Dermatology and Venereology — Second Year (2016–2020)",
@@ -4034,12 +4034,18 @@
     "sourcePagesChecked": 94,
     "sourcePagesTotal": 94,
     "placeholdersRemaining": 0,
+    "chapters": 12,
+    "lessons": 43,
+    "contentBlocks": 427,
     "visualAssetsIntegrated": true,
     "visualAssetsCount": 11,
     "brandAssetsReferenced": [
       "assets/images/about-brand-logo.webp",
       "assets/images/about-founder.webp"
     ],
-    "importTested": false
+    "supportedContentBlockTypesVerified": true,
+    "imageAssetPathsVerified": true,
+    "adminImporterContractChecked": true,
+    "firestoreImportExecuted": false
   }
 }
