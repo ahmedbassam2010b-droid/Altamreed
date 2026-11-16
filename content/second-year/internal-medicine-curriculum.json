@@ -112,107 +112,230 @@
       "order": 1,
       "lessons": [
         {
-          "title": "Chest Pain — Angina Pectoris",
+          "title": "Angina Pectoris | الذبحة الصدرية",
           "order": 1,
           "objectives": [
-            "Explain the topic using the supplied textbook.",
-            "Identify manifestations, investigations and complications described in the source.",
-            "Review key terminology and nursing-care themes in the chapter."
+            "Define angina pectoris and atherosclerosis.",
+            "Explain the risk factors and characteristic pain pattern listed in the textbook.",
+            "Identify the investigations and management headings presented in the source."
           ],
           "keyTerms": [
             "Angina pectoris",
+            "Sternum",
+            "Coronary arteries",
             "Atherosclerosis",
-            "Coronary arteries"
+            "ECG",
+            "Nuclear scan",
+            "Cardiac catheterization"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Textbook-based explanation"
+              "text": "1. Definition and mechanism"
             },
             {
               "type": "paragraph",
-              "text": "The book defines angina pectoris as severe pain beneath the sternum, described as squeezing, pressing or burning. It links it to narrowing of coronary arteries (atherosclerosis). Listed associated factors include obesity, diabetes, elevated triglycerides and cholesterol, hypertension, heredity, frequent animal-fat intake, smoking and lack of physical activity. Pain may increase with exercise, eating or severe cold, may also occur at rest, and can spread to the arm, wrist, shoulder or teeth. Sweating and nausea may accompany it. The textbook lists resting or stress ECG, nuclear scan and cardiac catheterization as diagnostic methods."
+              "text": "The textbook defines angina pectoris as severe pain beneath the sternum. Patients may describe it as squeezing, pressure or burning. The source links the condition to narrowing of the coronary arteries. It explains atherosclerosis as fat and cholesterol deposition beneath the inner arterial wall, narrowing the vessel and reducing oxygen delivery."
             },
             {
               "type": "keypoint",
-              "title": "شرح بالعربي",
-              "text": "الذبحة الصدرية ألم شديد أسفل عظمة القص يوصف بالعصر أو الضغط أو الحرقان، ويربطه الكتاب بضيق الشرايين التاجية نتيجة التصلب. يذكر عوامل مثل السمنة والسكري وارتفاع الدهون وضغط الدم والتدخين وقلة النشاط. وقد يزيد الألم مع المجهود أو الطعام أو البرد، وقد يمتد للذراع أو الكتف أو الأسنان، مع عرق وغثيان."
+              "title": "بالعربي",
+              "text": "الذبحة الصدرية ألم شديد خلف أو أسفل عظمة القص، يوصف بالعصر أو الضغط أو الحرقان. يربط الكتاب حدوثها بضيق الشرايين التاجية، ويشرح التصلب بأنه ترسب الدهون والكوليسترول أسفل البطانة الداخلية للشريان مما يضيّق مجراه ويقلل وصول الأكسجين."
             },
             {
               "type": "heading",
-              "text": "Comparison / revision table"
+              "text": "2. Associated risk factors"
             },
             {
-              "type": "table",
-              "rows": [
-                [
-                  "Book heading",
-                  "Details"
-                ],
-                [
-                  "Definition",
-                  "Severe squeezing, pressing or burning pain beneath sternum"
-                ],
-                [
-                  "Associated factors",
-                  "Obesity, diabetes, high lipids, hypertension, heredity, animal fats, smoking, inactivity"
-                ],
-                [
-                  "Investigations",
-                  "ECG, stress ECG, nuclear scan, cardiac catheterization"
-                ]
+              "type": "list",
+              "items": [
+                "Excessive obesity.",
+                "Diabetes mellitus.",
+                "Raised triglycerides and cholesterol.",
+                "High blood pressure.",
+                "Hereditary factors.",
+                "Frequent intake of animal fats.",
+                "Excessive smoking.",
+                "Lack of physical activity."
               ]
             },
             {
-              "type": "warning",
-              "title": "ملاحظة مهمة عن المصدر",
-              "text": "This lesson follows the supplied 2016–2020 textbook. Medication doses and treatment recommendations are historical textbook content, not current clinical instructions. | هذا الدرس مبني على كتاب 2016–2020. الجرعات والتوصيات العلاجية محتوى تاريخي من الكتاب وليست تعليمات علاجية حالية."
-            }
-          ]
-        },
-        {
-          "title": "Ischemic Heart Disease — Myocardial Infarction",
-          "order": 2,
-          "objectives": [
-            "Explain the topic using the supplied textbook.",
-            "Identify manifestations, investigations and complications described in the source.",
-            "Review key terminology and nursing-care themes in the chapter."
-          ],
-          "keyTerms": [
-            "Myocardial infarction",
-            "Cardiac enzymes",
-            "Arrhythmia"
-          ],
-          "contentBlocks": [
+              "type": "keypoint",
+              "title": "تجميع للحفظ",
+              "text": "عوامل الخطورة المذكورة: السمنة، السكري، اضطراب الدهون، ارتفاع الضغط، الوراثة، الدهون الحيوانية، التدخين، وقلة الحركة."
+            },
             {
               "type": "heading",
-              "text": "Textbook-based explanation"
+              "text": "3. Clinical manifestations"
             },
             {
               "type": "paragraph",
-              "text": "The textbook describes myocardial infarction as severe chest pain resembling angina but longer and more intense, with profuse sweating, nausea and severe fear. It attributes it to complete coronary-artery blockage causing death of part of the heart muscle. Listed features include pain beneath the sternum spreading to the left arm, shoulder and neck, sometimes a burning stomach sensation, vomiting and cold extremities. The chapter lists heart failure, pulmonary edema and arrhythmias among complications, and names ECG, cardiac enzymes, CBC/ESR, chest X-ray and echocardiography as investigations."
-            },
-            {
-              "type": "keypoint",
-              "title": "شرح بالعربي",
-              "text": "يصف الكتاب احتشاء عضلة القلب بأنه ألم يشبه الذبحة لكنه أطول وأشد، وقد يصاحبه عرق شديد وغثيان وخوف. ويربطه بانسداد كامل في الشريان التاجي يؤدي إلى موت جزء من عضلة القلب. ومن المظاهر امتداد الألم للذراع الأيسر والكتف والرقبة، وقد يصاحبه قيء وبرودة الأطراف."
-            },
-            {
-              "type": "heading",
-              "text": "Comparison / revision table"
+              "text": "The source describes pain beneath the sternum that may become worse with exercise, eating or exposure to severe cold; it also notes that pain may occur at rest. Radiation may involve an arm, wrist, shoulder or teeth. Sweating and nausea may accompany the pain."
             },
             {
               "type": "table",
               "rows": [
                 [
                   "Feature",
-                  "Angina pectoris",
-                  "Myocardial infarction"
+                  "Textbook description"
                 ],
                 [
-                  "Pain",
-                  "Squeezing / pressing / burning",
-                  "More severe and prolonged"
+                  "Site",
+                  "Beneath the sternum"
+                ],
+                [
+                  "Character",
+                  "Squeezing, pressing or burning"
+                ],
+                [
+                  "Possible triggers",
+                  "Exercise, meals and severe cold; may also occur at rest"
+                ],
+                [
+                  "Radiation",
+                  "Arm, wrist, shoulder or teeth"
+                ],
+                [
+                  "Associated symptoms",
+                  "Sweating and nausea"
+                ]
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "ركز على مكان الألم وطبيعته والعوامل التي تزيده وامتداده، مع العرق والغثيان كأعراض مصاحبة."
+            },
+            {
+              "type": "heading",
+              "text": "4. Investigations and management headings"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Resting ECG or stress ECG.",
+                "Nuclear scan.",
+                "Cardiac catheterization.",
+                "The book discusses reassurance, smoking cessation, lifestyle and risk-factor control, dietary changes, medicines, catheter-based procedures and CABG."
+              ]
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook's treatment section includes specific drug names and doses. These are retained only as historical textbook references and must not be used as a current prescription."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "This chapter is based on the supplied 2016–2020 textbook. Its drug names, doses and treatment steps are historical study content, not current clinical instructions. Clinical decisions and emergency procedures must follow current institutional protocols and qualified supervision. | هذا الفصل مستند إلى كتاب 2016–2020. أسماء الأدوية والجرعات وخطوات العلاج الواردة به مادة تاريخية للمذاكرة وليست تعليمات علاجية حالية. التطبيق السريري والطوارئ يخضعان للبروتوكولات المعتمدة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Myocardial Infarction | احتشاء عضلة القلب",
+          "order": 2,
+          "objectives": [
+            "Define myocardial infarction as described in the source.",
+            "Differentiate the described pain pattern from angina.",
+            "List the complications and investigations included in the chapter."
+          ],
+          "keyTerms": [
+            "Myocardial infarction",
+            "Coronary occlusion",
+            "Cardiac enzymes",
+            "CPK",
+            "Arrhythmia",
+            "Pulmonary edema",
+            "Echocardiogram"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "1. Definition and cause"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook describes myocardial infarction as severe chest pain resembling angina but lasting longer and being more intense. It attributes the event to complete blockage of a coronary artery, resulting in death of part of the heart muscle."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "احتشاء عضلة القلب يحدث وفق شرح الكتاب عند انسداد كامل بالشريان التاجي يؤدي إلى تلف وموت جزء من عضلة القلب. الألم يشبه الذبحة لكنه أطول وأشد."
+            },
+            {
+              "type": "heading",
+              "text": "2. Manifestations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Severe pain beneath the sternum.",
+                "Pain may spread to the left arm, shoulder and neck.",
+                "Some patients may describe a burning sensation in the stomach.",
+                "Sweating, nausea, vomiting and cold extremities are listed."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "3. Complications"
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Complication",
+                  "Meaning for revision"
+                ],
+                [
+                  "Heart failure",
+                  "Impaired pumping function"
+                ],
+                [
+                  "Pulmonary edema",
+                  "Fluid accumulation in the lungs"
+                ],
+                [
+                  "Arrhythmias",
+                  "Disturbances of cardiac rhythm"
+                ],
+                [
+                  "Clot extension",
+                  "The source notes possible spread of the clot"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "4. Investigations named in the source"
+            },
+            {
+              "type": "list",
+              "items": [
+                "CBC and ESR.",
+                "Cardiac enzymes, including CPK as printed in the textbook.",
+                "ECG.",
+                "Chest X-ray and echocardiography."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "5. Management topics in the textbook"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source discusses admission to a cardiac care unit, oxygen, anticoagulant and antiplatelet medicines, selected clot-dissolving treatment, coronary catheterization/angioplasty, risk-factor control and management of complications. Medication choices and doses in this 2016–2020 book are historical only."
+            },
+            {
+              "type": "keypoint",
+              "title": "مقارنة سريعة",
+              "text": "الفرق المحوري في الكتاب: الذبحة مرتبطة بضيق الشريان، بينما الاحتشاء مرتبط بانسداده الكامل وحدوث موت بجزء من عضلة القلب."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Point",
+                  "Angina",
+                  "Myocardial infarction"
                 ],
                 [
                   "Mechanism described",
@@ -220,137 +343,325 @@
                   "Complete coronary blockage"
                 ],
                 [
+                  "Pain",
+                  "Squeezing / pressure / burning",
+                  "Similar but longer and more intense"
+                ],
+                [
                   "Complications listed",
-                  "—",
+                  "Not detailed in the angina subsection",
                   "Heart failure, pulmonary edema, arrhythmias"
                 ]
               ]
             },
             {
               "type": "warning",
-              "title": "ملاحظة مهمة عن المصدر",
-              "text": "This lesson follows the supplied 2016–2020 textbook. Medication doses and treatment recommendations are historical textbook content, not current clinical instructions. | هذا الدرس مبني على كتاب 2016–2020. الجرعات والتوصيات العلاجية محتوى تاريخي من الكتاب وليست تعليمات علاجية حالية."
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "This chapter is based on the supplied 2016–2020 textbook. Its drug names, doses and treatment steps are historical study content, not current clinical instructions. Clinical decisions and emergency procedures must follow current institutional protocols and qualified supervision. | هذا الفصل مستند إلى كتاب 2016–2020. أسماء الأدوية والجرعات وخطوات العلاج الواردة به مادة تاريخية للمذاكرة وليست تعليمات علاجية حالية. التطبيق السريري والطوارئ يخضعان للبروتوكولات المعتمدة والإشراف المختص."
             }
           ]
         },
         {
-          "title": "Hypertension",
+          "title": "Hypertension | ارتفاع ضغط الدم",
           "order": 3,
           "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
+            "State the textbook's diagnostic definition.",
+            "Differentiate primary and secondary hypertension.",
+            "Summarize manifestations, complications and investigations listed."
           ],
           "keyTerms": [
             "Hypertension",
-            "Primary",
-            "Secondary"
+            "Essential hypertension",
+            "Secondary hypertension",
+            "Fundus examination",
+            "Creatinine",
+            "Triglycerides"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
+              "text": "1. Definition"
             },
             {
               "type": "paragraph",
-              "text": "The book defines hypertension as blood pressure of 140/90 or above on three different readings. It distinguishes primary hypertension from secondary forms associated with kidney, thyroid, adrenal, brain disorders or some medicines. Many cases have no specific symptoms."
+              "text": "The book defines hypertension as blood pressure of 140/90 or higher on three different readings. This is the historical threshold stated in the 2016–2020 source, not a substitute for current diagnostic guidance."
             },
             {
               "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يعرّف الكتاب ارتفاع ضغط الدم بقراءات 140/90 أو أكثر في ثلاث مناسبات مختلفة. ويميز بين النوع الأولي والثانوي المرتبط بأمراض الكلى أو الغدة الدرقية أو الكظرية أو المخ أو بعض الأدوية. وقد لا تظهر أعراض محددة."
+              "title": "بالعربي",
+              "text": "تعريف الكتاب: قراءة ضغط 140/90 أو أكثر في ثلاث قراءات مختلفة. احفظه بوصفه تعريف المصدر الدراسي القديم."
             },
             {
               "type": "heading",
-              "text": "Study table | جدول للمراجعة"
+              "text": "2. Types and causes"
             },
             {
               "type": "table",
               "rows": [
                 [
                   "Type",
-                  "Textbook description"
+                  "Description in the textbook"
                 ],
                 [
-                  "Primary",
-                  "More than 90% of cases; associated with obesity, heredity, salt intake and smoking"
+                  "Primary / essential",
+                  "More than 90% of cases; associated with obesity, heredity, high salt intake and smoking."
                 ],
                 [
                   "Secondary",
-                  "May be related to renal, thyroid, adrenal or brain disorders, or medicines"
+                  "Associated with renal disease or renal artery narrowing, thyroid or adrenal disorders, brain tumours, and some medicines such as corticosteroids."
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "3. Symptoms and complications"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source emphasizes that many patients have no specific symptoms and hypertension may be discovered incidentally. Other listed manifestations include fatigue, headache, blurred vision, nosebleed and blood in urine. Complications include cardiac hypertrophy and heart failure, arrhythmias, cerebral haemorrhage, acute or chronic renal failure and visual impairment related to retinal involvement."
+            },
+            {
+              "type": "heading",
+              "text": "4. Investigations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Complete blood picture.",
+                "Blood glucose, serum urea and creatinine.",
+                "Cholesterol and triglycerides.",
+                "Fundus examination.",
+                "Echocardiography, chest X-ray and ECG."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "5. Management themes"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook lists treating an underlying cause, reducing excess weight and dietary salt, simple exercise such as walking, smoking cessation, reducing stress, medication and periodic blood-pressure monitoring. Drug examples in the source are historical study references."
+            },
+            {
+              "type": "keypoint",
+              "title": "الخلاصة بالعربي",
+              "text": "ارتفاع الضغط قد يكون بلا أعراض. فرّق بين أولي وثانوي، واحفظ المضاعفات المهمة: القلب، المخ، الكلى، الشبكية."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "This chapter is based on the supplied 2016–2020 textbook. Its drug names, doses and treatment steps are historical study content, not current clinical instructions. Clinical decisions and emergency procedures must follow current institutional protocols and qualified supervision. | هذا الفصل مستند إلى كتاب 2016–2020. أسماء الأدوية والجرعات وخطوات العلاج الواردة به مادة تاريخية للمذاكرة وليست تعليمات علاجية حالية. التطبيق السريري والطوارئ يخضعان للبروتوكولات المعتمدة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Heart Failure | فشل القلب",
+          "order": 4,
+          "objectives": [
+            "Define heart failure using the source.",
+            "Identify the causes and manifestations described.",
+            "List the diagnostic methods and general management themes in the textbook."
+          ],
+          "keyTerms": [
+            "Heart failure",
+            "Cardiomyopathy",
+            "Mitral valve",
+            "Aortic valve",
+            "Edema",
+            "Pulmonary edema",
+            "Echocardiogram"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "1. Definition"
+            },
+            {
+              "type": "paragraph",
+              "text": "Heart failure is defined in the textbook as failure of the heart to pump an adequate amount of blood to the body's tissues. The source gives approximate resting reference figures of about 5 litres per minute for cardiac output and 70–100 beats per minute for heart rate."
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "فشل القلب هو عدم قدرة القلب على ضخ كمية كافية من الدم لأنسجة الجسم."
+            },
+            {
+              "type": "heading",
+              "text": "2. Causes listed"
+            },
+            {
+              "type": "list",
+              "items": [
+                "High blood pressure.",
+                "Obstruction of the main coronary arteries.",
+                "Fibrosis of the heart muscle (cardiomyopathy).",
+                "Stenosis or regurgitation of major valves, such as the mitral or aortic valve."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "3. Clinical manifestations"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Shortness of breath, especially with exertion.",
+                "Episodes of breathlessness during sleep; the source mentions sweating, facial cyanosis and frothy, sometimes blood-stained sputum.",
+                "Frequent cough.",
+                "Swelling of the feet (peripheral edema).",
+                "Enlarged liver and abdominal pain."
+              ]
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Finding",
+                  "Term / association"
+                ],
+                [
+                  "Shortness of breath",
+                  "Dyspnea"
+                ],
+                [
+                  "Swelling of feet",
+                  "Edema"
+                ],
+                [
+                  "Enlarged liver",
+                  "Hepatomegaly"
+                ],
+                [
+                  "Frothy sputum with breathlessness",
+                  "Pulmonary congestion / edema described by source"
+                ]
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "4. Diagnosis"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Chest X-ray.",
+                "ECG.",
+                "Echocardiography (heart ultrasound)."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "5. Management themes"
+            },
+            {
+              "type": "paragraph",
+              "text": "The book discusses management of underlying causes, rest in a semi-sitting position, humidified oxygen, diuretics and other medicines, and reducing dietary salt. Drug names and treatment details are historical textbook material, not current orders."
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة بالعربي",
+              "text": "اربط الأعراض باحتقان الدورة الرئوية واحتباس السوائل: ضيق النفس، الكحة، تورم القدمين، وتضخم الكبد."
+            },
+            {
+              "type": "warning",
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "This chapter is based on the supplied 2016–2020 textbook. Its drug names, doses and treatment steps are historical study content, not current clinical instructions. Clinical decisions and emergency procedures must follow current institutional protocols and qualified supervision. | هذا الفصل مستند إلى كتاب 2016–2020. أسماء الأدوية والجرعات وخطوات العلاج الواردة به مادة تاريخية للمذاكرة وليست تعليمات علاجية حالية. التطبيق السريري والطوارئ يخضعان للبروتوكولات المعتمدة والإشراف المختص."
+            }
+          ]
+        },
+        {
+          "title": "Cardiopulmonary Resuscitation (CPR) | الإنعاش القلبي الرئوي",
+          "order": 5,
+          "objectives": [
+            "Recognize the causes and signs of cardiac and respiratory arrest described in the source.",
+            "Identify the historical CPR section headings in the textbook.",
+            "Understand that real resuscitation must follow current accredited training and protocols."
+          ],
+          "keyTerms": [
+            "Cardiac arrest",
+            "Respiratory arrest",
+            "Loss of consciousness",
+            "Pulse",
+            "Airway",
+            "Ambu bag",
+            "Monitor"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "1. Causes of sudden cardiac arrest"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Coronary insufficiency and cardiovascular disease, including hypertension and valve disorders.",
+                "Electric shock, drowning and suffocation.",
+                "Drug-related causes mentioned in the source.",
+                "Events during surgery or anaesthesia.",
+                "Accidents."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "2. Signs described in the textbook"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Loss of consciousness.",
+                "Absence of pulse and falling blood pressure.",
+                "Cessation of breathing.",
+                "Change in facial colour.",
+                "Dilated pupils."
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "بالعربي",
+              "text": "العلامات التي يسردها الكتاب تشمل فقدان الوعي، غياب النبض، توقف التنفس، تغير لون الوجه واتساع الحدقة."
+            },
+            {
+              "type": "heading",
+              "text": "3. CPR learning framework"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source section discusses positioning the patient, airway support, assisted ventilation, chest compressions, monitoring and emergency medicines. Its compression-to-breath ratio and procedural directions are outdated; they are intentionally not reproduced as operational instructions."
+            },
+            {
+              "type": "table",
+              "rows": [
+                [
+                  "Learning area",
+                  "What the student should understand"
+                ],
+                [
+                  "Recognition",
+                  "Identify suspected cardiac and respiratory arrest and activate the emergency response."
+                ],
+                [
+                  "Airway and breathing",
+                  "Airway support and ventilation are components of resuscitation training."
+                ],
+                [
+                  "Circulation",
+                  "Chest compressions and monitoring are core resuscitation concepts."
+                ],
+                [
+                  "Safety",
+                  "Use current accredited BLS/ACLS training and local protocols; never rely on the old ratio or drug list in this textbook."
                 ]
               ]
             },
             {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
-            }
-          ]
-        },
-        {
-          "title": "Heart Failure",
-          "order": 4,
-          "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
-          ],
-          "keyTerms": [
-            "Heart failure",
-            "Pulmonary edema"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
-            },
-            {
-              "type": "paragraph",
-              "text": "Study the textbook's description of impaired cardiac function, its manifestations, investigations, complications and care headings. Keep the clinical features and terminology in the sequence used in the source."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "راجع شرح الكتاب لقصور وظيفة القلب، والمظاهر والفحوصات والمضاعفات والرعاية، مع الالتزام بالمصطلحات وترتيب المصدر."
+              "title": "Clinical safety",
+              "text": "This section is for historical curriculum review only. It does not teach a current CPR sequence. In a real emergency, activate emergency services and follow current certified training and local protocols."
             },
             {
               "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
-            }
-          ]
-        },
-        {
-          "title": "Pericardial and Endocardial Diseases",
-          "order": 5,
-          "objectives": [
-            "Explain the core concepts presented in the textbook.",
-            "Identify the main manifestations and terminology in this topic.",
-            "Review the source-based classification or comparison."
-          ],
-          "keyTerms": [
-            "Pericardium",
-            "Endocardium"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "Core explanation | الشرح الأساسي"
-            },
-            {
-              "type": "paragraph",
-              "text": "The source groups disorders of the pericardium and endocardium in this section. Review the named conditions, clinical findings and diagnostic and management points in the textbook."
-            },
-            {
-              "type": "keypoint",
-              "title": "الخلاصة بالعربي | Key point",
-              "text": "يجمع المصدر أمراض التامور والشغاف في هذا القسم؛ راجع الحالات والمظاهر والفحوصات والتدبير كما وردت في الكتاب."
-            },
-            {
-              "type": "warning",
-              "title": "Source note | ملاحظة المصدر",
-              "text": "Study aid based only on the supplied 2016–2020 textbook. Historical treatment and medication details are not current clinical instructions; practical care requires current institutional protocols and qualified supervision. | مادة دراسية مستندة إلى الكتاب المرفوع (2016–2020) فقط. تفاصيل العلاج والأدوية التاريخية ليست تعليمات سريرية حالية؛ والتطبيق العملي يتطلب بروتوكولات المؤسسة والإشراف المختص."
+              "title": "Historical textbook note | تنبيه المصدر",
+              "text": "This chapter is based on the supplied 2016–2020 textbook. Its drug names, doses and treatment steps are historical study content, not current clinical instructions. Clinical decisions and emergency procedures must follow current institutional protocols and qualified supervision. | هذا الفصل مستند إلى كتاب 2016–2020. أسماء الأدوية والجرعات وخطوات العلاج الواردة به مادة تاريخية للمذاكرة وليست تعليمات علاجية حالية. التطبيق السريري والطوارئ يخضعان للبروتوكولات المعتمدة والإشراف المختص."
             }
           ]
         }
@@ -1901,7 +2212,7 @@
     }
   ],
   "contentStatus": "draft_incomplete",
-  "contentStatusNote": "Do not import: source-by-source expansion and editorial verification are not complete.",
+  "contentStatusNote": "Chapter 1 has been expanded from source pages 6–13. Remaining chapters still require source-by-source expansion and visual verification; do not import as a complete curriculum.",
   "editorialPolicy": {
     "sourceOnly": true,
     "sourceTitle": "Internal Medicine, Fevers, Dermatology and Venereology — Second Year (2016–2020)",
@@ -1913,5 +2224,10 @@
       "Figures, comparison tables and source-supported diagrams are prepared",
       "Lesson and chapter order is checked against the printed table of contents and body headings"
     ]
+  },
+  "editorialVerification": {
+    "sourcePagesChecked": 8,
+    "sourcePagesTotal": 94,
+    "placeholdersRemaining": 31
   }
 }
