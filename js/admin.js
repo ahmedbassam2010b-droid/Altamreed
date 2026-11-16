@@ -1,6 +1,6 @@
 import {auth,db} from "./config.js";
 import {onAuthStateChanged,signOut} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
-import {collection,addDoc,getDocs,doc,getDoc,setDoc,deleteDoc,serverTimestamp,updateDoc,runTransaction} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+import {collection,addDoc,getDocs,doc,getDoc,setDoc,deleteDoc,serverTimestamp,updateDoc,runTransaction,query,where} from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
 import {getExamXp} from "./gamification.js";
 const $=s=>document.querySelector(s),el=(t,c,x)=>{const n=document.createElement(t);if(c)n.className=c;if(x!==undefined)n.textContent=x;return n;},status=$("#adminStatus"),workspace=$("#adminWorkspace");
 function report(t,state="info"){status.textContent=t;status.dataset.state=state;}function val(id){return $("#"+id)?.value?.trim()||"";}function checked(id){return !!$("#"+id)?.checked;}function failed(e){console.error(e);report("تعذر تنفيذ العملية. راجع صلاحيات Firestore. "+(e.code||""),"error");}
