@@ -82,26 +82,30 @@ async function importSecondYearMedicalCurriculum(subjectId,publish){
   const priorChapters=existingChapters.docs.filter(d=>d.data().sourceCurriculumId===sourceId);
   const priorLessons=existingLessons.docs.filter(d=>d.data().sourceCurriculumId===sourceId);
   const expectedLessons=curriculum.chapters.reduce((n,c)=>n+(c.lessons||[]).length,0);
+  const chapterByTitle=new Map(priorChapters.map(d=>[d.data().title,d]));
+  const lessonByTitle=new Map(priorLessons.map(d=>[d.data().title,d]));
+  const existingSetIsComplete=priorChapters.length===curriculum.chapters.length&&priorLessons.length===expectedLessons&&curriculum.chapters.every(c=>chapterByTitle.has(c.title)&&c.lessons.every(l=>lessonByTitle.has(l.title)));
+  let chapterCount=0,lessonCount=0;
+  if(existingSetIsComplete){
+   phase="تحديث الفصول والمحاضرات الموجودة مع الحفاظ على معرّفاتها وتقدم الطلاب";
+   for(const chapter of curriculum.chapters){
+    const existingChapter=chapterByTitle.get(chapter.title);
+    const chapterData={title:chapter.title,description:chapter.description||"",order:chapter.order,published:!!publish,updatedAt:serverTimestamp()};
+    await updateDoc(doc(db,"chapters",existingChapter.id),chapterData);
+    chapterCount++;
+    for(const lesson of chapter.lessons){
+     const existingLesson=lessonByTitle.get(lesson.title);
+     const lessonData={chapterId:existingChapter.id,title:lesson.title,content:"",contentBlocks:lesson.contentBlocks||[],objectives:lesson.objectives||[],keyTerms:lesson.keyTerms||[],order:lesson.order,published:!!publish,updatedAt:serverTimestamp()};
+     await updateDoc(doc(db,"lessons",existingLesson.id),lessonData);
+     lessonCount++;
+    }
+   }
+   return {chapterCount,lessonCount,updated:true};
+  }
   if(priorChapters.length||priorLessons.length){
-   if(priorChapters.length===curriculum.chapters.length&&priorLessons.length===expectedLessons)throw new Error("ALREADY_IMPORTED");
-   phase="تنظيف المحاولة السابقة غير المكتملة";
+   phase="تنظيف محاولة الاستيراد السابقة غير المكتملة";
    for(const item of priorLessons)await deleteDoc(doc(db,"lessons",item.id));
    for(const item of priorChapters)await deleteDoc(doc(db,"chapters",item.id));
-  }
-  let chapterCount=0,lessonCount=0;
-  for(const chapter of curriculum.chapters){
-   phase="إضافة الفصل: "+chapter.title;
-   const chapterData={subjectId,title:chapter.title,description:chapter.description||"",order:chapter.order,published:!!publish,sourceCurriculumId:"internal-medicine-second-year-2016-2020",createdAt:serverTimestamp()};
-   if(gradeId)chapterData.gradeId=gradeId;
-   const ch=await addDoc(collection(db,"chapters"),chapterData);
-   chapterCount++;
-   for(const lesson of chapter.lessons){
-    phase="إضافة المحاضرة: "+lesson.title;
-    const lessonData={subjectId,chapterId:ch.id,title:lesson.title,content:"",contentBlocks:lesson.contentBlocks||[],objectives:lesson.objectives||[],keyTerms:lesson.keyTerms||[],order:lesson.order,published:!!publish,sourceCurriculumId:"internal-medicine-second-year-2016-2020",createdAt:serverTimestamp(),updatedAt:serverTimestamp()};
-    if(gradeId)lessonData.gradeId=gradeId;
-    await addDoc(collection(db,"lessons"),lessonData);
-    lessonCount++;
-   }
   }
   return {chapterCount,lessonCount};
  }catch(error){error.importPhase=phase;throw error;}
@@ -110,7 +114,7 @@ $("#medicalCurriculumImportForm")?.addEventListener("submit",async e=>{
  e.preventDefault();const subjectId=val("medicalCurriculumSubject"),publish=checked("medicalCurriculumPublish");
  if(!subjectId)return report("اختر مادة السنة الثانية أولًا.","error");
  const button=e.submitter; if(button)button.disabled=true;
- try{const result=await importSecondYearMedicalCurriculum(subjectId,publish);report("تم استيراد "+result.chapterCount+" فصول و"+result.lessonCount+" محاضرة. "+(publish?"المحتوى منشور للطلاب بعد تحديث الصفحة.":"المحتوى محفوظ كمسودة."),"success");await refresh();}
+ try{const result=await importSecondYearMedicalCurriculum(subjectId,publish);report((result.updated?"تم تحديث محتوى ":"تم استيراد ")+result.chapterCount+" فصلًا و"+result.lessonCount+" محاضرة. "+(publish?"المحتوى منشور للطلاب بعد تحديث الصفحة.":"المحتوى محفوظ كمسودة."),"success");await refresh();}
  catch(error){const messages={SUBJECT_NOT_FOUND:"المادة غير موجودة.",WRONG_SUBJECT:"اختر مادة Internal Medicine فقط.",WRONG_GRADE:"المادة المختارة لا تبدو مادة السنة الثانية. اختر مادة السنة الثانية.",ALREADY_IMPORTED:"سبق استيراد هذا المنهج لهذه المادة؛ لم تتم إضافة نسخة مكررة.",CURRICULUM_FILE_NOT_FOUND:"ملف المنهج غير موجود في إصدار الموقع الحالي.",CURRICULUM_NOT_VERIFIED:"لم يُسمح بالاستيراد: محتوى الكتاب لم يجتز مراجعة الاكتمال."};const detail=[error.code||"no-code",error.message||String(error)].join(" — ");report((messages[error.message]||"تعذر الاستيراد")+" | المرحلة: "+(error.importPhase||"غير محددة")+" | "+detail,"error");console.error("Curriculum import failed",error); }
  finally{if(button)button.disabled=false;}
 });
