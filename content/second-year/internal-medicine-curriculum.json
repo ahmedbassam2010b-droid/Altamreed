@@ -5248,6 +5248,14 @@
               "type": "warning",
               "title": "Historical textbook note | تنبيه المصدر",
               "text": "This lesson follows the supplied 2016–2020 textbook. Medication names and treatment details are historical study content, not current prescribing instructions. | أسماء الأدوية وتفاصيل العلاج الواردة مرجع تاريخي للمذاكرة وليست تعليمات وصف أو علاج حالية."
+            },
+            {
+              "type": "illustrated",
+              "title": "Clinical links between skin findings and internal conditions",
+              "text": "Visual review aid. Use the complete lesson content for the detailed source-based explanation and questions.",
+              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/internal-medicine-visual-atlas.svg#visual-138",
+              "alt": "Original study visual for Cutaneous Manifestations Associated with Internal Diseases | المظاهر الجلدية المصاحبة للأمراض الداخلية",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
             }
           ]
         },
@@ -5439,6 +5447,14 @@
               "type": "keypoint",
               "title": "ملاحظة تحريرية",
               "text": "هذه أسئلة مراجعة معاد صياغتها من موضوعات نهاية الكتاب. لا يقدم المصدر إجابات نموذجية لهذا القسم؛ لذلك لم نضف مفتاح إجابة من خارج الكتاب."
+            },
+            {
+              "type": "illustrated",
+              "title": "Short-answer knowledge review",
+              "text": "Visual review aid. Use the complete lesson content for the detailed source-based explanation and questions.",
+              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/internal-medicine-visual-atlas.svg#visual-139",
+              "alt": "Original study visual for Dermatology and Venereology — Short-Answer Review",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
             }
           ]
         },
@@ -5502,6 +5518,14 @@
               "type": "keypoint",
               "title": "طريقة الاستخدام",
               "text": "حل العبارات أولًا دون الرجوع للمحاضرات، ثم ارجع إلى الدرس لتصحيح المفاهيم. لا توجد إجابات نموذجية مطبوعة في المصدر المرفوع."
+            },
+            {
+              "type": "illustrated",
+              "title": "True or false knowledge review",
+              "text": "Visual review aid. Use the complete lesson content for the detailed source-based explanation and questions.",
+              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/internal-medicine-visual-atlas.svg#visual-140",
+              "alt": "Original study visual for Dermatology and Venereology — True / False Review",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
             }
           ]
         }
