@@ -57,7 +57,7 @@ function appendLessonBlock(parent,block){
  if(type==="image"){try{const imageUrl=new URL(block.url||"");if(imageUrl.protocol!=="https:")return;const fig=el("figure","lesson-figure"),img=el("img","");img.src=imageUrl.href;img.alt=block.alt||block.caption||"صورة تعليمية";img.loading="lazy";img.referrerPolicy="no-referrer";fig.append(img);if(block.caption)fig.append(el("figcaption","",block.caption));parent.append(fig);}catch(error){console.warn("Skipped an invalid lesson image URL.");}return;}
  if(type==="illustrated"){try{
   const imageUrl=new URL(block.imageUrl||"");if(imageUrl.protocol!=="https:")throw new Error("Only HTTPS images are allowed");
-  const panelId=imageUrl.hash.replace(/^#/,"");if(!/^visual-panel-\\d{3}$/.test(panelId))throw new Error("Invalid illustration panel");
+  const panelId=imageUrl.hash.replace(/^#/,"");if(!/^visual-panel-[0-9]{3}$/.test(panelId))throw new Error("Invalid illustration panel");
   const section=el("section","lesson-illustrated-block"),copy=el("div","lesson-illustrated-copy"),title=el("h3","lesson-illustrated-title",block.title||""),body=el("p","lesson-block-paragraph",block.text||""),fig=el("figure","lesson-illustrated-figure");
   if(block.title)copy.append(title);if(block.text)copy.append(body);
   const visual=el("div","lesson-inline-visual");visual.setAttribute("role","img");visual.setAttribute("aria-label",block.alt||block.title||"رسم توضيحي تعليمي");fig.append(visual);
