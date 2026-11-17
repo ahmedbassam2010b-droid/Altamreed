@@ -57,19 +57,14 @@ function appendLessonBlock(parent,block){
  if(type==="image"){try{const imageUrl=new URL(block.url||"");if(imageUrl.protocol!=="https:")return;const fig=el("figure","lesson-figure"),img=el("img","");img.src=imageUrl.href;img.alt=block.alt||block.caption||"صورة تعليمية";img.loading="lazy";img.referrerPolicy="no-referrer";fig.append(img);if(block.caption)fig.append(el("figcaption","",block.caption));parent.append(fig);}catch(error){console.warn("Skipped an invalid lesson image URL.");}return;}
  if(type==="illustrated"){try{
   const imageUrl=new URL(block.imageUrl||"");if(imageUrl.protocol!=="https:")throw new Error("Only HTTPS images are allowed");
-  const panelId=imageUrl.hash.replace(/^#/,"");if(!/^visual-panel-[0-9]{3}$/.test(panelId))throw new Error("Invalid illustration panel");
-  const section=el("section","lesson-illustrated-block"),copy=el("div","lesson-illustrated-copy"),title=el("h3","lesson-illustrated-title",block.title||""),body=el("p","lesson-block-paragraph",block.text||""),fig=el("figure","lesson-illustrated-figure");
-  if(block.title)copy.append(title);if(block.text)copy.append(body);
-  const visual=el("div","lesson-inline-visual");visual.setAttribute("role","img");visual.setAttribute("aria-label",block.alt||block.title||"رسم توضيحي تعليمي");fig.append(visual);
+  const panelId=imageUrl.hash.replace(/^#/,""),match=panelId.match(/^visual-panel-([0-9]{3})$/);if(!match)throw new Error("Invalid illustration panel");
+  const panelIndex=Number(match[1])-1,atlasUrl=new URL(imageUrl.href);atlasUrl.hash="";
+  const section=el("section","lesson-illustrated-block"),copy=el("div","lesson-illustrated-copy"),fig=el("figure","lesson-illustrated-figure"),frame=el("div","lesson-inline-visual"),img=el("img","lesson-inline-atlas");
+  if(block.title)copy.append(el("h3","lesson-illustrated-title",block.title));if(block.text)copy.append(el("p","lesson-block-paragraph",block.text));
+  frame.style.setProperty("--panel-index",String(panelIndex));img.src=atlasUrl.href;img.alt=block.alt||block.title||"رسم توضيحي تعليمي";img.loading="lazy";img.decoding="async";
+  img.style.top="calc(var(--panel-index) * -100%)";frame.append(img);fig.append(frame);
   if(block.caption)fig.append(el("figcaption","",block.caption));section.append(copy,fig);parent.append(section);
-  const atlasUrl=new URL(imageUrl.href);atlasUrl.hash="";
-  if(!window.__bawabetVisualAtlasCache)window.__bawabetVisualAtlasCache=new Map();const cache=window.__bawabetVisualAtlasCache;
-  let pending=cache.get(atlasUrl.href);if(!pending){pending=fetch(atlasUrl.href,{cache:"force-cache"}).then(r=>{if(!r.ok)throw new Error("Atlas request failed: "+r.status);return r.text();}).then(t=>new DOMParser().parseFromString(t,"image/svg+xml"));cache.set(atlasUrl.href,pending);}
-  pending.then(doc=>{const source=doc.getElementById(panelId);if(!source)throw new Error("Illustration panel not found: "+panelId);
-   const svg=document.createElementNS("http://www.w3.org/2000/svg","svg");svg.setAttribute("viewBox","0 0 1200 760");svg.setAttribute("class","lesson-inline-svg");
-   Array.from(source.childNodes).forEach(node=>svg.append(document.importNode(node,true)));visual.replaceChildren(svg);
-  }).catch(error=>{console.error("Unable to render lesson illustration.",error);visual.classList.add("lesson-visual-error");visual.textContent="تعذر تحميل الرسم التوضيحي";});
- }catch(error){console.warn("Skipped an invalid illustrated lesson block.",error);}return;}
+ }catch(error){console.warn("Skipped invalid lesson illustration.",error);}return;}
  if(type==="keypoint"||type==="warning"){const box=el("aside",type==="warning"?"lesson-callout is-warning":"lesson-callout is-keypoint");box.append(el("strong","",block.title||(type==="warning"?"تنبيه":"نقطة مهمة")),el("p","",block.text||""));parent.append(box);return;}
  if(type==="list"){const list=el("ul","lesson-block-list");(block.items||[]).forEach(item=>list.append(el("li","",item)));parent.append(list);return;}
  if(type==="table"){const wrap=el("div","lesson-table-wrap"),table=el("table","lesson-content-table");(Array.isArray(block.rows)?block.rows:[]).forEach((row,i)=>{const tr=el("tr"),cells=Array.isArray(row)?row:(Array.isArray(row?.cells)?row.cells:[]);cells.forEach(cell=>tr.append(el(i===0?"th":"td","",cell)));table.append(tr);});wrap.append(table);parent.append(wrap);return;}

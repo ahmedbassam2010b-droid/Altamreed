@@ -196,3 +196,6 @@ body[data-page="daily-challenge"] .platform-heading:after{content:"⚡";backgrou
 @media(max-width:680px){.lesson-illustrated-block{grid-template-columns:1fr;gap:12px;padding:14px}.lesson-illustrated-figure{max-width:100%}.lesson-illustrated-figure img{max-height:300px}}
 
 .lesson-inline-visual{width:100%;max-width:100%;overflow:hidden;border-radius:14px;background:#fff;border:1px solid #e1eaf1}.lesson-inline-svg{display:block;width:100%;height:auto;max-height:360px}.lesson-visual-error{min-height:160px;display:grid;place-items:center;color:#9b3545;font-size:14px;padding:18px}
+
+/* Display one panel from the tall SVG atlas using native image loading and a clipped viewport. */
+.lesson-inline-visual{position:relative;width:100%;aspect-ratio:1200/760;overflow:hidden;border-radius:14px;background:#fff;border:1px solid #e1eaf1}.lesson-inline-atlas{position:absolute!important;left:0;top:0;width:100%!important;height:auto!important;max-width:none!important;display:block;object-fit:unset!important;margin:0!important}
