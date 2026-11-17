@@ -107,6 +107,20 @@ async function importSecondYearMedicalCurriculum(subjectId,publish){
    for(const item of priorLessons)await deleteDoc(doc(db,"lessons",item.id));
    for(const item of priorChapters)await deleteDoc(doc(db,"chapters",item.id));
   }
+  for(const chapter of curriculum.chapters){
+   phase="إضافة الفصل: "+chapter.title;
+   const chapterData={subjectId,title:chapter.title,description:chapter.description||"",order:chapter.order,published:!!publish,sourceCurriculumId:sourceId,createdAt:serverTimestamp()};
+   if(gradeId)chapterData.gradeId=gradeId;
+   const ch=await addDoc(collection(db,"chapters"),chapterData);
+   chapterCount++;
+   for(const lesson of chapter.lessons){
+    phase="إضافة المحاضرة: "+lesson.title;
+    const lessonData={subjectId,chapterId:ch.id,title:lesson.title,content:"",contentBlocks:lesson.contentBlocks||[],objectives:lesson.objectives||[],keyTerms:lesson.keyTerms||[],order:lesson.order,published:!!publish,sourceCurriculumId:sourceId,createdAt:serverTimestamp(),updatedAt:serverTimestamp()};
+    if(gradeId)lessonData.gradeId=gradeId;
+    await addDoc(collection(db,"lessons"),lessonData);
+    lessonCount++;
+   }
+  }
   return {chapterCount,lessonCount};
  }catch(error){error.importPhase=phase;throw error;}
 }
