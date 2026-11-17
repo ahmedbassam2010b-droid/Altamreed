@@ -162,6 +162,14 @@
           ],
           "contentBlocks": [
             {
+              "type": "illustrated",
+              "title": "Visual overview | نظرة بصرية عامة",
+              "text": "This original study diagram links the heart and coronary arteries, atherosclerotic narrowing, the symptom pattern described in the textbook, and the investigations listed in the chapter. | يربط الرسم بين القلب والشرايين التاجية وتضيّق الشريان ونمط الأعراض والفحوصات المذكورة في الكتاب.",
+              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/angina-pectoris-study.svg",
+              "alt": "Angina pectoris teaching diagram: coronary arteries, atherosclerosis, symptoms and investigations",
+              "caption": "Original illustration for بوابة التمريض | رسم تعليمي أصلي"
+            },
+            {
               "type": "image",
               "url": "https://bawabet-altamreed.com/assets/illustrations/internal-medicine-circulation.svg",
               "alt": "coronary flow and cardiac events",
