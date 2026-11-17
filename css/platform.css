@@ -189,3 +189,8 @@ body[data-page="daily-challenge"] .platform-heading:after{content:"⚡";backgrou
 .exam-review-notice{margin:0 0 1.25rem;padding:1rem 1.15rem;border:1px solid #d8e6f2;border-right:4px solid #159b9a;border-radius:14px;background:#f1f7fb;color:#24435c;}
 .exam-review-notice strong{display:block;margin-bottom:.35rem;font-weight:800;}
 .exam-review-notice p{margin:0;line-height:1.8;color:#526b80;}
+
+/* Paired visual explanation blocks: each concept stays beside its own illustration. */
+.lesson-illustrated-block{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(220px,.85fr);align-items:center;gap:22px;margin:22px 0;padding:18px;border:1px solid #dce8f0;border-radius:20px;background:linear-gradient(135deg,#fff 0%,#f4f9fc 100%);box-shadow:0 8px 24px rgba(20,55,82,.05)}
+.lesson-illustrated-copy{min-width:0}.lesson-illustrated-title{margin:0 0 8px;color:#123c5b;font-size:clamp(17px,2.2vw,22px);line-height:1.5}.lesson-illustrated-copy .lesson-block-paragraph{margin:8px 0}.lesson-illustrated-figure{margin:0;min-width:0;text-align:center}.lesson-illustrated-figure img{display:block;width:100%;max-height:360px;object-fit:contain;margin:auto;border-radius:14px;background:#fff;border:1px solid #e1eaf1}.lesson-illustrated-figure figcaption{margin-top:7px;color:#71869a;font-size:12px;line-height:1.6}
+@media(max-width:680px){.lesson-illustrated-block{grid-template-columns:1fr;gap:12px;padding:14px}.lesson-illustrated-figure{max-width:100%}.lesson-illustrated-figure img{max-height:300px}}
