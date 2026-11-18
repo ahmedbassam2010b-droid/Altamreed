@@ -11,7 +11,8 @@
     "chaptersMapped": 13,
     "lessonsAuthored": 54,
     "placeholdersRemaining": 0,
-    "note": "Each lesson has topic-specific paraphrased explanatory text authored against the supplied textbook. Clinical treatment and drug details are not presented as current instructions."
+    "note": "The 54 lessons are paraphrased study aids mapped to the supplied 165-page textbook. Each lesson now has its own SVG infographic asset. Older clinical material is not current clinical guidance.",
+    "topicSpecificInfographics": 54
   },
   "chapters": [
     {
@@ -36,9 +37,9 @@
               "type": "illustrated",
               "title": "Inflammation: definition and classification",
               "text": "Inflammation is described in the textbook as the body's response to external stimuli, including microorganisms, physical injury and chemical exposure. In surgical practice, bacterial inflammation is emphasized. The source distinguishes acute from chronic inflammation, and specific from non-specific forms. Localized infection may remain in one site, while spread through the bloodstream can produce systemic infection.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-01.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-01-01.svg",
               "alt": "Educational medical diagram for Inflammation: definition and classification",
-              "caption": "GENERAL SURGERY • CHAPTER 1 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 1 • Inflammation: definition and classification • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -86,9 +87,9 @@
               "type": "illustrated",
               "title": "Non-specific and specific surgical infections",
               "text": "The source describes non-specific conditions such as abscess, carbuncle, cellulitis and infection of an operative wound. It also discusses specific infections including erysipelas, lymphadenitis, tetanus and gas gangrene. An abscess is a collection of pus; cellulitis affects tissues beneath the skin without forming a localized abscess. The text highlights the possibility of systemic spread.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-01.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-01-02.svg",
               "alt": "Educational medical diagram for Non-specific and specific surgical infections",
-              "caption": "GENERAL SURGERY • CHAPTER 1 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 1 • Non-specific and specific surgical infections • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -136,9 +137,9 @@
               "type": "illustrated",
               "title": "Wounds: types, response and healing",
               "text": "A wound is a break in the skin or deeper body-lining tissues and may follow injury, burns or surgery. The book groups wounds as closed, open, compound and surgical, and also notes whether they are clean, dirty or liable to contamination. Symptoms depend on the injury itself, the body's response and any later complication.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-01.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-01-03.svg",
               "alt": "Educational medical diagram for Wounds: types, response and healing",
-              "caption": "GENERAL SURGERY • CHAPTER 1 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 1 • Wounds: types, response and healing • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -186,9 +187,9 @@
               "type": "illustrated",
               "title": "Wound complications and care principles",
               "text": "The wound section links complications with the original injury, contamination and the healing process. The text discusses infection, bleeding, tissue damage and delayed healing, and describes wound cleaning, removal of foreign material and devitalized tissue, and dressing as care topics. The exact choice of care depends on wound condition and clinical assessment.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-01.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-01-04.svg",
               "alt": "Educational medical diagram for Wound complications and care principles",
-              "caption": "GENERAL SURGERY • CHAPTER 1 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 1 • Wound complications and care principles • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -237,9 +238,9 @@
               "type": "illustrated",
               "title": "Burns: causes, degrees and systemic effects",
               "text": "The textbook introduces burns by cause and degree, then separates local injury from general effects. It describes burns as injuries that may affect the skin and deeper tissues, with severity depending on depth and extent. General symptoms are considered alongside the local appearance, and the chapter separates minor from severe burns.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-01.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-01-05.svg",
               "alt": "Educational medical diagram for Burns: causes, degrees and systemic effects",
-              "caption": "GENERAL SURGERY • CHAPTER 1 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 1 • Burns: causes, degrees and systemic effects • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -286,9 +287,9 @@
               "type": "illustrated",
               "title": "Surgical infections and spread",
               "text": "The chapter returns to surgical infection after discussing wounds and burns. It emphasizes that infection can remain localized or extend into surrounding tissues and, in serious cases, enter the circulation. Examples in the source include abscess, cellulitis, wound infection and specific bacterial infections.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-01.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-01-06.svg",
               "alt": "Educational medical diagram for Surgical infections and spread",
-              "caption": "GENERAL SURGERY • CHAPTER 1 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 1 • Surgical infections and spread • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -343,9 +344,9 @@
               "type": "illustrated",
               "title": "Body water and fluid compartments",
               "text": "The source states that water forms a major proportion of body weight and describes plasma, interstitial fluid and intracellular fluid as the principal compartments. It also explains that electrolytes are distributed differently inside and outside cells. Potassium, phosphate and bicarbonate are listed as important intracellular ions; sodium and chloride are emphasized extracellularly.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-02.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-02-01.svg",
               "alt": "Educational medical diagram for Body water and fluid compartments",
-              "caption": "GENERAL SURGERY • CHAPTER 2 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 2 • Body water and fluid compartments • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -392,9 +393,9 @@
               "type": "illustrated",
               "title": "Fluid balance and dehydration",
               "text": "The chapter explains how fluid enters and leaves the body and describes dehydration when losses are not adequately replaced. Causes listed include substantial fluid loss, including gastrointestinal losses. The source discusses assessment and fluid replacement concepts, including glucose/saline solutions.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-02.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-02-02.svg",
               "alt": "Educational medical diagram for Fluid balance and dehydration",
-              "caption": "GENERAL SURGERY • CHAPTER 2 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 2 • Fluid balance and dehydration • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -441,9 +442,9 @@
               "type": "illustrated",
               "title": "Potassium and calcium disorders",
               "text": "The text covers low and high potassium, then low and high calcium. For each disturbance it organizes causes, symptoms and treatment headings. Potassium is presented as a major intracellular electrolyte, while calcium is important in neuromuscular and other body functions.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-02.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-02-03.svg",
               "alt": "Educational medical diagram for Potassium and calcium disorders",
-              "caption": "GENERAL SURGERY • CHAPTER 2 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 2 • Potassium and calcium disorders • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -491,9 +492,9 @@
               "type": "illustrated",
               "title": "Sodium disorders and electrolyte review",
               "text": "The sodium section separates increased sodium from sodium deficiency and lists causes, symptoms and treatment headings for each. It sits within the broader discussion of water balance and electrolyte distribution, so sodium changes should be studied alongside fluid movement between body compartments.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-02.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-02-04.svg",
               "alt": "Educational medical diagram for Sodium disorders and electrolyte review",
-              "caption": "GENERAL SURGERY • CHAPTER 2 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 2 • Sodium disorders and electrolyte review • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -548,9 +549,9 @@
               "type": "illustrated",
               "title": "Shock: definition, stages and assessment",
               "text": "The book defines shock as a serious circulatory disturbance in which tissue blood flow and oxygen delivery become inadequate. It describes progression through stages and emphasizes early recognition. The chapter distinguishes surgical, neurogenic and septic shock.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-03.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-03-01.svg",
               "alt": "Educational medical diagram for Shock: definition, stages and assessment",
-              "caption": "GENERAL SURGERY • CHAPTER 3 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 3 • Shock: definition, stages and assessment • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -598,9 +599,9 @@
               "type": "illustrated",
               "title": "Surgical, neurogenic and septic shock",
               "text": "The source presents surgical shock in relation to major injury or blood/fluid loss, neurogenic shock as a distinct form, and septic shock in association with severe infection. Each subsection has its own symptoms and treatment discussion.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-03.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-03-02.svg",
               "alt": "Educational medical diagram for Surgical, neurogenic and septic shock",
-              "caption": "GENERAL SURGERY • CHAPTER 3 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 3 • Surgical, neurogenic and septic shock • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -654,9 +655,9 @@
               "type": "illustrated",
               "title": "Overview of postoperative complications",
               "text": "The chapter groups complications after surgery into anesthesia-related problems, transfusion and fluid complications, wound problems, respiratory, cardiovascular/venous, digestive, liver and kidney complications, and postoperative fever. It notes that complications may arise from pre-existing disease, the condition requiring surgery, the operation or anesthesia.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-04.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-04-01.svg",
               "alt": "Educational medical diagram for Overview of postoperative complications",
-              "caption": "GENERAL SURGERY • CHAPTER 4 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 4 • Overview of postoperative complications • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -703,9 +704,9 @@
               "type": "illustrated",
               "title": "Anesthesia and respiratory complications",
               "text": "The text discusses complications of general anesthesia, including nausea and vomiting, airway or vocal-cord problems, temperature changes, urinary retention and positioning-related nerve injury. Respiratory complications are treated separately and include postoperative breathing problems and prevention.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-04.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-04-02.svg",
               "alt": "Educational medical diagram for Anesthesia and respiratory complications",
-              "caption": "GENERAL SURGERY • CHAPTER 4 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 4 • Anesthesia and respiratory complications • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -752,9 +753,9 @@
               "type": "illustrated",
               "title": "Venous and cardiovascular complications",
               "text": "The postoperative chapter includes complications involving the heart and veins and specifically discusses pulmonary embolism. It describes pulmonary artery obstruction as a potentially fatal event and outlines symptoms, confirmation and prevention topics.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-04.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-04-03.svg",
               "alt": "Educational medical diagram for Venous and cardiovascular complications",
-              "caption": "GENERAL SURGERY • CHAPTER 4 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 4 • Venous and cardiovascular complications • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -802,9 +803,9 @@
               "type": "illustrated",
               "title": "Blood transfusion complications and jaundice",
               "text": "The source describes transfusion complications and discusses jaundice, including infection transmission risks, contamination, and hemolysis associated with incompatibility or blood storage. It also explains blood-group determination and the Rh factor.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-04.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-04-04.svg",
               "alt": "Educational medical diagram for Blood transfusion complications and jaundice",
-              "caption": "GENERAL SURGERY • CHAPTER 4 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 4 • Blood transfusion complications and jaundice • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -859,9 +860,9 @@
               "type": "illustrated",
               "title": "Hernia: types and clinical features",
               "text": "The chapter defines hernia and lists types, causes of acquired hernia and incisional hernia. It then describes symptoms and the clinical distinctions relevant to assessment. The topic is presented within common surgical diseases.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-05.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-05-01.svg",
               "alt": "Educational medical diagram for Hernia: types and clinical features",
-              "caption": "GENERAL SURGERY • CHAPTER 5 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 5 • Hernia: types and clinical features • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -908,9 +909,9 @@
               "type": "illustrated",
               "title": "Thyroid gland and goitre",
               "text": "The source reviews thyroid enlargement and lists causes of goitre. It separates simple goitre, toxic goitre with excess thyroid activity, goitre associated with hormone deficiency, and thyroid tumors. Each form is treated as a distinct clinical topic.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-05.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-05-02.svg",
               "alt": "Educational medical diagram for Thyroid gland and goitre",
-              "caption": "GENERAL SURGERY • CHAPTER 5 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 5 • Thyroid gland and goitre • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -957,9 +958,9 @@
               "type": "illustrated",
               "title": "Salivary gland diseases",
               "text": "The salivary-gland section describes the glands and discusses acute inflammation and tumors. It outlines clinical features and the evaluation of gland disease, distinguishing inflammatory problems from growths.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-05.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-05-03.svg",
               "alt": "Educational medical diagram for Salivary gland diseases",
-              "caption": "GENERAL SURGERY • CHAPTER 5 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 5 • Salivary gland diseases • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1005,9 +1006,9 @@
               "type": "illustrated",
               "title": "Breast diseases",
               "text": "The book covers mastitis, breast abscess, fibrocystic changes, benign tumors and breast cancer. It separates inflammatory conditions from benign changes and malignant disease, then discusses surgical and complementary treatment headings for cancer.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-05.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-05-04.svg",
               "alt": "Educational medical diagram for Breast diseases",
-              "caption": "GENERAL SURGERY • CHAPTER 5 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 5 • Breast diseases • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1053,9 +1054,9 @@
               "type": "illustrated",
               "title": "Esophageal diseases",
               "text": "The esophagus section includes cardiac achalasia, reflux esophagitis and esophageal tumors. It describes swallowing difficulty as an important symptom in several conditions and separates benign from malignant tumors. Diagnostic discussion includes endoscopy and tissue examination for suspected malignancy.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-05.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-05-05.svg",
               "alt": "Educational medical diagram for Esophageal diseases",
-              "caption": "GENERAL SURGERY • CHAPTER 5 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 5 • Esophageal diseases • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1102,9 +1103,9 @@
               "type": "illustrated",
               "title": "Stomach and duodenal diseases",
               "text": "The source discusses gastric and duodenal ulcers, including symptoms, examinations and treatment headings. It also covers stomach tumors and gastric carcinoma, with separate symptom, investigation and treatment sections.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-05.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-05-06.svg",
               "alt": "Educational medical diagram for Stomach and duodenal diseases",
-              "caption": "GENERAL SURGERY • CHAPTER 5 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 5 • Stomach and duodenal diseases • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1151,9 +1152,9 @@
               "type": "illustrated",
               "title": "Colon and colorectal conditions",
               "text": "The chapter covers colon disease, colon cancer, colostomy, hemorrhoids and anal fissure. It describes colostomy as diversion of stool flow and lists indications and complications. Hemorrhoids are discussed by grade and complications, with a separate anal-fissure section.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-05.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-05-07.svg",
               "alt": "Educational medical diagram for Colon and colorectal conditions",
-              "caption": "GENERAL SURGERY • CHAPTER 5 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 5 • Colon and colorectal conditions • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1201,9 +1202,9 @@
               "type": "illustrated",
               "title": "Gallbladder and bile duct diseases",
               "text": "The source describes gallstones, gallbladder inflammation and bile-duct obstruction. It lists symptoms and complications of calculous cholecystitis and discusses investigations and treatment headings for obstruction.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-05.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-05-08.svg",
               "alt": "Educational medical diagram for Gallbladder and bile duct diseases",
-              "caption": "GENERAL SURGERY • CHAPTER 5 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 5 • Gallbladder and bile duct diseases • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1249,9 +1250,9 @@
               "type": "illustrated",
               "title": "Pancreatic diseases",
               "text": "The pancreas section covers acute pancreatitis and pancreatic tumors. For acute inflammation it lists symptoms, tests and treatment headings; for tumors it separately discusses symptoms, investigations and treatment.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-05.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-05-09.svg",
               "alt": "Educational medical diagram for Pancreatic diseases",
-              "caption": "GENERAL SURGERY • CHAPTER 5 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 5 • Pancreatic diseases • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1299,9 +1300,9 @@
               "type": "illustrated",
               "title": "Liver and spleen surgical diseases",
               "text": "The source discusses liver abscess, including bacterial and amoebic causes, symptoms, tests and treatment headings. It then covers liver tumors and their features, and splenomegaly with reasons for splenectomy.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-05.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-05-10.svg",
               "alt": "Educational medical diagram for Liver and spleen surgical diseases",
-              "caption": "GENERAL SURGERY • CHAPTER 5 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 5 • Liver and spleen surgical diseases • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1348,9 +1349,9 @@
               "type": "illustrated",
               "title": "Bowel obstruction and peritonitis",
               "text": "The chapter explains mechanical bowel obstruction and paralytic ileus, including causes, diagnosis and treatment headings. It then discusses peritonitis, its causes, symptoms, investigations and treatment.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-05.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-05-11.svg",
               "alt": "Educational medical diagram for Bowel obstruction and peritonitis",
-              "caption": "GENERAL SURGERY • CHAPTER 5 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 5 • Bowel obstruction and peritonitis • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1404,9 +1405,9 @@
               "type": "illustrated",
               "title": "Injury assessment and ABCDE",
               "text": "The injuries chapter emphasizes that care begins at the incident scene and continues through hospital treatment and rehabilitation. It describes primary assessment using ABCDE: airway, breathing, circulation, disability and exposure. Secondary assessment follows once immediate threats are addressed.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-06.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-06-01.svg",
               "alt": "Educational medical diagram for Injury assessment and ABCDE",
-              "caption": "GENERAL SURGERY • CHAPTER 6 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 6 • Injury assessment and ABCDE • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1454,9 +1455,9 @@
               "type": "illustrated",
               "title": "Triage and Glasgow Coma Score",
               "text": "The source explains triage as prioritizing injured people according to urgency and includes a Glasgow Coma Score table. The score is divided into eye opening, verbal response and motor response, each with graded responses and points.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-06.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-06-02.svg",
               "alt": "Educational medical diagram for Triage and Glasgow Coma Score",
-              "caption": "GENERAL SURGERY • CHAPTER 6 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 6 • Triage and Glasgow Coma Score • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1504,9 +1505,9 @@
               "type": "illustrated",
               "title": "Major injuries and trauma complications",
               "text": "The chapter covers head, skull, brain, neck, chest, abdominal and pelvic injuries. It discusses bleeding and brain injury, chest-cavity injuries, lung injury and chest tubes, and injuries to abdominal organs and the urinary tract.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-06.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-06-03.svg",
               "alt": "Educational medical diagram for Major injuries and trauma complications",
-              "caption": "GENERAL SURGERY • CHAPTER 6 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 6 • Major injuries and trauma complications • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1561,9 +1562,9 @@
               "type": "illustrated",
               "title": "Laser: definition and surgical applications",
               "text": "Laser is defined as concentrated light produced using radiation. The book describes surgical uses such as cutting tissue and destroying pathological tissue, and calls it a light scalpel because of its precision. Applications are listed across ophthalmology, skin and plastic surgery, cardiac, ENT, dental and neurosurgical fields.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-07.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-07-01.svg",
               "alt": "Educational medical diagram for Laser: definition and surgical applications",
-              "caption": "GENERAL SURGERY • CHAPTER 7 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 7 • Laser: definition and surgical applications • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1611,9 +1612,9 @@
               "type": "illustrated",
               "title": "Laser surgery across specialties",
               "text": "The source compares laser surgery with conventional surgery and then introduces laparoscopic surgery and organ transplantation. Laparoscopy is described through its fields, principles, advantages and disadvantages, while transplantation is explained as replacing an organ's function in selected cases.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-07.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-07-02.svg",
               "alt": "Educational medical diagram for Laser surgery across specialties",
-              "caption": "GENERAL SURGERY • CHAPTER 7 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 7 • Laser surgery across specialties • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1667,9 +1668,9 @@
               "type": "illustrated",
               "title": "Eye anatomy and visual structures",
               "text": "The eye is described as having outer, middle and inner layers. The outer layer includes cornea and sclera; the middle layer includes iris, ciliary body and choroid; the inner layer is the retina. The chapter then examines eyelids and conjunctiva.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-08.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-08-01.svg",
               "alt": "Educational medical diagram for Eye anatomy and visual structures",
-              "caption": "GENERAL SURGERY • CHAPTER 8 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 8 • Eye anatomy and visual structures • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1716,9 +1717,9 @@
               "type": "illustrated",
               "title": "Common eye disorders and assessment",
               "text": "The chapter covers eyelid and conjunctival diseases, corneal ulcer, lens disorders including cataract, glaucoma, retinal examination and diabetic retinopathy. It describes symptoms, diagnosis and treatment headings for these conditions.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-08.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-08-02.svg",
               "alt": "Educational medical diagram for Common eye disorders and assessment",
-              "caption": "GENERAL SURGERY • CHAPTER 8 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 8 • Common eye disorders and assessment • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1772,9 +1773,9 @@
               "type": "illustrated",
               "title": "Ear anatomy and common ear diseases",
               "text": "The ENT chapter begins with the ear as the organ of hearing and divides it into external, middle and inner parts. It then discusses common ear diseases and their assessment.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-09.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-09-01.svg",
               "alt": "Educational medical diagram for Ear anatomy and common ear diseases",
-              "caption": "GENERAL SURGERY • CHAPTER 9 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 9 • Ear anatomy and common ear diseases • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1821,9 +1822,9 @@
               "type": "illustrated",
               "title": "Nose and paranasal conditions",
               "text": "The source's ENT chapter includes diseases of the nose and paranasal region. It presents these within the broader anatomy and clinical assessment of the upper airway and nearby structures.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-09.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-09-02.svg",
               "alt": "Educational medical diagram for Nose and paranasal conditions",
-              "caption": "GENERAL SURGERY • CHAPTER 9 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 9 • Nose and paranasal conditions • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1871,9 +1872,9 @@
               "type": "illustrated",
               "title": "Throat, tonsils and airway conditions",
               "text": "The chapter covers throat and related ENT conditions after the ear and nose sections. The topic should be organized by the anatomical site involved and the symptoms described in the source.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-09.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-09-03.svg",
               "alt": "Educational medical diagram for Throat, tonsils and airway conditions",
-              "caption": "GENERAL SURGERY • CHAPTER 9 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 9 • Throat, tonsils and airway conditions • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1928,9 +1929,9 @@
               "type": "illustrated",
               "title": "Oral cavity and tooth development",
               "text": "The mouth is introduced as the first part of the digestive tract. The text describes its role in receiving and grinding food, mixing it with saliva and supporting swallowing. It distinguishes primary teeth, which number twenty, from permanent teeth, which number thirty-two.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-10.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-10-01.svg",
               "alt": "Educational medical diagram for Oral cavity and tooth development",
-              "caption": "GENERAL SURGERY • CHAPTER 10 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 10 • Oral cavity and tooth development • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -1978,9 +1979,9 @@
               "type": "illustrated",
               "title": "Dental caries and pulp inflammation",
               "text": "The dental chapter describes tooth decay and pulp disease, including different stages and forms of caries. It includes images and review questions covering decay in different tooth layers and acute pulpitis.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-10.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-10-02.svg",
               "alt": "Educational medical diagram for Dental caries and pulp inflammation",
-              "caption": "GENERAL SURGERY • CHAPTER 10 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 10 • Dental caries and pulp inflammation • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -2025,9 +2026,9 @@
               "type": "illustrated",
               "title": "Gum and jaw diseases",
               "text": "The source discusses gingivitis, acute ulcerative gingivitis, dental abscesses and other gum or jaw conditions. It lists symptoms and causes and includes illustrated examples such as periapical abscess.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-10.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-10-03.svg",
               "alt": "Educational medical diagram for Gum and jaw diseases",
-              "caption": "GENERAL SURGERY • CHAPTER 10 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 10 • Gum and jaw diseases • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -2075,9 +2076,9 @@
               "type": "illustrated",
               "title": "Special precautions in dental patients",
               "text": "The dental chapter includes precautions for patients with systemic conditions such as diabetes and hyperthyroidism, and discusses sterilization equipment including the steam autoclave. It also includes emergency considerations in the dental clinic.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-10.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-10-04.svg",
               "alt": "Educational medical diagram for Special precautions in dental patients",
-              "caption": "GENERAL SURGERY • CHAPTER 10 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 10 • Special precautions in dental patients • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -2132,9 +2133,9 @@
               "type": "illustrated",
               "title": "Fractures: types and clinical features",
               "text": "A fracture is defined as separation of a bone into two or more parts. The source distinguishes closed, open, pathological and comminuted fractures, and describes shapes such as transverse, oblique and spiral. It also lists symptoms and diagnostic assessment.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-11.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-11-01.svg",
               "alt": "Educational medical diagram for Fractures: types and clinical features",
-              "caption": "GENERAL SURGERY • CHAPTER 11 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 11 • Fractures: types and clinical features • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -2182,9 +2183,9 @@
               "type": "illustrated",
               "title": "Fracture first principles and immobilization",
               "text": "The chapter includes first aid, treatment principles and splinting. It describes different splint types and general methods for applying them, including rigid, air and traction splints. It also explains why stabilization is important before definitive care.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-11.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-11-02.svg",
               "alt": "Educational medical diagram for Fracture first principles and immobilization",
-              "caption": "GENERAL SURGERY • CHAPTER 11 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 11 • Fracture first principles and immobilization • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -2232,9 +2233,9 @@
               "type": "illustrated",
               "title": "Dislocation, sprain and spinal injuries",
               "text": "The book distinguishes joint dislocation from sprain and covers injuries involving the spine. It lists symptoms and assessment points, and includes first-aid considerations for suspected spinal fracture.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-11.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-11-03.svg",
               "alt": "Educational medical diagram for Dislocation, sprain and spinal injuries",
-              "caption": "GENERAL SURGERY • CHAPTER 11 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 11 • Dislocation, sprain and spinal injuries • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -2282,9 +2283,9 @@
               "type": "illustrated",
               "title": "Bone and joint diseases and procedures",
               "text": "The chapter includes arthritis, osteomyelitis, bone tumors, pediatric bone conditions, osteoporosis, arthroscopy and joint replacement. It separates acute and chronic osteomyelitis and discusses indications for procedures.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-11.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-11-04.svg",
               "alt": "Educational medical diagram for Bone and joint diseases and procedures",
-              "caption": "GENERAL SURGERY • CHAPTER 11 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 11 • Bone and joint diseases and procedures • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -2339,9 +2340,9 @@
               "type": "illustrated",
               "title": "Urinary anatomy, symptoms and investigations",
               "text": "The urinary system is divided into upper tract—kidneys and ureters—and lower tract—bladder and urethra. The chapter lists symptoms such as pain and urinary changes, then describes general symptoms and basic investigations.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-12.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-12-01.svg",
               "alt": "Educational medical diagram for Urinary anatomy, symptoms and investigations",
-              "caption": "GENERAL SURGERY • CHAPTER 12 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 12 • Urinary anatomy, symptoms and investigations • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -2390,9 +2391,9 @@
               "type": "illustrated",
               "title": "Congenital urinary disorders and urinary tumours",
               "text": "The chapter discusses urinary tract tumors, including bladder, kidney and prostate tumors. It outlines symptoms, investigations and treatment categories, and also covers congenital urinary disorders in its wider urinary-system review.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-12.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-12-02.svg",
               "alt": "Educational medical diagram for Congenital urinary disorders and urinary tumours",
-              "caption": "GENERAL SURGERY • CHAPTER 12 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 12 • Congenital urinary disorders and urinary tumours • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -2441,9 +2442,9 @@
               "type": "illustrated",
               "title": "Urinary stones and urinary tract infection",
               "text": "The text describes urinary stones, their types, symptoms, investigations and prevention headings. It also covers urinary tract infection, routes of infection, causes, urine-sample collection, signs and treatment topics.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-12.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-12-03.svg",
               "alt": "Educational medical diagram for Urinary stones and urinary tract infection",
-              "caption": "GENERAL SURGERY • CHAPTER 12 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 12 • Urinary stones and urinary tract infection • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -2491,9 +2492,9 @@
               "type": "illustrated",
               "title": "Renal failure and urinary retention",
               "text": "The chapter separates chronic renal failure from acute renal failure and lists causes, signs, investigations and treatment headings. It also defines acute and chronic urinary retention and discusses causes and complications.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-12.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-12-04.svg",
               "alt": "Educational medical diagram for Renal failure and urinary retention",
-              "caption": "GENERAL SURGERY • CHAPTER 12 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 12 • Renal failure and urinary retention • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -2540,9 +2541,9 @@
               "type": "illustrated",
               "title": "Urinary system injuries",
               "text": "The source covers kidney, ureter and bladder injuries, including causes, signs, investigations and treatment headings. It emphasizes recognizing injury to different parts of the urinary tract.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-12.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-12-05.svg",
               "alt": "Educational medical diagram for Urinary system injuries",
-              "caption": "GENERAL SURGERY • CHAPTER 12 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 12 • Urinary system injuries • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -2597,9 +2598,9 @@
               "type": "illustrated",
               "title": "Anesthesia: types and pre-anesthetic assessment",
               "text": "Anesthesia is defined as temporary loss of sensation in part or all of the body using anesthetic drugs to allow surgery without pain. The book distinguishes general and regional anesthesia and describes general anesthesia in terms of analgesia, loss of consciousness and muscle relaxation.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-13.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-13-01.svg",
               "alt": "Educational medical diagram for Anesthesia: types and pre-anesthetic assessment",
-              "caption": "GENERAL SURGERY • CHAPTER 13 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 13 • Anesthesia: types and pre-anesthetic assessment • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -2647,9 +2648,9 @@
               "type": "illustrated",
               "title": "Preoperative nursing role and premedication",
               "text": "The chapter discusses preoperative tests, calming the patient, premedication, medication history, consent, fasting and surgical-site preparation. It describes the nurse's role in preparing the patient before anesthesia.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-13.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-13-02.svg",
               "alt": "Educational medical diagram for Preoperative nursing role and premedication",
-              "caption": "GENERAL SURGERY • CHAPTER 13 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 13 • Preoperative nursing role and premedication • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -2697,9 +2698,9 @@
               "type": "illustrated",
               "title": "General anesthesia and anesthetic agents",
               "text": "The source explains induction and recovery and reviews intravenous and inhaled anesthetic agents, muscle relaxants and opioid medicines. It lists examples and discusses effects on the nervous, circulatory and respiratory systems.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-13.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-13-03.svg",
               "alt": "Educational medical diagram for General anesthesia and anesthetic agents",
-              "caption": "GENERAL SURGERY • CHAPTER 13 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 13 • General anesthesia and anesthetic agents • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
@@ -2748,9 +2749,9 @@
               "type": "illustrated",
               "title": "Spinal anesthesia and recovery room care",
               "text": "The chapter describes spinal anesthesia, its method, drugs, complications and contraindications, then covers recovery-room monitoring. It includes neurological, respiratory and circulatory recovery and the nurse's responsibilities before and after receiving the patient.",
-              "imageUrl": "https://bawabet-altamreed.com/assets/illustrations/general-surgery/chapter-13.svg",
+              "imageUrl": "assets/illustrations/general-surgery/lesson-13-04.svg",
               "alt": "Educational medical diagram for Spinal anesthesia and recovery room care",
-              "caption": "GENERAL SURGERY • CHAPTER 13 • Bawabet Al Tamreed"
+              "caption": "GENERAL SURGERY • CHAPTER 13 • Spinal anesthesia and recovery room care • Bawabet Al Tamreed"
             },
             {
               "type": "heading",
