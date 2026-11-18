@@ -108,26 +108,26 @@
               "type": "bilingual",
               "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
               "points": [
-                [
-                  "Community health nursing combines nursing practice with primary health care in community settings.",
-                  "يجمع تمريض صحة المجتمع بين ممارسة التمريض والرعاية الصحية الأولية داخل المجتمع.",
-                  "يعني التمريض هنا مش مقتصر على المستشفى؛ الممرضة بتشتغل مع الأفراد والأسر والسكان لتعزيز الصحة والوقاية والتثقيف."
-                ],
-                [
-                  "A community is people connected by interaction and shared interests; a society is a wider group linked by ongoing social interaction and shared territory or culture.",
-                  "المجتمع المحلي مجموعة أشخاص بينهم تفاعل واهتمامات مشتركة، أما المجتمع بالمعنى الأوسع فهو مجموعة تربطها علاقات اجتماعية مستمرة ومكان أو ثقافة مشتركة.",
-                  "احفظ الفرق: Community = ناس بينهم ترابط واهتمامات، Society = مجموعة اجتماعية أوسع لها تفاعل ونظام مشترك."
-                ],
-                [
-                  "The nurse promotes health, prevents disease, supports families, coordinates services, educates people and contributes to research.",
-                  "ممرضة صحة المجتمع تعزز الصحة، وتمنع المرض، وتدعم الأسرة، وتنسق الخدمات، وتثقف الناس وتشارك في البحث.",
-                  "دور الممرضة يبدأ قبل المرض؛ فهي تساعد المجتمع يحافظ على صحته ويعرف يتصرف صح."
-                ],
-                [
-                  "Services should be planned around community needs, participation, continuity, fair access, records and evaluation.",
-                  "تُخطط الخدمات حسب احتياجات المجتمع، مع مشاركة الناس واستمرار الخدمة وعدالة الوصول وتوثيق العمل وتقييمه.",
-                  "الخدمة الناجحة لازم تكون مناسبة لاحتياج الناس، مستمرة، متاحة للجميع، ونعرف نقيس نتيجتها."
-                ]
+                {
+                  "en": "Community health nursing combines nursing practice with primary health care in community settings.",
+                  "ar": "يجمع تمريض صحة المجتمع بين ممارسة التمريض والرعاية الصحية الأولية داخل المجتمع.",
+                  "simple": "يعني التمريض هنا مش مقتصر على المستشفى؛ الممرضة بتشتغل مع الأفراد والأسر والسكان لتعزيز الصحة والوقاية والتثقيف."
+                },
+                {
+                  "en": "A community is people connected by interaction and shared interests; a society is a wider group linked by ongoing social interaction and shared territory or culture.",
+                  "ar": "المجتمع المحلي مجموعة أشخاص بينهم تفاعل واهتمامات مشتركة، أما المجتمع بالمعنى الأوسع فهو مجموعة تربطها علاقات اجتماعية مستمرة ومكان أو ثقافة مشتركة.",
+                  "simple": "احفظ الفرق: Community = ناس بينهم ترابط واهتمامات، Society = مجموعة اجتماعية أوسع لها تفاعل ونظام مشترك."
+                },
+                {
+                  "en": "The nurse promotes health, prevents disease, supports families, coordinates services, educates people and contributes to research.",
+                  "ar": "ممرضة صحة المجتمع تعزز الصحة، وتمنع المرض، وتدعم الأسرة، وتنسق الخدمات، وتثقف الناس وتشارك في البحث.",
+                  "simple": "دور الممرضة يبدأ قبل المرض؛ فهي تساعد المجتمع يحافظ على صحته ويعرف يتصرف صح."
+                },
+                {
+                  "en": "Services should be planned around community needs, participation, continuity, fair access, records and evaluation.",
+                  "ar": "تُخطط الخدمات حسب احتياجات المجتمع، مع مشاركة الناس واستمرار الخدمة وعدالة الوصول وتوثيق العمل وتقييمه.",
+                  "simple": "الخدمة الناجحة لازم تكون مناسبة لاحتياج الناس، مستمرة، متاحة للجميع، ونعرف نقيس نتيجتها."
+                }
               ]
             },
             {
@@ -174,26 +174,26 @@
               "type": "bilingual",
               "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
               "points": [
-                [
-                  "WHO describes health as complete physical, mental and social well-being, not merely the absence of disease.",
-                  "تعرّف منظمة الصحة العالمية الصحة بأنها اكتمال السلامة البدنية والنفسية والاجتماعية، وليس مجرد غياب المرض.",
-                  "ممكن شخص ماعندوش مرض واضح لكنه مش في حالة صحة كاملة لو عنده مشكلة نفسية أو اجتماعية مؤثرة."
-                ],
-                [
-                  "Disease disturbs normal body function or homeostasis. Health is influenced by social, economic, physical, genetic and behavioral factors.",
-                  "المرض اضطراب يؤثر في وظيفة الجسم الطبيعية أو اتزانه الداخلي. وتتأثر الصحة بعوامل اجتماعية واقتصادية وبيئية ووراثية وسلوكية.",
-                  "الصحة مش مسؤولية الشخص وحده؛ الدخل والتعليم والسكن والمياه والخدمات الصحية والدعم الاجتماعي كلها بتأثر."
-                ],
-                [
-                  "Primary prevention acts before disease; secondary prevention detects disease early; tertiary prevention reduces the effects of established disease.",
-                  "الوقاية الأولية تمنع المرض قبل حدوثه، والثانوية تكتشفه مبكرًا، والثالثية تقلل مضاعفات المرض الموجود.",
-                  "مثال سريع: التطعيم وقاية أولية، الفحص المبكر ثانوية، والتأهيل بعد الجلطة ثالثية."
-                ],
-                [
-                  "The textbook links healthy living with activity, balanced diet, sleep, stress management, social support and avoiding tobacco.",
-                  "يربط الكتاب نمط الحياة الصحي بالنشاط والغذاء المتوازن والنوم الكافي وإدارة التوتر والدعم الاجتماعي والابتعاد عن التبغ.",
-                  "العادات اليومية بتتجمع مع بعض وبتأثر في صحة الإنسان على المدى الطويل."
-                ]
+                {
+                  "en": "WHO describes health as complete physical, mental and social well-being, not merely the absence of disease.",
+                  "ar": "تعرّف منظمة الصحة العالمية الصحة بأنها اكتمال السلامة البدنية والنفسية والاجتماعية، وليس مجرد غياب المرض.",
+                  "simple": "ممكن شخص ماعندوش مرض واضح لكنه مش في حالة صحة كاملة لو عنده مشكلة نفسية أو اجتماعية مؤثرة."
+                },
+                {
+                  "en": "Disease disturbs normal body function or homeostasis. Health is influenced by social, economic, physical, genetic and behavioral factors.",
+                  "ar": "المرض اضطراب يؤثر في وظيفة الجسم الطبيعية أو اتزانه الداخلي. وتتأثر الصحة بعوامل اجتماعية واقتصادية وبيئية ووراثية وسلوكية.",
+                  "simple": "الصحة مش مسؤولية الشخص وحده؛ الدخل والتعليم والسكن والمياه والخدمات الصحية والدعم الاجتماعي كلها بتأثر."
+                },
+                {
+                  "en": "Primary prevention acts before disease; secondary prevention detects disease early; tertiary prevention reduces the effects of established disease.",
+                  "ar": "الوقاية الأولية تمنع المرض قبل حدوثه، والثانوية تكتشفه مبكرًا، والثالثية تقلل مضاعفات المرض الموجود.",
+                  "simple": "مثال سريع: التطعيم وقاية أولية، الفحص المبكر ثانوية، والتأهيل بعد الجلطة ثالثية."
+                },
+                {
+                  "en": "The textbook links healthy living with activity, balanced diet, sleep, stress management, social support and avoiding tobacco.",
+                  "ar": "يربط الكتاب نمط الحياة الصحي بالنشاط والغذاء المتوازن والنوم الكافي وإدارة التوتر والدعم الاجتماعي والابتعاد عن التبغ.",
+                  "simple": "العادات اليومية بتتجمع مع بعض وبتأثر في صحة الإنسان على المدى الطويل."
+                }
               ]
             },
             {
@@ -242,21 +242,21 @@
               "type": "bilingual",
               "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
               "points": [
-                [
-                  "A healthcare team is a group of professionals who contribute different skills to patient care and treatment.",
-                  "الفريق الصحي مجموعة من المتخصصين، كل واحد فيهم بيقدم مهارة مختلفة لرعاية المريض وعلاجه.",
-                  "المريض مش مسؤولية شخص واحد؛ كل تخصص بيكمل التخصصات التانية."
-                ],
-                [
-                  "The textbook lists physicians, registered nurses, pathologists, pharmacists, radiologists, dieticians, social workers and spiritual leaders.",
-                  "يذكر الكتاب الطبيب، والممرض، وأخصائي الباثولوجي، والصيدلي، وأخصائي الأشعة، وأخصائي التغذية، والأخصائي الاجتماعي والمرشد الروحي.",
-                  "كل عضو له دور محدد: تشخيص، رعاية، تحاليل، أدوية، تصوير، تغذية أو دعم اجتماعي وروحي."
-                ],
-                [
-                  "Teamwork improves through clear roles, structured communication such as SBAR, joint training, simulation and shared goals.",
-                  "يتحسن العمل الجماعي بتحديد الأدوار، والتواصل المنظم مثل SBAR، والتدريب المشترك والمحاكاة والأهداف الموحدة.",
-                  "لما الفريق يتكلم بوضوح ويفهم دور بعض، تقل الأخطاء ويتحسن تنسيق الرعاية."
-                ]
+                {
+                  "en": "A healthcare team is a group of professionals who contribute different skills to patient care and treatment.",
+                  "ar": "الفريق الصحي مجموعة من المتخصصين، كل واحد فيهم بيقدم مهارة مختلفة لرعاية المريض وعلاجه.",
+                  "simple": "المريض مش مسؤولية شخص واحد؛ كل تخصص بيكمل التخصصات التانية."
+                },
+                {
+                  "en": "The textbook lists physicians, registered nurses, pathologists, pharmacists, radiologists, dieticians, social workers and spiritual leaders.",
+                  "ar": "يذكر الكتاب الطبيب، والممرض، وأخصائي الباثولوجي، والصيدلي، وأخصائي الأشعة، وأخصائي التغذية، والأخصائي الاجتماعي والمرشد الروحي.",
+                  "simple": "كل عضو له دور محدد: تشخيص، رعاية، تحاليل، أدوية، تصوير، تغذية أو دعم اجتماعي وروحي."
+                },
+                {
+                  "en": "Teamwork improves through clear roles, structured communication such as SBAR, joint training, simulation and shared goals.",
+                  "ar": "يتحسن العمل الجماعي بتحديد الأدوار، والتواصل المنظم مثل SBAR، والتدريب المشترك والمحاكاة والأهداف الموحدة.",
+                  "simple": "لما الفريق يتكلم بوضوح ويفهم دور بعض، تقل الأخطاء ويتحسن تنسيق الرعاية."
+                }
               ]
             },
             {
@@ -345,26 +345,26 @@
               "type": "bilingual",
               "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
               "points": [
-                [
-                  "Primary health care is a whole-of-society, people-centred approach covering health promotion, prevention, treatment, rehabilitation and palliative care.",
-                  "الرعاية الصحية الأولية أسلوب شامل يشارك فيه المجتمع كله، ويركز على الإنسان ويشمل تعزيز الصحة والوقاية والعلاج والتأهيل والرعاية التلطيفية.",
-                  "هي نقطة الرعاية القريبة من الناس، ومش مجرد علاج نزلة برد؛ بتتابع احتياجات الإنسان الصحية عبر مراحل حياته."
-                ],
-                [
-                  "Its three broad components are comprehensive care across life, action on wider health determinants, and empowerment of people and communities.",
-                  "مكوناتها العامة: رعاية متكاملة طوال مراحل الحياة، والتعامل مع العوامل الأوسع المؤثرة في الصحة، وتمكين الأفراد والأسر والمجتمعات.",
-                  "يعني نهتم بالخدمة الطبية وبأسباب الصحة خارج العيادة، ونساعد الناس يشاركوا في قرارات صحتهم."
-                ],
-                [
-                  "The textbook identifies equity, community participation, inter-sectoral coordination, appropriate technology and decentralization as PHC principles.",
-                  "يحدد الكتاب العدالة في توزيع الموارد، ومشاركة المجتمع، والتنسيق بين القطاعات، والتكنولوجيا المناسبة، واللامركزية كمبادئ للرعاية الأولية.",
-                  "الخدمة لازم توصل للغني والفقير والريف والمدينة، وتستخدم أدوات مناسبة، وتتعاون مع التعليم والمياه والبيئة."
-                ],
-                [
-                  "PHC nurses advocate for patients, communicate effectively, work in teams, provide people-centred care and keep learning.",
-                  "ممرضة الرعاية الأولية تدافع عن حقوق المريض، وتتواصل بفعالية، وتعمل ضمن فريق، وتقدم رعاية تتمحور حول الشخص وتواصل التعلم.",
-                  "الممرضة هنا حلقة وصل بين المريض والخدمات، وبتساعده يفهم حقوقه ويشارك في خطة الرعاية."
-                ]
+                {
+                  "en": "Primary health care is a whole-of-society, people-centred approach covering health promotion, prevention, treatment, rehabilitation and palliative care.",
+                  "ar": "الرعاية الصحية الأولية أسلوب شامل يشارك فيه المجتمع كله، ويركز على الإنسان ويشمل تعزيز الصحة والوقاية والعلاج والتأهيل والرعاية التلطيفية.",
+                  "simple": "هي نقطة الرعاية القريبة من الناس، ومش مجرد علاج نزلة برد؛ بتتابع احتياجات الإنسان الصحية عبر مراحل حياته."
+                },
+                {
+                  "en": "Its three broad components are comprehensive care across life, action on wider health determinants, and empowerment of people and communities.",
+                  "ar": "مكوناتها العامة: رعاية متكاملة طوال مراحل الحياة، والتعامل مع العوامل الأوسع المؤثرة في الصحة، وتمكين الأفراد والأسر والمجتمعات.",
+                  "simple": "يعني نهتم بالخدمة الطبية وبأسباب الصحة خارج العيادة، ونساعد الناس يشاركوا في قرارات صحتهم."
+                },
+                {
+                  "en": "The textbook identifies equity, community participation, inter-sectoral coordination, appropriate technology and decentralization as PHC principles.",
+                  "ar": "يحدد الكتاب العدالة في توزيع الموارد، ومشاركة المجتمع، والتنسيق بين القطاعات، والتكنولوجيا المناسبة، واللامركزية كمبادئ للرعاية الأولية.",
+                  "simple": "الخدمة لازم توصل للغني والفقير والريف والمدينة، وتستخدم أدوات مناسبة، وتتعاون مع التعليم والمياه والبيئة."
+                },
+                {
+                  "en": "PHC nurses advocate for patients, communicate effectively, work in teams, provide people-centred care and keep learning.",
+                  "ar": "ممرضة الرعاية الأولية تدافع عن حقوق المريض، وتتواصل بفعالية، وتعمل ضمن فريق، وتقدم رعاية تتمحور حول الشخص وتواصل التعلم.",
+                  "simple": "الممرضة هنا حلقة وصل بين المريض والخدمات، وبتساعده يفهم حقوقه ويشارك في خطة الرعاية."
+                }
               ]
             },
             {
@@ -412,26 +412,26 @@
               "type": "bilingual",
               "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
               "points": [
-                [
-                  "Maternal and child health covers mothers, infants, children and adolescents; maternal health spans before pregnancy, pregnancy, childbirth and the postnatal period.",
-                  "صحة الأم والطفل تشمل الأمهات والرضع والأطفال والمراهقين. وصحة الأم تمتد من قبل الحمل وخلاله وأثناء الولادة وفترة ما بعد الولادة.",
-                  "صحة الأم والطفل مرتبطين؛ متابعة الأم بتنعكس على صحة الطفل ونموه."
-                ],
-                [
-                  "The textbook links poor maternal health and inadequate nutrition with low birth weight, anemia, infections and later health risks for children.",
-                  "يربط الكتاب ضعف صحة الأم وسوء تغذيتها بانخفاض وزن المولود والأنيميا والعدوى ومخاطر صحية قد تظهر على الطفل لاحقًا.",
-                  "تغذية الأم ومتابعتها أثناء الحمل مش موضوع منفصل؛ ليهم تأثير مباشر على بداية حياة الطفل."
-                ],
-                [
-                  "MCH services include prenatal and postnatal care, child health and immunization, family planning and reproductive health.",
-                  "تشمل خدمات صحة الأم والطفل رعاية ما قبل الولادة وما بعدها، ورعاية الطفل والتطعيم، وتنظيم الأسرة والصحة الإنجابية.",
-                  "الخدمات بتبدأ بمتابعة الأم، وتكمل مع الولادة والرضاعة والتطعيم ومتابعة نمو الطفل."
-                ],
-                [
-                  "The nurse supports antenatal care, fetal and child growth monitoring, breastfeeding, immunization, nutrition education, family planning and service coordination.",
-                  "تدعم الممرضة متابعة الحمل ونمو الجنين والطفل والرضاعة الطبيعية والتطعيم والتغذية وتنظيم الأسرة وتنسيق الخدمات.",
-                  "دور الممرضة عملي وتثقيفي وإداري وبحثي؛ بتتابع وتشرح وتنسق وتكتشف المشكلات مبكرًا."
-                ]
+                {
+                  "en": "Maternal and child health covers mothers, infants, children and adolescents; maternal health spans before pregnancy, pregnancy, childbirth and the postnatal period.",
+                  "ar": "صحة الأم والطفل تشمل الأمهات والرضع والأطفال والمراهقين. وصحة الأم تمتد من قبل الحمل وخلاله وأثناء الولادة وفترة ما بعد الولادة.",
+                  "simple": "صحة الأم والطفل مرتبطين؛ متابعة الأم بتنعكس على صحة الطفل ونموه."
+                },
+                {
+                  "en": "The textbook links poor maternal health and inadequate nutrition with low birth weight, anemia, infections and later health risks for children.",
+                  "ar": "يربط الكتاب ضعف صحة الأم وسوء تغذيتها بانخفاض وزن المولود والأنيميا والعدوى ومخاطر صحية قد تظهر على الطفل لاحقًا.",
+                  "simple": "تغذية الأم ومتابعتها أثناء الحمل مش موضوع منفصل؛ ليهم تأثير مباشر على بداية حياة الطفل."
+                },
+                {
+                  "en": "MCH services include prenatal and postnatal care, child health and immunization, family planning and reproductive health.",
+                  "ar": "تشمل خدمات صحة الأم والطفل رعاية ما قبل الولادة وما بعدها، ورعاية الطفل والتطعيم، وتنظيم الأسرة والصحة الإنجابية.",
+                  "simple": "الخدمات بتبدأ بمتابعة الأم، وتكمل مع الولادة والرضاعة والتطعيم ومتابعة نمو الطفل."
+                },
+                {
+                  "en": "The nurse supports antenatal care, fetal and child growth monitoring, breastfeeding, immunization, nutrition education, family planning and service coordination.",
+                  "ar": "تدعم الممرضة متابعة الحمل ونمو الجنين والطفل والرضاعة الطبيعية والتطعيم والتغذية وتنظيم الأسرة وتنسيق الخدمات.",
+                  "simple": "دور الممرضة عملي وتثقيفي وإداري وبحثي؛ بتتابع وتشرح وتنسق وتكتشف المشكلات مبكرًا."
+                }
               ]
             },
             {
@@ -551,26 +551,26 @@
               "type": "bilingual",
               "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
               "points": [
-                [
-                  "Home health care provides health services in the patient's residence to promote, maintain or restore health and reduce the effects of illness or disability.",
-                  "الرعاية الصحية المنزلية هي تقديم خدمات صحية في منزل المريض بهدف تعزيز الصحة أو الحفاظ عليها أو استعادتها وتقليل آثار المرض أو الإعاقة.",
-                  "بدل ما كل الرعاية تحصل داخل المستشفى، بعض الخدمات ممكن تتقدم في البيت حسب حالة المريض واحتياجه."
-                ],
-                [
-                  "Services may include skilled nursing, physical and occupational therapy, speech therapy, social work, respiratory care and personal assistance.",
-                  "قد تشمل الخدمات التمريض المتخصص والعلاج الطبيعي والوظيفي وعلاج النطق والخدمة الاجتماعية ورعاية الجهاز التنفسي والمساعدة الشخصية.",
-                  "كل خدمة لها متخصص: الطبيعي للحركة، والوظيفي للأنشطة اليومية، وعلاج النطق للكلام والبلع."
-                ],
-                [
-                  "A home visit allows the nurse to assess the patient, family and home environment, provide care and health teaching, and connect the family with community services.",
-                  "تتيح الزيارة المنزلية للممرضة تقييم المريض والأسرة والبيئة المنزلية، وتقديم الرعاية والتثقيف الصحي وربط الأسرة بخدمات المجتمع.",
-                  "الممرضة مش بتزور البيت للعلاج فقط؛ بتلاحظ ظروف المعيشة واحتياجات الأسرة وتخطط معاهم."
-                ],
-                [
-                  "The textbook emphasizes purposeful planning, family participation, flexibility, need-based priorities, respectful relationships and evaluation.",
-                  "يركز الكتاب على أن تكون الزيارة بهدف واضح، وبمشاركة الأسرة، ومرنة، ومبنية على الاحتياجات والأولويات والعلاقة المهنية والتقييم.",
-                  "قبل الزيارة نراجع المعلومات ونحدد الهدف، وأثناءها نسمع للأسرة ونلاحظ البيئة، وبعدها نقيم النتيجة."
-                ]
+                {
+                  "en": "Home health care provides health services in the patient's residence to promote, maintain or restore health and reduce the effects of illness or disability.",
+                  "ar": "الرعاية الصحية المنزلية هي تقديم خدمات صحية في منزل المريض بهدف تعزيز الصحة أو الحفاظ عليها أو استعادتها وتقليل آثار المرض أو الإعاقة.",
+                  "simple": "بدل ما كل الرعاية تحصل داخل المستشفى، بعض الخدمات ممكن تتقدم في البيت حسب حالة المريض واحتياجه."
+                },
+                {
+                  "en": "Services may include skilled nursing, physical and occupational therapy, speech therapy, social work, respiratory care and personal assistance.",
+                  "ar": "قد تشمل الخدمات التمريض المتخصص والعلاج الطبيعي والوظيفي وعلاج النطق والخدمة الاجتماعية ورعاية الجهاز التنفسي والمساعدة الشخصية.",
+                  "simple": "كل خدمة لها متخصص: الطبيعي للحركة، والوظيفي للأنشطة اليومية، وعلاج النطق للكلام والبلع."
+                },
+                {
+                  "en": "A home visit allows the nurse to assess the patient, family and home environment, provide care and health teaching, and connect the family with community services.",
+                  "ar": "تتيح الزيارة المنزلية للممرضة تقييم المريض والأسرة والبيئة المنزلية، وتقديم الرعاية والتثقيف الصحي وربط الأسرة بخدمات المجتمع.",
+                  "simple": "الممرضة مش بتزور البيت للعلاج فقط؛ بتلاحظ ظروف المعيشة واحتياجات الأسرة وتخطط معاهم."
+                },
+                {
+                  "en": "The textbook emphasizes purposeful planning, family participation, flexibility, need-based priorities, respectful relationships and evaluation.",
+                  "ar": "يركز الكتاب على أن تكون الزيارة بهدف واضح، وبمشاركة الأسرة، ومرنة، ومبنية على الاحتياجات والأولويات والعلاقة المهنية والتقييم.",
+                  "simple": "قبل الزيارة نراجع المعلومات ونحدد الهدف، وأثناءها نسمع للأسرة ونلاحظ البيئة، وبعدها نقيم النتيجة."
+                }
               ]
             },
             {
@@ -618,26 +618,26 @@
               "type": "bilingual",
               "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
               "points": [
-                [
-                  "Family health care focuses on the family unit, promoting health, preventing problems and supporting family well-being.",
-                  "تركز رعاية صحة الأسرة على الأسرة كوحدة واحدة، بهدف تعزيز الصحة والوقاية من المشكلات ودعم سلامة أفرادها.",
-                  "بدل ما نبص لكل فرد بمعزل عن الباقي، بنفهم تأثير العلاقات والظروف المنزلية على صحة الأسرة كلها."
-                ],
-                [
-                  "Family assessment may examine structure, relationships, socioeconomic and cultural factors, the home environment and each member's health.",
-                  "قد يشمل تقييم الأسرة تركيبها وعلاقات أفرادها وظروفها الاجتماعية والاقتصادية والثقافية والبيئة المنزلية والحالة الصحية لكل فرد.",
-                  "التقييم بيسأل: مين أفراد الأسرة؟ إزاي بيتعاملوا؟ ظروفهم إيه؟ وإيه احتياجاتهم الصحية؟"
-                ],
-                [
-                  "The textbook describes ecomaps, genograms, social support maps and family health trees as assessment tools.",
-                  "يذكر الكتاب أدوات للتقييم مثل خريطة العلاقات البيئية، وشجرة العائلة، وخريطة الدعم الاجتماعي، وشجرة التاريخ المرضي للأسرة.",
-                  "كل أداة بتكشف جانب مختلف: العلاقات خارج الأسرة، التاريخ العائلي، شبكة المساندة، والأمراض المتكررة."
-                ],
-                [
-                  "The family nursing process follows assessment, diagnosis, planning, implementation and evaluation.",
-                  "تمر عملية تمريض الأسرة بخمس مراحل: التقييم، والتشخيص التمريضي، والتخطيط، والتنفيذ، والتقييم النهائي.",
-                  "افتكر الترتيب: نجمع البيانات، نحدد المشكلة، نخطط، ننفذ، وبعدها نشوف الخطة نجحت ولا محتاجة تعديل."
-                ]
+                {
+                  "en": "Family health care focuses on the family unit, promoting health, preventing problems and supporting family well-being.",
+                  "ar": "تركز رعاية صحة الأسرة على الأسرة كوحدة واحدة، بهدف تعزيز الصحة والوقاية من المشكلات ودعم سلامة أفرادها.",
+                  "simple": "بدل ما نبص لكل فرد بمعزل عن الباقي، بنفهم تأثير العلاقات والظروف المنزلية على صحة الأسرة كلها."
+                },
+                {
+                  "en": "Family assessment may examine structure, relationships, socioeconomic and cultural factors, the home environment and each member's health.",
+                  "ar": "قد يشمل تقييم الأسرة تركيبها وعلاقات أفرادها وظروفها الاجتماعية والاقتصادية والثقافية والبيئة المنزلية والحالة الصحية لكل فرد.",
+                  "simple": "التقييم بيسأل: مين أفراد الأسرة؟ إزاي بيتعاملوا؟ ظروفهم إيه؟ وإيه احتياجاتهم الصحية؟"
+                },
+                {
+                  "en": "The textbook describes ecomaps, genograms, social support maps and family health trees as assessment tools.",
+                  "ar": "يذكر الكتاب أدوات للتقييم مثل خريطة العلاقات البيئية، وشجرة العائلة، وخريطة الدعم الاجتماعي، وشجرة التاريخ المرضي للأسرة.",
+                  "simple": "كل أداة بتكشف جانب مختلف: العلاقات خارج الأسرة، التاريخ العائلي، شبكة المساندة، والأمراض المتكررة."
+                },
+                {
+                  "en": "The family nursing process follows assessment, diagnosis, planning, implementation and evaluation.",
+                  "ar": "تمر عملية تمريض الأسرة بخمس مراحل: التقييم، والتشخيص التمريضي، والتخطيط، والتنفيذ، والتقييم النهائي.",
+                  "simple": "افتكر الترتيب: نجمع البيانات، نحدد المشكلة، نخطط، ننفذ، وبعدها نشوف الخطة نجحت ولا محتاجة تعديل."
+                }
               ]
             },
             {
@@ -684,21 +684,21 @@
               "type": "bilingual",
               "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
               "points": [
-                [
-                  "School health services combine strategies and care that support students' physical, emotional and social development.",
-                  "الخدمات الصحية المدرسية مجموعة أنشطة ورعاية تهدف لدعم نمو الطلاب البدني والنفسي والاجتماعي.",
-                  "المدرسة مكان للتعلم والصحة معًا؛ بنحافظ على سلامة الطالب ونكتشف المشكلات بدري."
-                ],
-                [
-                  "The textbook includes health appraisal, follow-up, infection prevention, a healthy environment, nutrition, first aid, mental, dental and eye health, and health education.",
-                  "تشمل الجوانب المذكورة تقييم صحة الطلاب والعاملين والمتابعة والوقاية من العدوى والبيئة الصحية والتغذية والإسعافات الأولية والصحة النفسية والأسنان والعيون والتثقيف الصحي.",
-                  "الخدمات مش كشف طبي فقط؛ بتشمل البيئة والنظافة والتغذية والدعم النفسي والتوعية."
-                ],
-                [
-                  "The school nurse provides direct care, screening and referral, health education, coordination, program planning and a link between school, family and health providers.",
-                  "تقدم ممرضة المدرسة الرعاية المباشرة والفحص والإحالة والتثقيف الصحي والتنسيق وتخطيط البرامج، وتربط المدرسة بالأسرة ومقدمي الرعاية.",
-                  "الممرضة بتكون حلقة وصل؛ تلاحظ المشكلة، تبلغ الأسرة، وتنسق الإحالة والمتابعة."
-                ]
+                {
+                  "en": "School health services combine strategies and care that support students' physical, emotional and social development.",
+                  "ar": "الخدمات الصحية المدرسية مجموعة أنشطة ورعاية تهدف لدعم نمو الطلاب البدني والنفسي والاجتماعي.",
+                  "simple": "المدرسة مكان للتعلم والصحة معًا؛ بنحافظ على سلامة الطالب ونكتشف المشكلات بدري."
+                },
+                {
+                  "en": "The textbook includes health appraisal, follow-up, infection prevention, a healthy environment, nutrition, first aid, mental, dental and eye health, and health education.",
+                  "ar": "تشمل الجوانب المذكورة تقييم صحة الطلاب والعاملين والمتابعة والوقاية من العدوى والبيئة الصحية والتغذية والإسعافات الأولية والصحة النفسية والأسنان والعيون والتثقيف الصحي.",
+                  "simple": "الخدمات مش كشف طبي فقط؛ بتشمل البيئة والنظافة والتغذية والدعم النفسي والتوعية."
+                },
+                {
+                  "en": "The school nurse provides direct care, screening and referral, health education, coordination, program planning and a link between school, family and health providers.",
+                  "ar": "تقدم ممرضة المدرسة الرعاية المباشرة والفحص والإحالة والتثقيف الصحي والتنسيق وتخطيط البرامج، وتربط المدرسة بالأسرة ومقدمي الرعاية.",
+                  "simple": "الممرضة بتكون حلقة وصل؛ تلاحظ المشكلة، تبلغ الأسرة، وتنسق الإحالة والمتابعة."
+                }
               ]
             },
             {
@@ -744,21 +744,21 @@
               "type": "bilingual",
               "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
               "points": [
-                [
-                  "Elderly health services aim to improve older people's primary care, self-care ability, healthy living and family support while reducing illness and disability.",
-                  "تهدف خدمات صحة المسنين إلى تحسين الرعاية الأولية وقدرة المسن على العناية بنفسه وتشجيع نمط الحياة الصحي وتقوية دعم الأسرة وتقليل المرض والإعاقة.",
-                  "الفكرة مش علاج المرض بس؛ كمان نساعد المسن يحافظ على استقلاليته وجودة حياته."
-                ],
-                [
-                  "The textbook describes clinic services, outreach visits and public-health and administrative support.",
-                  "يذكر الكتاب خدمات العيادات، والزيارات الميدانية، وخدمات الصحة العامة والإدارة.",
-                  "الخدمة ممكن تكون في مركز صحي، أو زيارة للمسن في المجتمع أو دار الرعاية، مع متابعة وتنظيم البيانات."
-                ],
-                [
-                  "Multidisciplinary assessment, counselling, health education and curative care address older people's multiple health needs.",
-                  "يساعد التقييم متعدد التخصصات والإرشاد والتثقيف الصحي والعلاج في التعامل مع الاحتياجات الصحية المتعددة للمسنين.",
-                  "احتياجات المسن غالبًا متداخلة؛ لذلك التعاون بين التخصصات مهم."
-                ]
+                {
+                  "en": "Elderly health services aim to improve older people's primary care, self-care ability, healthy living and family support while reducing illness and disability.",
+                  "ar": "تهدف خدمات صحة المسنين إلى تحسين الرعاية الأولية وقدرة المسن على العناية بنفسه وتشجيع نمط الحياة الصحي وتقوية دعم الأسرة وتقليل المرض والإعاقة.",
+                  "simple": "الفكرة مش علاج المرض بس؛ كمان نساعد المسن يحافظ على استقلاليته وجودة حياته."
+                },
+                {
+                  "en": "The textbook describes clinic services, outreach visits and public-health and administrative support.",
+                  "ar": "يذكر الكتاب خدمات العيادات، والزيارات الميدانية، وخدمات الصحة العامة والإدارة.",
+                  "simple": "الخدمة ممكن تكون في مركز صحي، أو زيارة للمسن في المجتمع أو دار الرعاية، مع متابعة وتنظيم البيانات."
+                },
+                {
+                  "en": "Multidisciplinary assessment, counselling, health education and curative care address older people's multiple health needs.",
+                  "ar": "يساعد التقييم متعدد التخصصات والإرشاد والتثقيف الصحي والعلاج في التعامل مع الاحتياجات الصحية المتعددة للمسنين.",
+                  "simple": "احتياجات المسن غالبًا متداخلة؛ لذلك التعاون بين التخصصات مهم."
+                }
               ]
             },
             {
@@ -865,26 +865,26 @@
               "type": "bilingual",
               "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
               "points": [
-                [
-                  "Environmental health concerns external physical, chemical and biological factors that affect people and their behaviour.",
-                  "تهتم الصحة البيئية بالعوامل الخارجية الفيزيائية والكيميائية والبيولوجية التي تؤثر في الإنسان وسلوكه.",
-                  "الهواء والمياه والغذاء والسكن والعمل والنفايات كلها ممكن تأثر في صحة الناس."
-                ],
-                [
-                  "The textbook discusses built environments, work-related exposures, outdoor air, healthy homes, water quality, food safety and waste management.",
-                  "يناقش الكتاب البيئة المبنية ومخاطر العمل وجودة الهواء الخارجي وصحة المنزل وجودة المياه وسلامة الغذاء وإدارة النفايات.",
-                  "بنقسم البيئة لمجالات عشان نعرف نحدد مصدر الخطر ونختار طريقة الوقاية."
-                ],
-                [
-                  "Environmental effects may be general or specific, and may appear immediately, over the long term or across generations.",
-                  "قد تكون آثار المخاطر البيئية عامة أو محددة، وقد تظهر فورًا أو على المدى الطويل أو تمتد لأجيال لاحقة.",
-                  "مش كل ضرر بيظهر في نفس الوقت؛ بعض التأثيرات سريعة وبعضها بيتراكم مع التعرض."
-                ],
-                [
-                  "Nurses assess environmental risks, educate communities, support safe environments and collaborate on environmental-health action.",
-                  "تقيّم الممرضة المخاطر البيئية، وتثقف المجتمع، وتدعم توفير بيئة آمنة، وتتعاون في إجراءات حماية الصحة البيئية.",
-                  "دور الممرضة يشمل ملاحظة الخطر وتوعية الناس والتعاون مع الجهات المسؤولة."
-                ]
+                {
+                  "en": "Environmental health concerns external physical, chemical and biological factors that affect people and their behaviour.",
+                  "ar": "تهتم الصحة البيئية بالعوامل الخارجية الفيزيائية والكيميائية والبيولوجية التي تؤثر في الإنسان وسلوكه.",
+                  "simple": "الهواء والمياه والغذاء والسكن والعمل والنفايات كلها ممكن تأثر في صحة الناس."
+                },
+                {
+                  "en": "The textbook discusses built environments, work-related exposures, outdoor air, healthy homes, water quality, food safety and waste management.",
+                  "ar": "يناقش الكتاب البيئة المبنية ومخاطر العمل وجودة الهواء الخارجي وصحة المنزل وجودة المياه وسلامة الغذاء وإدارة النفايات.",
+                  "simple": "بنقسم البيئة لمجالات عشان نعرف نحدد مصدر الخطر ونختار طريقة الوقاية."
+                },
+                {
+                  "en": "Environmental effects may be general or specific, and may appear immediately, over the long term or across generations.",
+                  "ar": "قد تكون آثار المخاطر البيئية عامة أو محددة، وقد تظهر فورًا أو على المدى الطويل أو تمتد لأجيال لاحقة.",
+                  "simple": "مش كل ضرر بيظهر في نفس الوقت؛ بعض التأثيرات سريعة وبعضها بيتراكم مع التعرض."
+                },
+                {
+                  "en": "Nurses assess environmental risks, educate communities, support safe environments and collaborate on environmental-health action.",
+                  "ar": "تقيّم الممرضة المخاطر البيئية، وتثقف المجتمع، وتدعم توفير بيئة آمنة، وتتعاون في إجراءات حماية الصحة البيئية.",
+                  "simple": "دور الممرضة يشمل ملاحظة الخطر وتوعية الناس والتعاون مع الجهات المسؤولة."
+                }
               ]
             },
             {
@@ -932,21 +932,21 @@
               "type": "bilingual",
               "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
               "points": [
-                [
-                  "Occupational health nursing promotes, protects and restores health in safe workplaces and addresses occupational and environmental hazards.",
-                  "تمريض الصحة المهنية يعزز الصحة ويحميها ويستعيدها داخل بيئة عمل آمنة، ويتعامل مع المخاطر المهنية والبيئية.",
-                  "الممرضة المهنية تهتم بصحة العامل أثناء العمل، وتساعد في منع الإصابات والأمراض المرتبطة بالمهنة."
-                ],
-                [
-                  "The textbook groups hazards as biological, chemical, enviromechanical, physical and psychosocial, with different exposures and health effects.",
-                  "يقسم الكتاب المخاطر إلى بيولوجية وكيميائية وميكانيكية-بيئية وفيزيائية ونفسية-اجتماعية، ولكل نوع مصادر تعرض وتأثيرات صحية مختلفة.",
-                  "مثال: الدم قد ينقل عدوى، والمواد الكيميائية قد تسبب تسممًا، والضوضاء قد تؤثر في السمع، والضغط النفسي يؤثر في الصحة."
-                ],
-                [
-                  "Services include emergency response, first aid, surveillance, injury reporting, PPE education, infection control, assessment, referral and case management.",
-                  "تشمل الخدمات الاستجابة للطوارئ والإسعافات الأولية والمتابعة الصحية وتسجيل الإصابات والتوعية بمعدات الوقاية ومكافحة العدوى والتقييم والإحالة وإدارة الحالات.",
-                  "الممرضة تتابع صحة العاملين وتدربهم على الوقاية وتساعد في التعامل مع الإصابات والعودة الآمنة للعمل."
-                ]
+                {
+                  "en": "Occupational health nursing promotes, protects and restores health in safe workplaces and addresses occupational and environmental hazards.",
+                  "ar": "تمريض الصحة المهنية يعزز الصحة ويحميها ويستعيدها داخل بيئة عمل آمنة، ويتعامل مع المخاطر المهنية والبيئية.",
+                  "simple": "الممرضة المهنية تهتم بصحة العامل أثناء العمل، وتساعد في منع الإصابات والأمراض المرتبطة بالمهنة."
+                },
+                {
+                  "en": "The textbook groups hazards as biological, chemical, enviromechanical, physical and psychosocial, with different exposures and health effects.",
+                  "ar": "يقسم الكتاب المخاطر إلى بيولوجية وكيميائية وميكانيكية-بيئية وفيزيائية ونفسية-اجتماعية، ولكل نوع مصادر تعرض وتأثيرات صحية مختلفة.",
+                  "simple": "مثال: الدم قد ينقل عدوى، والمواد الكيميائية قد تسبب تسممًا، والضوضاء قد تؤثر في السمع، والضغط النفسي يؤثر في الصحة."
+                },
+                {
+                  "en": "Services include emergency response, first aid, surveillance, injury reporting, PPE education, infection control, assessment, referral and case management.",
+                  "ar": "تشمل الخدمات الاستجابة للطوارئ والإسعافات الأولية والمتابعة الصحية وتسجيل الإصابات والتوعية بمعدات الوقاية ومكافحة العدوى والتقييم والإحالة وإدارة الحالات.",
+                  "simple": "الممرضة تتابع صحة العاملين وتدربهم على الوقاية وتساعد في التعامل مع الإصابات والعودة الآمنة للعمل."
+                }
               ]
             },
             {
@@ -993,26 +993,26 @@
               "type": "bilingual",
               "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
               "points": [
-                [
-                  "Rural health concerns people living in rural areas, often farther from healthcare facilities and other services than urban residents.",
-                  "تهتم الصحة الريفية بصحة السكان في المناطق الريفية، والذين غالبًا ما يعيشون أبعد عن المنشآت الصحية والخدمات مقارنة بسكان المدن.",
-                  "المشكلة مش في المكان نفسه؛ التحدي أحيانًا إن الوصول للطبيب أو المستشفى والمواصلات أصعب."
-                ],
-                [
-                  "The textbook lists disparities involving heart disease, cancer, stroke, injury, chronic respiratory disease and multiple health conditions.",
-                  "يذكر الكتاب تفاوتات صحية تشمل أمراض القلب والسرطان والسكتة الدماغية والإصابات وأمراض الجهاز التنفسي المزمنة وتعدد المشكلات الصحية.",
-                  "بعض المناطق الريفية بتواجه عبئًا صحيًا أكبر بسبب عوامل الوصول والبيئة والظروف الاجتماعية."
-                ],
-                [
-                  "Contributing factors include fewer providers and transport options, environmental hazards, smoking, inactivity, food deserts, poverty and lower insurance coverage.",
-                  "تشمل العوامل قلة مقدمي الخدمة والمواصلات، والمخاطر البيئية، والتدخين وقلة النشاط، ومناطق نقص الغذاء الصحي، والفقر وضعف التغطية التأمينية.",
-                  "الممرضة تساعد في تقليل الفجوة عن طريق التوعية والتنسيق والإحالة وربط السكان بالخدمات."
-                ],
-                [
-                  "The rural nurse may act as advocate, coordinator, teacher, referral agent, mentor, researcher, collaborator and change agent.",
-                  "قد تعمل الممرضة الريفية كمدافعة عن المريض، ومنسقة، ومعلمة صحية، ومسؤولة إحالة، ومرشدة، وباحثة، ومتعاونة ومحفزة للتغيير.",
-                  "دورها واسع لأنها قريبة من المجتمع وبتساعد الناس يوصلوا للخدمات المناسبة."
-                ]
+                {
+                  "en": "Rural health concerns people living in rural areas, often farther from healthcare facilities and other services than urban residents.",
+                  "ar": "تهتم الصحة الريفية بصحة السكان في المناطق الريفية، والذين غالبًا ما يعيشون أبعد عن المنشآت الصحية والخدمات مقارنة بسكان المدن.",
+                  "simple": "المشكلة مش في المكان نفسه؛ التحدي أحيانًا إن الوصول للطبيب أو المستشفى والمواصلات أصعب."
+                },
+                {
+                  "en": "The textbook lists disparities involving heart disease, cancer, stroke, injury, chronic respiratory disease and multiple health conditions.",
+                  "ar": "يذكر الكتاب تفاوتات صحية تشمل أمراض القلب والسرطان والسكتة الدماغية والإصابات وأمراض الجهاز التنفسي المزمنة وتعدد المشكلات الصحية.",
+                  "simple": "بعض المناطق الريفية بتواجه عبئًا صحيًا أكبر بسبب عوامل الوصول والبيئة والظروف الاجتماعية."
+                },
+                {
+                  "en": "Contributing factors include fewer providers and transport options, environmental hazards, smoking, inactivity, food deserts, poverty and lower insurance coverage.",
+                  "ar": "تشمل العوامل قلة مقدمي الخدمة والمواصلات، والمخاطر البيئية، والتدخين وقلة النشاط، ومناطق نقص الغذاء الصحي، والفقر وضعف التغطية التأمينية.",
+                  "simple": "الممرضة تساعد في تقليل الفجوة عن طريق التوعية والتنسيق والإحالة وربط السكان بالخدمات."
+                },
+                {
+                  "en": "The rural nurse may act as advocate, coordinator, teacher, referral agent, mentor, researcher, collaborator and change agent.",
+                  "ar": "قد تعمل الممرضة الريفية كمدافعة عن المريض، ومنسقة، ومعلمة صحية، ومسؤولة إحالة، ومرشدة، وباحثة، ومتعاونة ومحفزة للتغيير.",
+                  "simple": "دورها واسع لأنها قريبة من المجتمع وبتساعد الناس يوصلوا للخدمات المناسبة."
+                }
               ]
             },
             {
@@ -1127,26 +1127,26 @@
               "type": "bilingual",
               "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
               "points": [
-                [
-                  "A communicable disease is caused by an infectious agent that can pass from a source or reservoir to a susceptible host.",
-                  "المرض المعدي ينتج عن عامل مُعدٍ يمكن أن ينتقل من مصدر أو مستودع للعدوى إلى شخص قابل للإصابة.",
-                  "لفهم العدوى لازم نعرف الميكروب جاي منين، بيخرج إزاي، وبينتقل بإيه، ويدخل جسم مين."
-                ],
-                [
-                  "The chain of infection includes the infectious agent, reservoir, portal of exit, mode of transmission, portal of entry and susceptible host.",
-                  "تتكون سلسلة العدوى من العامل المسبب، ومستودع العدوى، ومنفذ الخروج، وطريقة الانتقال، ومنفذ الدخول، والعائل القابل للإصابة.",
-                  "كسر أي حلقة من السلسلة يساعد على منع انتقال العدوى؛ زي غسل اليدين أو التطعيم أو العزل حسب الحالة."
-                ],
-                [
-                  "The textbook explains terms such as infection, endemic, epidemic, pandemic, incubation period, elimination and eradication.",
-                  "يشرح الكتاب مصطلحات مثل العدوى، والتوطن، والوباء، والجائحة، وفترة الحضانة، والاستئصال الإقليمي، والقضاء العالمي على المرض.",
-                  "فرق مهم: Endemic وجود معتاد في منطقة، Epidemic زيادة فوق المتوقع، Pandemic انتشار واسع عالمي."
-                ],
-                [
-                  "Examples in the source include HIV, hepatitis C, pulmonary tuberculosis, typhoid and COVID-19; nursing roles include education, case management, surveillance and reporting.",
-                  "من أمثلة الكتاب: فيروس HIV، والتهاب الكبد C، والدرن الرئوي، والتيفود، وكوفيد-19. وتشمل أدوار التمريض التثقيف ومتابعة الحالات والترصد والإبلاغ.",
-                  "الوقاية تعتمد على طريقة انتقال كل مرض، مع التثقيف والنظافة والتطعيم والإجراءات المناسبة."
-                ]
+                {
+                  "en": "A communicable disease is caused by an infectious agent that can pass from a source or reservoir to a susceptible host.",
+                  "ar": "المرض المعدي ينتج عن عامل مُعدٍ يمكن أن ينتقل من مصدر أو مستودع للعدوى إلى شخص قابل للإصابة.",
+                  "simple": "لفهم العدوى لازم نعرف الميكروب جاي منين، بيخرج إزاي، وبينتقل بإيه، ويدخل جسم مين."
+                },
+                {
+                  "en": "The chain of infection includes the infectious agent, reservoir, portal of exit, mode of transmission, portal of entry and susceptible host.",
+                  "ar": "تتكون سلسلة العدوى من العامل المسبب، ومستودع العدوى، ومنفذ الخروج، وطريقة الانتقال، ومنفذ الدخول، والعائل القابل للإصابة.",
+                  "simple": "كسر أي حلقة من السلسلة يساعد على منع انتقال العدوى؛ زي غسل اليدين أو التطعيم أو العزل حسب الحالة."
+                },
+                {
+                  "en": "The textbook explains terms such as infection, endemic, epidemic, pandemic, incubation period, elimination and eradication.",
+                  "ar": "يشرح الكتاب مصطلحات مثل العدوى، والتوطن، والوباء، والجائحة، وفترة الحضانة، والاستئصال الإقليمي، والقضاء العالمي على المرض.",
+                  "simple": "فرق مهم: Endemic وجود معتاد في منطقة، Epidemic زيادة فوق المتوقع، Pandemic انتشار واسع عالمي."
+                },
+                {
+                  "en": "Examples in the source include HIV, hepatitis C, pulmonary tuberculosis, typhoid and COVID-19; nursing roles include education, case management, surveillance and reporting.",
+                  "ar": "من أمثلة الكتاب: فيروس HIV، والتهاب الكبد C، والدرن الرئوي، والتيفود، وكوفيد-19. وتشمل أدوار التمريض التثقيف ومتابعة الحالات والترصد والإبلاغ.",
+                  "simple": "الوقاية تعتمد على طريقة انتقال كل مرض، مع التثقيف والنظافة والتطعيم والإجراءات المناسبة."
+                }
               ]
             },
             {
@@ -1194,26 +1194,26 @@
               "type": "bilingual",
               "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
               "points": [
-                [
-                  "Non-communicable diseases are chronic conditions that do not result from an infectious process and are not transmitted between people.",
-                  "الأمراض غير المعدية حالات مزمنة لا تنتج عن عملية عدوى ولا تنتقل من شخص لآخر.",
-                  "يعني المرض مش سببه ميكروب بينتقل؛ غالبًا بتتداخل عوامل وراثية وسلوكية وبيئية."
-                ],
-                [
-                  "The textbook lists risk factors such as heredity, obesity, age, high sodium intake, diabetes, smoking and physical inactivity.",
-                  "يذكر الكتاب عوامل خطر مثل الوراثة والسمنة والتقدم في العمر وزيادة الصوديوم والسكري والتدخين وقلة النشاط البدني.",
-                  "عوامل الخطر بتزود الاحتمال لكنها مش معناها إن الإصابة حتمية."
-                ],
-                [
-                  "Examples covered are ischemic heart disease, diabetes mellitus, cancer and COPD, including their basic features, assessment and management topics.",
-                  "تشمل الأمثلة مرض القلب الإقفاري والسكري والسرطان ومرض الانسداد الرئوي المزمن، مع عرض السمات الأساسية والتقييم والعلاج في الكتاب.",
-                  "كل مرض له طبيعة مختلفة؛ نراجع التعريف والعلامات وطرق التشخيص والوقاية ودور التمريض لكل واحد."
-                ],
-                [
-                  "Nursing care includes prevention, early detection, referral, monitoring, education and supporting adherence to the prescribed care plan.",
-                  "تشمل الرعاية التمريضية الوقاية والكشف المبكر والإحالة والمتابعة والتثقيف ومساعدة المريض على الالتزام بالخطة المقررة.",
-                  "الممرضة تتابع المؤشرات وتشرح للمريض نمط الحياة الصحي ومتى يحتاج يرجع لمقدم الرعاية."
-                ]
+                {
+                  "en": "Non-communicable diseases are chronic conditions that do not result from an infectious process and are not transmitted between people.",
+                  "ar": "الأمراض غير المعدية حالات مزمنة لا تنتج عن عملية عدوى ولا تنتقل من شخص لآخر.",
+                  "simple": "يعني المرض مش سببه ميكروب بينتقل؛ غالبًا بتتداخل عوامل وراثية وسلوكية وبيئية."
+                },
+                {
+                  "en": "The textbook lists risk factors such as heredity, obesity, age, high sodium intake, diabetes, smoking and physical inactivity.",
+                  "ar": "يذكر الكتاب عوامل خطر مثل الوراثة والسمنة والتقدم في العمر وزيادة الصوديوم والسكري والتدخين وقلة النشاط البدني.",
+                  "simple": "عوامل الخطر بتزود الاحتمال لكنها مش معناها إن الإصابة حتمية."
+                },
+                {
+                  "en": "Examples covered are ischemic heart disease, diabetes mellitus, cancer and COPD, including their basic features, assessment and management topics.",
+                  "ar": "تشمل الأمثلة مرض القلب الإقفاري والسكري والسرطان ومرض الانسداد الرئوي المزمن، مع عرض السمات الأساسية والتقييم والعلاج في الكتاب.",
+                  "simple": "كل مرض له طبيعة مختلفة؛ نراجع التعريف والعلامات وطرق التشخيص والوقاية ودور التمريض لكل واحد."
+                },
+                {
+                  "en": "Nursing care includes prevention, early detection, referral, monitoring, education and supporting adherence to the prescribed care plan.",
+                  "ar": "تشمل الرعاية التمريضية الوقاية والكشف المبكر والإحالة والمتابعة والتثقيف ومساعدة المريض على الالتزام بالخطة المقررة.",
+                  "simple": "الممرضة تتابع المؤشرات وتشرح للمريض نمط الحياة الصحي ومتى يحتاج يرجع لمقدم الرعاية."
+                }
               ]
             },
             {
@@ -1264,26 +1264,26 @@
               "type": "bilingual",
               "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
               "points": [
-                [
-                  "Vulnerable populations are groups with an increased risk of adverse health outcomes.",
-                  "الفئات الأكثر عرضة للمخاطر الصحية هي مجموعات يزيد احتمال تعرضها لنتائج صحية سلبية.",
-                  "مش معنى كده إن كل فرد في المجموعة مريض؛ المقصود إن الظروف قد تجعل الوصول للصحة أصعب أو تزيد المخاطر."
-                ],
-                [
-                  "The textbook includes lone parents, people with disabilities, older people, children, people with mental illness and people experiencing homelessness.",
-                  "تشمل الفئات المذكورة الوالد أو الوالدة المنفردين، والأشخاص ذوي الإعاقة، وكبار السن، والأطفال، ومرضى الاضطرابات النفسية، ومن لا يملكون سكنًا مستقرًا.",
-                  "كل فئة ممكن تحتاج نوع دعم مختلف حسب ظروفها واحتياجاتها."
-                ],
-                [
-                  "Care principles include empowerment, protection, prevention, proportionality, partnership and accountability.",
-                  "تشمل مبادئ الرعاية التمكين والحماية والوقاية والتناسب والشراكة والمساءلة.",
-                  "التمكين يعني نساعد الشخص يشارك ويختار، والحماية والوقاية تقلل المخاطر، والشراكة تجمع الجهات والأسرة."
-                ],
-                [
-                  "Care may involve recognition and screening, immunization, maternal and child services, assistive devices, housing support and improved access to healthcare.",
-                  "قد تشمل الرعاية التعرف على الفئات وتقييمها، والتطعيم، وخدمات الأم والطفل، والأجهزة المساعدة، ودعم السكن وتحسين الوصول للرعاية الصحية.",
-                  "المطلوب إزالة العوائق وتوفير الخدمة المناسبة باحترام وكرامة."
-                ]
+                {
+                  "en": "Vulnerable populations are groups with an increased risk of adverse health outcomes.",
+                  "ar": "الفئات الأكثر عرضة للمخاطر الصحية هي مجموعات يزيد احتمال تعرضها لنتائج صحية سلبية.",
+                  "simple": "مش معنى كده إن كل فرد في المجموعة مريض؛ المقصود إن الظروف قد تجعل الوصول للصحة أصعب أو تزيد المخاطر."
+                },
+                {
+                  "en": "The textbook includes lone parents, people with disabilities, older people, children, people with mental illness and people experiencing homelessness.",
+                  "ar": "تشمل الفئات المذكورة الوالد أو الوالدة المنفردين، والأشخاص ذوي الإعاقة، وكبار السن، والأطفال، ومرضى الاضطرابات النفسية، ومن لا يملكون سكنًا مستقرًا.",
+                  "simple": "كل فئة ممكن تحتاج نوع دعم مختلف حسب ظروفها واحتياجاتها."
+                },
+                {
+                  "en": "Care principles include empowerment, protection, prevention, proportionality, partnership and accountability.",
+                  "ar": "تشمل مبادئ الرعاية التمكين والحماية والوقاية والتناسب والشراكة والمساءلة.",
+                  "simple": "التمكين يعني نساعد الشخص يشارك ويختار، والحماية والوقاية تقلل المخاطر، والشراكة تجمع الجهات والأسرة."
+                },
+                {
+                  "en": "Care may involve recognition and screening, immunization, maternal and child services, assistive devices, housing support and improved access to healthcare.",
+                  "ar": "قد تشمل الرعاية التعرف على الفئات وتقييمها، والتطعيم، وخدمات الأم والطفل، والأجهزة المساعدة، ودعم السكن وتحسين الوصول للرعاية الصحية.",
+                  "simple": "المطلوب إزالة العوائق وتوفير الخدمة المناسبة باحترام وكرامة."
+                }
               ]
             },
             {
