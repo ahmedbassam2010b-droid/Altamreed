@@ -60,7 +60,9 @@ function appendLessonBlock(parent,block){
    en.append(el("span","lesson-language-label","ENGLISH • KEY IDEA"),el("p","",point.en||""));
    ar.append(el("span","lesson-language-label","الترجمة العربية"),el("p","",point.ar||""));
    simple.append(el("span","lesson-language-label","ببساطة"),el("p","",point.simple||""));
-   item.append(el("span","lesson-point-number",String(index+1).padStart(2,"0")),en,ar,simple);section.append(item);
+   item.append(el("span","lesson-point-number",String(index+1).padStart(2,"0")),en,ar,simple);
+   if(point.visual?.imageUrl){const fig=el("figure","lesson-point-visual"),img=el("img","");const imageUrl=new URL(point.visual.imageUrl,location.href);if(imageUrl.protocol==="https:"&&imageUrl.origin===location.origin){img.src=imageUrl.href;img.alt=point.visual.alt||point.visual.title||"رسم تعليمي";img.loading="lazy";img.decoding="async";fig.append(img);if(point.visual.title)fig.append(el("h4","lesson-point-visual-title",point.visual.title));if(point.visual.caption)fig.append(el("figcaption","",point.visual.caption));item.append(fig);}}
+   section.append(item);
   });
   parent.append(section);return;
  }
