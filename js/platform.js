@@ -56,7 +56,7 @@ function appendLessonBlock(parent,block){
  if(type==="paragraph"){parent.append(el("p","lesson-block-paragraph",block.text||""));return;}
  if(type==="image"){try{const imageUrl=new URL(block.url||"");if(imageUrl.protocol!=="https:")return;const fig=el("figure","lesson-figure"),img=el("img","");img.src=imageUrl.href;img.alt=block.alt||block.caption||"صورة تعليمية";img.loading="lazy";img.referrerPolicy="no-referrer";fig.append(img);if(block.caption)fig.append(el("figcaption","",block.caption));parent.append(fig);}catch(error){console.warn("Skipped an invalid lesson image URL.");}return;}
  if(type==="illustrated"){try{
-  const imageUrl=new URL(block.imageUrl||"");if(imageUrl.protocol!=="https:")throw new Error("Only HTTPS images are allowed");
+  const imageUrl=new URL(block.imageUrl||"",location.href);if(imageUrl.protocol!=="https:"||imageUrl.origin!==location.origin)throw new Error("Only same-origin HTTPS lesson images are allowed");
   const section=el("section","lesson-illustrated-block"),copy=el("div","lesson-illustrated-copy"),fig=el("figure","lesson-illustrated-figure"),img=el("img","lesson-inline-svg");
   if(block.title)copy.append(el("h3","lesson-illustrated-title",block.title));
   if(block.text)copy.append(el("p","lesson-block-paragraph",block.text));
