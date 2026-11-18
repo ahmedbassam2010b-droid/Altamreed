@@ -57,9 +57,9 @@ function appendLessonBlock(parent,block){
   if(block.title)section.append(el("h3","lesson-bilingual-title",block.title));
   (block.points||[]).forEach((point,index)=>{
    const item=el("article","lesson-bilingual-point"),en=el("div","lesson-bilingual-en"),ar=el("div","lesson-bilingual-ar"),simple=el("div","lesson-bilingual-simple");
-   en.append(el("span","lesson-language-label","ENGLISH • KEY IDEA"),el("p","",point[0]||""));
-   ar.append(el("span","lesson-language-label","الترجمة العربية"),el("p","",point[1]||""));
-   simple.append(el("span","lesson-language-label","ببساطة"),el("p","",point[2]||""));
+   en.append(el("span","lesson-language-label","ENGLISH • KEY IDEA"),el("p","",point.en||""));
+   ar.append(el("span","lesson-language-label","الترجمة العربية"),el("p","",point.ar||""));
+   simple.append(el("span","lesson-language-label","ببساطة"),el("p","",point.simple||""));
    item.append(el("span","lesson-point-number",String(index+1).padStart(2,"0")),en,ar,simple);section.append(item);
   });
   parent.append(section);return;
