@@ -218,3 +218,5 @@ body[data-page="daily-challenge"] .platform-heading:after{content:"⚡";backgrou
 .lesson-focus-visual figcaption{margin-top:.65rem;text-align:center;color:#52718d;font-size:.88rem}
 .lesson-visual-title{margin:.75rem 0 0;text-align:center;color:#123b68}
 @media(max-width:640px){.lesson-bilingual-point{padding:3.8rem .85rem .9rem}.lesson-point-number{left:auto;right:.85rem;top:.75rem}.lesson-focus-visual{padding:.55rem;border-radius:16px}}
+
+.lesson-point-visual{margin:18px 0 4px;padding:12px;background:#f5f9fc;border:1px solid #dce8f0;border-radius:16px}.lesson-point-visual img{display:block;width:100%;height:auto;max-height:440px;object-fit:contain;border-radius:10px}.lesson-point-visual-title{margin:10px 4px 4px;color:#153c67;font-size:15px}.lesson-point-visual figcaption{margin:4px;color:#7890a5;font-size:11px;text-align:center}
