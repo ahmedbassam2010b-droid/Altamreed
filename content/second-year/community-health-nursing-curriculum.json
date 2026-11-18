@@ -143,6 +143,22 @@
               "type": "warning",
               "title": "Educational source note",
               "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
+            },
+            {
+              "type": "heading",
+              "text": "Principles of community health nursing"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source lists these principles: services are planned according to community needs; based on identified needs and functions; health education, guidance and supervision are integrated with services; services are realistic in relation to available resources; professional relationships maintain etiquette and dignity; individuals and family members participate in decisions; services are continuous; records and reports are maintained; services are evaluated; and services are available to all without discrimination."
+            },
+            {
+              "type": "heading",
+              "text": "Roles of the community health nurse"
+            },
+            {
+              "type": "paragraph",
+              "text": "Roles named in the textbook include antenatal, intranatal and postnatal care; vaccination; coordination with clinics for immunization and wellness checks; care for children under five; education and counselling; strengthening the community's ability to address its own health problems and resources; prevention and control of communicable and non-communicable diseases; specialized services; and research."
             }
           ]
         },
@@ -211,6 +227,14 @@
               "type": "warning",
               "title": "Educational source note",
               "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
+            },
+            {
+              "type": "heading",
+              "text": "Principles of infection prevention in the source"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook groups infection-prevention advice into four areas: keep vaccinations up to date and use medicines properly as prescribed; keep clean through handwashing and careful food preparation; protect against disease carriers such as mosquitoes and unfamiliar animals; and avoid spreading illness by staying home when sick and not sharing contaminated injection equipment. This is a study summary, not a substitute for current infection-control policy."
             }
           ]
         },
@@ -283,6 +307,14 @@
               "type": "warning",
               "title": "Educational source note",
               "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
+            },
+            {
+              "type": "heading",
+              "text": "Healthcare team success factors"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source begins a seven-strategy discussion and specifically describes overcoming educational, psychological and organizational barriers; teaching structured communication (including SBAR); training teams together; practising through simulation; and defining inclusive teams with shared, cohesive goals. The textbook excerpt available for this section ends after these listed strategies."
             }
           ]
         }
@@ -393,6 +425,14 @@
               "type": "warning",
               "title": "Educational source note",
               "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
+            },
+            {
+              "type": "heading",
+              "text": "PHC team categories and nursing competencies"
+            },
+            {
+              "type": "paragraph",
+              "text": "Core teams provide direct patient care and may include nurses, dentists, pharmacists, doctors and assistants. Coordinating teams manage functions and resources. Contingency teams respond to emergencies or specific events. Ancillary teams provide support services such as cleaning. Support and administration teams provide indirect task-specific services and contribute to the overall functioning of the facility. Nursing competencies listed are advocacy and education, effective communication, teamwork and leadership, people-centred clinical practice, continuous learning and research."
             }
           ]
         },
@@ -463,6 +503,14 @@
               "type": "warning",
               "title": "Educational source note",
               "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
+            },
+            {
+              "type": "heading",
+              "text": "Maternal and child health indicators"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source defines the maternal mortality ratio as deaths from pregnancy-related causes during pregnancy or within 42 days after pregnancy termination per 100,000 live births. It names postpartum haemorrhage, hypertensive disease, antepartum haemorrhage and sepsis among major causes discussed. Antenatal care provides opportunities to prevent, detect and treat health problems. The text also highlights postnatal follow-up in the first 24–48 hours and skilled birth attendance. Child indicators include under-five mortality per 1,000 live births, vaccination coverage, exclusive breastfeeding for the first six months and child malnutrition."
             }
           ]
         }
@@ -604,6 +652,14 @@
               "type": "warning",
               "title": "Educational source note",
               "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
+            },
+            {
+              "type": "heading",
+              "text": "Public health nurse bag: textbook inventory and principles"
+            },
+            {
+              "type": "paragraph",
+              "text": "The inventory described includes paper and plastic/linen lining, apron or hand towel, soap, oral and rectal thermometers, scissors, forceps, disposable syringes and needles, sterile dressing and cotton, cord clamp, micropore tape, sterile gloves, baby scale, alcohol lamp, test tubes and selected solutions and ointments. The source states that the blood-pressure apparatus and stethoscope are carried separately. The bag should contain needed supplies, be cleaned and replenished, be protected from contact with household items, and be arranged for safe and efficient use. Follow current agency infection-prevention policy; do not treat the historical inventory as a current universal kit."
             }
           ]
         },
@@ -674,6 +730,14 @@
               "type": "warning",
               "title": "Educational source note",
               "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
+            },
+            {
+              "type": "heading",
+              "text": "Family crisis and referral"
+            },
+            {
+              "type": "paragraph",
+              "text": "A crisis is a disruption of the usual family pattern that cannot be resolved with customary coping resources. The book lists family situations, economic strain, community problems, significant life events and natural events as possible causes. The described response is to take a quick inventory, identify the crisis, act to stabilize the situation, connect the family with available resources and document while maintaining confidentiality. Referral is the transfer or consultation process used when a health worker lacks the resources, skills or equipment to manage a condition; it supports timely care at an appropriate level and efficient use of facilities."
             }
           ]
         },
@@ -937,6 +1001,30 @@
               "type": "warning",
               "title": "Educational source note",
               "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
+            },
+            {
+              "type": "heading",
+              "text": "Environmental health principles for nursing practice"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source lists ten principles: environmental-health knowledge is essential; use the precautionary principle and preventive action when harm is uncertain; nurses have a right to a safe workplace; healthy environments require multidisciplinary collaboration; choices of materials and practices should use the best available evidence; approaches should respect diverse values and cultures; nurses participate in environmental assessment; workers, patients and communities have a right to timely hazard information; nurses participate in research; and nurses should be supported in advocacy and implementation."
+            },
+            {
+              "type": "heading",
+              "text": "Areas of environmental health"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook table covers the built environment (homes, schools, workplaces, parks and transport; problems include crowding, noise and second-hand smoke); work-related exposure (asbestos, agricultural accidents and excessive X-ray exposure); outdoor air quality (gaseous pollutants, greenhouse effect, ozone depletion, pesticide spraying, acid rain and nuclear emissions); healthy homes (infestation, lead paint, sick-building syndrome, unsafe neighbourhoods and radon); water quality (human waste, oil spills, pesticides and industrial pollutants); food safety (malnutrition, bacterial food poisoning, adulteration and harmful additives); and waste management (non-biodegradable plastics, poor dumps, inadequate sewage and hazardous or radioactive waste)."
+            },
+            {
+              "type": "heading",
+              "text": "Environmental hazard effects"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source distinguishes general effects that affect a population broadly (for example unemployment, drought and extensive smog) from specific effects that affect groups with particular exposures or needs. Effects may be immediate, long-term or intergenerational. Examples in the book include burns and storm damage (immediate), occupational hearing loss and black lung (long-term), and possible effects of climate change across generations."
             }
           ]
         },
@@ -1007,6 +1095,14 @@
               "type": "warning",
               "title": "Educational source note",
               "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
+            },
+            {
+              "type": "heading",
+              "text": "Occupational health nursing priorities and competencies"
+            },
+            {
+              "type": "paragraph",
+              "text": "Priorities listed include effective primary care at worksites; health promotion; workplace stress; reducing respiratory and chemical exposure risks; hazards affecting healthcare workers; rehabilitation and return to work; ergonomics; personal protective equipment use; emergency and pandemic preparedness; and evaluation of workplace interventions. Skills include nursing-process application, first aid within protocols, physical and occupational assessment, immunization knowledge, emotional support, record keeping, clinical monitoring, emergency response and multidisciplinary case management."
             }
           ]
         },
@@ -1214,6 +1310,22 @@
               "type": "warning",
               "title": "Educational source note",
               "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
+            },
+            {
+              "type": "heading",
+              "text": "Examples of communicable diseases in the textbook"
+            },
+            {
+              "type": "paragraph",
+              "text": "The source discusses HIV, hepatitis C, pulmonary tuberculosis, typhoid and COVID-19. It describes HIV transmission through exposure of mucosal surfaces or damaged tissue to infected fluids and through contaminated needles, and lists fever, headache, muscle and joint aches, rash, sore throat, mouth sores, swollen lymph glands, diarrhoea and weight loss. Hepatitis C is described as a blood-borne liver infection; listed routes include shared injection equipment, infected needlesticks, mother-to-child transmission and sharing personal-care items. The source lists fatigue, fever, jaundice, dark urine, joint and abdominal pain, nausea and appetite loss."
+            },
+            {
+              "type": "heading",
+              "text": "Pulmonary tuberculosis, typhoid and COVID-19 in the source"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook describes pulmonary tuberculosis as commonly affecting the lungs, with direct respiratory droplets and airborne spread; symptoms listed include appetite and weight loss, fever, night sweats, fatigue, persistent cough and increasing breathlessness. Typhoid is described as a food- and water-borne infection transmitted by the faecal–oral route; the source lists malaise, coated tongue, headache, cough, abdominal pain, rose spots and possible bowel changes and enlarged liver and spleen. COVID-19 transmission is described through respiratory particles and contaminated surfaces; listed symptoms include pain, headache, fatigue, breathlessness, anxiety, depression, fever, chronic cough and sleep problems. Prevention examples in the source include hygiene, safe food and water, vaccination, ventilation and reducing exposure. Follow current public-health guidance for present-day recommendations."
             }
           ]
         },
@@ -1284,6 +1396,14 @@
               "type": "warning",
               "title": "Educational source note",
               "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
+            },
+            {
+              "type": "heading",
+              "text": "Disease-specific study outline"
+            },
+            {
+              "type": "paragraph",
+              "text": "Ischaemic heart disease: the source discusses stable and variant angina, unstable angina and myocardial infarction, symptoms, ECG and cardiac markers, echocardiography and categories of medical and interventional management. Diabetes mellitus: the source lists medical nutrition therapy, exercise and medication categories, including insulin for type 1 diabetes and oral medicines for some people with type 2 diabetes. Cancer: classification includes carcinoma, sarcoma, leukaemia and lymphoma; diagnostic topics include biopsy, radiology, ultrasound, MRI, endoscopy, laboratory tests and cytology; treatment categories include surgery, radiation and chemotherapy. COPD: emphysema and chronic bronchitis are described, with inhalers/medicines, pulmonary rehabilitation, smoking cessation and selected surgery or transplantation as treatment topics in the book. This is descriptive study material, not individual treatment advice."
             }
           ]
         },
@@ -1360,6 +1480,14 @@
               "type": "warning",
               "title": "Educational source note",
               "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
+            },
+            {
+              "type": "heading",
+              "text": "Care approaches listed in the source"
+            },
+            {
+              "type": "paragraph",
+              "text": "The textbook's examples include recognizing vulnerable groups and screening needs; providing childhood immunization and maternal-child services; financial support for lone parents; assistive devices such as walking aids and wheelchairs; housing support for people experiencing homelessness; improving social determinants; and supporting access to community-appropriate and virtual healthcare. Application depends on current local services, rights and policy."
             }
           ]
         }
