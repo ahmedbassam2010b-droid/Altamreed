@@ -12,7 +12,8 @@
       "Dr. Abduallah Shokrey Ismail",
       "Dr. Muhammad Said Seif"
     ],
-    "note": "Paraphrased and structured study content based on the supplied textbook; original five-chapter order retained."
+    "note": "Paraphrased and structured study content based on the supplied textbook; original five-chapter order retained.",
+    "coverageNote": "The supplied PDF includes front matter and contents (pages 1–7), instructional content (pages 8–87), references (page 88), and a channel closing page (page 89). The platform course preserves the five instructional chapters and includes the textbook's two self-assessment sections and reference list."
   },
   "contentStatus": "complete",
   "editorialVerification": {
@@ -511,6 +512,26 @@
             {
               "type": "paragraph",
               "text": "The source defines the maternal mortality ratio as deaths from pregnancy-related causes during pregnancy or within 42 days after pregnancy termination per 100,000 live births. It names postpartum haemorrhage, hypertensive disease, antepartum haemorrhage and sepsis among major causes discussed. Antenatal care provides opportunities to prevent, detect and treat health problems. The text also highlights postnatal follow-up in the first 24–48 hours and skilled birth attendance. Child indicators include under-five mortality per 1,000 live births, vaccination coverage, exclusive breastfeeding for the first six months and child malnutrition."
+            },
+            {
+              "type": "heading",
+              "text": "Students’ self-assessment — source page 31"
+            },
+            {
+              "type": "paragraph",
+              "text": "1. Which team is responsible for dealing with emergencies or specific events? Options: Core teams; Coordinating teams; Contingency teams; Ancillary teams/services."
+            },
+            {
+              "type": "paragraph",
+              "text": "2. All the following represent child-health indicators, except: Infant and under-five mortality rate; Vaccination coverage; Skilled birth deliveries; Exclusive breastfeeding."
+            },
+            {
+              "type": "paragraph",
+              "text": "3. Most maternal deaths result from: Postpartum haemorrhage; Diabetes mellitus; Low birth weight; Congenital anomalies."
+            },
+            {
+              "type": "paragraph",
+              "text": "4. Discuss the role of the community nurse in maternal and child health care."
             }
           ]
         }
@@ -872,6 +893,26 @@
               "type": "warning",
               "title": "Educational source note",
               "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
+            },
+            {
+              "type": "heading",
+              "text": "Students’ self-assessment — source page 53"
+            },
+            {
+              "type": "paragraph",
+              "text": "1. Which activities should a school nurse include when preparing for flu season? Select all that apply: teaching to reuse tissues; providing hand sanitizers; instructing on handwashing; advising students to stay home when febrile; administering flu vaccinations."
+            },
+            {
+              "type": "paragraph",
+              "text": "2. During an initial home visit, after the wife provides information about an elderly client, which action should the nurse take next? Agree on appropriate interventions with the family; create nursing diagnoses; assess the wider community environment; or confirm the information with the client."
+            },
+            {
+              "type": "paragraph",
+              "text": "3. Discuss the role of the community nurse in family health services."
+            },
+            {
+              "type": "paragraph",
+              "text": "4. Explain the process of the referral system."
             }
           ]
         }
@@ -1493,5 +1534,13 @@
         }
       ]
     }
+  ],
+  "references": [
+    "Gangadharan, S., & Hemamalini, M. (2021). Community Health Nursing: Framework for Practice: Vol 2-E-Book. Elsevier Health Sciences.",
+    "Rector, C., & Stanley, M. J. (2020). Community and public health nursing. Lippincott Williams & Wilkins.",
+    "Schoon, P. M., & Porta, C. M. (2023). Population-Based Public Health Clinical Manual: Using EBP to Transform Policy in Nursing and Healthcare. Sigma Theta Tau.",
+    "Sharma, M., & Branscum, P. W. (2020). Introduction to community and public health. John Wiley & Sons.",
+    "Stanhope, M., & Lancaster, J. (2021). Foundations for population health in community/public health nursing-E-book. Elsevier Health Sciences.",
+    "Chilton, S., & Bain, H. (2025). A textbook of community nursing. Third edition. Routledge."
   ]
 }
