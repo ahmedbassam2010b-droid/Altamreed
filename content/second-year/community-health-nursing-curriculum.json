@@ -24,9 +24,9 @@
     "sourceOrderPreserved": true,
     "lessonSummariesRewritten": true,
     "bilingualExplanations": true,
-    "visualAssetsExpected": 45,
-    "visualStyle": "Three dedicated medical education illustrations per lesson, displayed beside their matching bilingual key ideas",
-    "pointVisualCoverage": "45 individual visuals linked to the first three key ideas in all 15 lessons"
+    "visualAssetsExpected": 56,
+    "visualStyle": "One independent educational illustration for every bilingual key idea, placed within its matching point card",
+    "pointVisualCoverage": "56 individual illustrations linked to 56 bilingual key ideas across all 15 lessons"
   },
   "chapters": [
     {
@@ -115,8 +115,8 @@
                   "simple": "يعني التمريض هنا مش مقتصر على المستشفى؛ الممرضة بتشتغل مع الأفراد والأسر والسكان لتعزيز الصحة والوقاية والتثقيف.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/community-nursing-1.svg",
-                    "alt": "Community health nursing — Community-based nursing",
-                    "title": "Community-based nursing",
+                    "alt": "Community health nursing — Core concept",
+                    "title": "Core concept",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -126,8 +126,8 @@
                   "simple": "احفظ الفرق: Community = ناس بينهم ترابط واهتمامات، Society = مجموعة اجتماعية أوسع لها تفاعل ونظام مشترك.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/community-nursing-2.svg",
-                    "alt": "Community health nursing — Population-focused care",
-                    "title": "Population-focused care",
+                    "alt": "Community health nursing — Care pathway",
+                    "title": "Care pathway",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -137,15 +137,21 @@
                   "simple": "دور الممرضة يبدأ قبل المرض؛ فهي تساعد المجتمع يحافظ على صحته ويعرف يتصرف صح.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/community-nursing-3.svg",
-                    "alt": "Community health nursing — Health promotion roles",
-                    "title": "Health promotion roles",
+                    "alt": "Community health nursing — Assessment and action",
+                    "title": "Assessment and action",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
                 {
                   "en": "Services should be planned around community needs, participation, continuity, fair access, records and evaluation.",
                   "ar": "تُخطط الخدمات حسب احتياجات المجتمع، مع مشاركة الناس واستمرار الخدمة وعدالة الوصول وتوثيق العمل وتقييمه.",
-                  "simple": "الخدمة الناجحة لازم تكون مناسبة لاحتياج الناس، مستمرة، متاحة للجميع، ونعرف نقيس نتيجتها."
+                  "simple": "الخدمة الناجحة لازم تكون مناسبة لاحتياج الناس، مستمرة، متاحة للجميع، ونعرف نقيس نتيجتها.",
+                  "visual": {
+                    "imageUrl": "assets/illustrations/community-health/community-nursing-4.svg",
+                    "alt": "Community health nursing — Integrated practice",
+                    "title": "Integrated practice",
+                    "caption": "بوابة التمريض | Bawabet Al Tamreed"
+                  }
                 }
               ]
             },
@@ -192,8 +198,8 @@
                   "simple": "ممكن شخص ماعندوش مرض واضح لكنه مش في حالة صحة كاملة لو عنده مشكلة نفسية أو اجتماعية مؤثرة.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/health-illness-1.svg",
-                    "alt": "Health and illness — Dimensions of health",
-                    "title": "Dimensions of health",
+                    "alt": "Health and illness — Core concept",
+                    "title": "Core concept",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -203,8 +209,8 @@
                   "simple": "الصحة مش مسؤولية الشخص وحده؛ الدخل والتعليم والسكن والمياه والخدمات الصحية والدعم الاجتماعي كلها بتأثر.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/health-illness-2.svg",
-                    "alt": "Health and illness — Determinants of health",
-                    "title": "Determinants of health",
+                    "alt": "Health and illness — Care pathway",
+                    "title": "Care pathway",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -214,15 +220,21 @@
                   "simple": "مثال سريع: التطعيم وقاية أولية، الفحص المبكر ثانوية، والتأهيل بعد الجلطة ثالثية.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/health-illness-3.svg",
-                    "alt": "Health and illness — Prevention levels",
-                    "title": "Prevention levels",
+                    "alt": "Health and illness — Assessment and action",
+                    "title": "Assessment and action",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
                 {
                   "en": "The textbook links healthy living with activity, balanced diet, sleep, stress management, social support and avoiding tobacco.",
                   "ar": "يربط الكتاب نمط الحياة الصحي بالنشاط والغذاء المتوازن والنوم الكافي وإدارة التوتر والدعم الاجتماعي والابتعاد عن التبغ.",
-                  "simple": "العادات اليومية بتتجمع مع بعض وبتأثر في صحة الإنسان على المدى الطويل."
+                  "simple": "العادات اليومية بتتجمع مع بعض وبتأثر في صحة الإنسان على المدى الطويل.",
+                  "visual": {
+                    "imageUrl": "assets/illustrations/community-health/health-illness-4.svg",
+                    "alt": "Health and illness — Integrated practice",
+                    "title": "Integrated practice",
+                    "caption": "بوابة التمريض | Bawabet Al Tamreed"
+                  }
                 }
               ]
             },
@@ -271,8 +283,8 @@
                   "simple": "المريض مش مسؤولية شخص واحد؛ كل تخصص بيكمل التخصصات التانية.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/healthcare-team-1.svg",
-                    "alt": "Healthcare team — Multidisciplinary team",
-                    "title": "Multidisciplinary team",
+                    "alt": "Healthcare team — Core concept",
+                    "title": "Core concept",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -282,8 +294,8 @@
                   "simple": "كل عضو له دور محدد: تشخيص، رعاية، تحاليل، أدوية، تصوير، تغذية أو دعم اجتماعي وروحي.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/healthcare-team-2.svg",
-                    "alt": "Healthcare team — Referral and coordination",
-                    "title": "Referral and coordination",
+                    "alt": "Healthcare team — Care pathway",
+                    "title": "Care pathway",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -293,8 +305,8 @@
                   "simple": "لما الفريق يتكلم بوضوح ويفهم دور بعض، تقل الأخطاء ويتحسن تنسيق الرعاية.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/healthcare-team-3.svg",
-                    "alt": "Healthcare team — Shared care planning",
-                    "title": "Shared care planning",
+                    "alt": "Healthcare team — Assessment and action",
+                    "title": "Assessment and action",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 }
@@ -385,8 +397,8 @@
                   "simple": "هي نقطة الرعاية القريبة من الناس، ومش مجرد علاج نزلة برد؛ بتتابع احتياجات الإنسان الصحية عبر مراحل حياته.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/primary-health-care-1.svg",
-                    "alt": "Primary health care — Essential PHC principles",
-                    "title": "Essential PHC principles",
+                    "alt": "Primary health care — Core concept",
+                    "title": "Core concept",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -396,8 +408,8 @@
                   "simple": "يعني نهتم بالخدمة الطبية وبأسباب الصحة خارج العيادة، ونساعد الناس يشاركوا في قرارات صحتهم.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/primary-health-care-2.svg",
-                    "alt": "Primary health care — Accessible health services",
-                    "title": "Accessible health services",
+                    "alt": "Primary health care — Care pathway",
+                    "title": "Care pathway",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -407,15 +419,21 @@
                   "simple": "الخدمة لازم توصل للغني والفقير والريف والمدينة، وتستخدم أدوات مناسبة، وتتعاون مع التعليم والمياه والبيئة.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/primary-health-care-3.svg",
-                    "alt": "Primary health care — Community participation",
-                    "title": "Community participation",
+                    "alt": "Primary health care — Assessment and action",
+                    "title": "Assessment and action",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
                 {
                   "en": "PHC nurses advocate for patients, communicate effectively, work in teams, provide people-centred care and keep learning.",
                   "ar": "ممرضة الرعاية الأولية تدافع عن حقوق المريض، وتتواصل بفعالية، وتعمل ضمن فريق، وتقدم رعاية تتمحور حول الشخص وتواصل التعلم.",
-                  "simple": "الممرضة هنا حلقة وصل بين المريض والخدمات، وبتساعده يفهم حقوقه ويشارك في خطة الرعاية."
+                  "simple": "الممرضة هنا حلقة وصل بين المريض والخدمات، وبتساعده يفهم حقوقه ويشارك في خطة الرعاية.",
+                  "visual": {
+                    "imageUrl": "assets/illustrations/community-health/primary-health-care-4.svg",
+                    "alt": "Primary health care — Integrated practice",
+                    "title": "Integrated practice",
+                    "caption": "بوابة التمريض | Bawabet Al Tamreed"
+                  }
                 }
               ]
             },
@@ -463,8 +481,8 @@
                   "simple": "صحة الأم والطفل مرتبطين؛ متابعة الأم بتنعكس على صحة الطفل ونموه.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/maternal-child-1.svg",
-                    "alt": "Maternal and child health — Antenatal care pathway",
-                    "title": "Antenatal care pathway",
+                    "alt": "Maternal and child health — Core concept",
+                    "title": "Core concept",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -474,8 +492,8 @@
                   "simple": "تغذية الأم ومتابعتها أثناء الحمل مش موضوع منفصل؛ ليهم تأثير مباشر على بداية حياة الطفل.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/maternal-child-2.svg",
-                    "alt": "Maternal and child health — Maternal-newborn continuum",
-                    "title": "Maternal-newborn continuum",
+                    "alt": "Maternal and child health — Care pathway",
+                    "title": "Care pathway",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -485,15 +503,21 @@
                   "simple": "الخدمات بتبدأ بمتابعة الأم، وتكمل مع الولادة والرضاعة والتطعيم ومتابعة نمو الطفل.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/maternal-child-3.svg",
-                    "alt": "Maternal and child health — Child growth monitoring",
-                    "title": "Child growth monitoring",
+                    "alt": "Maternal and child health — Assessment and action",
+                    "title": "Assessment and action",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
                 {
                   "en": "The nurse supports antenatal care, fetal and child growth monitoring, breastfeeding, immunization, nutrition education, family planning and service coordination.",
                   "ar": "تدعم الممرضة متابعة الحمل ونمو الجنين والطفل والرضاعة الطبيعية والتطعيم والتغذية وتنظيم الأسرة وتنسيق الخدمات.",
-                  "simple": "دور الممرضة عملي وتثقيفي وإداري وبحثي؛ بتتابع وتشرح وتنسق وتكتشف المشكلات مبكرًا."
+                  "simple": "دور الممرضة عملي وتثقيفي وإداري وبحثي؛ بتتابع وتشرح وتنسق وتكتشف المشكلات مبكرًا.",
+                  "visual": {
+                    "imageUrl": "assets/illustrations/community-health/maternal-child-4.svg",
+                    "alt": "Maternal and child health — Integrated practice",
+                    "title": "Integrated practice",
+                    "caption": "بوابة التمريض | Bawabet Al Tamreed"
+                  }
                 }
               ]
             },
@@ -613,8 +637,8 @@
                   "simple": "بدل ما كل الرعاية تحصل داخل المستشفى، بعض الخدمات ممكن تتقدم في البيت حسب حالة المريض واحتياجه.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/home-visiting-1.svg",
-                    "alt": "Home health care and home visiting — Home visit assessment",
-                    "title": "Home visit assessment",
+                    "alt": "Home health care and home visiting — Core concept",
+                    "title": "Core concept",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -624,8 +648,8 @@
                   "simple": "كل خدمة لها متخصص: الطبيعي للحركة، والوظيفي للأنشطة اليومية، وعلاج النطق للكلام والبلع.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/home-visiting-2.svg",
-                    "alt": "Home health care and home visiting — Visit planning sequence",
-                    "title": "Visit planning sequence",
+                    "alt": "Home health care and home visiting — Care pathway",
+                    "title": "Care pathway",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -635,15 +659,21 @@
                   "simple": "الممرضة مش بتزور البيت للعلاج فقط؛ بتلاحظ ظروف المعيشة واحتياجات الأسرة وتخطط معاهم.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/home-visiting-3.svg",
-                    "alt": "Home health care and home visiting — Home safety and teaching",
-                    "title": "Home safety and teaching",
+                    "alt": "Home health care and home visiting — Assessment and action",
+                    "title": "Assessment and action",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
                 {
                   "en": "The textbook emphasizes purposeful planning, family participation, flexibility, need-based priorities, respectful relationships and evaluation.",
                   "ar": "يركز الكتاب على أن تكون الزيارة بهدف واضح، وبمشاركة الأسرة، ومرنة، ومبنية على الاحتياجات والأولويات والعلاقة المهنية والتقييم.",
-                  "simple": "قبل الزيارة نراجع المعلومات ونحدد الهدف، وأثناءها نسمع للأسرة ونلاحظ البيئة، وبعدها نقيم النتيجة."
+                  "simple": "قبل الزيارة نراجع المعلومات ونحدد الهدف، وأثناءها نسمع للأسرة ونلاحظ البيئة، وبعدها نقيم النتيجة.",
+                  "visual": {
+                    "imageUrl": "assets/illustrations/community-health/home-visiting-4.svg",
+                    "alt": "Home health care and home visiting — Integrated practice",
+                    "title": "Integrated practice",
+                    "caption": "بوابة التمريض | Bawabet Al Tamreed"
+                  }
                 }
               ]
             },
@@ -691,8 +721,8 @@
                   "simple": "بدل ما نبص لكل فرد بمعزل عن الباقي، بنفهم تأثير العلاقات والظروف المنزلية على صحة الأسرة كلها.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/family-health-1.svg",
-                    "alt": "Family health care — Family as a care unit",
-                    "title": "Family as a care unit",
+                    "alt": "Family health care — Core concept",
+                    "title": "Core concept",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -702,8 +732,8 @@
                   "simple": "التقييم بيسأل: مين أفراد الأسرة؟ إزاي بيتعاملوا؟ ظروفهم إيه؟ وإيه احتياجاتهم الصحية؟",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/family-health-2.svg",
-                    "alt": "Family health care — Family assessment domains",
-                    "title": "Family assessment domains",
+                    "alt": "Family health care — Care pathway",
+                    "title": "Care pathway",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -713,15 +743,21 @@
                   "simple": "كل أداة بتكشف جانب مختلف: العلاقات خارج الأسرة، التاريخ العائلي، شبكة المساندة، والأمراض المتكررة.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/family-health-3.svg",
-                    "alt": "Family health care — Family nursing process",
-                    "title": "Family nursing process",
+                    "alt": "Family health care — Assessment and action",
+                    "title": "Assessment and action",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
                 {
                   "en": "The family nursing process follows assessment, diagnosis, planning, implementation and evaluation.",
                   "ar": "تمر عملية تمريض الأسرة بخمس مراحل: التقييم، والتشخيص التمريضي، والتخطيط، والتنفيذ، والتقييم النهائي.",
-                  "simple": "افتكر الترتيب: نجمع البيانات، نحدد المشكلة، نخطط، ننفذ، وبعدها نشوف الخطة نجحت ولا محتاجة تعديل."
+                  "simple": "افتكر الترتيب: نجمع البيانات، نحدد المشكلة، نخطط، ننفذ، وبعدها نشوف الخطة نجحت ولا محتاجة تعديل.",
+                  "visual": {
+                    "imageUrl": "assets/illustrations/community-health/family-health-4.svg",
+                    "alt": "Family health care — Integrated practice",
+                    "title": "Integrated practice",
+                    "caption": "بوابة التمريض | Bawabet Al Tamreed"
+                  }
                 }
               ]
             },
@@ -768,8 +804,8 @@
                   "simple": "المدرسة مكان للتعلم والصحة معًا؛ بنحافظ على سلامة الطالب ونكتشف المشكلات بدري.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/school-health-1.svg",
-                    "alt": "School health services — School health components",
-                    "title": "School health components",
+                    "alt": "School health services — Core concept",
+                    "title": "Core concept",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -779,8 +815,8 @@
                   "simple": "الخدمات مش كشف طبي فقط؛ بتشمل البيئة والنظافة والتغذية والدعم النفسي والتوعية.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/school-health-2.svg",
-                    "alt": "School health services — Screening and referral",
-                    "title": "Screening and referral",
+                    "alt": "School health services — Care pathway",
+                    "title": "Care pathway",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -790,8 +826,8 @@
                   "simple": "الممرضة بتكون حلقة وصل؛ تلاحظ المشكلة، تبلغ الأسرة، وتنسق الإحالة والمتابعة.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/school-health-3.svg",
-                    "alt": "School health services — Health education at school",
-                    "title": "Health education at school",
+                    "alt": "School health services — Assessment and action",
+                    "title": "Assessment and action",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 }
@@ -839,8 +875,8 @@
                   "simple": "الفكرة مش علاج المرض بس؛ كمان نساعد المسن يحافظ على استقلاليته وجودة حياته.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/elderly-care-1.svg",
-                    "alt": "Elderly health services — Healthy ageing domains",
-                    "title": "Healthy ageing domains",
+                    "alt": "Elderly health services — Core concept",
+                    "title": "Core concept",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -850,8 +886,8 @@
                   "simple": "الخدمة ممكن تكون في مركز صحي، أو زيارة للمسن في المجتمع أو دار الرعاية، مع متابعة وتنظيم البيانات.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/elderly-care-2.svg",
-                    "alt": "Elderly health services — Comprehensive geriatric assessment",
-                    "title": "Comprehensive geriatric assessment",
+                    "alt": "Elderly health services — Care pathway",
+                    "title": "Care pathway",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -861,8 +897,8 @@
                   "simple": "احتياجات المسن غالبًا متداخلة؛ لذلك التعاون بين التخصصات مهم.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/elderly-care-3.svg",
-                    "alt": "Elderly health services — Elderly support network",
-                    "title": "Elderly support network",
+                    "alt": "Elderly health services — Assessment and action",
+                    "title": "Assessment and action",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 }
@@ -971,8 +1007,8 @@
                   "simple": "الهواء والمياه والغذاء والسكن والعمل والنفايات كلها ممكن تأثر في صحة الناس.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/environmental-health-1.svg",
-                    "alt": "Environmental health — Environmental determinants",
-                    "title": "Environmental determinants",
+                    "alt": "Environmental health — Core concept",
+                    "title": "Core concept",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -982,8 +1018,8 @@
                   "simple": "بنقسم البيئة لمجالات عشان نعرف نحدد مصدر الخطر ونختار طريقة الوقاية.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/environmental-health-2.svg",
-                    "alt": "Environmental health — Water sanitation and waste",
-                    "title": "Water sanitation and waste",
+                    "alt": "Environmental health — Care pathway",
+                    "title": "Care pathway",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -993,15 +1029,21 @@
                   "simple": "مش كل ضرر بيظهر في نفس الوقت؛ بعض التأثيرات سريعة وبعضها بيتراكم مع التعرض.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/environmental-health-3.svg",
-                    "alt": "Environmental health — Healthy environment cycle",
-                    "title": "Healthy environment cycle",
+                    "alt": "Environmental health — Assessment and action",
+                    "title": "Assessment and action",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
                 {
                   "en": "Nurses assess environmental risks, educate communities, support safe environments and collaborate on environmental-health action.",
                   "ar": "تقيّم الممرضة المخاطر البيئية، وتثقف المجتمع، وتدعم توفير بيئة آمنة، وتتعاون في إجراءات حماية الصحة البيئية.",
-                  "simple": "دور الممرضة يشمل ملاحظة الخطر وتوعية الناس والتعاون مع الجهات المسؤولة."
+                  "simple": "دور الممرضة يشمل ملاحظة الخطر وتوعية الناس والتعاون مع الجهات المسؤولة.",
+                  "visual": {
+                    "imageUrl": "assets/illustrations/community-health/environmental-health-4.svg",
+                    "alt": "Environmental health — Integrated practice",
+                    "title": "Integrated practice",
+                    "caption": "بوابة التمريض | Bawabet Al Tamreed"
+                  }
                 }
               ]
             },
@@ -1049,8 +1091,8 @@
                   "simple": "الممرضة المهنية تهتم بصحة العامل أثناء العمل، وتساعد في منع الإصابات والأمراض المرتبطة بالمهنة.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/occupational-health-1.svg",
-                    "alt": "Occupational health nursing — Workplace hazard groups",
-                    "title": "Workplace hazard groups",
+                    "alt": "Occupational health nursing — Core concept",
+                    "title": "Core concept",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -1060,8 +1102,8 @@
                   "simple": "مثال: الدم قد ينقل عدوى، والمواد الكيميائية قد تسبب تسممًا، والضوضاء قد تؤثر في السمع، والضغط النفسي يؤثر في الصحة.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/occupational-health-2.svg",
-                    "alt": "Occupational health nursing — Risk assessment process",
-                    "title": "Risk assessment process",
+                    "alt": "Occupational health nursing — Care pathway",
+                    "title": "Care pathway",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -1071,8 +1113,8 @@
                   "simple": "الممرضة تتابع صحة العاملين وتدربهم على الوقاية وتساعد في التعامل مع الإصابات والعودة الآمنة للعمل.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/occupational-health-3.svg",
-                    "alt": "Occupational health nursing — Prevention hierarchy",
-                    "title": "Prevention hierarchy",
+                    "alt": "Occupational health nursing — Assessment and action",
+                    "title": "Assessment and action",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 }
@@ -1121,8 +1163,8 @@
                   "simple": "المشكلة مش في المكان نفسه؛ التحدي أحيانًا إن الوصول للطبيب أو المستشفى والمواصلات أصعب.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/rural-health-1.svg",
-                    "alt": "Rural health — Rural access barriers",
-                    "title": "Rural access barriers",
+                    "alt": "Rural health — Core concept",
+                    "title": "Core concept",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -1132,8 +1174,8 @@
                   "simple": "بعض المناطق الريفية بتواجه عبئًا صحيًا أكبر بسبب عوامل الوصول والبيئة والظروف الاجتماعية.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/rural-health-2.svg",
-                    "alt": "Rural health — Community outreach model",
-                    "title": "Community outreach model",
+                    "alt": "Rural health — Care pathway",
+                    "title": "Care pathway",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -1143,15 +1185,21 @@
                   "simple": "الممرضة تساعد في تقليل الفجوة عن طريق التوعية والتنسيق والإحالة وربط السكان بالخدمات.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/rural-health-3.svg",
-                    "alt": "Rural health — Rural referral pathway",
-                    "title": "Rural referral pathway",
+                    "alt": "Rural health — Assessment and action",
+                    "title": "Assessment and action",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
                 {
                   "en": "The rural nurse may act as advocate, coordinator, teacher, referral agent, mentor, researcher, collaborator and change agent.",
                   "ar": "قد تعمل الممرضة الريفية كمدافعة عن المريض، ومنسقة، ومعلمة صحية، ومسؤولة إحالة، ومرشدة، وباحثة، ومتعاونة ومحفزة للتغيير.",
-                  "simple": "دورها واسع لأنها قريبة من المجتمع وبتساعد الناس يوصلوا للخدمات المناسبة."
+                  "simple": "دورها واسع لأنها قريبة من المجتمع وبتساعد الناس يوصلوا للخدمات المناسبة.",
+                  "visual": {
+                    "imageUrl": "assets/illustrations/community-health/rural-health-4.svg",
+                    "alt": "Rural health — Integrated practice",
+                    "title": "Integrated practice",
+                    "caption": "بوابة التمريض | Bawabet Al Tamreed"
+                  }
                 }
               ]
             },
@@ -1266,8 +1314,8 @@
                   "simple": "لفهم العدوى لازم نعرف الميكروب جاي منين، بيخرج إزاي، وبينتقل بإيه، ويدخل جسم مين.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/communicable-diseases-1.svg",
-                    "alt": "Communicable diseases — Chain of infection",
-                    "title": "Chain of infection",
+                    "alt": "Communicable diseases — Core concept",
+                    "title": "Core concept",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -1277,8 +1325,8 @@
                   "simple": "كسر أي حلقة من السلسلة يساعد على منع انتقال العدوى؛ زي غسل اليدين أو التطعيم أو العزل حسب الحالة.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/communicable-diseases-2.svg",
-                    "alt": "Communicable diseases — Breaking transmission",
-                    "title": "Breaking transmission",
+                    "alt": "Communicable diseases — Care pathway",
+                    "title": "Care pathway",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -1288,15 +1336,21 @@
                   "simple": "فرق مهم: Endemic وجود معتاد في منطقة، Epidemic زيادة فوق المتوقع، Pandemic انتشار واسع عالمي.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/communicable-diseases-3.svg",
-                    "alt": "Communicable diseases — Surveillance and control",
-                    "title": "Surveillance and control",
+                    "alt": "Communicable diseases — Assessment and action",
+                    "title": "Assessment and action",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
                 {
                   "en": "Examples in the source include HIV, hepatitis C, pulmonary tuberculosis, typhoid and COVID-19; nursing roles include education, case management, surveillance and reporting.",
                   "ar": "من أمثلة الكتاب: فيروس HIV، والتهاب الكبد C، والدرن الرئوي، والتيفود، وكوفيد-19. وتشمل أدوار التمريض التثقيف ومتابعة الحالات والترصد والإبلاغ.",
-                  "simple": "الوقاية تعتمد على طريقة انتقال كل مرض، مع التثقيف والنظافة والتطعيم والإجراءات المناسبة."
+                  "simple": "الوقاية تعتمد على طريقة انتقال كل مرض، مع التثقيف والنظافة والتطعيم والإجراءات المناسبة.",
+                  "visual": {
+                    "imageUrl": "assets/illustrations/community-health/communicable-diseases-4.svg",
+                    "alt": "Communicable diseases — Integrated practice",
+                    "title": "Integrated practice",
+                    "caption": "بوابة التمريض | Bawabet Al Tamreed"
+                  }
                 }
               ]
             },
@@ -1344,8 +1398,8 @@
                   "simple": "يعني المرض مش سببه ميكروب بينتقل؛ غالبًا بتتداخل عوامل وراثية وسلوكية وبيئية.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/noncommunicable-diseases-1.svg",
-                    "alt": "Non-communicable diseases — Major NCD groups",
-                    "title": "Major NCD groups",
+                    "alt": "Non-communicable diseases — Core concept",
+                    "title": "Core concept",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -1355,8 +1409,8 @@
                   "simple": "عوامل الخطر بتزود الاحتمال لكنها مش معناها إن الإصابة حتمية.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/noncommunicable-diseases-2.svg",
-                    "alt": "Non-communicable diseases — Shared risk factors",
-                    "title": "Shared risk factors",
+                    "alt": "Non-communicable diseases — Care pathway",
+                    "title": "Care pathway",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -1366,15 +1420,21 @@
                   "simple": "كل مرض له طبيعة مختلفة؛ نراجع التعريف والعلامات وطرق التشخيص والوقاية ودور التمريض لكل واحد.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/noncommunicable-diseases-3.svg",
-                    "alt": "Non-communicable diseases — Prevention and control",
-                    "title": "Prevention and control",
+                    "alt": "Non-communicable diseases — Assessment and action",
+                    "title": "Assessment and action",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
                 {
                   "en": "Nursing care includes prevention, early detection, referral, monitoring, education and supporting adherence to the prescribed care plan.",
                   "ar": "تشمل الرعاية التمريضية الوقاية والكشف المبكر والإحالة والمتابعة والتثقيف ومساعدة المريض على الالتزام بالخطة المقررة.",
-                  "simple": "الممرضة تتابع المؤشرات وتشرح للمريض نمط الحياة الصحي ومتى يحتاج يرجع لمقدم الرعاية."
+                  "simple": "الممرضة تتابع المؤشرات وتشرح للمريض نمط الحياة الصحي ومتى يحتاج يرجع لمقدم الرعاية.",
+                  "visual": {
+                    "imageUrl": "assets/illustrations/community-health/noncommunicable-diseases-4.svg",
+                    "alt": "Non-communicable diseases — Integrated practice",
+                    "title": "Integrated practice",
+                    "caption": "بوابة التمريض | Bawabet Al Tamreed"
+                  }
                 }
               ]
             },
@@ -1425,8 +1485,8 @@
                   "simple": "مش معنى كده إن كل فرد في المجموعة مريض؛ المقصود إن الظروف قد تجعل الوصول للصحة أصعب أو تزيد المخاطر.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/vulnerable-populations-1.svg",
-                    "alt": "Vulnerable population and care — Vulnerability factors",
-                    "title": "Vulnerability factors",
+                    "alt": "Vulnerable population and care — Core concept",
+                    "title": "Core concept",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -1436,8 +1496,8 @@
                   "simple": "كل فئة ممكن تحتاج نوع دعم مختلف حسب ظروفها واحتياجاتها.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/vulnerable-populations-2.svg",
-                    "alt": "Vulnerable population and care — Equity-focused care",
-                    "title": "Equity-focused care",
+                    "alt": "Vulnerable population and care — Care pathway",
+                    "title": "Care pathway",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
@@ -1447,15 +1507,21 @@
                   "simple": "التمكين يعني نساعد الشخص يشارك ويختار، والحماية والوقاية تقلل المخاطر، والشراكة تجمع الجهات والأسرة.",
                   "visual": {
                     "imageUrl": "assets/illustrations/community-health/vulnerable-populations-3.svg",
-                    "alt": "Vulnerable population and care — Support and advocacy",
-                    "title": "Support and advocacy",
+                    "alt": "Vulnerable population and care — Assessment and action",
+                    "title": "Assessment and action",
                     "caption": "بوابة التمريض | Bawabet Al Tamreed"
                   }
                 },
                 {
                   "en": "Care may involve recognition and screening, immunization, maternal and child services, assistive devices, housing support and improved access to healthcare.",
                   "ar": "قد تشمل الرعاية التعرف على الفئات وتقييمها، والتطعيم، وخدمات الأم والطفل، والأجهزة المساعدة، ودعم السكن وتحسين الوصول للرعاية الصحية.",
-                  "simple": "المطلوب إزالة العوائق وتوفير الخدمة المناسبة باحترام وكرامة."
+                  "simple": "المطلوب إزالة العوائق وتوفير الخدمة المناسبة باحترام وكرامة.",
+                  "visual": {
+                    "imageUrl": "assets/illustrations/community-health/vulnerable-populations-4.svg",
+                    "alt": "Vulnerable population and care — Integrated practice",
+                    "title": "Integrated practice",
+                    "caption": "بوابة التمريض | Bawabet Al Tamreed"
+                  }
                 }
               ]
             },
