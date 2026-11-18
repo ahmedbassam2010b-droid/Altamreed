@@ -52,6 +52,25 @@ async function chapter(){
 }
 function appendLessonBlock(parent,block){
  const type=block.type||"paragraph";
+ if(type==="bilingual"){
+  const section=el("section","lesson-bilingual-block");
+  if(block.title)section.append(el("h3","lesson-bilingual-title",block.title));
+  (block.points||[]).forEach((point,index)=>{
+   const item=el("article","lesson-bilingual-point"),en=el("div","lesson-bilingual-en"),ar=el("div","lesson-bilingual-ar"),simple=el("div","lesson-bilingual-simple");
+   en.append(el("span","lesson-language-label","ENGLISH • KEY IDEA"),el("p","",point[0]||""));
+   ar.append(el("span","lesson-language-label","الترجمة العربية"),el("p","",point[1]||""));
+   simple.append(el("span","lesson-language-label","ببساطة"),el("p","",point[2]||""));
+   item.append(el("span","lesson-point-number",String(index+1).padStart(2,"0")),en,ar,simple);section.append(item);
+  });
+  parent.append(section);return;
+ }
+ if(type==="visual"){
+  const fig=el("figure","lesson-focus-visual"),img=el("img",""),imageUrl=new URL(block.imageUrl||"",location.href);
+  if(imageUrl.protocol!=="https:"||imageUrl.origin!==location.origin)return;
+  img.src=imageUrl.href;img.alt=block.alt||block.title||"رسم تعليمي";img.loading="lazy";img.decoding="async";fig.append(img);
+  if(block.title)fig.append(el("h3","lesson-visual-title",block.title));
+  if(block.caption)fig.append(el("figcaption","",block.caption));parent.append(fig);return;
+ }
  if(type==="heading"||type==="subheading"){parent.append(el(type==="heading"?"h2":"h3","lesson-block-heading",block.text||""));return;}
  if(type==="paragraph"){parent.append(el("p","lesson-block-paragraph",block.text||""));return;}
  if(type==="image"){try{const imageUrl=new URL(block.url||"");if(imageUrl.protocol!=="https:")return;const fig=el("figure","lesson-figure"),img=el("img","");img.src=imageUrl.href;img.alt=block.alt||block.caption||"صورة تعليمية";img.loading="lazy";img.referrerPolicy="no-referrer";fig.append(img);if(block.caption)fig.append(el("figcaption","",block.caption));parent.append(fig);}catch(error){console.warn("Skipped an invalid lesson image URL.");}return;}
