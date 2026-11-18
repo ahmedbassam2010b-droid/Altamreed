@@ -1,5 +1,7 @@
 (() => {
   "use strict";
+  if (document.getElementById("bawabet-official-footer")) return;
+
   const isNested = window.location.pathname.includes("/simulations/");
   const prefix = isNested ? "../" : "";
   const links = [
@@ -10,6 +12,7 @@
     ["سياسة الخصوصية", "privacy.html"],
     ["شروط الاستخدام", "terms.html"]
   ];
+
   const style = document.createElement("style");
   style.id = "bawabet-official-footer-style";
   style.textContent = `
@@ -23,9 +26,11 @@
     .bawabet-official-footer__copy{width:100%;padding-top:12px;border-top:1px solid #ffffff25;color:#b8cad9;font-size:11px}
     @media(max-width:640px){.bawabet-official-footer{padding:20px 16px calc(18px + env(safe-area-inset-bottom))}.bawabet-official-footer__inner{display:block}.bawabet-official-footer__links{margin-top:12px;gap:12px 16px}.bawabet-official-footer__links li{max-width:100%}.bawabet-official-footer__copy{margin-top:16px}}
   `;
-  if (!document.getElementById(style.id)) document.head.appendChild(style);
+  document.head.appendChild(style);
+
   const existing = document.querySelector("footer.landing-footer");
   const footer = existing || document.createElement("footer");
+  footer.id = "bawabet-official-footer";
   footer.classList.add("bawabet-official-footer");
   footer.setAttribute("aria-label", "روابط بوابة التمريض الرسمية");
   footer.innerHTML = `
@@ -36,7 +41,33 @@
           ${links.map(([label, href]) => `<li><a href="${prefix + href}">${label}</a></li>`).join("")}
         </ul>
       </nav>
-      <div class="bawabet-official-footer__copy">© 2026 بوابة التمريض. جميع الحقوق محفوظة.</div>
+      <div class="bawabet-official-footer__copy">© ${new Date().getFullYear()} بوابة التمريض. جميع الحقوق محفوظة.</div>
     </div>`;
   if (!existing) document.body.appendChild(footer);
+
+  // Never leave the initial loading message spinning forever if a module or
+  // network request fails before the page app can finish booting.
+  window.setTimeout(() => {
+    const root = document.getElementById("appRoot");
+    const loader = root && [...root.querySelectorAll(".platform-empty")]
+      .find(node => node.textContent.trim() === "جاري التحميل...");
+    if (loader) {
+      loader.dataset.bootFallback = "true";
+      loader.setAttribute("role", "status");
+      loader.textContent = "تعذر إكمال تحميل الصفحة. تحقق من الاتصال ثم أعد المحاولة.";
+      const retry = document.createElement("button");
+      retry.type = "button";
+      retry.className = "btn btn-secondary";
+      retry.textContent = "إعادة المحاولة";
+      retry.addEventListener("click", () => window.location.reload());
+      loader.appendChild(document.createElement("br"));
+      loader.appendChild(retry);
+    }
+
+    const adminStatus = document.getElementById("adminStatus");
+    if (adminStatus && adminStatus.textContent.includes("جاري التحقق")) {
+      adminStatus.textContent = "تأخر تحميل لوحة الإدارة. تحقق من الاتصال ثم أعد تحميل الصفحة.";
+      adminStatus.dataset.state = "error";
+    }
+  }, 15000);
 })();
