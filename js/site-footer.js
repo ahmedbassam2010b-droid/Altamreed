@@ -24,8 +24,9 @@
     @media(max-width:640px){.bawabet-official-footer{padding:20px 16px calc(18px + env(safe-area-inset-bottom))}.bawabet-official-footer__inner{display:block}.bawabet-official-footer__links{margin-top:12px;gap:12px 16px}.bawabet-official-footer__links li{max-width:100%}.bawabet-official-footer__copy{margin-top:16px}}
   `;
   if (!document.getElementById(style.id)) document.head.appendChild(style);
-  const existing = document.querySelector("footer.landing-footer");
-  const footer = existing || document.createElement("footer");
+  if (document.getElementById("bawabet-official-footer")) return;
+  const footer = document.createElement("footer");
+  footer.id = "bawabet-official-footer";
   footer.classList.add("bawabet-official-footer");
   footer.setAttribute("aria-label", "روابط بوابة التمريض الرسمية");
   footer.innerHTML = `
@@ -38,5 +39,5 @@
       </nav>
       <div class="bawabet-official-footer__copy">© 2026 بوابة التمريض. جميع الحقوق محفوظة.</div>
     </div>`;
-  if (!existing) document.body.appendChild(footer);
+  document.body.appendChild(footer);
 })();
