@@ -12,7 +12,7 @@
       "Dr. Abduallah Shokrey Ismail",
       "Dr. Muhammad Said Seif"
     ],
-    "note": "Paraphrased and structured study content based on the supplied textbook; original five-chapter order retained.",
+    "note": "A concise, reorganized study summary derived from the supplied textbook. Each lesson includes English key ideas, Arabic translation, a plain-Arabic explanation, and a dedicated visual teaching aid. The original chapter and lesson order is preserved.",
     "coverageNote": "The supplied PDF includes front matter and contents (pages 1–7), instructional content (pages 8–87), references (page 88), and a channel closing page (page 89). The platform course preserves the five instructional chapters and includes the textbook's two self-assessment sections and reference list."
   },
   "contentStatus": "complete",
@@ -22,7 +22,10 @@
     "chapterCount": 5,
     "lessonCount": 15,
     "sourceOrderPreserved": true,
-    "visualAssetsExpected": 15
+    "lessonSummariesRewritten": true,
+    "bilingualExplanations": true,
+    "visualAssetsExpected": 15,
+    "visualStyle": "single-concept medical teaching diagrams"
   },
   "chapters": [
     {
@@ -98,68 +101,51 @@
           ],
           "contentBlocks": [
             {
-              "type": "illustrated",
-              "title": "Community health nursing",
-              "text": "Community health nursing, also called public health nursing or community nursing, combines primary health care and nursing practice in community settings. Community health nurses provide health services, preventive care, intervention and health education to populations. The textbook emphasizes a shift from focusing only on sick people toward supporting well people, individuals, families and communities.",
-              "imageUrl": "assets/illustrations/community-health/lesson-01-01.svg",
-              "alt": "Educational diagram: Community health nursing",
-              "caption": "COMMUNITY HEALTH NURSING • Chapter 1 — Community Health Nursing • Bawabet Al Tamreed"
-            },
-            {
               "type": "heading",
-              "text": "Core explanation"
+              "text": "Study summary | ملخص الدرس"
             },
             {
-              "type": "paragraph",
-              "text": "Community health nursing, also called public health nursing or community nursing, combines primary health care and nursing practice in community settings. Community health nurses provide health services, preventive care, intervention and health education to populations. The textbook emphasizes a shift from focusing only on sick people toward supporting well people, individuals, families and communities."
-            },
-            {
-              "type": "paragraph",
-              "text": "A community is a collection of people who interact and share interests or characteristics that create belonging. Society is a group of individuals in continuing social interaction who share a territory or social space and common cultural expectations. The source distinguishes public health as organized community action to prevent disease, prolong life and promote health, while community health refers to community health status, health problems and the total care provided."
-            },
-            {
-              "type": "heading",
-              "text": "Main points from the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "The source's ANA definition describes community health nursing as promoting and protecting population health using nursing, social and public-health sciences. Goals include promoting health and efficiency; preventing and controlling disease and disability; improving individual, family and community well-being; reducing disparities; and providing direct and indirect support."
-            },
-            {
-              "type": "keypoint",
-              "title": "بالعربي | الخلاصة",
-              "text": "تمريض صحة المجتمع يجمع بين الرعاية الصحية الأولية وممارسة التمريض داخل المجتمع، ويركز على تعزيز صحة السكان والوقاية والتثقيف الصحي."
-            },
-            {
-              "type": "list",
-              "items": [
-                "Community",
-                "Society",
-                "Public health",
-                "Population health",
-                "Community assessment"
+              "type": "bilingual",
+              "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
+              "points": [
+                [
+                  "Community health nursing combines nursing practice with primary health care in community settings.",
+                  "يجمع تمريض صحة المجتمع بين ممارسة التمريض والرعاية الصحية الأولية داخل المجتمع.",
+                  "يعني التمريض هنا مش مقتصر على المستشفى؛ الممرضة بتشتغل مع الأفراد والأسر والسكان لتعزيز الصحة والوقاية والتثقيف."
+                ],
+                [
+                  "A community is people connected by interaction and shared interests; a society is a wider group linked by ongoing social interaction and shared territory or culture.",
+                  "المجتمع المحلي مجموعة أشخاص بينهم تفاعل واهتمامات مشتركة، أما المجتمع بالمعنى الأوسع فهو مجموعة تربطها علاقات اجتماعية مستمرة ومكان أو ثقافة مشتركة.",
+                  "احفظ الفرق: Community = ناس بينهم ترابط واهتمامات، Society = مجموعة اجتماعية أوسع لها تفاعل ونظام مشترك."
+                ],
+                [
+                  "The nurse promotes health, prevents disease, supports families, coordinates services, educates people and contributes to research.",
+                  "ممرضة صحة المجتمع تعزز الصحة، وتمنع المرض، وتدعم الأسرة، وتنسق الخدمات، وتثقف الناس وتشارك في البحث.",
+                  "دور الممرضة يبدأ قبل المرض؛ فهي تساعد المجتمع يحافظ على صحته ويعرف يتصرف صح."
+                ],
+                [
+                  "Services should be planned around community needs, participation, continuity, fair access, records and evaluation.",
+                  "تُخطط الخدمات حسب احتياجات المجتمع، مع مشاركة الناس واستمرار الخدمة وعدالة الوصول وتوثيق العمل وتقييمه.",
+                  "الخدمة الناجحة لازم تكون مناسبة لاحتياج الناس، مستمرة، متاحة للجميع، ونعرف نقيس نتيجتها."
+                ]
               ]
             },
             {
+              "type": "visual",
+              "title": "Visual learning | التوضيح البصري",
+              "imageUrl": "assets/illustrations/community-health/community-nursing.svg",
+              "alt": "Educational medical diagram for Community health nursing",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة سريعة",
+              "text": "يعني التمريض هنا مش مقتصر على المستشفى؛ الممرضة بتشتغل مع الأفراد والأسر والسكان لتعزيز الصحة والوقاية والتثقيف. احفظ الفرق: Community = ناس بينهم ترابط واهتمامات، Society = مجموعة اجتماعية أوسع لها تفاعل ونظام مشترك. دور الممرضة يبدأ قبل المرض؛ فهي تساعد المجتمع يحافظ على صحته ويعرف يتصرف صح. الخدمة الناجحة لازم تكون مناسبة لاحتياج الناس، مستمرة، متاحة للجميع، ونعرف نقيس نتيجتها."
+            },
+            {
               "type": "warning",
-              "title": "Educational source note",
-              "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
-            },
-            {
-              "type": "heading",
-              "text": "Principles of community health nursing"
-            },
-            {
-              "type": "paragraph",
-              "text": "The source lists these principles: services are planned according to community needs; based on identified needs and functions; health education, guidance and supervision are integrated with services; services are realistic in relation to available resources; professional relationships maintain etiquette and dignity; individuals and family members participate in decisions; services are continuous; records and reports are maintained; services are evaluated; and services are available to all without discrimination."
-            },
-            {
-              "type": "heading",
-              "text": "Roles of the community health nurse"
-            },
-            {
-              "type": "paragraph",
-              "text": "Roles named in the textbook include antenatal, intranatal and postnatal care; vaccination; coordination with clinics for immunization and wellness checks; care for children under five; education and counselling; strengthening the community's ability to address its own health problems and resources; prevention and control of communicable and non-communicable diseases; specialized services; and research."
+              "title": "ملاحظة دراسية",
+              "text": "هذا الملخص مبني على موضوعات الكتاب والصفحات المحددة لهذا الدرس. أي أرقام أو إرشادات علاجية واردة في المصدر تُراجع مع أحدث تعليمات الجهة التعليمية والبروتوكولات المعتمدة قبل استخدامها سريريًا."
             }
           ]
         },
@@ -181,61 +167,51 @@
           ],
           "contentBlocks": [
             {
-              "type": "illustrated",
-              "title": "Health and illness",
-              "text": "The textbook presents the WHO definition of health as complete physical, mental and social well-being, not merely the absence of disease or infirmity. Health is therefore broader than the presence or absence of symptoms.",
-              "imageUrl": "assets/illustrations/community-health/lesson-01-02.svg",
-              "alt": "Educational diagram: Health and illness",
-              "caption": "COMMUNITY HEALTH NURSING • Chapter 1 — Community Health Nursing • Bawabet Al Tamreed"
-            },
-            {
               "type": "heading",
-              "text": "Core explanation"
+              "text": "Study summary | ملخص الدرس"
             },
             {
-              "type": "paragraph",
-              "text": "The textbook presents the WHO definition of health as complete physical, mental and social well-being, not merely the absence of disease or infirmity. Health is therefore broader than the presence or absence of symptoms."
-            },
-            {
-              "type": "paragraph",
-              "text": "Disease is a condition that impairs normal body function and homeostasis. The source discusses organ or system dysfunction, infection, and signs and symptoms as indicators of disturbed health. Determinants include social and economic conditions, the physical environment, individual characteristics and behaviours, income and social status, education, safe housing and roads, social support, genetics, health services and gender."
-            },
-            {
-              "type": "heading",
-              "text": "Main points from the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "The healthy-lifestyle section discusses physical activity, close family ties, healthy diet, sufficient sleep, stress management, varied hobbies, social connections and avoiding tobacco. Prevention has three levels: primary (prevent disease before it occurs, e.g. education and immunization); secondary (early detection and treatment, e.g. screening); and tertiary (reduce effects of established illness, e.g. rehabilitation and chronic-disease support)."
-            },
-            {
-              "type": "keypoint",
-              "title": "بالعربي | الخلاصة",
-              "text": "الصحة مفهوم شامل بدني ونفسي واجتماعي. مستويات الوقاية ثلاثة: أولية قبل حدوث المرض، وثانوية للكشف المبكر، وثالثية لتقليل آثار المرض القائم."
-            },
-            {
-              "type": "list",
-              "items": [
-                "Health",
-                "Disease",
-                "Determinants",
-                "Primary prevention",
-                "Secondary prevention",
-                "Tertiary prevention"
+              "type": "bilingual",
+              "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
+              "points": [
+                [
+                  "WHO describes health as complete physical, mental and social well-being, not merely the absence of disease.",
+                  "تعرّف منظمة الصحة العالمية الصحة بأنها اكتمال السلامة البدنية والنفسية والاجتماعية، وليس مجرد غياب المرض.",
+                  "ممكن شخص ماعندوش مرض واضح لكنه مش في حالة صحة كاملة لو عنده مشكلة نفسية أو اجتماعية مؤثرة."
+                ],
+                [
+                  "Disease disturbs normal body function or homeostasis. Health is influenced by social, economic, physical, genetic and behavioral factors.",
+                  "المرض اضطراب يؤثر في وظيفة الجسم الطبيعية أو اتزانه الداخلي. وتتأثر الصحة بعوامل اجتماعية واقتصادية وبيئية ووراثية وسلوكية.",
+                  "الصحة مش مسؤولية الشخص وحده؛ الدخل والتعليم والسكن والمياه والخدمات الصحية والدعم الاجتماعي كلها بتأثر."
+                ],
+                [
+                  "Primary prevention acts before disease; secondary prevention detects disease early; tertiary prevention reduces the effects of established disease.",
+                  "الوقاية الأولية تمنع المرض قبل حدوثه، والثانوية تكتشفه مبكرًا، والثالثية تقلل مضاعفات المرض الموجود.",
+                  "مثال سريع: التطعيم وقاية أولية، الفحص المبكر ثانوية، والتأهيل بعد الجلطة ثالثية."
+                ],
+                [
+                  "The textbook links healthy living with activity, balanced diet, sleep, stress management, social support and avoiding tobacco.",
+                  "يربط الكتاب نمط الحياة الصحي بالنشاط والغذاء المتوازن والنوم الكافي وإدارة التوتر والدعم الاجتماعي والابتعاد عن التبغ.",
+                  "العادات اليومية بتتجمع مع بعض وبتأثر في صحة الإنسان على المدى الطويل."
+                ]
               ]
             },
             {
+              "type": "visual",
+              "title": "Visual learning | التوضيح البصري",
+              "imageUrl": "assets/illustrations/community-health/health-prevention-levels.svg",
+              "alt": "Educational medical diagram for Health and illness",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة سريعة",
+              "text": "ممكن شخص ماعندوش مرض واضح لكنه مش في حالة صحة كاملة لو عنده مشكلة نفسية أو اجتماعية مؤثرة. الصحة مش مسؤولية الشخص وحده؛ الدخل والتعليم والسكن والمياه والخدمات الصحية والدعم الاجتماعي كلها بتأثر. مثال سريع: التطعيم وقاية أولية، الفحص المبكر ثانوية، والتأهيل بعد الجلطة ثالثية. العادات اليومية بتتجمع مع بعض وبتأثر في صحة الإنسان على المدى الطويل."
+            },
+            {
               "type": "warning",
-              "title": "Educational source note",
-              "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
-            },
-            {
-              "type": "heading",
-              "text": "Principles of infection prevention in the source"
-            },
-            {
-              "type": "paragraph",
-              "text": "The textbook groups infection-prevention advice into four areas: keep vaccinations up to date and use medicines properly as prescribed; keep clean through handwashing and careful food preparation; protect against disease carriers such as mosquitoes and unfamiliar animals; and avoid spreading illness by staying home when sick and not sharing contaminated injection equipment. This is a study summary, not a substitute for current infection-control policy."
+              "title": "ملاحظة دراسية",
+              "text": "هذا الملخص مبني على موضوعات الكتاب والصفحات المحددة لهذا الدرس. أي أرقام أو إرشادات علاجية واردة في المصدر تُراجع مع أحدث تعليمات الجهة التعليمية والبروتوكولات المعتمدة قبل استخدامها سريريًا."
             }
           ]
         },
@@ -259,63 +235,46 @@
           ],
           "contentBlocks": [
             {
-              "type": "illustrated",
-              "title": "Healthcare team",
-              "text": "A healthcare team is a group of professionals who contribute to patient care and treatment. Each member has a defined area of expertise, and team members work together to address diagnostic, treatment, physical, emotional and supportive needs.",
-              "imageUrl": "assets/illustrations/community-health/lesson-01-03.svg",
-              "alt": "Educational diagram: Healthcare team",
-              "caption": "COMMUNITY HEALTH NURSING • Chapter 1 — Community Health Nursing • Bawabet Al Tamreed"
-            },
-            {
               "type": "heading",
-              "text": "Core explanation"
+              "text": "Study summary | ملخص الدرس"
             },
             {
-              "type": "paragraph",
-              "text": "A healthcare team is a group of professionals who contribute to patient care and treatment. Each member has a defined area of expertise, and team members work together to address diagnostic, treatment, physical, emotional and supportive needs."
-            },
-            {
-              "type": "paragraph",
-              "text": "The source lists physicians, registered nurses, pathologists, pharmacists, radiologists, dieticians, social workers and spiritual leaders. Primary-care doctors focus on preventive care such as check-ups, immunization and counselling; specialists work in defined clinical fields. Nurses provide care, administer medication and coordinate with other team members."
-            },
-            {
-              "type": "heading",
-              "text": "Main points from the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "Pathologists examine body fluids and tissues; pharmacists check medication quality and safety, dispense and store drugs; radiologists use imaging; dieticians assess nutritional needs; social workers support home-care and social needs; spiritual leaders address spiritual needs. Team efficiency improves by overcoming collaboration barriers, using structured communication such as SBAR, training together, simulation and shared inclusive goals."
-            },
-            {
-              "type": "keypoint",
-              "title": "بالعربي | الخلاصة",
-              "text": "الفريق الصحي مجموعة تخصصات متكاملة، ونجاحه يعتمد على وضوح الأدوار والتواصل المنظم والتدريب والعمل نحو أهداف مشتركة."
-            },
-            {
-              "type": "list",
-              "items": [
-                "Physician",
-                "Registered nurse",
-                "Pathologist",
-                "Pharmacist",
-                "Radiologist",
-                "Dietician",
-                "Social worker",
-                "Spiritual leader"
+              "type": "bilingual",
+              "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
+              "points": [
+                [
+                  "A healthcare team is a group of professionals who contribute different skills to patient care and treatment.",
+                  "الفريق الصحي مجموعة من المتخصصين، كل واحد فيهم بيقدم مهارة مختلفة لرعاية المريض وعلاجه.",
+                  "المريض مش مسؤولية شخص واحد؛ كل تخصص بيكمل التخصصات التانية."
+                ],
+                [
+                  "The textbook lists physicians, registered nurses, pathologists, pharmacists, radiologists, dieticians, social workers and spiritual leaders.",
+                  "يذكر الكتاب الطبيب، والممرض، وأخصائي الباثولوجي، والصيدلي، وأخصائي الأشعة، وأخصائي التغذية، والأخصائي الاجتماعي والمرشد الروحي.",
+                  "كل عضو له دور محدد: تشخيص، رعاية، تحاليل، أدوية، تصوير، تغذية أو دعم اجتماعي وروحي."
+                ],
+                [
+                  "Teamwork improves through clear roles, structured communication such as SBAR, joint training, simulation and shared goals.",
+                  "يتحسن العمل الجماعي بتحديد الأدوار، والتواصل المنظم مثل SBAR، والتدريب المشترك والمحاكاة والأهداف الموحدة.",
+                  "لما الفريق يتكلم بوضوح ويفهم دور بعض، تقل الأخطاء ويتحسن تنسيق الرعاية."
+                ]
               ]
             },
             {
+              "type": "visual",
+              "title": "Visual learning | التوضيح البصري",
+              "imageUrl": "assets/illustrations/community-health/healthcare-team.svg",
+              "alt": "Educational medical diagram for Healthcare team",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة سريعة",
+              "text": "المريض مش مسؤولية شخص واحد؛ كل تخصص بيكمل التخصصات التانية. كل عضو له دور محدد: تشخيص، رعاية، تحاليل، أدوية، تصوير، تغذية أو دعم اجتماعي وروحي. لما الفريق يتكلم بوضوح ويفهم دور بعض، تقل الأخطاء ويتحسن تنسيق الرعاية."
+            },
+            {
               "type": "warning",
-              "title": "Educational source note",
-              "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
-            },
-            {
-              "type": "heading",
-              "text": "Healthcare team success factors"
-            },
-            {
-              "type": "paragraph",
-              "text": "The source begins a seven-strategy discussion and specifically describes overcoming educational, psychological and organizational barriers; teaching structured communication (including SBAR); training teams together; practising through simulation; and defining inclusive teams with shared, cohesive goals. The textbook excerpt available for this section ends after these listed strategies."
+              "title": "ملاحظة دراسية",
+              "text": "هذا الملخص مبني على موضوعات الكتاب والصفحات المحددة لهذا الدرس. أي أرقام أو إرشادات علاجية واردة في المصدر تُراجع مع أحدث تعليمات الجهة التعليمية والبروتوكولات المعتمدة قبل استخدامها سريريًا."
             }
           ]
         }
@@ -379,61 +338,51 @@
           ],
           "contentBlocks": [
             {
-              "type": "illustrated",
-              "title": "Primary health care",
-              "text": "Primary health care (PHC) is described as a whole-of-society approach that includes health promotion, disease prevention, treatment, rehabilitation and palliative care. It addresses most health needs throughout life and is people-centred rather than disease-centred.",
-              "imageUrl": "assets/illustrations/community-health/lesson-02-01.svg",
-              "alt": "Educational diagram: Primary health care",
-              "caption": "COMMUNITY HEALTH NURSING • Chapter 2 — Primary Health Care • Bawabet Al Tamreed"
-            },
-            {
               "type": "heading",
-              "text": "Core explanation"
+              "text": "Study summary | ملخص الدرس"
             },
             {
-              "type": "paragraph",
-              "text": "Primary health care (PHC) is described as a whole-of-society approach that includes health promotion, disease prevention, treatment, rehabilitation and palliative care. It addresses most health needs throughout life and is people-centred rather than disease-centred."
-            },
-            {
-              "type": "paragraph",
-              "text": "The source groups PHC components into comprehensive care across the life course; action on wider social, economic and environmental determinants through evidence-informed policies; and empowerment of individuals, families and communities. PHC is described as inclusive, equitable, cost-effective and important for resilient health systems and early detection of public-health threats."
-            },
-            {
-              "type": "heading",
-              "text": "Main points from the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "The five principles are equitable distribution of resources, community participation, inter-sectoral coordination, appropriate healthcare technologies and decentralization. Appropriate technology should be scientifically valid, adapted to local needs, acceptable, accessible and affordable. PHC team types include core, coordinating, contingency, ancillary and support/administrative teams. Nurses advocate and educate, communicate, lead and collaborate, provide people-centred care, and continue learning and research."
-            },
-            {
-              "type": "keypoint",
-              "title": "بالعربي | الخلاصة",
-              "text": "الرعاية الصحية الأولية نهج شامل قريب من الناس، يقوم على العدالة ومشاركة المجتمع والتنسيق بين القطاعات والتكنولوجيا المناسبة واللامركزية."
-            },
-            {
-              "type": "list",
-              "items": [
-                "Primary health care",
-                "Equity",
-                "Community participation",
-                "Inter-sectoral coordination",
-                "Appropriate technology",
-                "Decentralization"
+              "type": "bilingual",
+              "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
+              "points": [
+                [
+                  "Primary health care is a whole-of-society, people-centred approach covering health promotion, prevention, treatment, rehabilitation and palliative care.",
+                  "الرعاية الصحية الأولية أسلوب شامل يشارك فيه المجتمع كله، ويركز على الإنسان ويشمل تعزيز الصحة والوقاية والعلاج والتأهيل والرعاية التلطيفية.",
+                  "هي نقطة الرعاية القريبة من الناس، ومش مجرد علاج نزلة برد؛ بتتابع احتياجات الإنسان الصحية عبر مراحل حياته."
+                ],
+                [
+                  "Its three broad components are comprehensive care across life, action on wider health determinants, and empowerment of people and communities.",
+                  "مكوناتها العامة: رعاية متكاملة طوال مراحل الحياة، والتعامل مع العوامل الأوسع المؤثرة في الصحة، وتمكين الأفراد والأسر والمجتمعات.",
+                  "يعني نهتم بالخدمة الطبية وبأسباب الصحة خارج العيادة، ونساعد الناس يشاركوا في قرارات صحتهم."
+                ],
+                [
+                  "The textbook identifies equity, community participation, inter-sectoral coordination, appropriate technology and decentralization as PHC principles.",
+                  "يحدد الكتاب العدالة في توزيع الموارد، ومشاركة المجتمع، والتنسيق بين القطاعات، والتكنولوجيا المناسبة، واللامركزية كمبادئ للرعاية الأولية.",
+                  "الخدمة لازم توصل للغني والفقير والريف والمدينة، وتستخدم أدوات مناسبة، وتتعاون مع التعليم والمياه والبيئة."
+                ],
+                [
+                  "PHC nurses advocate for patients, communicate effectively, work in teams, provide people-centred care and keep learning.",
+                  "ممرضة الرعاية الأولية تدافع عن حقوق المريض، وتتواصل بفعالية، وتعمل ضمن فريق، وتقدم رعاية تتمحور حول الشخص وتواصل التعلم.",
+                  "الممرضة هنا حلقة وصل بين المريض والخدمات، وبتساعده يفهم حقوقه ويشارك في خطة الرعاية."
+                ]
               ]
             },
             {
+              "type": "visual",
+              "title": "Visual learning | التوضيح البصري",
+              "imageUrl": "assets/illustrations/community-health/primary-health-care.svg",
+              "alt": "Educational medical diagram for Primary health care",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة سريعة",
+              "text": "هي نقطة الرعاية القريبة من الناس، ومش مجرد علاج نزلة برد؛ بتتابع احتياجات الإنسان الصحية عبر مراحل حياته. يعني نهتم بالخدمة الطبية وبأسباب الصحة خارج العيادة، ونساعد الناس يشاركوا في قرارات صحتهم. الخدمة لازم توصل للغني والفقير والريف والمدينة، وتستخدم أدوات مناسبة، وتتعاون مع التعليم والمياه والبيئة. الممرضة هنا حلقة وصل بين المريض والخدمات، وبتساعده يفهم حقوقه ويشارك في خطة الرعاية."
+            },
+            {
               "type": "warning",
-              "title": "Educational source note",
-              "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
-            },
-            {
-              "type": "heading",
-              "text": "PHC team categories and nursing competencies"
-            },
-            {
-              "type": "paragraph",
-              "text": "Core teams provide direct patient care and may include nurses, dentists, pharmacists, doctors and assistants. Coordinating teams manage functions and resources. Contingency teams respond to emergencies or specific events. Ancillary teams provide support services such as cleaning. Support and administration teams provide indirect task-specific services and contribute to the overall functioning of the facility. Nursing competencies listed are advocacy and education, effective communication, teamwork and leadership, people-centred clinical practice, continuous learning and research."
+              "title": "ملاحظة دراسية",
+              "text": "هذا الملخص مبني على موضوعات الكتاب والصفحات المحددة لهذا الدرس. أي أرقام أو إرشادات علاجية واردة في المصدر تُراجع مع أحدث تعليمات الجهة التعليمية والبروتوكولات المعتمدة قبل استخدامها سريريًا."
             }
           ]
         },
@@ -456,82 +405,51 @@
           ],
           "contentBlocks": [
             {
-              "type": "illustrated",
-              "title": "Maternal and child health",
-              "text": "Maternal and child health (MCH) covers mothers, infants, children and adolescents. Maternal health includes health before and during pregnancy, childbirth and the postpartum period. Child health concerns children's ability to develop, meet needs and interact successfully with their biological, physical and social environments.",
-              "imageUrl": "assets/illustrations/community-health/lesson-02-02.svg",
-              "alt": "Educational diagram: Maternal and child health",
-              "caption": "COMMUNITY HEALTH NURSING • Chapter 2 — Primary Health Care • Bawabet Al Tamreed"
-            },
-            {
               "type": "heading",
-              "text": "Core explanation"
+              "text": "Study summary | ملخص الدرس"
             },
             {
-              "type": "paragraph",
-              "text": "Maternal and child health (MCH) covers mothers, infants, children and adolescents. Maternal health includes health before and during pregnancy, childbirth and the postpartum period. Child health concerns children's ability to develop, meet needs and interact successfully with their biological, physical and social environments."
-            },
-            {
-              "type": "paragraph",
-              "text": "The source outlines early childhood, middle childhood and adolescence, and explains that maternal health and nutrition influence child outcomes such as birth weight, nutrition, anaemia, infection and immunity. MCH services include promotive, preventive, therapeutic and rehabilitative care. Objectives are to reduce maternal, perinatal, infant and childhood mortality and morbidity; promote reproductive health; and support physical and psychological development."
-            },
-            {
-              "type": "heading",
-              "text": "Main points from the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "Major components listed for Egypt are prenatal and postnatal care, child health and immunization, family planning and reproductive health. Maternal indicators include maternal mortality ratio, antenatal-care coverage, skilled birth delivery, postnatal-care coverage and modern family-planning use. Child indicators include infant and under-five mortality, vaccination coverage, exclusive breastfeeding and malnutrition. Nurses support antenatal care, fetal growth monitoring, screening, nutrition, breastfeeding, newborn care, immunization, maternal education, coordination, training and research."
-            },
-            {
-              "type": "keypoint",
-              "title": "بالعربي | الخلاصة",
-              "text": "صحة الأم والطفل مترابطتان، وتشمل الخدمات متابعة الحمل وما بعد الولادة، ورعاية الطفل والتطعيم وتنظيم الأسرة والتثقيف الصحي."
-            },
-            {
-              "type": "list",
-              "items": [
-                "Maternal health",
-                "Child health",
-                "MCH services",
-                "Maternal mortality ratio",
-                "Antenatal care",
-                "Immunization",
-                "Exclusive breastfeeding"
+              "type": "bilingual",
+              "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
+              "points": [
+                [
+                  "Maternal and child health covers mothers, infants, children and adolescents; maternal health spans before pregnancy, pregnancy, childbirth and the postnatal period.",
+                  "صحة الأم والطفل تشمل الأمهات والرضع والأطفال والمراهقين. وصحة الأم تمتد من قبل الحمل وخلاله وأثناء الولادة وفترة ما بعد الولادة.",
+                  "صحة الأم والطفل مرتبطين؛ متابعة الأم بتنعكس على صحة الطفل ونموه."
+                ],
+                [
+                  "The textbook links poor maternal health and inadequate nutrition with low birth weight, anemia, infections and later health risks for children.",
+                  "يربط الكتاب ضعف صحة الأم وسوء تغذيتها بانخفاض وزن المولود والأنيميا والعدوى ومخاطر صحية قد تظهر على الطفل لاحقًا.",
+                  "تغذية الأم ومتابعتها أثناء الحمل مش موضوع منفصل؛ ليهم تأثير مباشر على بداية حياة الطفل."
+                ],
+                [
+                  "MCH services include prenatal and postnatal care, child health and immunization, family planning and reproductive health.",
+                  "تشمل خدمات صحة الأم والطفل رعاية ما قبل الولادة وما بعدها، ورعاية الطفل والتطعيم، وتنظيم الأسرة والصحة الإنجابية.",
+                  "الخدمات بتبدأ بمتابعة الأم، وتكمل مع الولادة والرضاعة والتطعيم ومتابعة نمو الطفل."
+                ],
+                [
+                  "The nurse supports antenatal care, fetal and child growth monitoring, breastfeeding, immunization, nutrition education, family planning and service coordination.",
+                  "تدعم الممرضة متابعة الحمل ونمو الجنين والطفل والرضاعة الطبيعية والتطعيم والتغذية وتنظيم الأسرة وتنسيق الخدمات.",
+                  "دور الممرضة عملي وتثقيفي وإداري وبحثي؛ بتتابع وتشرح وتنسق وتكتشف المشكلات مبكرًا."
+                ]
               ]
             },
             {
+              "type": "visual",
+              "title": "Visual learning | التوضيح البصري",
+              "imageUrl": "assets/illustrations/community-health/maternal-child-care.svg",
+              "alt": "Educational medical diagram for Maternal and child health",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة سريعة",
+              "text": "صحة الأم والطفل مرتبطين؛ متابعة الأم بتنعكس على صحة الطفل ونموه. تغذية الأم ومتابعتها أثناء الحمل مش موضوع منفصل؛ ليهم تأثير مباشر على بداية حياة الطفل. الخدمات بتبدأ بمتابعة الأم، وتكمل مع الولادة والرضاعة والتطعيم ومتابعة نمو الطفل. دور الممرضة عملي وتثقيفي وإداري وبحثي؛ بتتابع وتشرح وتنسق وتكتشف المشكلات مبكرًا."
+            },
+            {
               "type": "warning",
-              "title": "Educational source note",
-              "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
-            },
-            {
-              "type": "heading",
-              "text": "Maternal and child health indicators"
-            },
-            {
-              "type": "paragraph",
-              "text": "The source defines the maternal mortality ratio as deaths from pregnancy-related causes during pregnancy or within 42 days after pregnancy termination per 100,000 live births. It names postpartum haemorrhage, hypertensive disease, antepartum haemorrhage and sepsis among major causes discussed. Antenatal care provides opportunities to prevent, detect and treat health problems. The text also highlights postnatal follow-up in the first 24–48 hours and skilled birth attendance. Child indicators include under-five mortality per 1,000 live births, vaccination coverage, exclusive breastfeeding for the first six months and child malnutrition."
-            },
-            {
-              "type": "heading",
-              "text": "Students’ self-assessment — source page 31"
-            },
-            {
-              "type": "paragraph",
-              "text": "1. Which team is responsible for dealing with emergencies or specific events? Options: Core teams; Coordinating teams; Contingency teams; Ancillary teams/services."
-            },
-            {
-              "type": "paragraph",
-              "text": "2. All the following represent child-health indicators, except: Infant and under-five mortality rate; Vaccination coverage; Skilled birth deliveries; Exclusive breastfeeding."
-            },
-            {
-              "type": "paragraph",
-              "text": "3. Most maternal deaths result from: Postpartum haemorrhage; Diabetes mellitus; Low birth weight; Congenital anomalies."
-            },
-            {
-              "type": "paragraph",
-              "text": "4. Discuss the role of the community nurse in maternal and child health care."
+              "title": "ملاحظة دراسية",
+              "text": "هذا الملخص مبني على موضوعات الكتاب والصفحات المحددة لهذا الدرس. أي أرقام أو إرشادات علاجية واردة في المصدر تُراجع مع أحدث تعليمات الجهة التعليمية والبروتوكولات المعتمدة قبل استخدامها سريريًا."
             }
           ]
         }
@@ -626,61 +544,51 @@
           ],
           "contentBlocks": [
             {
-              "type": "illustrated",
-              "title": "Home health care and home visiting",
-              "text": "Home health care supports people who are recovering, living with chronic illness or disability in their own homes. The textbook presents four perspectives: official (promote, maintain or restore health and minimize illness or disability); patient (skilled compassionate one-to-one care); family (keep the family functioning as a unit); and provider (deliver quality care in the home environment).",
-              "imageUrl": "assets/illustrations/community-health/lesson-03-01.svg",
-              "alt": "Educational diagram: Home health care and home visiting",
-              "caption": "COMMUNITY HEALTH NURSING • Chapter 3 — Community Public Health Services • Bawabet Al Tamreed"
-            },
-            {
               "type": "heading",
-              "text": "Core explanation"
+              "text": "Study summary | ملخص الدرس"
             },
             {
-              "type": "paragraph",
-              "text": "Home health care supports people who are recovering, living with chronic illness or disability in their own homes. The textbook presents four perspectives: official (promote, maintain or restore health and minimize illness or disability); patient (skilled compassionate one-to-one care); family (keep the family functioning as a unit); and provider (deliver quality care in the home environment)."
-            },
-            {
-              "type": "paragraph",
-              "text": "Services may include skilled nursing, physical therapy, occupational therapy, speech therapy, social services, intravenous therapy, nutrition support, respiratory therapy, equipment and companion care. A home visit is a planned nurse-family contact to assess the home and family situation and provide nursing care and health counselling. Purposes include care for sick people and postpartum mothers/newborns, assessing living conditions and health practices, health teaching, building agency-community relationships and connecting families with services."
-            },
-            {
-              "type": "heading",
-              "text": "Main points from the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "Principles: have a clear purpose, review available family records, prioritize essential needs, involve the individual and family in planning, and keep the plan flexible. Phases: initial (review records, introduce self and assess family/environment); action (communicate, implement nursing process, provide care and teaching); termination (review goals, document and evaluate). Steps include greeting, stating purpose, observing needs, organizing supplies safely, providing care and teaching, recording findings and arranging follow-up. The public-health bag should be maintained, protected and organized to reduce infection transfer; agency policy governs its use."
-            },
-            {
-              "type": "keypoint",
-              "title": "بالعربي | الخلاصة",
-              "text": "الزيارة المنزلية تمر بمرحلة تمهيدية للتقييم، ثم مرحلة تنفيذ الرعاية والتثقيف، ثم إنهاء وتوثيق وتقييم مع ترتيب المتابعة."
-            },
-            {
-              "type": "list",
-              "items": [
-                "Home health care",
-                "Home visit",
-                "Initial phase",
-                "Action phase",
-                "Termination phase",
-                "Public health bag"
+              "type": "bilingual",
+              "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
+              "points": [
+                [
+                  "Home health care provides health services in the patient's residence to promote, maintain or restore health and reduce the effects of illness or disability.",
+                  "الرعاية الصحية المنزلية هي تقديم خدمات صحية في منزل المريض بهدف تعزيز الصحة أو الحفاظ عليها أو استعادتها وتقليل آثار المرض أو الإعاقة.",
+                  "بدل ما كل الرعاية تحصل داخل المستشفى، بعض الخدمات ممكن تتقدم في البيت حسب حالة المريض واحتياجه."
+                ],
+                [
+                  "Services may include skilled nursing, physical and occupational therapy, speech therapy, social work, respiratory care and personal assistance.",
+                  "قد تشمل الخدمات التمريض المتخصص والعلاج الطبيعي والوظيفي وعلاج النطق والخدمة الاجتماعية ورعاية الجهاز التنفسي والمساعدة الشخصية.",
+                  "كل خدمة لها متخصص: الطبيعي للحركة، والوظيفي للأنشطة اليومية، وعلاج النطق للكلام والبلع."
+                ],
+                [
+                  "A home visit allows the nurse to assess the patient, family and home environment, provide care and health teaching, and connect the family with community services.",
+                  "تتيح الزيارة المنزلية للممرضة تقييم المريض والأسرة والبيئة المنزلية، وتقديم الرعاية والتثقيف الصحي وربط الأسرة بخدمات المجتمع.",
+                  "الممرضة مش بتزور البيت للعلاج فقط؛ بتلاحظ ظروف المعيشة واحتياجات الأسرة وتخطط معاهم."
+                ],
+                [
+                  "The textbook emphasizes purposeful planning, family participation, flexibility, need-based priorities, respectful relationships and evaluation.",
+                  "يركز الكتاب على أن تكون الزيارة بهدف واضح، وبمشاركة الأسرة، ومرنة، ومبنية على الاحتياجات والأولويات والعلاقة المهنية والتقييم.",
+                  "قبل الزيارة نراجع المعلومات ونحدد الهدف، وأثناءها نسمع للأسرة ونلاحظ البيئة، وبعدها نقيم النتيجة."
+                ]
               ]
             },
             {
+              "type": "visual",
+              "title": "Visual learning | التوضيح البصري",
+              "imageUrl": "assets/illustrations/community-health/home-visit.svg",
+              "alt": "Educational medical diagram for Home health care and home visiting",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة سريعة",
+              "text": "بدل ما كل الرعاية تحصل داخل المستشفى، بعض الخدمات ممكن تتقدم في البيت حسب حالة المريض واحتياجه. كل خدمة لها متخصص: الطبيعي للحركة، والوظيفي للأنشطة اليومية، وعلاج النطق للكلام والبلع. الممرضة مش بتزور البيت للعلاج فقط؛ بتلاحظ ظروف المعيشة واحتياجات الأسرة وتخطط معاهم. قبل الزيارة نراجع المعلومات ونحدد الهدف، وأثناءها نسمع للأسرة ونلاحظ البيئة، وبعدها نقيم النتيجة."
+            },
+            {
               "type": "warning",
-              "title": "Educational source note",
-              "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
-            },
-            {
-              "type": "heading",
-              "text": "Public health nurse bag: textbook inventory and principles"
-            },
-            {
-              "type": "paragraph",
-              "text": "The inventory described includes paper and plastic/linen lining, apron or hand towel, soap, oral and rectal thermometers, scissors, forceps, disposable syringes and needles, sterile dressing and cotton, cord clamp, micropore tape, sterile gloves, baby scale, alcohol lamp, test tubes and selected solutions and ointments. The source states that the blood-pressure apparatus and stethoscope are carried separately. The bag should contain needed supplies, be cleaned and replenished, be protected from contact with household items, and be arranged for safe and efficient use. Follow current agency infection-prevention policy; do not treat the historical inventory as a current universal kit."
+              "title": "ملاحظة دراسية",
+              "text": "هذا الملخص مبني على موضوعات الكتاب والصفحات المحددة لهذا الدرس. أي أرقام أو إرشادات علاجية واردة في المصدر تُراجع مع أحدث تعليمات الجهة التعليمية والبروتوكولات المعتمدة قبل استخدامها سريريًا."
             }
           ]
         },
@@ -703,62 +611,51 @@
           ],
           "contentBlocks": [
             {
-              "type": "illustrated",
-              "title": "Family health care",
-              "text": "The family is described as a basic social unit whose members interact in family roles and maintain a shared culture. Family health services promote health, prevent problems and support family well-being. Family nursing considers the family unit, not only an individual patient.",
-              "imageUrl": "assets/illustrations/community-health/lesson-03-02.svg",
-              "alt": "Educational diagram: Family health care",
-              "caption": "COMMUNITY HEALTH NURSING • Chapter 3 — Community Public Health Services • Bawabet Al Tamreed"
-            },
-            {
               "type": "heading",
-              "text": "Core explanation"
+              "text": "Study summary | ملخص الدرس"
             },
             {
-              "type": "paragraph",
-              "text": "The family is described as a basic social unit whose members interact in family roles and maintain a shared culture. Family health services promote health, prevent problems and support family well-being. Family nursing considers the family unit, not only an individual patient."
-            },
-            {
-              "type": "paragraph",
-              "text": "Purposes include reducing maternal and infant morbidity and mortality, spacing births, addressing malnutrition and providing health education. Scope includes reproductive, child, adolescent and mental health, gender issues and ageing. Principles include a professional relationship, understanding family structure and culture, identifying priorities, need-based support, shared problem-solving, self-sufficiency and family participation. Healthy-family characteristics include supportive interaction, individual development, effective roles, active coping, a healthy home and links with the wider community."
-            },
-            {
-              "type": "heading",
-              "text": "Main points from the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "Assessment frameworks: interactional (communication, roles, conflict, coping and decisions), structural-functional (family relationships with wider systems), and developmental (life-cycle stages and changing roles). Data categories include family structure/dynamics, socioeconomic and cultural factors, home/environment, each member's health and health practices. Tools include ecomaps, genograms, social-network maps and family health trees. The nursing process has assessment, diagnosis, planning, implementation and evaluation. Crisis intervention includes rapid assessment, identifying the crisis, action, connecting community resources and documentation. Referral transfers a client whose needs exceed available resources to a more suitable provider or facility."
-            },
-            {
-              "type": "keypoint",
-              "title": "بالعربي | الخلاصة",
-              "text": "تقييم الأسرة يستخدم مصادر بيانات وأدوات مثل Ecomap وGenogram، ثم يمر التمريض الأسري بخمس مراحل من التقييم حتى التقويم، مع الإحالة عند الحاجة."
-            },
-            {
-              "type": "list",
-              "items": [
-                "Family assessment",
-                "Ecomap",
-                "Genogram",
-                "Family nursing process",
-                "Family crisis",
-                "Referral system",
-                "Family health nurse"
+              "type": "bilingual",
+              "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
+              "points": [
+                [
+                  "Family health care focuses on the family unit, promoting health, preventing problems and supporting family well-being.",
+                  "تركز رعاية صحة الأسرة على الأسرة كوحدة واحدة، بهدف تعزيز الصحة والوقاية من المشكلات ودعم سلامة أفرادها.",
+                  "بدل ما نبص لكل فرد بمعزل عن الباقي، بنفهم تأثير العلاقات والظروف المنزلية على صحة الأسرة كلها."
+                ],
+                [
+                  "Family assessment may examine structure, relationships, socioeconomic and cultural factors, the home environment and each member's health.",
+                  "قد يشمل تقييم الأسرة تركيبها وعلاقات أفرادها وظروفها الاجتماعية والاقتصادية والثقافية والبيئة المنزلية والحالة الصحية لكل فرد.",
+                  "التقييم بيسأل: مين أفراد الأسرة؟ إزاي بيتعاملوا؟ ظروفهم إيه؟ وإيه احتياجاتهم الصحية؟"
+                ],
+                [
+                  "The textbook describes ecomaps, genograms, social support maps and family health trees as assessment tools.",
+                  "يذكر الكتاب أدوات للتقييم مثل خريطة العلاقات البيئية، وشجرة العائلة، وخريطة الدعم الاجتماعي، وشجرة التاريخ المرضي للأسرة.",
+                  "كل أداة بتكشف جانب مختلف: العلاقات خارج الأسرة، التاريخ العائلي، شبكة المساندة، والأمراض المتكررة."
+                ],
+                [
+                  "The family nursing process follows assessment, diagnosis, planning, implementation and evaluation.",
+                  "تمر عملية تمريض الأسرة بخمس مراحل: التقييم، والتشخيص التمريضي، والتخطيط، والتنفيذ، والتقييم النهائي.",
+                  "افتكر الترتيب: نجمع البيانات، نحدد المشكلة، نخطط، ننفذ، وبعدها نشوف الخطة نجحت ولا محتاجة تعديل."
+                ]
               ]
             },
             {
+              "type": "visual",
+              "title": "Visual learning | التوضيح البصري",
+              "imageUrl": "assets/illustrations/community-health/family-assessment.svg",
+              "alt": "Educational medical diagram for Family health care",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة سريعة",
+              "text": "بدل ما نبص لكل فرد بمعزل عن الباقي، بنفهم تأثير العلاقات والظروف المنزلية على صحة الأسرة كلها. التقييم بيسأل: مين أفراد الأسرة؟ إزاي بيتعاملوا؟ ظروفهم إيه؟ وإيه احتياجاتهم الصحية؟ كل أداة بتكشف جانب مختلف: العلاقات خارج الأسرة، التاريخ العائلي، شبكة المساندة، والأمراض المتكررة. افتكر الترتيب: نجمع البيانات، نحدد المشكلة، نخطط، ننفذ، وبعدها نشوف الخطة نجحت ولا محتاجة تعديل."
+            },
+            {
               "type": "warning",
-              "title": "Educational source note",
-              "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
-            },
-            {
-              "type": "heading",
-              "text": "Family crisis and referral"
-            },
-            {
-              "type": "paragraph",
-              "text": "A crisis is a disruption of the usual family pattern that cannot be resolved with customary coping resources. The book lists family situations, economic strain, community problems, significant life events and natural events as possible causes. The described response is to take a quick inventory, identify the crisis, act to stabilize the situation, connect the family with available resources and document while maintaining confidentiality. Referral is the transfer or consultation process used when a health worker lacks the resources, skills or equipment to manage a condition; it supports timely care at an appropriate level and efficient use of facilities."
+              "title": "ملاحظة دراسية",
+              "text": "هذا الملخص مبني على موضوعات الكتاب والصفحات المحددة لهذا الدرس. أي أرقام أو إرشادات علاجية واردة في المصدر تُراجع مع أحدث تعليمات الجهة التعليمية والبروتوكولات المعتمدة قبل استخدامها سريريًا."
             }
           ]
         },
@@ -780,53 +677,46 @@
           ],
           "contentBlocks": [
             {
-              "type": "illustrated",
-              "title": "School health services",
-              "text": "School health services are strategies, activities and services offered by or associated with schools to promote students' physical, emotional and social development. School nursing is a specialized practice that supports well-being, academic success, normal development, health and safety in the school environment.",
-              "imageUrl": "assets/illustrations/community-health/lesson-03-03.svg",
-              "alt": "Educational diagram: School health services",
-              "caption": "COMMUNITY HEALTH NURSING • Chapter 3 — Community Public Health Services • Bawabet Al Tamreed"
-            },
-            {
               "type": "heading",
-              "text": "Core explanation"
+              "text": "Study summary | ملخص الدرس"
             },
             {
-              "type": "paragraph",
-              "text": "School health services are strategies, activities and services offered by or associated with schools to promote students' physical, emotional and social development. School nursing is a specialized practice that supports well-being, academic success, normal development, health and safety in the school environment."
-            },
-            {
-              "type": "paragraph",
-              "text": "The source explains the importance of school health because of the large student population, rapid growth and development, opportunities for early detection of nutritional and communicable diseases, and group living. School nursing aims to support normal development, promote health and safety, address actual and potential problems, provide case management and collaborate with families and staff."
-            },
-            {
-              "type": "heading",
-              "text": "Main points from the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "Aspects include health appraisal of students and school personnel, treatment and follow-up, communicable-disease prevention, a healthy school environment, nutrition, first aid and emergency care, mental, dental and eye health, health education, support for children with disabilities and school health records. The nurse may act as direct-care provider, planner, organizer, collaborator, manager, advocate, educator, consultant, supervisor, evaluator, observer, researcher and critical thinker; the role includes screening, referral, health talks and coordination among school, family and community."
-            },
-            {
-              "type": "keypoint",
-              "title": "بالعربي | الخلاصة",
-              "text": "الخدمات الصحية المدرسية تشمل التقييم الصحي والوقاية والتغذية والإسعافات والتثقيف والسجلات، والممرضة حلقة وصل بين المدرسة والأسرة والمجتمع."
-            },
-            {
-              "type": "list",
-              "items": [
-                "School health services",
-                "School nursing",
-                "Health appraisal",
-                "Health education",
-                "School environment",
-                "Referral"
+              "type": "bilingual",
+              "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
+              "points": [
+                [
+                  "School health services combine strategies and care that support students' physical, emotional and social development.",
+                  "الخدمات الصحية المدرسية مجموعة أنشطة ورعاية تهدف لدعم نمو الطلاب البدني والنفسي والاجتماعي.",
+                  "المدرسة مكان للتعلم والصحة معًا؛ بنحافظ على سلامة الطالب ونكتشف المشكلات بدري."
+                ],
+                [
+                  "The textbook includes health appraisal, follow-up, infection prevention, a healthy environment, nutrition, first aid, mental, dental and eye health, and health education.",
+                  "تشمل الجوانب المذكورة تقييم صحة الطلاب والعاملين والمتابعة والوقاية من العدوى والبيئة الصحية والتغذية والإسعافات الأولية والصحة النفسية والأسنان والعيون والتثقيف الصحي.",
+                  "الخدمات مش كشف طبي فقط؛ بتشمل البيئة والنظافة والتغذية والدعم النفسي والتوعية."
+                ],
+                [
+                  "The school nurse provides direct care, screening and referral, health education, coordination, program planning and a link between school, family and health providers.",
+                  "تقدم ممرضة المدرسة الرعاية المباشرة والفحص والإحالة والتثقيف الصحي والتنسيق وتخطيط البرامج، وتربط المدرسة بالأسرة ومقدمي الرعاية.",
+                  "الممرضة بتكون حلقة وصل؛ تلاحظ المشكلة، تبلغ الأسرة، وتنسق الإحالة والمتابعة."
+                ]
               ]
             },
             {
+              "type": "visual",
+              "title": "Visual learning | التوضيح البصري",
+              "imageUrl": "assets/illustrations/community-health/school-health.svg",
+              "alt": "Educational medical diagram for School health services",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة سريعة",
+              "text": "المدرسة مكان للتعلم والصحة معًا؛ بنحافظ على سلامة الطالب ونكتشف المشكلات بدري. الخدمات مش كشف طبي فقط؛ بتشمل البيئة والنظافة والتغذية والدعم النفسي والتوعية. الممرضة بتكون حلقة وصل؛ تلاحظ المشكلة، تبلغ الأسرة، وتنسق الإحالة والمتابعة."
+            },
+            {
               "type": "warning",
-              "title": "Educational source note",
-              "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
+              "title": "ملاحظة دراسية",
+              "text": "هذا الملخص مبني على موضوعات الكتاب والصفحات المحددة لهذا الدرس. أي أرقام أو إرشادات علاجية واردة في المصدر تُراجع مع أحدث تعليمات الجهة التعليمية والبروتوكولات المعتمدة قبل استخدامها سريريًا."
             }
           ]
         },
@@ -847,72 +737,46 @@
           ],
           "contentBlocks": [
             {
-              "type": "illustrated",
-              "title": "Elderly health services",
-              "text": "The elderly health service described in the source aims to strengthen primary health care for older people living in the community, improve self-care, encourage healthy living and strengthen family support to reduce illness and disability.",
-              "imageUrl": "assets/illustrations/community-health/lesson-03-04.svg",
-              "alt": "Educational diagram: Elderly health services",
-              "caption": "COMMUNITY HEALTH NURSING • Chapter 3 — Community Public Health Services • Bawabet Al Tamreed"
-            },
-            {
               "type": "heading",
-              "text": "Core explanation"
+              "text": "Study summary | ملخص الدرس"
             },
             {
-              "type": "paragraph",
-              "text": "The elderly health service described in the source aims to strengthen primary health care for older people living in the community, improve self-care, encourage healthy living and strengthen family support to reduce illness and disability."
-            },
-            {
-              "type": "paragraph",
-              "text": "Clinic services provide integrated preventive, promotive and curative primary care through a multidisciplinary team. The source describes health assessment, counselling, health education and treatment for eligible older people; its stated age threshold is part of the textbook description."
-            },
-            {
-              "type": "heading",
-              "text": "Main points from the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "Outreach teams visit community and residential settings and work with other service providers to promote health awareness, self-care and quality of caregiving. Public-health and administrative functions support service operation, professional input, monitoring and research using service data."
-            },
-            {
-              "type": "keypoint",
-              "title": "بالعربي | الخلاصة",
-              "text": "رعاية كبار السن تجمع بين خدمات العيادات والزيارات المجتمعية والتثقيف ودعم الأسرة لتحسين الاعتماد على الذات وجودة الرعاية."
-            },
-            {
-              "type": "list",
-              "items": [
-                "Elderly health services",
-                "Clinic service",
-                "Outreach service",
-                "Self-care",
-                "Family support"
+              "type": "bilingual",
+              "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
+              "points": [
+                [
+                  "Elderly health services aim to improve older people's primary care, self-care ability, healthy living and family support while reducing illness and disability.",
+                  "تهدف خدمات صحة المسنين إلى تحسين الرعاية الأولية وقدرة المسن على العناية بنفسه وتشجيع نمط الحياة الصحي وتقوية دعم الأسرة وتقليل المرض والإعاقة.",
+                  "الفكرة مش علاج المرض بس؛ كمان نساعد المسن يحافظ على استقلاليته وجودة حياته."
+                ],
+                [
+                  "The textbook describes clinic services, outreach visits and public-health and administrative support.",
+                  "يذكر الكتاب خدمات العيادات، والزيارات الميدانية، وخدمات الصحة العامة والإدارة.",
+                  "الخدمة ممكن تكون في مركز صحي، أو زيارة للمسن في المجتمع أو دار الرعاية، مع متابعة وتنظيم البيانات."
+                ],
+                [
+                  "Multidisciplinary assessment, counselling, health education and curative care address older people's multiple health needs.",
+                  "يساعد التقييم متعدد التخصصات والإرشاد والتثقيف الصحي والعلاج في التعامل مع الاحتياجات الصحية المتعددة للمسنين.",
+                  "احتياجات المسن غالبًا متداخلة؛ لذلك التعاون بين التخصصات مهم."
+                ]
               ]
             },
             {
+              "type": "visual",
+              "title": "Visual learning | التوضيح البصري",
+              "imageUrl": "assets/illustrations/community-health/elderly-care.svg",
+              "alt": "Educational medical diagram for Elderly health services",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة سريعة",
+              "text": "الفكرة مش علاج المرض بس؛ كمان نساعد المسن يحافظ على استقلاليته وجودة حياته. الخدمة ممكن تكون في مركز صحي، أو زيارة للمسن في المجتمع أو دار الرعاية، مع متابعة وتنظيم البيانات. احتياجات المسن غالبًا متداخلة؛ لذلك التعاون بين التخصصات مهم."
+            },
+            {
               "type": "warning",
-              "title": "Educational source note",
-              "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
-            },
-            {
-              "type": "heading",
-              "text": "Students’ self-assessment — source page 53"
-            },
-            {
-              "type": "paragraph",
-              "text": "1. Which activities should a school nurse include when preparing for flu season? Select all that apply: teaching to reuse tissues; providing hand sanitizers; instructing on handwashing; advising students to stay home when febrile; administering flu vaccinations."
-            },
-            {
-              "type": "paragraph",
-              "text": "2. During an initial home visit, after the wife provides information about an elderly client, which action should the nurse take next? Agree on appropriate interventions with the family; create nursing diagnoses; assess the wider community environment; or confirm the information with the client."
-            },
-            {
-              "type": "paragraph",
-              "text": "3. Discuss the role of the community nurse in family health services."
-            },
-            {
-              "type": "paragraph",
-              "text": "4. Explain the process of the referral system."
+              "title": "ملاحظة دراسية",
+              "text": "هذا الملخص مبني على موضوعات الكتاب والصفحات المحددة لهذا الدرس. أي أرقام أو إرشادات علاجية واردة في المصدر تُراجع مع أحدث تعليمات الجهة التعليمية والبروتوكولات المعتمدة قبل استخدامها سريريًا."
             }
           ]
         }
@@ -994,78 +858,51 @@
           ],
           "contentBlocks": [
             {
-              "type": "illustrated",
-              "title": "Environmental health",
-              "text": "The chapter introduces environmental health as a public-health nursing concern and asks students to define environment, ecology and biosphere, explain why environmental health matters, identify environmental principles and describe areas of concern.",
-              "imageUrl": "assets/illustrations/community-health/lesson-04-01.svg",
-              "alt": "Educational diagram: Environmental health",
-              "caption": "COMMUNITY HEALTH NURSING • Chapter 4 — Environmental and Occupational Health • Bawabet Al Tamreed"
-            },
-            {
               "type": "heading",
-              "text": "Core explanation"
+              "text": "Study summary | ملخص الدرس"
             },
             {
-              "type": "paragraph",
-              "text": "The chapter introduces environmental health as a public-health nursing concern and asks students to define environment, ecology and biosphere, explain why environmental health matters, identify environmental principles and describe areas of concern."
-            },
-            {
-              "type": "paragraph",
-              "text": "The textbook discusses how environmental conditions affect health and describes immediate, long-term and intergenerational effects. Examples named in the source include occupational hearing loss, black lung among coal miners and effects associated with nuclear accidents; climate change is discussed as a possible intergenerational concern. The source highlights clean air and water, safe surroundings and protection from harmful chemicals."
-            },
-            {
-              "type": "heading",
-              "text": "Main points from the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "The nurse's role includes working with the public to support effective environmental laws and regulations; treating clean air, clean water and freedom from harmful chemicals as nursing concerns; catalysing neighbourhood action for safe environments; and incorporating environmental integrity, social justice and responsibility into health promotion. The source also describes international cooperation and monitoring in relation to climate change."
-            },
-            {
-              "type": "keypoint",
-              "title": "بالعربي | الخلاصة",
-              "text": "الصحة البيئية ترتبط بنقاء الهواء والماء وسلامة البيئة وتقليل التعرض للمواد الضارة، وللممرضة دور في التوعية والعمل المجتمعي والسياسات الوقائية."
-            },
-            {
-              "type": "list",
-              "items": [
-                "Environment",
-                "Ecology",
-                "Biosphere",
-                "Environmental health",
-                "Clean air",
-                "Clean water",
-                "Environmental policy"
+              "type": "bilingual",
+              "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
+              "points": [
+                [
+                  "Environmental health concerns external physical, chemical and biological factors that affect people and their behaviour.",
+                  "تهتم الصحة البيئية بالعوامل الخارجية الفيزيائية والكيميائية والبيولوجية التي تؤثر في الإنسان وسلوكه.",
+                  "الهواء والمياه والغذاء والسكن والعمل والنفايات كلها ممكن تأثر في صحة الناس."
+                ],
+                [
+                  "The textbook discusses built environments, work-related exposures, outdoor air, healthy homes, water quality, food safety and waste management.",
+                  "يناقش الكتاب البيئة المبنية ومخاطر العمل وجودة الهواء الخارجي وصحة المنزل وجودة المياه وسلامة الغذاء وإدارة النفايات.",
+                  "بنقسم البيئة لمجالات عشان نعرف نحدد مصدر الخطر ونختار طريقة الوقاية."
+                ],
+                [
+                  "Environmental effects may be general or specific, and may appear immediately, over the long term or across generations.",
+                  "قد تكون آثار المخاطر البيئية عامة أو محددة، وقد تظهر فورًا أو على المدى الطويل أو تمتد لأجيال لاحقة.",
+                  "مش كل ضرر بيظهر في نفس الوقت؛ بعض التأثيرات سريعة وبعضها بيتراكم مع التعرض."
+                ],
+                [
+                  "Nurses assess environmental risks, educate communities, support safe environments and collaborate on environmental-health action.",
+                  "تقيّم الممرضة المخاطر البيئية، وتثقف المجتمع، وتدعم توفير بيئة آمنة، وتتعاون في إجراءات حماية الصحة البيئية.",
+                  "دور الممرضة يشمل ملاحظة الخطر وتوعية الناس والتعاون مع الجهات المسؤولة."
+                ]
               ]
             },
             {
+              "type": "visual",
+              "title": "Visual learning | التوضيح البصري",
+              "imageUrl": "assets/illustrations/community-health/environmental-health.svg",
+              "alt": "Educational medical diagram for Environmental health",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة سريعة",
+              "text": "الهواء والمياه والغذاء والسكن والعمل والنفايات كلها ممكن تأثر في صحة الناس. بنقسم البيئة لمجالات عشان نعرف نحدد مصدر الخطر ونختار طريقة الوقاية. مش كل ضرر بيظهر في نفس الوقت؛ بعض التأثيرات سريعة وبعضها بيتراكم مع التعرض. دور الممرضة يشمل ملاحظة الخطر وتوعية الناس والتعاون مع الجهات المسؤولة."
+            },
+            {
               "type": "warning",
-              "title": "Educational source note",
-              "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
-            },
-            {
-              "type": "heading",
-              "text": "Environmental health principles for nursing practice"
-            },
-            {
-              "type": "paragraph",
-              "text": "The source lists ten principles: environmental-health knowledge is essential; use the precautionary principle and preventive action when harm is uncertain; nurses have a right to a safe workplace; healthy environments require multidisciplinary collaboration; choices of materials and practices should use the best available evidence; approaches should respect diverse values and cultures; nurses participate in environmental assessment; workers, patients and communities have a right to timely hazard information; nurses participate in research; and nurses should be supported in advocacy and implementation."
-            },
-            {
-              "type": "heading",
-              "text": "Areas of environmental health"
-            },
-            {
-              "type": "paragraph",
-              "text": "The textbook table covers the built environment (homes, schools, workplaces, parks and transport; problems include crowding, noise and second-hand smoke); work-related exposure (asbestos, agricultural accidents and excessive X-ray exposure); outdoor air quality (gaseous pollutants, greenhouse effect, ozone depletion, pesticide spraying, acid rain and nuclear emissions); healthy homes (infestation, lead paint, sick-building syndrome, unsafe neighbourhoods and radon); water quality (human waste, oil spills, pesticides and industrial pollutants); food safety (malnutrition, bacterial food poisoning, adulteration and harmful additives); and waste management (non-biodegradable plastics, poor dumps, inadequate sewage and hazardous or radioactive waste)."
-            },
-            {
-              "type": "heading",
-              "text": "Environmental hazard effects"
-            },
-            {
-              "type": "paragraph",
-              "text": "The source distinguishes general effects that affect a population broadly (for example unemployment, drought and extensive smog) from specific effects that affect groups with particular exposures or needs. Effects may be immediate, long-term or intergenerational. Examples in the book include burns and storm damage (immediate), occupational hearing loss and black lung (long-term), and possible effects of climate change across generations."
+              "title": "ملاحظة دراسية",
+              "text": "هذا الملخص مبني على موضوعات الكتاب والصفحات المحددة لهذا الدرس. أي أرقام أو إرشادات علاجية واردة في المصدر تُراجع مع أحدث تعليمات الجهة التعليمية والبروتوكولات المعتمدة قبل استخدامها سريريًا."
             }
           ]
         },
@@ -1088,62 +925,46 @@
           ],
           "contentBlocks": [
             {
-              "type": "illustrated",
-              "title": "Occupational health nursing",
-              "text": "Occupational health nursing focuses on promoting, preventing and restoring health within a safe and healthy work environment. The source links the specialty with toxicology, industrial hygiene, workplace safety and ergonomics, including recognition of exposures and prevention of work-related injury and illness.",
-              "imageUrl": "assets/illustrations/community-health/lesson-04-02.svg",
-              "alt": "Educational diagram: Occupational health nursing",
-              "caption": "COMMUNITY HEALTH NURSING • Chapter 4 — Environmental and Occupational Health • Bawabet Al Tamreed"
-            },
-            {
               "type": "heading",
-              "text": "Core explanation"
+              "text": "Study summary | ملخص الدرس"
             },
             {
-              "type": "paragraph",
-              "text": "Occupational health nursing focuses on promoting, preventing and restoring health within a safe and healthy work environment. The source links the specialty with toxicology, industrial hygiene, workplace safety and ergonomics, including recognition of exposures and prevention of work-related injury and illness."
-            },
-            {
-              "type": "paragraph",
-              "text": "Services described include maintaining a safe workplace, emergency response and first aid, workers' compensation, confidentiality and retention of records, injury reporting and investigation, medical surveillance, infection control, personal protective equipment evaluation and training, health education, rehabilitation and return-to-work support."
-            },
-            {
-              "type": "heading",
-              "text": "Main points from the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "The textbook lists biological hazards (blood and body fluids); chemical hazards (solvents, lead, asbestos, acids, mercury and arsenic); ergonomic/mechanical hazards (awkward posture, repetitive effort, lighting, shift work, electricity, slips and falls); physical hazards (noise, radiation, vibration and heat); and psychosocial hazards such as stress. Effects include infections, headache and nervous-system effects, asbestosis, burns, reproductive problems, musculoskeletal disorders, sleep disorders, electrocution, hearing loss, heat illness and anxiety-related symptoms. Nursing skills include applying the nursing process, first aid within approved protocols, occupational history, assessment, immunization knowledge, emotional support, multidisciplinary problem-solving, record keeping, monitoring and case management."
-            },
-            {
-              "type": "keypoint",
-              "title": "بالعربي | الخلاصة",
-              "text": "تصنف مخاطر العمل إلى بيولوجية وكيميائية وميكانيكية/إرجونومية وفيزيائية ونفسية اجتماعية، وتعمل ممرضة الصحة المهنية على التقييم والوقاية والتثقيف والمتابعة."
-            },
-            {
-              "type": "list",
-              "items": [
-                "Occupational health",
-                "Biological hazard",
-                "Chemical hazard",
-                "Ergonomic hazard",
-                "Physical hazard",
-                "Psychosocial hazard",
-                "PPE"
+              "type": "bilingual",
+              "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
+              "points": [
+                [
+                  "Occupational health nursing promotes, protects and restores health in safe workplaces and addresses occupational and environmental hazards.",
+                  "تمريض الصحة المهنية يعزز الصحة ويحميها ويستعيدها داخل بيئة عمل آمنة، ويتعامل مع المخاطر المهنية والبيئية.",
+                  "الممرضة المهنية تهتم بصحة العامل أثناء العمل، وتساعد في منع الإصابات والأمراض المرتبطة بالمهنة."
+                ],
+                [
+                  "The textbook groups hazards as biological, chemical, enviromechanical, physical and psychosocial, with different exposures and health effects.",
+                  "يقسم الكتاب المخاطر إلى بيولوجية وكيميائية وميكانيكية-بيئية وفيزيائية ونفسية-اجتماعية، ولكل نوع مصادر تعرض وتأثيرات صحية مختلفة.",
+                  "مثال: الدم قد ينقل عدوى، والمواد الكيميائية قد تسبب تسممًا، والضوضاء قد تؤثر في السمع، والضغط النفسي يؤثر في الصحة."
+                ],
+                [
+                  "Services include emergency response, first aid, surveillance, injury reporting, PPE education, infection control, assessment, referral and case management.",
+                  "تشمل الخدمات الاستجابة للطوارئ والإسعافات الأولية والمتابعة الصحية وتسجيل الإصابات والتوعية بمعدات الوقاية ومكافحة العدوى والتقييم والإحالة وإدارة الحالات.",
+                  "الممرضة تتابع صحة العاملين وتدربهم على الوقاية وتساعد في التعامل مع الإصابات والعودة الآمنة للعمل."
+                ]
               ]
             },
             {
+              "type": "visual",
+              "title": "Visual learning | التوضيح البصري",
+              "imageUrl": "assets/illustrations/community-health/occupational-hazards.svg",
+              "alt": "Educational medical diagram for Occupational health nursing",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة سريعة",
+              "text": "الممرضة المهنية تهتم بصحة العامل أثناء العمل، وتساعد في منع الإصابات والأمراض المرتبطة بالمهنة. مثال: الدم قد ينقل عدوى، والمواد الكيميائية قد تسبب تسممًا، والضوضاء قد تؤثر في السمع، والضغط النفسي يؤثر في الصحة. الممرضة تتابع صحة العاملين وتدربهم على الوقاية وتساعد في التعامل مع الإصابات والعودة الآمنة للعمل."
+            },
+            {
               "type": "warning",
-              "title": "Educational source note",
-              "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
-            },
-            {
-              "type": "heading",
-              "text": "Occupational health nursing priorities and competencies"
-            },
-            {
-              "type": "paragraph",
-              "text": "Priorities listed include effective primary care at worksites; health promotion; workplace stress; reducing respiratory and chemical exposure risks; hazards affecting healthcare workers; rehabilitation and return to work; ergonomics; personal protective equipment use; emergency and pandemic preparedness; and evaluation of workplace interventions. Skills include nursing-process application, first aid within protocols, physical and occupational assessment, immunization knowledge, emotional support, record keeping, clinical monitoring, emergency response and multidisciplinary case management."
+              "title": "ملاحظة دراسية",
+              "text": "هذا الملخص مبني على موضوعات الكتاب والصفحات المحددة لهذا الدرس. أي أرقام أو إرشادات علاجية واردة في المصدر تُراجع مع أحدث تعليمات الجهة التعليمية والبروتوكولات المعتمدة قبل استخدامها سريريًا."
             }
           ]
         },
@@ -1165,53 +986,51 @@
           ],
           "contentBlocks": [
             {
-              "type": "illustrated",
-              "title": "Rural health",
-              "text": "Rural health concerns people living in rural areas, who may be farther from health facilities and other services than urban residents. The source emphasizes the rural nurse's role as a respected and important member of the healthcare team.",
-              "imageUrl": "assets/illustrations/community-health/lesson-04-03.svg",
-              "alt": "Educational diagram: Rural health",
-              "caption": "COMMUNITY HEALTH NURSING • Chapter 4 — Environmental and Occupational Health • Bawabet Al Tamreed"
-            },
-            {
               "type": "heading",
-              "text": "Core explanation"
+              "text": "Study summary | ملخص الدرس"
             },
             {
-              "type": "paragraph",
-              "text": "Rural health concerns people living in rural areas, who may be farther from health facilities and other services than urban residents. The source emphasizes the rural nurse's role as a respected and important member of the healthcare team."
-            },
-            {
-              "type": "paragraph",
-              "text": "The textbook lists increased risks involving heart disease, cancer, stroke, unintentional injury and chronic lower respiratory disease. It also notes that multiple health conditions may be more common and that some minority and diverse groups in rural areas may face additional risks."
-            },
-            {
-              "type": "heading",
-              "text": "Main points from the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "Factors contributing to disparities include fewer providers and facilities, transportation barriers, environmental hazards, smoking, high blood pressure and obesity, less leisure-time activity, lower seatbelt use, limited access to healthy food, poverty and reduced likelihood of health insurance. The rural nurse acts as advocate, coordinator/case manager, health teacher, referral agent, mentor, change agent/researcher, collaborator and activist."
-            },
-            {
-              "type": "keypoint",
-              "title": "بالعربي | الخلاصة",
-              "text": "الفجوات الصحية في المناطق الريفية ترتبط بصعوبة الوصول للخدمات والمواصلات والموارد، ودور الممرضة يشمل المناصرة والتنسيق والتثقيف والإحالة."
-            },
-            {
-              "type": "list",
-              "items": [
-                "Rural health",
-                "Health disparities",
-                "Access to care",
-                "Transportation",
-                "Food access",
-                "Community nurse"
+              "type": "bilingual",
+              "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
+              "points": [
+                [
+                  "Rural health concerns people living in rural areas, often farther from healthcare facilities and other services than urban residents.",
+                  "تهتم الصحة الريفية بصحة السكان في المناطق الريفية، والذين غالبًا ما يعيشون أبعد عن المنشآت الصحية والخدمات مقارنة بسكان المدن.",
+                  "المشكلة مش في المكان نفسه؛ التحدي أحيانًا إن الوصول للطبيب أو المستشفى والمواصلات أصعب."
+                ],
+                [
+                  "The textbook lists disparities involving heart disease, cancer, stroke, injury, chronic respiratory disease and multiple health conditions.",
+                  "يذكر الكتاب تفاوتات صحية تشمل أمراض القلب والسرطان والسكتة الدماغية والإصابات وأمراض الجهاز التنفسي المزمنة وتعدد المشكلات الصحية.",
+                  "بعض المناطق الريفية بتواجه عبئًا صحيًا أكبر بسبب عوامل الوصول والبيئة والظروف الاجتماعية."
+                ],
+                [
+                  "Contributing factors include fewer providers and transport options, environmental hazards, smoking, inactivity, food deserts, poverty and lower insurance coverage.",
+                  "تشمل العوامل قلة مقدمي الخدمة والمواصلات، والمخاطر البيئية، والتدخين وقلة النشاط، ومناطق نقص الغذاء الصحي، والفقر وضعف التغطية التأمينية.",
+                  "الممرضة تساعد في تقليل الفجوة عن طريق التوعية والتنسيق والإحالة وربط السكان بالخدمات."
+                ],
+                [
+                  "The rural nurse may act as advocate, coordinator, teacher, referral agent, mentor, researcher, collaborator and change agent.",
+                  "قد تعمل الممرضة الريفية كمدافعة عن المريض، ومنسقة، ومعلمة صحية، ومسؤولة إحالة، ومرشدة، وباحثة، ومتعاونة ومحفزة للتغيير.",
+                  "دورها واسع لأنها قريبة من المجتمع وبتساعد الناس يوصلوا للخدمات المناسبة."
+                ]
               ]
             },
             {
+              "type": "visual",
+              "title": "Visual learning | التوضيح البصري",
+              "imageUrl": "assets/illustrations/community-health/rural-health.svg",
+              "alt": "Educational medical diagram for Rural health",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة سريعة",
+              "text": "المشكلة مش في المكان نفسه؛ التحدي أحيانًا إن الوصول للطبيب أو المستشفى والمواصلات أصعب. بعض المناطق الريفية بتواجه عبئًا صحيًا أكبر بسبب عوامل الوصول والبيئة والظروف الاجتماعية. الممرضة تساعد في تقليل الفجوة عن طريق التوعية والتنسيق والإحالة وربط السكان بالخدمات. دورها واسع لأنها قريبة من المجتمع وبتساعد الناس يوصلوا للخدمات المناسبة."
+            },
+            {
               "type": "warning",
-              "title": "Educational source note",
-              "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
+              "title": "ملاحظة دراسية",
+              "text": "هذا الملخص مبني على موضوعات الكتاب والصفحات المحددة لهذا الدرس. أي أرقام أو إرشادات علاجية واردة في المصدر تُراجع مع أحدث تعليمات الجهة التعليمية والبروتوكولات المعتمدة قبل استخدامها سريريًا."
             }
           ]
         }
@@ -1301,72 +1120,51 @@
           ],
           "contentBlocks": [
             {
-              "type": "illustrated",
-              "title": "Communicable diseases",
-              "text": "A communicable disease is caused by an infectious agent transmitted from a source or reservoir to a susceptible host. The chapter introduces epidemiology, infection control, microbiology, medicine, public health and the nurse's role in prevention and control.",
-              "imageUrl": "assets/illustrations/community-health/lesson-05-01.svg",
-              "alt": "Educational diagram: Communicable diseases",
-              "caption": "COMMUNITY HEALTH NURSING • Chapter 5 — Communicable and Non-communicable Diseases • Bawabet Al Tamreed"
-            },
-            {
               "type": "heading",
-              "text": "Core explanation"
+              "text": "Study summary | ملخص الدرس"
             },
             {
-              "type": "paragraph",
-              "text": "A communicable disease is caused by an infectious agent transmitted from a source or reservoir to a susceptible host. The chapter introduces epidemiology, infection control, microbiology, medicine, public health and the nurse's role in prevention and control."
-            },
-            {
-              "type": "paragraph",
-              "text": "Key terms include infection (entry and multiplication of an infectious agent, which may not always cause illness), endemic (constant presence in an area or population), epidemic (occurrence above expected levels), pandemic (epidemic across countries or worldwide), incubation period, elimination (removal from a large geographic area) and eradication (worldwide disappearance of the agent)."
-            },
-            {
-              "type": "heading",
-              "text": "Main points from the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "The chain of infection includes infectious agent, reservoir, portal of exit, mode of transmission, portal of entry and susceptible host. The source describes direct transmission such as contact, respiratory spread and transplacental transmission, and indirect transmission through vehicles such as food or blood and vectors. Risk factors include age, occupation, sex, social and economic conditions, environment and sanitation, malnutrition, chronic disease, low immunity and psychological factors. Examples discussed include HIV, typhoid and COVID-19. Prevention includes vaccination, hand hygiene, safe food, protection from disease carriers and preventing spread. Nurses monitor and support cases, educate, collect and report epidemiological data, collaborate on studies and mobilize community participation."
-            },
-            {
-              "type": "keypoint",
-              "title": "بالعربي | الخلاصة",
-              "text": "سلسلة العدوى تتكون من ست حلقات؛ كسر أي حلقة بإجراءات الوقاية المناسبة يساعد على الحد من انتقال العدوى."
-            },
-            {
-              "type": "list",
-              "items": [
-                "Communicable disease",
-                "Infection",
-                "Endemic",
-                "Epidemic",
-                "Pandemic",
-                "Incubation period",
-                "Chain of infection",
-                "Reservoir",
-                "Portal of entry"
+              "type": "bilingual",
+              "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
+              "points": [
+                [
+                  "A communicable disease is caused by an infectious agent that can pass from a source or reservoir to a susceptible host.",
+                  "المرض المعدي ينتج عن عامل مُعدٍ يمكن أن ينتقل من مصدر أو مستودع للعدوى إلى شخص قابل للإصابة.",
+                  "لفهم العدوى لازم نعرف الميكروب جاي منين، بيخرج إزاي، وبينتقل بإيه، ويدخل جسم مين."
+                ],
+                [
+                  "The chain of infection includes the infectious agent, reservoir, portal of exit, mode of transmission, portal of entry and susceptible host.",
+                  "تتكون سلسلة العدوى من العامل المسبب، ومستودع العدوى، ومنفذ الخروج، وطريقة الانتقال، ومنفذ الدخول، والعائل القابل للإصابة.",
+                  "كسر أي حلقة من السلسلة يساعد على منع انتقال العدوى؛ زي غسل اليدين أو التطعيم أو العزل حسب الحالة."
+                ],
+                [
+                  "The textbook explains terms such as infection, endemic, epidemic, pandemic, incubation period, elimination and eradication.",
+                  "يشرح الكتاب مصطلحات مثل العدوى، والتوطن، والوباء، والجائحة، وفترة الحضانة، والاستئصال الإقليمي، والقضاء العالمي على المرض.",
+                  "فرق مهم: Endemic وجود معتاد في منطقة، Epidemic زيادة فوق المتوقع، Pandemic انتشار واسع عالمي."
+                ],
+                [
+                  "Examples in the source include HIV, hepatitis C, pulmonary tuberculosis, typhoid and COVID-19; nursing roles include education, case management, surveillance and reporting.",
+                  "من أمثلة الكتاب: فيروس HIV، والتهاب الكبد C، والدرن الرئوي، والتيفود، وكوفيد-19. وتشمل أدوار التمريض التثقيف ومتابعة الحالات والترصد والإبلاغ.",
+                  "الوقاية تعتمد على طريقة انتقال كل مرض، مع التثقيف والنظافة والتطعيم والإجراءات المناسبة."
+                ]
               ]
             },
             {
+              "type": "visual",
+              "title": "Visual learning | التوضيح البصري",
+              "imageUrl": "assets/illustrations/community-health/infection-chain.svg",
+              "alt": "Educational medical diagram for Communicable diseases",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة سريعة",
+              "text": "لفهم العدوى لازم نعرف الميكروب جاي منين، بيخرج إزاي، وبينتقل بإيه، ويدخل جسم مين. كسر أي حلقة من السلسلة يساعد على منع انتقال العدوى؛ زي غسل اليدين أو التطعيم أو العزل حسب الحالة. فرق مهم: Endemic وجود معتاد في منطقة، Epidemic زيادة فوق المتوقع، Pandemic انتشار واسع عالمي. الوقاية تعتمد على طريقة انتقال كل مرض، مع التثقيف والنظافة والتطعيم والإجراءات المناسبة."
+            },
+            {
               "type": "warning",
-              "title": "Educational source note",
-              "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
-            },
-            {
-              "type": "heading",
-              "text": "Examples of communicable diseases in the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "The source discusses HIV, hepatitis C, pulmonary tuberculosis, typhoid and COVID-19. It describes HIV transmission through exposure of mucosal surfaces or damaged tissue to infected fluids and through contaminated needles, and lists fever, headache, muscle and joint aches, rash, sore throat, mouth sores, swollen lymph glands, diarrhoea and weight loss. Hepatitis C is described as a blood-borne liver infection; listed routes include shared injection equipment, infected needlesticks, mother-to-child transmission and sharing personal-care items. The source lists fatigue, fever, jaundice, dark urine, joint and abdominal pain, nausea and appetite loss."
-            },
-            {
-              "type": "heading",
-              "text": "Pulmonary tuberculosis, typhoid and COVID-19 in the source"
-            },
-            {
-              "type": "paragraph",
-              "text": "The textbook describes pulmonary tuberculosis as commonly affecting the lungs, with direct respiratory droplets and airborne spread; symptoms listed include appetite and weight loss, fever, night sweats, fatigue, persistent cough and increasing breathlessness. Typhoid is described as a food- and water-borne infection transmitted by the faecal–oral route; the source lists malaise, coated tongue, headache, cough, abdominal pain, rose spots and possible bowel changes and enlarged liver and spleen. COVID-19 transmission is described through respiratory particles and contaminated surfaces; listed symptoms include pain, headache, fatigue, breathlessness, anxiety, depression, fever, chronic cough and sleep problems. Prevention examples in the source include hygiene, safe food and water, vaccination, ventilation and reducing exposure. Follow current public-health guidance for present-day recommendations."
+              "title": "ملاحظة دراسية",
+              "text": "هذا الملخص مبني على موضوعات الكتاب والصفحات المحددة لهذا الدرس. أي أرقام أو إرشادات علاجية واردة في المصدر تُراجع مع أحدث تعليمات الجهة التعليمية والبروتوكولات المعتمدة قبل استخدامها سريريًا."
             }
           ]
         },
@@ -1389,62 +1187,51 @@
           ],
           "contentBlocks": [
             {
-              "type": "illustrated",
-              "title": "Non-communicable diseases",
-              "text": "Non-communicable diseases are chronic conditions that do not result from an infectious process and are not transmitted from person to person. The source lists risk factors including heredity, obesity, sleep apnoea, ageing, increased sodium intake, diabetes, smoking and physical inactivity.",
-              "imageUrl": "assets/illustrations/community-health/lesson-05-02.svg",
-              "alt": "Educational diagram: Non-communicable diseases",
-              "caption": "COMMUNITY HEALTH NURSING • Chapter 5 — Communicable and Non-communicable Diseases • Bawabet Al Tamreed"
-            },
-            {
               "type": "heading",
-              "text": "Core explanation"
+              "text": "Study summary | ملخص الدرس"
             },
             {
-              "type": "paragraph",
-              "text": "Non-communicable diseases are chronic conditions that do not result from an infectious process and are not transmitted from person to person. The source lists risk factors including heredity, obesity, sleep apnoea, ageing, increased sodium intake, diabetes, smoking and physical inactivity."
-            },
-            {
-              "type": "paragraph",
-              "text": "The textbook discusses ischemic heart disease, diabetes mellitus, cancer and chronic obstructive pulmonary disease (COPD). For ischemic heart disease it describes reduced coronary blood flow, angina and acute coronary syndrome, and lists assessment topics such as ECG, cardiac biomarkers, vital signs and echocardiography. Diabetes is described as hyperglycaemia due to problems with insulin secretion, insulin action or both; the source lists type 1, type 2 and gestational diabetes, classic symptoms (polyuria, polyphagia, polydipsia) and diagnostic topics including HbA1c, fasting glucose, oral glucose tolerance and random glucose."
-            },
-            {
-              "type": "heading",
-              "text": "Main points from the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "Cancer is described as uncontrolled cell growth. The source classifies carcinoma, sarcoma, leukaemia and lymphoma, and lists biopsy, imaging, laboratory and cytological assessment and treatment categories such as surgery, radiation and chemotherapy. COPD includes emphysema and chronic bronchitis, with breathlessness, persistent cough, infections and wheeze among the described features. Prevention topics include healthy nutrition, physical activity, stress management and avoiding tobacco. Nursing roles include prevention, early detection, referral, lifestyle education, monitoring, supporting adherence to prescribed care and explaining when professional assessment is needed."
-            },
-            {
-              "type": "keypoint",
-              "title": "بالعربي | الخلاصة",
-              "text": "الأمراض غير المعدية مزمنة ولا تنتقل بالعدوى؛ من أمثلتها أمراض القلب والسكري والسرطان وCOPD، وتشمل الوقاية تقليل عوامل الخطورة والكشف والمتابعة."
-            },
-            {
-              "type": "list",
-              "items": [
-                "Non-communicable disease",
-                "Risk factors",
-                "Ischemic heart disease",
-                "Diabetes mellitus",
-                "Cancer",
-                "COPD",
-                "Prevention"
+              "type": "bilingual",
+              "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
+              "points": [
+                [
+                  "Non-communicable diseases are chronic conditions that do not result from an infectious process and are not transmitted between people.",
+                  "الأمراض غير المعدية حالات مزمنة لا تنتج عن عملية عدوى ولا تنتقل من شخص لآخر.",
+                  "يعني المرض مش سببه ميكروب بينتقل؛ غالبًا بتتداخل عوامل وراثية وسلوكية وبيئية."
+                ],
+                [
+                  "The textbook lists risk factors such as heredity, obesity, age, high sodium intake, diabetes, smoking and physical inactivity.",
+                  "يذكر الكتاب عوامل خطر مثل الوراثة والسمنة والتقدم في العمر وزيادة الصوديوم والسكري والتدخين وقلة النشاط البدني.",
+                  "عوامل الخطر بتزود الاحتمال لكنها مش معناها إن الإصابة حتمية."
+                ],
+                [
+                  "Examples covered are ischemic heart disease, diabetes mellitus, cancer and COPD, including their basic features, assessment and management topics.",
+                  "تشمل الأمثلة مرض القلب الإقفاري والسكري والسرطان ومرض الانسداد الرئوي المزمن، مع عرض السمات الأساسية والتقييم والعلاج في الكتاب.",
+                  "كل مرض له طبيعة مختلفة؛ نراجع التعريف والعلامات وطرق التشخيص والوقاية ودور التمريض لكل واحد."
+                ],
+                [
+                  "Nursing care includes prevention, early detection, referral, monitoring, education and supporting adherence to the prescribed care plan.",
+                  "تشمل الرعاية التمريضية الوقاية والكشف المبكر والإحالة والمتابعة والتثقيف ومساعدة المريض على الالتزام بالخطة المقررة.",
+                  "الممرضة تتابع المؤشرات وتشرح للمريض نمط الحياة الصحي ومتى يحتاج يرجع لمقدم الرعاية."
+                ]
               ]
             },
             {
+              "type": "visual",
+              "title": "Visual learning | التوضيح البصري",
+              "imageUrl": "assets/illustrations/community-health/noncommunicable-diseases.svg",
+              "alt": "Educational medical diagram for Non-communicable diseases",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة سريعة",
+              "text": "يعني المرض مش سببه ميكروب بينتقل؛ غالبًا بتتداخل عوامل وراثية وسلوكية وبيئية. عوامل الخطر بتزود الاحتمال لكنها مش معناها إن الإصابة حتمية. كل مرض له طبيعة مختلفة؛ نراجع التعريف والعلامات وطرق التشخيص والوقاية ودور التمريض لكل واحد. الممرضة تتابع المؤشرات وتشرح للمريض نمط الحياة الصحي ومتى يحتاج يرجع لمقدم الرعاية."
+            },
+            {
               "type": "warning",
-              "title": "Educational source note",
-              "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
-            },
-            {
-              "type": "heading",
-              "text": "Disease-specific study outline"
-            },
-            {
-              "type": "paragraph",
-              "text": "Ischaemic heart disease: the source discusses stable and variant angina, unstable angina and myocardial infarction, symptoms, ECG and cardiac markers, echocardiography and categories of medical and interventional management. Diabetes mellitus: the source lists medical nutrition therapy, exercise and medication categories, including insulin for type 1 diabetes and oral medicines for some people with type 2 diabetes. Cancer: classification includes carcinoma, sarcoma, leukaemia and lymphoma; diagnostic topics include biopsy, radiology, ultrasound, MRI, endoscopy, laboratory tests and cytology; treatment categories include surgery, radiation and chemotherapy. COPD: emphysema and chronic bronchitis are described, with inhalers/medicines, pulmonary rehabilitation, smoking cessation and selected surgery or transplantation as treatment topics in the book. This is descriptive study material, not individual treatment advice."
+              "title": "ملاحظة دراسية",
+              "text": "هذا الملخص مبني على موضوعات الكتاب والصفحات المحددة لهذا الدرس. أي أرقام أو إرشادات علاجية واردة في المصدر تُراجع مع أحدث تعليمات الجهة التعليمية والبروتوكولات المعتمدة قبل استخدامها سريريًا."
             }
           ]
         },
@@ -1470,65 +1257,51 @@
           ],
           "contentBlocks": [
             {
-              "type": "illustrated",
-              "title": "Vulnerable population and care",
-              "text": "The source describes vulnerability as a changing condition in which people may be at increased risk, threatened, susceptible to problems or in need of protection and support. A vulnerable population is defined as groups with increased risk of adverse health outcomes.",
-              "imageUrl": "assets/illustrations/community-health/lesson-05-03.svg",
-              "alt": "Educational diagram: Vulnerable population and care",
-              "caption": "COMMUNITY HEALTH NURSING • Chapter 5 — Communicable and Non-communicable Diseases • Bawabet Al Tamreed"
-            },
-            {
               "type": "heading",
-              "text": "Core explanation"
+              "text": "Study summary | ملخص الدرس"
             },
             {
-              "type": "paragraph",
-              "text": "The source describes vulnerability as a changing condition in which people may be at increased risk, threatened, susceptible to problems or in need of protection and support. A vulnerable population is defined as groups with increased risk of adverse health outcomes."
-            },
-            {
-              "type": "paragraph",
-              "text": "Categories named include lone parents, people with disabilities, older people, children, people with mental illness and people experiencing homelessness. The source notes that vulnerability can occur at different stages of life and in different social circumstances."
-            },
-            {
-              "type": "heading",
-              "text": "Main points from the textbook"
-            },
-            {
-              "type": "paragraph",
-              "text": "Principles for caring for vulnerable populations are empowerment, protection, prevention, proportionality, partnership and accountability. The book's care topics include recognition, screening, immunization, maternal and child services, financial and social support, assistive devices, housing, improving social determinants and access to appropriate health services. Community nurses recognize barriers, assess needs respectfully, protect confidentiality and dignity, connect people with health and social resources, support participation and coordinate care."
-            },
-            {
-              "type": "keypoint",
-              "title": "بالعربي | الخلاصة",
-              "text": "رعاية الفئات الأكثر عرضة للمخاطر تقوم على التمكين والحماية والوقاية والشراكة والمساءلة، مع احترام الكرامة وتسهيل الوصول للخدمات."
-            },
-            {
-              "type": "list",
-              "items": [
-                "Vulnerable population",
-                "Lone parent",
-                "Disability",
-                "Older people",
-                "Children",
-                "Mental illness",
-                "Homelessness",
-                "Empowerment",
-                "Protection",
-                "Partnership"
+              "type": "bilingual",
+              "title": "Key ideas explained | أهم الأفكار مع الترجمة والتبسيط",
+              "points": [
+                [
+                  "Vulnerable populations are groups with an increased risk of adverse health outcomes.",
+                  "الفئات الأكثر عرضة للمخاطر الصحية هي مجموعات يزيد احتمال تعرضها لنتائج صحية سلبية.",
+                  "مش معنى كده إن كل فرد في المجموعة مريض؛ المقصود إن الظروف قد تجعل الوصول للصحة أصعب أو تزيد المخاطر."
+                ],
+                [
+                  "The textbook includes lone parents, people with disabilities, older people, children, people with mental illness and people experiencing homelessness.",
+                  "تشمل الفئات المذكورة الوالد أو الوالدة المنفردين، والأشخاص ذوي الإعاقة، وكبار السن، والأطفال، ومرضى الاضطرابات النفسية، ومن لا يملكون سكنًا مستقرًا.",
+                  "كل فئة ممكن تحتاج نوع دعم مختلف حسب ظروفها واحتياجاتها."
+                ],
+                [
+                  "Care principles include empowerment, protection, prevention, proportionality, partnership and accountability.",
+                  "تشمل مبادئ الرعاية التمكين والحماية والوقاية والتناسب والشراكة والمساءلة.",
+                  "التمكين يعني نساعد الشخص يشارك ويختار، والحماية والوقاية تقلل المخاطر، والشراكة تجمع الجهات والأسرة."
+                ],
+                [
+                  "Care may involve recognition and screening, immunization, maternal and child services, assistive devices, housing support and improved access to healthcare.",
+                  "قد تشمل الرعاية التعرف على الفئات وتقييمها، والتطعيم، وخدمات الأم والطفل، والأجهزة المساعدة، ودعم السكن وتحسين الوصول للرعاية الصحية.",
+                  "المطلوب إزالة العوائق وتوفير الخدمة المناسبة باحترام وكرامة."
+                ]
               ]
             },
             {
+              "type": "visual",
+              "title": "Visual learning | التوضيح البصري",
+              "imageUrl": "assets/illustrations/community-health/vulnerable-care.svg",
+              "alt": "Educational medical diagram for Vulnerable population and care",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "keypoint",
+              "title": "مراجعة سريعة",
+              "text": "مش معنى كده إن كل فرد في المجموعة مريض؛ المقصود إن الظروف قد تجعل الوصول للصحة أصعب أو تزيد المخاطر. كل فئة ممكن تحتاج نوع دعم مختلف حسب ظروفها واحتياجاتها. التمكين يعني نساعد الشخص يشارك ويختار، والحماية والوقاية تقلل المخاطر، والشراكة تجمع الجهات والأسرة. المطلوب إزالة العوائق وتوفير الخدمة المناسبة باحترام وكرامة."
+            },
+            {
               "type": "warning",
-              "title": "Educational source note",
-              "text": "Based on the supplied 89-page textbook. Historical statistics and clinical descriptions are presented as source material, not current clinical protocols; follow current institutional guidance for clinical decisions."
-            },
-            {
-              "type": "heading",
-              "text": "Care approaches listed in the source"
-            },
-            {
-              "type": "paragraph",
-              "text": "The textbook's examples include recognizing vulnerable groups and screening needs; providing childhood immunization and maternal-child services; financial support for lone parents; assistive devices such as walking aids and wheelchairs; housing support for people experiencing homelessness; improving social determinants; and supporting access to community-appropriate and virtual healthcare. Application depends on current local services, rights and policy."
+              "title": "ملاحظة دراسية",
+              "text": "هذا الملخص مبني على موضوعات الكتاب والصفحات المحددة لهذا الدرس. أي أرقام أو إرشادات علاجية واردة في المصدر تُراجع مع أحدث تعليمات الجهة التعليمية والبروتوكولات المعتمدة قبل استخدامها سريريًا."
             }
           ]
         }
