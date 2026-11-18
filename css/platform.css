@@ -199,3 +199,22 @@ body[data-page="daily-challenge"] .platform-heading:after{content:"⚡";backgrou
 
 /* Display one panel from the tall SVG atlas using native image loading and a clipped viewport. */
 .lesson-inline-visual{position:relative;width:100%;aspect-ratio:1200/760;overflow:hidden;border-radius:14px;background:#fff;border:1px solid #e1eaf1}.lesson-inline-atlas{position:absolute!important;left:0;top:0;width:100%!important;height:auto!important;max-width:none!important;display:block;object-fit:unset!important;margin:0!important}
+
+
+/* Bilingual lesson study layout */
+.lesson-bilingual-block{display:grid;gap:1.35rem;margin-block:1.5rem}
+.lesson-bilingual-title{margin:0;color:#10365f;font-size:1.35rem}
+.lesson-bilingual-point{position:relative;display:grid;gap:.8rem;padding:1.2rem 1.2rem 1.2rem 4.2rem;border:1px solid #d8e8f1;border-radius:22px;background:linear-gradient(145deg,#fff,#f6fbfe);box-shadow:0 8px 26px rgba(14,52,91,.06)}
+.lesson-point-number{position:absolute;left:1rem;top:1rem;width:2.5rem;height:2.5rem;display:grid;place-items:center;border-radius:50%;background:#103b70;color:#fff;font-weight:800}
+.lesson-bilingual-en,.lesson-bilingual-ar,.lesson-bilingual-simple{padding:.85rem 1rem;border-radius:15px}
+.lesson-bilingual-en{background:#eef5ff;border-inline-start:4px solid #24599a}
+.lesson-bilingual-ar{background:#effafb;border-inline-start:4px solid #18a5b9}
+.lesson-bilingual-simple{background:#fff8ed;border-inline-start:4px solid #d79a42}
+.lesson-language-label{display:block;margin-bottom:.35rem;color:#52718d;font-size:.74rem;font-weight:800;letter-spacing:.04em}
+.lesson-bilingual-en p,.lesson-bilingual-ar p,.lesson-bilingual-simple p{margin:0;line-height:1.9;color:#193a5d}
+.lesson-bilingual-ar,.lesson-bilingual-simple{direction:rtl;text-align:right}
+.lesson-focus-visual{margin:1.5rem 0;padding:1rem;border:1px solid #d7e9f0;border-radius:24px;background:#f7fcfe;box-shadow:0 12px 32px rgba(12,52,88,.08)}
+.lesson-focus-visual img{display:block;width:100%;height:auto;border-radius:16px}
+.lesson-focus-visual figcaption{margin-top:.65rem;text-align:center;color:#52718d;font-size:.88rem}
+.lesson-visual-title{margin:.75rem 0 0;text-align:center;color:#123b68}
+@media(max-width:640px){.lesson-bilingual-point{padding:3.8rem .85rem .9rem}.lesson-point-number{left:auto;right:.85rem;top:.75rem}.lesson-focus-visual{padding:.55rem;border-radius:16px}}
