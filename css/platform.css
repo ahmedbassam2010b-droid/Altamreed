@@ -220,3 +220,16 @@ body[data-page="daily-challenge"] .platform-heading:after{content:"⚡";backgrou
 @media(max-width:640px){.lesson-bilingual-point{padding:3.8rem .85rem .9rem}.lesson-point-number{left:auto;right:.85rem;top:.75rem}.lesson-focus-visual{padding:.55rem;border-radius:16px}}
 
 .lesson-point-visual{margin:18px 0 4px;padding:12px;background:#f5f9fc;border:1px solid #dce8f0;border-radius:16px}.lesson-point-visual img{display:block;width:100%;height:auto;max-height:440px;object-fit:contain;border-radius:10px}.lesson-point-visual-title{margin:10px 4px 4px;color:#153c67;font-size:15px}.lesson-point-visual figcaption{margin:4px;color:#7890a5;font-size:11px;text-align:center}
+
+
+/* Community Health Nursing — one matching visual beside every key idea */
+.lesson-bilingual-point{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(260px,.85fr);grid-template-areas:"number copy" "number visual";align-items:start;column-gap:1.1rem;row-gap:.7rem;padding:1.25rem 1.25rem 1.25rem 4.2rem}
+.lesson-point-number{grid-area:number}
+.lesson-point-copy{grid-area:copy;display:grid;gap:.7rem;min-width:0}
+.lesson-point-visual{grid-area:visual;align-self:stretch;display:flex;flex-direction:column;justify-content:center;min-width:0;margin:0;padding:10px;background:#f2f7fb;border:1px solid #d7e4ed;border-radius:16px}
+.lesson-point-visual img{width:100%;height:auto;max-height:420px;object-fit:contain;border-radius:11px}
+.lesson-point-visual-title{margin:8px 3px 2px;color:#153c67;font-size:14px;text-align:center}
+.lesson-point-visual figcaption{margin:3px;color:#7890a5;font-size:10px;text-align:center}
+.lesson-point-visual.is-missing{min-height:180px;align-items:center;justify-content:center}
+.lesson-image-fallback{color:#8a5360;text-align:center;font-size:13px}
+@media(max-width:760px){.lesson-bilingual-point{grid-template-columns:minmax(0,1fr);grid-template-areas:"number" "copy" "visual";padding:3.7rem .85rem .9rem}.lesson-point-number{left:auto;right:.85rem;top:.75rem}.lesson-point-visual{margin-top:.25rem}.lesson-point-visual img{max-height:340px}}
