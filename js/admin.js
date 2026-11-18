@@ -131,9 +131,10 @@ async function importSecondYearGeneralSurgeryCurriculum(subjectId,publish){
   if(!subjectSnap.exists())throw new Error("SUBJECT_NOT_FOUND");
   const subject=subjectSnap.data();
   if(String(subject.title||"").trim().toLowerCase()!=="general surgery")throw new Error("WRONG_SUBJECT");
-  const gradeName=[subject.year,subject.grade,subject.gradeName].filter(Boolean).join(" ");
+  const linkedGrade=gradesCache.find(g=>g.id===subject.gradeId);
+  const gradeName=[subject.year,subject.grade,subject.gradeName,linkedGrade?.name].filter(Boolean).join(" ");
   if(!/second|ثاني|الثاني/i.test(gradeName))throw new Error("WRONG_GRADE");
-  const gradeId=subject.gradeId||"";
+  const gradeId=subject.gradeId||gradesCache.find(g=>/second|ثاني|الثاني/i.test(g.name||""))?.id||"";
   phase="تحميل ملف المنهج والتحقق منه";
   const response=await fetch("content/second-year/general-surgery-curriculum.json",{cache:"no-store"});
   if(!response.ok)throw new Error("CURRICULUM_FILE_NOT_FOUND (HTTP "+response.status+")");
@@ -156,12 +157,14 @@ async function importSecondYearGeneralSurgeryCurriculum(subjectId,publish){
    phase="تحديث الفصول والمحاضرات الموجودة مع الحفاظ على معرّفاتها وتقدم الطلاب";
    for(const chapter of curriculum.chapters){
     const existingChapter=chapterByTitle.get(chapter.title);
-    const chapterData={title:chapter.title,description:chapter.description||"",order:chapter.order,published:!!publish,updatedAt:serverTimestamp()};
+    const chapterData={subjectId,sourceCurriculumId:sourceId,title:chapter.title,description:chapter.description||"",order:chapter.order,published:!!publish,updatedAt:serverTimestamp()};
+    if(gradeId)chapterData.gradeId=gradeId;
     await updateDoc(doc(db,"chapters",existingChapter.id),chapterData);
     chapterCount++;
     for(const lesson of chapter.lessons){
      const existingLesson=lessonByTitle.get(lesson.title);
-     const lessonData={chapterId:existingChapter.id,title:lesson.title,content:"",contentBlocks:lesson.contentBlocks||[],objectives:lesson.objectives||[],keyTerms:lesson.keyTerms||[],order:lesson.order,published:!!publish,updatedAt:serverTimestamp()};
+     const lessonData={subjectId,sourceCurriculumId:sourceId,chapterId:existingChapter.id,title:lesson.title,content:"",contentBlocks:lesson.contentBlocks||[],objectives:lesson.objectives||[],keyTerms:lesson.keyTerms||[],order:lesson.order,published:!!publish,updatedAt:serverTimestamp()};
+     if(gradeId)lessonData.gradeId=gradeId;
      await updateDoc(doc(db,"lessons",existingLesson.id),lessonData);
      lessonCount++;
     }
