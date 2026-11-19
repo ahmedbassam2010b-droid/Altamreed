@@ -29,7 +29,7 @@
     ],
     "visualAssetsExpected": 11,
     "visualStyle": "Original chapter-specific educational diagrams in SVG format",
-    "note": "تم ربط الصور الأربعين المرفوعة فعليًا بالمحاضرات الأقرب لموضوعها. بعض الرسومات عامة أو داعمة وليست شرحًا تفصيليًا مستقلًا للمرض؛ راجع matchNote في visualAssetMap ولا تعتبر الصورة بديلًا عن الشرح الأكاديمي.",
+    "note": "تم ربط الصور الأربعين المرفوعة فعليًا بالمحاضرات الأقرب لموضوعها. بعض الرسومات عامة أو داعمة وليست شرحًا تفصيليًا مستقلًا للمرض؛ راجع matchNote في visualAssetMap ولا تعتبر الصورة بديلًا عن الشرح الأكاديمي. تمت إضافة رسوم عامة داعمة للمحاضرات التي لا يوجد لها رسم متخصص مستقل، مع توضيح حدود المطابقة في سجل visualSupportNotes.",
     "visualMatchingStatus": "matched",
     "visualAssetCount": 40
   },
@@ -643,6 +643,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/08_Respiratory_Care.png",
+              "alt": "Respiratory failure — illustration support",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
             },
@@ -833,6 +839,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/09_Cardiovascular_Care.png",
+              "alt": "Ischemic heart disease — illustration support",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
             },
@@ -871,6 +883,12 @@
             "Indications → Pre-operative preparation"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/18_Common_Surgical_Procedures.png",
+              "alt": "Cardiac surgery — illustration support",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
@@ -1021,6 +1039,12 @@
             "Causes"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/10_Gastrointestinal_Care.png",
+              "alt": "Gastritis — illustration support",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
@@ -1301,6 +1325,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/11_Urinary_Tract_Care.png",
+              "alt": "Urine retention — illustration support",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
             },
@@ -1341,6 +1371,12 @@
             "Interventions"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/11_Urinary_Tract_Care.png",
+              "alt": "Urinary incontinence — illustration support",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
@@ -1536,6 +1572,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/12_Neurological_Assessment.png",
+              "alt": "Headache — illustration support",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
             },
@@ -1619,6 +1661,12 @@
             "Contents listing; verification pending"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/12_Neurological_Assessment.png",
+              "alt": "Epilepsy — illustration support",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
@@ -1970,6 +2018,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/14_Endocrine_Disorders.png",
+              "alt": "Thyroid disorders — illustration support",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
             },
@@ -2094,6 +2148,12 @@
             "Nursing care"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/15_Cancer_Care.png",
+              "alt": "Colon cancer — illustration support",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
@@ -2604,6 +2664,78 @@
       "lessonOrder": 1,
       "lessonTitle": "Professional nursing concepts",
       "matchNote": "أساسيات المفاهيم التمريضية — فريق الرعاية الصحية"
+    }
+  ],
+  "visualSupportNotes": [
+    {
+      "chapterOrder": 3,
+      "lessonOrder": 4,
+      "lessonTitle": "Respiratory failure",
+      "file": "assets/illustrations/medical-surgical/08_Respiratory_Care.png",
+      "note": "رسم عام للجهاز التنفسي داعم لدرس الفشل التنفسي؛ ليس مخططًا تشخيصيًا مستقلًا"
+    },
+    {
+      "chapterOrder": 4,
+      "lessonOrder": 3,
+      "lessonTitle": "Ischemic heart disease",
+      "file": "assets/illustrations/medical-surgical/09_Cardiovascular_Care.png",
+      "note": "رسم عام للقلب والأوعية داعم لدرس نقص تروية القلب"
+    },
+    {
+      "chapterOrder": 4,
+      "lessonOrder": 4,
+      "lessonTitle": "Cardiac surgery",
+      "file": "assets/illustrations/medical-surgical/18_Common_Surgical_Procedures.png",
+      "note": "رسم داعم للسياق الجراحي؛ لا يمثل خطوات عملية قلبية محددة"
+    },
+    {
+      "chapterOrder": 5,
+      "lessonOrder": 2,
+      "lessonTitle": "Gastritis",
+      "file": "assets/illustrations/medical-surgical/10_Gastrointestinal_Care.png",
+      "note": "رسم عام للجهاز الهضمي داعم لدرس التهاب المعدة"
+    },
+    {
+      "chapterOrder": 6,
+      "lessonOrder": 2,
+      "lessonTitle": "Urine retention",
+      "file": "assets/illustrations/medical-surgical/11_Urinary_Tract_Care.png",
+      "note": "رسم عام للجهاز البولي داعم لدرس احتباس البول"
+    },
+    {
+      "chapterOrder": 6,
+      "lessonOrder": 3,
+      "lessonTitle": "Urinary incontinence",
+      "file": "assets/illustrations/medical-surgical/11_Urinary_Tract_Care.png",
+      "note": "رسم عام للجهاز البولي داعم لدرس سلس البول"
+    },
+    {
+      "chapterOrder": 7,
+      "lessonOrder": 2,
+      "lessonTitle": "Headache",
+      "file": "assets/illustrations/medical-surgical/12_Neurological_Assessment.png",
+      "note": "رسم عام للتقييم العصبي داعم لدرس الصداع"
+    },
+    {
+      "chapterOrder": 7,
+      "lessonOrder": 4,
+      "lessonTitle": "Epilepsy",
+      "file": "assets/illustrations/medical-surgical/12_Neurological_Assessment.png",
+      "note": "رسم عام للتقييم العصبي داعم لدرس الصرع"
+    },
+    {
+      "chapterOrder": 9,
+      "lessonOrder": 3,
+      "lessonTitle": "Thyroid disorders",
+      "file": "assets/illustrations/medical-surgical/14_Endocrine_Disorders.png",
+      "note": "رسم عام للغدد الصماء داعم لاضطرابات الغدة الدرقية"
+    },
+    {
+      "chapterOrder": 10,
+      "lessonOrder": 2,
+      "lessonTitle": "Colon cancer",
+      "file": "assets/illustrations/medical-surgical/15_Cancer_Care.png",
+      "note": "رسم عام لرعاية السرطان داعم لسرطان القولون؛ ليس رسمًا تشريحيًا خاصًا بالقولون"
     }
   ]
 }
