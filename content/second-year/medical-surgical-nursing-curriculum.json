@@ -1,0 +1,2151 @@
+{
+  "schemaVersion": 1,
+  "course": "Medical-Surgical Nursing Theory",
+  "grade": "Second Year Nursing School",
+  "source": {
+    "title": "Medical-Surgical Nursing Theory Book — Nursing School, Second Year",
+    "pages": 189,
+    "preparedBy": [
+      "Dr. Mayada Soliman Rashed",
+      "Dr. Hanaa El-sayed Mohamed",
+      "Dr. Abduallah Shokrey Ismail",
+      "Dr. Mai El-Sayed Mohsen"
+    ],
+    "note": "Course structure and lesson summaries derived from the supplied textbook. Topics listed in the contents but not yet verified in body pages are explicitly marked.",
+    "coverageNote": "The book contents identify 11 chapters. This initial integrated curriculum maps the source chapters and verified topic headings. Further page-level transcription and editorial verification are required before declaring every lesson complete."
+  },
+  "contentStatus": "in-progress",
+  "editorialVerification": {
+    "chapterCount": 11,
+    "lessonCount": 38,
+    "sourceOrderPreserved": true,
+    "sourcePagesChecked": "Text extraction and section-heading review; not a complete page-by-page editorial audit",
+    "unverifiedTopics": [
+      "Peptic ulcer",
+      "Viral hepatitis",
+      "Urinary stones",
+      "Renal failure",
+      "Epilepsy"
+    ],
+    "visualAssetsExpected": 11,
+    "visualStyle": "Original chapter-specific educational diagrams in SVG format",
+    "note": "No clinical instructions or external medical guidance have been added."
+  },
+  "chapters": [
+    {
+      "title": "Chapter 1 — Foundation for Medical-Surgical Nursing",
+      "description": "Professional nursing concepts; complementary and alternative therapy; palliative care and end of life",
+      "order": 1,
+      "items": [
+        {
+          "title": "Professional nursing concepts",
+          "pages": "See supplied textbook section",
+          "body": "Nursing is a profession focused on continuous care, health promotion, prevention, relief of suffering and advocacy. Medical-surgical nursing serves patients across inpatient and outpatient settings.",
+          "detail": "التمريض مهنة تقدم رعاية مستمرة، وتعزز الصحة، وتساعد في الوقاية وتخفيف المعاناة والدفاع عن حقوق المريض.",
+          "takeaway": "ببساطة: دور التمريض مش مجرد تنفيذ تعليمات؛ هو رعاية وتثقيف ومتابعة وتنسيق ودعم للمريض وأسرته.",
+          "terms": [
+            "Professional nursing → Care",
+            "Prevention",
+            "Advocacy"
+          ]
+        },
+        {
+          "title": "Complementary and alternative therapy",
+          "pages": "See supplied textbook section",
+          "body": "The source groups complementary and alternative therapies into natural products, mind-body medicine, and manipulative or body-based practices.",
+          "detail": "يقسم المصدر العلاجات التكميلية والبديلة إلى منتجات طبيعية، وعلاجات العقل والجسم، وممارسات تعتمد على الحركة أو التلاعب بالجسم.",
+          "takeaway": "احفظ التقسيم الثلاثي كما ورد في الكتاب، مع مراعاة أن استخدام أي ممارسة يحتاج تدريبًا وخبرة.",
+          "terms": [
+            "Natural products",
+            "Mind-body",
+            "Body-based practices"
+          ]
+        },
+        {
+          "title": "Palliative care and end of life",
+          "pages": "See supplied textbook section",
+          "body": "Palliative care focuses on reducing the severity of symptoms and improving comfort. The source also discusses hospice care and physical and psychosocial manifestations near end of life.",
+          "detail": "الرعاية التلطيفية تركز على تقليل شدة الأعراض وتحسين الراحة، ويتناول الكتاب رعاية المحتضر والجوانب الجسدية والنفسية الاجتماعية.",
+          "takeaway": "الفكرة الأساسية هي تخفيف الأعراض ودعم المريض وأسرته، وليس تقديم وعد بالشفاء.",
+          "terms": [
+            "Symptom relief",
+            "Comfort",
+            "Psychosocial support"
+          ]
+        }
+      ],
+      "lessons": [
+        {
+          "title": "Professional nursing concepts",
+          "order": 1,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Professional nursing → Care",
+            "Prevention",
+            "Advocacy"
+          ],
+          "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/chapter-01.svg",
+              "alt": "Foundation for Medical-Surgical Nursing — educational chapter map",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "Nursing is a profession focused on continuous care, health promotion, prevention, relief of suffering and advocacy. Medical-surgical nursing serves patients across inpatient and outpatient settings.",
+                  "ar": "التمريض مهنة تقدم رعاية مستمرة، وتعزز الصحة، وتساعد في الوقاية وتخفيف المعاناة والدفاع عن حقوق المريض.",
+                  "simple": "ببساطة: دور التمريض مش مجرد تنفيذ تعليمات؛ هو رعاية وتثقيف ومتابعة وتنسيق ودعم للمريض وأسرته."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Professional nursing → Care • Prevention • Advocacy"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Complementary and alternative therapy",
+          "order": 2,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Natural products",
+            "Mind-body",
+            "Body-based practices"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source groups complementary and alternative therapies into natural products, mind-body medicine, and manipulative or body-based practices.",
+                  "ar": "يقسم المصدر العلاجات التكميلية والبديلة إلى منتجات طبيعية، وعلاجات العقل والجسم، وممارسات تعتمد على الحركة أو التلاعب بالجسم.",
+                  "simple": "احفظ التقسيم الثلاثي كما ورد في الكتاب، مع مراعاة أن استخدام أي ممارسة يحتاج تدريبًا وخبرة."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Natural products • Mind-body • Body-based practices"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Palliative care and end of life",
+          "order": 3,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Symptom relief",
+            "Comfort",
+            "Psychosocial support"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "Palliative care focuses on reducing the severity of symptoms and improving comfort. The source also discusses hospice care and physical and psychosocial manifestations near end of life.",
+                  "ar": "الرعاية التلطيفية تركز على تقليل شدة الأعراض وتحسين الراحة، ويتناول الكتاب رعاية المحتضر والجوانب الجسدية والنفسية الاجتماعية.",
+                  "simple": "الفكرة الأساسية هي تخفيف الأعراض ودعم المريض وأسرته، وليس تقديم وعد بالشفاء."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Symptom relief • Comfort • Psychosocial support"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 2 — Perioperative Care",
+      "description": "Pre-operative, intraoperative and postoperative nursing care",
+      "order": 2,
+      "items": [
+        {
+          "title": "Pre-operative care",
+          "pages": "See supplied textbook section",
+          "body": "The source covers surgery definitions and classifications, pre-operative teaching, preparation, anesthesia information and the day-of-surgery checklist.",
+          "detail": "يتناول الجزء تعريف الجراحة وتصنيفاتها، وتثقيف المريض قبل العملية، والاستعدادات وقائمة التحقق يوم الجراحة.",
+          "takeaway": "مرحلة ما قبل العملية هدفها تجهيز المريض وفهمه للإجراء ومراجعة الاستعدادات المطلوبة.",
+          "terms": [
+            "Assessment → Teaching → Preparation"
+          ]
+        },
+        {
+          "title": "Intraoperative care",
+          "pages": "See supplied textbook section",
+          "body": "The source describes the surgical team, patient positioning, surgical asepsis, anesthesia and intraoperative complications.",
+          "detail": "يشرح الجزء فريق الجراحة، ووضعيات المريض، والتعقيم الجراحي، والتخدير والمضاعفات أثناء العملية.",
+          "takeaway": "أثناء العملية تتكامل أدوار الفريق مع الالتزام بالتعقيم ومتابعة سلامة المريض.",
+          "terms": [
+            "Team",
+            "Positioning",
+            "Asepsis",
+            "Anesthesia"
+          ]
+        },
+        {
+          "title": "Postoperative care",
+          "pages": "See supplied textbook section",
+          "body": "The source discusses PACU admission and phases, nursing assessment, discharge parameters and postoperative complications.",
+          "detail": "يتناول الجزء استقبال المريض في وحدة الإفاقة، والتقييم التمريضي، ومعايير الخروج والمضاعفات بعد العملية.",
+          "takeaway": "بعد العملية تستمر الملاحظة والتقييم حتى تتحقق معايير الاستقرار والخروج المحددة.",
+          "terms": [
+            "Recovery → Assessment → Discharge criteria"
+          ]
+        }
+      ],
+      "lessons": [
+        {
+          "title": "Pre-operative care",
+          "order": 1,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Assessment → Teaching → Preparation"
+          ],
+          "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/chapter-02.svg",
+              "alt": "Perioperative Care — educational chapter map",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source covers surgery definitions and classifications, pre-operative teaching, preparation, anesthesia information and the day-of-surgery checklist.",
+                  "ar": "يتناول الجزء تعريف الجراحة وتصنيفاتها، وتثقيف المريض قبل العملية، والاستعدادات وقائمة التحقق يوم الجراحة.",
+                  "simple": "مرحلة ما قبل العملية هدفها تجهيز المريض وفهمه للإجراء ومراجعة الاستعدادات المطلوبة."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Assessment → Teaching → Preparation"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Intraoperative care",
+          "order": 2,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Team",
+            "Positioning",
+            "Asepsis",
+            "Anesthesia"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source describes the surgical team, patient positioning, surgical asepsis, anesthesia and intraoperative complications.",
+                  "ar": "يشرح الجزء فريق الجراحة، ووضعيات المريض، والتعقيم الجراحي، والتخدير والمضاعفات أثناء العملية.",
+                  "simple": "أثناء العملية تتكامل أدوار الفريق مع الالتزام بالتعقيم ومتابعة سلامة المريض."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Team • Positioning • Asepsis • Anesthesia"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Postoperative care",
+          "order": 3,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Recovery → Assessment → Discharge criteria"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source discusses PACU admission and phases, nursing assessment, discharge parameters and postoperative complications.",
+                  "ar": "يتناول الجزء استقبال المريض في وحدة الإفاقة، والتقييم التمريضي، ومعايير الخروج والمضاعفات بعد العملية.",
+                  "simple": "بعد العملية تستمر الملاحظة والتقييم حتى تتحقق معايير الاستقرار والخروج المحددة."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Recovery → Assessment → Discharge criteria"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 3 — Nursing Care of Respiratory Diseases",
+      "description": "Respiratory anatomy and physiology; pneumonia; bronchial asthma; respiratory failure; coronavirus section in source",
+      "order": 3,
+      "items": [
+        {
+          "title": "Respiratory system: anatomy and physiology",
+          "pages": "See supplied textbook section",
+          "body": "The chapter introduces the respiratory system and its structure and function as the basis for understanding respiratory disorders.",
+          "detail": "يقدم الفصل تركيب الجهاز التنفسي ووظيفته كأساس لفهم اضطراباته.",
+          "takeaway": "ابدأ بفهم مسار الهواء وأجزاء الجهاز قبل دراسة الأمراض.",
+          "terms": [
+            "Airway → Lungs → Gas exchange"
+          ]
+        },
+        {
+          "title": "Pneumonia",
+          "pages": "See supplied textbook section",
+          "body": "The source covers causes, signs and symptoms, diagnosis, treatment and nursing interventions for pneumonia.",
+          "detail": "يتناول المصدر أسباب الالتهاب الرئوي وأعراضه وتشخيصه وعلاجه والتدخلات التمريضية.",
+          "takeaway": "رتب مذاكرتك: السبب، ثم العلامات، ثم التشخيص، ثم ما يذكره الكتاب عن التدبير والتمريض.",
+          "terms": [
+            "Causes",
+            "Manifestations",
+            "Diagnosis",
+            "Care"
+          ]
+        },
+        {
+          "title": "Bronchial asthma",
+          "pages": "See supplied textbook section",
+          "body": "The source discusses predisposing factors, manifestations, diagnosis and nursing management of asthma.",
+          "detail": "يعرض المصدر العوامل المهيئة والظهور الإكلينيكي والتشخيص والتدبير التمريضي للربو الشعبي.",
+          "takeaway": "اربط بين العوامل المهيئة والأعراض وطرق التقييم المذكورة في الكتاب.",
+          "terms": [
+            "Triggers → Airway narrowing → Symptoms"
+          ]
+        },
+        {
+          "title": "Respiratory failure",
+          "pages": "See supplied textbook section",
+          "body": "The source describes acute respiratory failure, causes, symptoms, diagnosis and nursing interventions.",
+          "detail": "يشرح المصدر الفشل التنفسي الحاد وأسبابه وأعراضه وتشخيصه والتدخلات التمريضية.",
+          "takeaway": "ذاكر الموضوع بتسلسل: التعريف، الأسباب، الأعراض، التشخيص، ثم الرعاية الواردة بالمصدر.",
+          "terms": [
+            "Causes → Impaired respiration → Assessment"
+          ]
+        }
+      ],
+      "lessons": [
+        {
+          "title": "Respiratory system: anatomy and physiology",
+          "order": 1,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Airway → Lungs → Gas exchange"
+          ],
+          "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/chapter-03.svg",
+              "alt": "Nursing Care of Respiratory Diseases — educational chapter map",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The chapter introduces the respiratory system and its structure and function as the basis for understanding respiratory disorders.",
+                  "ar": "يقدم الفصل تركيب الجهاز التنفسي ووظيفته كأساس لفهم اضطراباته.",
+                  "simple": "ابدأ بفهم مسار الهواء وأجزاء الجهاز قبل دراسة الأمراض."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Airway → Lungs → Gas exchange"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Pneumonia",
+          "order": 2,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Causes",
+            "Manifestations",
+            "Diagnosis",
+            "Care"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source covers causes, signs and symptoms, diagnosis, treatment and nursing interventions for pneumonia.",
+                  "ar": "يتناول المصدر أسباب الالتهاب الرئوي وأعراضه وتشخيصه وعلاجه والتدخلات التمريضية.",
+                  "simple": "رتب مذاكرتك: السبب، ثم العلامات، ثم التشخيص، ثم ما يذكره الكتاب عن التدبير والتمريض."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Causes • Manifestations • Diagnosis • Care"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Bronchial asthma",
+          "order": 3,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Triggers → Airway narrowing → Symptoms"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source discusses predisposing factors, manifestations, diagnosis and nursing management of asthma.",
+                  "ar": "يعرض المصدر العوامل المهيئة والظهور الإكلينيكي والتشخيص والتدبير التمريضي للربو الشعبي.",
+                  "simple": "اربط بين العوامل المهيئة والأعراض وطرق التقييم المذكورة في الكتاب."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Triggers → Airway narrowing → Symptoms"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Respiratory failure",
+          "order": 4,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Causes → Impaired respiration → Assessment"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source describes acute respiratory failure, causes, symptoms, diagnosis and nursing interventions.",
+                  "ar": "يشرح المصدر الفشل التنفسي الحاد وأسبابه وأعراضه وتشخيصه والتدخلات التمريضية.",
+                  "simple": "ذاكر الموضوع بتسلسل: التعريف، الأسباب، الأعراض، التشخيص، ثم الرعاية الواردة بالمصدر."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Causes → Impaired respiration → Assessment"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 4 — Nursing Care of Cardiovascular Diseases",
+      "description": "Cardiovascular anatomy and physiology; hypertension; ischemic heart disease; cardiac surgery",
+      "order": 4,
+      "items": [
+        {
+          "title": "Cardiovascular anatomy and physiology",
+          "pages": "See supplied textbook section",
+          "body": "The chapter reviews cardiovascular structure and function before discussing common disorders.",
+          "detail": "يراجع الفصل تركيب الجهاز الدوري ووظيفته قبل الانتقال إلى الأمراض الشائعة.",
+          "takeaway": "افهم القلب والأوعية والدورة الدموية أولًا لتسهيل فهم الأمراض.",
+          "terms": [
+            "Heart → Vessels → Circulation"
+          ]
+        },
+        {
+          "title": "Hypertension",
+          "pages": "See supplied textbook section",
+          "body": "The source includes definition, pathophysiology, contributing factors, types, classification, manifestations, diagnostic evaluation, medical and nursing management.",
+          "detail": "يتناول المصدر تعريف ارتفاع ضغط الدم وآليته والعوامل والأنواع والتصنيف والأعراض والتقييم والتدبير الطبي والتمريضي.",
+          "takeaway": "نظم الموضوع في خريطة: تعريف، عوامل، تصنيف، أعراض، تقييم، تدبير.",
+          "terms": [
+            "Definition",
+            "Classification",
+            "Assessment",
+            "Management"
+          ]
+        },
+        {
+          "title": "Ischemic heart disease",
+          "pages": "See supplied textbook section",
+          "body": "The source discusses definition, pathophysiology, risk factors, types, manifestations, diagnostic evaluation, management, education and complications.",
+          "detail": "يشرح المصدر مرض القلب الإقفاري وآليته وعوامل الخطورة وأنواعه وأعراضه وتقييمه وتدبيره ومضاعفاته.",
+          "takeaway": "ميّز بين عوامل الخطورة والأنواع والعلامات ووسائل التقييم كما وردت بالمقرر.",
+          "terms": [
+            "Risk factors → Ischemia → Manifestations"
+          ]
+        },
+        {
+          "title": "Cardiac surgery",
+          "pages": "See supplied textbook section",
+          "body": "The source covers indications and pre-operative preparation for cardiac surgery.",
+          "detail": "يتناول المصدر دواعي جراحة القلب والاستعداد قبل العملية.",
+          "takeaway": "اربط دواعي الجراحة بخطوات التحضير المذكورة في الكتاب.",
+          "terms": [
+            "Indications → Pre-operative preparation"
+          ]
+        }
+      ],
+      "lessons": [
+        {
+          "title": "Cardiovascular anatomy and physiology",
+          "order": 1,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Heart → Vessels → Circulation"
+          ],
+          "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/chapter-04.svg",
+              "alt": "Nursing Care of Cardiovascular Diseases — educational chapter map",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The chapter reviews cardiovascular structure and function before discussing common disorders.",
+                  "ar": "يراجع الفصل تركيب الجهاز الدوري ووظيفته قبل الانتقال إلى الأمراض الشائعة.",
+                  "simple": "افهم القلب والأوعية والدورة الدموية أولًا لتسهيل فهم الأمراض."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Heart → Vessels → Circulation"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Hypertension",
+          "order": 2,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Definition",
+            "Classification",
+            "Assessment",
+            "Management"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source includes definition, pathophysiology, contributing factors, types, classification, manifestations, diagnostic evaluation, medical and nursing management.",
+                  "ar": "يتناول المصدر تعريف ارتفاع ضغط الدم وآليته والعوامل والأنواع والتصنيف والأعراض والتقييم والتدبير الطبي والتمريضي.",
+                  "simple": "نظم الموضوع في خريطة: تعريف، عوامل، تصنيف، أعراض، تقييم، تدبير."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Definition • Classification • Assessment • Management"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Ischemic heart disease",
+          "order": 3,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Risk factors → Ischemia → Manifestations"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source discusses definition, pathophysiology, risk factors, types, manifestations, diagnostic evaluation, management, education and complications.",
+                  "ar": "يشرح المصدر مرض القلب الإقفاري وآليته وعوامل الخطورة وأنواعه وأعراضه وتقييمه وتدبيره ومضاعفاته.",
+                  "simple": "ميّز بين عوامل الخطورة والأنواع والعلامات ووسائل التقييم كما وردت بالمقرر."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Risk factors → Ischemia → Manifestations"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Cardiac surgery",
+          "order": 4,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Indications → Pre-operative preparation"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source covers indications and pre-operative preparation for cardiac surgery.",
+                  "ar": "يتناول المصدر دواعي جراحة القلب والاستعداد قبل العملية.",
+                  "simple": "اربط دواعي الجراحة بخطوات التحضير المذكورة في الكتاب."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Indications → Pre-operative preparation"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 5 — Nursing Care of Gastrointestinal Diseases",
+      "description": "Gastrointestinal anatomy and physiology; gastritis; appendicitis; cholecystitis; peptic ulcer and viral hepatitis in contents",
+      "order": 5,
+      "items": [
+        {
+          "title": "Gastrointestinal anatomy and physiology",
+          "pages": "See supplied textbook section",
+          "body": "The chapter reviews the digestive system structure and function.",
+          "detail": "يراجع الفصل تركيب الجهاز الهضمي ووظائفه.",
+          "takeaway": "ابدأ بمسار الطعام ووظائف الأعضاء قبل دراسة الاضطرابات.",
+          "terms": [
+            "Digestive tract → Digestion → Absorption"
+          ]
+        },
+        {
+          "title": "Gastritis",
+          "pages": "See supplied textbook section",
+          "body": "The source covers definition, acute and chronic forms, causes and related clinical content.",
+          "detail": "يتناول المصدر تعريف التهاب المعدة وصورتيه الحادة والمزمنة وأسبابه ومحتواه الإكلينيكي المرتبط.",
+          "takeaway": "فرّق بين الحاد والمزمن، ثم راجع الأسباب وبقية العناوين كما وردت.",
+          "terms": [
+            "Acute",
+            "Chronic",
+            "Causes"
+          ]
+        },
+        {
+          "title": "Appendicitis",
+          "pages": "See supplied textbook section",
+          "body": "The source includes appendicitis and clinical assessment signs, including named examination signs.",
+          "detail": "يعرض المصدر التهاب الزائدة الدودية وعلامات التقييم الإكلينيكي الواردة بالكتاب.",
+          "takeaway": "راجع العلامات المذكورة في المصدر دون تعميمها كتشخيص ذاتي.",
+          "terms": [
+            "Appendix",
+            "Clinical signs",
+            "Assessment"
+          ]
+        },
+        {
+          "title": "Cholecystitis",
+          "pages": "See supplied textbook section",
+          "body": "The chapter includes a section on cholecystitis.",
+          "detail": "يتضمن الفصل جزءًا عن التهاب المرارة.",
+          "takeaway": "يُستكمل التفصيل من صفحات الموضوع في النسخة الأصلية قبل نشر شرح موسع.",
+          "terms": [
+            "Gallbladder",
+            "Inflammation"
+          ]
+        },
+        {
+          "title": "Peptic ulcer and viral hepatitis",
+          "pages": "See supplied textbook section",
+          "body": "Both topics appear in the chapter contents; their exact body-text sections require page-level verification before a full lesson is published.",
+          "detail": "الموضوعان موجودان في فهرس الفصل، لكن يلزم التحقق من صفحات الشرح الفعلية قبل نشر محاضرة كاملة.",
+          "takeaway": "لن نضيف تفاصيل غير مثبتة من صفحات الكتاب.",
+          "terms": [
+            "Listed in contents; source verification pending"
+          ]
+        }
+      ],
+      "lessons": [
+        {
+          "title": "Gastrointestinal anatomy and physiology",
+          "order": 1,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Digestive tract → Digestion → Absorption"
+          ],
+          "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/chapter-05.svg",
+              "alt": "Nursing Care of Gastrointestinal Diseases — educational chapter map",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The chapter reviews the digestive system structure and function.",
+                  "ar": "يراجع الفصل تركيب الجهاز الهضمي ووظائفه.",
+                  "simple": "ابدأ بمسار الطعام ووظائف الأعضاء قبل دراسة الاضطرابات."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Digestive tract → Digestion → Absorption"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Gastritis",
+          "order": 2,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Acute",
+            "Chronic",
+            "Causes"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source covers definition, acute and chronic forms, causes and related clinical content.",
+                  "ar": "يتناول المصدر تعريف التهاب المعدة وصورتيه الحادة والمزمنة وأسبابه ومحتواه الإكلينيكي المرتبط.",
+                  "simple": "فرّق بين الحاد والمزمن، ثم راجع الأسباب وبقية العناوين كما وردت."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Acute • Chronic • Causes"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Appendicitis",
+          "order": 3,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Appendix",
+            "Clinical signs",
+            "Assessment"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source includes appendicitis and clinical assessment signs, including named examination signs.",
+                  "ar": "يعرض المصدر التهاب الزائدة الدودية وعلامات التقييم الإكلينيكي الواردة بالكتاب.",
+                  "simple": "راجع العلامات المذكورة في المصدر دون تعميمها كتشخيص ذاتي."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Appendix • Clinical signs • Assessment"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Cholecystitis",
+          "order": 4,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Gallbladder",
+            "Inflammation"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The chapter includes a section on cholecystitis.",
+                  "ar": "يتضمن الفصل جزءًا عن التهاب المرارة.",
+                  "simple": "يُستكمل التفصيل من صفحات الموضوع في النسخة الأصلية قبل نشر شرح موسع."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Gallbladder • Inflammation"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Peptic ulcer and viral hepatitis",
+          "order": 5,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Listed in contents; source verification pending"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "Both topics appear in the chapter contents; their exact body-text sections require page-level verification before a full lesson is published.",
+                  "ar": "الموضوعان موجودان في فهرس الفصل، لكن يلزم التحقق من صفحات الشرح الفعلية قبل نشر محاضرة كاملة.",
+                  "simple": "لن نضيف تفاصيل غير مثبتة من صفحات الكتاب."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Listed in contents; source verification pending"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 6 — Nursing Care of Urinary Tract Diseases",
+      "description": "Urinary anatomy and physiology; urine retention; urinary incontinence; stones and renal failure listed in contents",
+      "order": 6,
+      "items": [
+        {
+          "title": "Urinary system: anatomy and physiology",
+          "pages": "See supplied textbook section",
+          "body": "The source reviews urinary system structure and function.",
+          "detail": "يراجع المصدر تركيب الجهاز البولي ووظائفه.",
+          "takeaway": "افهم أعضاء الجهاز ومسار تكوين البول وخروجه وفق شرح الكتاب.",
+          "terms": [
+            "Kidneys → Ureters → Bladder → Urethra"
+          ]
+        },
+        {
+          "title": "Urine retention",
+          "pages": "See supplied textbook section",
+          "body": "The source discusses urinary retention, its progression and physical findings.",
+          "detail": "يتناول المصدر احتباس البول وتطوره والعلامات الجسدية المرتبطة به.",
+          "takeaway": "رتب المذاكرة حول التعريف والتطور والعلامات الواردة بالمصدر.",
+          "terms": [
+            "Retention → Progression → Findings"
+          ]
+        },
+        {
+          "title": "Urinary incontinence",
+          "pages": "See supplied textbook section",
+          "body": "The source discusses definition, mechanisms and interventions, including pelvic floor muscle training and scheduled voiding.",
+          "detail": "يشرح المصدر تعريف سلس البول وآلياته والتدخلات المذكورة، ومنها تدريب عضلات قاع الحوض وجدولة التبول.",
+          "takeaway": "احفظ الأنواع أو الآليات والتدخلات كما وردت في صفحات الكتاب.",
+          "terms": [
+            "Mechanisms",
+            "Assessment",
+            "Interventions"
+          ]
+        },
+        {
+          "title": "Urinary stones and renal failure",
+          "pages": "See supplied textbook section",
+          "body": "These topics appear in the contents; a complete source-based lesson needs verification of their actual explanatory pages.",
+          "detail": "الموضوعان واردان في الفهرس، ويلزم التحقق من صفحات شرحهما الفعلية قبل إعداد محاضرة كاملة.",
+          "takeaway": "لن نملأ النقص بمعلومات خارج الكتاب دون تمييز واضح.",
+          "terms": [
+            "Contents listing; verification pending"
+          ]
+        }
+      ],
+      "lessons": [
+        {
+          "title": "Urinary system: anatomy and physiology",
+          "order": 1,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Kidneys → Ureters → Bladder → Urethra"
+          ],
+          "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/chapter-06.svg",
+              "alt": "Nursing Care of Urinary Tract Diseases — educational chapter map",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source reviews urinary system structure and function.",
+                  "ar": "يراجع المصدر تركيب الجهاز البولي ووظائفه.",
+                  "simple": "افهم أعضاء الجهاز ومسار تكوين البول وخروجه وفق شرح الكتاب."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Kidneys → Ureters → Bladder → Urethra"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Urine retention",
+          "order": 2,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Retention → Progression → Findings"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source discusses urinary retention, its progression and physical findings.",
+                  "ar": "يتناول المصدر احتباس البول وتطوره والعلامات الجسدية المرتبطة به.",
+                  "simple": "رتب المذاكرة حول التعريف والتطور والعلامات الواردة بالمصدر."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Retention → Progression → Findings"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Urinary incontinence",
+          "order": 3,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Mechanisms",
+            "Assessment",
+            "Interventions"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source discusses definition, mechanisms and interventions, including pelvic floor muscle training and scheduled voiding.",
+                  "ar": "يشرح المصدر تعريف سلس البول وآلياته والتدخلات المذكورة، ومنها تدريب عضلات قاع الحوض وجدولة التبول.",
+                  "simple": "احفظ الأنواع أو الآليات والتدخلات كما وردت في صفحات الكتاب."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Mechanisms • Assessment • Interventions"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Urinary stones and renal failure",
+          "order": 4,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Contents listing; verification pending"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "These topics appear in the contents; a complete source-based lesson needs verification of their actual explanatory pages.",
+                  "ar": "الموضوعان واردان في الفهرس، ويلزم التحقق من صفحات شرحهما الفعلية قبل إعداد محاضرة كاملة.",
+                  "simple": "لن نملأ النقص بمعلومات خارج الكتاب دون تمييز واضح."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Contents listing; verification pending"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 7 — Nursing Care of Neurological Diseases",
+      "description": "Nervous system anatomy and physiology; headache; stroke; epilepsy listed in contents",
+      "order": 7,
+      "items": [
+        {
+          "title": "Nervous system: anatomy and physiology",
+          "pages": "See supplied textbook section",
+          "body": "The chapter reviews nervous system structure and function.",
+          "detail": "يراجع الفصل تركيب الجهاز العصبي ووظائفه.",
+          "takeaway": "ابدأ بتقسيم الجهاز العصبي وأدوار أجزائه وفق الكتاب.",
+          "terms": [
+            "Central",
+            "Peripheral",
+            "Functions"
+          ]
+        },
+        {
+          "title": "Headache",
+          "pages": "See supplied textbook section",
+          "body": "The source covers definition, pathophysiology, types, causes, characteristics, aggravating and relieving factors, diagnosis, management and nursing care.",
+          "detail": "يتناول المصدر تعريف الصداع وآليته وأنواعه وأسبابه وخصائصه والعوامل المؤثرة والتشخيص والتدبير والرعاية التمريضية.",
+          "takeaway": "نظم المعلومات في جدول يقارن الأنواع والأسباب والخصائص.",
+          "terms": [
+            "Types",
+            "Causes",
+            "Characteristics",
+            "Care"
+          ]
+        },
+        {
+          "title": "Stroke",
+          "pages": "See supplied textbook section",
+          "body": "The source discusses definition, pathophysiology, risk factors, warning signs, emergency evaluation, prevention, emergency care, rehabilitation and complications.",
+          "detail": "يشرح المصدر السكتة الدماغية وآليتها وعوامل الخطورة وعلامات التحذير والتقييم والوقاية والرعاية والتأهيل والمضاعفات.",
+          "takeaway": "راجع علامات التحذير ومراحل الرعاية والتأهيل كما يعرضها الكتاب.",
+          "terms": [
+            "Risk factors → Warning signs → Evaluation → Rehabilitation"
+          ]
+        },
+        {
+          "title": "Epilepsy",
+          "pages": "See supplied textbook section",
+          "body": "Epilepsy is listed in the chapter contents; the exact explanatory pages need verification before a complete lesson is written.",
+          "detail": "الصرع وارد في فهرس الفصل، ويلزم التحقق من صفحات الشرح قبل إعداد محاضرة مكتملة.",
+          "takeaway": "لن نضيف شرحًا غير موثق في نص الكتاب.",
+          "terms": [
+            "Contents listing; verification pending"
+          ]
+        }
+      ],
+      "lessons": [
+        {
+          "title": "Nervous system: anatomy and physiology",
+          "order": 1,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Central",
+            "Peripheral",
+            "Functions"
+          ],
+          "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/chapter-07.svg",
+              "alt": "Nursing Care of Neurological Diseases — educational chapter map",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The chapter reviews nervous system structure and function.",
+                  "ar": "يراجع الفصل تركيب الجهاز العصبي ووظائفه.",
+                  "simple": "ابدأ بتقسيم الجهاز العصبي وأدوار أجزائه وفق الكتاب."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Central • Peripheral • Functions"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Headache",
+          "order": 2,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Types",
+            "Causes",
+            "Characteristics",
+            "Care"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source covers definition, pathophysiology, types, causes, characteristics, aggravating and relieving factors, diagnosis, management and nursing care.",
+                  "ar": "يتناول المصدر تعريف الصداع وآليته وأنواعه وأسبابه وخصائصه والعوامل المؤثرة والتشخيص والتدبير والرعاية التمريضية.",
+                  "simple": "نظم المعلومات في جدول يقارن الأنواع والأسباب والخصائص."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Types • Causes • Characteristics • Care"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Stroke",
+          "order": 3,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Risk factors → Warning signs → Evaluation → Rehabilitation"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source discusses definition, pathophysiology, risk factors, warning signs, emergency evaluation, prevention, emergency care, rehabilitation and complications.",
+                  "ar": "يشرح المصدر السكتة الدماغية وآليتها وعوامل الخطورة وعلامات التحذير والتقييم والوقاية والرعاية والتأهيل والمضاعفات.",
+                  "simple": "راجع علامات التحذير ومراحل الرعاية والتأهيل كما يعرضها الكتاب."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Risk factors → Warning signs → Evaluation → Rehabilitation"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Epilepsy",
+          "order": 4,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Contents listing; verification pending"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "Epilepsy is listed in the chapter contents; the exact explanatory pages need verification before a complete lesson is written.",
+                  "ar": "الصرع وارد في فهرس الفصل، ويلزم التحقق من صفحات الشرح قبل إعداد محاضرة مكتملة.",
+                  "simple": "لن نضيف شرحًا غير موثق في نص الكتاب."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Contents listing; verification pending"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 8 — Nursing Care of Musculoskeletal Diseases",
+      "description": "Musculoskeletal anatomy and physiology; fractures; osteoporosis",
+      "order": 8,
+      "items": [
+        {
+          "title": "Musculoskeletal anatomy and physiology",
+          "pages": "See supplied textbook section",
+          "body": "The source reviews musculoskeletal anatomy and function.",
+          "detail": "يراجع المصدر تركيب الجهاز العضلي الهيكلي ووظائفه.",
+          "takeaway": "اربط بين العظام والعضلات والمفاصل ووظيفة الحركة والدعم.",
+          "terms": [
+            "Bones",
+            "Muscles",
+            "Joints"
+          ]
+        },
+        {
+          "title": "Fractures",
+          "pages": "See supplied textbook section",
+          "body": "The source covers definition, types, management and nursing immobilization.",
+          "detail": "يتناول المصدر تعريف الكسور وأنواعها وتدبيرها وتثبيت الطرف ضمن الرعاية التمريضية.",
+          "takeaway": "نظم الدرس إلى تعريف وتصنيف ومبادئ التدبير والرعاية المذكورة.",
+          "terms": [
+            "Fracture → Classification → Immobilization"
+          ]
+        },
+        {
+          "title": "Osteoporosis",
+          "pages": "See supplied textbook section",
+          "body": "The source covers definition, pathophysiology, classification, manifestations, diagnosis, management and drug therapy.",
+          "detail": "يشرح المصدر هشاشة العظام وآليتها وتصنيفها ومظاهرها وتشخيصها وتدبيرها والعلاج الدوائي.",
+          "takeaway": "اربط بين آلية المرض والمظاهر ووسائل التشخيص والتدبير كما وردت.",
+          "terms": [
+            "Bone density",
+            "Manifestations",
+            "Diagnosis"
+          ]
+        }
+      ],
+      "lessons": [
+        {
+          "title": "Musculoskeletal anatomy and physiology",
+          "order": 1,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Bones",
+            "Muscles",
+            "Joints"
+          ],
+          "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/chapter-08.svg",
+              "alt": "Nursing Care of Musculoskeletal Diseases — educational chapter map",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source reviews musculoskeletal anatomy and function.",
+                  "ar": "يراجع المصدر تركيب الجهاز العضلي الهيكلي ووظائفه.",
+                  "simple": "اربط بين العظام والعضلات والمفاصل ووظيفة الحركة والدعم."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Bones • Muscles • Joints"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Fractures",
+          "order": 2,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Fracture → Classification → Immobilization"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source covers definition, types, management and nursing immobilization.",
+                  "ar": "يتناول المصدر تعريف الكسور وأنواعها وتدبيرها وتثبيت الطرف ضمن الرعاية التمريضية.",
+                  "simple": "نظم الدرس إلى تعريف وتصنيف ومبادئ التدبير والرعاية المذكورة."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Fracture → Classification → Immobilization"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Osteoporosis",
+          "order": 3,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Bone density",
+            "Manifestations",
+            "Diagnosis"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source covers definition, pathophysiology, classification, manifestations, diagnosis, management and drug therapy.",
+                  "ar": "يشرح المصدر هشاشة العظام وآليتها وتصنيفها ومظاهرها وتشخيصها وتدبيرها والعلاج الدوائي.",
+                  "simple": "اربط بين آلية المرض والمظاهر ووسائل التشخيص والتدبير كما وردت."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Bone density • Manifestations • Diagnosis"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 9 — Nursing Care of Endocrine Diseases",
+      "description": "Endocrine anatomy and physiology; diabetes mellitus; thyroid disorders",
+      "order": 9,
+      "items": [
+        {
+          "title": "Endocrine anatomy and physiology",
+          "pages": "See supplied textbook section",
+          "body": "The chapter reviews endocrine system anatomy and physiology.",
+          "detail": "يراجع الفصل تركيب جهاز الغدد الصماء ووظائفه.",
+          "takeaway": "ابدأ بالغدد والهرمونات ووظائفها كما يقدمها المصدر.",
+          "terms": [
+            "Glands → Hormones → Target organs"
+          ]
+        },
+        {
+          "title": "Diabetes mellitus",
+          "pages": "See supplied textbook section",
+          "body": "The source contains a dedicated diabetes mellitus section.",
+          "detail": "يتضمن الكتاب جزءًا مخصصًا لداء السكري.",
+          "takeaway": "تُستكمل تفاصيل المحاضرة مباشرة من صفحات هذا القسم مع الحفاظ على تصنيفاته ومصطلحاته.",
+          "terms": [
+            "Diabetes mellitus"
+          ]
+        },
+        {
+          "title": "Thyroid disorders",
+          "pages": "See supplied textbook section",
+          "body": "The source covers hypothyroidism, hyperthyroidism, nursing interventions, non-pharmacological measures, drug therapy, radioactive iodine, nutrition and education.",
+          "detail": "يتناول المصدر قصور وفرط نشاط الغدة الدرقية والتدخلات التمريضية والتدابير غير الدوائية والعلاج والتغذية والتثقيف.",
+          "takeaway": "قارن بين القصور والفرط في جدول، ثم راجع التدخلات الواردة لكل منهما.",
+          "terms": [
+            "Hypothyroidism ↔ Hyperthyroidism"
+          ]
+        }
+      ],
+      "lessons": [
+        {
+          "title": "Endocrine anatomy and physiology",
+          "order": 1,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Glands → Hormones → Target organs"
+          ],
+          "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/chapter-09.svg",
+              "alt": "Nursing Care of Endocrine Diseases — educational chapter map",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The chapter reviews endocrine system anatomy and physiology.",
+                  "ar": "يراجع الفصل تركيب جهاز الغدد الصماء ووظائفه.",
+                  "simple": "ابدأ بالغدد والهرمونات ووظائفها كما يقدمها المصدر."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Glands → Hormones → Target organs"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Diabetes mellitus",
+          "order": 2,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Diabetes mellitus"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source contains a dedicated diabetes mellitus section.",
+                  "ar": "يتضمن الكتاب جزءًا مخصصًا لداء السكري.",
+                  "simple": "تُستكمل تفاصيل المحاضرة مباشرة من صفحات هذا القسم مع الحفاظ على تصنيفاته ومصطلحاته."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Diabetes mellitus"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Thyroid disorders",
+          "order": 3,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Hypothyroidism ↔ Hyperthyroidism"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source covers hypothyroidism, hyperthyroidism, nursing interventions, non-pharmacological measures, drug therapy, radioactive iodine, nutrition and education.",
+                  "ar": "يتناول المصدر قصور وفرط نشاط الغدة الدرقية والتدخلات التمريضية والتدابير غير الدوائية والعلاج والتغذية والتثقيف.",
+                  "simple": "قارن بين القصور والفرط في جدول، ثم راجع التدخلات الواردة لكل منهما."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Hypothyroidism ↔ Hyperthyroidism"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 10 — Nursing Care of Cancer",
+      "description": "Cancer terminology, pathophysiology, types, stages, signs, management and colon cancer",
+      "order": 10,
+      "items": [
+        {
+          "title": "Cancer foundations",
+          "pages": "See supplied textbook section",
+          "body": "The source discusses terminology, definition, pathophysiology, risk factors, benign versus malignant tumors, manifestations, detection, prevention, diagnosis and nursing management.",
+          "detail": "يتناول المصدر مصطلحات السرطان وتعريفه وآليته وعوامل الخطورة والفرق بين الحميد والخبيث والمظاهر والكشف والوقاية والتشخيص والرعاية التمريضية.",
+          "takeaway": "ابدأ بالمصطلحات والفرق بين الورم الحميد والخبيث، ثم انتقل إلى بقية عناصر الفصل.",
+          "terms": [
+            "Terminology",
+            "Pathophysiology",
+            "Types",
+            "Stages"
+          ]
+        },
+        {
+          "title": "Colon cancer",
+          "pages": "See supplied textbook section",
+          "body": "The source covers definition, staging, presentation by location, investigations, nursing management and home care.",
+          "detail": "يتناول المصدر سرطان القولون وتعريفه ومراحله واختلاف المظاهر حسب الموقع والفحوصات والرعاية التمريضية والرعاية المنزلية.",
+          "takeaway": "نظم الموضوع حسب المراحل والعلامات والفحوصات والرعاية الواردة في المصدر.",
+          "terms": [
+            "Colon",
+            "Staging",
+            "Investigations",
+            "Nursing care"
+          ]
+        }
+      ],
+      "lessons": [
+        {
+          "title": "Cancer foundations",
+          "order": 1,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Terminology",
+            "Pathophysiology",
+            "Types",
+            "Stages"
+          ],
+          "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/chapter-10.svg",
+              "alt": "Nursing Care of Cancer — educational chapter map",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source discusses terminology, definition, pathophysiology, risk factors, benign versus malignant tumors, manifestations, detection, prevention, diagnosis and nursing management.",
+                  "ar": "يتناول المصدر مصطلحات السرطان وتعريفه وآليته وعوامل الخطورة والفرق بين الحميد والخبيث والمظاهر والكشف والوقاية والتشخيص والرعاية التمريضية.",
+                  "simple": "ابدأ بالمصطلحات والفرق بين الورم الحميد والخبيث، ثم انتقل إلى بقية عناصر الفصل."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Terminology • Pathophysiology • Types • Stages"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Colon cancer",
+          "order": 2,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Colon",
+            "Staging",
+            "Investigations",
+            "Nursing care"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source covers definition, staging, presentation by location, investigations, nursing management and home care.",
+                  "ar": "يتناول المصدر سرطان القولون وتعريفه ومراحله واختلاف المظاهر حسب الموقع والفحوصات والرعاية التمريضية والرعاية المنزلية.",
+                  "simple": "نظم الموضوع حسب المراحل والعلامات والفحوصات والرعاية الواردة في المصدر."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Colon • Staging • Investigations • Nursing care"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 11 — Nursing Care in Emergency Situations",
+      "description": "Burns; trauma; coma and brain death",
+      "order": 11,
+      "items": [
+        {
+          "title": "Burns",
+          "pages": "See supplied textbook section",
+          "body": "The source covers definition, types, classification, depth and extent of burns.",
+          "detail": "يتناول المصدر تعريف الحروق وأنواعها وتصنيفها وعمقها ومساحتها.",
+          "takeaway": "افصل بين نوع الحرق وعمقه ومساحته؛ فكل عنوان له معنى مستقل في الكتاب.",
+          "terms": [
+            "Type",
+            "Depth",
+            "Extent"
+          ]
+        },
+        {
+          "title": "Trauma",
+          "pages": "See supplied textbook section",
+          "body": "The source discusses definition, etiology, risk, clinical diagnosis, laboratory and imaging investigations, treatment and complications.",
+          "detail": "يتناول المصدر تعريف الإصابات وأسبابها ومخاطرها وتشخيصها والفحوصات المعملية والتصويرية والعلاج والمضاعفات.",
+          "takeaway": "راجع ترتيب عناوين تقييم الإصابة كما ورد في الكتاب.",
+          "terms": [
+            "Cause",
+            "Assessment",
+            "Investigations",
+            "Complications"
+          ]
+        },
+        {
+          "title": "Coma and brain death",
+          "pages": "See supplied textbook section",
+          "body": "The source covers classification, Glasgow Coma Scale components, etiology and diagnosis of brain death.",
+          "detail": "يتناول المصدر تصنيف الغيبوبة ومكونات مقياس غلاسكو للغيبوبة والأسباب وتشخيص موت الدماغ.",
+          "takeaway": "هذا محتوى دراسي لفهم المصطلحات والتقييم الوارد بالمقرر، وليس تعليمات للتشخيص العملي.",
+          "terms": [
+            "Coma",
+            "Glasgow Coma Scale",
+            "Brain death"
+          ]
+        }
+      ],
+      "lessons": [
+        {
+          "title": "Burns",
+          "order": 1,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Type",
+            "Depth",
+            "Extent"
+          ],
+          "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/chapter-11.svg",
+              "alt": "Nursing Care in Emergency Situations — educational chapter map",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source covers definition, types, classification, depth and extent of burns.",
+                  "ar": "يتناول المصدر تعريف الحروق وأنواعها وتصنيفها وعمقها ومساحتها.",
+                  "simple": "افصل بين نوع الحرق وعمقه ومساحته؛ فكل عنوان له معنى مستقل في الكتاب."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Type • Depth • Extent"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Trauma",
+          "order": 2,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Cause",
+            "Assessment",
+            "Investigations",
+            "Complications"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source discusses definition, etiology, risk, clinical diagnosis, laboratory and imaging investigations, treatment and complications.",
+                  "ar": "يتناول المصدر تعريف الإصابات وأسبابها ومخاطرها وتشخيصها والفحوصات المعملية والتصويرية والعلاج والمضاعفات.",
+                  "simple": "راجع ترتيب عناوين تقييم الإصابة كما ورد في الكتاب."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Cause • Assessment • Investigations • Complications"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        },
+        {
+          "title": "Coma and brain death",
+          "order": 3,
+          "objectives": [
+            "Explain the topic using the supplied textbook's terminology.",
+            "Identify the main ideas and classifications presented in the source.",
+            "Review the source-based nursing-care themes for this topic."
+          ],
+          "keyTerms": [
+            "Coma",
+            "Glasgow Coma Scale",
+            "Brain death"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Textbook-based study notes | ملخص من الكتاب"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas explained | الفكرة الأساسية",
+              "points": [
+                {
+                  "en": "The source covers classification, Glasgow Coma Scale components, etiology and diagnosis of brain death.",
+                  "ar": "يتناول المصدر تصنيف الغيبوبة ومكونات مقياس غلاسكو للغيبوبة والأسباب وتشخيص موت الدماغ.",
+                  "simple": "هذا محتوى دراسي لفهم المصطلحات والتقييم الوارد بالمقرر، وليس تعليمات للتشخيص العملي."
+                }
+              ]
+            },
+            {
+              "type": "keypoint",
+              "title": "Key terms | مصطلحات أساسية",
+              "text": "Coma • Glasgow Coma Scale • Brain death"
+            },
+            {
+              "type": "warning",
+              "title": "ملاحظة المصدر",
+              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
