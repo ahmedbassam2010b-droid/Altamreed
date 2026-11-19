@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "course": "Medical-Surgical Nursing Theory",
+  "course": "Medical Surgical Nursing",
   "grade": "Second Year Nursing School",
   "source": {
     "title": "Medical-Surgical Nursing Theory Book — Nursing School, Second Year",
@@ -12,7 +12,8 @@
       "Dr. Mai El-Sayed Mohsen"
     ],
     "note": "Course structure and lesson summaries derived from the supplied textbook. Topics listed in the contents but not yet verified in body pages are explicitly marked.",
-    "coverageNote": "The book contents identify 11 chapters. This initial integrated curriculum maps the source chapters and verified topic headings. Further page-level transcription and editorial verification are required before declaring every lesson complete."
+    "coverageNote": "The book contents identify 11 chapters. This initial integrated curriculum maps the source chapters and verified topic headings. Further page-level transcription and editorial verification are required before declaring every lesson complete.",
+    "courseName": "Medical Surgical Nursing"
   },
   "contentStatus": "in-progress",
   "editorialVerification": {
@@ -31,7 +32,9 @@
     "visualStyle": "Original chapter-specific educational diagrams in SVG format",
     "note": "تم ربط الصور الأربعين المرفوعة فعليًا بالمحاضرات الأقرب لموضوعها. بعض الرسومات عامة أو داعمة وليست شرحًا تفصيليًا مستقلًا للمرض؛ راجع matchNote في visualAssetMap ولا تعتبر الصورة بديلًا عن الشرح الأكاديمي. تمت إضافة رسوم عامة داعمة للمحاضرات التي لا يوجد لها رسم متخصص مستقل، مع توضيح حدود المطابقة في سجل visualSupportNotes.",
     "visualMatchingStatus": "matched",
-    "visualAssetCount": 40
+    "visualAssetCount": 40,
+    "visualRenderingFix": "Lesson image URLs now use absolute raw.githubusercontent.com HTTPS URLs compatible with the lesson renderer.",
+    "imageUrlsAbsolute": true
   },
   "chapters": [
     {
@@ -93,25 +96,25 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/01_The_Nursing_Process.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/01_The_Nursing_Process.png",
               "alt": "Professional nursing concepts — أساسيات المفاهيم التمريضية",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/02_Patient_Safety.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/02_Patient_Safety.png",
               "alt": "Professional nursing concepts — أساسيات المفاهيم التمريضية",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/39_Nursing_Roles.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/39_Nursing_Roles.png",
               "alt": "Professional nursing concepts — أساسيات المفاهيم التمريضية — أدوار التمريض",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/40_Teamwork_in_Healthcare.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/40_Teamwork_in_Healthcare.png",
               "alt": "Professional nursing concepts — أساسيات المفاهيم التمريضية — فريق الرعاية الصحية",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -158,13 +161,13 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/37_Patient_Education.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/37_Patient_Education.png",
               "alt": "Complementary and alternative therapy — العلاج التكميلي والبديل — التثقيف الصحي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/38_Health_Promotion.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/38_Health_Promotion.png",
               "alt": "Complementary and alternative therapy — العلاج التكميلي والبديل — تعزيز الصحة",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -211,13 +214,13 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/06_Pain_Management.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/06_Pain_Management.png",
               "alt": "Palliative care and end of life — الرعاية التلطيفية ونهاية الحياة",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/36_Palliative_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/36_Palliative_Care.png",
               "alt": "Palliative care and end of life — الرعاية التلطيفية ونهاية الحياة",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -304,7 +307,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/16_Preoperative_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/16_Preoperative_Care.png",
               "alt": "Pre-operative care — الرعاية قبل العملية",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -352,7 +355,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/18_Common_Surgical_Procedures.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/18_Common_Surgical_Procedures.png",
               "alt": "Intraoperative care — الرعاية أثناء العملية",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -397,13 +400,13 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/05_Wound_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/05_Wound_Care.png",
               "alt": "Postoperative care — رعاية ما بعد العملية",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/17_Postoperative_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/17_Postoperative_Care.png",
               "alt": "Postoperative care — رعاية ما بعد العملية",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -500,7 +503,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/08_Respiratory_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/08_Respiratory_Care.png",
               "alt": "Respiratory system: anatomy and physiology — تشريح ووظائف الجهاز التنفسي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -548,13 +551,13 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/04_Infection_Control.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/04_Infection_Control.png",
               "alt": "Pneumonia — الالتهاب الرئوي — الوقاية ومكافحة العدوى",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/25_Pneumonia.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/25_Pneumonia.png",
               "alt": "Pneumonia — الالتهاب الرئوي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -599,7 +602,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/24_COPD_and_Asthma.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/24_COPD_and_Asthma.png",
               "alt": "Bronchial asthma — الربو الشعبي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -644,7 +647,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/08_Respiratory_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/08_Respiratory_Care.png",
               "alt": "Respiratory failure — illustration support",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -741,7 +744,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/09_Cardiovascular_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/09_Cardiovascular_Care.png",
               "alt": "Cardiovascular anatomy and physiology — تشريح ووظائف الجهاز القلبي الوعائي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -789,13 +792,13 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/03_Vital_Signs.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/03_Vital_Signs.png",
               "alt": "Hypertension — ارتفاع ضغط الدم — مرجع داعم للعلامات الحيوية",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/22_Hypertension.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/22_Hypertension.png",
               "alt": "Hypertension — ارتفاع ضغط الدم",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -840,7 +843,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/09_Cardiovascular_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/09_Cardiovascular_Care.png",
               "alt": "Ischemic heart disease — illustration support",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -885,7 +888,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/18_Common_Surgical_Procedures.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/18_Common_Surgical_Procedures.png",
               "alt": "Cardiac surgery — illustration support",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -994,7 +997,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/10_Gastrointestinal_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/10_Gastrointestinal_Care.png",
               "alt": "Gastrointestinal anatomy and physiology — تشريح ووظائف الجهاز الهضمي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1041,7 +1044,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/10_Gastrointestinal_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/10_Gastrointestinal_Care.png",
               "alt": "Gastritis — illustration support",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1088,7 +1091,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/27_Appendicitis.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/27_Appendicitis.png",
               "alt": "Appendicitis — التهاب الزائدة الدودية",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1134,7 +1137,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/28_Cholecystitis.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/28_Cholecystitis.png",
               "alt": "Cholecystitis — التهاب المرارة",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1179,13 +1182,13 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/26_Peptic_Ulcer.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/26_Peptic_Ulcer.png",
               "alt": "Peptic ulcer and viral hepatitis — القرحة الهضمية والتهاب الكبد الفيروسي — جزء القرحة",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/29_Hepatitis.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/29_Hepatitis.png",
               "alt": "Peptic ulcer and viral hepatitis — القرحة الهضمية والتهاب الكبد الفيروسي — جزء التهاب الكبد",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1281,7 +1284,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/11_Urinary_Tract_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/11_Urinary_Tract_Care.png",
               "alt": "Urinary system: anatomy and physiology — تشريح ووظائف الجهاز البولي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1326,7 +1329,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/11_Urinary_Tract_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/11_Urinary_Tract_Care.png",
               "alt": "Urine retention — illustration support",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1373,7 +1376,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/11_Urinary_Tract_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/11_Urinary_Tract_Care.png",
               "alt": "Urinary incontinence — illustration support",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1418,13 +1421,13 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/07_Fluid_and_Electrolyte_Balance.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/07_Fluid_and_Electrolyte_Balance.png",
               "alt": "Urinary stones and renal failure — حصوات الجهاز البولي والفشل الكلوي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/30_Renal_Failure.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/30_Renal_Failure.png",
               "alt": "Urinary stones and renal failure — حصوات الجهاز البولي والفشل الكلوي — جزء الفشل الكلوي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1525,7 +1528,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/12_Neurological_Assessment.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/12_Neurological_Assessment.png",
               "alt": "Nervous system: anatomy and physiology — تشريح ووظائف الجهاز العصبي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1573,7 +1576,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/12_Neurological_Assessment.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/12_Neurological_Assessment.png",
               "alt": "Headache — illustration support",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1618,7 +1621,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/21_Stroke_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/21_Stroke_Care.png",
               "alt": "Stroke — السكتة الدماغية",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1663,7 +1666,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/12_Neurological_Assessment.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/12_Neurological_Assessment.png",
               "alt": "Epilepsy — illustration support",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1753,7 +1756,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/13_Musculoskeletal_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/13_Musculoskeletal_Care.png",
               "alt": "Musculoskeletal anatomy and physiology — تشريح ووظائف الجهاز العضلي الهيكلي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1798,7 +1801,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/31_Fractures.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/31_Fractures.png",
               "alt": "Fractures — الكسور",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1845,7 +1848,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/32_Osteoporosis.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/32_Osteoporosis.png",
               "alt": "Osteoporosis — هشاشة العظام",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1929,7 +1932,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/14_Endocrine_Disorders.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/14_Endocrine_Disorders.png",
               "alt": "Endocrine anatomy and physiology — تشريح ووظائف جهاز الغدد الصماء",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -1974,7 +1977,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/23_Diabetes_Mellitus.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/23_Diabetes_Mellitus.png",
               "alt": "Diabetes mellitus — داء السكري",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -2019,7 +2022,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/14_Endocrine_Disorders.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/14_Endocrine_Disorders.png",
               "alt": "Thyroid disorders — illustration support",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -2102,7 +2105,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/15_Cancer_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/15_Cancer_Care.png",
               "alt": "Cancer foundations — أساسيات السرطان",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -2150,7 +2153,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/15_Cancer_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/15_Cancer_Care.png",
               "alt": "Colon cancer — illustration support",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -2243,7 +2246,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/33_Burn_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/33_Burn_Care.png",
               "alt": "Burns — الحروق",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -2291,19 +2294,19 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/19_Emergency_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/19_Emergency_Care.png",
               "alt": "Trauma — الإصابات والطوارئ",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/20_Shock_Management.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/20_Shock_Management.png",
               "alt": "Trauma — الإصابات — موضوع داعم عن الصدمة",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/34_Trauma_Care.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/34_Trauma_Care.png",
               "alt": "Trauma — الإصابات",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
@@ -2350,7 +2353,7 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/35_Coma_and_Brain_Death.png",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/35_Coma_and_Brain_Death.png",
               "alt": "Coma and brain death — الغيبوبة وموت الدماغ",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
