@@ -287,6 +287,54 @@ $("#communityHealthCurriculumImportForm")?.addEventListener("submit",async e=>{
  }finally{if(button)button.disabled=false;}
 });
 
+async function importMedicalSurgicalTheory(subjectId,publish){
+ let phase="التحقق من المادة";
+ try{
+  const s=await getDoc(doc(db,"subjects",subjectId));if(!s.exists())throw new Error("SUBJECT_NOT_FOUND");
+  const d=s.data();if(!/medical.?surgical|باطنة.*جراحة|الباطنة.*الجراحة/i.test(String(d.title||"")))throw new Error("WRONG_SUBJECT");
+  const gradeName=[d.year,d.grade,d.gradeName,gradesCache.find(g=>g.id===d.gradeId)?.name].filter(Boolean).join(" ");
+  if(!/second|ثاني|الثاني/i.test(gradeName))throw new Error("WRONG_GRADE");
+  phase="تحميل ملف المنهج";
+  const response=await fetch("content/second-year/medical-surgical-nursing-curriculum.json",{cache:"no-store"});if(!response.ok)throw new Error("CURRICULUM_FILE_NOT_FOUND");
+  const curriculum=await response.json();if(curriculum.chapters?.length!==11||curriculum.contentStatus!=="in-progress")throw new Error("CURRICULUM_INVALID");
+  const sourceId="medical-surgical-nursing-theory-second-year";
+  phase="فحص المحتوى الموجود";
+  const [cs,ls]=await Promise.all([getDocs(query(collection(db,"chapters"),where("subjectId","==",subjectId))),getDocs(query(collection(db,"lessons"),where("subjectId","==",subjectId)))]);
+  const oldC=cs.docs.filter(x=>x.data().sourceCurriculumId===sourceId),oldL=ls.docs.filter(x=>x.data().sourceCurriculumId===sourceId);
+  const cMap=new Map(oldC.map(x=>[x.data().title,x])),lMap=new Map(oldL.map(x=>[x.data().title,x]));
+  const expected=curriculum.chapters.reduce((n,c)=>n+c.lessons.length,0);
+  const isComplete=oldC.length===11&&oldL.length===expected&&curriculum.chapters.every(c=>cMap.has(c.title)&&c.lessons.every(l=>lMap.has(l.title)));
+  let chapterCount=0,lessonCount=0;
+  if(!isComplete&&(oldC.length||oldL.length)){
+   phase="تنظيف استيراد سابق غير مكتمل";
+   for(const x of oldL)await deleteDoc(doc(db,"lessons",x.id));
+   for(const x of oldC)await deleteDoc(doc(db,"chapters",x.id));
+  }
+  for(const ch of curriculum.chapters){
+   phase="حفظ الفصل: "+ch.title;
+   let chId;
+   if(isComplete){chId=cMap.get(ch.title).id;await updateDoc(doc(db,"chapters",chId),{description:ch.description,order:ch.order,published:!!publish,updatedAt:serverTimestamp()});}
+   else {const ref=await addDoc(collection(db,"chapters"),{subjectId,gradeId:d.gradeId,sourceCurriculumId:sourceId,title:ch.title,description:ch.description,order:ch.order,published:!!publish,createdAt:serverTimestamp()});chId=ref.id;}
+   chapterCount++;
+   for(const lesson of ch.lessons){
+    phase="حفظ المحاضرة: "+lesson.title;
+    const payload={subjectId,gradeId:d.gradeId,sourceCurriculumId:sourceId,chapterId:chId,title:lesson.title,content:"",contentBlocks:lesson.contentBlocks||[],objectives:lesson.objectives||[],keyTerms:lesson.keyTerms||[],order:lesson.order,published:!!publish,updatedAt:serverTimestamp()};
+    if(isComplete)await updateDoc(doc(db,"lessons",lMap.get(lesson.title).id),payload);
+    else await addDoc(collection(db,"lessons"),{...payload,createdAt:serverTimestamp()});
+    lessonCount++;
+   }
+  }
+  return {chapterCount,lessonCount,updated:isComplete};
+ }catch(e){e.importPhase=phase;throw e;}
+}
+$("#medicalSurgicalTheoryImportForm")?.addEventListener("submit",async e=>{
+ e.preventDefault();const subjectId=val("medicalSurgicalTheorySubject"),publish=checked("medicalSurgicalTheoryPublish");if(!subjectId)return report("اختر مادة التمريض الباطني الجراحي للسنة الثانية.","error");
+ const b=e.submitter;if(b)b.disabled=true;
+ try{const r=await importMedicalSurgicalTheory(subjectId,publish);report((r.updated?"تم تحديث ":"تم استيراد ")+r.chapterCount+" فصلًا و"+r.lessonCount+" محاضرة. "+(publish?"المحتوى منشور بعد تحديث الصفحة.":"المحتوى محفوظ كمسودة."),"success");await refresh();}
+ catch(e){report("تعذر الاستيراد | المرحلة: "+(e.importPhase||"غير محددة")+" | "+(e.code||"no-code")+" — "+(e.message||String(e)),"error");}
+ finally{if(b)b.disabled=false;}
+});
+
 $("#adminLogout").onclick=async()=>{await signOut(auth);location.replace("admin-login.html");};$("#addQuestion").onclick=addQuestion;
 $("#gamificationTaskForm").onsubmit=async e=>{e.preventDefault();const gradeId=val("gamificationTaskGrade"),rewardXp=Number(val("gamificationTaskXp"));if(!gradesCache.some(g=>g.id===gradeId&&g.active!==false)||!Number.isInteger(rewardXp)||rewardXp<1||rewardXp>100)return report("اختر صفًا نشطًا وحدد مكافأة من 1 إلى 100 XP.","error");try{await addDoc(collection(db,"gamificationTasks"),{title:val("gamificationTaskTitle"),description:val("gamificationTaskDescription"),gradeId,rewardXp,published:checked("gamificationTaskPublished"),createdAt:serverTimestamp()});e.target.reset();report("تم حفظ المهمة التعليمية.","success");await refresh();}catch(x){failed(x);}};
 $("#manualXpForm").onsubmit=async e=>{e.preventDefault();const uid=val("manualXpUid"),amount=Number(val("manualXpAmount")),reason=val("manualXpReason");if(!uid||!Number.isInteger(amount)||amount<1||amount>500||reason.length<5)return report("أدخل UID صحيحًا ومكافأة من 1 إلى 500 وسببًا واضحًا.","error");try{const profileRef=doc(db,"publicProfiles",uid),txId=doc(collection(db,"xpTransactions")).id,txRef=doc(db,"xpTransactions",txId);await runTransaction(db,async transaction=>{const profileSnap=await transaction.get(profileRef);if(!profileSnap.exists())throw new Error("PUBLIC_PROFILE_MISSING");transaction.update(profileRef,{xp:(Number(profileSnap.data().xp)||0)+amount,updatedAt:serverTimestamp()});transaction.set(txRef,{uid,amount,sourceType:"manual",sourceId:txId,reason,createdAt:serverTimestamp()});});e.target.reset();report("تم تسجيل المكافأة وإضافة "+amount+" XP مع حفظ سجلها.","success");}catch(x){failed(x);}};
