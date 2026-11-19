@@ -29,7 +29,9 @@
     ],
     "visualAssetsExpected": 11,
     "visualStyle": "Original chapter-specific educational diagrams in SVG format",
-    "note": "No clinical instructions or external medical guidance have been added."
+    "note": "تم ربط الصور الأربعين المرفوعة فعليًا بالمحاضرات الأقرب لموضوعها. بعض الرسومات عامة أو داعمة وليست شرحًا تفصيليًا مستقلًا للمرض؛ راجع matchNote في visualAssetMap ولا تعتبر الصورة بديلًا عن الشرح الأكاديمي.",
+    "visualMatchingStatus": "matched",
+    "visualAssetCount": 40
   },
   "chapters": [
     {
@@ -91,8 +93,26 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/chapter-01.svg",
-              "alt": "Foundation for Medical-Surgical Nursing — educational chapter map",
+              "url": "assets/illustrations/medical-surgical/01_The_Nursing_Process.png",
+              "alt": "Professional nursing concepts — أساسيات المفاهيم التمريضية",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/02_Patient_Safety.png",
+              "alt": "Professional nursing concepts — أساسيات المفاهيم التمريضية",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/39_Nursing_Roles.png",
+              "alt": "Professional nursing concepts — أساسيات المفاهيم التمريضية — أدوار التمريض",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/40_Teamwork_in_Healthcare.png",
+              "alt": "Professional nursing concepts — أساسيات المفاهيم التمريضية — فريق الرعاية الصحية",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
@@ -137,6 +157,18 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/37_Patient_Education.png",
+              "alt": "Complementary and alternative therapy — العلاج التكميلي والبديل — التثقيف الصحي",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/38_Health_Promotion.png",
+              "alt": "Complementary and alternative therapy — العلاج التكميلي والبديل — تعزيز الصحة",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
             },
@@ -177,6 +209,18 @@
             "Psychosocial support"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/06_Pain_Management.png",
+              "alt": "Palliative care and end of life — الرعاية التلطيفية ونهاية الحياة",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/36_Palliative_Care.png",
+              "alt": "Palliative care and end of life — الرعاية التلطيفية ونهاية الحياة",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
@@ -260,8 +304,8 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/chapter-02.svg",
-              "alt": "Perioperative Care — educational chapter map",
+              "url": "assets/illustrations/medical-surgical/16_Preoperative_Care.png",
+              "alt": "Pre-operative care — الرعاية قبل العملية",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
@@ -307,6 +351,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/18_Common_Surgical_Procedures.png",
+              "alt": "Intraoperative care — الرعاية أثناء العملية",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
             },
@@ -345,6 +395,18 @@
             "Recovery → Assessment → Discharge criteria"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/05_Wound_Care.png",
+              "alt": "Postoperative care — رعاية ما بعد العملية",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/17_Postoperative_Care.png",
+              "alt": "Postoperative care — رعاية ما بعد العملية",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
@@ -438,8 +500,8 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/chapter-03.svg",
-              "alt": "Nursing Care of Respiratory Diseases — educational chapter map",
+              "url": "assets/illustrations/medical-surgical/08_Respiratory_Care.png",
+              "alt": "Respiratory system: anatomy and physiology — تشريح ووظائف الجهاز التنفسي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
@@ -485,6 +547,18 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/04_Infection_Control.png",
+              "alt": "Pneumonia — الالتهاب الرئوي — الوقاية ومكافحة العدوى",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/25_Pneumonia.png",
+              "alt": "Pneumonia — الالتهاب الرئوي",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
             },
@@ -523,6 +597,12 @@
             "Triggers → Airway narrowing → Symptoms"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/24_COPD_and_Asthma.png",
+              "alt": "Bronchial asthma — الربو الشعبي",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
@@ -655,8 +735,8 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/chapter-04.svg",
-              "alt": "Nursing Care of Cardiovascular Diseases — educational chapter map",
+              "url": "assets/illustrations/medical-surgical/09_Cardiovascular_Care.png",
+              "alt": "Cardiovascular anatomy and physiology — تشريح ووظائف الجهاز القلبي الوعائي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
@@ -701,6 +781,18 @@
             "Management"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/03_Vital_Signs.png",
+              "alt": "Hypertension — ارتفاع ضغط الدم — مرجع داعم للعلامات الحيوية",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/22_Hypertension.png",
+              "alt": "Hypertension — ارتفاع ضغط الدم",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
@@ -884,8 +976,8 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/chapter-05.svg",
-              "alt": "Nursing Care of Gastrointestinal Diseases — educational chapter map",
+              "url": "assets/illustrations/medical-surgical/10_Gastrointestinal_Care.png",
+              "alt": "Gastrointestinal anatomy and physiology — تشريح ووظائف الجهاز الهضمي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
@@ -971,6 +1063,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/27_Appendicitis.png",
+              "alt": "Appendicitis — التهاب الزائدة الدودية",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
             },
@@ -1011,6 +1109,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/28_Cholecystitis.png",
+              "alt": "Cholecystitis — التهاب المرارة",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
             },
@@ -1049,6 +1153,18 @@
             "Listed in contents; source verification pending"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/26_Peptic_Ulcer.png",
+              "alt": "Peptic ulcer and viral hepatitis — القرحة الهضمية والتهاب الكبد الفيروسي — جزء القرحة",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/29_Hepatitis.png",
+              "alt": "Peptic ulcer and viral hepatitis — القرحة الهضمية والتهاب الكبد الفيروسي — جزء التهاب الكبد",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
@@ -1141,8 +1257,8 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/chapter-06.svg",
-              "alt": "Nursing Care of Urinary Tract Diseases — educational chapter map",
+              "url": "assets/illustrations/medical-surgical/11_Urinary_Tract_Care.png",
+              "alt": "Urinary system: anatomy and physiology — تشريح ووظائف الجهاز البولي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
@@ -1265,6 +1381,18 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/07_Fluid_and_Electrolyte_Balance.png",
+              "alt": "Urinary stones and renal failure — حصوات الجهاز البولي والفشل الكلوي",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/30_Renal_Failure.png",
+              "alt": "Urinary stones and renal failure — حصوات الجهاز البولي والفشل الكلوي — جزء الفشل الكلوي",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
             },
@@ -1361,8 +1489,8 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/chapter-07.svg",
-              "alt": "Nursing Care of Neurological Diseases — educational chapter map",
+              "url": "assets/illustrations/medical-surgical/12_Neurological_Assessment.png",
+              "alt": "Nervous system: anatomy and physiology — تشريح ووظائف الجهاز العصبي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
@@ -1446,6 +1574,12 @@
             "Risk factors → Warning signs → Evaluation → Rehabilitation"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/21_Stroke_Care.png",
+              "alt": "Stroke — السكتة الدماغية",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
@@ -1571,8 +1705,8 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/chapter-08.svg",
-              "alt": "Nursing Care of Musculoskeletal Diseases — educational chapter map",
+              "url": "assets/illustrations/medical-surgical/13_Musculoskeletal_Care.png",
+              "alt": "Musculoskeletal anatomy and physiology — تشريح ووظائف الجهاز العضلي الهيكلي",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
@@ -1615,6 +1749,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/31_Fractures.png",
+              "alt": "Fractures — الكسور",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
             },
@@ -1655,6 +1795,12 @@
             "Diagnosis"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/32_Osteoporosis.png",
+              "alt": "Osteoporosis — هشاشة العظام",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
@@ -1735,8 +1881,8 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/chapter-09.svg",
-              "alt": "Nursing Care of Endocrine Diseases — educational chapter map",
+              "url": "assets/illustrations/medical-surgical/14_Endocrine_Disorders.png",
+              "alt": "Endocrine anatomy and physiology — تشريح ووظائف جهاز الغدد الصماء",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
@@ -1778,6 +1924,12 @@
             "Diabetes mellitus"
           ],
           "contentBlocks": [
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/23_Diabetes_Mellitus.png",
+              "alt": "Diabetes mellitus — داء السكري",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
             {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
@@ -1896,8 +2048,8 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/chapter-10.svg",
-              "alt": "Nursing Care of Cancer — educational chapter map",
+              "url": "assets/illustrations/medical-surgical/15_Cancer_Care.png",
+              "alt": "Cancer foundations — أساسيات السرطان",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
@@ -2031,8 +2183,8 @@
           "contentBlocks": [
             {
               "type": "image",
-              "url": "assets/illustrations/medical-surgical/chapter-11.svg",
-              "alt": "Nursing Care in Emergency Situations — educational chapter map",
+              "url": "assets/illustrations/medical-surgical/33_Burn_Care.png",
+              "alt": "Burns — الحروق",
               "caption": "بوابة التمريض | Bawabet Al Tamreed"
             },
             {
@@ -2078,6 +2230,24 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/19_Emergency_Care.png",
+              "alt": "Trauma — الإصابات والطوارئ",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/20_Shock_Management.png",
+              "alt": "Trauma — الإصابات — موضوع داعم عن الصدمة",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/34_Trauma_Care.png",
+              "alt": "Trauma — الإصابات",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
             },
@@ -2119,6 +2289,12 @@
           ],
           "contentBlocks": [
             {
+              "type": "image",
+              "url": "assets/illustrations/medical-surgical/35_Coma_and_Brain_Death.png",
+              "alt": "Coma and brain death — الغيبوبة وموت الدماغ",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+            },
+            {
               "type": "heading",
               "text": "Textbook-based study notes | ملخص من الكتاب"
             },
@@ -2146,6 +2322,288 @@
           ]
         }
       ]
+    }
+  ],
+  "visualAssetMap": [
+    {
+      "file": "assets/illustrations/medical-surgical/01_The_Nursing_Process.png",
+      "chapterOrder": 1,
+      "lessonOrder": 1,
+      "lessonTitle": "Professional nursing concepts",
+      "matchNote": "أساسيات المفاهيم التمريضية"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/02_Patient_Safety.png",
+      "chapterOrder": 1,
+      "lessonOrder": 1,
+      "lessonTitle": "Professional nursing concepts",
+      "matchNote": "أساسيات المفاهيم التمريضية"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/03_Vital_Signs.png",
+      "chapterOrder": 4,
+      "lessonOrder": 2,
+      "lessonTitle": "Hypertension",
+      "matchNote": "ارتفاع ضغط الدم — مرجع داعم للعلامات الحيوية"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/04_Infection_Control.png",
+      "chapterOrder": 3,
+      "lessonOrder": 2,
+      "lessonTitle": "Pneumonia",
+      "matchNote": "الالتهاب الرئوي — الوقاية ومكافحة العدوى"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/05_Wound_Care.png",
+      "chapterOrder": 2,
+      "lessonOrder": 3,
+      "lessonTitle": "Postoperative care",
+      "matchNote": "رعاية ما بعد العملية"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/06_Pain_Management.png",
+      "chapterOrder": 1,
+      "lessonOrder": 3,
+      "lessonTitle": "Palliative care and end of life",
+      "matchNote": "الرعاية التلطيفية ونهاية الحياة"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/07_Fluid_and_Electrolyte_Balance.png",
+      "chapterOrder": 6,
+      "lessonOrder": 4,
+      "lessonTitle": "Urinary stones and renal failure",
+      "matchNote": "حصوات الجهاز البولي والفشل الكلوي"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/08_Respiratory_Care.png",
+      "chapterOrder": 3,
+      "lessonOrder": 1,
+      "lessonTitle": "Respiratory system: anatomy and physiology",
+      "matchNote": "تشريح ووظائف الجهاز التنفسي"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/09_Cardiovascular_Care.png",
+      "chapterOrder": 4,
+      "lessonOrder": 1,
+      "lessonTitle": "Cardiovascular anatomy and physiology",
+      "matchNote": "تشريح ووظائف الجهاز القلبي الوعائي"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/10_Gastrointestinal_Care.png",
+      "chapterOrder": 5,
+      "lessonOrder": 1,
+      "lessonTitle": "Gastrointestinal anatomy and physiology",
+      "matchNote": "تشريح ووظائف الجهاز الهضمي"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/11_Urinary_Tract_Care.png",
+      "chapterOrder": 6,
+      "lessonOrder": 1,
+      "lessonTitle": "Urinary system: anatomy and physiology",
+      "matchNote": "تشريح ووظائف الجهاز البولي"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/12_Neurological_Assessment.png",
+      "chapterOrder": 7,
+      "lessonOrder": 1,
+      "lessonTitle": "Nervous system: anatomy and physiology",
+      "matchNote": "تشريح ووظائف الجهاز العصبي"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/13_Musculoskeletal_Care.png",
+      "chapterOrder": 8,
+      "lessonOrder": 1,
+      "lessonTitle": "Musculoskeletal anatomy and physiology",
+      "matchNote": "تشريح ووظائف الجهاز العضلي الهيكلي"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/14_Endocrine_Disorders.png",
+      "chapterOrder": 9,
+      "lessonOrder": 1,
+      "lessonTitle": "Endocrine anatomy and physiology",
+      "matchNote": "تشريح ووظائف جهاز الغدد الصماء"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/15_Cancer_Care.png",
+      "chapterOrder": 10,
+      "lessonOrder": 1,
+      "lessonTitle": "Cancer foundations",
+      "matchNote": "أساسيات السرطان"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/16_Preoperative_Care.png",
+      "chapterOrder": 2,
+      "lessonOrder": 1,
+      "lessonTitle": "Pre-operative care",
+      "matchNote": "الرعاية قبل العملية"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/17_Postoperative_Care.png",
+      "chapterOrder": 2,
+      "lessonOrder": 3,
+      "lessonTitle": "Postoperative care",
+      "matchNote": "رعاية ما بعد العملية"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/18_Common_Surgical_Procedures.png",
+      "chapterOrder": 2,
+      "lessonOrder": 2,
+      "lessonTitle": "Intraoperative care",
+      "matchNote": "الرعاية أثناء العملية"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/19_Emergency_Care.png",
+      "chapterOrder": 11,
+      "lessonOrder": 2,
+      "lessonTitle": "Trauma",
+      "matchNote": "الإصابات والطوارئ"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/20_Shock_Management.png",
+      "chapterOrder": 11,
+      "lessonOrder": 2,
+      "lessonTitle": "Trauma",
+      "matchNote": "الإصابات — موضوع داعم عن الصدمة"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/21_Stroke_Care.png",
+      "chapterOrder": 7,
+      "lessonOrder": 3,
+      "lessonTitle": "Stroke",
+      "matchNote": "السكتة الدماغية"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/22_Hypertension.png",
+      "chapterOrder": 4,
+      "lessonOrder": 2,
+      "lessonTitle": "Hypertension",
+      "matchNote": "ارتفاع ضغط الدم"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/23_Diabetes_Mellitus.png",
+      "chapterOrder": 9,
+      "lessonOrder": 2,
+      "lessonTitle": "Diabetes mellitus",
+      "matchNote": "داء السكري"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/24_COPD_and_Asthma.png",
+      "chapterOrder": 3,
+      "lessonOrder": 3,
+      "lessonTitle": "Bronchial asthma",
+      "matchNote": "الربو الشعبي"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/25_Pneumonia.png",
+      "chapterOrder": 3,
+      "lessonOrder": 2,
+      "lessonTitle": "Pneumonia",
+      "matchNote": "الالتهاب الرئوي"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/26_Peptic_Ulcer.png",
+      "chapterOrder": 5,
+      "lessonOrder": 5,
+      "lessonTitle": "Peptic ulcer and viral hepatitis",
+      "matchNote": "القرحة الهضمية والتهاب الكبد الفيروسي — جزء القرحة"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/27_Appendicitis.png",
+      "chapterOrder": 5,
+      "lessonOrder": 3,
+      "lessonTitle": "Appendicitis",
+      "matchNote": "التهاب الزائدة الدودية"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/28_Cholecystitis.png",
+      "chapterOrder": 5,
+      "lessonOrder": 4,
+      "lessonTitle": "Cholecystitis",
+      "matchNote": "التهاب المرارة"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/29_Hepatitis.png",
+      "chapterOrder": 5,
+      "lessonOrder": 5,
+      "lessonTitle": "Peptic ulcer and viral hepatitis",
+      "matchNote": "القرحة الهضمية والتهاب الكبد الفيروسي — جزء التهاب الكبد"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/30_Renal_Failure.png",
+      "chapterOrder": 6,
+      "lessonOrder": 4,
+      "lessonTitle": "Urinary stones and renal failure",
+      "matchNote": "حصوات الجهاز البولي والفشل الكلوي — جزء الفشل الكلوي"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/31_Fractures.png",
+      "chapterOrder": 8,
+      "lessonOrder": 2,
+      "lessonTitle": "Fractures",
+      "matchNote": "الكسور"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/32_Osteoporosis.png",
+      "chapterOrder": 8,
+      "lessonOrder": 3,
+      "lessonTitle": "Osteoporosis",
+      "matchNote": "هشاشة العظام"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/33_Burn_Care.png",
+      "chapterOrder": 11,
+      "lessonOrder": 1,
+      "lessonTitle": "Burns",
+      "matchNote": "الحروق"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/34_Trauma_Care.png",
+      "chapterOrder": 11,
+      "lessonOrder": 2,
+      "lessonTitle": "Trauma",
+      "matchNote": "الإصابات"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/35_Coma_and_Brain_Death.png",
+      "chapterOrder": 11,
+      "lessonOrder": 3,
+      "lessonTitle": "Coma and brain death",
+      "matchNote": "الغيبوبة وموت الدماغ"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/36_Palliative_Care.png",
+      "chapterOrder": 1,
+      "lessonOrder": 3,
+      "lessonTitle": "Palliative care and end of life",
+      "matchNote": "الرعاية التلطيفية ونهاية الحياة"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/37_Patient_Education.png",
+      "chapterOrder": 1,
+      "lessonOrder": 2,
+      "lessonTitle": "Complementary and alternative therapy",
+      "matchNote": "العلاج التكميلي والبديل — التثقيف الصحي"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/38_Health_Promotion.png",
+      "chapterOrder": 1,
+      "lessonOrder": 2,
+      "lessonTitle": "Complementary and alternative therapy",
+      "matchNote": "العلاج التكميلي والبديل — تعزيز الصحة"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/39_Nursing_Roles.png",
+      "chapterOrder": 1,
+      "lessonOrder": 1,
+      "lessonTitle": "Professional nursing concepts",
+      "matchNote": "أساسيات المفاهيم التمريضية — أدوار التمريض"
+    },
+    {
+      "file": "assets/illustrations/medical-surgical/40_Teamwork_in_Healthcare.png",
+      "chapterOrder": 1,
+      "lessonOrder": 1,
+      "lessonTitle": "Professional nursing concepts",
+      "matchNote": "أساسيات المفاهيم التمريضية — فريق الرعاية الصحية"
     }
   ]
 }
