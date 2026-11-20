@@ -1,4 +1,5 @@
 import { auth } from "./config.js";
+import { emailActionSettings } from "./auth-email-settings.js";
 import { onAuthStateChanged, sendEmailVerification, reload } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 
 const message = document.getElementById("message");
@@ -55,7 +56,7 @@ resendButton.addEventListener("click", async () => {
       window.location.replace("dashboard.html");
       return;
     }
-    await sendEmailVerification(currentUser);
+    await sendEmailVerification(currentUser, emailActionSettings);
     showMessage("تم إرسال رسالة تأكيد جديدة. راجع الوارد والرسائل غير المرغوب فيها.", "success");
   } catch (error) {
     console.error("Email verification resend failed:", error);
