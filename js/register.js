@@ -1,4 +1,5 @@
 import { auth, db } from "./config.js";
+import { emailActionSettings } from "./auth-email-settings.js";
 import {
   createUserWithEmailAndPassword, updateProfile, onAuthStateChanged,
   GoogleAuthProvider, signInWithPopup, signInWithRedirect, sendEmailVerification
@@ -126,7 +127,7 @@ if (form) {
       const credential = await createUserWithEmailAndPassword(auth, email, password);
       await updateProfile(credential.user, { displayName: fullName });
       await saveStudentProfile(credential.user, gradeId, fullName);
-      await sendEmailVerification(credential.user);
+      await sendEmailVerification(credential.user, emailActionSettings);
       showMessage("تم إنشاء الحساب. أرسلنا رسالة تأكيد إلى بريدك الإلكتروني.", "success");
       window.location.replace("verify-email.html");
     } catch (error) {
