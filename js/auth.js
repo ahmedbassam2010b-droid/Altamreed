@@ -1,4 +1,5 @@
 import { auth } from "./config.js";
+import { emailActionSettings } from "./auth-email-settings.js";
 
 import {
   signInWithEmailAndPassword,
@@ -74,7 +75,7 @@ if (resendVerificationButton) {
         window.location.replace("dashboard.html");
         return;
       }
-      await sendEmailVerification(auth.currentUser);
+      await sendEmailVerification(auth.currentUser, emailActionSettings);
       showMessage("أعدنا إرسال رسالة تأكيد البريد. راجع الوارد والرسائل غير المرغوب فيها.", "success");
     } catch (error) {
       console.error("Resend verification error:", error);
