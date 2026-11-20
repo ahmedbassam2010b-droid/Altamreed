@@ -259,3 +259,5 @@ body[data-page="daily-challenge"] .platform-heading:after{content:"⚡";backgrou
 @keyframes loaderBeat{0%,100%{transform:scale(1)}50%{transform:scale(1.09)}}@keyframes loaderFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}@keyframes loaderOrbit{to{rotate:360deg}}@keyframes loaderDots{0%{opacity:.25}50%{opacity:1}100%{opacity:.35}}
 @media(max-width:600px){.bawabet-loader{min-height:calc(100svh - 90px);padding:24px 17px;border-radius:24px;gap:12px}.loader-scene{height:235px}.loader-orbit.orbit-one{width:195px;height:195px}.loader-orbit.orbit-two{width:245px;height:150px}.loader-center{width:150px;height:150px}.loader-center strong{font-size:15px}.loader-brand{font-size:16px}.loader-brand img{width:43px;height:43px}}
 @media(prefers-reduced-motion:reduce){.loader-orbit,.loader-pulse,.loader-cross,.loader-book,.loader-heart,.loader-stethoscope,.loader-dots{animation:none}.loader-progress-track>span{transition:none}}
+
+.bawabet-loader{opacity:1;transform:translateY(0);transition:opacity .24s ease,transform .24s ease}.bawabet-loader.is-complete{opacity:0;transform:translateY(-7px);pointer-events:none}
