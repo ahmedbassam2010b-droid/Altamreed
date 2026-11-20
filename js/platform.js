@@ -25,10 +25,10 @@ async function dashboard(){
  const side=el("article","platform-panel student-home-panel");side.append(el("div","student-home-section-head","مساحتك اليومية"));const shortcuts=[["لوحة المتصدرين","🏆","leaderboard.html"],["المكتبة العلمية","📖","library.html"],["بنك الاختبارات","📝","exams.html"],["المراجعة السريعة","🧠","quick-revision.html"],["مخطط المذاكرة","🗓️","study-planner.html"],["المحفوظات","🔖","bookmarks.html"],["مجتمع الطلاب","💬","community.html"]],sg=el("div","student-home-shortcuts");shortcuts.forEach(([t,i,u])=>{const a=el("a","student-home-shortcut");a.href=u;a.append(el("span","",i),el("strong","",t));sg.append(a);});side.append(sg);const pending=tasks.filter(x=>!x.done).length;side.append(el("p","student-home-hint",pending?"لديك "+pending+" مهمة دراسية لم تكتمل بعد.":"لا توجد مهام معلقة في مخطط مذاكرتك."));main.append(courses,side);root.append(main);
  const recent=el("section","student-home-recent");recent.append(el("div","student-home-section-head","دروس متاحة للبدء"));
  const starterSubjects=[
-  {match:s=>/community\\s*health\\s*nursing/i.test(s.title||""),label:"Community Health Nursing"},
-  {match:s=>/medical\\s*surgical\\s*nursing/i.test(s.title||""),label:"Medical surgical nursing Theoretical"},
-  {match:s=>/general\\s*surgery/i.test(s.title||""),label:"General Surgery"},
-  {match:s=>/internal\\s*medicine/i.test(s.title||""),label:"Internal Medicine"}
+  {match:s=>/community\s*health\s*nursing/i.test(s.title||""),label:"Community Health Nursing"},
+  {match:s=>/medical\s*surgical\s*nursing/i.test(s.title||""),label:"Medical surgical nursing Theoretical"},
+  {match:s=>/general\s*surgery/i.test(s.title||""),label:"General Surgery"},
+  {match:s=>/internal\s*medicine/i.test(s.title||""),label:"Internal Medicine"}
  ];
  const starterLessons=starterSubjects.map(group=>{
   const subject=ss.find(group.match);
