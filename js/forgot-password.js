@@ -1,4 +1,5 @@
 import { auth } from "./config.js";
+import { emailActionSettings } from "./auth-email-settings.js";
 
 import {
   sendPasswordResetEmail
@@ -38,7 +39,7 @@ form.addEventListener("submit", async (event) => {
   button.textContent = "جاري الإرسال...";
 
   try {
-    await sendPasswordResetEmail(auth, email);
+    await sendPasswordResetEmail(auth, email, emailActionSettings);
     showMessage(
       "إذا كان البريد مرتبطًا بحساب، فسيصلك رابط إعادة التعيين. راجع صندوق الوارد والرسائل غير المرغوب فيها.",
       "success"
