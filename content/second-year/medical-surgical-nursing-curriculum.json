@@ -19,11 +19,11 @@
   "editorialVerification": {
     "chapterCount": 11,
     "lessonCount": 38,
-    "sourcePagesChecked": "Full PDF text extracted and reviewed by chapter/topic headings; lesson-level source page ranges recorded. Visual rendering still requires deployed-site browser verification.",
+    "sourcePagesChecked": "Full 192-page PDF text extracted; lesson-specific source page ranges recorded and content expanded for all sections present in the supplied body.",
     "sourceCoverage": "Detailed source-derived content for available sections; 5 listed topics marked awaiting missing source pages.",
-    "verifiedLessonCount": 33,
+    "verifiedLessonCount": 35,
     "awaitingSourceLessonCount": 3,
-    "imagePlacement": "Images are interleaved after the matching explanation section within lesson contentBlocks, not stacked at the beginning.",
+    "imagePlacement": "All 40 user-supplied PNG assets are used; image blocks are interleaved after the matching explanation sections.",
     "visualAssetCount": 40,
     "visualRenderingFix": "All lesson image blocks use absolute raw.githubusercontent.com HTTPS URLs; images are interleaved beside the related lesson sections.",
     "courseName": "Medical Surgical Nursing"
@@ -1777,9 +1777,9 @@
           "title": "Appendicitis",
           "order": 3,
           "objectives": [
-            "Explain the topic using the supplied textbook's terminology.",
-            "Identify the main ideas and classifications presented in the source.",
-            "Review the source-based nursing-care themes for this topic."
+            "Define appendicitis and explain its pathophysiology.",
+            "Identify causes, manifestations and diagnostic signs.",
+            "Describe medical, surgical and nursing management themes."
           ],
           "keyTerms": [
             "Appendix",
@@ -1788,45 +1788,106 @@
           ],
           "contentBlocks": [
             {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/27_Appendicitis.png",
-              "alt": "Appendicitis — التهاب الزائدة الدودية",
-              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+              "type": "heading",
+              "text": "Detailed lesson content | الشرح الأكاديمي التفصيلي"
             },
             {
-              "type": "heading",
-              "text": "Textbook-based study notes | ملخص من الكتاب"
+              "type": "subheading",
+              "text": "Definition and pathophysiology"
             },
             {
               "type": "bilingual",
-              "title": "Key ideas explained | الفكرة الأساسية",
+              "title": "Definition and pathophysiology | English • الترجمة • الشرح المبسط",
               "points": [
                 {
-                  "en": "The source includes appendicitis and clinical assessment signs, including named examination signs.",
-                  "ar": "يعرض المصدر التهاب الزائدة الدودية وعلامات التقييم الإكلينيكي الواردة بالكتاب.",
-                  "simple": "راجع العلامات المذكورة في المصدر دون تعميمها كتشخيص ذاتي."
+                  "en": "Appendicitis is inflammation of the vermiform appendix. The source explains that obstruction of the appendiceal lumen is a key mechanism that leads to inflammation.",
+                  "ar": "التهاب الزائدة الدودية هو التهاب يصيب الزائدة الدودية. ويوضح المصدر أن انسداد تجويف الزائدة من الآليات الأساسية التي تؤدي إلى الالتهاب.",
+                  "simple": "الزائدة بتلتهب غالبًا بعد انسداد التجويف بتاعها."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/27_Appendicitis.png",
+              "alt": "Appendicitis — Definition and pathophysiology",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed — Definition and pathophysiology"
+            },
+            {
+              "type": "subheading",
+              "text": "Causes and manifestations"
+            },
+            {
+              "type": "bilingual",
+              "title": "Causes and manifestations | English • الترجمة • الشرح المبسط",
+              "points": [
+                {
+                  "en": "Possible causes of obstruction listed include stool, parasites or growths; enlarged lymph tissue associated with infection; inflammatory bowel disease; long-standing gastrointestinal irritation or ulcers; and abdominal trauma. Manifestations include abdominal pain that localizes to the right lower quadrant, anorexia, nausea, vomiting, guarding, rebound tenderness, fever and elevated WBC count.",
+                  "ar": "من أسباب الانسداد المذكورة البراز أو الطفيليات أو نموّات، وتضخم النسيج الليمفاوي مع العدوى، وأمراض الأمعاء الالتهابية، والتهيج المزمن بالجهاز الهضمي، وإصابة البطن. وتشمل الأعراض ألم البطن الذي يتركز بالربع السفلي الأيمن وفقدان الشهية والغثيان والقيء والحراسة العضلية وارتفاع الحرارة وعدد كرات الدم البيضاء.",
+                  "simple": "ألم أسفل يمين البطن مع الغثيان والحرارة من العلامات المهمة في الدرس."
+                }
+              ]
+            },
+            {
+              "type": "subheading",
+              "text": "Diagnosis"
+            },
+            {
+              "type": "bilingual",
+              "title": "Diagnosis | English • الترجمة • الشرح المبسط",
+              "points": [
+                {
+                  "en": "The source describes physical examination signs including Rovsing’s, Blumberg’s/rebound tenderness, Dunphy’s, psoas and obturator signs. Investigations include blood tests, CRP, urinalysis, pregnancy testing when relevant, abdominal ultrasound and CT scan.",
+                  "ar": "يذكر المصدر علامات الفحص مثل Rovsing وBlumberg أو ألم الارتداد وDunphy وPsoas وObturator. وتشمل الفحوص صورة الدم وCRP وتحليل البول واختبار الحمل عند الحاجة والموجات فوق الصوتية والأشعة المقطعية.",
+                  "simple": "احفظ أسماء العلامات ومعنى كل واحدة، والفحوص بتساعد على استبعاد أسباب أخرى."
+                }
+              ]
+            },
+            {
+              "type": "subheading",
+              "text": "Management and nursing care"
+            },
+            {
+              "type": "bilingual",
+              "title": "Management and nursing care | English • الترجمة • الشرح المبسط",
+              "points": [
+                {
+                  "en": "Medical management described includes IV fluids, antibiotic therapy and drainage if an abscess forms after perforation. Surgical management is appendectomy, performed through laparotomy or laparoscopic surgery. Nursing care includes prescribed fluids, NPO status when indicated, comfortable positioning, avoiding abdominal heat, infection prevention, wound observation, patient education and monitoring for complications.",
+                  "ar": "يشمل العلاج الطبي السوائل الوريدية والمضادات الحيوية والتصريف إذا تكوّن خراج بعد حدوث ثقب. والعلاج الجراحي هو استئصال الزائدة بالفتح أو المنظار. وتشمل الرعاية التمريضية السوائل الموصوفة، والامتناع عن الطعام عند الحاجة، والوضعية المريحة، ومنع العدوى ومتابعة الجرح وتثقيف المريض.",
+                  "simple": "ركز على الفرق بين العلاج الطبي والجراحي، وعلى متابعة العدوى والجرح والمضاعفات."
+                }
+              ]
+            },
+            {
+              "type": "subheading",
+              "text": "Complications and discharge"
+            },
+            {
+              "type": "bilingual",
+              "title": "Complications and discharge | English • الترجمة • الشرح المبسط",
+              "points": [
+                {
+                  "en": "The source lists a ruptured appendix, peritonitis and appendiceal abscess as complications. Home-care guidance includes follow-up for suture removal, avoiding heavy lifting after surgery, gradual return to activity and monitoring wound healing.",
+                  "ar": "من المضاعفات المذكورة انفجار الزائدة والتهاب البريتون وخراج الزائدة. وتشمل تعليمات الخروج متابعة إزالة الغرز وتجنب حمل الأشياء الثقيلة والعودة التدريجية للنشاط ومراقبة التئام الجرح.",
+                  "simple": "المتابعة بعد الخروج مهمة لاكتشاف مشاكل الجرح أو المضاعفات."
                 }
               ]
             },
             {
               "type": "keypoint",
-              "title": "Key terms | مصطلحات أساسية",
-              "text": "Appendix • Clinical signs • Assessment"
-            },
-            {
-              "type": "warning",
-              "title": "ملاحظة المصدر",
-              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+              "title": "Study focus | ركّز في المذاكرة",
+              "text": "Definition and pathophysiology • Causes and manifestations • Diagnosis • Management and nursing care • Complications and discharge"
             }
-          ]
+          ],
+          "sourcePages": "77–82",
+          "contentStatus": "expanded-from-source"
         },
         {
           "title": "Cholecystitis",
           "order": 4,
           "objectives": [
-            "Explain the topic using the supplied textbook's terminology.",
-            "Identify the main ideas and classifications presented in the source.",
-            "Review the source-based nursing-care themes for this topic."
+            "Define cholecystitis and explain its pathophysiology.",
+            "Identify causes, manifestations and diagnostic criteria.",
+            "Describe medical, surgical and nursing management themes."
           ],
           "keyTerms": [
             "Gallbladder",
@@ -1834,37 +1895,98 @@
           ],
           "contentBlocks": [
             {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/28_Cholecystitis.png",
-              "alt": "Cholecystitis — التهاب المرارة",
-              "caption": "بوابة التمريض | Bawabet Al Tamreed"
+              "type": "heading",
+              "text": "Detailed lesson content | الشرح الأكاديمي التفصيلي"
             },
             {
-              "type": "heading",
-              "text": "Textbook-based study notes | ملخص من الكتاب"
+              "type": "subheading",
+              "text": "Definition and pathophysiology"
             },
             {
               "type": "bilingual",
-              "title": "Key ideas explained | الفكرة الأساسية",
+              "title": "Definition and pathophysiology | English • الترجمة • الشرح المبسط",
               "points": [
                 {
-                  "en": "The chapter includes a section on cholecystitis.",
-                  "ar": "يتضمن الفصل جزءًا عن التهاب المرارة.",
-                  "simple": "يُستكمل التفصيل من صفحات الموضوع في النسخة الأصلية قبل نشر شرح موسع."
+                  "en": "Cholecystitis is inflammation of the gallbladder. The source states that about 90% of cases are associated with gallstones. In calculous cholecystitis, a stone obstructs bile outflow; retained bile contributes to chemical irritation, autolysis and edema, while compression of blood vessels may compromise blood supply.",
+                  "ar": "التهاب المرارة هو التهاب يصيب الحويصلة المرارية، ويذكر الكتاب أن نحو 90% من الحالات ترتبط بحصوات المرارة. قد تسد الحصوة خروج الصفراء، فتتراكم وتسبب تهيجًا وتورمًا، وقد يتأثر الإمداد الدموي.",
+                  "simple": "الحصوة ممكن تسد مخرج المرارة، فتبدأ سلسلة الالتهاب والتورم."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/28_Cholecystitis.png",
+              "alt": "Cholecystitis — Definition and pathophysiology",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed — Definition and pathophysiology"
+            },
+            {
+              "type": "subheading",
+              "text": "Causes and manifestations"
+            },
+            {
+              "type": "bilingual",
+              "title": "Causes and manifestations | English • الترجمة • الشرح المبسط",
+              "points": [
+                {
+                  "en": "Causes listed include gallstones lodged in the gallbladder neck, bile-duct blockage, bile stasis or lack of gallbladder contraction, and infection. Manifestations include intolerance of fatty meals, right-upper-quadrant pain radiating to the right shoulder or scapula, fever or chills, and—in prolonged attacks—jaundice, itching, dark urine and clay-colored stools.",
+                  "ar": "تشمل الأسباب حصوات عند عنق المرارة، أو انسداد القناة الصفراوية، أو ركود الصفراء، أو العدوى. وتشمل الأعراض عدم تحمل الأطعمة الدهنية وألم أعلى يمين البطن قد يمتد للكتف الأيمن والحمى والقشعريرة، وقد يظهر اليرقان والحكة والبول الداكن والبراز الفاتح.",
+                  "simple": "ألم أعلى يمين البطن بعد الأكل الدسم من النقاط المهمة، وانتبه لعلامات تأثر مرور الصفراء."
+                }
+              ]
+            },
+            {
+              "type": "subheading",
+              "text": "Diagnosis"
+            },
+            {
+              "type": "bilingual",
+              "title": "Diagnosis | English • الترجمة • الشرح المبسط",
+              "points": [
+                {
+                  "en": "The source describes Murphy’s sign and lists laboratory investigations such as CBC, bilirubin, amylase, liver enzymes and prothrombin level. Imaging options include ultrasound, abdominal X-ray, CT and ERCP. Diagnostic criteria combine local inflammation signs, systemic inflammation signs and characteristic imaging findings.",
+                  "ar": "يشرح الكتاب علامة Murphy، ويذكر فحوص صورة الدم والبيليروبين والأميليز وإنزيمات الكبد ومستوى البروثرومبين. وتشمل وسائل التصوير الموجات فوق الصوتية وأشعة البطن والمقطعية وERCP. ويجمع التشخيص بين العلامات الموضعية والجهازية ونتائج التصوير.",
+                  "simple": "علامة Murphy والفحوص والتصوير أجزاء مكملة لبعضها في التقييم."
+                }
+              ]
+            },
+            {
+              "type": "subheading",
+              "text": "Management"
+            },
+            {
+              "type": "bilingual",
+              "title": "Management | English • الترجمة • الشرح المبسط",
+              "points": [
+                {
+                  "en": "Medical management may include fasting initially, prescribed IV fluids, supportive care and antibiotics. The source also lists medications for infection, nausea and pain. Surgical management most commonly includes laparoscopic cholecystectomy; ERCP is discussed for biliary visualization and treatment.",
+                  "ar": "قد يشمل العلاج الطبي الصيام المؤقت والسوائل الوريدية والرعاية الداعمة والمضادات الحيوية، كما يذكر الكتاب أدوية للعدوى والغثيان والألم. والعلاج الجراحي الأكثر شيوعًا هو استئصال المرارة بالمنظار، ويتناول ERCP لتصوير وعلاج مشكلات القنوات الصفراوية.",
+                  "simple": "العلاج يختلف حسب شدة الحالة، وقد يكون دوائيًا أو جراحيًا وفق قرار الفريق."
+                }
+              ]
+            },
+            {
+              "type": "subheading",
+              "text": "Nursing care and complications"
+            },
+            {
+              "type": "bilingual",
+              "title": "Nursing care and complications | English • الترجمة • الشرح المبسط",
+              "points": [
+                {
+                  "en": "Nursing management includes pain assessment and documentation, promoting rest and a comfortable position, relaxation techniques, dietary modification to reduce fat intake, supporting appetite and patient education about causes, complications and treatment options. Complications listed include gallbladder gangrene, bile-duct injury, peritonitis and pancreatitis.",
+                  "ar": "تشمل الرعاية تقييم الألم وتوثيقه، والراحة والوضعية المريحة وتقنيات الاسترخاء وتقليل الدهون في الغذاء وتثقيف المريض بالأسباب والمضاعفات والخيارات العلاجية. ومن المضاعفات غرغرينا المرارة وإصابة القناة الصفراوية والتهاب البريتون والتهاب البنكرياس.",
+                  "simple": "ذاكر التثقيف الغذائي ومتابعة الألم والمضاعفات، وخصوصًا علامات تأثر القنوات الصفراوية."
                 }
               ]
             },
             {
               "type": "keypoint",
-              "title": "Key terms | مصطلحات أساسية",
-              "text": "Gallbladder • Inflammation"
-            },
-            {
-              "type": "warning",
-              "title": "ملاحظة المصدر",
-              "text": "هذا ملخص تمهيدي مستند إلى العناوين والمحتوى المستخرج من الكتاب، وليس بديلًا عن مراجعة النص الكامل أو تعليمات المؤسسة التعليمية."
+              "title": "Study focus | ركّز في المذاكرة",
+              "text": "Definition and pathophysiology • Causes and manifestations • Diagnosis • Management • Nursing care and complications"
             }
-          ]
+          ],
+          "sourcePages": "83–87",
+          "contentStatus": "expanded-from-source"
         },
         {
           "title": "Peptic ulcer and viral hepatitis",
