@@ -27,3 +27,43 @@
 @media(max-width:380px){.auth-page .auth-card{padding:22px 17px}.auth-page .auth-heading{font-size:21px}}
 /* Registration: improve only the Google success notice text contrast. */
 .auth-register-page #message.message.success{color:#173B57!important}
+
+/* High-contrast feedback messages across registration, login, password reset and email verification. */
+.auth-page .message{
+  display:block;
+  width:100%;
+  margin:14px 0;
+  padding:13px 15px;
+  border:1px solid transparent;
+  border-radius:15px;
+  font-family:"Tajawal","Cairo",sans-serif;
+  font-size:14px;
+  font-weight:800;
+  line-height:1.9;
+  text-align:right;
+  overflow-wrap:anywhere;
+  opacity:1;
+  -webkit-text-fill-color:currentColor;
+}
+.auth-page .message:empty{display:none}
+.auth-page .message.success{
+  color:#145b43!important;
+  background:#e5f7ef!important;
+  border-color:#9bd9bd!important;
+}
+.auth-page .message.error{
+  color:#8c2430!important;
+  background:#fff0f0!important;
+  border-color:#efb7bd!important;
+}
+.auth-page .message.info,
+.auth-page .message:not(.success):not(.error):not(:empty){
+  color:#174a78!important;
+  background:#eaf3ff!important;
+  border-color:#b8d4f3!important;
+}
+.auth-page #verificationEmail.message.success{
+  color:#145b43!important;
+  background:#e5f7ef!important;
+  border-color:#9bd9bd!important;
+}
