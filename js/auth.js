@@ -49,6 +49,9 @@ function getArabicError(code) {
 }
 
 const resendVerificationButton = document.getElementById("resendVerificationButton");
+if (new URLSearchParams(window.location.search).get("verify") === "1") {
+  showMessage("لا يمكن دخول المنصة قبل تأكيد البريد الإلكتروني. سجّل الدخول لإعادة إرسال رسالة التأكيد.");
+}
 
 onAuthStateChanged(auth, (user) => {
   if (!user) return;
@@ -104,6 +107,8 @@ if (loginForm) {
       if (!credential.user.emailVerified) {
         showMessage("حسابك لم يتم تأكيده بعد. افتح رسالة التحقق أو اضغط لإعادة إرسالها.");
         if (resendVerificationButton) resendVerificationButton.hidden = false;
+        submitButton.disabled = false;
+        submitButton.textContent = "تسجيل الدخول";
         return;
       }
       showMessage("تم تسجيل الدخول بنجاح.", "success");
