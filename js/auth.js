@@ -5,7 +5,9 @@ import {
   onAuthStateChanged,
   GoogleAuthProvider,
   signInWithPopup,
-  signInWithRedirect
+  signInWithRedirect,
+  sendEmailVerification,
+  reload
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 
 const loginForm = document.getElementById("loginForm");
@@ -46,9 +48,39 @@ function getArabicError(code) {
   return errors[code] || "تعذر تسجيل الدخول حاليًا. كود الخطأ: " + (code || "غير معروف");
 }
 
+const resendVerificationButton = document.getElementById("resendVerificationButton");
+
 onAuthStateChanged(auth, (user) => {
-  if (user) window.location.replace("dashboard.html");
+  if (!user) return;
+  if (user.emailVerified) {
+    window.location.replace("dashboard.html");
+    return;
+  }
+  showMessage("البريد الإلكتروني لم يتم تأكيده بعد. افتح رسالة التحقق المرسلة إليك قبل الدخول.", "error");
+  if (resendVerificationButton) resendVerificationButton.hidden = false;
 });
+
+if (resendVerificationButton) {
+  resendVerificationButton.addEventListener("click", async () => {
+    const user = auth.currentUser;
+    if (!user) return showMessage("سجّل الدخول أولًا لإعادة إرسال رسالة التأكيد.");
+    resendVerificationButton.disabled = true;
+    try {
+      await reload(user);
+      if (auth.currentUser.emailVerified) {
+        window.location.replace("dashboard.html");
+        return;
+      }
+      await sendEmailVerification(auth.currentUser);
+      showMessage("أعدنا إرسال رسالة تأكيد البريد. راجع الوارد والرسائل غير المرغوب فيها.", "success");
+    } catch (error) {
+      console.error("Resend verification error:", error);
+      showMessage(getArabicError(error.code));
+    } finally {
+      resendVerificationButton.disabled = false;
+    }
+  });
+}
 
 if (loginForm) {
   loginForm.addEventListener("submit", async (event) => {
@@ -67,7 +99,13 @@ if (loginForm) {
     submitButton.textContent = "جاري تسجيل الدخول...";
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      const credential = await signInWithEmailAndPassword(auth, email, password);
+      await reload(credential.user);
+      if (!credential.user.emailVerified) {
+        showMessage("حسابك لم يتم تأكيده بعد. افتح رسالة التحقق أو اضغط لإعادة إرسالها.");
+        if (resendVerificationButton) resendVerificationButton.hidden = false;
+        return;
+      }
       showMessage("تم تسجيل الدخول بنجاح.", "success");
       window.location.replace("dashboard.html");
     } catch (error) {
