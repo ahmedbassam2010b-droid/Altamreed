@@ -13,6 +13,7 @@ import {
   onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 
+const REMOVED_SUBJECT_IDS = new Set(["eCmUzXDs6VpI71WN14VO"]);
 const subjectsGrid = document.getElementById("subjectsGrid");
 const subjectsMessage = document.getElementById("subjectsMessage");
 
@@ -74,6 +75,7 @@ async function loadSubjects(user) {
         id: documentSnapshot.id,
         data: documentSnapshot.data()
       }))
+      .filter(({ id }) => !REMOVED_SUBJECT_IDS.has(id))
       .sort((a, b) => (Number(a.data.order) || 0) - (Number(b.data.order) || 0));
 
     const fragment = document.createDocumentFragment();
