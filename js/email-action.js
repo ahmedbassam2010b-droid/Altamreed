@@ -13,6 +13,7 @@ const description = document.getElementById("actionDescription");
 const message = document.getElementById("actionMessage");
 const resetForm = document.getElementById("passwordResetForm");
 const loginButton = document.getElementById("loginActionButton");
+const confirmEmailButton = document.getElementById("confirmEmailButton");
 const saveButton = document.getElementById("savePasswordButton");
 let verifiedResetEmail = "";
 
@@ -33,11 +34,25 @@ function invalidLink() {
 
 async function handleVerifyEmail() {
   title.textContent = "تأكيد البريد الإلكتروني";
-  description.textContent = "نتحقق الآن من رابط تأكيد حسابك.";
-  await applyActionCode(auth, actionCode);
-  title.textContent = "تم تأكيد بريدك الإلكتروني بنجاح";
-  description.textContent = "أصبح حسابك جاهزًا. يمكنك الآن تسجيل الدخول إلى بوابة التمريض ومتابعة دراستك.";
-  showLogin("تم تفعيل بريدك الإلكتروني بنجاح. أهلًا بك في بوابة التمريض.");
+  description.textContent = "اضغط على الزر بالأسفل لإكمال تأكيد بريدك الإلكتروني.";
+  showMessage("الرابط جاهز. لن يتم تأكيد البريد إلا بعد ضغطك على زر التأكيد.", "info");
+  confirmEmailButton.hidden = false;
+  confirmEmailButton.addEventListener("click", async () => {
+    confirmEmailButton.disabled = true;
+    confirmEmailButton.textContent = "جارٍ تأكيد البريد...";
+    try {
+      await applyActionCode(auth, actionCode);
+      confirmEmailButton.hidden = true;
+      title.textContent = "تم تأكيد بريدك الإلكتروني بنجاح";
+      description.textContent = "أصبح حسابك جاهزًا. يمكنك الآن تسجيل الدخول إلى بوابة التمريض ومتابعة دراستك.";
+      showLogin("تم تفعيل بريدك الإلكتروني بنجاح. أهلًا بك في بوابة التمريض.");
+    } catch (error) {
+      console.error("Email verification action failed:", error);
+      confirmEmailButton.disabled = false;
+      confirmEmailButton.textContent = "تأكيد البريد الإلكتروني";
+      showMessage("تعذر تأكيد البريد. قد يكون الرابط غير صالح أو انتهت صلاحيته. اطلب رسالة جديدة.", "error");
+    }
+  }, { once: true });
 }
 
 async function handlePasswordReset() {
