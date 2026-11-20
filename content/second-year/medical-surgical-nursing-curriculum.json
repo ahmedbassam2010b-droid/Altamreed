@@ -23,7 +23,7 @@
     "sourceCoverage": "Detailed source-derived content for available sections; 5 listed topics marked awaiting missing source pages.",
     "verifiedLessonCount": 35,
     "awaitingSourceLessonCount": 3,
-    "imagePlacement": "All 40 user-supplied PNG assets are used; image blocks are interleaved after the matching explanation sections.",
+    "imagePlacement": "All 40 user-supplied PNG assets are used; image blocks are interleaved after matching explanation sections, including the COVID-19 section in the respiratory chapter.",
     "visualAssetCount": 40,
     "visualRenderingFix": "All lesson image blocks use absolute raw.githubusercontent.com HTTPS URLs; images are interleaved beside the related lesson sections.",
     "courseName": "Medical Surgical Nursing"
@@ -940,12 +940,73 @@
               ]
             },
             {
+              "type": "heading",
+              "text": "Coronavirus Disease 2019 (COVID-19) | كوفيد-19"
+            },
+            {
+              "type": "subheading",
+              "text": "Definition, transmission and pathophysiology | التعريف والانتقال وآلية الحدوث"
+            },
+            {
+              "type": "bilingual",
+              "title": "COVID-19 overview",
+              "points": [
+                {
+                  "en": "The supplied textbook describes COVID-19 as an illness caused by SARS-CoV-2. It explains that the virus may enter through the mouth, nose or eyes, attach to cells in the nasal passages and throat, multiply, and move into lung tissue. Transmission is described mainly through respiratory droplets and close contact followed by touching the face.",
+                  "ar": "يصف الكتاب كوفيد-19 بأنه مرض يسببه فيروس SARS-CoV-2. وقد يدخل الفيروس من الفم أو الأنف أو العينين، ثم يرتبط بخلايا الممرات الأنفية والحلق ويتكاثر وقد يصل إلى أنسجة الرئة. ويشرح المصدر انتقاله أساسًا عبر الرذاذ التنفسي والمخالطة القريبة ثم لمس الوجه.",
+                  "simple": "الكتاب بيربط المرض بفيروس SARS-CoV-2، وبيشرح انتقاله بالرذاذ والمخالطة، وتأثيره على الجهاز التنفسي."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/04_Infection_Control.png",
+              "alt": "COVID-19 transmission and infection prevention",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed — Infection prevention"
+            },
+            {
+              "type": "subheading",
+              "text": "Manifestations and diagnosis | الأعراض والتشخيص"
+            },
+            {
+              "type": "bilingual",
+              "title": "Clinical picture and investigations",
+              "points": [
+                {
+                  "en": "The source lists fever or chills, cough, shortness of breath, fatigue, muscle aches, headache, loss of taste or smell, sore throat, congestion, nausea, vomiting and diarrhea. Some infected people may have no symptoms. Diagnosis in the text is based on a laboratory test using a saliva sample or a nasal or throat swab.",
+                  "ar": "تشمل الأعراض المذكورة الحمى أو القشعريرة والكحة وضيق التنفس والإرهاق وآلام العضلات والصداع وفقدان التذوق أو الشم والتهاب الحلق واحتقان الأنف والغثيان والقيء والإسهال. وقد لا تظهر أعراض على بعض المصابين. ويذكر الكتاب الاختبار المعملي باستخدام عينة لعاب أو مسحة من الأنف أو الحلق.",
+                  "simple": "الأعراض ممكن تختلف من شخص للتاني، والتأكيد بيكون بالاختبار المعملي مش بالأعراض وحدها."
+                }
+              ]
+            },
+            {
+              "type": "subheading",
+              "text": "Nursing interventions and prevention | التدخلات التمريضية والوقاية"
+            },
+            {
+              "type": "bilingual",
+              "title": "Monitoring, isolation and education",
+              "points": [
+                {
+                  "en": "The textbook organizes nursing interventions around monitoring vital signs—especially temperature and respiratory rate—monitoring oxygen saturation, managing fever according to the prescribed plan, maintaining respiratory isolation and personal protective equipment, enforcing hand hygiene, and educating patients and families about transmission, testing, possible complications and prevention. Its specific isolation-duration recommendations reflect the textbook edition and should not be treated as current public-health guidance.",
+                  "ar": "ينظم الكتاب التدخلات حول متابعة العلامات الحيوية، خصوصًا الحرارة ومعدل التنفس، ومتابعة تشبع الأكسجين، والتعامل مع الحمى وفق الخطة المقررة، والحفاظ على العزل التنفسي ومعدات الوقاية الشخصية، والالتزام بنظافة اليدين، وتثقيف المريض والأسرة عن الانتقال والفحوص والمضاعفات والوقاية. أما مدد العزل المحددة في النسخة فتعكس إصدار الكتاب ولا تُعد إرشادات صحية حديثة.",
+                  "simple": "ركز على متابعة التنفس والتشبع، ومكافحة العدوى، والتثقيف. تعليمات العزل الحالية لازم تُراجع من الجهة الصحية المختصة."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/medical-surgical/25_Pneumonia.png",
+              "alt": "Respiratory infection and lung care",
+              "caption": "بوابة التمريض | Bawabet Al Tamreed — Respiratory infection"
+            },
+            {
               "type": "keypoint",
               "title": "Study focus | ركّز في المذاكرة",
               "text": "Overview and manifestations • Assessment and diagnosis • Treatment themes • Nursing interventions"
             }
           ],
-          "sourcePages": "33–40",
+          "sourcePages": "33–40 (including COVID-19 section in body text)",
           "contentStatus": "expanded-from-source"
         },
         {
