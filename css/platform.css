@@ -264,3 +264,6 @@ body[data-page="daily-challenge"] .platform-heading:after{content:"⚡";backgrou
 
 /* Official channel logo in the student header */
 .platform-brand:before{display:none!important}.platform-brand-logo{display:block;width:48px;height:48px;flex:0 0 48px;object-fit:contain;border-radius:50%;background:#fff;box-shadow:0 3px 12px rgba(22,91,151,.16);border:1px solid #dceaf6}.platform-brand span{display:inline-block}@media(max-width:760px){.platform-brand-logo{width:52px;height:52px;flex-basis:52px}}
+
+/* Replace the dashboard rocket with the official Bawabet Al Tamreed channel logo */
+.platform-root[data-page="dashboard"] .platform-heading:after{content:""!important;background:#fff url("../assets/images/channel-logo.svg") center/cover no-repeat!important;border:1px solid #d9e8f5;box-shadow:0 5px 18px rgba(28,83,139,.12);border-radius:22px}
