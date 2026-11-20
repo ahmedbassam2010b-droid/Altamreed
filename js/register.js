@@ -1,7 +1,7 @@
 import { auth, db } from "./config.js";
 import {
   createUserWithEmailAndPassword, updateProfile, onAuthStateChanged,
-  GoogleAuthProvider, signInWithPopup, signInWithRedirect
+  GoogleAuthProvider, signInWithPopup, signInWithRedirect, sendEmailVerification
 } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-auth.js";
 import {
   collection, getDocs, doc, getDoc, setDoc, updateDoc, query, where, serverTimestamp
@@ -87,6 +87,8 @@ async function saveStudentProfile(user, gradeId, displayName) {
 }
 async function handleSignedInUser(user) {
   if (!user || creatingEmailAccount) return;
+  const isPasswordAccount = user.providerData?.some(provider => provider.providerId === "password");
+  if (isPasswordAccount && !user.emailVerified) return;
   const snap = await getDoc(doc(db, "users", user.uid));
   if (snap.exists() && snap.data().gradeId) {
     window.location.replace("dashboard.html");
@@ -124,8 +126,9 @@ if (form) {
       const credential = await createUserWithEmailAndPassword(auth, email, password);
       await updateProfile(credential.user, { displayName: fullName });
       await saveStudentProfile(credential.user, gradeId, fullName);
-      showMessage("تم إنشاء الحساب وحفظ صفك الدراسي بنجاح.", "success");
-      window.location.replace("dashboard.html");
+      await sendEmailVerification(credential.user);
+      showMessage("تم إنشاء الحساب. أرسلنا رسالة تأكيد إلى بريدك الإلكتروني.", "success");
+      window.location.replace("verify-email.html");
     } catch (error) {
       console.error("Registration error:", error);
       showMessage(error.message === "INVALID_GRADE" ? "الصف المختار غير متاح." :
