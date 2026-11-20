@@ -261,3 +261,6 @@ body[data-page="daily-challenge"] .platform-heading:after{content:"⚡";backgrou
 @media(prefers-reduced-motion:reduce){.loader-orbit,.loader-pulse,.loader-cross,.loader-book,.loader-heart,.loader-stethoscope,.loader-dots{animation:none}.loader-progress-track>span{transition:none}}
 
 .bawabet-loader{opacity:1;transform:translateY(0);transition:opacity .24s ease,transform .24s ease}.bawabet-loader.is-complete{opacity:0;transform:translateY(-7px);pointer-events:none}
+
+/* Official channel logo in the student header */
+.platform-brand:before{display:none!important}.platform-brand-logo{display:block;width:48px;height:48px;flex:0 0 48px;object-fit:contain;border-radius:50%;background:#fff;box-shadow:0 3px 12px rgba(22,91,151,.16);border:1px solid #dceaf6}.platform-brand span{display:inline-block}@media(max-width:760px){.platform-brand-logo{width:52px;height:52px;flex-basis:52px}}
