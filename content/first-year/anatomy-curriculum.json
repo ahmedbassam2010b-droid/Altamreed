@@ -1,0 +1,465 @@
+{
+  "schemaVersion": 1,
+  "course": "Anatomy",
+  "grade": "First Year Nursing School",
+  "source": {
+    "title": "التشريح وعلم وظائف الأعضاء — الصف الأول",
+    "pages": 71,
+    "preparedBy": [
+      "أ.د/ ممدوح محمود عبد الرحمن — أستاذ التشريح",
+      "أ.د/ سناء محمد مرسي — أستاذ الفسيولوجيا"
+    ],
+    "note": "Derived from the user-provided scanned textbook. Illegible wording obscured by the watermark is omitted rather than guessed.",
+    "coverageNote": "Page references follow the supplied scan. Fine labels on some diagrams require verification against the original page."
+  },
+  "contentStatus": "in-progress",
+  "editorialVerification": {
+    "chapterCount": 7,
+    "lessonCount": 9,
+    "visualAssetCount": 9,
+    "bilingualExplanations": true,
+    "unclearTextPolicy": "Illegible text omitted; no invented quotations."
+  },
+  "chapters": [
+    {
+      "title": "Chapter 1 — The Skeletal System",
+      "description": "Bone classification and axial and appendicular skeleton. Source pages 4–27.",
+      "order": 1,
+      "lessons": [
+        {
+          "title": "Classification of bones",
+          "order": 1,
+          "objectives": [
+            "Identify the main anatomical structures described in the supplied textbook.",
+            "Learn the English terminology and its Arabic meaning."
+          ],
+          "keyTerms": [
+            "Long bones",
+            "Short bones",
+            "Irregular bones",
+            "Flat bones",
+            "Pneumatic bones",
+            "Sesamoid bones"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Classification of bones | شرح الدرس"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas | أهم النقاط",
+              "points": [
+                {
+                  "en": "Long bones are elongated bones with a shaft and two ends; examples include the femur and humerus.",
+                  "ar": "العظام الطويلة مستطيلة ولها جسم ونهايتان، مثل عظم الفخذ والعضد.",
+                  "simple": "لها جسم طويل ونهايتان."
+                },
+                {
+                  "en": "Short bones are generally cube-shaped; examples include many wrist bones.",
+                  "ar": "العظام القصيرة غالبًا مكعبة الشكل، مثل كثير من عظام الرسغ.",
+                  "simple": "أبعادها متقاربة."
+                },
+                {
+                  "en": "Irregular bones have complex shapes, such as vertebrae.",
+                  "ar": "العظام غير المنتظمة لها أشكال معقدة، مثل الفقرات.",
+                  "simple": "شكلها غير منتظم."
+                },
+                {
+                  "en": "Flat bones are thin and flattened, such as skull bones and the scapula.",
+                  "ar": "العظام المسطحة رقيقة ومفلطحة، مثل بعض عظام الجمجمة ولوح الكتف.",
+                  "simple": "عظام رقيقة ومسطحة."
+                },
+                {
+                  "en": "Pneumatic bones contain air-filled spaces, especially in some skull bones.",
+                  "ar": "العظام الهوائية تحتوي فراغات هوائية، خاصة بعض عظام الجمجمة.",
+                  "simple": "بها تجاويف هوائية."
+                },
+                {
+                  "en": "Sesamoid bones are small bones embedded in tendons, such as the patella.",
+                  "ar": "العظام السمسمية عظام صغيرة داخل بعض الأوتار، مثل الرضفة.",
+                  "simple": "مثالها صابونة الركبة."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/bone-types.svg",
+              "alt": "Classification of bones",
+              "caption": "بوابة التمريض | Classification of bones"
+            }
+          ]
+        },
+        {
+          "title": "The axial skeleton",
+          "order": 2,
+          "objectives": [
+            "Identify the main anatomical structures described in the supplied textbook.",
+            "Learn the English terminology and its Arabic meaning."
+          ],
+          "keyTerms": [
+            "Axial skeleton",
+            "Skull",
+            "Vertebral column",
+            "Ribs",
+            "Sternum"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "The axial skeleton | شرح الدرس"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas | أهم النقاط",
+              "points": [
+                {
+                  "en": "The axial skeleton lies along the central axis of the body.",
+                  "ar": "يقع الهيكل العظمي المحوري على المحور المركزي للجسم.",
+                  "simple": "هو الجزء المركزي من الهيكل."
+                },
+                {
+                  "en": "It includes the skull, vertebral column, ribs and sternum.",
+                  "ar": "يشمل الجمجمة والعمود الفقري والضلوع وعظمة القص.",
+                  "simple": "احفظ المكونات الأساسية."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skeleton-overview.svg",
+              "alt": "The axial skeleton",
+              "caption": "بوابة التمريض | The axial skeleton"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skull.svg",
+              "alt": "The axial skeleton",
+              "caption": "بوابة التمريض | The axial skeleton"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/thorax.svg",
+              "alt": "The axial skeleton",
+              "caption": "بوابة التمريض | The axial skeleton"
+            }
+          ]
+        },
+        {
+          "title": "The appendicular skeleton",
+          "order": 3,
+          "objectives": [
+            "Identify the main anatomical structures described in the supplied textbook.",
+            "Learn the English terminology and its Arabic meaning."
+          ],
+          "keyTerms": [
+            "Appendicular skeleton",
+            "Upper limb",
+            "Lower limb",
+            "Shoulder girdle",
+            "Pelvic girdle"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "The appendicular skeleton | شرح الدرس"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas | أهم النقاط",
+              "points": [
+                {
+                  "en": "The appendicular skeleton includes the bones of the upper and lower limbs and their girdles.",
+                  "ar": "يشمل الهيكل الطرفي عظام الأطراف العلوية والسفلية والأحزمة التي تربطها بالجذع.",
+                  "simple": "عظام الذراعين والرجلين ومناطق اتصالها بالجسم."
+                },
+                {
+                  "en": "The shoulder girdle connects the upper limbs to the trunk; the pelvic girdle connects the lower limbs.",
+                  "ar": "يربط الحزام الكتفي الطرفين العلويين بالجذع، ويربط الحزام الحوضي الطرفين السفليين.",
+                  "simple": "الكتف للذراع والحوض للطرف السفلي."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skeleton-overview.svg",
+              "alt": "The appendicular skeleton",
+              "caption": "بوابة التمريض | The appendicular skeleton"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 2 — The Nervous System",
+      "description": "Source pages 28–31.",
+      "order": 2,
+      "lessons": [
+        {
+          "title": "The nervous system",
+          "order": 4,
+          "objectives": [
+            "Identify the main anatomical structures described in the supplied textbook.",
+            "Learn the English terminology and its Arabic meaning."
+          ],
+          "keyTerms": [
+            "Brain",
+            "Spinal cord",
+            "Central nervous system",
+            "Peripheral nerves"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "The nervous system | شرح الدرس"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas | أهم النقاط",
+              "points": [
+                {
+                  "en": "The central nervous system consists of the brain and spinal cord.",
+                  "ar": "يتكون الجهاز العصبي المركزي من المخ والحبل الشوكي.",
+                  "simple": "المخ والحبل الشوكي هما المركز."
+                },
+                {
+                  "en": "Peripheral nerves connect the central nervous system with the rest of the body.",
+                  "ar": "تربط الأعصاب الطرفية الجهاز العصبي المركزي بباقي الجسم.",
+                  "simple": "تنقل الإشارات بين المركز والجسم."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/brain.svg",
+              "alt": "The nervous system",
+              "caption": "بوابة التمريض | The nervous system"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 3 — The Circulatory System",
+      "description": "Source pages 32–46.",
+      "order": 3,
+      "lessons": [
+        {
+          "title": "The heart and circulatory system",
+          "order": 5,
+          "objectives": [
+            "Identify the main anatomical structures described in the supplied textbook.",
+            "Learn the English terminology and its Arabic meaning."
+          ],
+          "keyTerms": [
+            "Heart",
+            "Atrium",
+            "Ventricle",
+            "Blood vessels"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "The heart and circulatory system | شرح الدرس"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas | أهم النقاط",
+              "points": [
+                {
+                  "en": "The heart has four chambers: right atrium, right ventricle, left atrium and left ventricle.",
+                  "ar": "يتكون القلب من أربع حجرات: الأذين الأيمن والبطين الأيمن والأذين الأيسر والبطين الأيسر.",
+                  "simple": "أذينان بالأعلى وبطينان بالأسفل."
+                },
+                {
+                  "en": "Blood vessels form the pathways through which blood circulates.",
+                  "ar": "تكوّن الأوعية الدموية المسارات التي يتحرك خلالها الدم.",
+                  "simple": "الأوعية شبكة نقل الدم."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/heart.svg",
+              "alt": "The heart and circulatory system",
+              "caption": "بوابة التمريض | The heart and circulatory system"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 4 — The Respiratory System",
+      "description": "Source pages 47–52.",
+      "order": 4,
+      "lessons": [
+        {
+          "title": "The respiratory system",
+          "order": 6,
+          "objectives": [
+            "Identify the main anatomical structures described in the supplied textbook.",
+            "Learn the English terminology and its Arabic meaning."
+          ],
+          "keyTerms": [
+            "Trachea",
+            "Bronchi",
+            "Lungs"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "The respiratory system | شرح الدرس"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas | أهم النقاط",
+              "points": [
+                {
+                  "en": "The respiratory pathway includes the trachea, bronchi and lungs.",
+                  "ar": "يشمل مسار الجهاز التنفسي القصبة الهوائية والشعب الهوائية والرئتين.",
+                  "simple": "القصبة ثم الشعب ثم الرئتان."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/respiratory.svg",
+              "alt": "The respiratory system",
+              "caption": "بوابة التمريض | The respiratory system"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 5 — The Digestive System",
+      "description": "Source pages 53–56.",
+      "order": 5,
+      "lessons": [
+        {
+          "title": "The digestive system",
+          "order": 7,
+          "objectives": [
+            "Identify the main anatomical structures described in the supplied textbook.",
+            "Learn the English terminology and its Arabic meaning."
+          ],
+          "keyTerms": [
+            "Mouth",
+            "Esophagus",
+            "Stomach",
+            "Intestines"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "The digestive system | شرح الدرس"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas | أهم النقاط",
+              "points": [
+                {
+                  "en": "The digestive tract begins at the mouth and continues through the esophagus, stomach and intestines.",
+                  "ar": "تبدأ القناة الهضمية بالفم ثم المريء والمعدة والأمعاء.",
+                  "simple": "رتّب المسار من الفم إلى الأمعاء."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/digestive.svg",
+              "alt": "The digestive system",
+              "caption": "بوابة التمريض | The digestive system"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 6 — The Urinary System",
+      "description": "Source pages 57–63.",
+      "order": 6,
+      "lessons": [
+        {
+          "title": "The urinary system",
+          "order": 8,
+          "objectives": [
+            "Identify the main anatomical structures described in the supplied textbook.",
+            "Learn the English terminology and its Arabic meaning."
+          ],
+          "keyTerms": [
+            "Kidneys",
+            "Ureters",
+            "Urinary bladder",
+            "Urethra"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "The urinary system | شرح الدرس"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas | أهم النقاط",
+              "points": [
+                {
+                  "en": "The urinary system includes the kidneys, ureters, urinary bladder and urethra.",
+                  "ar": "يشمل الجهاز البولي الكليتين والحالبين والمثانة البولية والإحليل.",
+                  "simple": "احفظ الأعضاء الأربعة."
+                },
+                {
+                  "en": "Urine passes from the kidneys through the ureters to the urinary bladder.",
+                  "ar": "ينتقل البول من الكليتين عبر الحالبين إلى المثانة البولية.",
+                  "simple": "الكلى ثم الحالبان ثم المثانة."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/urinary.svg",
+              "alt": "The urinary system",
+              "caption": "بوابة التمريض | The urinary system"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Chapter 7 — The Reproductive System",
+      "description": "Source pages 64–69.",
+      "order": 7,
+      "lessons": [
+        {
+          "title": "The reproductive system",
+          "order": 9,
+          "objectives": [
+            "Identify the main anatomical structures described in the supplied textbook.",
+            "Learn the English terminology and its Arabic meaning."
+          ],
+          "keyTerms": [
+            "Reproductive system",
+            "Male reproductive organs",
+            "Female reproductive organs"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "The reproductive system | شرح الدرس"
+            },
+            {
+              "type": "bilingual",
+              "title": "Key ideas | أهم النقاط",
+              "points": [
+                {
+                  "en": "The supplied textbook includes reproductive-system anatomical diagrams; use the original labels for exact structure names.",
+                  "ar": "يتضمن الكتاب رسومات تشريحية للجهاز التناسلي؛ تُراجع أسماء الأجزاء من التسميات الأصلية في صفحات الكتاب.",
+                  "simple": "أسماء التفاصيل الدقيقة تُراجع من الرسم الأصلي لتجنب التخمين."
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
