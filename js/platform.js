@@ -20,12 +20,14 @@ async function rows(name,q){const s=await getDocs(q||collection(db,name));return
 async function own(name){return rows(name,query(collection(db,name),where("uid","==",user.uid)));}
 function shell(){const h=el("header","platform-header"),brand=el("a","platform-brand");brand.href="dashboard.html";const brandLogo=el("img","platform-brand-logo");brandLogo.src="assets/images/channel-logo.svg";brandLogo.alt="شعار قناة بوابة التمريض";brandLogo.width=48;brandLogo.height=48;brand.append(brandLogo,el("span","","بوابة التمريض"));const nav=el("nav","platform-nav");[["الرئيسية","dashboard.html"],["المواد","subjects.html"],["الملخصات والملفات","library.html"],["الاختبارات","exams.html"],["المراجعة","quick-revision.html"],["إنجازاتي","gamification.html"],["لوحة المتصدرين","leaderboard.html"],["ملفي","profile.html"]].forEach(([t,u])=>{const a=el("a","",t);a.href=u;if(location.pathname.endsWith(u))a.setAttribute("aria-current","page");nav.append(a);});const menuBtn=el("button","platform-menu-toggle","☰");menuBtn.type="button";menuBtn.setAttribute("aria-label","فتح قائمة التنقل");menuBtn.setAttribute("aria-expanded","false");menuBtn.setAttribute("aria-controls","student-platform-nav");nav.id="student-platform-nav";nav.hidden=true;menuBtn.addEventListener("click",()=>{const open=nav.hidden;nav.hidden=!open;menuBtn.setAttribute("aria-expanded",String(open));menuBtn.setAttribute("aria-label",open?"إغلاق قائمة التنقل":"فتح قائمة التنقل");menuBtn.textContent=open?"✕":"☰";});nav.addEventListener("click",event=>{if(event.target.closest("a")){nav.hidden=true;menuBtn.setAttribute("aria-expanded","false");menuBtn.setAttribute("aria-label","فتح قائمة التنقل");menuBtn.textContent="☰";}});const act=el("div","platform-actions");act.append(el("span","platform-user",user.displayName||user.email||"الطالب"),btn("خروج",async()=>{await signOut(auth);location.replace("login.html");},"btn btn-secondary"));h.append(brand,menuBtn,nav,act);root.before(h);}
 async function study(){
- heading("ابدأ المذاكرة","اختار الطريقة المناسبة لبدء رحلتك التعليمية.");
+ heading("ابدأ المذاكرة","اختار طريقك وابدأ رحلتك التعليمية من مكان واحد.");
  const grid=el("section","study-choice-grid");
- const subjects=el("a","study-choice-card");subjects.href="subjects.html";
- subjects.append(el("span","study-choice-icon","📚"),el("h2","","المواد الدراسية"),el("p","","تصفح موادك الدراسية، واختر المادة والدرس الذي تريد دراسته."),el("span","study-choice-action","عرض المواد ←"));
- const library=el("a","study-choice-card");library.href="library.html";
- library.append(el("span","study-choice-icon","📖"),el("h2","","الملخصات والملفات"),el("p","","افتح ملخصات المواد والملفات التعليمية المتاحة داخل المنصة."),el("span","study-choice-action","تصفح الملخصات والملفات ←"));
+ const subjects=el("a","study-choice-card study-choice-subjects");subjects.href="subjects.html";subjects.setAttribute("aria-label","الانتقال إلى المواد الدراسية");
+ const subjectsTop=el("div","study-choice-top");subjectsTop.append(el("span","study-choice-icon","📚"),el("span","study-choice-tag","التعلّم المنهجي"));
+ subjects.append(subjectsTop,el("h2","","المواد الدراسية"),el("p","","تصفح موادك الدراسية، واختر المادة ثم الدرس الذي تريد مذاكرته."),el("span","study-choice-action","استكشف المواد <span aria-hidden=\"true\">←</span>"));
+ const library=el("a","study-choice-card study-choice-library");library.href="library.html";library.setAttribute("aria-label","الانتقال إلى الملخصات والملفات");
+ const libraryTop=el("div","study-choice-top");libraryTop.append(el("span","study-choice-icon","📖"),el("span","study-choice-tag","مراجعة ومصادر"));
+ library.append(libraryTop,el("h2","","الملخصات والملفات"),el("p","","وصل سريع إلى ملخصات المواد والملفات التعليمية المتاحة داخل المنصة."),el("span","study-choice-action","تصفح المكتبة <span aria-hidden=\"true\">←</span>"));
  grid.append(subjects,library);root.append(grid);
 }
 async function dashboard(){
