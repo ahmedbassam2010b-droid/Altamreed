@@ -23,11 +23,11 @@ async function study(){
  heading("ابدأ المذاكرة","اختار طريقك وابدأ رحلتك التعليمية من مكان واحد.");
  const grid=el("section","study-choice-grid");
  const subjects=el("a","study-choice-card study-choice-subjects");subjects.href="subjects.html";subjects.setAttribute("aria-label","الانتقال إلى المواد الدراسية");
- const subjectsTop=el("div","study-choice-top");subjectsTop.append(el("span","study-choice-icon","📚"),el("span","study-choice-tag","التعلّم المنهجي"));
- subjects.append(subjectsTop,el("h2","","المواد الدراسية"),el("p","","تصفح موادك الدراسية، واختر المادة ثم الدرس الذي تريد مذاكرته."),el("span","study-choice-action","استكشف المواد <span aria-hidden=\"true\">←</span>"));
+ const subjectsTop=el("div","study-choice-top");subjectsTop.append(el("span","study-choice-icon","📚"));
+ subjects.append(subjectsTop,el("h2","","المواد الدراسية"),el("p","","تصفح موادك الدراسية، واختر المادة ثم الدرس الذي تريد مذاكرته."),el("span","study-choice-action","استكشف المواد"));
  const library=el("a","study-choice-card study-choice-library");library.href="library.html";library.setAttribute("aria-label","الانتقال إلى الملخصات والملفات");
- const libraryTop=el("div","study-choice-top");libraryTop.append(el("span","study-choice-icon","📖"),el("span","study-choice-tag","مراجعة ومصادر"));
- library.append(libraryTop,el("h2","","الملخصات والملفات"),el("p","","وصل سريع إلى ملخصات المواد والملفات التعليمية المتاحة داخل المنصة."),el("span","study-choice-action","تصفح المكتبة <span aria-hidden=\"true\">←</span>"));
+ const libraryTop=el("div","study-choice-top");libraryTop.append(el("span","study-choice-icon","📖"));
+ library.append(libraryTop,el("h2","","الملخصات والملفات"),el("p","","وصل سريع إلى ملخصات المواد والملفات التعليمية المتاحة داخل المنصة."),el("span","study-choice-action","فتح الملفات والملخصات"));
  grid.append(subjects,library);root.append(grid);
 }
 async function dashboard(){
