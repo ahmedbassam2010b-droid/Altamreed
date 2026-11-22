@@ -127,19 +127,19 @@
             },
             {
               "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skeleton-overview.svg",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skeleton-overview.png",
               "alt": "The axial skeleton",
               "caption": "بوابة التمريض | The axial skeleton"
             },
             {
               "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skull.svg",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skull.png",
               "alt": "The axial skeleton",
               "caption": "بوابة التمريض | The axial skeleton"
             },
             {
               "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/thorax.svg",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/thoracic-cage.png",
               "alt": "The axial skeleton",
               "caption": "بوابة التمريض | The axial skeleton"
             }
@@ -182,7 +182,7 @@
             },
             {
               "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skeleton-overview.svg",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skeleton-overview.png",
               "alt": "The appendicular skeleton",
               "caption": "بوابة التمريض | The appendicular skeleton"
             }
@@ -231,7 +231,7 @@
             },
             {
               "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/brain.svg",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/brain.png",
               "alt": "The nervous system",
               "caption": "بوابة التمريض | The nervous system"
             }
@@ -280,7 +280,7 @@
             },
             {
               "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/heart.svg",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/heart.png",
               "alt": "The heart and circulatory system",
               "caption": "بوابة التمريض | The heart and circulatory system"
             }
@@ -323,7 +323,7 @@
             },
             {
               "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/respiratory.svg",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/lungs.png",
               "alt": "The respiratory system",
               "caption": "بوابة التمريض | The respiratory system"
             }
@@ -367,7 +367,7 @@
             },
             {
               "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/digestive.svg",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/digestive-system.png",
               "alt": "The digestive system",
               "caption": "بوابة التمريض | The digestive system"
             }
@@ -416,7 +416,7 @@
             },
             {
               "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/urinary.svg",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/urinary-system.png",
               "alt": "The urinary system",
               "caption": "بوابة التمريض | The urinary system"
             }
