@@ -3,35 +3,49 @@
   "course": "Anatomy",
   "grade": "First Year Nursing School",
   "source": {
-    "title": "التشريح وعلم وظائف الأعضاء — الصف الأول",
+    "title": "التشريح وعلم وظائف الأعضاء — مبادئ علم التشريح",
     "pages": 71,
-    "preparedBy": [
-      "أ.د/ ممدوح محمود عبد الرحمن — أستاذ التشريح",
-      "أ.د/ سناء محمد مرسي — أستاذ الفسيولوجيا"
-    ],
-    "note": "Derived from the user-provided scanned textbook. Illegible wording obscured by the watermark is omitted rather than guessed.",
-    "coverageNote": "Page references follow the supplied scan. Fine labels on some diagrams require verification against the original page."
+    "reviewedPages": "4–16 من ملف PDF المقدم",
+    "note": "المحتوى التفصيلي أدناه مقتصر على الصفحات التي تمت مراجعتها بصريًا. لم تُستكمل مراجعة بقية صفحات الكتاب بعد؛ لذلك لا يُعلن المنهج مكتملًا."
   },
   "contentStatus": "in-progress",
   "editorialVerification": {
-    "chapterCount": 7,
-    "lessonCount": 9,
-    "visualAssetCount": 9,
+    "chapterCount": 1,
+    "lessonCount": 4,
+    "visualAssetCount": 4,
     "bilingualExplanations": true,
-    "unclearTextPolicy": "Illegible text omitted; no invented quotations."
+    "reviewedSourcePages": [
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "pendingSourcePages": "17–71",
+    "unclearTextPolicy": "عدم تخمين النصوص غير المقروءة أو إضافة فصول غير مثبتة من المصدر."
   },
   "chapters": [
     {
-      "title": "Chapter 1 — The Skeletal System",
-      "description": "Bone classification and axial and appendicular skeleton. Source pages 4–27.",
+      "id": "bones",
+      "title": "Chapter 1 — Bones | العظام",
+      "description": "الفصل الأول: العظام. محتوى مبني على الصفحات 4–16 من الكتاب المقدم.",
       "order": 1,
       "lessons": [
         {
-          "title": "Classification of bones",
+          "title": "Types of bones | أنواع العظام",
           "order": 1,
+          "sourcePages": "5",
           "objectives": [
-            "Identify the main anatomical structures described in the supplied textbook.",
-            "Learn the English terminology and its Arabic meaning."
+            "Classify bones according to the textbook.",
+            "Recognize the examples stated in the source."
           ],
           "keyTerms": [
             "Long bones",
@@ -44,418 +58,233 @@
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Classification of bones | شرح الدرس"
+              "text": "Types of bones | أنواع العظام"
             },
             {
               "type": "bilingual",
-              "title": "Key ideas | أهم النقاط",
+              "title": "Classification | تصنيف العظام",
               "points": [
                 {
-                  "en": "Long bones are elongated bones with a shaft and two ends; examples include the femur and humerus.",
-                  "ar": "العظام الطويلة مستطيلة ولها جسم ونهايتان، مثل عظم الفخذ والعضد.",
-                  "simple": "لها جسم طويل ونهايتان."
+                  "en": "Long bones are rectangular/elongated bones with two ends and a shaft. The shaft contains a cavity with bone marrow. Examples: humerus and femur.",
+                  "ar": "العظام الطويلة عظام مستطيلة الشكل لها طرفان بينهما جسم العظمة. يحتوي الجسم على تجويف به نخاع العظم. مثل عظم العضد والفخذ.",
+                  "simple": "لها جسم طويل وطرفان، وبداخل جسمها تجويف يحتوي على نخاع العظم."
                 },
                 {
-                  "en": "Short bones are generally cube-shaped; examples include many wrist bones.",
-                  "ar": "العظام القصيرة غالبًا مكعبة الشكل، مثل كثير من عظام الرسغ.",
-                  "simple": "أبعادها متقاربة."
+                  "en": "Short bones may be cuboidal or pyramidal. Example: bones of the wrist.",
+                  "ar": "العظام القصيرة قد تكون مستديرة أو مكعبة أو هرمية. مثال: عظام رسغ اليد.",
+                  "simple": "عظام قصيرة، ومن أمثلتها عظام الرسغ."
                 },
                 {
-                  "en": "Irregular bones have complex shapes, such as vertebrae.",
-                  "ar": "العظام غير المنتظمة لها أشكال معقدة، مثل الفقرات.",
-                  "simple": "شكلها غير منتظم."
+                  "en": "Irregular bones are short bones without a distinct shape. Example: vertebrae.",
+                  "ar": "العظام المتعرجة عظام قصيرة ولكن ليس لها شكل مميز. مثال: الفقرات.",
+                  "simple": "عظام لا تتخذ شكلًا منتظمًا مثل الفقرات."
                 },
                 {
-                  "en": "Flat bones are thin and flattened, such as skull bones and the scapula.",
-                  "ar": "العظام المسطحة رقيقة ومفلطحة، مثل بعض عظام الجمجمة ولوح الكتف.",
+                  "en": "Flat bones are thin and flattened. Examples: skull bones and scapula.",
+                  "ar": "العظام المفلطحة عظام رقيقة ومسطحة. مثل عظام الجمجمة ولوح الكتف.",
                   "simple": "عظام رقيقة ومسطحة."
                 },
                 {
-                  "en": "Pneumatic bones contain air-filled spaces, especially in some skull bones.",
-                  "ar": "العظام الهوائية تحتوي فراغات هوائية، خاصة بعض عظام الجمجمة.",
-                  "simple": "بها تجاويف هوائية."
+                  "en": "Pneumatic bones contain air-filled spaces in some parts of the skull; the textbook mentions the nasal sinuses and their relation to the nasal cavities.",
+                  "ar": "العظام الهوائية هي عظام في الجمجمة تحتوي بعض أجزائها على فراغات بها هواء، ويسميها الكتاب الجيوب الأنفية لاتصالها بتجويف الأنف.",
+                  "simple": "بعض عظام الجمجمة بداخلها فراغات هوائية."
                 },
                 {
-                  "en": "Sesamoid bones are small bones embedded in tendons, such as the patella.",
-                  "ar": "العظام السمسمية عظام صغيرة داخل بعض الأوتار، مثل الرضفة.",
-                  "simple": "مثالها صابونة الركبة."
-                }
-              ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/bone-types.svg",
-              "alt": "Classification of bones",
-              "caption": "بوابة التمريض | Classification of bones"
-            }
-          ]
-        },
-        {
-          "title": "The axial skeleton",
-          "order": 2,
-          "objectives": [
-            "Identify the main anatomical structures described in the supplied textbook.",
-            "Learn the English terminology and its Arabic meaning."
-          ],
-          "keyTerms": [
-            "Axial skeleton",
-            "Skull",
-            "Vertebral column",
-            "Ribs",
-            "Sternum"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "The axial skeleton | شرح الدرس"
-            },
-            {
-              "type": "bilingual",
-              "title": "Key ideas | أهم النقاط",
-              "points": [
-                {
-                  "en": "The axial skeleton lies along the central axis of the body.",
-                  "ar": "يقع الهيكل العظمي المحوري على المحور المركزي للجسم.",
-                  "simple": "هو الجزء المركزي من الهيكل."
-                },
-                {
-                  "en": "It includes the skull, vertebral column, ribs and sternum.",
-                  "ar": "يشمل الجمجمة والعمود الفقري والضلوع وعظمة القص.",
-                  "simple": "احفظ المكونات الأساسية."
+                  "en": "Sesamoid bones are small bones found within tendons of some muscles. Example: the patella in front of the knee.",
+                  "ar": "العظام السمسمية عظام صغيرة توجد داخل أوتار بعض العضلات. مثال: الرضفة الموجودة أمام الركبة.",
+                  "simple": "عظام صغيرة داخل بعض الأوتار، مثل الرضفة."
                 }
               ]
             },
             {
               "type": "image",
               "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skeleton-overview.png",
-              "alt": "The axial skeleton",
-              "caption": "بوابة التمريض | The axial skeleton"
+              "alt": "Human skeleton overview",
+              "caption": "Human skeleton — overview"
+            }
+          ]
+        },
+        {
+          "title": "Parts of the skeleton | أجزاء الهيكل العظمي",
+          "order": 2,
+          "sourcePages": "5–6",
+          "objectives": [
+            "Distinguish the axial and appendicular skeletons.",
+            "Identify the structures named in the textbook diagram."
+          ],
+          "keyTerms": [
+            "Axial skeleton",
+            "Appendicular skeleton",
+            "Skull",
+            "Vertebral column",
+            "Thorax",
+            "Upper limb",
+            "Lower limb"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Parts of the skeleton | أجزاء الهيكل العظمي"
+            },
+            {
+              "type": "bilingual",
+              "title": "Axial skeleton | الهيكل العظمي المحوري",
+              "points": [
+                {
+                  "en": "The axial skeleton lies in the middle of the body and includes the skull, vertebral column, thorax and ribs as listed on the page.",
+                  "ar": "يقع الهيكل العظمي المحوري في منتصف الجسم ويشمل الجمجمة والعمود الفقري والقفص الصدري والضلوع كما ورد بالصفحة.",
+                  "simple": "هو الجزء الموجود في منتصف الجسم."
+                },
+                {
+                  "en": "The appendicular skeleton lies on both sides of the body and includes the bones of the upper and lower limbs.",
+                  "ar": "يقع الهيكل العظمي الطرفي على جانبي الجسم ويشمل عظام الطرف العلوي والطرف السفلي.",
+                  "simple": "هو عظام الأطراف على جانبي الجسم."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skeleton-overview.png",
+              "alt": "Anterior and posterior views of the skeleton",
+              "caption": "Skeleton — anterior and posterior views"
+            }
+          ]
+        },
+        {
+          "title": "The skull and fontanelles | الجمجمة واليافوخ",
+          "order": 3,
+          "sourcePages": "7–9",
+          "objectives": [
+            "Name the three parts of the adult skull described in the source.",
+            "Compare the anterior and posterior fontanelles in a newborn."
+          ],
+          "keyTerms": [
+            "Cranium",
+            "Face",
+            "Mandible",
+            "Anterior fontanelle",
+            "Posterior fontanelle"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "The skull | الجمجمة"
+            },
+            {
+              "type": "bilingual",
+              "title": "Adult skull | جمجمة الشخص البالغ",
+              "points": [
+                {
+                  "en": "The skull consists of 21 bones joined by sutures; some are single and others are paired.",
+                  "ar": "تتكون الجمجمة من 21 عظمة يفصلها عن بعضها فواصل متعرجة تسمى الدروز. بعض العظام مفردة وبعضها مزدوج.",
+                  "simple": "عظام الجمجمة متصلة بدروز، ومنها عظام مفردة وأخرى مزدوجة."
+                },
+                {
+                  "en": "The mandible articulates with the skull in front of the ear opening.",
+                  "ar": "يتصل الفك السفلي مع الجمجمة عند مفصل يقع أمام فتحة الأذن مباشرة.",
+                  "simple": "الفك السفلي يتصل بالجمجمة بمفصل أمام فتحة الأذن."
+                },
+                {
+                  "en": "The textbook divides the skull into three parts: cranium, face and mandible.",
+                  "ar": "تقسم الصفحة الجمجمة إلى ثلاثة أجزاء: القبو، والوجه، والقاعدة؟ النص يذكر: القبة (الجزء العلوي)، الوجه (الجزء الأمامي)، والقاعدة (الجزء السفلي).",
+                  "simple": "احفظ التقسيم كما ورد: القبة والوجه والقاعدة."
+                }
+              ]
+            },
+            {
+              "type": "bilingual",
+              "title": "Newborn fontanelles | يوافيخ حديث الولادة",
+              "points": [
+                {
+                  "en": "Fontanelles are spaces in the newborn skull where bones have not yet formed; membranes are present and later become bone as growth occurs.",
+                  "ar": "اليافوخ أماكن في جمجمة حديث الولادة لم تتكون فيها العظام بعد، ولكن توجد أغشية تستبدل مع نمو العظام.",
+                  "simple": "مناطق لينة بين عظام جمجمة الطفل وتتحول تدريجيًا إلى عظام."
+                },
+                {
+                  "en": "The anterior fontanelle is larger, diamond-shaped, about 3 cm, and closes after about 6½–2 years as stated in the table (the scan reads approximately 1½–2 years).",
+                  "ar": "اليافوخ الأمامي كبير ومعيني الشكل وطوله نحو 3 سم، ويغلق بعد نحو سنة ونصف إلى سنتين وفق الجدول.",
+                  "simple": "الأمامي أكبر ومعيني الشكل ويغلق متأخرًا عن الخلفي."
+                },
+                {
+                  "en": "The posterior fontanelle is smaller, triangular, about 1 cm, and closes within about three months.",
+                  "ar": "اليافوخ الخلفي صغير ومثلث الشكل وطوله نحو 1 سم ويغلق خلال ثلاثة أشهر.",
+                  "simple": "الخلفي أصغر ومثلث ويغلق مبكرًا."
+                }
+              ]
             },
             {
               "type": "image",
               "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skull.png",
-              "alt": "The axial skeleton",
-              "caption": "بوابة التمريض | The axial skeleton"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/thoracic-cage.png",
-              "alt": "The axial skeleton",
-              "caption": "بوابة التمريض | The axial skeleton"
+              "alt": "Skull anatomy",
+              "caption": "Skull anatomy — use alongside the textbook labels"
             }
           ]
         },
         {
-          "title": "The appendicular skeleton",
-          "order": 3,
-          "objectives": [
-            "Identify the main anatomical structures described in the supplied textbook.",
-            "Learn the English terminology and its Arabic meaning."
-          ],
-          "keyTerms": [
-            "Appendicular skeleton",
-            "Upper limb",
-            "Lower limb",
-            "Shoulder girdle",
-            "Pelvic girdle"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "The appendicular skeleton | شرح الدرس"
-            },
-            {
-              "type": "bilingual",
-              "title": "Key ideas | أهم النقاط",
-              "points": [
-                {
-                  "en": "The appendicular skeleton includes the bones of the upper and lower limbs and their girdles.",
-                  "ar": "يشمل الهيكل الطرفي عظام الأطراف العلوية والسفلية والأحزمة التي تربطها بالجذع.",
-                  "simple": "عظام الذراعين والرجلين ومناطق اتصالها بالجسم."
-                },
-                {
-                  "en": "The shoulder girdle connects the upper limbs to the trunk; the pelvic girdle connects the lower limbs.",
-                  "ar": "يربط الحزام الكتفي الطرفين العلويين بالجذع، ويربط الحزام الحوضي الطرفين السفليين.",
-                  "simple": "الكتف للذراع والحوض للطرف السفلي."
-                }
-              ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skeleton-overview.png",
-              "alt": "The appendicular skeleton",
-              "caption": "بوابة التمريض | The appendicular skeleton"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Chapter 2 — The Nervous System",
-      "description": "Source pages 28–31.",
-      "order": 2,
-      "lessons": [
-        {
-          "title": "The nervous system",
+          "title": "Bones of the upper limb | عظام الطرف العلوي",
           "order": 4,
+          "sourcePages": "10–14",
           "objectives": [
-            "Identify the main anatomical structures described in the supplied textbook.",
-            "Learn the English terminology and its Arabic meaning."
+            "Identify the clavicle, scapula, humerus, ulna, radius and hand bones.",
+            "Recall the hand regions and counts stated in the source."
           ],
           "keyTerms": [
-            "Brain",
-            "Spinal cord",
-            "Central nervous system",
-            "Peripheral nerves"
+            "Clavicle",
+            "Scapula",
+            "Humerus",
+            "Ulna",
+            "Radius",
+            "Carpals",
+            "Metacarpals",
+            "Phalanges"
           ],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "The nervous system | شرح الدرس"
+              "text": "Bones of the upper limb | عظام الطرف العلوي"
             },
             {
               "type": "bilingual",
-              "title": "Key ideas | أهم النقاط",
+              "title": "Shoulder and arm | الكتف والذراع",
               "points": [
                 {
-                  "en": "The central nervous system consists of the brain and spinal cord.",
-                  "ar": "يتكون الجهاز العصبي المركزي من المخ والحبل الشوكي.",
-                  "simple": "المخ والحبل الشوكي هما المركز."
+                  "en": "The clavicle is located anteriorly in the shoulder girdle and extends between the sternum and scapular region as described in the diagram.",
+                  "ar": "توجد الترقوة في الحزام الكتفي من الأمام وتمتد بين عظمتي القص ولوح الكتف.",
+                  "simple": "الترقوة عظمة أمامية في منطقة الكتف."
                 },
                 {
-                  "en": "Peripheral nerves connect the central nervous system with the rest of the body.",
-                  "ar": "تربط الأعصاب الطرفية الجهاز العصبي المركزي بباقي الجسم.",
-                  "simple": "تنقل الإشارات بين المركز والجسم."
-                }
-              ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/brain.png",
-              "alt": "The nervous system",
-              "caption": "بوابة التمريض | The nervous system"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Chapter 3 — The Circulatory System",
-      "description": "Source pages 32–46.",
-      "order": 3,
-      "lessons": [
-        {
-          "title": "The heart and circulatory system",
-          "order": 5,
-          "objectives": [
-            "Identify the main anatomical structures described in the supplied textbook.",
-            "Learn the English terminology and its Arabic meaning."
-          ],
-          "keyTerms": [
-            "Heart",
-            "Atrium",
-            "Ventricle",
-            "Blood vessels"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "The heart and circulatory system | شرح الدرس"
-            },
-            {
-              "type": "bilingual",
-              "title": "Key ideas | أهم النقاط",
-              "points": [
-                {
-                  "en": "The heart has four chambers: right atrium, right ventricle, left atrium and left ventricle.",
-                  "ar": "يتكون القلب من أربع حجرات: الأذين الأيمن والبطين الأيمن والأذين الأيسر والبطين الأيسر.",
-                  "simple": "أذينان بالأعلى وبطينان بالأسفل."
+                  "en": "The scapula is located posteriorly in the shoulder girdle and articulates with the clavicle and humerus.",
+                  "ar": "يوجد لوح الكتف في الحزام الكتفي من الخلف ويتصل بالترقوة وعظمة العضد.",
+                  "simple": "لوح الكتف خلفي ويتصل بعظمتي الترقوة والعضد."
                 },
                 {
-                  "en": "Blood vessels form the pathways through which blood circulates.",
-                  "ar": "تكوّن الأوعية الدموية المسارات التي يتحرك خلالها الدم.",
-                  "simple": "الأوعية شبكة نقل الدم."
+                  "en": "The humerus extends between the shoulder and elbow joints; its head articulates at the shoulder.",
+                  "ar": "تمتد عظمة العضد بين مفصلي الكتف والمرفق، ولها رأس يتصل عند مفصل الكتف.",
+                  "simple": "عظمة العضد هي عظمة الذراع بين الكتف والمرفق."
                 }
               ]
             },
             {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/heart.png",
-              "alt": "The heart and circulatory system",
-              "caption": "بوابة التمريض | The heart and circulatory system"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Chapter 4 — The Respiratory System",
-      "description": "Source pages 47–52.",
-      "order": 4,
-      "lessons": [
-        {
-          "title": "The respiratory system",
-          "order": 6,
-          "objectives": [
-            "Identify the main anatomical structures described in the supplied textbook.",
-            "Learn the English terminology and its Arabic meaning."
-          ],
-          "keyTerms": [
-            "Trachea",
-            "Bronchi",
-            "Lungs"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "The respiratory system | شرح الدرس"
-            },
-            {
               "type": "bilingual",
-              "title": "Key ideas | أهم النقاط",
+              "title": "Forearm and hand | الساعد واليد",
               "points": [
                 {
-                  "en": "The respiratory pathway includes the trachea, bronchi and lungs.",
-                  "ar": "يشمل مسار الجهاز التنفسي القصبة الهوائية والشعب الهوائية والرئتين.",
-                  "simple": "القصبة ثم الشعب ثم الرئتان."
-                }
-              ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/lungs.png",
-              "alt": "The respiratory system",
-              "caption": "بوابة التمريض | The respiratory system"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Chapter 5 — The Digestive System",
-      "description": "Source pages 53–56.",
-      "order": 5,
-      "lessons": [
-        {
-          "title": "The digestive system",
-          "order": 7,
-          "objectives": [
-            "Identify the main anatomical structures described in the supplied textbook.",
-            "Learn the English terminology and its Arabic meaning."
-          ],
-          "keyTerms": [
-            "Mouth",
-            "Esophagus",
-            "Stomach",
-            "Intestines"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "The digestive system | شرح الدرس"
-            },
-            {
-              "type": "bilingual",
-              "title": "Key ideas | أهم النقاط",
-              "points": [
-                {
-                  "en": "The digestive tract begins at the mouth and continues through the esophagus, stomach and intestines.",
-                  "ar": "تبدأ القناة الهضمية بالفم ثم المريء والمعدة والأمعاء.",
-                  "simple": "رتّب المسار من الفم إلى الأمعاء."
-                }
-              ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/digestive-system.png",
-              "alt": "The digestive system",
-              "caption": "بوابة التمريض | The digestive system"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Chapter 6 — The Urinary System",
-      "description": "Source pages 57–63.",
-      "order": 6,
-      "lessons": [
-        {
-          "title": "The urinary system",
-          "order": 8,
-          "objectives": [
-            "Identify the main anatomical structures described in the supplied textbook.",
-            "Learn the English terminology and its Arabic meaning."
-          ],
-          "keyTerms": [
-            "Kidneys",
-            "Ureters",
-            "Urinary bladder",
-            "Urethra"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "The urinary system | شرح الدرس"
-            },
-            {
-              "type": "bilingual",
-              "title": "Key ideas | أهم النقاط",
-              "points": [
-                {
-                  "en": "The urinary system includes the kidneys, ureters, urinary bladder and urethra.",
-                  "ar": "يشمل الجهاز البولي الكليتين والحالبين والمثانة البولية والإحليل.",
-                  "simple": "احفظ الأعضاء الأربعة."
+                  "en": "The forearm bones shown are the ulna and radius; the source describes their positions and joint relations in the following pages.",
+                  "ar": "عظمتا الساعد هما الزند والكعبرة، وتوضح الصفحات موضعيهما واتصالهما بالمفاصل.",
+                  "simple": "الساعد يتكون من عظمتين: الزند والكعبرة."
                 },
                 {
-                  "en": "Urine passes from the kidneys through the ureters to the urinary bladder.",
-                  "ar": "ينتقل البول من الكليتين عبر الحالبين إلى المثانة البولية.",
-                  "simple": "الكلى ثم الحالبان ثم المثانة."
+                  "en": "The hand is divided into wrist, palm and fingers. The wrist has 8 carpal bones in two rows; the palm has 5 metacarpals; the fingers have 14 phalanges, with 3 in each finger except the thumb, which has 2.",
+                  "ar": "تنقسم اليد إلى الرسغ والكف والأصابع. الرسغ به 8 عظام رسغية مرتبة في صفين، والكف به 5 عظام مشطية، والأصابع بها 14 سلامية: 3 في كل إصبع ما عدا الإبهام به 2.",
+                  "simple": "احفظ أعداد عظام اليد: 8 رسغية، 5 مشطية، 14 سلامية."
                 }
               ]
             },
             {
               "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/urinary-system.png",
-              "alt": "The urinary system",
-              "caption": "بوابة التمريض | The urinary system"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "Chapter 7 — The Reproductive System",
-      "description": "Source pages 64–69.",
-      "order": 7,
-      "lessons": [
-        {
-          "title": "The reproductive system",
-          "order": 9,
-          "objectives": [
-            "Identify the main anatomical structures described in the supplied textbook.",
-            "Learn the English terminology and its Arabic meaning."
-          ],
-          "keyTerms": [
-            "Reproductive system",
-            "Male reproductive organs",
-            "Female reproductive organs"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "The reproductive system | شرح الدرس"
-            },
-            {
-              "type": "bilingual",
-              "title": "Key ideas | أهم النقاط",
-              "points": [
-                {
-                  "en": "The supplied textbook includes reproductive-system anatomical diagrams; use the original labels for exact structure names.",
-                  "ar": "يتضمن الكتاب رسومات تشريحية للجهاز التناسلي؛ تُراجع أسماء الأجزاء من التسميات الأصلية في صفحات الكتاب.",
-                  "simple": "أسماء التفاصيل الدقيقة تُراجع من الرسم الأصلي لتجنب التخمين."
-                }
-              ]
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/hand-bones.png",
+              "alt": "Bones of the hand",
+              "caption": "Bones of the hand — carpals, metacarpals and phalanges"
             }
           ]
         }
