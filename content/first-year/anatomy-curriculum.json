@@ -77,6 +77,18 @@
               ]
             },
             {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/muscular-system.png",
+              "alt": "Human muscular system",
+              "caption": "صورة مساندة: الجهاز العضلي وعلاقته بالأوتار المذكورة مع العظام السمسمية"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/muscle-fiber.png",
+              "alt": "Muscle fiber",
+              "caption": "صورة توضيحية مساندة: الليفة العضلية"
+            },
+            {
               "type": "bilingual",
               "title": "Skeleton, Skull and Fontanelles | الهيكل والجمجمة واليافوخ",
               "points": [
@@ -165,6 +177,24 @@
             },
             {
               "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/shoulder-joint.png",
+              "alt": "Shoulder joint",
+              "caption": "مفصل الكتف: اتصال لوح الكتف بعظمة العضد"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/pelvic-girdle.png",
+              "alt": "Pelvic girdle",
+              "caption": "الحزام الحوضي وعظام الحوض"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/knee-joint.png",
+              "alt": "Knee joint",
+              "caption": "مفصل الركبة: اتصال عظمة الفخذ بعظام الساق"
+            },
+            {
+              "type": "image",
               "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/vertebral-column.png",
               "alt": "Vertebral column",
               "caption": "العمود الفقري"
@@ -210,6 +240,12 @@
               ]
             },
             {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/brain.png",
+              "alt": "Human brain",
+              "caption": "أجزاء المخ والمخيخ وجذع المخ"
+            },
+            {
               "type": "bilingual",
               "title": "Cerebellum, Brainstem, Spinal Cord and Meninges | المخيخ والجذع والحبل الشوكي والأغشية",
               "points": [
@@ -240,6 +276,30 @@
                   "simple": "راجع جدول أسماء الأعصاب القحفية ووظيفة كل عصب في الكتاب."
                 }
               ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/eye-anatomy.png",
+              "alt": "Eye anatomy",
+              "caption": "صورة مساندة للأعصاب القحفية المرتبطة بالإبصار وحركة العين"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/ear-anatomy.png",
+              "alt": "Ear anatomy",
+              "caption": "صورة مساندة للعصب الدهليزي القوقعي ووظيفتي السمع والاتزان"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/facial-muscles.png",
+              "alt": "Facial muscles",
+              "caption": "عضلات الوجه المرتبطة بوظيفة العصب الوجهي"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/neck-anatomy.png",
+              "alt": "Neck anatomy",
+              "caption": "منطقة الرقبة المرتبطة بوظيفة العصب الإضافي وعضلات الرقبة"
             }
           ]
         }
@@ -825,6 +885,12 @@
                   "simple": "الغدة المختلطة لها نوعا إفراز."
                 }
               ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skin-structure.png",
+              "alt": "Skin structure",
+              "caption": "تركيب الجلد: موضع الغدد الجلدية الخارجية المذكورة في الدرس"
             }
           ]
         }
