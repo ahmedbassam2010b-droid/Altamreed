@@ -240,12 +240,6 @@
                   "simple": "راجع جدول أسماء الأعصاب القحفية ووظيفة كل عصب في الكتاب."
                 }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/brain.png",
-              "alt": "Brain anatomy",
-              "caption": "أجزاء المخ"
             }
           ]
         }
@@ -730,12 +724,6 @@
                   "simple": "راجع أسماء الغدد الملحقة ومواضعها."
                 }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/male-reproductive-system.png",
-              "alt": "Male reproductive system",
-              "caption": "الجهاز التناسلي الذكري"
             }
           ]
         }
@@ -792,12 +780,6 @@
                   "simple": "تعرف على الأجزاء والفتحات كما في الرسم."
                 }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/female-reproductive-system.png",
-              "alt": "Female reproductive system",
-              "caption": "الجهاز التناسلي الأنثوي"
             }
           ]
         }
@@ -843,12 +825,6 @@
                   "simple": "الغدة المختلطة لها نوعا إفراز."
                 }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/brain.png",
-              "alt": "Pituitary region illustration",
-              "caption": "موضع الغدة النخامية ضمن الدماغ"
             }
           ]
         }
@@ -894,12 +870,6 @@
                   "simple": "ذيل سبنس يمتد نحو الإبط، والتصريف الليمفاوي للعقد الإبطية."
                 }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skin-structure.png",
-              "alt": "Skin structure",
-              "caption": "تركيب الجلد"
             }
           ]
         }
