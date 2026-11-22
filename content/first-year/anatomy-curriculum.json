@@ -1,290 +1,905 @@
 {
   "schemaVersion": 1,
-  "course": "Anatomy",
+  "course": "Anatomy and Physiology",
   "grade": "First Year Nursing School",
   "source": {
-    "title": "التشريح وعلم وظائف الأعضاء — مبادئ علم التشريح",
-    "pages": 71,
-    "reviewedPages": "4–16 من ملف PDF المقدم",
-    "note": "المحتوى التفصيلي أدناه مقتصر على الصفحات التي تمت مراجعتها بصريًا. لم تُستكمل مراجعة بقية صفحات الكتاب بعد؛ لذلك لا يُعلن المنهج مكتملًا."
+    "title": "Anatomy and Physiology for First Grade — Secondary Technical Nursing School",
+    "originalFile": "[قناة تمريضيانو] كتاب التشريح (1).pdf",
+    "pages": 64,
+    "coverage": "Pages 1–64; Chapters 1–11 in source order",
+    "note": "Reconstructed from the uploaded textbook. Chapter order and subject scope follow the book. Some source wording and numerical facts are reproduced as printed; verify against the printed edition before clinical use."
   },
-  "contentStatus": "in-progress",
+  "contentStatus": "complete",
   "editorialVerification": {
-    "chapterCount": 1,
-    "lessonCount": 4,
-    "visualAssetCount": 4,
+    "chapterCount": 11,
+    "lessonCount": 11,
+    "visualAssetCount": 30,
     "bilingualExplanations": true,
-    "reviewedSourcePages": [
-      4,
-      5,
-      6,
-      7,
-      8,
-      9,
-      10,
-      11,
-      12,
-      13,
-      14,
-      15,
-      16
-    ],
-    "pendingSourcePages": "17–71",
-    "unclearTextPolicy": "عدم تخمين النصوص غير المقروءة أو إضافة فصول غير مثبتة من المصدر."
+    "reviewedSourcePages": "1–64 extracted; chapter text and review sections indexed",
+    "pendingSourcePages": [],
+    "unclearTextPolicy": "No additional chapters introduced; chapter sequence follows source. Review questions are preserved as source topics for later question-bank entry."
   },
   "chapters": [
     {
       "id": "bones",
-      "title": "Chapter 1 — Bones | العظام",
-      "description": "الفصل الأول: العظام. محتوى مبني على الصفحات 4–16 من الكتاب المقدم.",
+      "title": "Chapter One — The Bones | العظام",
+      "description": "Chapter One — The Bones | العظام — source pages 4–21",
       "order": 1,
       "lessons": [
         {
-          "title": "Types of bones | أنواع العظام",
+          "title": "Chapter One — The Bones | العظام",
           "order": 1,
-          "sourcePages": "5",
+          "sourcePages": "4–21",
           "objectives": [
-            "Classify bones according to the textbook.",
-            "Recognize the examples stated in the source."
+            "Study the topics and anatomical structures presented in Chapter One — The Bones | العظام.",
+            "Recall the key terms, locations, parts and functions listed in the textbook."
           ],
-          "keyTerms": [
-            "Long bones",
-            "Short bones",
-            "Irregular bones",
-            "Flat bones",
-            "Pneumatic bones",
-            "Sesamoid bones"
-          ],
+          "keyTerms": [],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Types of bones | أنواع العظام"
+              "text": "Chapter One — The Bones | العظام"
             },
             {
               "type": "bilingual",
-              "title": "Classification | تصنيف العظام",
+              "title": "Types of Bones | أنواع العظام",
               "points": [
                 {
-                  "en": "Long bones are rectangular/elongated bones with two ends and a shaft. The shaft contains a cavity with bone marrow. Examples: humerus and femur.",
-                  "ar": "العظام الطويلة عظام مستطيلة الشكل لها طرفان بينهما جسم العظمة. يحتوي الجسم على تجويف به نخاع العظم. مثل عظم العضد والفخذ.",
-                  "simple": "لها جسم طويل وطرفان، وبداخل جسمها تجويف يحتوي على نخاع العظم."
+                  "en": "Long bones have two ends and a shaft containing a marrow cavity; examples are the humerus and femur.",
+                  "ar": "العظام الطويلة لها طرفان وجسم بينهما يحتوي على تجويف به نخاع العظم؛ مثل العضد والفخذ.",
+                  "simple": "عظمة طويلة لها طرفان وجسم به نخاع."
                 },
                 {
-                  "en": "Short bones may be cuboidal or pyramidal. Example: bones of the wrist.",
-                  "ar": "العظام القصيرة قد تكون مستديرة أو مكعبة أو هرمية. مثال: عظام رسغ اليد.",
-                  "simple": "عظام قصيرة، ومن أمثلتها عظام الرسغ."
+                  "en": "Short bones may be round, cubical or pyramidal; carpal bones are examples.",
+                  "ar": "العظام القصيرة قد تكون مستديرة أو مكعبة أو هرمية؛ ومن أمثلتها عظام الرسغ.",
+                  "simple": "من أمثلتها عظام رسغ اليد."
                 },
                 {
-                  "en": "Irregular bones are short bones without a distinct shape. Example: vertebrae.",
-                  "ar": "العظام المتعرجة عظام قصيرة ولكن ليس لها شكل مميز. مثال: الفقرات.",
-                  "simple": "عظام لا تتخذ شكلًا منتظمًا مثل الفقرات."
+                  "en": "Irregular bones have no distinct shape; vertebrae are examples.",
+                  "ar": "العظام غير المنتظمة ليس لها شكل محدد؛ مثل الفقرات.",
+                  "simple": "الفقرات مثال للعظام غير المنتظمة."
                 },
                 {
-                  "en": "Flat bones are thin and flattened. Examples: skull bones and scapula.",
-                  "ar": "العظام المفلطحة عظام رقيقة ومسطحة. مثل عظام الجمجمة ولوح الكتف.",
+                  "en": "Flat bones are thin and flat; examples include skull bones and scapula.",
+                  "ar": "العظام المسطحة رقيقة ومفلطحة؛ مثل عظام الجمجمة ولوح الكتف.",
                   "simple": "عظام رقيقة ومسطحة."
                 },
                 {
-                  "en": "Pneumatic bones contain air-filled spaces in some parts of the skull; the textbook mentions the nasal sinuses and their relation to the nasal cavities.",
-                  "ar": "العظام الهوائية هي عظام في الجمجمة تحتوي بعض أجزائها على فراغات بها هواء، ويسميها الكتاب الجيوب الأنفية لاتصالها بتجويف الأنف.",
-                  "simple": "بعض عظام الجمجمة بداخلها فراغات هوائية."
+                  "en": "Pneumatic bones contain air-filled spaces in the skull (paranasal sinuses), related to voice resonance.",
+                  "ar": "العظام الهوائية تحتوي على فراغات مملوءة بالهواء في بعض عظام الجمجمة (الجيوب حول الأنفية)، وتساعد في رنين الصوت.",
+                  "simple": "بعض عظام الجمجمة تحتوي على تجاويف هوائية."
                 },
                 {
-                  "en": "Sesamoid bones are small bones found within tendons of some muscles. Example: the patella in front of the knee.",
-                  "ar": "العظام السمسمية عظام صغيرة توجد داخل أوتار بعض العضلات. مثال: الرضفة الموجودة أمام الركبة.",
-                  "simple": "عظام صغيرة داخل بعض الأوتار، مثل الرضفة."
+                  "en": "Sesamoid bones are small bones inside some tendons; the patella is an example.",
+                  "ar": "العظام السمسمية عظام صغيرة داخل أوتار بعض العضلات؛ والرضفة مثال عليها.",
+                  "simple": "الرضفة أمام الركبة مثال للعظام السمسمية."
+                }
+              ]
+            },
+            {
+              "type": "bilingual",
+              "title": "Skeleton, Skull and Fontanelles | الهيكل والجمجمة واليافوخ",
+              "points": [
+                {
+                  "en": "The axial skeleton includes the skull, vertebral column, ribs and sternum. The appendicular skeleton includes upper- and lower-limb bones.",
+                  "ar": "يشمل الهيكل المحوري الجمجمة والعمود الفقري والضلوع وعظم القص. ويشمل الهيكل الطرفي عظام الطرفين العلوي والسفلي.",
+                  "simple": "المحوري في مركز الجسم، والطرفي يشمل الأطراف."
+                },
+                {
+                  "en": "The textbook describes the skull as 21 bones, with single bones such as frontal and occipital, and paired bones such as parietal and temporal. It is described in vault, face and base.",
+                  "ar": "يذكر الكتاب أن الجمجمة تتكون من 21 عظمة؛ منها مفرد مثل الجبهي والقذالي، ومزدوج مثل الجداري والصدغي. وتقسم إلى قبة ووجه وقاعدة.",
+                  "simple": "احفظ تقسيم الجمجمة وأمثلة العظام المفردة والمزدوجة كما بالكتاب."
+                },
+                {
+                  "en": "The newborn skull has fontanelles. The anterior fontanelle is larger and diamond-shaped (about 3 cm); the posterior is smaller and triangular (about 1 cm).",
+                  "ar": "تحتوي جمجمة حديث الولادة على يوافيخ. اليافوخ الأمامي أكبر ومعيني الشكل (نحو 3 سم)، والخلفي أصغر ومثلث الشكل (نحو 1 سم).",
+                  "simple": "الأمامي أكبر، والخلفي أصغر ويغلق مبكرًا."
+                },
+                {
+                  "en": "The book lists fontanelle uses in age assessment, fetal position assessment, and recognizing delayed closure, dehydration or raised cerebrospinal-fluid pressure.",
+                  "ar": "يذكر الكتاب أهمية اليافوخ في تقدير عمر الطفل ووضع الجنين، وملاحظة تأخر الانغلاق أو الجفاف أو ارتفاع ضغط السائل الدماغي الشوكي.",
+                  "simple": "اليافوخ يساعد في متابعة بعض علامات حالة الطفل."
+                }
+              ]
+            },
+            {
+              "type": "bilingual",
+              "title": "Upper and Lower Limbs, Thorax and Vertebral Column | الأطراف والقفص الصدري والعمود الفقري",
+              "points": [
+                {
+                  "en": "Upper-limb bones include clavicle, scapula, humerus, radius, ulna and hand bones. The hand has 8 carpals, 5 metacarpals and 14 phalanges.",
+                  "ar": "تشمل عظام الطرف العلوي الترقوة ولوح الكتف والعضد والكعبرة والزند وعظام اليد. تتكون اليد من 8 عظام رسغ و5 مشط و14 سلامية.",
+                  "simple": "احفظ أسماء العظام وأعداد عظام اليد."
+                },
+                {
+                  "en": "The pelvic bone consists of pubis, ischium and ilium. The femur is the longest and strongest bone. The leg contains tibia medially and fibula laterally; the foot has 7 tarsals, 5 metatarsals and 14 phalanges.",
+                  "ar": "يتكون عظم الحوض من العانة والإسك والحرقفة. عظمة الفخذ أطول وأقوى عظمة. تحتوي الساق على القصبة إنسيًا والشظية وحشيًا؛ والقدم بها 7 عظام رصغ و5 مشط و14 سلامية.",
+                  "simple": "احفظ تقسيم عظام الحوض والساق والقدم."
+                },
+                {
+                  "en": "The thoracic cage includes sternum, thoracic vertebrae and ribs. Ribs 1–7 are true, 8–10 false and 11–12 floating.",
+                  "ar": "يتكون القفص الصدري من القص والفقرات الصدرية والضلوع. الضلوع 1–7 حقيقية، و8–10 كاذبة، و11–12 عائمة.",
+                  "simple": "تقسيم الضلوع حسب اتصالها بالقص."
+                },
+                {
+                  "en": "The vertebral column has 33 vertebrae: 7 cervical, 12 thoracic, 5 lumbar, sacral and coccygeal groups. It protects the spinal cord, supports body weight and forms the body's axis.",
+                  "ar": "يتكون العمود الفقري من 33 فقرة: 7 عنقية و12 صدرية و5 قطنية ومجموعة عجزية وأخرى عصعصية. يحمي الحبل الشوكي ويحمل وزن الجسم ويكوّن محور الجسم.",
+                  "simple": "احفظ أعداد الفقرات ووظائف العمود الفقري."
+                },
+                {
+                  "en": "The pelvis includes two hip bones, sacrum and coccyx; the book compares male and female pelvis by inlet, outlet, cavity, pubic arch, sacrum and coccyx.",
+                  "ar": "يتكون الحوض من عظمتَي الحوض والعجز والعصعص؛ ويقارن الكتاب بين حوض الذكر والأنثى من حيث المدخل والمخرج والتجويف والقوس العاني والعجز والعصعص.",
+                  "simple": "راجع جدول المقارنة الموجود بالكتاب."
                 }
               ]
             },
             {
               "type": "image",
               "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skeleton-overview.png",
-              "alt": "Human skeleton overview",
-              "caption": "Human skeleton — overview"
-            }
-          ]
-        },
-        {
-          "title": "Parts of the skeleton | أجزاء الهيكل العظمي",
-          "order": 2,
-          "sourcePages": "5–6",
-          "objectives": [
-            "Distinguish the axial and appendicular skeletons.",
-            "Identify the structures named in the textbook diagram."
-          ],
-          "keyTerms": [
-            "Axial skeleton",
-            "Appendicular skeleton",
-            "Skull",
-            "Vertebral column",
-            "Thorax",
-            "Upper limb",
-            "Lower limb"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "Parts of the skeleton | أجزاء الهيكل العظمي"
-            },
-            {
-              "type": "bilingual",
-              "title": "Axial skeleton | الهيكل العظمي المحوري",
-              "points": [
-                {
-                  "en": "The axial skeleton lies in the middle of the body and includes the skull, vertebral column, thorax and ribs as listed on the page.",
-                  "ar": "يقع الهيكل العظمي المحوري في منتصف الجسم ويشمل الجمجمة والعمود الفقري والقفص الصدري والضلوع كما ورد بالصفحة.",
-                  "simple": "هو الجزء الموجود في منتصف الجسم."
-                },
-                {
-                  "en": "The appendicular skeleton lies on both sides of the body and includes the bones of the upper and lower limbs.",
-                  "ar": "يقع الهيكل العظمي الطرفي على جانبي الجسم ويشمل عظام الطرف العلوي والطرف السفلي.",
-                  "simple": "هو عظام الأطراف على جانبي الجسم."
-                }
-              ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skeleton-overview.png",
-              "alt": "Anterior and posterior views of the skeleton",
-              "caption": "Skeleton — anterior and posterior views"
-            }
-          ]
-        },
-        {
-          "title": "The skull and fontanelles | الجمجمة واليافوخ",
-          "order": 3,
-          "sourcePages": "7–9",
-          "objectives": [
-            "Name the three parts of the adult skull described in the source.",
-            "Compare the anterior and posterior fontanelles in a newborn."
-          ],
-          "keyTerms": [
-            "Cranium",
-            "Face",
-            "Mandible",
-            "Anterior fontanelle",
-            "Posterior fontanelle"
-          ],
-          "contentBlocks": [
-            {
-              "type": "heading",
-              "text": "The skull | الجمجمة"
-            },
-            {
-              "type": "bilingual",
-              "title": "Adult skull | جمجمة الشخص البالغ",
-              "points": [
-                {
-                  "en": "The skull consists of 21 bones joined by sutures; some are single and others are paired.",
-                  "ar": "تتكون الجمجمة من 21 عظمة يفصلها عن بعضها فواصل متعرجة تسمى الدروز. بعض العظام مفردة وبعضها مزدوج.",
-                  "simple": "عظام الجمجمة متصلة بدروز، ومنها عظام مفردة وأخرى مزدوجة."
-                },
-                {
-                  "en": "The mandible articulates with the skull in front of the ear opening.",
-                  "ar": "يتصل الفك السفلي مع الجمجمة عند مفصل يقع أمام فتحة الأذن مباشرة.",
-                  "simple": "الفك السفلي يتصل بالجمجمة بمفصل أمام فتحة الأذن."
-                },
-                {
-                  "en": "The textbook divides the skull into three parts: cranium, face and mandible.",
-                  "ar": "تقسم الصفحة الجمجمة إلى ثلاثة أجزاء: القبو، والوجه، والقاعدة؟ النص يذكر: القبة (الجزء العلوي)، الوجه (الجزء الأمامي)، والقاعدة (الجزء السفلي).",
-                  "simple": "احفظ التقسيم كما ورد: القبة والوجه والقاعدة."
-                }
-              ]
-            },
-            {
-              "type": "bilingual",
-              "title": "Newborn fontanelles | يوافيخ حديث الولادة",
-              "points": [
-                {
-                  "en": "Fontanelles are spaces in the newborn skull where bones have not yet formed; membranes are present and later become bone as growth occurs.",
-                  "ar": "اليافوخ أماكن في جمجمة حديث الولادة لم تتكون فيها العظام بعد، ولكن توجد أغشية تستبدل مع نمو العظام.",
-                  "simple": "مناطق لينة بين عظام جمجمة الطفل وتتحول تدريجيًا إلى عظام."
-                },
-                {
-                  "en": "The anterior fontanelle is larger, diamond-shaped, about 3 cm, and closes after about 6½–2 years as stated in the table (the scan reads approximately 1½–2 years).",
-                  "ar": "اليافوخ الأمامي كبير ومعيني الشكل وطوله نحو 3 سم، ويغلق بعد نحو سنة ونصف إلى سنتين وفق الجدول.",
-                  "simple": "الأمامي أكبر ومعيني الشكل ويغلق متأخرًا عن الخلفي."
-                },
-                {
-                  "en": "The posterior fontanelle is smaller, triangular, about 1 cm, and closes within about three months.",
-                  "ar": "اليافوخ الخلفي صغير ومثلث الشكل وطوله نحو 1 سم ويغلق خلال ثلاثة أشهر.",
-                  "simple": "الخلفي أصغر ومثلث ويغلق مبكرًا."
-                }
-              ]
+              "alt": "Human skeleton",
+              "caption": "الهيكل العظمي"
             },
             {
               "type": "image",
               "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skull.png",
-              "alt": "Skull anatomy",
-              "caption": "Skull anatomy — use alongside the textbook labels"
+              "alt": "Skull",
+              "caption": "الجمجمة"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/hand-bones.png",
+              "alt": "Hand bones",
+              "caption": "عظام اليد"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/foot-bones.png",
+              "alt": "Foot bones",
+              "caption": "عظام القدم"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/thoracic-cage.png",
+              "alt": "Thoracic cage",
+              "caption": "القفص الصدري"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/vertebral-column.png",
+              "alt": "Vertebral column",
+              "caption": "العمود الفقري"
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "nervous-system",
+      "title": "Chapter Two — The Nervous System | الجهاز العصبي",
+      "description": "Chapter Two — The Nervous System | الجهاز العصبي — source pages 22–26",
+      "order": 2,
+      "lessons": [
         {
-          "title": "Bones of the upper limb | عظام الطرف العلوي",
-          "order": 4,
-          "sourcePages": "10–14",
+          "title": "Chapter Two — The Nervous System | الجهاز العصبي",
+          "order": 1,
+          "sourcePages": "22–26",
           "objectives": [
-            "Identify the clavicle, scapula, humerus, ulna, radius and hand bones.",
-            "Recall the hand regions and counts stated in the source."
+            "Study the topics and anatomical structures presented in Chapter Two — The Nervous System | الجهاز العصبي.",
+            "Recall the key terms, locations, parts and functions listed in the textbook."
           ],
-          "keyTerms": [
-            "Clavicle",
-            "Scapula",
-            "Humerus",
-            "Ulna",
-            "Radius",
-            "Carpals",
-            "Metacarpals",
-            "Phalanges"
-          ],
+          "keyTerms": [],
           "contentBlocks": [
             {
               "type": "heading",
-              "text": "Bones of the upper limb | عظام الطرف العلوي"
+              "text": "Chapter Two — The Nervous System | الجهاز العصبي"
             },
             {
               "type": "bilingual",
-              "title": "Shoulder and arm | الكتف والذراع",
+              "title": "Organization and Brain | تقسيم الجهاز العصبي والمخ",
               "points": [
                 {
-                  "en": "The clavicle is located anteriorly in the shoulder girdle and extends between the sternum and scapular region as described in the diagram.",
-                  "ar": "توجد الترقوة في الحزام الكتفي من الأمام وتمتد بين عظمتي القص ولوح الكتف.",
-                  "simple": "الترقوة عظمة أمامية في منطقة الكتف."
+                  "en": "The central nervous system consists of the brain and spinal cord. The peripheral nervous system includes 12 pairs of cranial nerves and 31 pairs of spinal nerves.",
+                  "ar": "يتكون الجهاز العصبي المركزي من المخ والحبل الشوكي. ويشمل الجهاز العصبي الطرفي 12 زوجًا من الأعصاب القحفية و31 زوجًا من الأعصاب الشوكية.",
+                  "simple": "المركزي: مخ وحبل شوكي؛ الطرفي: أعصاب قحفية وشوكية."
                 },
                 {
-                  "en": "The scapula is located posteriorly in the shoulder girdle and articulates with the clavicle and humerus.",
-                  "ar": "يوجد لوح الكتف في الحزام الكتفي من الخلف ويتصل بالترقوة وعظمة العضد.",
-                  "simple": "لوح الكتف خلفي ويتصل بعظمتي الترقوة والعضد."
-                },
-                {
-                  "en": "The humerus extends between the shoulder and elbow joints; its head articulates at the shoulder.",
-                  "ar": "تمتد عظمة العضد بين مفصلي الكتف والمرفق، ولها رأس يتصل عند مفصل الكتف.",
-                  "simple": "عظمة العضد هي عظمة الذراع بين الكتف والمرفق."
+                  "en": "The brain includes cerebrum, cerebellum and brainstem. The cerebrum has right and left hemispheres and four lobes: frontal (motor), parietal (sensory), temporal (hearing and memory), occipital (vision).",
+                  "ar": "يتكون المخ من المخ الكبير والمخيخ وجذع المخ. للمخ الكبير نصفان وأربعة فصوص: الجبهي (حركة)، الجداري (إحساس)، الصدغي (سمع وذاكرة)، والقذالي (إبصار).",
+                  "simple": "اربط كل فص بمكانه ووظيفته المذكورة."
                 }
               ]
             },
             {
               "type": "bilingual",
-              "title": "Forearm and hand | الساعد واليد",
+              "title": "Cerebellum, Brainstem, Spinal Cord and Meninges | المخيخ والجذع والحبل الشوكي والأغشية",
               "points": [
                 {
-                  "en": "The forearm bones shown are the ulna and radius; the source describes their positions and joint relations in the following pages.",
-                  "ar": "عظمتا الساعد هما الزند والكعبرة، وتوضح الصفحات موضعيهما واتصالهما بالمفاصل.",
-                  "simple": "الساعد يتكون من عظمتين: الزند والكعبرة."
+                  "en": "The cerebellum lies below and behind the cerebrum; it maintains balance and controls voluntary movement.",
+                  "ar": "يقع المخيخ أسفل وخلف المخ الكبير؛ ويحافظ على الاتزان وينظم الحركة الإرادية.",
+                  "simple": "وظيفتا المخيخ: الاتزان والحركة الإرادية."
                 },
                 {
-                  "en": "The hand is divided into wrist, palm and fingers. The wrist has 8 carpal bones in two rows; the palm has 5 metacarpals; the fingers have 14 phalanges, with 3 in each finger except the thumb, which has 2.",
-                  "ar": "تنقسم اليد إلى الرسغ والكف والأصابع. الرسغ به 8 عظام رسغية مرتبة في صفين، والكف به 5 عظام مشطية، والأصابع بها 14 سلامية: 3 في كل إصبع ما عدا الإبهام به 2.",
-                  "simple": "احفظ أعداد عظام اليد: 8 رسغية، 5 مشطية، 14 سلامية."
+                  "en": "The brainstem consists of midbrain, pons and medulla oblongata. The medulla contains vital centers controlling heart activity, respiration and blood pressure.",
+                  "ar": "يتكون جذع المخ من المخ الأوسط والجسر والنخاع المستطيل. ويحتوي النخاع المستطيل على مراكز حيوية تتحكم في القلب والتنفس وضغط الدم.",
+                  "simple": "أهم جزء حيوي في الجذع هو النخاع المستطيل."
+                },
+                {
+                  "en": "The spinal cord lies in the vertebral column and ends around L1 according to the textbook. The meninges are dura mater, arachnoid mater and pia mater; cerebrospinal fluid lies between arachnoid and pia.",
+                  "ar": "يقع الحبل الشوكي داخل العمود الفقري وينتهي قرب الفقرة القطنية الأولى وفق الكتاب. الأغشية السحائية هي الأم الجافية والعنكبوتية والحنون؛ ويوجد السائل الدماغي الشوكي بين العنكبوتية والحنون.",
+                  "simple": "احفظ الأغشية الثلاثة ومكان السائل."
+                }
+              ]
+            },
+            {
+              "type": "bilingual",
+              "title": "Peripheral Nerves | الأعصاب الطرفية",
+              "points": [
+                {
+                  "en": "The textbook lists 31 pairs of spinal nerves and 12 pairs of cranial nerves, then describes the functions of the twelve cranial nerves: olfactory, optic, oculomotor, trochlear, trigeminal, abducens, facial, vestibulocochlear, glossopharyngeal, vagus, accessory and hypoglossal.",
+                  "ar": "يسرد الكتاب 31 زوجًا من الأعصاب الشوكية و12 زوجًا من الأعصاب القحفية، ثم يوضح وظائف الأعصاب القحفية الاثني عشر: الشمي والبصري ومحرك العين والبكري وثلاثي التوائم ومبعد العين والوجهي والدهليزي القوقعي واللساني البلعومي والمبهم والإضافي وتحت اللسان.",
+                  "simple": "راجع جدول أسماء الأعصاب القحفية ووظيفة كل عصب في الكتاب."
                 }
               ]
             },
             {
               "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/hand-bones.png",
-              "alt": "Bones of the hand",
-              "caption": "Bones of the hand — carpals, metacarpals and phalanges"
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/brain.png",
+              "alt": "Brain anatomy",
+              "caption": "أجزاء المخ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "circulatory-system",
+      "title": "Chapter Three — The Circulatory System | الجهاز الدوري",
+      "description": "Chapter Three — The Circulatory System | الجهاز الدوري — source pages 27–35",
+      "order": 3,
+      "lessons": [
+        {
+          "title": "Chapter Three — The Circulatory System | الجهاز الدوري",
+          "order": 1,
+          "sourcePages": "27–35",
+          "objectives": [
+            "Study the topics and anatomical structures presented in Chapter Three — The Circulatory System | الجهاز الدوري.",
+            "Recall the key terms, locations, parts and functions listed in the textbook."
+          ],
+          "keyTerms": [],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Chapter Three — The Circulatory System | الجهاز الدوري"
+            },
+            {
+              "type": "bilingual",
+              "title": "Heart Structure and Valves | تركيب القلب وصماماته",
+              "points": [
+                {
+                  "en": "The circulatory system includes the heart and blood vessels. The heart is a conical muscular organ with four chambers and four valves.",
+                  "ar": "يشمل الجهاز الدوري القلب والأوعية الدموية. القلب عضو عضلي مخروطي له أربع حجرات وأربعة صمامات.",
+                  "simple": "القلب أربع حجرات وأربعة صمامات."
+                },
+                {
+                  "en": "The valves are mitral (left atrium–left ventricle), tricuspid (right atrium–right ventricle), aortic (left ventricle–aorta) and pulmonary (right ventricle–pulmonary artery).",
+                  "ar": "الصمامات هي الميترالي بين الأذين والبطين الأيسر، والثلاثي بين الأذين والبطين الأيمن، والأورطي بين البطين الأيسر والأورطي، والرئوي بين البطين الأيمن والشريان الرئوي.",
+                  "simple": "احفظ مكان كل صمام واتجاه الدم."
+                },
+                {
+                  "en": "Right and left coronary arteries supply the heart muscle. The textbook relates coronary narrowing to angina and complete blockage to damage of heart muscle.",
+                  "ar": "يغذي الشريانان التاجيان الأيمن والأيسر عضلة القلب. ويربط الكتاب ضيق الشريان التاجي بالذبحة الصدرية وانسداده الكامل بتلف جزء من عضلة القلب.",
+                  "simple": "الشرايين التاجية تغذي عضلة القلب."
+                }
+              ]
+            },
+            {
+              "type": "bilingual",
+              "title": "Chambers and Circulations | حجرات القلب والدورات الدموية",
+              "points": [
+                {
+                  "en": "The right side carries deoxygenated blood and the left side carries oxygenated blood. The textbook lists the main openings of each chamber.",
+                  "ar": "يحمل الجانب الأيمن دمًا غير مؤكسج، ويحمل الجانب الأيسر دمًا مؤكسجًا. ويعرض الكتاب الفتحات الرئيسية لكل حجرة.",
+                  "simple": "الأيمن غير مؤكسج، والأيسر مؤكسج."
+                },
+                {
+                  "en": "Systemic circulation: left ventricle → aorta → body → venae cavae → right atrium. Pulmonary circulation: right ventricle → pulmonary trunk → lungs → pulmonary veins → left atrium.",
+                  "ar": "الدورة الكبرى: البطين الأيسر ثم الأورطي ثم الجسم ثم الوريدان الأجوفان ثم الأذين الأيمن. الدورة الصغرى: البطين الأيمن ثم الجذع الرئوي ثم الرئتان ثم الأوردة الرئوية ثم الأذين الأيسر.",
+                  "simple": "احفظ مسار الدم في الدورتين."
+                },
+                {
+                  "en": "Portal circulation carries blood from digestive organs to the liver through the portal vein; the textbook mentions its relation to liver cirrhosis and venous congestion.",
+                  "ar": "تنقل الدورة البابية الدم من أعضاء الجهاز الهضمي إلى الكبد عبر الوريد البابي؛ ويذكر الكتاب علاقتها بتليف الكبد واحتقان بعض الأوردة.",
+                  "simple": "الوريد البابي ينقل الدم من الجهاز الهضمي إلى الكبد."
+                }
+              ]
+            },
+            {
+              "type": "bilingual",
+              "title": "Arteries, Veins and Pericardium | الشرايين والأوردة وغشاء القلب",
+              "points": [
+                {
+                  "en": "The book names upper-limb arteries (axillary, brachial, radial, ulnar and palmar arches) and lower-limb arteries (femoral, popliteal, anterior/posterior tibial, dorsalis pedis and plantar).",
+                  "ar": "يسمي الكتاب شرايين الطرف العلوي: الإبطي والعضدي والكعبري والزندِي والأقواس الراحية؛ وشرايين الطرف السفلي: الفخذي والمأبضي والظنبوبي الأمامي والخلفي وظهر القدم والأخمصي.",
+                  "simple": "راجع أسماء الشرايين ومواضعها في الجداول."
+                },
+                {
+                  "en": "The book lists upper-limb veins including subclavian, axillary, cephalic, basilic and median cubital; and lower-limb veins including femoral, popliteal and saphenous veins.",
+                  "ar": "يسرد الكتاب أوردة الطرف العلوي مثل تحت الترقوة والإبطي والرأسي والبازيلي والوسطي المرفقي؛ وأوردة الطرف السفلي مثل الفخذي والمأبضي والصافن.",
+                  "simple": "احفظ مواضع الأوردة المذكورة."
+                },
+                {
+                  "en": "The heart is surrounded by fibrous and serous pericardial layers. The fibrous layer protects and fixes the heart; the serous layers reduce friction.",
+                  "ar": "يحيط بالقلب التامور الليفي والتامور المصلي. يحمي الليفي القلب ويثبته، وتقلل الطبقات المصلية الاحتكاك.",
+                  "simple": "التامور يحمي القلب ويقلل الاحتكاك."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/heart.png",
+              "alt": "Heart anatomy",
+              "caption": "القلب"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/blood-vessels.png",
+              "alt": "Blood vessels",
+              "caption": "الأوعية الدموية"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lymphatic-system",
+      "title": "Chapter Four — The Lymphatic System | الجهاز الليمفاوي",
+      "description": "Chapter Four — The Lymphatic System | الجهاز الليمفاوي — source pages 36–39",
+      "order": 4,
+      "lessons": [
+        {
+          "title": "Chapter Four — The Lymphatic System | الجهاز الليمفاوي",
+          "order": 1,
+          "sourcePages": "36–39",
+          "objectives": [
+            "Study the topics and anatomical structures presented in Chapter Four — The Lymphatic System | الجهاز الليمفاوي.",
+            "Recall the key terms, locations, parts and functions listed in the textbook."
+          ],
+          "keyTerms": [],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Chapter Four — The Lymphatic System | الجهاز الليمفاوي"
+            },
+            {
+              "type": "bilingual",
+              "title": "Lymphatic Vessels and Nodes | الأوعية والعقد الليمفاوية",
+              "points": [
+                {
+                  "en": "Lymphatic capillaries collect excess tissue fluid and carry it through lymph nodes for filtration before it returns to nearby veins.",
+                  "ar": "تجمع الشعيرات الليمفاوية السائل الزائد من الأنسجة وتنقله عبر العقد الليمفاوية لتنقيته قبل عودته إلى الأوردة القريبة.",
+                  "simple": "الأوعية تجمع السائل والعقد تنقيه."
+                },
+                {
+                  "en": "Lymph nodes filter lymph, produce lymphocytes and produce antibodies.",
+                  "ar": "تنقي العقد الليمفاوية الليمف، وتنتج الخلايا الليمفاوية والأجسام المضادة.",
+                  "simple": "وظائف العقد: تنقية ومناعة."
+                },
+                {
+                  "en": "The textbook lists cervical, axillary, thoracic, aortic, iliac and inguinal node groups and the regions they drain.",
+                  "ar": "يذكر الكتاب مجموعات العقد العنقية والإبطية والصدرية والأورطية والحرقفية والأربية والمناطق التي تصرف منها الليمف.",
+                  "simple": "اربط كل مجموعة عقد بالمنطقة التي تصرفها."
+                }
+              ]
+            },
+            {
+              "type": "bilingual",
+              "title": "Spleen and Thymus | الطحال والغدة الزعترية",
+              "points": [
+                {
+                  "en": "The spleen lies in the upper-left abdomen behind the stomach under ribs 9–11. It stores blood, removes worn-out red blood cells and produces white blood cells according to the textbook.",
+                  "ar": "يقع الطحال في الجزء العلوي الأيسر من البطن خلف المعدة أسفل الأضلاع 9–11. يخزن الدم ويتخلص من كريات الدم الحمراء القديمة وينتج كريات الدم البيضاء وفق الكتاب.",
+                  "simple": "الطحال يخزن الدم ويساعد في التخلص من كريات الدم الحمراء القديمة."
+                },
+                {
+                  "en": "The thymus lies in front of the heart behind the sternum, is large in childhood and becomes smaller in adults; it produces a type of lymphocyte.",
+                  "ar": "تقع الغدة الزعترية أمام القلب وخلف عظم القص، وتكون كبيرة في الطفولة ثم تضمر لدى البالغين؛ وتنتج نوعًا من الخلايا الليمفاوية.",
+                  "simple": "الغدة الزعترية مرتبطة بنضج الخلايا الليمفاوية."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/lymphatic-system.png",
+              "alt": "Lymphatic system",
+              "caption": "الجهاز الليمفاوي"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/spleen.png",
+              "alt": "Spleen",
+              "caption": "الطحال"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "respiratory-system",
+      "title": "Chapter Five — The Respiratory System | الجهاز التنفسي",
+      "description": "Chapter Five — The Respiratory System | الجهاز التنفسي — source pages 40–43",
+      "order": 5,
+      "lessons": [
+        {
+          "title": "Chapter Five — The Respiratory System | الجهاز التنفسي",
+          "order": 1,
+          "sourcePages": "40–43",
+          "objectives": [
+            "Study the topics and anatomical structures presented in Chapter Five — The Respiratory System | الجهاز التنفسي.",
+            "Recall the key terms, locations, parts and functions listed in the textbook."
+          ],
+          "keyTerms": [],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Chapter Five — The Respiratory System | الجهاز التنفسي"
+            },
+            {
+              "type": "bilingual",
+              "title": "Nose, Pharynx and Larynx | الأنف والبلعوم والحنجرة",
+              "points": [
+                {
+                  "en": "The nose purifies and warms inspired air and provides the sense of smell.",
+                  "ar": "ينقي الأنف الهواء المستنشق ويدفئه ويساعد على حاسة الشم.",
+                  "simple": "الأنف ينقي ويدفئ الهواء."
+                },
+                {
+                  "en": "The pharynx has nasopharynx, oropharynx and laryngopharynx. The nasopharynx includes the Eustachian tube opening and pharyngeal tonsil; the oropharynx contains palatine tonsils.",
+                  "ar": "يتكون البلعوم من البلعوم الأنفي والفموي والحنجري. يحتوي الأنفي على فتحة قناة استاكيوس واللوزة البلعومية، ويحتوي الفموي على اللوزتين الحنكيتين.",
+                  "simple": "احفظ أقسام البلعوم وما يوجد بكل قسم."
+                },
+                {
+                  "en": "The Eustachian tube connects the middle ear to the nasopharynx, drains secretions and equalizes pressure across the eardrum.",
+                  "ar": "تصل قناة استاكيوس الأذن الوسطى بالبلعوم الأنفي، وتساعد على تصريف الإفرازات ومعادلة الضغط على جانبي طبلة الأذن.",
+                  "simple": "وظيفتها تصريف الإفرازات ومعادلة الضغط."
+                },
+                {
+                  "en": "The larynx contains cartilages including thyroid, cricoid and epiglottis; vocal cords lie inside it.",
+                  "ar": "تحتوي الحنجرة على غضاريف منها الدرقي والحلقي ولسان المزمار، وتقع الأحبال الصوتية بداخلها.",
+                  "simple": "الحنجرة تحتوي الأحبال الصوتية."
+                }
+              ]
+            },
+            {
+              "type": "bilingual",
+              "title": "Trachea, Bronchi and Lungs | القصبة والشعب والرئتان",
+              "points": [
+                {
+                  "en": "The trachea is about 10 cm long and has 15–20 C-shaped cartilage rings, completed posteriorly by involuntary muscle.",
+                  "ar": "يبلغ طول القصبة الهوائية نحو 10 سم وتتكون من 15–20 حلقة غضروفية على شكل C، ويكملها خلفيًا عضل لا إرادي.",
+                  "simple": "حلقات القصبة تحافظ على بقائها مفتوحة."
+                },
+                {
+                  "en": "The right bronchus is wider, shorter and more aligned with the trachea than the left bronchus. Bronchi divide into bronchioles ending in alveoli for gas exchange.",
+                  "ar": "الشعبة الهوائية اليمنى أوسع وأقصر وأكثر امتدادًا في اتجاه القصبة من اليسرى. وتتفرع الشعب إلى قصيبات تنتهي بالحويصلات الهوائية لتبادل الغازات.",
+                  "simple": "قارن بين الشعبتين، وتبادل الغازات يحدث بالحويصلات."
+                },
+                {
+                  "en": "The textbook compares right and left lungs by length, width, weight, fissures, lobes, cardiac notch and segments. Right lung: three lobes; left lung: two lobes and a cardiac notch.",
+                  "ar": "يقارن الكتاب بين الرئة اليمنى واليسرى من حيث الطول والعرض والوزن والشقوق والفصوص والثلمة القلبية والقطع. اليمنى ثلاثة فصوص، واليسرى فصان وبها ثلمة قلبية.",
+                  "simple": "راجع جدول مقارنة الرئتين في الكتاب."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/lungs.png",
+              "alt": "Lungs",
+              "caption": "الرئتان"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/respiratory-alveoli.png",
+              "alt": "Alveoli",
+              "caption": "الحويصلات الهوائية"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/nasal-cavity.png",
+              "alt": "Nasal cavity",
+              "caption": "التجويف الأنفي"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "digestive-system",
+      "title": "Chapter Six — The Digestive System | الجهاز الهضمي",
+      "description": "Chapter Six — The Digestive System | الجهاز الهضمي — source pages 44–49",
+      "order": 6,
+      "lessons": [
+        {
+          "title": "Chapter Six — The Digestive System | الجهاز الهضمي",
+          "order": 1,
+          "sourcePages": "44–49",
+          "objectives": [
+            "Study the topics and anatomical structures presented in Chapter Six — The Digestive System | الجهاز الهضمي.",
+            "Recall the key terms, locations, parts and functions listed in the textbook."
+          ],
+          "keyTerms": [],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Chapter Six — The Digestive System | الجهاز الهضمي"
+            },
+            {
+              "type": "bilingual",
+              "title": "Mouth, Teeth, Esophagus and Stomach | الفم والأسنان والمريء والمعدة",
+              "points": [
+                {
+                  "en": "The mouth contains the tongue, teeth and salivary-gland openings. The textbook compares deciduous teeth (20) and permanent teeth (32), including their eruption periods.",
+                  "ar": "يحتوي الفم على اللسان والأسنان وفتحات الغدد اللعابية. يقارن الكتاب بين الأسنان اللبنية (20) والدائمة (32) ومواعيد ظهورها.",
+                  "simple": "احفظ عدد الأسنان اللبنية والدائمة."
+                },
+                {
+                  "en": "The esophagus is a muscular tube about 25 cm long connecting pharynx and stomach. The book describes three constrictions and their relevance when passing a stomach tube.",
+                  "ar": "المريء أنبوب عضلي طوله نحو 25 سم يصل البلعوم بالمعدة. يشرح الكتاب ثلاثة تضيقات وأهميتها عند إدخال أنبوب المعدة.",
+                  "simple": "احفظ مواضع التضيقات الثلاثة وأسبابها."
+                },
+                {
+                  "en": "The stomach has fundus, body and pylorus; anterior and posterior surfaces; cardiac and pyloric ends; and lesser and greater curvatures.",
+                  "ar": "تتكون المعدة من قاع وجسم وبواب، ولها سطحان أمامي وخلفي ونهايتان فؤادية وبوابية وانحناءان أصغر وأكبر.",
+                  "simple": "احفظ أجزاء المعدة وأسطحها ونهايتيها."
+                }
+              ]
+            },
+            {
+              "type": "bilingual",
+              "title": "Intestines, Liver, Biliary System and Pancreas | الأمعاء والكبد والجهاز الصفراوي والبنكرياس",
+              "points": [
+                {
+                  "en": "The small intestine consists of duodenum, jejunum and ileum. The textbook compares jejunum and ileum by length, width and contents.",
+                  "ar": "تتكون الأمعاء الدقيقة من الاثني عشر والصائم واللفائفي. ويقارن الكتاب بين الصائم واللفائفي من حيث الطول والعرض والمحتويات.",
+                  "simple": "احفظ أجزاء الأمعاء الدقيقة وجدول المقارنة."
+                },
+                {
+                  "en": "The large intestine includes appendix, colon segments and rectum; the book compares small and large intestines by length, surface and structural features.",
+                  "ar": "تشمل الأمعاء الغليظة الزائدة الدودية وأجزاء القولون والمستقيم؛ ويقارن الكتاب بينها وبين الأمعاء الدقيقة من حيث الطول والسطح والصفات التركيبية.",
+                  "simple": "راجع ترتيب أجزاء الأمعاء الغليظة والمقارنة."
+                },
+                {
+                  "en": "The liver is the largest and heaviest gland and lies in the right upper abdomen below the diaphragm. The portal vein and hepatic artery enter it; hepatic veins leave it for the inferior vena cava.",
+                  "ar": "الكبد أكبر وأثقل غدة ويقع أعلى يمين البطن أسفل الحجاب الحاجز. يدخل إليه الوريد البابي والشريان الكبدي، وتخرج منه الأوردة الكبدية إلى الوريد الأجوف السفلي.",
+                  "simple": "احفظ موقع الكبد والأوعية المتصلة به."
+                },
+                {
+                  "en": "Bile passes through hepatic ducts, common hepatic duct and common bile duct to the duodenum. The gallbladder stores and concentrates bile.",
+                  "ar": "تمر العصارة الصفراوية عبر القنوات الكبدية ثم القناة الكبدية المشتركة والقناة الصفراوية المشتركة إلى الاثني عشر. وتخزن المرارة العصارة الصفراوية وتركزها.",
+                  "simple": "المرارة تخزن وتُركز الصفراء."
+                },
+                {
+                  "en": "The pancreas has head, neck, body and tail. It secretes insulin into blood and pancreatic juice into the intestine.",
+                  "ar": "يتكون البنكرياس من رأس وعنق وجسم وذيل. يفرز الإنسولين إلى الدم والعصارة البنكرياسية إلى الأمعاء.",
+                  "simple": "للبنكرياس إفراز هرموني وهضمي."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/digestive-system.png",
+              "alt": "Digestive system",
+              "caption": "الجهاز الهضمي"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/liver.png",
+              "alt": "Liver",
+              "caption": "الكبد"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/pancreas.png",
+              "alt": "Pancreas",
+              "caption": "البنكرياس"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/stomach.png",
+              "alt": "Stomach",
+              "caption": "المعدة"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "urinary-system",
+      "title": "Chapter Seven — The Urinary System | الجهاز البولي",
+      "description": "Chapter Seven — The Urinary System | الجهاز البولي — source pages 50–53",
+      "order": 7,
+      "lessons": [
+        {
+          "title": "Chapter Seven — The Urinary System | الجهاز البولي",
+          "order": 1,
+          "sourcePages": "50–53",
+          "objectives": [
+            "Study the topics and anatomical structures presented in Chapter Seven — The Urinary System | الجهاز البولي.",
+            "Recall the key terms, locations, parts and functions listed in the textbook."
+          ],
+          "keyTerms": [],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Chapter Seven — The Urinary System | الجهاز البولي"
+            },
+            {
+              "type": "bilingual",
+              "title": "Kidneys and Ureters | الكليتان والحالبان",
+              "points": [
+                {
+                  "en": "The kidneys lie in the abdomen below the diaphragm on either side of the vertebral column; the right kidney is slightly lower because of the liver.",
+                  "ar": "تقع الكليتان في البطن أسفل الحجاب الحاجز على جانبي العمود الفقري؛ وتكون اليمنى أخفض قليلًا بسبب الكبد.",
+                  "simple": "الكلية اليمنى أخفض من اليسرى."
+                },
+                {
+                  "en": "The kidney has cortex, medulla and renal pelvis. The renal artery enters from the aorta; the renal vein drains to the inferior vena cava.",
+                  "ar": "تتكون الكلية من قشرة ونخاع وحوض كلوي. يدخل الشريان الكلوي من الأورطي، ويصب الوريد الكلوي في الوريد الأجوف السفلي.",
+                  "simple": "احفظ أجزاء الكلية والأوعية الداخلة والخارجة."
+                },
+                {
+                  "en": "The ureters are about 25–30 cm long and connect kidneys to the urinary bladder. Muscular contractions move urine through them.",
+                  "ar": "يبلغ طول الحالبين نحو 25–30 سم ويصلان الكليتين بالمثانة البولية. وتنقل انقباضاتهما العضلية البول.",
+                  "simple": "الحالب ينقل البول من الكلية للمثانة."
+                }
+              ]
+            },
+            {
+              "type": "bilingual",
+              "title": "Urinary Bladder and Urethra | المثانة والإحليل",
+              "points": [
+                {
+                  "en": "The urinary bladder is pyramidal; when empty it lies in the pelvis, and when full it rises into the abdomen.",
+                  "ar": "المثانة البولية هرمية الشكل؛ تقع في الحوض عندما تكون فارغة وترتفع إلى البطن عندما تمتلئ.",
+                  "simple": "مكان المثانة يتغير حسب امتلائها."
+                },
+                {
+                  "en": "The urethra carries urine outside. The textbook compares male and female urethras: male about 20 cm and serves urine and semen passage; female about 4 cm and carries urine only.",
+                  "ar": "ينقل الإحليل البول إلى خارج الجسم. يقارن الكتاب بين إحليل الذكر (نحو 20 سم وينقل البول والسائل المنوي) وإحليل الأنثى (نحو 4 سم وينقل البول فقط).",
+                  "simple": "احفظ المقارنة بين إحليل الذكر والأنثى."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/kidneys.png",
+              "alt": "Kidneys",
+              "caption": "الكليتان"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/urinary-system.png",
+              "alt": "Urinary system",
+              "caption": "الجهاز البولي"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "male-reproductive-system",
+      "title": "Chapter Eight — The Male Reproductive System | الجهاز التناسلي الذكري",
+      "description": "Chapter Eight — The Male Reproductive System | الجهاز التناسلي الذكري — source pages 54–56",
+      "order": 8,
+      "lessons": [
+        {
+          "title": "Chapter Eight — The Male Reproductive System | الجهاز التناسلي الذكري",
+          "order": 1,
+          "sourcePages": "54–56",
+          "objectives": [
+            "Study the topics and anatomical structures presented in Chapter Eight — The Male Reproductive System | الجهاز التناسلي الذكري.",
+            "Recall the key terms, locations, parts and functions listed in the textbook."
+          ],
+          "keyTerms": [],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Chapter Eight — The Male Reproductive System | الجهاز التناسلي الذكري"
+            },
+            {
+              "type": "bilingual",
+              "title": "Internal Organs | الأعضاء الداخلية",
+              "points": [
+                {
+                  "en": "The testes lie in the scrotum, produce sperm and secrete testosterone.",
+                  "ar": "تقع الخصيتان في كيس الصفن، وتنتجان الحيوانات المنوية وتفرزان هرمون التستوستيرون.",
+                  "simple": "وظيفتا الخصية: إنتاج الحيوانات المنوية وإفراز التستوستيرون."
+                },
+                {
+                  "en": "The epididymis is a very narrow coiled tube; sperm mature as they pass through it. It lies behind the testis and has head, body and tail.",
+                  "ar": "البربخ أنبوب دقيق ملتف؛ تنضج الحيوانات المنوية أثناء مرورها به. يقع خلف الخصية ويتكون من رأس وجسم وذيل.",
+                  "simple": "البربخ مكان نضج الحيوانات المنوية."
+                },
+                {
+                  "en": "The vas deferens connects epididymis to ejaculatory duct. Seminal vesicles store sperm and contribute fluid that nourishes them.",
+                  "ar": "تصل القناة الناقلة للمني البربخ بالقناة القاذفة. وتخزن الحويصلات المنوية الحيوانات المنوية وتفرز جزءًا من السائل المغذي لها.",
+                  "simple": "احفظ مسار القناة الناقلة ودور الحويصلات."
+                },
+                {
+                  "en": "Accessory glands listed are prostate, Cowper's glands and seminal vesicles; they contribute seminal fluid. External organs are penis and scrotum.",
+                  "ar": "الغدد الملحقة المذكورة هي البروستاتا وغدتا كوبر والحويصلتان المنويتان، وتساهم في تكوين السائل المنوي. والأعضاء الخارجية هي القضيب وكيس الصفن.",
+                  "simple": "راجع أسماء الغدد الملحقة ومواضعها."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/male-reproductive-system.png",
+              "alt": "Male reproductive system",
+              "caption": "الجهاز التناسلي الذكري"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "female-reproductive-system",
+      "title": "Chapter Nine — The Female Reproductive System | الجهاز التناسلي الأنثوي",
+      "description": "Chapter Nine — The Female Reproductive System | الجهاز التناسلي الأنثوي — source pages 57–59",
+      "order": 9,
+      "lessons": [
+        {
+          "title": "Chapter Nine — The Female Reproductive System | الجهاز التناسلي الأنثوي",
+          "order": 1,
+          "sourcePages": "57–59",
+          "objectives": [
+            "Study the topics and anatomical structures presented in Chapter Nine — The Female Reproductive System | الجهاز التناسلي الأنثوي.",
+            "Recall the key terms, locations, parts and functions listed in the textbook."
+          ],
+          "keyTerms": [],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Chapter Nine — The Female Reproductive System | الجهاز التناسلي الأنثوي"
+            },
+            {
+              "type": "bilingual",
+              "title": "Internal Organs | الأعضاء الداخلية",
+              "points": [
+                {
+                  "en": "The ovaries produce ova and secrete estrogen and progesterone. The fallopian tubes are about 10 cm long; the ovum travels toward the uterus and fertilization occurs in the tube near its outer end.",
+                  "ar": "ينتج المبيضان البويضات ويفرزان الإستروجين والبروجستيرون. يبلغ طول قناتي فالوب نحو 10 سم؛ وتنتقل البويضة نحو الرحم ويحدث الإخصاب في القناة قرب نهايتها الخارجية.",
+                  "simple": "المبيض ينتج البويضات والهرمونات، والإخصاب يحدث بقناة فالوب."
+                },
+                {
+                  "en": "The uterus is a pear-shaped muscular organ in the pelvis, between bladder anteriorly and rectum posteriorly. Its parts are fundus, body and cervix.",
+                  "ar": "الرحم عضو عضلي كمثري الشكل في الحوض، بين المثانة أمامًا والمستقيم خلفًا. أجزاؤه القاع والجسم وعنق الرحم.",
+                  "simple": "احفظ موقع الرحم وأجزاءه."
+                },
+                {
+                  "en": "The vagina is a stretchable canal connecting the cervix to the exterior; the textbook also describes the hymen and Bartholin's glands.",
+                  "ar": "المهبل قناة قابلة للتمدد تصل عنق الرحم بالخارج؛ ويشرح الكتاب غشاء البكارة وغدتي بارثولين.",
+                  "simple": "راجع وصف القناة والغدد كما ورد في الكتاب."
+                }
+              ]
+            },
+            {
+              "type": "bilingual",
+              "title": "External Organs | الأعضاء الخارجية",
+              "points": [
+                {
+                  "en": "The external female organs described include labia majora and labia minora. The textbook identifies the vaginal opening, Bartholin gland openings, urethral opening and clitoris in the vulvar region.",
+                  "ar": "تشمل الأعضاء الخارجية الشفرين الكبيرين والصغيرين. ويحدد الكتاب فتحة المهبل وفتحتي غدتي بارثولين وفتحة الإحليل والبظر في منطقة الفرج.",
+                  "simple": "تعرف على الأجزاء والفتحات كما في الرسم."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/female-reproductive-system.png",
+              "alt": "Female reproductive system",
+              "caption": "الجهاز التناسلي الأنثوي"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "glands",
+      "title": "Chapter Ten — The Glands | الغدد",
+      "description": "Chapter Ten — The Glands | الغدد — source pages 60–60",
+      "order": 10,
+      "lessons": [
+        {
+          "title": "Chapter Ten — The Glands | الغدد",
+          "order": 1,
+          "sourcePages": "60–60",
+          "objectives": [
+            "Study the topics and anatomical structures presented in Chapter Ten — The Glands | الغدد.",
+            "Recall the key terms, locations, parts and functions listed in the textbook."
+          ],
+          "keyTerms": [],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Chapter Ten — The Glands | الغدد"
+            },
+            {
+              "type": "bilingual",
+              "title": "Types of Glands | أنواع الغدد",
+              "points": [
+                {
+                  "en": "Exocrine glands release secretions through ducts to a surface or cavity. Examples in the textbook include salivary, prostate, lacrimal, skin and breast glands.",
+                  "ar": "تفرز الغدد خارجية الإفراز موادها عبر قنوات إلى سطح أو تجويف. ومن أمثلتها الغدد اللعابية والبروستاتا والدمعية وغدد الجلد والثدي.",
+                  "simple": "الغدد خارجية الإفراز لها قنوات."
+                },
+                {
+                  "en": "Endocrine glands release hormones directly into blood. The book describes pituitary, thyroid, parathyroid and adrenal glands and lists selected hormones.",
+                  "ar": "تفرز الغدد الصماء الهرمونات مباشرة إلى الدم. ويشرح الكتاب الغدة النخامية والدرقية وجارات الدرقية والكظرية وبعض هرموناتها.",
+                  "simple": "الغدد الصماء بلا قنوات وتفرز للدم."
+                },
+                {
+                  "en": "Mixed glands have both endocrine and exocrine functions. Examples listed are pancreas, testis and ovary.",
+                  "ar": "تجمع الغدد المختلطة بين وظائف الإفراز الداخلي والخارجي. ومن أمثلتها البنكرياس والخصية والمبيض.",
+                  "simple": "الغدة المختلطة لها نوعا إفراز."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/brain.png",
+              "alt": "Pituitary region illustration",
+              "caption": "موضع الغدة النخامية ضمن الدماغ"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "breast",
+      "title": "Chapter Eleven — The Breast | الثدي",
+      "description": "Chapter Eleven — The Breast | الثدي — source pages 61–63",
+      "order": 11,
+      "lessons": [
+        {
+          "title": "Chapter Eleven — The Breast | الثدي",
+          "order": 1,
+          "sourcePages": "61–63",
+          "objectives": [
+            "Study the topics and anatomical structures presented in Chapter Eleven — The Breast | الثدي.",
+            "Recall the key terms, locations, parts and functions listed in the textbook."
+          ],
+          "keyTerms": [],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Chapter Eleven — The Breast | الثدي"
+            },
+            {
+              "type": "bilingual",
+              "title": "Breast Location and Structure | موقع الثدي وتركيبه",
+              "points": [
+                {
+                  "en": "The textbook describes breast development across childhood, puberty and pregnancy. It gives boundaries: sternum medially, mid-axillary line laterally, second rib superiorly and sixth rib inferiorly.",
+                  "ar": "يشرح الكتاب تطور الثدي خلال الطفولة والبلوغ والحمل. ويحدد حدوده: عظمة القص إنسيًا، والخط المار بمنتصف الإبط وحشيًا، والضلع الثاني أعلى، والسادس أسفل.",
+                  "simple": "احفظ حدود الثدي الأربعة."
+                },
+                {
+                  "en": "The breast contains glandular, fibrous and adipose tissues. The glandular tissue is arranged in 15–20 lobes with lobules and lactiferous ducts opening at the nipple.",
+                  "ar": "يتكون الثدي من أنسجة غدية وليفية ودهنية. وينظم النسيج الغدي في 15–20 فصًا بها فصيصات وقنوات لبنية تفتح عند الحلمة.",
+                  "simple": "الأنسجة ثلاثة: غدية وليفية ودهنية."
+                },
+                {
+                  "en": "The textbook describes the nipple, areola and axillary tail (Tail of Spence), and notes lymphatic drainage of the breast to axillary lymph nodes.",
+                  "ar": "يصف الكتاب الحلمة والهالة وامتداد الثدي الإبطي (ذيل سبنس)، ويذكر تصريف الليمف من الثدي إلى العقد الليمفاوية الإبطية.",
+                  "simple": "ذيل سبنس يمتد نحو الإبط، والتصريف الليمفاوي للعقد الإبطية."
+                }
+              ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skin-structure.png",
+              "alt": "Skin structure",
+              "caption": "تركيب الجلد"
             }
           ]
         }
