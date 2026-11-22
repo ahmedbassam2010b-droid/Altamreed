@@ -279,3 +279,13 @@ body[data-page="daily-challenge"] .platform-heading:after{content:"⚡";backgrou
 .library-pdf-viewer-head h2{font-size:18px;color:#263b59;margin:0}
 .library-pdf-frame{display:block;width:100%;height:min(78vh,900px);min-height:520px;border:1px solid #e1e8f0;border-radius:12px;background:#f3f6fa}
 @media(max-width:600px){.library-pdf-viewer{padding:9px}.library-pdf-frame{height:72vh;min-height:420px}.library-pdf-viewer-head{align-items:flex-start}.library-pdf-viewer-head .btn{width:100%}}
+
+/* Student header hamburger navigation */
+.platform-header{position:sticky;top:0;z-index:30;display:flex;align-items:center;flex-direction:row;gap:14px}
+.platform-menu-toggle{display:grid;place-items:center;flex:0 0 46px;width:46px;height:44px;border:1px solid #dce7f3;border-radius:13px;background:#f1f6fc;color:#1e3a61;font-size:25px;font-weight:900;cursor:pointer;line-height:1}
+.platform-nav[hidden]{display:none!important}
+.platform-nav:not([hidden]){position:absolute;top:calc(100% + 8px);right:max(16px,calc((100% - 1200px)/2));display:grid;grid-template-columns:1fr;gap:4px;min-width:min(290px,calc(100vw - 32px));padding:10px;border:1px solid #e2eaf4;border-radius:17px;background:#fff;box-shadow:0 18px 45px rgba(24,55,91,.18)}
+.platform-nav:not([hidden]) a{display:flex;align-items:center;padding:12px 14px;border-radius:11px;color:#334d6b;font-size:14px}
+.platform-nav:not([hidden]) a[aria-current=page]{background:#edf5ff;color:#2476d8}
+.platform-actions{margin-inline-start:auto;flex-wrap:nowrap}
+@media(max-width:760px){.platform-header{align-items:center;flex-direction:row;position:sticky;padding:10px 14px}.platform-brand{font-size:16px;gap:7px}.platform-brand-logo{width:44px;height:44px;flex-basis:44px}.platform-menu-toggle{order:2}.platform-nav:not([hidden]){right:12px;left:12px;top:calc(100% + 7px);width:auto;min-width:0}.platform-actions{width:auto;margin-inline-start:auto;justify-content:flex-end;gap:8px}.platform-user{display:none}.platform-actions .btn{padding:8px 11px}.platform-root{margin-top:22px}}
