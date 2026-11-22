@@ -126,23 +126,40 @@ async function lesson(){
  const footer=el("div","lesson-reader-footer");if(d.chapterId){const back=el("a","btn btn-secondary","العودة إلى الفصل");back.href="chapter.html?id="+encodeURIComponent(d.chapterId);footer.append(back);}article.append(footer);root.append(article);
 }
 async function library(){
- heading("المكتبة العلمية","اختر المادة الدراسية لعرض ملفاتها ومراجعها داخل المنصة.");
- const items=await rows("library",query(collection(db,"library"),where("published","==",true),where("gradeId","==",gradeId)));
- const subjects=await rows("subjects",query(collection(db,"subjects"),where("published","==",true),where("gradeId","==",gradeId)));
- const internalMedicine=subjects.find(s=>/internal\s*medicine|طب\s*الباطنة/i.test(s.title||""));
- if(internalMedicine){try{const response=await fetch("content/internal-medicine/library-resources.json",{cache:"no-store"});if(response.ok){const resources=await response.json();resources.forEach(resource=>items.push({...resource,subjectId:internalMedicine.id,subjectTitle:internalMedicine.title,gradeId,published:true}));}}catch(error){console.warn("تعذر تحميل موارد Internal Medicine من المكتبة.",error);}}
+ heading("المكتبة العلمية","اختر المادة الدراسية أولًا، ثم افتح ملفاتها داخل المنصة.");
+ const [libraryItems,subjects]=await Promise.all([
+  rows("library",query(collection(db,"library"),where("published","==",true),where("gradeId","==",gradeId))),
+  rows("subjects",query(collection(db,"subjects"),where("published","==",true),where("gradeId","==",gradeId)))
+ ]);
  const groups=new Map();
- items.forEach(item=>{const key=item.subjectId||item.subjectTitle||"general";if(!groups.has(key))groups.set(key,{id:key,title:item.subjectTitle||(item.subjectId?subjects.find(s=>s.id===item.subjectId)?.title:"المراجع العامة"),items:[]});groups.get(key).items.push(item);});
+ const addGroup=(key,title)=>{if(!groups.has(key))groups.set(key,{id:key,title,items:[]});return groups.get(key);};
+ subjects.forEach(subject=>addGroup(subject.id,subject.title||"مادة دراسية"));
+ libraryItems.forEach(item=>{
+  const subject=subjects.find(s=>s.id===item.subjectId);
+  const title=item.subjectTitle||subject?.title||(item.subjectId?"مادة دراسية":"المراجع العامة");
+  const key=item.subjectId||("title:"+title);
+  addGroup(key,title).items.push(item);
+ });
+ const internalMedicine=subjects.find(s=>/internal\s*medicine|طب\s*الباطن[هة]|باطن[هة]/i.test(s.title||""));
+ const imGroup=addGroup(internalMedicine?.id||"internal-medicine",internalMedicine?.title||"طب الباطنة | Internal Medicine");
+ try{
+  const response=await fetch("content/internal-medicine/library-resources.json?v=20261122-2",{cache:"no-store"});
+  if(response.ok){const resources=await response.json();resources.forEach(resource=>{if(!imGroup.items.some(x=>x.url===resource.url))imGroup.items.push({...resource,subjectId:imGroup.id,subjectTitle:imGroup.title,gradeId,published:true});});}
+ }catch(error){console.error("تعذر تحميل ملفات طب الباطنة:",error);}
+ for(const [key,group] of groups){if(!group.items.length)groups.delete(key);}
  const categoryGrid=el("section","platform-grid");root.append(categoryGrid);
+ const tools=el("section","library-tools");tools.hidden=true;
+ const search=el("input","");search.type="search";search.placeholder="ابحث عن مادة...";search.setAttribute("aria-label","البحث عن مادة");tools.append(search);root.insertBefore(tools,categoryGrid);
  const viewer=el("section","library-pdf-viewer");viewer.hidden=true;viewer.setAttribute("aria-label","عارض ملفات المكتبة");
- let activeGroup=null;const viewerHead=el("div","library-pdf-viewer-head"),viewerTitle=el("h2","",""),closeViewer=btn("العودة إلى الملفات",()=>{viewer.hidden=true;viewerFrame.src="about:blank";categoryGrid.hidden=false;tools.hidden=!activeGroup;headingNode.hidden=false;},"btn btn-secondary");
- const viewerFrame=el("iframe","library-pdf-frame");viewerFrame.title="عرض ملف PDF داخل بوابة التمريض";viewerFrame.setAttribute("loading","lazy");viewerFrame.setAttribute("referrerpolicy","no-referrer");
- viewerHead.append(viewerTitle,closeViewer);viewer.append(viewerHead,viewerFrame);root.append(viewer);
- const headingNode=root.querySelector(".platform-heading");
+ const viewerHead=el("div","library-pdf-viewer-head"),viewerTitle=el("h2","","");
+ const viewerFrame=el("iframe","library-pdf-frame");viewerFrame.title="عارض PDF داخل بوابة التمريض";viewerFrame.setAttribute("loading","lazy");viewerFrame.setAttribute("referrerpolicy","no-referrer");
+ const headingNode=root.querySelector(".platform-heading");let activeGroup=null;
+ const backToFiles=btn("العودة إلى ملفات المادة",()=>{viewer.hidden=true;viewerFrame.src="about:blank";categoryGrid.hidden=false;headingNode.hidden=false;showGroup(activeGroup);},"btn btn-secondary");
+ viewerHead.append(viewerTitle,backToFiles);viewer.append(viewerHead,viewerFrame);root.append(viewer);
  function openFile(item){let url;try{url=new URL(item.url,location.href);if(url.protocol!=="https:")throw new Error("invalid");}catch(error){msg("رابط الملف غير صالح.");return;}viewerTitle.textContent=item.title||"عرض الملف";viewerFrame.src=url.href+"#toolbar=0&navpanes=0&scrollbar=0&view=FitH";categoryGrid.hidden=true;tools.hidden=true;headingNode.hidden=true;viewer.hidden=false;viewer.scrollIntoView({behavior:"smooth",block:"start"});}
- function showGroup(group){activeGroup=group;tools.hidden=true;categoryGrid.replaceChildren();const crumb=el("nav","academic-breadcrumb"),back=btn("كل المواد",()=>renderCategories(),"btn btn-secondary");crumb.append(back,el("span","","/"),el("span","",group.title||"المادة"));categoryGrid.append(crumb);const grid=el("section","platform-grid");group.items.forEach(item=>{const c=el("article","platform-card library-resource-card"),open=btn("فتح داخل المنصة",()=>openFile(item),"btn btn-primary");c.append(el("h3","",item.title||"ملف تعليمي"),el("p","",item.description||"ملف من المكتبة العلمية"),el("small","",item.type||"PDF"),open);grid.append(c);});categoryGrid.append(grid);}
- function renderCategories(){activeGroup=null;viewer.hidden=true;viewerFrame.src="about:blank";categoryGrid.hidden=false;tools.hidden=false;headingNode.hidden=false;categoryGrid.replaceChildren();if(!groups.size){categoryGrid.append(el("p","platform-empty","لا توجد مواد أو ملفات منشورة في المكتبة حاليًا."));return;}[...groups.values()].sort((a,b)=>(a.title||"").localeCompare(b.title||"","ar")).forEach(group=>{const c=card(group.title||"مادة دراسية","افتح المادة لعرض ملفاتها ومراجعها", "#",group.items.length+" ملف");c.classList.add("course-card","library-subject-card");c.dataset.icon="📚";c.addEventListener("click",event=>{event.preventDefault();showGroup(group);});categoryGrid.append(c);});}
- const tools=el("section","library-tools");tools.hidden=true;const search=el("input","");search.type="search";search.placeholder="ابحث عن مادة...";search.setAttribute("aria-label","البحث في مواد المكتبة");tools.append(search);root.insertBefore(tools,categoryGrid);search.addEventListener("input",()=>{const q=search.value.trim().toLocaleLowerCase("ar");categoryGrid.replaceChildren();[...groups.values()].filter(g=>(g.title||"").toLocaleLowerCase("ar").includes(q)).forEach(group=>{const c=card(group.title||"مادة دراسية","افتح المادة لعرض ملفاتها ومراجعها","#",group.items.length+" ملف");c.classList.add("course-card","library-subject-card");c.dataset.icon="📚";c.addEventListener("click",e=>{e.preventDefault();showGroup(group);});categoryGrid.append(c);});if(!categoryGrid.childElementCount)categoryGrid.append(el("p","platform-empty","لا توجد مادة تطابق البحث."));});
+ function showGroup(group){activeGroup=group;viewer.hidden=true;viewerFrame.src="about:blank";headingNode.hidden=false;tools.hidden=true;categoryGrid.hidden=false;categoryGrid.replaceChildren();const crumb=el("nav","academic-breadcrumb"),back=btn("كل المواد",renderCategories,"btn btn-secondary");crumb.append(back,el("span",""," / "),el("strong","",group.title));categoryGrid.append(crumb);const grid=el("section","platform-grid");group.items.forEach(item=>{const c=el("article","platform-card library-resource-card");c.append(el("h3","",item.title||"ملف تعليمي"),el("p","",item.description||"ملف من المكتبة العلمية"),el("small","",item.type||"PDF"),btn("فتح داخل المنصة",()=>openFile(item),"btn btn-primary"));grid.append(c);});categoryGrid.append(grid);}
+ function renderCategories(){activeGroup=null;viewer.hidden=true;viewerFrame.src="about:blank";headingNode.hidden=false;tools.hidden=true;categoryGrid.hidden=false;categoryGrid.replaceChildren();if(!groups.size){categoryGrid.append(el("p","platform-empty","لا توجد مواد تحتوي على ملفات منشورة حاليًا."));return;}[...groups.values()].sort((a,b)=>(a.title||"").localeCompare(b.title||"","ar")).forEach(group=>{const c=card(group.title,"اضغط لعرض ملفات ومراجع المادة","#",group.items.length+" ملف");c.classList.add("library-subject-card");c.dataset.icon="📚";c.addEventListener("click",event=>{event.preventDefault();showGroup(group);});categoryGrid.append(c);});}
+ search.addEventListener("input",()=>{const q=search.value.trim().toLocaleLowerCase("ar");categoryGrid.replaceChildren();[...groups.values()].filter(g=>(g.title||"").toLocaleLowerCase("ar").includes(q)).forEach(group=>{const c=card(group.title,"اضغط لعرض ملفات ومراجع المادة","#",group.items.length+" ملف");c.classList.add("library-subject-card");c.dataset.icon="📚";c.addEventListener("click",event=>{event.preventDefault();showGroup(group);});categoryGrid.append(c);});if(!categoryGrid.childElementCount)categoryGrid.append(el("p","platform-empty","لا توجد مادة تطابق البحث."));});
  renderCategories();
 }
 async function profile(){
