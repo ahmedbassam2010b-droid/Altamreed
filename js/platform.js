@@ -129,7 +129,7 @@ async function library(){
  heading("المكتبة العلمية","اختر المادة الدراسية لعرض ملفاتها ومراجعها داخل المنصة.");
  const items=await rows("library",query(collection(db,"library"),where("published","==",true),where("gradeId","==",gradeId)));
  const subjects=await rows("subjects",query(collection(db,"subjects"),where("published","==",true),where("gradeId","==",gradeId)));
- const internalMedicine=subjects.find(s=>/internal\\s*medicine|طب\\s*الباطنة/i.test(s.title||""));
+ const internalMedicine=subjects.find(s=>/internal\s*medicine|طب\s*الباطنة/i.test(s.title||""));
  if(internalMedicine){try{const response=await fetch("content/internal-medicine/library-resources.json",{cache:"no-store"});if(response.ok){const resources=await response.json();resources.forEach(resource=>items.push({...resource,subjectId:internalMedicine.id,subjectTitle:internalMedicine.title,gradeId,published:true}));}}catch(error){console.warn("تعذر تحميل موارد Internal Medicine من المكتبة.",error);}}
  const groups=new Map();
  items.forEach(item=>{const key=item.subjectId||item.subjectTitle||"general";if(!groups.has(key))groups.set(key,{id:key,title:item.subjectTitle||(item.subjectId?subjects.find(s=>s.id===item.subjectId)?.title:"المراجع العامة"),items:[]});groups.get(key).items.push(item);});
