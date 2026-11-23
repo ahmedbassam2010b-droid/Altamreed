@@ -74,19 +74,21 @@
                   "ar": "العظام السمسمية عظام صغيرة داخل أوتار بعض العضلات؛ والرضفة مثال عليها.",
                   "simple": "الرضفة أمام الركبة مثال للعظام السمسمية."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/muscular-system.png",
+                  "alt": "Human muscular system",
+                  "caption": "صورة مساندة: الجهاز العضلي وعلاقته بالأوتار المذكورة مع العظام السمسمية"
+                },
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/muscle-fiber.png",
+                  "alt": "Muscle fiber",
+                  "caption": "صورة توضيحية مساندة: الليفة العضلية"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/muscular-system.png",
-              "alt": "Human muscular system",
-              "caption": "صورة مساندة: الجهاز العضلي وعلاقته بالأوتار المذكورة مع العظام السمسمية"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/muscle-fiber.png",
-              "alt": "Muscle fiber",
-              "caption": "صورة توضيحية مساندة: الليفة العضلية"
             },
             {
               "type": "bilingual",
@@ -112,19 +114,21 @@
                   "ar": "يذكر الكتاب أهمية اليافوخ في تقدير عمر الطفل ووضع الجنين، وملاحظة تأخر الانغلاق أو الجفاف أو ارتفاع ضغط السائل الدماغي الشوكي.",
                   "simple": "اليافوخ يساعد في متابعة بعض علامات حالة الطفل."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skeleton-overview.png",
+                  "alt": "Human skeleton",
+                  "caption": "الهيكل العظمي"
+                },
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skull.png",
+                  "alt": "Skull",
+                  "caption": "الجمجمة"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skeleton-overview.png",
-              "alt": "Human skeleton",
-              "caption": "الهيكل العظمي"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skull.png",
-              "alt": "Skull",
-              "caption": "الجمجمة"
             },
             {
               "type": "bilingual",
@@ -155,49 +159,51 @@
                   "ar": "يتكون الحوض من عظمتَي الحوض والعجز والعصعص؛ ويقارن الكتاب بين حوض الذكر والأنثى من حيث المدخل والمخرج والتجويف والقوس العاني والعجز والعصعص.",
                   "simple": "راجع جدول المقارنة الموجود بالكتاب."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/hand-bones.png",
+                  "alt": "Hand bones",
+                  "caption": "عظام اليد"
+                },
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/foot-bones.png",
+                  "alt": "Foot bones",
+                  "caption": "عظام القدم"
+                },
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/thoracic-cage.png",
+                  "alt": "Thoracic cage",
+                  "caption": "القفص الصدري"
+                },
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/shoulder-joint.png",
+                  "alt": "Shoulder joint",
+                  "caption": "مفصل الكتف: اتصال لوح الكتف بعظمة العضد"
+                },
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/pelvic-girdle.png",
+                  "alt": "Pelvic girdle",
+                  "caption": "الحزام الحوضي وعظام الحوض"
+                },
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/knee-joint.png",
+                  "alt": "Knee joint",
+                  "caption": "مفصل الركبة: اتصال عظمة الفخذ بعظام الساق"
+                },
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/vertebral-column.png",
+                  "alt": "Vertebral column",
+                  "caption": "العمود الفقري"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/hand-bones.png",
-              "alt": "Hand bones",
-              "caption": "عظام اليد"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/foot-bones.png",
-              "alt": "Foot bones",
-              "caption": "عظام القدم"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/thoracic-cage.png",
-              "alt": "Thoracic cage",
-              "caption": "القفص الصدري"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/shoulder-joint.png",
-              "alt": "Shoulder joint",
-              "caption": "مفصل الكتف: اتصال لوح الكتف بعظمة العضد"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/pelvic-girdle.png",
-              "alt": "Pelvic girdle",
-              "caption": "الحزام الحوضي وعظام الحوض"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/knee-joint.png",
-              "alt": "Knee joint",
-              "caption": "مفصل الركبة: اتصال عظمة الفخذ بعظام الساق"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/vertebral-column.png",
-              "alt": "Vertebral column",
-              "caption": "العمود الفقري"
             }
           ]
         }
@@ -237,13 +243,15 @@
                   "ar": "يتكون المخ من المخ الكبير والمخيخ وجذع المخ. للمخ الكبير نصفان وأربعة فصوص: الجبهي (حركة)، الجداري (إحساس)، الصدغي (سمع وذاكرة)، والقذالي (إبصار).",
                   "simple": "اربط كل فص بمكانه ووظيفته المذكورة."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/brain.png",
+                  "alt": "Human brain",
+                  "caption": "أجزاء المخ والمخيخ وجذع المخ"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/brain.png",
-              "alt": "Human brain",
-              "caption": "أجزاء المخ والمخيخ وجذع المخ"
             },
             {
               "type": "bilingual",
@@ -275,31 +283,33 @@
                   "ar": "يسرد الكتاب 31 زوجًا من الأعصاب الشوكية و12 زوجًا من الأعصاب القحفية، ثم يوضح وظائف الأعصاب القحفية الاثني عشر: الشمي والبصري ومحرك العين والبكري وثلاثي التوائم ومبعد العين والوجهي والدهليزي القوقعي واللساني البلعومي والمبهم والإضافي وتحت اللسان.",
                   "simple": "راجع جدول أسماء الأعصاب القحفية ووظيفة كل عصب في الكتاب."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/eye-anatomy.png",
+                  "alt": "Eye anatomy",
+                  "caption": "صورة مساندة للأعصاب القحفية المرتبطة بالإبصار وحركة العين"
+                },
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/ear-anatomy.png",
+                  "alt": "Ear anatomy",
+                  "caption": "صورة مساندة للعصب الدهليزي القوقعي ووظيفتي السمع والاتزان"
+                },
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/facial-muscles.png",
+                  "alt": "Facial muscles",
+                  "caption": "عضلات الوجه المرتبطة بوظيفة العصب الوجهي"
+                },
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/neck-anatomy.png",
+                  "alt": "Neck anatomy",
+                  "caption": "منطقة الرقبة المرتبطة بوظيفة العصب الإضافي وعضلات الرقبة"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/eye-anatomy.png",
-              "alt": "Eye anatomy",
-              "caption": "صورة مساندة للأعصاب القحفية المرتبطة بالإبصار وحركة العين"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/ear-anatomy.png",
-              "alt": "Ear anatomy",
-              "caption": "صورة مساندة للعصب الدهليزي القوقعي ووظيفتي السمع والاتزان"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/facial-muscles.png",
-              "alt": "Facial muscles",
-              "caption": "عضلات الوجه المرتبطة بوظيفة العصب الوجهي"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/neck-anatomy.png",
-              "alt": "Neck anatomy",
-              "caption": "منطقة الرقبة المرتبطة بوظيفة العصب الإضافي وعضلات الرقبة"
             }
           ]
         }
@@ -344,13 +354,15 @@
                   "ar": "يغذي الشريانان التاجيان الأيمن والأيسر عضلة القلب. ويربط الكتاب ضيق الشريان التاجي بالذبحة الصدرية وانسداده الكامل بتلف جزء من عضلة القلب.",
                   "simple": "الشرايين التاجية تغذي عضلة القلب."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/heart.png",
+                  "alt": "Heart anatomy",
+                  "caption": "القلب"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/heart.png",
-              "alt": "Heart anatomy",
-              "caption": "القلب"
             },
             {
               "type": "bilingual",
@@ -392,13 +404,15 @@
                   "ar": "يحيط بالقلب التامور الليفي والتامور المصلي. يحمي الليفي القلب ويثبته، وتقلل الطبقات المصلية الاحتكاك.",
                   "simple": "التامور يحمي القلب ويقلل الاحتكاك."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/blood-vessels.png",
+                  "alt": "Blood vessels",
+                  "caption": "الأوعية الدموية"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/blood-vessels.png",
-              "alt": "Blood vessels",
-              "caption": "الأوعية الدموية"
             }
           ]
         }
@@ -443,13 +457,15 @@
                   "ar": "يذكر الكتاب مجموعات العقد العنقية والإبطية والصدرية والأورطية والحرقفية والأربية والمناطق التي تصرف منها الليمف.",
                   "simple": "اربط كل مجموعة عقد بالمنطقة التي تصرفها."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/lymphatic-system.png",
+                  "alt": "Lymphatic system",
+                  "caption": "الجهاز الليمفاوي"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/lymphatic-system.png",
-              "alt": "Lymphatic system",
-              "caption": "الجهاز الليمفاوي"
             },
             {
               "type": "bilingual",
@@ -465,13 +481,15 @@
                   "ar": "تقع الغدة الزعترية أمام القلب وخلف عظم القص، وتكون كبيرة في الطفولة ثم تضمر لدى البالغين؛ وتنتج نوعًا من الخلايا الليمفاوية.",
                   "simple": "الغدة الزعترية مرتبطة بنضج الخلايا الليمفاوية."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/spleen.png",
+                  "alt": "Spleen",
+                  "caption": "الطحال"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/spleen.png",
-              "alt": "Spleen",
-              "caption": "الطحال"
             }
           ]
         }
@@ -521,13 +539,15 @@
                   "ar": "تحتوي الحنجرة على غضاريف منها الدرقي والحلقي ولسان المزمار، وتقع الأحبال الصوتية بداخلها.",
                   "simple": "الحنجرة تحتوي الأحبال الصوتية."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/nasal-cavity.png",
+                  "alt": "Nasal cavity",
+                  "caption": "التجويف الأنفي"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/nasal-cavity.png",
-              "alt": "Nasal cavity",
-              "caption": "التجويف الأنفي"
             },
             {
               "type": "bilingual",
@@ -548,19 +568,21 @@
                   "ar": "يقارن الكتاب بين الرئة اليمنى واليسرى من حيث الطول والعرض والوزن والشقوق والفصوص والثلمة القلبية والقطع. اليمنى ثلاثة فصوص، واليسرى فصان وبها ثلمة قلبية.",
                   "simple": "راجع جدول مقارنة الرئتين في الكتاب."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/lungs.png",
+                  "alt": "Lungs",
+                  "caption": "الرئتان"
+                },
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/respiratory-alveoli.png",
+                  "alt": "Alveoli",
+                  "caption": "الحويصلات الهوائية"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/lungs.png",
-              "alt": "Lungs",
-              "caption": "الرئتان"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/respiratory-alveoli.png",
-              "alt": "Alveoli",
-              "caption": "الحويصلات الهوائية"
             }
           ]
         }
@@ -605,13 +627,15 @@
                   "ar": "تتكون المعدة من قاع وجسم وبواب، ولها سطحان أمامي وخلفي ونهايتان فؤادية وبوابية وانحناءان أصغر وأكبر.",
                   "simple": "احفظ أجزاء المعدة وأسطحها ونهايتيها."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/stomach.png",
+                  "alt": "Stomach",
+                  "caption": "المعدة"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/stomach.png",
-              "alt": "Stomach",
-              "caption": "المعدة"
             },
             {
               "type": "bilingual",
@@ -642,25 +666,27 @@
                   "ar": "يتكون البنكرياس من رأس وعنق وجسم وذيل. يفرز الإنسولين إلى الدم والعصارة البنكرياسية إلى الأمعاء.",
                   "simple": "للبنكرياس إفراز هرموني وهضمي."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/digestive-system.png",
+                  "alt": "Digestive system",
+                  "caption": "الجهاز الهضمي"
+                },
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/liver.png",
+                  "alt": "Liver",
+                  "caption": "الكبد"
+                },
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/pancreas.png",
+                  "alt": "Pancreas",
+                  "caption": "البنكرياس"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/digestive-system.png",
-              "alt": "Digestive system",
-              "caption": "الجهاز الهضمي"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/liver.png",
-              "alt": "Liver",
-              "caption": "الكبد"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/pancreas.png",
-              "alt": "Pancreas",
-              "caption": "البنكرياس"
             }
           ]
         }
@@ -705,13 +731,15 @@
                   "ar": "يبلغ طول الحالبين نحو 25–30 سم ويصلان الكليتين بالمثانة البولية. وتنقل انقباضاتهما العضلية البول.",
                   "simple": "الحالب ينقل البول من الكلية للمثانة."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/kidneys.png",
+                  "alt": "Kidneys",
+                  "caption": "الكليتان"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/kidneys.png",
-              "alt": "Kidneys",
-              "caption": "الكليتان"
             },
             {
               "type": "bilingual",
@@ -727,13 +755,15 @@
                   "ar": "ينقل الإحليل البول إلى خارج الجسم. يقارن الكتاب بين إحليل الذكر (نحو 20 سم وينقل البول والسائل المنوي) وإحليل الأنثى (نحو 4 سم وينقل البول فقط).",
                   "simple": "احفظ المقارنة بين إحليل الذكر والأنثى."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/urinary-system.png",
+                  "alt": "Urinary system",
+                  "caption": "الجهاز البولي"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/urinary-system.png",
-              "alt": "Urinary system",
-              "caption": "الجهاز البولي"
             }
           ]
         }
@@ -884,13 +914,15 @@
                   "ar": "تجمع الغدد المختلطة بين وظائف الإفراز الداخلي والخارجي. ومن أمثلتها البنكرياس والخصية والمبيض.",
                   "simple": "الغدة المختلطة لها نوعا إفراز."
                 }
+              ],
+              "illustrations": [
+                {
+                  "type": "image",
+                  "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skin-structure.png",
+                  "alt": "Skin structure",
+                  "caption": "تركيب الجلد: موضع الغدد الجلدية الخارجية المذكورة في الدرس"
+                }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skin-structure.png",
-              "alt": "Skin structure",
-              "caption": "تركيب الجلد: موضع الغدد الجلدية الخارجية المذكورة في الدرس"
             }
           ]
         }
