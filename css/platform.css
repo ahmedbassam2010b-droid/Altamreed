@@ -331,3 +331,9 @@ body[data-page="daily-challenge"] .platform-heading:after{content:"⚡";backgrou
  .study-choice-card p{font-size:15px;line-height:1.85;margin-bottom:19px}
 }
 @media(prefers-reduced-motion:reduce){.study-choice-card{transition:none}.study-choice-card:hover{transform:none}}
+
+
+/* Logout action inside the student navigation menu */
+.platform-nav .platform-logout-menu-btn{display:flex;align-items:center;justify-content:center;width:100%;margin-top:7px;padding:13px 14px;border:1px solid #c9defb;border-radius:12px;background:#e5f0ff;color:#d9363e;font:inherit;font-size:14px;font-weight:900;cursor:pointer;transition:background .2s,border-color .2s,transform .2s}
+.platform-nav .platform-logout-menu-btn:hover{background:#d7e8ff;border-color:#a9c9f5;transform:translateY(-1px)}
+.platform-nav .platform-logout-menu-btn:focus-visible{outline:3px solid rgba(40,120,232,.28);outline-offset:2px}
