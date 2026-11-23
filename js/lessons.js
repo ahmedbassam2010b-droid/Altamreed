@@ -82,10 +82,52 @@ async function loadLessons(user) {
       const title = document.createElement("h3");
       title.textContent = data.title || "درس بدون عنوان";
 
-      const status = document.createElement("p");
-      status.textContent = "تفاصيل عرض الدرس ستتاح بعد اعتماد مخطط محتوى الدروس.";
-
-      item.append(title, status);
+      item.append(title);
+      const blocks = Array.isArray(data.contentBlocks) ? data.contentBlocks : [];
+      if (blocks.length) {
+        const details = document.createElement("details");
+        details.className = "lesson-content-details";
+        const summary = document.createElement("summary");
+        summary.textContent = "فتح محتوى الدرس";
+        details.append(summary);
+        const body = document.createElement("div");
+        body.className = "lesson-content-body";
+        blocks.forEach((block) => {
+          if (!block || typeof block !== "object") return;
+          if (block.type === "heading" || block.type === "subheading") {
+            const h = document.createElement(block.type === "heading" ? "h4" : "h5");
+            h.textContent = block.text || "";
+            body.append(h);
+          } else if (block.type === "paragraph") {
+            const p = document.createElement("p");
+            p.textContent = block.text || "";
+            body.append(p);
+          } else if (block.type === "list" && Array.isArray(block.items)) {
+            const ul = document.createElement("ul");
+            block.items.forEach((entry) => {
+              const li = document.createElement("li");
+              li.textContent = String(entry);
+              ul.append(li);
+            });
+            body.append(ul);
+          } else if (block.type === "warning") {
+            const aside = document.createElement("aside");
+            aside.className = "lesson-content-warning";
+            const strong = document.createElement("strong");
+            strong.textContent = block.title || "تنبيه";
+            const p = document.createElement("p");
+            p.textContent = block.text || "";
+            aside.append(strong, p);
+            body.append(aside);
+          }
+        });
+        details.append(body);
+        item.append(details);
+      } else {
+        const status = document.createElement("p");
+        status.textContent = "لا يتوفر محتوى تفصيلي لهذا الدرس حاليًا.";
+        item.append(status);
+      }
       fragment.appendChild(item);
     });
 
