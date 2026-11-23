@@ -1,0 +1,126 @@
+{
+  "contentStatus": "pilot",
+  "sourceId": "medical-surgical-nursing-practice-second-year",
+  "subjectTitle": "Medical surgical nursing practice",
+  "chapters": [
+    {
+      "title": "Chapter 01 — Basic Nursing Procedures",
+      "description": "Practical nursing procedures from the supplied second-year practical book.",
+      "order": 1,
+      "lessons": [
+        {
+          "title": "Capillary Blood Glucose Testing",
+          "order": 1,
+          "objectives": [
+            "Define capillary blood glucose monitoring.",
+            "Identify the equipment used.",
+            "Explain the procedure and rationale in a supervised clinical learning context."
+          ],
+          "keyTerms": [
+            "Capillary blood sample",
+            "Blood glucose meter",
+            "Lancet",
+            "Test strip"
+          ],
+          "contentBlocks": [
+            {
+              "type": "heading",
+              "text": "Academic Explanation"
+            },
+            {
+              "type": "paragraph",
+              "text": "Blood glucose monitoring allows people with diabetes mellitus to monitor their blood glucose as part of disease management. Capillary sampling by skin puncture is less painful than venipuncture and is commonly used for glucose monitoring."
+            },
+            {
+              "type": "heading",
+              "text": "الترجمة والتوضيح العربي"
+            },
+            {
+              "type": "paragraph",
+              "text": "تساعد متابعة مستوى الجلوكوز في الدم مرضى السكري على متابعة حالتهم وإدارة المرض. ويُستخدم أخذ عينة دم شعيرية عن طريق وخز الجلد لمتابعة مستوى السكر."
+            },
+            {
+              "type": "heading",
+              "text": "Required Equipment"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Blood glucose meter — جهاز قياس سكر الدم",
+                "Sterile lancet — أداة وخز معقمة",
+                "Testing strips — شرائط اختبار مناسبة للجهاز",
+                "Cotton balls or gauze squares — قطن أو شاش",
+                "Nonsterile gloves — قفازات غير معقمة",
+                "Skin cleanser and water or alcohol swab — منظف للجلد أو مسحة كحولية",
+                "Additional PPE, as indicated — معدات وقاية إضافية عند الحاجة"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Procedure Steps & Rationale"
+            },
+            {
+              "type": "paragraph",
+              "text": "الخطوات التالية تمثل نسخة تعليمية أولية من الإجراء. يجب مراجعة مطابقتها الحرفية مع قائمة خطوات الكتاب قبل اعتمادها كنسخة نهائية."
+            },
+            {
+              "type": "list",
+              "items": [
+                "01. Gather equipment and check strip expiry. | تجهيز الأدوات والتحقق من صلاحية الشرائط. Rationale: Expired strips may produce inaccurate results.",
+                "02. Perform hand hygiene and use indicated PPE. | نظافة اليدين وارتداء معدات الوقاية عند الحاجة. Rationale: Reduces microorganism transmission.",
+                "03. Identify the patient and explain the procedure. | التحقق من هوية المريض وشرح الإجراء. Rationale: Prevents patient identification errors.",
+                "04. Provide privacy. | توفير الخصوصية. Rationale: Protects patient dignity.",
+                "05. Prepare the lancet using aseptic technique. | تجهيز أداة الوخز بطريقة تمنع التلوث. Rationale: Reduces contamination.",
+                "06. Remove a test strip, recap the vial, and check the code. | إخراج الشريط وإغلاق العبوة ومطابقة الكود. Rationale: Protects strips and supports correct meter use.",
+                "07. Insert the strip according to device instructions. | إدخال الشريط وفق تعليمات الجهاز. Rationale: Allows the meter to read the sample.",
+                "08. Clean the skin and allow it to dry. | تنظيف الجلد وتركه حتى يجف. Rationale: Reduces contamination and avoids interference.",
+                "09. Position the lancet according to its instructions. | وضع أداة الوخز وفق تعليماتها. Rationale: Supports appropriate sampling.",
+                "10. Wipe the first drop if recommended by the manufacturer. | مسح القطرة الأولى إذا أوصت الشركة بذلك. Rationale: May reduce sample contamination.",
+                "11. Allow an adequate blood drop to form. | تكوين قطرة دم مناسبة. Rationale: An adequate sample supports a valid reading.",
+                "12. Touch the blood drop to the strip without smearing. | ملامسة القطرة لمنطقة العينة دون تلطيخ. Rationale: Smearing may affect the reading.",
+                "13. Apply pressure with dry gauze or cotton. | الضغط بشاش أو قطن جاف. Rationale: Supports hemostasis.",
+                "14. Read, document, and communicate the result. | قراءة النتيجة وتوثيقها وإبلاغها. Rationale: Supports continuity of care.",
+                "15. Turn off the meter and dispose of supplies safely. | إيقاف الجهاز والتخلص الآمن من المستلزمات. Rationale: Reduces exposure and sharps injuries.",
+                "16. Remove PPE and perform hand hygiene. | خلع معدات الوقاية وتنظيف اليدين. Rationale: Reduces contamination and transmission."
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Procedure Checklist"
+            },
+            {
+              "type": "list",
+              "items": [
+                "Preparation and patient identification completed",
+                "Equipment and strips checked",
+                "Hand hygiene and PPE completed",
+                "Sample obtained and tested according to device instructions",
+                "Result documented and communicated",
+                "Sharps and used supplies disposed of safely",
+                "PPE removed and hand hygiene repeated"
+              ]
+            },
+            {
+              "type": "heading",
+              "text": "Review Questions"
+            },
+            {
+              "type": "list",
+              "items": [
+                "What is the main purpose of capillary blood glucose monitoring?",
+                "Why should the test-strip expiry date be checked?",
+                "Why should the skin-cleaning solution dry before sampling?",
+                "Where should a used lancet be discarded?"
+              ]
+            },
+            {
+              "type": "warning",
+              "title": "Clinical Safety",
+              "text": "هذه المادة للتعلم الأكاديمي فقط. لا تُجرى المهارات السريرية إلا تحت إشراف مختص ووفق تعليمات الجهاز وسياسة مكافحة العدوى بالمؤسسة."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
