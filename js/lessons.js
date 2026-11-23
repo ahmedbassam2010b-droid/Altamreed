@@ -94,7 +94,54 @@ async function loadLessons(user) {
         body.className = "lesson-content-body";
         blocks.forEach((block) => {
           if (!block || typeof block !== "object") return;
-          if (block.type === "heading" || block.type === "subheading") {
+          if (block.type === "image") {
+            const figure = document.createElement("figure");
+            figure.className = "lesson-content-figure";
+            const img = document.createElement("img");
+            img.src = block.url || "";
+            img.alt = block.alt || block.caption || "Anatomy educational illustration";
+            img.loading = "lazy";
+            img.decoding = "async";
+            figure.append(img);
+            if (block.caption) {
+              const caption = document.createElement("figcaption");
+              caption.textContent = block.caption;
+              figure.append(caption);
+            }
+            body.append(figure);
+          } else if (block.type === "bilingual" && Array.isArray(block.points)) {
+            const section = document.createElement("section");
+            section.className = "lesson-bilingual-section";
+            if (block.title) {
+              const heading = document.createElement("h5");
+              heading.textContent = block.title;
+              section.append(heading);
+            }
+            block.points.forEach((point) => {
+              const card = document.createElement("div");
+              card.className = "lesson-bilingual-point";
+              if (point.en) {
+                const en = document.createElement("p");
+                en.className = "lesson-point-en";
+                en.textContent = point.en;
+                card.append(en);
+              }
+              if (point.ar) {
+                const ar = document.createElement("p");
+                ar.className = "lesson-point-ar";
+                ar.textContent = point.ar;
+                card.append(ar);
+              }
+              if (point.simple) {
+                const simple = document.createElement("p");
+                simple.className = "lesson-point-simple";
+                simple.textContent = point.simple;
+                card.append(simple);
+              }
+              section.append(card);
+            });
+            body.append(section);
+          } else if (block.type === "heading" || block.type === "subheading") {
             const h = document.createElement(block.type === "heading" ? "h4" : "h5");
             h.textContent = block.text || "";
             body.append(h);
