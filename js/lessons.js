@@ -114,9 +114,15 @@ async function loadLessons(user) {
             section.className = "lesson-bilingual-section";
             if (block.title) {
               const heading = document.createElement("h5");
+              heading.className = "lesson-bilingual-heading";
               heading.textContent = block.title;
               section.append(heading);
             }
+
+            const layout = document.createElement("div");
+            layout.className = "lesson-bilingual-layout";
+            const textColumn = document.createElement("div");
+            textColumn.className = "lesson-bilingual-text";
             block.points.forEach((point) => {
               const card = document.createElement("div");
               card.className = "lesson-bilingual-point";
@@ -138,8 +144,32 @@ async function loadLessons(user) {
                 simple.textContent = point.simple;
                 card.append(simple);
               }
-              section.append(card);
+              textColumn.append(card);
             });
+            layout.append(textColumn);
+
+            if (Array.isArray(block.illustrations) && block.illustrations.length) {
+              const imageColumn = document.createElement("div");
+              imageColumn.className = "lesson-bilingual-illustrations";
+              block.illustrations.forEach((illustration) => {
+                const figure = document.createElement("figure");
+                figure.className = "lesson-content-figure";
+                const img = document.createElement("img");
+                img.src = illustration.url || "";
+                img.alt = illustration.alt || illustration.caption || "Anatomy educational illustration";
+                img.loading = "lazy";
+                img.decoding = "async";
+                figure.append(img);
+                if (illustration.caption) {
+                  const caption = document.createElement("figcaption");
+                  caption.textContent = illustration.caption;
+                  figure.append(caption);
+                }
+                imageColumn.append(figure);
+              });
+              layout.append(imageColumn);
+            }
+            section.append(layout);
             body.append(section);
           } else if (block.type === "heading" || block.type === "subheading") {
             const h = document.createElement(block.type === "heading" ? "h4" : "h5");
