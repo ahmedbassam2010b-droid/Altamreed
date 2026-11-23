@@ -115,6 +115,18 @@
               ]
             },
             {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skeleton-overview.png",
+              "alt": "Human skeleton",
+              "caption": "الهيكل العظمي"
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skull.png",
+              "alt": "Skull",
+              "caption": "الجمجمة"
+            },
+            {
               "type": "bilingual",
               "title": "Upper and Lower Limbs, Thorax and Vertebral Column | الأطراف والقفص الصدري والعمود الفقري",
               "points": [
@@ -144,18 +156,6 @@
                   "simple": "راجع جدول المقارنة الموجود بالكتاب."
                 }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skeleton-overview.png",
-              "alt": "Human skeleton",
-              "caption": "الهيكل العظمي"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/skull.png",
-              "alt": "Skull",
-              "caption": "الجمجمة"
             },
             {
               "type": "image",
@@ -347,6 +347,12 @@
               ]
             },
             {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/heart.png",
+              "alt": "Heart anatomy",
+              "caption": "القلب"
+            },
+            {
               "type": "bilingual",
               "title": "Chambers and Circulations | حجرات القلب والدورات الدموية",
               "points": [
@@ -387,12 +393,6 @@
                   "simple": "التامور يحمي القلب ويقلل الاحتكاك."
                 }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/heart.png",
-              "alt": "Heart anatomy",
-              "caption": "القلب"
             },
             {
               "type": "image",
@@ -446,6 +446,12 @@
               ]
             },
             {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/lymphatic-system.png",
+              "alt": "Lymphatic system",
+              "caption": "الجهاز الليمفاوي"
+            },
+            {
               "type": "bilingual",
               "title": "Spleen and Thymus | الطحال والغدة الزعترية",
               "points": [
@@ -460,12 +466,6 @@
                   "simple": "الغدة الزعترية مرتبطة بنضج الخلايا الليمفاوية."
                 }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/lymphatic-system.png",
-              "alt": "Lymphatic system",
-              "caption": "الجهاز الليمفاوي"
             },
             {
               "type": "image",
@@ -524,6 +524,12 @@
               ]
             },
             {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/nasal-cavity.png",
+              "alt": "Nasal cavity",
+              "caption": "التجويف الأنفي"
+            },
+            {
               "type": "bilingual",
               "title": "Trachea, Bronchi and Lungs | القصبة والشعب والرئتان",
               "points": [
@@ -555,12 +561,6 @@
               "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/respiratory-alveoli.png",
               "alt": "Alveoli",
               "caption": "الحويصلات الهوائية"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/nasal-cavity.png",
-              "alt": "Nasal cavity",
-              "caption": "التجويف الأنفي"
             }
           ]
         }
@@ -606,6 +606,12 @@
                   "simple": "احفظ أجزاء المعدة وأسطحها ونهايتيها."
                 }
               ]
+            },
+            {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/stomach.png",
+              "alt": "Stomach",
+              "caption": "المعدة"
             },
             {
               "type": "bilingual",
@@ -655,12 +661,6 @@
               "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/pancreas.png",
               "alt": "Pancreas",
               "caption": "البنكرياس"
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/stomach.png",
-              "alt": "Stomach",
-              "caption": "المعدة"
             }
           ]
         }
@@ -708,6 +708,12 @@
               ]
             },
             {
+              "type": "image",
+              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/kidneys.png",
+              "alt": "Kidneys",
+              "caption": "الكليتان"
+            },
+            {
               "type": "bilingual",
               "title": "Urinary Bladder and Urethra | المثانة والإحليل",
               "points": [
@@ -722,12 +728,6 @@
                   "simple": "احفظ المقارنة بين إحليل الذكر والأنثى."
                 }
               ]
-            },
-            {
-              "type": "image",
-              "url": "https://raw.githubusercontent.com/ahmedbassam2010b-droid/Altamreed/main/assets/illustrations/anatomy/kidneys.png",
-              "alt": "Kidneys",
-              "caption": "الكليتان"
             },
             {
               "type": "image",
