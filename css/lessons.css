@@ -88,3 +88,77 @@
     flex: 1 1 140px;
   }
 }
+
+
+/* Anatomy: keep each illustration beside the exact explanation it supports. */
+.lesson-bilingual-section {
+  margin-block: 1.25rem;
+  padding: 1rem;
+  border: 1px solid var(--border, #dbe5ef);
+  border-radius: 1rem;
+  background: var(--surface, #fff);
+}
+.lesson-bilingual-heading {
+  margin: 0 0 1rem;
+  color: var(--text, #17324d);
+}
+.lesson-bilingual-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(190px, 0.72fr);
+  gap: 1.1rem;
+  align-items: start;
+  direction: rtl;
+}
+.lesson-bilingual-text,
+.lesson-bilingual-illustrations {
+  min-width: 0;
+}
+.lesson-bilingual-point {
+  margin-block: 0 0.85rem;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  background: var(--surface-soft, #f4f8fc);
+}
+.lesson-bilingual-point:last-child { margin-bottom: 0; }
+.lesson-bilingual-point p { margin: 0 0 0.55rem; }
+.lesson-bilingual-point p:last-child { margin-bottom: 0; }
+.lesson-point-en { color: var(--text, #17324d); }
+.lesson-point-ar { color: var(--text, #243b53); }
+.lesson-point-simple { color: var(--text-muted, #526579); }
+.lesson-bilingual-illustrations {
+  display: grid;
+  gap: 0.85rem;
+  align-content: start;
+}
+.lesson-bilingual-illustrations .lesson-content-figure {
+  margin: 0;
+  padding: 0.55rem;
+  border: 1px solid var(--border, #dbe5ef);
+  border-radius: 0.85rem;
+  background: #fff;
+}
+.lesson-bilingual-illustrations img {
+  display: block;
+  width: 100%;
+  max-height: 280px;
+  margin: 0;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+.lesson-bilingual-illustrations figcaption {
+  padding: 0.45rem 0.2rem 0.1rem;
+  color: var(--text-muted, #526579);
+  font-size: 0.88rem;
+  line-height: 1.6;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .lesson-bilingual-section { padding: 0.7rem; }
+  .lesson-bilingual-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(112px, 0.62fr);
+    gap: 0.55rem;
+  }
+  .lesson-bilingual-point { padding: 0.65rem; }
+  .lesson-bilingual-point p { font-size: 0.9rem; line-height: 1.8; }
+  .lesson-bilingual-illustrations img { max-height: 190px; }
+}
