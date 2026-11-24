@@ -162,3 +162,59 @@
   .lesson-bilingual-point p { font-size: 0.9rem; line-height: 1.8; }
   .lesson-bilingual-illustrations img { max-height: 190px; }
 }
+
+/* Mobile lesson layout: never reserve an empty illustration column. */
+@media (max-width: 700px) {
+  .lesson-bilingual-section {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 0.85rem;
+    border-radius: 1rem;
+  }
+
+  .lesson-bilingual-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.9rem;
+  }
+
+  .lesson-bilingual-text,
+  .lesson-bilingual-illustrations {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .lesson-bilingual-point {
+    padding: 0.9rem;
+    border-radius: 0.85rem;
+  }
+
+  .lesson-bilingual-point p {
+    font-size: 1rem;
+    line-height: 1.9;
+    overflow-wrap: anywhere;
+  }
+
+  .lesson-bilingual-illustrations {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.75rem;
+    margin-top: 0.1rem;
+  }
+
+  .lesson-bilingual-illustrations .lesson-content-figure {
+    width: 100%;
+    padding: 0.7rem;
+  }
+
+  .lesson-bilingual-illustrations img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: contain;
+  }
+}
+
+@media (min-width: 701px) {
+  .lesson-bilingual-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(220px, 0.78fr);
+    gap: 1.25rem;
+  }
+}
