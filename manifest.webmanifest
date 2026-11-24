@@ -1,0 +1,27 @@
+{
+  "name": "بوابة التمريض | Bawabet Al Tamreed",
+  "short_name": "بوابة التمريض",
+  "description": "منصتك التعليمية للتمريض",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f5f8ff",
+  "theme_color": "#123b5a",
+  "icons": [
+    {
+      "src": "/assets/images/logo.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/favicon.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
