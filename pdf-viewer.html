@@ -8,7 +8,7 @@
 <style>
 *{box-sizing:border-box}body{margin:0;background:#eef3fa;color:#142943;font-family:Arial,Tahoma,sans-serif}.top{position:sticky;top:0;z-index:5;background:#0b2348;color:#fff;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;box-shadow:0 3px 14px #102d4a22}.title{font-weight:800;font-size:16px}.actions{display:flex;gap:8px;align-items:center;flex-wrap:wrap}button,.back{border:0;border-radius:9px;padding:9px 13px;background:#16a6a0;color:#fff;font-weight:700;cursor:pointer;text-decoration:none;font-size:14px}.back{background:#fff;color:#0b2348}.status{text-align:center;padding:20px;color:#52657b}.pages{width:min(100%,980px);margin:18px auto;padding:0 12px;display:grid;gap:16px}.page{display:block;width:100%;max-width:100%;height:auto;background:#fff;box-shadow:0 4px 22px #17395d18;border-radius:5px;overflow:hidden}.page canvas{display:block;width:100%;height:auto}.error{color:#a52222;background:#fff;padding:16px;border-radius:12px;margin:20px auto;max-width:800px;line-height:1.8}
 </style>
-</head>
+<link rel="manifest" href="/manifest.webmanifest"><meta name="theme-color" content="#123b5a"><script src="/js/pwa.js" defer></script></head>
 <body>
 <header class="top"><div class="title" id="docTitle">عارض ملفات بوابة التمريض</div><div class="actions"><button id="prev">السابق</button><span id="pageInfo">—</span><button id="next">التالي</button><button id="zoomOut">−</button><button id="zoomIn">+</button><a class="back" href="library">العودة للملخصات والملفات</a></div></header>
 <div class="status" id="status">جاري تحميل الملف...</div><main class="pages" id="pages"></main>
