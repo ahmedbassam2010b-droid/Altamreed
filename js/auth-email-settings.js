@@ -6,5 +6,5 @@ import { auth } from "./config.js";
 auth.languageCode = "ar";
 
 export const emailActionSettings = {
-  url: "https://bawabet-altamreed.com/login.html?emailAction=complete"
+  url: "https://bawabet-altamreed.com/login?emailAction=complete"
 };

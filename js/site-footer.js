@@ -6,12 +6,12 @@
     const isNested = window.location.pathname.includes("/simulations/");
     const prefix = isNested ? "../" : "";
     const links = [
-      ["من نحن", "about.html"],
-      ["المؤسس والمطور", "founder.html"],
-      ["تواصل معنا", "contact.html"],
-      ["الأسئلة الشائعة", "faq.html"],
-      ["سياسة الخصوصية", "privacy.html"],
-      ["شروط الاستخدام", "terms.html"]
+      ["من نحن", "about"],
+      ["المؤسس والمطور", "founder"],
+      ["تواصل معنا", "contact"],
+      ["الأسئلة الشائعة", "faq"],
+      ["سياسة الخصوصية", "privacy"],
+      ["شروط الاستخدام", "terms"]
     ];
     const style = document.createElement("style");
     style.id = "bawabet-official-footer-style";

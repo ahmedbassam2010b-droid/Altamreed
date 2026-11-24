@@ -16,11 +16,11 @@ function showMessage(text, type = "error") {
 onAuthStateChanged(auth, user => {
   currentUser = user;
   if (!user) {
-    window.location.replace("login.html");
+    window.location.replace("login");
     return;
   }
   if (user.emailVerified) {
-    window.location.replace("dashboard.html");
+    window.location.replace("dashboard");
     return;
   }
   emailLabel.textContent = "رسالة التأكيد مُرسلة إلى: " + (user.email || "بريدك الإلكتروني");
@@ -34,7 +34,7 @@ checkButton.addEventListener("click", async () => {
     currentUser = auth.currentUser;
     if (currentUser.emailVerified) {
       showMessage("تم تأكيد البريد بنجاح. جاري فتح المنصة...", "success");
-      window.location.replace("dashboard.html");
+      window.location.replace("dashboard");
     } else {
       showMessage("لم يتم رصد التأكيد حتى الآن. افتح رابط الرسالة أولًا ثم أعد المحاولة.");
     }
@@ -53,7 +53,7 @@ resendButton.addEventListener("click", async () => {
     await reload(currentUser);
     currentUser = auth.currentUser;
     if (currentUser.emailVerified) {
-      window.location.replace("dashboard.html");
+      window.location.replace("dashboard");
       return;
     }
     await sendEmailVerification(currentUser, emailActionSettings);
