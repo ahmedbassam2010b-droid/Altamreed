@@ -92,7 +92,7 @@ async function handleSignedInUser(user) {
   if (isPasswordAccount && !user.emailVerified) return;
   const snap = await getDoc(doc(db, "users", user.uid));
   if (snap.exists() && snap.data().gradeId) {
-    window.location.replace("dashboard.html");
+    window.location.replace("dashboard");
     return;
   }
   currentGoogleUser = user;
@@ -129,7 +129,7 @@ if (form) {
       await saveStudentProfile(credential.user, gradeId, fullName);
       await sendEmailVerification(credential.user, emailActionSettings);
       showMessage("تم إنشاء الحساب. أرسلنا رسالة تأكيد إلى بريدك الإلكتروني.", "success");
-      window.location.replace("verify-email.html");
+      window.location.replace("verify-email");
     } catch (error) {
       console.error("Registration error:", error);
       showMessage(error.message === "INVALID_GRADE" ? "الصف المختار غير متاح." :
@@ -174,7 +174,7 @@ if (saveGoogleGradeButton) {
     try {
       await saveStudentProfile(currentGoogleUser, gradeId);
       showMessage("تم حفظ الصف الدراسي. جاري فتح المنصة...", "success");
-      window.location.replace("dashboard.html");
+      window.location.replace("dashboard");
     } catch (error) {
       console.error("Google profile setup failed:", error);
       showMessage(error.message === "GRADE_ALREADY_ASSIGNED" ? "هذا الحساب مرتبط بصف دراسي بالفعل." : "تعذر حفظ الصف. راجع صلاحيات Firestore.");

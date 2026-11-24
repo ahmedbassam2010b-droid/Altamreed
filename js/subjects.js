@@ -40,7 +40,7 @@ function renderSubject(subjectId, data) {
   term.textContent = data.term || "";
 
   const link = document.createElement("a");
-  link.href = `subject.html?id=${encodeURIComponent(subjectId)}`;
+  link.href = `subject?id=${encodeURIComponent(subjectId)}`;
   link.textContent = "عرض المادة";
 
   card.append(title, description, grade, term, link);
@@ -56,7 +56,7 @@ async function loadSubjects(user) {
   try {
     const profile = await getDoc(doc(db, "users", user.uid));
     const gradeId = profile.exists() ? profile.data().gradeId : "";
-    if (!gradeId) { window.location.replace("register.html"); return; }
+    if (!gradeId) { window.location.replace("register"); return; }
     const subjectsQuery = query(
       collection(db, "subjects"),
       where("published", "==", true),
@@ -94,7 +94,7 @@ async function loadSubjects(user) {
 
 onAuthStateChanged(auth, (user) => {
   if (!user) {
-    window.location.replace("login.html");
+    window.location.replace("login");
     return;
   }
 

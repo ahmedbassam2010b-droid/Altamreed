@@ -53,7 +53,7 @@ async function ensureStudentProfile(user) {
 // Protect authenticated pages and initialize the student's own profile.
 onAuthStateChanged(auth, async (user) => {
   if (!user) {
-    window.location.replace("login.html");
+    window.location.replace("login");
     return;
   }
 
@@ -83,7 +83,7 @@ if (logoutButton) {
 
     try {
       await signOut(auth);
-      window.location.replace("login.html");
+      window.location.replace("login");
     } catch (error) {
       console.error("Logout error:", error);
       logoutButton.disabled = false;

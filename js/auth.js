@@ -57,7 +57,7 @@ if (new URLSearchParams(window.location.search).get("verify") === "1") {
 onAuthStateChanged(auth, (user) => {
   if (!user) return;
   if (user.emailVerified) {
-    window.location.replace("dashboard.html");
+    window.location.replace("dashboard");
     return;
   }
   showMessage("البريد الإلكتروني لم يتم تأكيده بعد. افتح رسالة التحقق المرسلة إليك قبل الدخول.", "error");
@@ -72,7 +72,7 @@ if (resendVerificationButton) {
     try {
       await reload(user);
       if (auth.currentUser.emailVerified) {
-        window.location.replace("dashboard.html");
+        window.location.replace("dashboard");
         return;
       }
       await sendEmailVerification(auth.currentUser, emailActionSettings);
@@ -113,7 +113,7 @@ if (loginForm) {
         return;
       }
       showMessage("تم تسجيل الدخول بنجاح.", "success");
-      window.location.replace("dashboard.html");
+      window.location.replace("dashboard");
     } catch (error) {
       console.error("Login error:", error);
       showMessage(getArabicError(error.code));
