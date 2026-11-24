@@ -40,7 +40,7 @@ async function loadLessons(user) {
   try {
     const profile = await getDoc(doc(db, "users", user.uid));
     const gradeId = profile.exists() ? profile.data().gradeId : "";
-    if (!gradeId) { window.location.replace("register.html"); return; }
+    if (!gradeId) { window.location.replace("register"); return; }
     const subjectSnapshot = await getDoc(doc(db, "subjects", subjectId));
     if (!subjectSnapshot.exists() || subjectSnapshot.data().published !== true || subjectSnapshot.data().gradeId !== gradeId) {
       showMessage("المادة غير موجودة أو لم تعد منشورة.");
@@ -218,7 +218,7 @@ async function loadLessons(user) {
 
 onAuthStateChanged(auth, (user) => {
   if (!user) {
-    window.location.replace("login.html");
+    window.location.replace("login");
     return;
   }
 
