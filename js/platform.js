@@ -85,19 +85,55 @@ async function chapter(){
 function appendLessonBlock(parent,block){
  const type=block.type||"paragraph";
  if(type==="bilingual"){
-  const section=el("section","lesson-bilingual-block");
-  if(block.title)section.append(el("h3","lesson-bilingual-title",block.title));
-  (block.points||[]).forEach((point,index)=>{
-   const item=el("article","lesson-bilingual-point"),copy=el("div","lesson-point-copy"),en=el("div","lesson-bilingual-en"),ar=el("div","lesson-bilingual-ar"),simple=el("div","lesson-bilingual-simple");
-   en.append(el("span","lesson-language-label","ENGLISH • KEY IDEA"),el("p","",point.en||""));
-   ar.append(el("span","lesson-language-label","الترجمة العربية"),el("p","",point.ar||""));
-   simple.append(el("span","lesson-language-label","ببساطة"),el("p","",point.simple||""));
-   copy.append(en,ar,simple);
-   item.append(el("span","lesson-point-number",String(index+1).padStart(2,"0")),copy);
-   if(point.visual?.imageUrl){const fig=el("figure","lesson-point-visual"),img=el("img","");try{const imageUrl=new URL(point.visual.imageUrl,location.href);if(imageUrl.protocol==="https:"&&imageUrl.origin===location.origin){img.src=imageUrl.href;img.alt=point.visual.alt||point.visual.title||"رسم تعليمي";img.loading="lazy";img.decoding="async";img.addEventListener("error",()=>{fig.classList.add("is-missing");fig.append(el("p","lesson-image-fallback","تعذّر تحميل الصورة التعليمية لهذا الجزء."));},{once:true});fig.append(img);if(point.visual.title)fig.append(el("h4","lesson-point-visual-title",point.visual.title));if(point.visual.caption)fig.append(el("figcaption","",point.visual.caption));item.append(fig);}}catch(error){console.warn("Skipped an invalid point illustration URL.");}}
-   section.append(item);
+  const section=el("section","lesson-bilingual-section");
+  if(block.title)section.append(el("h3","lesson-bilingual-heading",block.title));
+  const layout=el("div","lesson-bilingual-layout");
+  const textColumn=el("div","lesson-bilingual-text");
+  (Array.isArray(block.points)?block.points:[]).forEach((point,index)=>{
+   const item=el("article","lesson-bilingual-point");
+   item.append(el("span","lesson-point-number",String(index+1).padStart(2,"0")));
+   if(point.en)item.append(el("p","lesson-point-en",point.en));
+   if(point.ar)item.append(el("p","lesson-point-ar",point.ar));
+   if(point.simple)item.append(el("p","lesson-point-simple",point.simple));
+   if(point.visual?.imageUrl){
+    const visual=point.visual;
+    try{
+     const url=new URL(visual.imageUrl,location.href);
+     if(url.protocol==="https:"){
+      const fig=el("figure","lesson-content-figure"),img=el("img","");
+      img.src=url.href;img.alt=visual.alt||visual.title||"رسم تعليمي";
+      img.loading="lazy";img.decoding="async";img.referrerPolicy="no-referrer";
+      fig.append(img);
+      if(visual.title)fig.append(el("h4","lesson-point-visual-title",visual.title));
+      if(visual.caption)fig.append(el("figcaption","",visual.caption));
+      img.addEventListener("error",()=>{img.hidden=true;fig.append(el("p","lesson-image-fallback","تعذّر تحميل الصورة التعليمية لهذا الجزء."));},{once:true});
+      item.append(fig);
+     }
+    }catch(error){console.warn("Skipped an invalid point illustration URL.",error);}
+   }
+   textColumn.append(item);
   });
-  parent.append(section);return;
+  layout.append(textColumn);
+  const illustrations=Array.isArray(block.illustrations)?block.illustrations:[];
+  if(illustrations.length){
+   const imageColumn=el("div","lesson-bilingual-illustrations");
+   illustrations.forEach(illustration=>{
+    if(!illustration||typeof illustration.url!=="string")return;
+    try{
+     const url=new URL(illustration.url,location.href);
+     if(url.protocol!=="https:")return;
+     const fig=el("figure","lesson-content-figure"),img=el("img","");
+     img.src=url.href;img.alt=illustration.alt||illustration.caption||"صورة تعليمية";
+     img.loading="lazy";img.decoding="async";img.referrerPolicy="no-referrer";
+     fig.append(img);
+     if(illustration.caption)fig.append(el("figcaption","",illustration.caption));
+     img.addEventListener("error",()=>{img.hidden=true;fig.append(el("p","lesson-image-fallback","تعذّر تحميل الصورة التعليمية. أعد المحاولة لاحقًا."));},{once:true});
+     imageColumn.append(fig);
+    }catch(error){console.warn("Skipped an invalid bilingual illustration URL.",error);}
+   });
+   if(imageColumn.childElementCount)layout.append(imageColumn);
+  }
+  section.append(layout);parent.append(section);return;
  }
  if(type==="visual"){
   const fig=el("figure","lesson-focus-visual"),img=el("img",""),imageUrl=new URL(block.imageUrl||"",location.href);
@@ -108,7 +144,7 @@ function appendLessonBlock(parent,block){
  }
  if(type==="heading"||type==="subheading"){parent.append(el(type==="heading"?"h2":"h3","lesson-block-heading",block.text||""));return;}
  if(type==="paragraph"){parent.append(el("p","lesson-block-paragraph",block.text||""));return;}
- if(type==="image"){try{const imageUrl=new URL(block.url||"");if(imageUrl.protocol!=="https:")return;const fig=el("figure","lesson-figure"),img=el("img","");img.src=imageUrl.href;img.alt=block.alt||block.caption||"صورة تعليمية";img.loading="lazy";img.referrerPolicy="no-referrer";fig.append(img);if(block.caption)fig.append(el("figcaption","",block.caption));parent.append(fig);}catch(error){console.warn("Skipped an invalid lesson image URL.");}return;}
+ if(type==="image"){try{const imageUrl=new URL(block.url||"");if(imageUrl.protocol!=="https:")return;const fig=el("figure","lesson-figure"),img=el("img","");img.src=imageUrl.href;img.alt=block.alt||block.caption||"صورة تعليمية";img.loading="lazy";img.referrerPolicy="no-referrer";fig.append(img);if(block.caption)fig.append(el("figcaption","",block.caption));img.addEventListener("error",()=>{img.hidden=true;fig.append(el("p","lesson-image-fallback","تعذّر تحميل الصورة التعليمية."));},{once:true});parent.append(fig);}catch(error){console.warn("Skipped an invalid lesson image URL.");}return;}
  if(type==="illustrated"){try{
   const imageUrl=new URL(block.imageUrl||"",location.href);if(imageUrl.protocol!=="https:"||imageUrl.origin!==location.origin)throw new Error("Only same-origin HTTPS lesson images are allowed");
   const section=el("section","lesson-illustrated-block"),copy=el("div","lesson-illustrated-copy"),fig=el("figure","lesson-illustrated-figure"),img=el("img","lesson-inline-svg");
@@ -118,7 +154,7 @@ function appendLessonBlock(parent,block){
   img.onerror=()=>{img.classList.add("lesson-visual-error");img.alt="تعذر تحميل الرسم التوضيحي";};
   fig.append(img);if(block.caption)fig.append(el("figcaption","",block.caption));section.append(copy,fig);parent.append(section);
  }catch(error){console.warn("Skipped invalid lesson illustration.",error);}return;}
-if(type==="keypoint"||type==="warning"){const box=el("aside",type==="warning"?"lesson-callout is-warning":"lesson-callout is-keypoint");box.append(el("strong","",block.title||(type==="warning"?"تنبيه":"نقطة مهمة")),el("p","",block.text||""));parent.append(box);return;}
+ if(type==="keypoint"||type==="warning"){const box=el("aside",type==="warning"?"lesson-callout is-warning":"lesson-callout is-keypoint");box.append(el("strong","",block.title||(type==="warning"?"تنبيه":"نقطة مهمة")),el("p","",block.text||""));parent.append(box);return;}
  if(type==="list"){const list=el("ul","lesson-block-list");(block.items||[]).forEach(item=>list.append(el("li","",item)));parent.append(list);return;}
  if(type==="table"){const wrap=el("div","lesson-table-wrap"),table=el("table","lesson-content-table");(Array.isArray(block.rows)?block.rows:[]).forEach((row,i)=>{const tr=el("tr"),cells=Array.isArray(row)?row:(Array.isArray(row?.cells)?row.cells:[]);cells.forEach(cell=>tr.append(el(i===0?"th":"td","",cell)));table.append(tr);});wrap.append(table);parent.append(wrap);return;}
  if(type==="divider")parent.append(el("hr","lesson-divider"));
