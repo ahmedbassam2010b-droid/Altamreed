@@ -9,6 +9,21 @@
     /safari/i.test(navigator.userAgent) &&
     !/crios|fxios|edgios|opios/i.test(navigator.userAgent);
 
+  async function isPwaInstalled() {
+    if (isStandalone()) return true;
+    if (typeof navigator.getInstalledRelatedApps !== 'function') return false;
+    try {
+      const apps = await navigator.getInstalledRelatedApps();
+      return apps.some(app =>
+        app.platform === 'webapp' &&
+        (app.url === new URL('/manifest.webmanifest', location.origin).href ||
+         app.id === 'https://bawabet-altamreed.com/')
+      );
+    } catch (_) {
+      return false;
+    }
+  }
+
   function addApplePwaMetadata() {
     const addMeta = (name, content) => {
       let tag = document.querySelector('meta[name="' + name + '"]');
@@ -147,7 +162,7 @@
   }
 
   async function startNativeInstall() {
-    if (isStandalone()) {
+    if (await isPwaInstalled()) {
       makeOverlay();
       showInstalledState();
       return;
@@ -171,10 +186,12 @@
     // within the user's click gesture. Do not wait for fake preparation progress.
     if (!installPrompt) {
       el('biTitle').textContent = 'التثبيت غير متاح حاليًا';
-      el('biIntro').textContent = 'لم يوفّر Chrome نافذة التثبيت لهذه الزيارة. لا يمكن للموقع إجبار المتصفح على إظهارها.';
+      el('biIntro').textContent = 'لم يرسل المتصفح نافذة التثبيت، ولم نتمكن من التأكد أن التطبيق مثبت على هذا الجهاز.';
       el('biProgressArea').classList.add('bi-hidden');
-      el('biManualArea').classList.remove('bi-hidden');
-      setPlatformInstructions(root);
+      el('biManualArea').classList.add('bi-hidden');
+      el('biInstall').classList.add('bi-hidden');
+      el('biPendingArea').classList.remove('bi-hidden');
+      el('biPendingArea').innerHTML = '<p>جرّب فتح الموقع من المتصفح المدعوم للتثبيت.</p>';
       return;
     }
 
@@ -249,8 +266,8 @@
   function showInstalledState() {
     if (!overlay) makeOverlay();
     const el = id => overlay.querySelector('#' + id);
-    el('biTitle').textContent = 'تم فتح التطبيق المثبّت';
-    el('biIntro').textContent = 'أنت الآن تستخدم بوابة التمريض كتطبيق مستقل على جهازك.';
+    el('biTitle').textContent = 'التطبيق مثبت بالفعل على جهازك';
+    el('biIntro').textContent = 'ارجع إلى الشاشة الرئيسية في الموبايل أو قائمة التطبيقات وابحث عن «بوابة التمريض» وهتلاقيها نزلت هناك.';
     el('biProgressArea').classList.add('bi-hidden');
     el('biManualArea').classList.add('bi-hidden');
     el('biPendingArea').classList.add('bi-hidden');
@@ -288,7 +305,7 @@
     if (installButton) installButton.remove();
     if (!overlay) return;
     const el = id => overlay.querySelector('#' + id);
-    el('biTitle').textContent = 'تم تثبيت بوابة التمريض';
+    el('biTitle').textContent = 'التطبيق مثبت بالفعل على جهازك';
     el('biIntro').textContent = 'ارجع إلى الشاشة الرئيسية في الموبايل أو قائمة التطبيقات وابحث عن «بوابة التمريض» وهتلاقيها نزلت هناك.';
     el('biProgressArea').classList.add('bi-hidden');
     el('biManualArea').classList.add('bi-hidden');
