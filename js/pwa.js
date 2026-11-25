@@ -11,14 +11,15 @@
 
   async function isPwaInstalled() {
     if (isStandalone()) return true;
+    try {
+      if (localStorage.getItem('bawabet_pwa_install_confirmed') === '1') return true;
+    } catch (_) {}
     if (typeof navigator.getInstalledRelatedApps !== 'function') return false;
     try {
       const apps = await navigator.getInstalledRelatedApps();
-      return apps.some(app =>
-        app.platform === 'webapp' &&
-        (app.url === new URL('/manifest.webmanifest', location.origin).href ||
-         app.id === 'https://bawabet-altamreed.com/')
-      );
+      // This manifest declares exactly one related web app: Bawabet Al Tamreed.
+      // Do not compare id/url strictly: Chrome may normalize either value.
+      return apps.some(app => app.platform === 'webapp');
     } catch (_) {
       return false;
     }
@@ -302,6 +303,7 @@
 
   window.addEventListener('appinstalled', () => {
     installAccepted = true;
+    try { localStorage.setItem('bawabet_pwa_install_confirmed', '1'); } catch (_) {}
     if (installButton) installButton.remove();
     if (!overlay) return;
     const el = id => overlay.querySelector('#' + id);
