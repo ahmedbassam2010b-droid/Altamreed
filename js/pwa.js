@@ -2,6 +2,33 @@
   const isStandalone = () =>
     window.matchMedia('(display-mode: standalone)').matches ||
     window.navigator.standalone === true;
+  const isIOS = () =>
+    /iphone|ipad|ipod/i.test(navigator.userAgent) ||
+    (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const isSafari = () =>
+    /safari/i.test(navigator.userAgent) &&
+    !/crios|fxios|edgios|opios/i.test(navigator.userAgent);
+
+  function addApplePwaMetadata() {
+    const addMeta = (name, content) => {
+      let tag = document.querySelector('meta[name="' + name + '"]');
+      if (!tag) {
+        tag = document.createElement('meta');
+        tag.name = name;
+        document.head.appendChild(tag);
+      }
+      tag.content = content;
+    };
+    addMeta('apple-mobile-web-app-capable', 'yes');
+    addMeta('apple-mobile-web-app-status-bar-style', 'default');
+    addMeta('apple-mobile-web-app-title', 'بوابة التمريض');
+    if (!document.querySelector('link[rel="apple-touch-icon"]')) {
+      const icon = document.createElement('link');
+      icon.rel = 'apple-touch-icon';
+      icon.href = '/assets/images/logo.png';
+      document.head.appendChild(icon);
+    }
+  }
 
   let installPrompt = null;
   let installButton = null;
@@ -57,13 +84,9 @@
           <div class="bi-status" id="biStatus">جاري تجهيز ملفات المنصة...</div>
         </div>
         <div id="biManualArea" class="bi-hidden">
-          <p>Chrome لم يرسل نافذة التثبيت التلقائي لهذه الصفحة. ثبّت التطبيق من قائمة المتصفح:</p>
-          <div class="bi-steps">
-            <b>1.</b> اضغط على قائمة Chrome (⋮) أعلى الشاشة.<br>
-            <b>2.</b> اختر <b>«تثبيت التطبيق»</b>، أو <b>«إضافة إلى الشاشة الرئيسية»</b> إذا كان هذا هو الخيار الظاهر.<br>
-            <b>3.</b> اضغط <b>«تثبيت»</b> أو <b>«إضافة»</b> لتأكيد العملية.
-          </div>
-          <p>لن تظهر رسالة اكتمال التثبيت إلا بعد أن يؤكد Chrome تثبيت التطبيق بالفعل.</p>
+          <p id="biManualIntro">اتبع خطوات التثبيت المناسبة لمتصفحك:</p>
+          <div class="bi-steps" id="biManualSteps"></div>
+          <p id="biManualNote">بعد الإضافة، ابحث عن أيقونة بوابة التمريض على جهازك.</p>
         </div>
         <div id="biSuccessArea" class="bi-hidden">
           <div class="bi-check">✓</div>
@@ -84,6 +107,7 @@
     el('biManual').addEventListener('click', () => {
       el('biManualArea').classList.toggle('bi-hidden');
     });
+    setPlatformInstructions(overlay);
     el('biInstall').addEventListener('click', async () => {
       if (!installPrompt) {
         el('biManualArea').classList.remove('bi-hidden');
@@ -171,8 +195,31 @@
     }
   }
 
+  function setPlatformInstructions(root) {
+    const ios = isIOS();
+    const intro = root.querySelector('#biManualIntro');
+    const steps = root.querySelector('#biManualSteps');
+    const note = root.querySelector('#biManualNote');
+    if (ios) {
+      intro.textContent = isSafari()
+        ? 'لتثبيت بوابة التمريض على الآيفون، اتبع الخطوات التالية من Safari:'
+        : 'لتثبيت بوابة التمريض على الآيفون، افتح هذا الموقع أولًا في متصفح Safari:';
+      steps.innerHTML = isSafari()
+        ? '<b>1.</b> اضغط زر المشاركة في Safari (مربع وسهم لأعلى).<br><b>2.</b> مرّر القائمة واختر <b>«إضافة إلى الشاشة الرئيسية»</b>.<br><b>3.</b> اضغط <b>«إضافة»</b> أعلى الشاشة.'
+        : '<b>1.</b> افتح الرابط في Safari.<br><b>2.</b> اضغط زر المشاركة.<br><b>3.</b> اختر «إضافة إلى الشاشة الرئيسية» ثم «إضافة».';
+      note.textContent = 'بعد الإضافة ستظهر أيقونة بوابة التمريض على شاشة الآيفون الرئيسية. افتحها منها لاستخدام التطبيق.';
+      root.querySelector('#biManual').textContent = 'عرض خطوات التثبيت على iPhone';
+    } else {
+      intro.textContent = 'لتثبيت بوابة التمريض على Android من Google Chrome:';
+      steps.innerHTML = '<b>1.</b> افتح قائمة Chrome (⋮).<br><b>2.</b> اختر <b>«تثبيت التطبيق»</b> أو <b>«إضافة إلى الشاشة الرئيسية»</b>.<br><b>3.</b> اضغط <b>«تثبيت»</b> أو <b>«إضافة»</b> للتأكيد.';
+      note.textContent = 'بعد التثبيت، ابحث عن أيقونة بوابة التمريض في الشاشة الرئيسية أو قائمة التطبيقات.';
+      root.querySelector('#biManual').textContent = 'عرض خطوات التثبيت على Android';
+    }
+  }
+
   function revealNextStep() {
     if (!overlay || isStandalone()) return;
+    setPlatformInstructions(overlay);
     const el = id => overlay.querySelector('#' + id);
     if (installPrompt) {
       el('biInstall').classList.remove('bi-hidden');
@@ -238,6 +285,7 @@
     el('biManualArea').classList.add('bi-hidden');
   });
 
+  addApplePwaMetadata();
   registerWorker();
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', addInstallButton, { once: true });
