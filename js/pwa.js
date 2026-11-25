@@ -90,8 +90,8 @@
         </div>
         <div id="biSuccessArea" class="bi-hidden">
           <div class="bi-check">✓</div>
-          <h2>تم تثبيت التطبيق</h2>
-          <p>أصبحت بوابة التمريض مثبتة على جهازك. افتح أيقونة «بوابة التمريض» من الشاشة الرئيسية أو قائمة التطبيقات.</p>
+          <h2>تم تثبيت التطبيق بنجاح</h2>
+          <p>ارجع إلى الشاشة الرئيسية في الموبايل أو قائمة التطبيقات وابحث عن «بوابة التمريض» وهتلاقيها نزلت هناك.</p>
         </div>
         <div id="biPendingArea" class="bi-hidden">
           <p>وافقت على طلب التثبيت. ننتظر تأكيد Chrome لإتمام التثبيت؛ لن نعرض رسالة النجاح قبل وصول التأكيد.</p>
@@ -289,7 +289,7 @@
     if (!overlay) return;
     const el = id => overlay.querySelector('#' + id);
     el('biTitle').textContent = 'تم تثبيت بوابة التمريض';
-    el('biIntro').textContent = 'أكد Chrome اكتمال تثبيت التطبيق على جهازك.';
+    el('biIntro').textContent = 'ارجع إلى الشاشة الرئيسية في الموبايل أو قائمة التطبيقات وابحث عن «بوابة التمريض» وهتلاقيها نزلت هناك.';
     el('biProgressArea').classList.add('bi-hidden');
     el('biManualArea').classList.add('bi-hidden');
     el('biPendingArea').classList.add('bi-hidden');
