@@ -23,5 +23,13 @@
       "type": "image/png",
       "purpose": "any"
     }
+  ],
+  "id": "https://bawabet-altamreed.com/",
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "/manifest.webmanifest",
+      "id": "https://bawabet-altamreed.com/"
+    }
   ]
 }
