@@ -146,52 +146,65 @@
     overlay = null;
   }
 
-  async function prepareInCurrentPage() {
-    const root = makeOverlay();
-    const el = id => root.querySelector('#' + id);
-
+  async function startNativeInstall() {
     if (isStandalone()) {
+      makeOverlay();
       showInstalledState();
       return;
     }
-    if (prepared) {
-      revealNextStep();
+
+    const root = makeOverlay();
+    const el = id => root.querySelector('#' + id);
+
+    // iOS does not expose a programmatic install prompt. The only supported
+    // route is Safari's Share > Add to Home Screen flow.
+    if (isIOS()) {
+      el('biTitle').textContent = 'إضافة بوابة التمريض إلى iPhone';
+      el('biIntro').textContent = 'على iPhone، تتم الإضافة من Safari مباشرةً.';
+      el('biProgressArea').classList.add('bi-hidden');
+      el('biManualArea').classList.remove('bi-hidden');
+      setPlatformInstructions(root);
       return;
     }
 
-    let completed = 0;
-    const total = assetsToPrepare.length;
-    const cacheName = 'bawabet-static-v4';
-    const update = () => {
-      const value = Math.round(completed / total * 100);
-      el('biPercent').textContent = value + '%';
-      el('biFill').style.width = value + '%';
-      el('biStatus').textContent = 'تم تجهيز ' + completed + ' من ' + total + ' ملفات المنصة';
-    };
+    // On supported Android browsers, invoke the native prompt immediately
+    // within the user's click gesture. Do not wait for fake preparation progress.
+    if (!installPrompt) {
+      el('biTitle').textContent = 'التثبيت غير متاح حاليًا';
+      el('biIntro').textContent = 'لم يوفّر Chrome نافذة التثبيت لهذه الزيارة. لا يمكن للموقع إجبار المتصفح على إظهارها.';
+      el('biProgressArea').classList.add('bi-hidden');
+      el('biManualArea').classList.remove('bi-hidden');
+      setPlatformInstructions(root);
+      return;
+    }
+
+    const promptEvent = installPrompt;
+    installPrompt = null;
+    el('biTitle').textContent = 'تثبيت بوابة التمريض';
+    el('biIntro').textContent = 'أكّد التثبيت في نافذة Chrome التي ظهرت.';
+    el('biProgressArea').classList.add('bi-hidden');
+    el('biManualArea').classList.add('bi-hidden');
+    el('biInstall').classList.add('bi-hidden');
 
     try {
-      const cache = await caches.open(cacheName);
-      for (const path of assetsToPrepare) {
-        try {
-          const response = await fetch(path, { cache: 'reload' });
-          if (response.ok) await cache.put(path, response.clone());
-        } catch (_) {
-          // An optional asset failure does not mean that the PWA was installed.
-        }
-        completed++;
-        update();
+      await promptEvent.prompt();
+      const choice = await promptEvent.userChoice;
+      if (choice && choice.outcome === 'accepted') {
+        installAccepted = true;
+        el('biTitle').textContent = 'جارٍ إكمال التثبيت';
+        el('biIntro').textContent = 'وافقْت على التثبيت. ننتظر تأكيد Chrome؛ لا نعرض النجاح قبل وصوله.';
+        el('biPendingArea').classList.remove('bi-hidden');
+        el('biPendingArea').innerHTML = '<p>جارٍ انتظار تأكيد المتصفح لإتمام تثبيت بوابة التمريض...</p>';
+      } else {
+        el('biTitle').textContent = 'لم يتم التثبيت';
+        el('biIntro').textContent = 'تم إلغاء نافذة التثبيت. يمكنك الضغط على زر التثبيت للمحاولة مرة أخرى.';
+        el('biInstall').textContent = 'المحاولة مرة أخرى';
+        el('biInstall').classList.remove('bi-hidden');
+        installPrompt = promptEvent;
       }
-      prepared = true;
-      el('biTitle').textContent = 'ملفات المنصة جاهزة';
-      el('biIntro').textContent = 'اكتمل تجهيز الملفات. الخطوة التالية هي تثبيت التطبيق من Chrome.';
-      el('biStatus').textContent = 'اكتمل تجهيز الملفات — لم يتم تثبيت التطبيق بعد.';
-      revealNextStep();
     } catch (_) {
-      prepared = true;
-      el('biTitle').textContent = 'جاهز لخطوة التثبيت';
-      el('biIntro').textContent = 'تعذر تخزين بعض الملفات، لكن يمكنك متابعة تعليمات التثبيت من Chrome.';
-      el('biStatus').textContent = 'التجهيز الجزئي اكتمل — لم يتم تثبيت التطبيق بعد.';
-      revealNextStep();
+      el('biTitle').textContent = 'تعذر بدء التثبيت';
+      el('biIntro').textContent = 'لم يتمكن Chrome من فتح نافذة التثبيت. حدّث الصفحة وحاول مرة أخرى.';
     }
   }
 
@@ -259,7 +272,7 @@
       background: '#123b5a', color: '#fff', font: '700 14px system-ui',
       boxShadow: '0 6px 22px rgba(0,0,0,.22)', cursor: 'pointer'
     });
-    btn.addEventListener('click', prepareInCurrentPage);
+    btn.addEventListener('click', startNativeInstall);
     document.body.appendChild(btn);
     installButton = btn;
   }
@@ -267,7 +280,7 @@
   window.addEventListener('beforeinstallprompt', event => {
     event.preventDefault();
     installPrompt = event;
-    if (overlay && prepared) revealNextStep();
+    // The native prompt is launched directly from the install button click.
   });
 
   window.addEventListener('appinstalled', () => {
@@ -275,14 +288,14 @@
     if (installButton) installButton.remove();
     if (!overlay) return;
     const el = id => overlay.querySelector('#' + id);
+    el('biTitle').textContent = 'تم تثبيت بوابة التمريض';
+    el('biIntro').textContent = 'أكد Chrome اكتمال تثبيت التطبيق على جهازك.';
     el('biProgressArea').classList.add('bi-hidden');
-    el('biInstall').classList.add('bi-hidden');
-    el('biPendingArea').classList.remove('bi-hidden');
-    el('biManualArea').classList.remove('bi-hidden');
-    el('biTitle').textContent = 'طلب التثبيت اكتمل في Chrome';
-    el('biIntro').textContent = 'Chrome أرسل تأكيدًا لطلب التثبيت، لكن الصفحة لا تستطيع التأكد من مكان ظهور الأيقونة أو تشغيلها نيابةً عن أندرويد.';
-    el('biPendingArea').innerHTML = '<p>ارجع إلى الشاشة الرئيسية أو قائمة التطبيقات وابحث عن «بوابة التمريض». افتح الأيقونة من هناك لتشغيل نسخة التطبيق. إذا لم تجدها، افتح قائمة Chrome ⋮ وتحقق من خيار «تثبيت التطبيق» مرة أخرى.</p>';
     el('biManualArea').classList.add('bi-hidden');
+    el('biPendingArea').classList.add('bi-hidden');
+    el('biInstall').classList.add('bi-hidden');
+    el('biManual').classList.add('bi-hidden');
+    el('biSuccessArea').classList.remove('bi-hidden');
   });
 
   addApplePwaMetadata();
