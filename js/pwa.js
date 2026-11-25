@@ -189,8 +189,8 @@
   function showInstalledState() {
     if (!overlay) makeOverlay();
     const el = id => overlay.querySelector('#' + id);
-    el('biTitle').textContent = 'تم تثبيت التطبيق بنجاح';
-    el('biIntro').textContent = 'بوابة التمريض أصبحت مثبتة على جهازك.';
+    el('biTitle').textContent = 'تم فتح التطبيق المثبّت';
+    el('biIntro').textContent = 'أنت الآن تستخدم بوابة التمريض كتطبيق مستقل على جهازك.';
     el('biProgressArea').classList.add('bi-hidden');
     el('biManualArea').classList.add('bi-hidden');
     el('biPendingArea').classList.add('bi-hidden');
@@ -226,7 +226,16 @@
   window.addEventListener('appinstalled', () => {
     installAccepted = true;
     if (installButton) installButton.remove();
-    showInstalledState();
+    if (!overlay) return;
+    const el = id => overlay.querySelector('#' + id);
+    el('biProgressArea').classList.add('bi-hidden');
+    el('biInstall').classList.add('bi-hidden');
+    el('biPendingArea').classList.remove('bi-hidden');
+    el('biManualArea').classList.remove('bi-hidden');
+    el('biTitle').textContent = 'طلب التثبيت اكتمل في Chrome';
+    el('biIntro').textContent = 'Chrome أرسل تأكيدًا لطلب التثبيت، لكن الصفحة لا تستطيع التأكد من مكان ظهور الأيقونة أو تشغيلها نيابةً عن أندرويد.';
+    el('biPendingArea').innerHTML = '<p>ارجع إلى الشاشة الرئيسية أو قائمة التطبيقات وابحث عن «بوابة التمريض». افتح الأيقونة من هناك لتشغيل نسخة التطبيق. إذا لم تجدها، افتح قائمة Chrome ⋮ وتحقق من خيار «تثبيت التطبيق» مرة أخرى.</p>';
+    el('biManualArea').classList.add('bi-hidden');
   });
 
   registerWorker();
