@@ -24,7 +24,7 @@ service cloud.firestore {
   match /publicProfiles/{uid}{
    allow read:if signedIn();
    allow create:if isAdmin()||(owns(uid)&&request.resource.data.keys().hasOnly(['displayName','xp','updatedAt'])&&request.resource.data.xp==0);
-   allow update:if isAdmin()||(owns(uid)&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(['displayName','updatedAt']));
+   allow update:if isAdmin()||(owns(uid)&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(['displayName','updatedAt']))||(owns(uid)&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(['xp','updatedAt'])&&request.resource.data.xp is number&&request.resource.data.xp>=resource.data.get('xp',0)&&request.resource.data.xp<=resource.data.get('xp',0)+40);
    allow delete:if isAdmin();
   }
   function validTaskForStudent(taskId){return signedIn()&&userDocExists()&&exists(/databases/$(database)/documents/gamificationTasks/$(taskId))&&get(/databases/$(database)/documents/gamificationTasks/$(taskId)).data.get("published",false)==true&&get(/databases/$(database)/documents/gamificationTasks/$(taskId)).data.get("gradeId","")==studentGrade();}
@@ -39,19 +39,19 @@ service cloud.firestore {
   }
   match /xpTransactions/{id}{
    allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);
-   allow create:if isAdmin()&&request.resource.data.uid is string&&request.resource.data.amount is int&&request.resource.data.amount>0&&request.resource.data.reason is string;
+   allow create:if (isAdmin()&&request.resource.data.uid is string&&request.resource.data.amount is int&&request.resource.data.amount>0&&request.resource.data.reason is string)||(owns(request.resource.data.uid)&&request.resource.data.amount is int&&request.resource.data.amount>0&&request.resource.data.amount<=40&&request.resource.data.sourceType in ['exam','challenge']&&request.resource.data.reason is string);
    allow update,delete:if false;
   }
   match /subjects/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
   match /chapters/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
   match /lessons/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
   match /exams/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
-  match /examAnswerKeys/{id}{allow read,write:if isAdmin();}
+  match /examAnswerKeys/{id}{allow read:if isAdmin()||(signedIn()&&exists(/databases/$(database)/documents/exams/$(id))&&get(/databases/$(database)/documents/exams/$(id)).data.get("published",false)==true&&get(/databases/$(database)/documents/exams/$(id)).data.get("gradeId","")==studentGrade());allow write:if isAdmin();}
   match /library/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
   match /notifications/{id}{allow read:if isAdmin()||(signedIn()&&resource.data.published==true);allow create,update,delete:if isAdmin();}
   match /revisionCards/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
   match /dailyChallenges/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
-  match /challengeAnswerKeys/{id}{allow read,write:if isAdmin();}
+  match /challengeAnswerKeys/{id}{allow read:if isAdmin()||(signedIn()&&exists(/databases/$(database)/documents/dailyChallenges/$(id))&&get(/databases/$(database)/documents/dailyChallenges/$(id)).data.get("published",false)==true&&get(/databases/$(database)/documents/dailyChallenges/$(id)).data.get("gradeId","")==studentGrade());allow write:if isAdmin();}
   match /simulations/{id}{allow read:if isAdmin()||(resource.data.published==true&&gradeAccess());allow create,update,delete:if isAdmin();}
   match /simulationSubmissions/{id}{
    allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);
@@ -75,8 +75,8 @@ service cloud.firestore {
    allow delete:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);
   }
   match /examResults/{id}{allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow create,update,delete:if isAdmin();}
-  match /examAttempts/{id}{allow create:if signedIn()&&request.resource.data.uid==request.auth.uid&&request.resource.data.status=="pending"&&id==request.resource.data.examId+"_"+request.auth.uid&&!exists(/databases/$(database)/documents/examAttempts/$(request.resource.data.examId+"_"+request.auth.uid));allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow update,delete:if isAdmin();}
-  match /challengeResponses/{id}{allow create:if signedIn()&&request.resource.data.uid==request.auth.uid&&request.resource.data.status=="pending"&&id==request.resource.data.challengeId+"_"+request.auth.uid&&!exists(/databases/$(database)/documents/challengeResponses/$(request.resource.data.challengeId+"_"+request.auth.uid));allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow update,delete:if isAdmin();}
+  match /examAttempts/{id}{allow create:if signedIn()&&request.resource.data.uid==request.auth.uid&&request.resource.data.status=="graded"&&request.resource.data.examId is string&&exists(/databases/$(database)/documents/exams/$(request.resource.data.examId))&&get(/databases/$(database)/documents/exams/$(request.resource.data.examId)).data.get("published",false)==true&&get(/databases/$(database)/documents/exams/$(request.resource.data.examId)).data.get("gradeId","")==studentGrade()&&request.resource.data.answers is list&&request.resource.data.questionCount==request.resource.data.answers.size()&&request.resource.data.score is number&&request.resource.data.maxScore is number&&request.resource.data.percentage is number&&request.resource.data.xpAwarded is number&&request.resource.data.keys().hasOnly(["uid","examId","examTitle","answers","questionCount","status","score","maxScore","percentage","xpAwarded","duration","submittedAt","autoSubmitted"]);allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow update,delete:if isAdmin();}
+  match /challengeResponses/{id}{allow create:if signedIn()&&request.resource.data.uid==request.auth.uid&&request.resource.data.status=="graded"&&request.resource.data.challengeId is string&&exists(/databases/$(database)/documents/dailyChallenges/$(request.resource.data.challengeId))&&get(/databases/$(database)/documents/dailyChallenges/$(request.resource.data.challengeId)).data.get("published",false)==true&&get(/databases/$(database)/documents/dailyChallenges/$(request.resource.data.challengeId)).data.get("gradeId","")==studentGrade()&&id==request.resource.data.challengeId+"_"+request.auth.uid&&request.resource.data.selectedIndex is int&&request.resource.data.isCorrect is bool&&request.resource.data.xpAwarded is int&&request.resource.data.keys().hasOnly(["uid","challengeId","selectedIndex","isCorrect","status","xpAwarded","submittedAt"]);allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow update,delete:if isAdmin();}
   match /communityPosts/{id}{allow read:if signedIn();allow create:if signedIn()&&request.resource.data.uid==request.auth.uid;allow update,delete:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);}
   match /messages/{id}{allow create:if signedIn()&&request.resource.data.uid==request.auth.uid;allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow update,delete:if isAdmin();}
   match /{document=**}{allow read,write:if false;}
