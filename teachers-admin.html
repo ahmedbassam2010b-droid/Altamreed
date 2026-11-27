@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>إدارة المدرسين | بوابة التمريض</title><link rel="stylesheet" href="css/variables.css"><link rel="stylesheet" href="css/reset.css"><link rel="stylesheet" href="css/global.css"><link rel="stylesheet" href="css/teachers.css"></head>
+<body class="teachers-app"><main class="t-shell"><header class="t-top"><a href="admin.html" class="t-back">← لوحة الإدارة الرئيسية</a><div><span class="t-kicker">BAWABET ALTAMREED</span><h1>إدارة المدرسين والأكاديميات</h1><p>إنشاء الحسابات والتحكم اليدوي في الاشتراكات والصلاحيات.</p></div><button id="tAdminLogout" class="t-btn t-btn-light">تسجيل الخروج</button></header>
+<div id="tAdminNotice" class="t-notice" role="status">جارٍ التحقق من صلاحيات الإدارة...</div><section id="tAdminApp" hidden>
+<div class="t-stats" id="tStats"></div>
+<div class="t-layout"><section class="t-panel"><div class="t-panel-head"><div><span class="t-kicker">NEW ACADEMY</span><h2>إضافة مدرس جديد</h2></div><span class="t-icon">＋</span></div>
+<form id="createTeacherForm" class="t-form">
+<label>اسم المدرس<input id="newTeacherName" required maxlength="90" placeholder="اسم المدرس بالكامل"></label>
+<label>كود الدخول<input id="newTeacherCode" required minlength="4" maxlength="24" autocomplete="off" placeholder="مثال: AHMED2026" pattern="[A-Za-z0-9_-]+"></label>
+<label>كلمة المرور المؤقتة<input id="newTeacherPassword" required type="password" minlength="8" autocomplete="new-password" placeholder="8 أحرف أو أكثر"></label>
+<label>التخصص (اختياري)<input id="newTeacherSpecialty" maxlength="90" placeholder="مثال: تمريض / أحياء"></label>
+<div class="t-form-row"><label>بداية الاشتراك<input id="newTeacherStart" type="date" required></label><label>نهاية الاشتراك<input id="newTeacherEnd" type="date" required></label></div>
+<label>حالة الحساب<select id="newTeacherStatus"><option value="active">نشط عند الإنشاء</option><option value="suspended">موقوف</option></select></label>
+<div class="t-form-row"><label>حد الطلاب<input id="newTeacherStudentsLimit" type="number" min="1" value="100"></label><label>حد الصفوف<input id="newTeacherClassesLimit" type="number" min="1" value="10"></label></div>
+<button class="t-btn t-btn-primary" type="submit">إنشاء حساب المدرس</button><p class="t-hint">كلمة المرور لا تُحفظ في Firestore. سلّم بيانات الدخول للمدرس بطريقة آمنة.</p></form></section>
+<section class="t-panel"><div class="t-panel-head"><div><span class="t-kicker">ACADEMIES</span><h2>المدرسون المسجلون</h2></div><button id="refreshTeachers" class="t-btn t-btn-light" type="button">تحديث</button></div><input id="teacherSearch" class="t-search" placeholder="ابحث بالاسم أو كود الدخول..."><div id="teachersList" class="t-list"><p class="t-muted">جارٍ تحميل المدرسين...</p></div></section></div>
+<section id="teacherDetails" class="t-panel" hidden></section></section></main><script type="module" src="js/teachers-admin.js"></script></body></html>
