@@ -88,7 +88,7 @@ service cloud.firestore {
   function academyOwner(teacherUid){return teacherActive() && request.auth.uid==teacherUid;}
   function academyMember(teacherUid){return signedIn() && teacherAccountActive(teacherUid) && exists(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)) && get(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)).data.get("status","")=="active";}
   match /teachers/{uid}{
-   allow read:if isAdmin()||owns(uid);
+   allow read:if isAdmin()||owns(uid)||academyMember(uid);
    allow create,update,delete:if isAdmin();
   }
   match /teacherCodes/{code}{
