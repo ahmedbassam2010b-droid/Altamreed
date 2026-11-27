@@ -83,7 +83,7 @@ service cloud.firestore {
   // Bawabet Teachers: manual academy management, subscriptions and student memberships.
   function teacherExists(uid){return exists(/databases/$(database)/documents/teachers/$(uid));}
   function teacherData(uid){return get(/databases/$(database)/documents/teachers/$(uid)).data;}
-  function teacherActive(){return signedIn() && teacherExists(request.auth.uid) && teacherData(request.auth.uid).get("active",false)==true && teacherData(request.auth.uid).get("status","")=="active" && teacherData(request.auth.uid).get("subscriptionStartAt",timestamp.date(1970,1,1))<=request.time && teacherData(request.auth.uid).get("subscriptionEndAt",timestamp.date(1970,1,1))>request.time;}
+  function teacherActive(){return signedIn() && teacherExists(request.auth.uid) && teacherData(request.auth.uid).get("active",false)==true && teacherData(request.auth.uid).get("status","")=="active" && teacherData(request.auth.uid).subscriptionStartAt<=request.time && teacherData(request.auth.uid).subscriptionEndAt>request.time;}
   function academyOwner(teacherUid){return teacherActive() && request.auth.uid==teacherUid;}
   function academyMember(teacherUid){return signedIn() && exists(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)) && get(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)).data.get("status","")=="active";}
   match /teachers/{uid}{
@@ -116,7 +116,7 @@ service cloud.firestore {
   }
   match /academyMemberships/{id}{
    allow read:if isAdmin()||(signedIn()&&resource.data.studentUid==request.auth.uid)||academyOwner(resource.data.teacherUid);
-   allow create:if signedIn()&&request.resource.data.studentUid==request.auth.uid&&request.resource.data.status=="active"&&request.resource.data.teacherUid is string&&exists(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode))==false;
+   allow create:if signedIn()&&request.resource.data.studentUid==request.auth.uid&&request.resource.data.status=="active"&&request.resource.data.teacherUid is string&&id==request.auth.uid+"_"+request.resource.data.teacherUid&&request.resource.data.inviteCode is string&&exists(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode))&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.get("active",false)==true&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.teacherUid==request.resource.data.teacherUid&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.classId==request.resource.data.classId&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.get("groupId","")==request.resource.data.get("groupId","")&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.expiresAt>request.time;
    allow update,delete:if isAdmin()||academyOwner(resource.data.teacherUid);
   }
   match /teacherContent/{id}{
