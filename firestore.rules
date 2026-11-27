@@ -154,8 +154,19 @@ service cloud.firestore {
   }
   match /teacherMessages/{id}{
    allow read:if isAdmin()||(signedIn()&&resource.data.participantUids is list&&request.auth.uid in resource.data.participantUids);
-   allow create:if signedIn()&&request.resource.data.senderUid==request.auth.uid&&request.resource.data.participantUids is list&&request.auth.uid in request.resource.data.participantUids&&teacherAccountActive(request.resource.data.teacherUid)&&(request.auth.uid==request.resource.data.teacherUid?academyOwner(request.resource.data.teacherUid):academyMember(request.resource.data.teacherUid));
+   allow create:if signedIn()&&request.resource.data.senderUid==request.auth.uid&&request.resource.data.participantUids is list&&request.auth.uid in request.resource.data.participantUids&&teacherAccountActive(request.resource.data.teacherUid)&&(request.auth.uid==request.resource.data.teacherUid?academyOwner(request.resource.data.teacherUid):academyMember(request.resource.data.teacherUid))&&(!request.resource.data.keys().hasAny(["attachment"])||request.resource.data.attachment.dataUrl.size()<900000);
    allow update,delete:if isAdmin();
+  }
+  match /teacherGrades/{id}{
+   allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||(signedIn()&&resource.data.studentUid==request.auth.uid&&academyMember(resource.data.teacherUid));
+   allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid&&request.resource.data.score is number&&request.resource.data.maxScore is number&&request.resource.data.score>=0&&request.resource.data.score<=request.resource.data.maxScore&&exists(/databases/$(database)/documents/academyMemberships/$(request.resource.data.studentUid+"_"+request.auth.uid))&&get(/databases/$(database)/documents/academyMemberships/$(request.resource.data.studentUid+"_"+request.auth.uid)).data.classId==request.resource.data.classId;
+   allow update,delete:if academyOwner(resource.data.teacherUid);
+  }
+  match /teacherNotifications/{id}{
+   allow read:if isAdmin()||(signedIn()&&resource.data.recipientUid==request.auth.uid);
+   allow create:if signedIn()&&request.resource.data.senderUid==request.auth.uid&&request.resource.data.recipientUid is string&&request.resource.data.conversationId is string&&exists(/databases/$(database)/documents/teacherConversations/$(request.resource.data.conversationId))&&request.auth.uid in get(/databases/$(database)/documents/teacherConversations/$(request.resource.data.conversationId)).data.participantUids&&request.resource.data.recipientUid in get(/databases/$(database)/documents/teacherConversations/$(request.resource.data.conversationId)).data.participantUids;
+   allow update:if signedIn()&&resource.data.recipientUid==request.auth.uid&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(["read"]);
+   allow delete:if isAdmin();
   }
   match /teacherLiveSessions/{id}{
    allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||academyMember(resource.data.teacherUid);
