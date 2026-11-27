@@ -83,9 +83,10 @@ service cloud.firestore {
   // Bawabet Teachers: manual academy management, subscriptions and student memberships.
   function teacherExists(uid){return exists(/databases/$(database)/documents/teachers/$(uid));}
   function teacherData(uid){return get(/databases/$(database)/documents/teachers/$(uid)).data;}
-  function teacherActive(){return signedIn() && teacherExists(request.auth.uid) && teacherData(request.auth.uid).get("active",false)==true && teacherData(request.auth.uid).get("status","")=="active" && teacherData(request.auth.uid).subscriptionStartAt<=request.time && teacherData(request.auth.uid).subscriptionEndAt>request.time;}
+  function teacherAccountActive(uid){return teacherExists(uid) && teacherData(uid).get("active",false)==true && teacherData(uid).get("status","")=="active" && teacherData(uid).subscriptionStartAt<=request.time && teacherData(uid).subscriptionEndAt>request.time;}
+  function teacherActive(){return signedIn() && teacherAccountActive(request.auth.uid);}
   function academyOwner(teacherUid){return teacherActive() && request.auth.uid==teacherUid;}
-  function academyMember(teacherUid){return signedIn() && exists(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)) && get(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)).data.get("status","")=="active";}
+  function academyMember(teacherUid){return signedIn() && teacherAccountActive(teacherUid) && exists(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)) && get(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)).data.get("status","")=="active";}
   match /teachers/{uid}{
    allow read:if isAdmin()||owns(uid);
    allow create,update,delete:if isAdmin();
@@ -109,14 +110,14 @@ service cloud.firestore {
    allow update,delete:if academyOwner(resource.data.teacherUid);
   }
   match /academyInvites/{code}{
-   allow read:if isAdmin()||(signedIn()&&resource.data.get("active",false)==true);
+   allow read:if isAdmin()||(signedIn()&&resource.data.get("active",false)==true&&teacherAccountActive(resource.data.teacherUid));
    allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
    allow update:if isAdmin()||academyOwner(resource.data.teacherUid)||(signedIn()&&resource.data.get("active",false)==true&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(["uses"])&&request.resource.data.uses==resource.data.get("uses",0)+1);
    allow delete:if isAdmin()||academyOwner(resource.data.teacherUid);
   }
   match /academyMemberships/{id}{
    allow read:if isAdmin()||(signedIn()&&resource.data.studentUid==request.auth.uid)||academyOwner(resource.data.teacherUid);
-   allow create:if signedIn()&&request.resource.data.studentUid==request.auth.uid&&request.resource.data.status=="active"&&request.resource.data.teacherUid is string&&id==request.auth.uid+"_"+request.resource.data.teacherUid&&request.resource.data.inviteCode is string&&exists(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode))&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.get("active",false)==true&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.teacherUid==request.resource.data.teacherUid&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.classId==request.resource.data.classId&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.get("groupId","")==request.resource.data.get("groupId","")&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.expiresAt>request.time;
+   allow create:if signedIn()&&request.resource.data.studentUid==request.auth.uid&&request.resource.data.status=="active"&&request.resource.data.teacherUid is string&&id==request.auth.uid+"_"+request.resource.data.teacherUid&&request.resource.data.inviteCode is string&&exists(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode))&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.get("active",false)==true&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.teacherUid==request.resource.data.teacherUid&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.classId==request.resource.data.classId&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.get("groupId","")==request.resource.data.get("groupId","")&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.expiresAt>request.time&&teacherAccountActive(request.resource.data.teacherUid);
    allow update,delete:if isAdmin()||academyOwner(resource.data.teacherUid);
   }
   match /teacherContent/{id}{
