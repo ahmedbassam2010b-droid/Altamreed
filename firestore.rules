@@ -121,7 +121,7 @@ service cloud.firestore {
    allow update,delete:if isAdmin()||academyOwner(resource.data.teacherUid);
   }
   match /teacherContent/{id}{
-   allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||(academyMember(resource.data.teacherUid)&&resource.data.get("active",false)==true&&(resource.data.get("publishedAt",null)==null||resource.data.publishedAt<=request.time)&&(resource.data.get("hideAt",null)==null||resource.data.hideAt>request.time));
+   allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||(academyMember(resource.data.teacherUid)&&resource.data.get("active",false)==true&&resource.data.classId==get(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+resource.data.teacherUid)).data.classId&&(resource.data.get("publishedAt",null)==null||resource.data.publishedAt<=request.time)&&(resource.data.get("hideAt",null)==null||resource.data.hideAt>request.time));
    allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
    allow update,delete:if academyOwner(resource.data.teacherUid);
   }
