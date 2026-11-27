@@ -79,6 +79,88 @@ service cloud.firestore {
   match /challengeResponses/{id}{allow create:if signedIn()&&request.resource.data.uid==request.auth.uid&&request.resource.data.status=="graded"&&request.resource.data.challengeId is string&&exists(/databases/$(database)/documents/dailyChallenges/$(request.resource.data.challengeId))&&get(/databases/$(database)/documents/dailyChallenges/$(request.resource.data.challengeId)).data.get("published",false)==true&&get(/databases/$(database)/documents/dailyChallenges/$(request.resource.data.challengeId)).data.get("gradeId","")==studentGrade()&&id==request.resource.data.challengeId+"_"+request.auth.uid&&request.resource.data.selectedIndex is int&&request.resource.data.isCorrect is bool&&request.resource.data.xpAwarded is int&&request.resource.data.keys().hasOnly(["uid","challengeId","selectedIndex","isCorrect","status","xpAwarded","submittedAt"]);allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow update,delete:if isAdmin();}
   match /communityPosts/{id}{allow read:if signedIn();allow create:if signedIn()&&request.resource.data.uid==request.auth.uid;allow update,delete:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);}
   match /messages/{id}{allow create:if signedIn()&&request.resource.data.uid==request.auth.uid;allow read:if isAdmin()||(signedIn()&&resource.data.uid==request.auth.uid);allow update,delete:if isAdmin();}
+
+  // Bawabet Teachers: manual academy management, subscriptions and student memberships.
+  function teacherExists(uid){return exists(/databases/$(database)/documents/teachers/$(uid));}
+  function teacherData(uid){return get(/databases/$(database)/documents/teachers/$(uid)).data;}
+  function teacherAccountActive(uid){return teacherExists(uid) && teacherData(uid).get("active",false)==true && teacherData(uid).get("status","")=="active" && teacherData(uid).subscriptionStartAt<=request.time && teacherData(uid).subscriptionEndAt>request.time;}
+  function teacherActive(){return signedIn() && teacherAccountActive(request.auth.uid);}
+  function academyOwner(teacherUid){return teacherActive() && request.auth.uid==teacherUid;}
+  function academyMember(teacherUid){return signedIn() && teacherAccountActive(teacherUid) && exists(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)) && get(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)).data.get("status","")=="active";}
+  match /teachers/{uid}{
+   allow read:if isAdmin()||owns(uid)||academyMember(uid);
+   allow create,update,delete:if isAdmin();
+  }
+  match /teacherCodes/{code}{
+   allow read,write:if isAdmin();
+  }
+  match /teacherClasses/{id}{
+   allow read:if isAdmin()||academyOwner(resource.data.teacherUid);
+   allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
+   allow update,delete:if academyOwner(resource.data.teacherUid);
+  }
+  match /teacherGroups/{id}{
+   allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||academyMember(resource.data.teacherUid);
+   allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
+   allow update,delete:if academyOwner(resource.data.teacherUid);
+  }
+  match /teacherSubjects/{id}{
+   allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||academyMember(resource.data.teacherUid);
+   allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
+   allow update,delete:if academyOwner(resource.data.teacherUid);
+  }
+  match /academyInvites/{code}{
+   allow read:if isAdmin()||(signedIn()&&resource.data.get("active",false)==true&&teacherAccountActive(resource.data.teacherUid));
+   allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
+   allow update:if isAdmin()||academyOwner(resource.data.teacherUid)||(signedIn()&&resource.data.get("active",false)==true&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(["uses"])&&request.resource.data.uses==resource.data.get("uses",0)+1);
+   allow delete:if isAdmin()||academyOwner(resource.data.teacherUid);
+  }
+  match /academyMemberships/{id}{
+   allow read:if isAdmin()||(signedIn()&&resource.data.studentUid==request.auth.uid)||academyOwner(resource.data.teacherUid);
+   allow create:if signedIn()&&request.resource.data.studentUid==request.auth.uid&&request.resource.data.status=="active"&&request.resource.data.teacherUid is string&&id==request.auth.uid+"_"+request.resource.data.teacherUid&&request.resource.data.inviteCode is string&&exists(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode))&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.get("active",false)==true&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.teacherUid==request.resource.data.teacherUid&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.classId==request.resource.data.classId&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.get("groupId","")==request.resource.data.get("groupId","")&&get(/databases/$(database)/documents/academyInvites/$(request.resource.data.inviteCode)).data.expiresAt>request.time&&teacherAccountActive(request.resource.data.teacherUid);
+   allow update,delete:if isAdmin()||academyOwner(resource.data.teacherUid);
+  }
+  match /teacherContent/{id}{
+   allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||(academyMember(resource.data.teacherUid)&&resource.data.get("active",false)==true&&resource.data.classId==get(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+resource.data.teacherUid)).data.classId);
+   allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
+   allow update,delete:if academyOwner(resource.data.teacherUid);
+  }
+  match /teacherExams/{id}{
+   allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||(academyMember(resource.data.teacherUid)&&resource.data.get("published",false)==true);
+   allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
+   allow update,delete:if academyOwner(resource.data.teacherUid);
+  }
+  match /teacherPosts/{id}{
+   allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||academyMember(resource.data.teacherUid);
+   allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
+   allow update,delete:if academyOwner(resource.data.teacherUid);
+  }
+  match /teacherAttendance/{id}{
+   allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||(signedIn()&&resource.data.studentUid==request.auth.uid);
+   allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
+   allow update,delete:if academyOwner(resource.data.teacherUid);
+  }
+  match /teacherStaff/{id}{
+   allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||(signedIn()&&resource.data.staffUid==request.auth.uid);
+   allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
+   allow update,delete:if academyOwner(resource.data.teacherUid);
+  }
+  match /teacherConversations/{id}{
+   allow read:if isAdmin()||(signedIn()&&resource.data.teacherUid==request.auth.uid&&academyOwner(request.auth.uid))||(signedIn()&&resource.data.participantUids is list&&request.auth.uid in resource.data.participantUids);
+   allow create:if signedIn()&&request.resource.data.participantUids is list&&request.auth.uid in request.resource.data.participantUids&&request.resource.data.studentUid==request.auth.uid&&teacherAccountActive(request.resource.data.teacherUid)&&academyMember(request.resource.data.teacherUid);
+   allow update:if signedIn()&&resource.data.participantUids is list&&request.auth.uid in resource.data.participantUids&&request.resource.data.participantUids==resource.data.participantUids&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(["lastMessage","updatedAt"]);
+   allow delete:if isAdmin();
+  }
+  match /teacherMessages/{id}{
+   allow read:if isAdmin()||(signedIn()&&resource.data.participantUids is list&&request.auth.uid in resource.data.participantUids);
+   allow create:if signedIn()&&request.resource.data.senderUid==request.auth.uid&&request.resource.data.participantUids is list&&request.auth.uid in request.resource.data.participantUids&&teacherAccountActive(request.resource.data.teacherUid)&&(request.auth.uid==request.resource.data.teacherUid?academyOwner(request.resource.data.teacherUid):academyMember(request.resource.data.teacherUid));
+   allow update,delete:if isAdmin();
+  }
+  match /teacherLiveSessions/{id}{
+   allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||academyMember(resource.data.teacherUid);
+   allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
+   allow update,delete:if academyOwner(resource.data.teacherUid);
+  }
   match /{document=**}{allow read,write:if false;}
  }
 }
