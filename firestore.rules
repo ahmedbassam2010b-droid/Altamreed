@@ -86,9 +86,10 @@ service cloud.firestore {
   function teacherAccountActive(uid){return teacherExists(uid) && teacherData(uid).get("active",false)==true && teacherData(uid).get("status","")=="active" && teacherData(uid).subscriptionStartAt<=request.time && teacherData(uid).subscriptionEndAt>request.time;}
   function teacherActive(){return signedIn() && teacherAccountActive(request.auth.uid);}
   function academyOwner(teacherUid){return teacherActive() && request.auth.uid==teacherUid;}
-  function academyMember(teacherUid){return signedIn() && teacherAccountActive(teacherUid) && exists(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)) && get(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)).data.get("status","")=="active";}
+  function academyLinked(teacherUid){return signedIn() && exists(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)) && get(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)).data.get("status","")=="active";}
+  function academyMember(teacherUid){return academyLinked(teacherUid) && teacherAccountActive(teacherUid);}
   match /teachers/{uid}{
-   allow read:if isAdmin()||owns(uid)||academyMember(uid);
+   allow read:if isAdmin()||owns(uid)||academyLinked(uid);
    allow create,update,delete:if isAdmin();
   }
   match /teacherCodes/{code}{
