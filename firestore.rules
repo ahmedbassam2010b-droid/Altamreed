@@ -135,15 +135,10 @@ service cloud.firestore {
    allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
    allow update,delete:if academyOwner(resource.data.teacherUid);
   }
-  match /teacherAttendance/{id}{
+  match /teacherDailyAttendance/{id}{
    allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||(signedIn()&&resource.data.studentUid==request.auth.uid);
-   allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
-   allow update,delete:if academyOwner(resource.data.teacherUid);
-  }
-  match /teacherStaff/{id}{
-   allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||(signedIn()&&resource.data.staffUid==request.auth.uid);
-   allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
-   allow update,delete:if academyOwner(resource.data.teacherUid);
+   allow create:if signedIn()&&request.resource.data.studentUid==request.auth.uid&&request.resource.data.teacherUid is string&&request.resource.data.classId is string&&request.resource.data.dateKey is string&&request.resource.data.status=="present"&&request.resource.data.source=="student-self-checkin"&&id==request.auth.uid+"_"+request.resource.data.teacherUid+"_"+request.resource.data.dateKey&&academyMember(request.resource.data.teacherUid)&&exists(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+request.resource.data.teacherUid))&&get(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+request.resource.data.teacherUid)).data.classId==request.resource.data.classId;
+   allow update,delete:if false;
   }
   match /teacherConversations/{id}{
    allow read:if isAdmin()||(signedIn()&&resource.data.teacherUid==request.auth.uid&&academyOwner(request.auth.uid))||(signedIn()&&resource.data.participantUids is list&&request.auth.uid in resource.data.participantUids);
