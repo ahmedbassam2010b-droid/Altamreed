@@ -10,5 +10,7 @@ bucket_name = "bawabet-academy-files"
 
 [vars]
 FIREBASE_PROJECT_ID = "bawabet-altamreed"
-# Add FIREBASE_API_KEY and JAAS_APP_ID / JAAS_KEY_ID as Worker variables.
-# Add JAAS_PRIVATE_KEY and DOWNLOAD_SIGNING_SECRET as Worker secrets.
+LIVEKIT_WS_URL = "wss://live.bawabet-altamreed.com"
+LIVEKIT_API_URL = "https://live.bawabet-altamreed.com"
+# Set FIREBASE_API_KEY as a Worker variable. Set LIVEKIT_API_KEY and LIVEKIT_API_SECRET as Worker secrets.
+# Keep DOWNLOAD_SIGNING_SECRET as a Worker secret for R2 download tickets.
