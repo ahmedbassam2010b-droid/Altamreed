@@ -135,7 +135,8 @@ service cloud.firestore {
   match /teacherExams/{id}{
    allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||(academyMember(resource.data.teacherUid)&&resource.data.get("published",false)==true);
    allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
-   allow update,delete:if academyOwner(resource.data.teacherUid);
+   allow update:if academyOwner(resource.data.teacherUid)&&request.resource.data.teacherUid==resource.data.teacherUid&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(["published","status","publishedAt","updatedAt"]);
+   allow delete:if academyOwner(resource.data.teacherUid);
   }
   // Private answer keys: never readable by academy students.
   match /teacherExamAnswerKeys/{examId}{
