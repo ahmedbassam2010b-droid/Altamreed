@@ -9,6 +9,7 @@
 <label>كود الدخول<input id="newTeacherCode" required minlength="4" maxlength="24" autocomplete="off" placeholder="مثال: AHMED2026" pattern="[A-Za-z0-9_-]+"></label>
 <label>كلمة المرور المؤقتة<input id="newTeacherPassword" required type="password" minlength="8" autocomplete="new-password" placeholder="8 أحرف أو أكثر"></label>
 <label>التخصص (اختياري)<input id="newTeacherSpecialty" maxlength="90" placeholder="مثال: تمريض / أحياء"></label>
+<label>اسم الرابط الفرعي للأكاديمية<input id="newTeacherSlug" required minlength="3" maxlength="30" pattern="[a-z0-9-]+" autocomplete="off" placeholder="مثال: ahmed-nursing"><small class="t-hint">سيكون الرابط: https://slug.bawabet-altamreed.com — استخدم حروفًا إنجليزية صغيرة وأرقامًا وشرطة فقط.</small></label>
 <div class="t-form-row"><label>بداية الاشتراك<input id="newTeacherStart" type="date" required></label><label>نهاية الاشتراك<input id="newTeacherEnd" type="date" required></label></div>
 <label>حالة الحساب<select id="newTeacherStatus"><option value="active">نشط عند الإنشاء</option><option value="suspended">موقوف</option></select></label>
 <div class="t-form-row"><label>حد الطلاب<input id="newTeacherStudentsLimit" type="number" min="1" value="100"></label><label>حد الصفوف<input id="newTeacherClassesLimit" type="number" min="1" value="10"></label></div>
