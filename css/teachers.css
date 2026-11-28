@@ -50,3 +50,23 @@
 @media(prefers-reduced-motion:reduce){
  .t-btn,.t-panel,.t-item,.t-menu .t-tabs button,.t-student-menu nav a{transition:none}
 }
+
+/* Academy exams and session scheduling */
+.exam-question-editor{display:block}
+.exam-question-editor .t-form{gap:12px}
+.exam-question-editor textarea{min-height:88px}
+#academyExamRunner{margin-top:14px;border:1px solid #d7e5f0;background:#f8fbff}
+#academyExamRunner fieldset{min-width:0;margin:10px 0;padding:14px;border:1px solid #dce8f2;border-radius:14px;background:#fff}
+#academyExamRunner legend{padding:0 6px;font-weight:700;line-height:1.7}
+#academyExamRunner fieldset label{display:flex;align-items:flex-start;gap:8px;padding:8px 4px;cursor:pointer}
+#academyExamRunner input[type=radio]{margin-top:5px;accent-color:#176b9a}
+#academyExamRunner button{width:100%;margin-top:8px}
+#teacherExamAttempts .t-item,#teacherExamsList .t-item{gap:12px}
+#teacherExamAttempts form{width:100%}
+#teacherExamAttempts textarea{min-height:72px}
+#academyExams .t-item,#academyLiveSessions .t-item{align-items:center}
+@media(max-width:600px){
+ #academyExamRunner{padding:12px}
+ #academyExamRunner fieldset{padding:10px}
+ #teacherExamAttempts .t-form-inline{grid-template-columns:1fr}
+}
