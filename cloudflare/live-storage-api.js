@@ -101,6 +101,8 @@ async function handleApi(request,url,env,origin){
   const size=Number(body.size||0);
   if(!Number.isSafeInteger(size)||size<1||size>50*1024*1024*1024)throw new Error("حجم الملف غير مدعوم. الحد الأقصى 5 جيجابايت.");
   const name=safeName(body.fileName),type=String(body.contentType||"application/octet-stream").slice(0,120);
+  const allowedTypes=new Set(["application/pdf","image/png","image/jpeg","image/webp","image/gif","image/avif","video/mp4","video/webm","video/quicktime","video/x-matroska","application/zip","application/octet-stream","text/plain","application/msword","application/vnd.openxmlformats-officedocument.wordprocessingml.document","application/vnd.ms-powerpoint","application/vnd.openxmlformats-officedocument.presentationml.presentation","application/vnd.ms-excel","application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"]);
+  if(!allowedTypes.has(type))throw new Error("نوع الملف غير مدعوم. ارفع PDF أو صورة أو فيديو أو ملف Office.");
   const key="teachers/"+user.uid+"/"+classId+"/"+crypto.randomUUID()+"-"+name;
   const upload=await env.FILES.createMultipartUpload(key,{httpMetadata:{contentType:type},customMetadata:{teacherUid:user.uid,classId,originalName:String(body.fileName||name).slice(0,180)}});
   return json({key,uploadId:upload.uploadId},200,headers);
@@ -133,17 +135,18 @@ async function handleApi(request,url,env,origin){
   const key=url.searchParams.get("key")||"",exp=url.searchParams.get("exp")||"",sig=url.searchParams.get("sig")||"";
   if(!key.startsWith("teachers/")||!await verifyTicket(key,exp,sig,env))return new Response("رابط الملف غير صالح أو انتهت صلاحيته.",{status:403});
   const range=request.headers.get("range"),head=await env.FILES.head(key);if(!head)return new Response("الملف غير موجود.",{status:404});
-  let object,status=200,extra={};
+  let object,status=200,extra={},responseSize=head.size;
   if(range){
    const match=/^bytes=(\d*)-(\d*)$/.exec(range);if(!match)return new Response("Invalid range",{status:416});
    const suffix=!match[1]&&match[2],start=suffix?Math.max(0,head.size-Number(match[2])):(match[1]?Number(match[1]):0);
    const end=suffix?head.size-1:(match[2]?Number(match[2]):head.size-1);
    if(start<0||end<start||start>=head.size)return new Response(null,{status:416});
    const last=Math.min(end,head.size-1);object=await env.FILES.get(key,{range:{offset:start,length:last-start+1}});status=206;
-   extra["content-range"]="bytes "+start+"-"+last+"/"+head.size;
+   extra["content-range"]="bytes "+start+"-"+last+"/"+head.size;responseSize=last-start+1;
   }else object=await env.FILES.get(key);
   const name=head.customMetadata?.originalName||key.split("/").pop();
-  const outHeaders={"content-type":head.httpMetadata?.contentType||"application/octet-stream","content-length":String(object.size),"accept-ranges":"bytes","cache-control":"private, no-store","content-disposition":"inline; filename*=UTF-8''"+encodeURIComponent(name),...extra};
+  const contentType=head.httpMetadata?.contentType||"application/octet-stream",inline=contentType==="application/pdf"||contentType.startsWith("image/")||contentType.startsWith("video/")||contentType==="text/plain";
+  const outHeaders={"content-type":contentType,"content-length":String(responseSize),"accept-ranges":"bytes","x-content-type-options":"nosniff","cache-control":"private, no-store","content-disposition":(inline?"inline":"attachment")+"; filename*=UTF-8''"+encodeURIComponent(name),...extra};
   return new Response(object.body,{status,headers:outHeaders});
  }
  return json({error:"Not found"},404,headers);
