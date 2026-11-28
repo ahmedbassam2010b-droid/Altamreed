@@ -46,20 +46,20 @@ async function jaasToken({uid,name,roomName,moderator},env){
  return unsigned+"."+b64url(new Uint8Array(signature));
 }
 
-async function livekitToken({identity,name,roomName,canPublish,teacher},env){
+async function livekitToken({identity,name,roomName,canPublish,teacher,admin=false},env){
  const apiKey=env.LIVEKIT_API_KEY,secret=env.LIVEKIT_API_SECRET;
  if(!apiKey||!secret)throw new Error("إعداد خادم البث المستضاف غير مكتمل على Worker.");
  const enc=new TextEncoder();
  const b64url=bytes=>{let s="";for(const x of bytes)s+=String.fromCharCode(x);return btoa(s).replace(/=/g,"").replace(/\+/g,"-").replace(/\//g,"_");};
  const part=value=>b64url(enc.encode(JSON.stringify(value)));
  const now=Math.floor(Date.now()/1000),header=part({alg:"HS256",typ:"JWT"});
- const payload=part({iss:apiKey,sub:identity,name:String(name||"مستخدم").slice(0,80),nbf:now-5,exp:now+7200,video:{roomJoin:true,room:roomName,canPublish:!!canPublish,canSubscribe:true,canPublishData:true,...(teacher?{roomAdmin:true,canPublishSources:["camera","microphone","screen_share","screen_share_audio"]}:{canPublishSources:["camera","microphone"]})}});
+ const payload=part({iss:apiKey,sub:identity,name:String(name||"مستخدم").slice(0,80),nbf:now-5,exp:now+7200,video:{roomJoin:true,room:roomName,canPublish:!!canPublish,canSubscribe:true,canPublishData:true,...(teacher?{canPublishSources:["camera","microphone","screen_share","screen_share_audio"]}:{canPublishSources:["camera","microphone"]}),...(admin?{roomAdmin:true}:{})}});
  const key=await crypto.subtle.importKey("raw",enc.encode(secret),{name:"HMAC",hash:"SHA-256"},false,["sign"]);
  const input=header+"."+payload,signature=await crypto.subtle.sign("HMAC",key,enc.encode(input));
  return input+"."+b64url(new Uint8Array(signature));
 }
 async function livekitAdminRequest(env,roomName,identity,permission){
- const token=await livekitToken({identity:"bawabet-moderator",name:"Bawabet Moderator",roomName,canPublish:false,teacher:true},env);
+ const token=await livekitToken({identity:"bawabet-moderator",name:"Bawabet Moderator",roomName,canPublish:false,admin:true},env);
  const base=String(env.LIVEKIT_API_URL||"").replace(/\/$/,"");
  if(!base)throw new Error("لم يتم ضبط LIVEKIT_API_URL على Worker.");
  const response=await fetch(base+"/twirp/livekit.RoomService/UpdateParticipant",{method:"POST",headers:{authorization:"Bearer "+token,"content-type":"application/json"},body:JSON.stringify({room:roomName,identity,permission})});
