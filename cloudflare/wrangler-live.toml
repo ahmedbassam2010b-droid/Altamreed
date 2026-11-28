@@ -1,0 +1,14 @@
+name = "bawabet-live-storage-api"
+main = "live-storage-api.js"
+compatibility_date = "2026-11-28"
+workers_dev = false
+routes = [{ pattern = "api.bawabet-altamreed.com/*", zone_name = "bawabet-altamreed.com" }]
+
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "bawabet-academy-files"
+
+[vars]
+FIREBASE_PROJECT_ID = "bawabet-altamreed"
+# Add FIREBASE_API_KEY, CF_ACCOUNT_ID and REALTIMEKIT_APP_ID as Worker variables.
+# Add REALTIMEKIT_API_TOKEN and DOWNLOAD_SIGNING_SECRET as Worker secrets.
