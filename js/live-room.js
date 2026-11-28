@@ -60,6 +60,8 @@ async function connect(user){
  const {Room,RoomEvent,Track}=await import("https://cdn.jsdelivr.net/npm/livekit-client@2.15.6/+esm");
  room=new Room({adaptiveStream:true,dynacast:true,stopLocalTrackOnUnpublish:true});
  room.on(RoomEvent.Connected,()=>{status(role==="teacher"?"أنت داخل الفصل بصلاحيات المدرس.":"تم دخول المحاضرة بنجاح.");$("liveParticipantCount").textContent=String(room.numParticipants+1);});
+ room.on(RoomEvent.LocalTrackPublished,(publication,participant)=>{if(publication.track&&publication.kind===Track.Kind.Video)addTile(user.uid,user.displayName||"أنت",publication.track,true);});
+ room.on(RoomEvent.LocalTrackUnpublished,(publication)=>{if(publication.track){publication.track.detach().forEach(el=>el.remove());}});
  room.on(RoomEvent.ParticipantConnected,p=>{$("liveParticipantCount").textContent=String(room.numParticipants+1);addMessage("النظام",p.name+" انضم للمحاضرة.","system");});
  room.on(RoomEvent.ParticipantDisconnected,p=>{$("liveParticipantCount").textContent=String(room.numParticipants+1);removeTile(p.identity);});
  room.on(RoomEvent.TrackSubscribed,(track,publication,participant)=>{
@@ -73,7 +75,7 @@ async function connect(user){
   if(data.type==="hand"&&role==="teacher"){pendingHands.set(sender,name);renderHands();addMessage("النظام",name+" طلب المشاركة.","system");}
   if(data.type==="chat")addMessage(name,String(data.message||"").slice(0,500));
   if(data.type==="hand-cancel"&&role==="teacher"){pendingHands.delete(sender);renderHands();}
-  if(data.type==="speaker-approved"&&sender==="system"){canSpeak=true;status("المدرس سمح لك بالمشاركة. يمكنك فتح المايك أو الكاميرا.");$("liveMediaControls").hidden=false;}
+  if(data.type==="speaker-approved"&&sender==="system"){canSpeak=true;status("المدرس سمح لك بالمشاركة. يمكنك فتح المايك أو الكاميرا.");$("liveStudentSpeakerControls").hidden=false;}
  });
  room.on(RoomEvent.ParticipantPermissionsChanged,()=>{const p=room.localParticipant.permissions;canSpeak=!!p?.canPublish;if(canSpeak){$("liveMediaControls").hidden=false;status("أصبح بإمكانك المشاركة في المحاضرة.");}});
  await room.connect(result.serverUrl,result.token);
@@ -94,8 +96,8 @@ async function toggleTrack(kind,enabled){
   button?.classList.toggle("is-active",enabled);
  }catch(error){status(error.message||"تعذر تشغيل الوسيلة. تحقق من أذونات المتصفح.",true);}
 }
-$("liveMic")?.addEventListener("click",()=>toggleTrack("mic",!room?.localParticipant.isMicrophoneEnabled));
-$("liveCamera")?.addEventListener("click",()=>toggleTrack("camera",!room?.localParticipant.isCameraEnabled));
+$("liveMic")?.addEventListener("click",()=>toggleTrack("mic",!room?.localParticipant.isMicrophoneEnabled));\n$("liveStudentMic")?.addEventListener("click",()=>toggleTrack("mic",!room?.localParticipant.isMicrophoneEnabled));
+$("liveCamera")?.addEventListener("click",()=>toggleTrack("camera",!room?.localParticipant.isCameraEnabled));\n$("liveStudentCamera")?.addEventListener("click",()=>toggleTrack("camera",!room?.localParticipant.isCameraEnabled));
 $("liveScreen")?.addEventListener("click",()=>toggleTrack("screen",!room?.localParticipant.isScreenShareEnabled));
 $("liveRaiseHand")?.addEventListener("click",async()=>{
  if(!room)return;
