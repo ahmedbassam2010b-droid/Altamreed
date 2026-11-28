@@ -5,7 +5,7 @@ const API="https://api.bawabet-altamreed.com";
 const $=id=>document.getElementById(id);
 const params=new URLSearchParams(location.search),sessionId=params.get("sessionId");
 $("backLink").href=params.get("from")==="teacher"?"teacher-dashboard.html":"student-academy.html";
-let room=null,currentUser=null,role="student",canSpeak=false,handRaised=false;
+let room=null,currentUser=null,role="student",canSpeak=false,handRaised=false,micOn=false,cameraOn=false,screenOn=false;
 const pendingHands=new Map();
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function status(message,error=false){$("liveNotice").textContent=message;$("liveNotice").dataset.state=error?"error":"ok";}
@@ -95,11 +95,11 @@ async function toggleTrack(kind,enabled){
   button?.classList.toggle("is-active",enabled);
  }catch(error){status(error.message||"تعذر تشغيل الوسيلة. تحقق من أذونات المتصفح.",true);}
 }
-$("liveMic")?.addEventListener("click",()=>toggleTrack("mic",!room?.localParticipant.isMicrophoneEnabled));
+$("liveMic")?.addEventListener("click",()=>toggleTrack("mic",!micOn));
 $("liveStudentMic")?.addEventListener("click",()=>toggleTrack("mic",!room?.localParticipant.isMicrophoneEnabled));
-$("liveCamera")?.addEventListener("click",()=>toggleTrack("camera",!room?.localParticipant.isCameraEnabled));
+$("liveCamera")?.addEventListener("click",()=>toggleTrack("camera",!cameraOn));
 $("liveStudentCamera")?.addEventListener("click",()=>toggleTrack("camera",!room?.localParticipant.isCameraEnabled));
-$("liveScreen")?.addEventListener("click",()=>toggleTrack("screen",!room?.localParticipant.isScreenShareEnabled));
+$("liveScreen")?.addEventListener("click",()=>toggleTrack("screen",!screenOn));
 $("liveRaiseHand")?.addEventListener("click",async()=>{
  if(!room)return;
  handRaised=!handRaised;
