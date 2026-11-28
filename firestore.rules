@@ -87,6 +87,13 @@ service cloud.firestore {
   function academyOwner(teacherUid){return teacherActive() && request.auth.uid==teacherUid;}
   function academyLinked(teacherUid){return signedIn() && exists(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)) && get(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+teacherUid)).data.get("status","")=="active";}
   function academyMember(teacherUid){return academyLinked(teacherUid) && teacherAccountActive(teacherUid);}
+  // Public academy branding directory. Only the owning active teacher may edit branding; ownership and slug stay immutable.
+  match /academyProfiles/{slug}{
+   allow read:if true;
+   allow create:if isAdmin()&&request.resource.data.teacherUid is string&&request.resource.data.slug==slug;
+   allow update:if signedIn()&&resource.data.teacherUid==request.auth.uid&&teacherAccountActive(request.auth.uid)&&request.resource.data.teacherUid==resource.data.teacherUid&&request.resource.data.slug==resource.data.slug&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(["name","tagline","specialty","logoUrl","themeColor","updatedAt"]);
+   allow delete:if isAdmin();
+  }
   match /teachers/{uid}{
    allow read:if isAdmin()||owns(uid)||academyLinked(uid);
    allow create,update,delete:if isAdmin();
