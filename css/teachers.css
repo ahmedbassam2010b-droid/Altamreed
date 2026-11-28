@@ -13,3 +13,40 @@
 .t-student-menu summary:before{content:"☰";margin-left:9px;color:#2677df;font-size:20px}
 .t-student-menu nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;padding:10px}
 .t-student-menu nav a{padding:10px;border-radius:11px;background:#f3f7fc;color:#244866;font-weight:800;font-size:12px;text-align:center}
+
+/* Shared dashboard polish: consistent identity, spacing, focus and responsive controls */
+.teachers-app{font-family:var(--font-main);background-color:#f3f7fc}
+.t-shell{width:min(100%,1480px)}
+.t-top{position:relative;overflow:hidden;isolation:isolate}
+.t-top:after{content:"";position:absolute;z-index:-1;width:260px;height:260px;left:-100px;top:-150px;border:1px solid #ffffff25;border-radius:50%;box-shadow:0 0 0 28px #ffffff0b,0 0 0 58px #ffffff08}
+.t-panel{transition:box-shadow .2s,border-color .2s}
+.t-panel:focus-within{border-color:#c9dce9}
+.t-btn:focus-visible,.t-tabs button:focus-visible,.t-menu summary:focus-visible,.t-student-menu summary:focus-visible,.t-student-menu a:focus-visible{outline:3px solid #62b8e8;outline-offset:3px}
+.t-menu>summary,.t-student-menu summary{min-height:48px;display:flex;align-items:center;gap:10px}
+.t-menu>summary:before,.t-student-menu summary:before{content:"☰";display:inline-grid;place-items:center;width:32px;height:32px;border-radius:10px;background:#eaf3ff;color:#2677df;font-size:18px}
+.t-menu[open]>summary,.t-student-menu[open]>summary{color:#176b9a}
+.t-menu .t-tabs button{min-height:42px;transition:background .18s,color .18s,border-color .18s}
+.t-menu .t-tabs button:not(.active):hover,.t-student-menu nav a:hover{background:#eaf3ff;border-color:#cfe1f3;color:#176b9a}
+.t-student-menu nav a{display:flex;align-items:center;justify-content:center;min-height:42px;border:1px solid transparent;transition:background .18s,border-color .18s}
+.t-form label{line-height:1.55}
+.t-form input,.t-form select,.t-form textarea,.t-search{box-sizing:border-box;min-height:44px}
+.t-form textarea{min-height:96px}
+.t-item{transition:border-color .18s,box-shadow .18s}
+.t-item:hover{border-color:#cbdde9;box-shadow:0 6px 18px rgba(18,59,90,.045)}
+.t-chip{white-space:nowrap}
+.t-notice{line-height:1.8;overflow-wrap:anywhere}
+.t-auth{box-sizing:border-box}
+@media(max-width:600px){
+ .t-shell{padding-inline:10px}
+ .t-top{gap:12px}
+ .t-top>div{min-width:0;flex:1 1 100%}
+ .t-top .t-btn{margin-right:0}
+ .t-menu .t-tabs,.t-student-menu nav{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .t-menu .t-tabs button,.t-student-menu nav a{font-size:12px;padding:10px 7px}
+ .t-panel{overflow-wrap:anywhere}
+ .t-form-inline{grid-template-columns:1fr}
+ .t-form-inline .t-btn{width:100%}
+}
+@media(prefers-reduced-motion:reduce){
+ .t-btn,.t-panel,.t-item,.t-menu .t-tabs button,.t-student-menu nav a{transition:none}
+}
