@@ -114,7 +114,7 @@ async function handleApi(request,url,env,origin){
   if(str(session,"status")==="ended")throw new Error("أنهى المدرس هذه المحاضرة.");
   const roomName="bawabet-"+meetingId;
   const token=await livekitToken({identity:user.uid,name:body.displayName||user.name,roomName,canPublish:isTeacher,teacher:isTeacher},env);
-  return json({token,serverUrl:env.LIVEKIT_WS_URL,roomName,role:isTeacher?"teacher":"student",displayName:String(body.displayName||user.name).slice(0,80)},200,headers);
+  return json({token,serverUrl:env.LIVEKIT_WS_URL,roomName,title:str(session,"title"),role:isTeacher?"teacher":"student",displayName:String(body.displayName||user.name).slice(0,80)},200,headers);
  }
  if(url.pathname==="/api/live/permissions"&&request.method==="POST"){
   const user=await authenticate(request,env),body=await request.json(),sessionId=String(body.sessionId||""),studentUid=String(body.studentUid||""),allow=body.allow===true;
