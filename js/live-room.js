@@ -95,8 +95,10 @@ async function toggleTrack(kind,enabled){
   button?.classList.toggle("is-active",enabled);
  }catch(error){status(error.message||"تعذر تشغيل الوسيلة. تحقق من أذونات المتصفح.",true);}
 }
-$("liveMic")?.addEventListener("click",()=>toggleTrack("mic",!room?.localParticipant.isMicrophoneEnabled));\n$("liveStudentMic")?.addEventListener("click",()=>toggleTrack("mic",!room?.localParticipant.isMicrophoneEnabled));
-$("liveCamera")?.addEventListener("click",()=>toggleTrack("camera",!room?.localParticipant.isCameraEnabled));\n$("liveStudentCamera")?.addEventListener("click",()=>toggleTrack("camera",!room?.localParticipant.isCameraEnabled));
+$("liveMic")?.addEventListener("click",()=>toggleTrack("mic",!room?.localParticipant.isMicrophoneEnabled));
+$("liveStudentMic")?.addEventListener("click",()=>toggleTrack("mic",!room?.localParticipant.isMicrophoneEnabled));
+$("liveCamera")?.addEventListener("click",()=>toggleTrack("camera",!room?.localParticipant.isCameraEnabled));
+$("liveStudentCamera")?.addEventListener("click",()=>toggleTrack("camera",!room?.localParticipant.isCameraEnabled));
 $("liveScreen")?.addEventListener("click",()=>toggleTrack("screen",!room?.localParticipant.isScreenShareEnabled));
 $("liveRaiseHand")?.addEventListener("click",async()=>{
  if(!room)return;
