@@ -31,12 +31,6 @@ async function activeTeacher(uid,user,env){
  if(!doc||!bool(doc,"active")||str(doc,"status")!=="active"||!Number.isFinite(time(doc,"subscriptionStartAt"))||!Number.isFinite(time(doc,"subscriptionEndAt"))||time(doc,"subscriptionStartAt")>now||time(doc,"subscriptionEndAt")<=now)throw new Error("اشتراك المدرس غير نشط أو منتهي.");
  return doc;
 }
-async function cloudflare(path,env,body,method="POST"){
- const response=await fetch("https://api.cloudflare.com/client/v4/accounts/"+env.CF_ACCOUNT_ID+"/realtime/kit/"+env.REALTIMEKIT_APP_ID+path,{method,headers:{authorization:"Bearer "+env.REALTIMEKIT_API_TOKEN,"content-type":"application/json"},...(body?{body:JSON.stringify(body)}:{})});
- const data=await response.json().catch(()=>({}));
- if(!response.ok||data.success===false)throw new Error(data.errors?.[0]?.message||"تعذر الاتصال بخدمة البث المباشر.");
- return data;
-}
 function b64url(bytes){let binary="";for(const byte of bytes)binary+=String.fromCharCode(byte);return btoa(binary).replace(/=/g,"").replace(/\+/g,"-").replace(/\//g,"_");}
 function base64urlJson(value){return b64url(new TextEncoder().encode(JSON.stringify(value)));}
 async function jaasToken({uid,name,roomName,moderator},env){
