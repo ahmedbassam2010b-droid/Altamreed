@@ -1,56 +1,49 @@
-# تشغيل البث المباشر والتخزين داخل بوابة التمريض
+# تشغيل الفصول المباشرة والتخزين داخل بوابة التمريض
 
-هذا التكامل يستبدل روابط Meet/Zoom بقاعة داخل المنصة، ويستخدم Cloudflare RealtimeKit للبث وCloudflare R2 للملفات. الكود لا يصبح حيًا بمجرد وجوده في GitHub؛ يلزم إعداد موارد Cloudflare ونشر Worker.
+يستخدم هذا التكامل **Jitsi as a Service (JaaS)** للفصول المباشرة داخل صفحة المنصة، وCloudflare R2 لتخزين الملفات. لا يحتاج إلى تفعيل Cloudflare RealtimeKit أو شراء اشتراك RealtimeKit.
 
-## 1) إنشاء RealtimeKit App
+## 1) إعداد Jitsi as a Service
 
-1. افتح Cloudflare Dashboard ثم Realtime > RealtimeKit وأنشئ App باسم Bawabet Altamreed.
-2. احتفظ بـ App ID وAccount ID.
-3. أنشئ API Token بصلاحية Realtime Admin. لا تضعه في ملفات GitHub أو JavaScript المتصفح.
-4. تأكد من وجود Presets الافتراضية: webinar_presenter وwebinar_viewer. المدرس يدخل مقدمًا، والطلاب يدخلون كمشاهدين مع طلب الصعود إلى المنصة.
-5. راجع الحصة والتكلفة من لوحة RealtimeKit قبل إطلاق المحاضرات للطلاب.
+1. افتح بوابة JaaS الرسمية وأنشئ App لحساب بوابة التمريض: https://jaas.8x8.vc/
+2. راجع شروط الخدمة وحدود الخطة المجانية قبل التفعيل. صفحة Jitsi الرسمية تعرض خطة مجانية حتى 25 endpoint؛ راجع لوحة حسابك لأن الحدود والشروط قد تتغير.
+3. من API Keys أنشئ مفتاحًا واحفظ المفتاح الخاص فور تنزيله؛ JaaS لا يحتفظ بنسخة من المفتاح الخاص.
+4. احتفظ بثلاث قيم: App ID، وKey ID، وملف Private Key بصيغة PEM PKCS8. لا تضع المفتاح الخاص في GitHub أو JavaScript المتصفح ولا ترسله في المحادثة.
 
-## 2) إنشاء R2 bucket وربطه بالـWorker
+## 2) إعداد Worker
 
-1. افتح R2 Object Storage وأنشئ bucket باسم bawabet-academy-files.
-2. أنشئ Worker منفصلًا باسم bawabet-live-storage-api.
-3. اجعل ملف الدخول هو cloudflare/live-storage-api.js.
-4. أضف R2 binding باسم FILES يشير إلى bucket bawabet-academy-files.
-5. أضف متغيرات البيئة:
+1. استخدم Worker باسم bawabet-live-storage-api، وملف الدخول cloudflare/live-storage-api.js.
+2. اربط R2 binding باسم FILES مع bucket باسم bawabet-academy-files.
+3. أضف متغيرات Worker:
    - FIREBASE_PROJECT_ID=bawabet-altamreed
-   - FIREBASE_API_KEY = Web API Key من إعدادات Firebase للمشروع.
-   - CF_ACCOUNT_ID = Cloudflare Account ID.
-   - REALTIMEKIT_APP_ID = App ID من RealtimeKit.
-6. أضف الأسرار من إعدادات Worker > Settings > Variables and Secrets:
-   - REALTIMEKIT_API_TOKEN = API Token بصلاحية Realtime Admin.
+   - FIREBASE_API_KEY = Web API Key من Firebase
+   - JAAS_APP_ID = App ID من JaaS
+   - JAAS_KEY_ID = الجزء الخاص بمعرّف المفتاح من API Key ID (بدون App ID إذا كانت لوحة JaaS تعرضهما معًا).
+4. أضف الأسرار:
+   - JAAS_PRIVATE_KEY = محتوى المفتاح الخاص PEM كاملًا.
    - DOWNLOAD_SIGNING_SECRET = قيمة عشوائية طويلة لا تقل عن 32 بايت.
-7. اربط Route: api.bawabet-altamreed.com/* . أنشئ DNS record فرعيًا باسم api واجعله Proxied إذا طلبت لوحة Cloudflare ذلك.
-8. انشر Worker. لا ترسل API Token أو Download Secret في المحادثة.
-
-يمكن استخدام cloudflare/wrangler-live.toml كمرجع لإعدادات النشر والـR2 binding.
+5. اربط Route: api.bawabet-altamreed.com/*، ثم انشر Worker.
 
 ## 3) صلاحيات المحاضرات
 
 - Worker يتحقق من Firebase ID token على الخادم.
-- المدرس يحتاج اشتراكًا نشطًا ويأخذ preset webinar_presenter.
-- الطالب يحتاج عضوية نشطة في صف المحاضرة ويأخذ preset webinar_viewer.
-- يسمح بالانضمام قبل الموعد بـ15 دقيقة، وحتى 30 دقيقة بعد نهاية المدة المسجلة.
-- جلسة RealtimeKit لا تنشئ جدولًا زمنيًا بنفسها؛ Firestore يحتفظ بالموعد والمدة وMeeting ID.
+- المدرس يحتاج اشتراكًا نشطًا ويصدر له JWT بصلاحية moderator.
+- الطالب يحتاج عضوية نشطة في صف المحاضرة ويصدر له JWT محدود باسم غرفة المحاضرة.
+- صلاحية JWT ساعتان، واسم الغرفة مرتبط بمعرّف الجلسة.
+- إنشاء الجلسة وجدولها محفوظان في Firestore.
 
 ## 4) تخزين الملفات
 
 - Firestore يخزن بيانات الملف فقط: الاسم والنوع والحجم ومفتاح R2.
 - R2 يخزن البايتات الفعلية.
-- الرفع Multipart على أجزاء 8 MiB من المتصفح، والحد الأعلى في هذا التكامل 50 GiB لكل ملف في واجهة الرفع الحالية؛ R2 نفسه يدعم أحجامًا أكبر لكن واجهة المنصة تضع حدًا عمليًا.
+- الرفع Multipart على أجزاء 8 MiB، والحد الأعلى الحالي في واجهة الرفع 50 GiB لكل ملف.
 - تنزيل الملف يمر بتذكرة موقعة قصيرة الصلاحية مع دعم HTTP Range للفيديو.
-- لا تجعل bucket عامًا؛ الوصول يتم عبر Worker بعد التحقق من صلاحية قراءة مستند المحتوى.
+- لا تجعل bucket عامًا.
 
-## 5) ما الذي لم يكتمل قبل النشر؟
+## 5) اختبارات ما قبل الإطلاق
 
-- إعداد RealtimeKit App وAPI Token وPresets داخل حساب Cloudflare.
-- إنشاء R2 bucket وربط binding والأسرار وRoute.
-- نشر Worker ثم اختبار دخول مدرس وطالب بحسابين حقيقيين، واختبار شاشة ومشاركة الشاشة وطلب الصعود والإنهاء.
-- اختبار رفع وتنزيل PDF وصورة وفيديو كبير، واختبار صلاحيات طالب من أكاديمية أخرى.
-- نشر أي تعديلات لازمة على Firestore Rules من Firebase Console بعد مراجعتها.
-
-لا تعتبر المحاضرات أو تخزين الملفات جاهزة للإنتاج قبل اجتياز هذه الاختبارات.
+- نشر Worker بعد ضبط المتغيرات والأسرار وR2 binding.
+- اختبار دخول مدرس وطالب بحسابين منفصلين.
+- اختبار الكاميرا والميكروفون ومشاركة الشاشة ورفع اليد والتحكم في المشاركين من حساب المدرس.
+- اختبار منع طالب من أكاديمية أخرى.
+- اختبار رفع وعرض PDF وصورة وفيديو، واختبار صلاحيات تنزيل الملفات.
+- راجع حدود JaaS الحالية قبل دعوة عدد كبير من الطلاب. لا تعتبر الفصول جاهزة للإنتاج قبل اجتياز الاختبارات.

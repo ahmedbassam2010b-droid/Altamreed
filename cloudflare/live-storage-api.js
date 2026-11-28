@@ -31,11 +31,19 @@ async function activeTeacher(uid,user,env){
  if(!doc||!bool(doc,"active")||str(doc,"status")!=="active"||!Number.isFinite(time(doc,"subscriptionStartAt"))||!Number.isFinite(time(doc,"subscriptionEndAt"))||time(doc,"subscriptionStartAt")>now||time(doc,"subscriptionEndAt")<=now)throw new Error("اشتراك المدرس غير نشط أو منتهي.");
  return doc;
 }
-async function cloudflare(path,env,body,method="POST"){
- const response=await fetch("https://api.cloudflare.com/client/v4/accounts/"+env.CF_ACCOUNT_ID+"/realtime/kit/"+env.REALTIMEKIT_APP_ID+path,{method,headers:{authorization:"Bearer "+env.REALTIMEKIT_API_TOKEN,"content-type":"application/json"},...(body?{body:JSON.stringify(body)}:{})});
- const data=await response.json().catch(()=>({}));
- if(!response.ok||data.success===false)throw new Error(data.errors?.[0]?.message||"تعذر الاتصال بخدمة البث المباشر.");
- return data;
+function b64url(bytes){let binary="";for(const byte of bytes)binary+=String.fromCharCode(byte);return btoa(binary).replace(/=/g,"").replace(/\+/g,"-").replace(/\//g,"_");}
+function base64urlJson(value){return b64url(new TextEncoder().encode(JSON.stringify(value)));}
+async function jaasToken({uid,name,roomName,moderator},env){
+ const appId=env.JAAS_APP_ID,keyId=env.JAAS_KEY_ID,raw=env.JAAS_PRIVATE_KEY;
+ if(!appId||!keyId||!raw)throw new Error("إعداد Jitsi as a Service غير مكتمل على Worker.");
+ const pem=raw.replace(/\\n/g,"\n").replace(/-----BEGIN PRIVATE KEY-----|-----END PRIVATE KEY-----|\s/g,"");
+ let keyBytes;try{keyBytes=Uint8Array.from(atob(pem),c=>c.charCodeAt(0));}catch{throw new Error("مفتاح JaaS الخاص غير صالح. أعد نسخه بصيغة PEM PKCS8.");}
+ let privateKey;try{privateKey=await crypto.subtle.importKey("pkcs8",keyBytes,{name:"RSASSA-PKCS1-v1_5",hash:"SHA-256"},false,["sign"]);}catch{throw new Error("تعذر قراءة المفتاح الخاص. تأكد أنه PEM بصيغة PKCS8.");}
+ const now=Math.floor(Date.now()/1000),header={alg:"RS256",kid:appId+"/"+keyId,typ:"JWT"};
+ const payload={aud:"jitsi",iss:"chat",sub:appId,room:roomName,exp:now+7200,nbf:now-10,context:{user:{id:uid,name:String(name||"مستخدم").slice(0,80),...(moderator?{moderator:"true"}:{})},features:{livestreaming:false,recording:false,transcription:false,"outbound-call":false}}};
+ const unsigned=base64urlJson(header)+"."+base64urlJson(payload);
+ const signature=await crypto.subtle.sign("RSASSA-PKCS1-v1_5",privateKey,new TextEncoder().encode(unsigned));
+ return unsigned+"."+b64url(new Uint8Array(signature));
 }
 function safeName(name){return String(name||"file").normalize("NFKC").replace(/[^a-zA-Z0-9._-]+/g,"_").slice(-100)||"file";}
 async function signTicket(key,exp,env){
@@ -53,18 +61,15 @@ async function verifyTicket(key,exp,sig,env){
 async function handleApi(request,url,env,origin){
  const headers=cors(origin);
  if(!env.FIREBASE_API_KEY||!env.FIREBASE_PROJECT_ID)throw new Error("إعدادات Firebase غير مكتملة على Worker.");
- if(url.pathname.startsWith("/api/live/")&&(!env.CF_ACCOUNT_ID||!env.REALTIMEKIT_APP_ID||!env.REALTIMEKIT_API_TOKEN))throw new Error("إعداد RealtimeKit غير مكتمل على Worker.");
+ if(url.pathname.startsWith("/api/live/")&&(!env.JAAS_APP_ID||!env.JAAS_KEY_ID||!env.JAAS_PRIVATE_KEY))throw new Error("إعداد Jitsi as a Service غير مكتمل على Worker.");
  if(url.pathname.startsWith("/api/files/")&&(!env.FILES||!env.DOWNLOAD_SIGNING_SECRET))throw new Error("إعداد تخزين R2 غير مكتمل على Worker.");
  if(request.method==="OPTIONS")return new Response(null,{status:204,headers});
  if(!allowedOrigin(origin))return json({error:"Origin not allowed"},403,headers);
  if(url.pathname==="/api/live/create"&&request.method==="POST"){
   const user=await authenticate(request,env),body=await request.json();
   await activeTeacher(user.uid,user,env);
-  const title=String(body.title||"محاضرة مباشرة").trim().slice(0,120);
-  const meeting=await cloudflare("/meetings",env,{title});
-  const meetingId=meeting.data?.id;
-  if(!meetingId)throw new Error("لم تُرجع خدمة البث رقم المحاضرة.");
-  return json({meetingId},200,headers);
+  const meetingId=crypto.randomUUID().replace(/-/g,"");
+  return json({meetingId,provider:"jaas"},200,headers);
  }
  if(url.pathname==="/api/live/join"&&request.method==="POST"){
   const user=await authenticate(request,env),body=await request.json(),sessionId=String(body.sessionId||"");
@@ -73,6 +78,7 @@ async function handleApi(request,url,env,origin){
   if(!session)throw new Error("المحاضرة غير موجودة.");
   const teacherUid=str(session,"teacherUid"),classId=str(session,"classId"),meetingId=str(session,"meetingId");
   if(!teacherUid||!classId||!meetingId)throw new Error("بيانات البث غير مكتملة.");
+  if(str(session,"provider")!=="jaas")throw new Error("هذه المحاضرة أُنشئت بنظام البث السابق. اطلب من المدرس جدولة محاضرة جديدة.");
   await activeTeacher(teacherUid,user,env);
   const isTeacher=user.uid===teacherUid;
   if(!isTeacher){
@@ -83,14 +89,9 @@ async function handleApi(request,url,env,origin){
   if(start&&Date.now()<start-15*60*1000)throw new Error("المحاضرة لم يحن موعد فتحها بعد.");
   if(start&&Date.now()>start+(duration+30)*60*1000)throw new Error("انتهى وقت الانضمام لهذه المحاضرة.");
   if(str(session,"status")==="ended")throw new Error("أنهى المدرس هذه المحاضرة.");
-  const participant=await cloudflare("/meetings/"+encodeURIComponent(meetingId)+"/participants",env,{
-   name:String(body.displayName||user.name).slice(0,80),
-   preset_name:isTeacher?"webinar_presenter":"webinar_viewer",
-   custom_participant_id:user.uid+"_"+crypto.randomUUID()
-  });
-  const authToken=participant.data?.token||participant.data?.authToken;
-  if(!authToken)throw new Error("لم يتم إنشاء تصريح دخول للبث.");
-  return json({authToken,role:isTeacher?"teacher":"student"},200,headers);
+  const appId=env.JAAS_APP_ID,roomName=appId+"/"+meetingId;
+  const jwt=await jaasToken({uid:user.uid,name:body.displayName||user.name,roomName,moderator:isTeacher},env);
+  return json({jwt,appId,roomName,role:isTeacher?"teacher":"student",displayName:String(body.displayName||user.name).slice(0,80)},200,headers);
  }
  if(url.pathname==="/api/files/start"&&request.method==="POST"){
   const user=await authenticate(request,env),body=await request.json();

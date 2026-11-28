@@ -10,15 +10,14 @@
 .live-room-head{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 20px;margin-bottom:14px;border-radius:18px;background:linear-gradient(120deg,#103b5c,#176b91 68%,#159aa8);color:#fff}
 .live-room-head h1{font-size:clamp(18px,3vw,26px);margin:0 0 5px}.live-room-head p{margin:0;color:#d9edf5;font-size:13px}
 .live-room-frame{height:calc(100dvh - 126px);min-height:520px;border-radius:18px;overflow:hidden;background:#101b2a;border:1px solid #dce7ef}
-rtk-meeting{display:block;width:100%;height:100%;--rtk-brand-color:#16899d}
+#liveMeeting{width:100%;height:100%}
 @media(max-width:600px){.live-room-shell{padding:8px}.live-room-head{padding:12px;border-radius:13px;align-items:flex-start;flex-direction:column}.live-room-frame{height:calc(100dvh - 155px);min-height:480px;border-radius:12px}}
 </style>
-<script src="https://cdn.jsdelivr.net/npm/@cloudflare/realtimekit@latest/dist/browser.js"></script>
 </head>
 <body class="teachers-app">
 <main class="live-room-shell">
 <header class="live-room-head"><div><span class="t-kicker">BAWABET ALTAMREED · LIVE CLASSROOM</span><h1 id="liveTitle">قاعة المحاضرة</h1><p id="liveNotice">جارٍ التحقق من صلاحية الدخول وتجهيز القاعة...</p></div><a id="backLink" href="student-academy.html" class="t-btn t-btn-light">العودة للأكاديمية</a></header>
-<div class="live-room-frame"><rtk-meeting id="liveMeeting" show-setup-screen="true"></rtk-meeting></div>
+<div class="live-room-frame"><div id="liveMeeting" aria-label="قاعة المحاضرة المباشرة"></div></div>
 </main>
 <script type="module" src="js/live-room.js"></script>
 </body></html>
