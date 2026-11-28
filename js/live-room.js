@@ -77,14 +77,13 @@ async function connect(user){
   if(data.type==="hand-cancel"&&role==="teacher"){pendingHands.delete(sender);renderHands();}
   if(data.type==="speaker-approved"&&sender==="system"){canSpeak=true;status("المدرس سمح لك بالمشاركة. يمكنك فتح المايك أو الكاميرا.");$("liveStudentSpeakerControls").hidden=false;}
  });
- room.on(RoomEvent.ParticipantPermissionsChanged,()=>{const p=room.localParticipant.permissions;canSpeak=!!p?.canPublish;if(canSpeak){$("liveMediaControls").hidden=false;status("أصبح بإمكانك المشاركة في المحاضرة.");}});
+ room.on(RoomEvent.ParticipantPermissionsChanged,()=>{const p=room.localParticipant.permissions;canSpeak=!!p?.canPublish;if(canSpeak){$("liveStudentSpeakerControls").hidden=false;status("أصبح بإمكانك المشاركة في المحاضرة.");}});
  await room.connect(result.serverUrl,result.token);
  $("liveTitle").textContent=result.title||"المحاضرة المباشرة";
  $("liveParticipantCount").textContent=String(room.numParticipants+1);
- $("liveMediaControls").hidden=role!=="teacher";
+ $("liveTeacherMediaControls").hidden=role!=="teacher";
  $("liveTeacherTools").hidden=role!=="teacher";
- $("liveRaiseHand").hidden=role==="teacher";
- $("liveTeacherTools").hidden=role!=="teacher";
+ $("liveStudentControls").hidden=role==="teacher";
  addTile(user.uid,user.displayName||"أنت",null,true);
 }
 async function toggleTrack(kind,enabled){
