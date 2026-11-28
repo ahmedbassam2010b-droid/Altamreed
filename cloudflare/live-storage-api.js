@@ -33,19 +33,6 @@ async function activeTeacher(uid,user,env){
 }
 function b64url(bytes){let binary="";for(const byte of bytes)binary+=String.fromCharCode(byte);return btoa(binary).replace(/=/g,"").replace(/\+/g,"-").replace(/\//g,"_");}
 function base64urlJson(value){return b64url(new TextEncoder().encode(JSON.stringify(value)));}
-async function jaasToken({uid,name,roomName,moderator},env){
- const appId=env.JAAS_APP_ID,keyId=env.JAAS_KEY_ID,raw=env.JAAS_PRIVATE_KEY;
- if(!appId||!keyId||!raw)throw new Error("إعداد Jitsi as a Service غير مكتمل على Worker.");
- const pem=raw.replace(/\\n/g,"\n").replace(/-----BEGIN PRIVATE KEY-----|-----END PRIVATE KEY-----|\s/g,"");
- let keyBytes;try{keyBytes=Uint8Array.from(atob(pem),c=>c.charCodeAt(0));}catch{throw new Error("مفتاح JaaS الخاص غير صالح. أعد نسخه بصيغة PEM PKCS8.");}
- let privateKey;try{privateKey=await crypto.subtle.importKey("pkcs8",keyBytes,{name:"RSASSA-PKCS1-v1_5",hash:"SHA-256"},false,["sign"]);}catch{throw new Error("تعذر قراءة المفتاح الخاص. تأكد أنه PEM بصيغة PKCS8.");}
- const now=Math.floor(Date.now()/1000),header={alg:"RS256",kid:appId+"/"+keyId,typ:"JWT"};
- const payload={aud:"jitsi",iss:"chat",sub:appId,room:roomName,exp:now+7200,nbf:now-10,context:{user:{id:uid,name:String(name||"مستخدم").slice(0,80),...(moderator?{moderator:"true"}:{})},features:{livestreaming:false,recording:false,transcription:false,"outbound-call":false}}};
- const unsigned=base64urlJson(header)+"."+base64urlJson(payload);
- const signature=await crypto.subtle.sign("RSASSA-PKCS1-v1_5",privateKey,new TextEncoder().encode(unsigned));
- return unsigned+"."+b64url(new Uint8Array(signature));
-}
-
 async function livekitToken({identity,name,roomName,canPublish,teacher,admin=false},env){
  const apiKey=env.LIVEKIT_API_KEY,secret=env.LIVEKIT_API_SECRET;
  if(!apiKey||!secret)throw new Error("إعداد خادم البث المستضاف غير مكتمل على Worker.");
