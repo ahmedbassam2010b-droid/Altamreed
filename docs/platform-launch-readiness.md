@@ -41,3 +41,34 @@ This document separates code that exists from functionality that is actually rea
 - Academy student list now filters to active memberships and offers a shortcut to the teacher's public academy page.
 
 **Release status: not yet launch-certified.** The remaining items above require implementation, configuration, or real-account testing; this file intentionally avoids treating code presence as proof of production readiness.
+
+## Academy exams — implementation added in this branch
+
+- Teachers can build an exam with multiple MCQ questions and four options per question.
+- Correct-answer indexes are stored in a separate private collection, not in the student-readable exam document.
+- Teachers can publish a draft to its academy class.
+- Active academy students can view published exams, answer them, and submit once.
+- Teachers can inspect submitted answers and manually assign a grade and feedback.
+- Students can see the grade and teacher feedback after grading.
+- Firestore rules restrict answer-key reads to the owning active teacher/admin, constrain student submissions to the student's own active academy membership, and limit grading updates to the owning teacher.
+
+**Grading limitation:** grading is currently teacher-reviewed/manual. Fully automatic grading requires a trusted server-side function so the answer key is never delivered to student browsers. A client-side auto-grader would expose the key and is intentionally not used.
+
+## Scheduled live meetings — improvement added
+
+- Teachers can attach an HTTPS Google Meet / Zoom meeting link to a scheduled lesson.
+- Students can see the scheduled meeting in their academy portal and open the external meeting link.
+- This is an external meeting integration, not native in-platform video streaming. The app does not provide SFU/TURN, recording, screen-sharing controls, or capacity guarantees.
+
+## Automated validation
+
+A GitHub Actions workflow now runs JavaScript ES-module syntax checks for repository JavaScript files on pushes and pull requests. This is a syntax gate only; it does not replace Firestore Emulator security tests, live authentication tests, or phone/browser end-to-end tests.
+
+## Remaining launch blockers after these additions
+
+- [ ] Confirm the new GitHub Actions syntax workflow passes on this PR.
+- [ ] Run Firestore Emulator tests for cross-tenant isolation and all role combinations; publish reviewed rules in Firebase Console only after passing.
+- [ ] Test exam authoring, publishing, one-time student submission, manual grading, and student result visibility using separate teacher/student test accounts.
+- [ ] Verify external meeting links on mobile and desktop.
+- [ ] For native live video, choose and configure a compliant media provider / SFU and TURN service; this is not included in the current no-cost code.
+- [ ] For large uploads, provision an object-storage provider and access policy. The current small Firestore attachment cap remains; do not store large files or video data in Firestore.
