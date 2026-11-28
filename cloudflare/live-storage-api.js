@@ -96,7 +96,7 @@ async function handleApi(request,url,env,origin){
   const klass=await firestoreDoc("teacherClasses/"+classId,user,env);
   if(!klass||str(klass,"teacherUid")!==user.uid)throw new Error("الصف غير تابع لأكاديميتك.");
   const size=Number(body.size||0);
-  if(!Number.isSafeInteger(size)||size<1||size>5*1024*1024*1024)throw new Error("حجم الملف غير مدعوم. الحد الأقصى 5 جيجابايت.");
+  if(!Number.isSafeInteger(size)||size<1||size>5*1024*1024*1024*1024)throw new Error("حجم الملف غير مدعوم. الحد الأقصى 5 جيجابايت.");
   const name=safeName(body.fileName),type=String(body.contentType||"application/octet-stream").slice(0,120);
   const key="teachers/"+user.uid+"/"+classId+"/"+crypto.randomUUID()+"-"+name;
   const upload=await env.FILES.createMultipartUpload(key,{httpMetadata:{contentType:type},customMetadata:{teacherUid:user.uid,classId,originalName:String(body.fileName||name).slice(0,180)}});
