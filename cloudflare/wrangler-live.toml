@@ -2,6 +2,7 @@ name = "bawabet-live-storage-api"
 main = "live-storage-api.js"
 compatibility_date = "2026-11-28"
 workers_dev = false
+routes = [{ pattern = "api.bawabet-altamreed.com/*", zone_name = "bawabet-altamreed.com" }]
 
 [[r2_buckets]]
 binding = "FILES"
