@@ -20,11 +20,17 @@
 <div class="live-layout">
  <section class="live-main">
   <div class="live-video-stage"><div id="liveVideoGrid" class="live-video-grid"></div></div>
-  <div class="live-controls" id="liveMediaControls">
+  <div class="live-controls" id="liveTeacherMediaControls" hidden>
    <button id="liveMic" class="live-control">🎙️ الميكروفون</button>
    <button id="liveCamera" class="live-control">📷 الكاميرا</button>
    <button id="liveScreen" class="live-control">🖥️ مشاركة الشاشة</button>
+  </div>
+  <div class="live-controls" id="liveStudentControls">
    <button id="liveRaiseHand" class="live-control">✋ رفع اليد</button>
+   <span id="liveStudentSpeakerControls" hidden>
+    <button id="liveStudentMic" class="live-control">🎙️ الميكروفون</button>
+    <button id="liveStudentCamera" class="live-control">📷 الكاميرا</button>
+   </span>
    <button id="liveLeave" class="live-control danger">مغادرة المحاضرة</button>
   </div>
  </section>
