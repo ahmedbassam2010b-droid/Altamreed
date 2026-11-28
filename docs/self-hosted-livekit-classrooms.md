@@ -26,31 +26,33 @@
 
 ## نشر خادم LiveKit
 
-1. جهّز VPS Linux حديثًا بعنوان IPv4 عام، مع Docker وDocker Compose.
-2. اربط DNS:
-   - `live.bawabet-altamreed.com` إلى عنوان الخادم.
-3. افتح TCP 443 وTCP 7881 وUDP 50000-60000. فعّل TLS وTURN/TLS وفق إعداد LiveKit الرسمي، وتأكد أن منافذ TURN اللازمة متاحة.
-4. أنشئ ملف إعداد LiveKit على الخادم فقط، ولا تضع الأسرار في GitHub. مثال إعداد أولي:
-
-```yaml
-port: 7880
-rtc:
-  tcp_port: 7881
-  port_range_start: 50000
-  port_range_end: 60000
-  use_external_ip: true
-keys:
-  REPLACE_WITH_API_KEY: REPLACE_WITH_LONG_RANDOM_SECRET
-logging:
-  level: info
-```
-
-5. شغّل LiveKit خلف TLS reverse proxy أو استخدم إعداد TLS/TURN الرسمي. لا تجعل لوحة إدارة أو مفاتيح الخادم عامة.
-6. اختبر اتصال عميلين أولًا، ثم 10، ثم 50، ثم اختبارات حمل تدريجية. لا تبدأ بدعوة 300 طالب قبل قياس CPU وRAM وUDP packet loss وoutbound bandwidth.
+1. جهّز VPS Linux حديثًا بعنوان IPv4 عام، مع موارد شبكة قوية. لا تستخدم Cloudflare Worker أو Firebase لاستضافة الفيديو.
+2. في Cloudflare DNS أنشئ سجلّي A:
+   - `live` → عنوان IPv4 للخادم.
+   - `turn` → عنوان IPv4 نفسه.
+   واجعل السجلين **DNS only (السحابة الرمادية)**؛ حركة WebRTC وUDP يجب أن تصل مباشرة إلى الخادم ولا تمر عبر HTTP proxy.
+3. استخدم مولّد LiveKit الرسمي على جهازك أو بيئة موثوقة:
+   ```bash
+   docker pull livekit/generate
+   docker run --rm -it -v "$PWD:/output" livekit/generate
+   ```
+   أدخل `live.bawabet-altamreed.com` كعنوان LiveKit و`turn.bawabet-altamreed.com` كعنوان TURN. المولّد ينشئ ملفات Docker Compose وCaddy وLiveKit وRedis وملف تثبيت VM.
+4. راجع الملفات الناتجة، واحفظ مفاتيح LiveKit في مكان آمن. لا ترفع ملفات الإعداد التي تحتوي أسرارًا إلى GitHub.
+5. أنشئ الخادم Ubuntu، ثم استخدم ملف `init_script.sh` الذي ولّده LiveKit، أو Cloud-init الخاص بالمزود. دليل LiveKit الرسمي يثبت Docker وCompose وينشئ خدمة systemd باسم `livekit-docker`.
+6. افتح المنافذ المطلوبة في جدار الخادم والمزود:
+   - TCP 80 و443 لإصدار الشهادات وواجهة WSS/TURN-TLS.
+   - TCP 7881 لاتصال WebRTC الاحتياطي.
+   - UDP 50000–60000 لمسارات WebRTC.
+   - UDP 3478 عند تفعيل TURN/UDP.
+   - لا تفتح 7880 للعامة؛ اجعله خلف Caddy.
+7. بعد ظهور شهادة TLS بنجاح، اختبر اتصال عميلين، ثم 10، ثم 50، ثم اختبارات حمل تدريجية. لا تبدأ بدعوة 300 طالب قبل قياس CPU وRAM وفقد حزم UDP وسرعة الرفع.
+   
+الطريقة دي مبنية على دليل LiveKit الرسمي للـVM، الذي يجهز Caddy وDocker وTURN/TLS تلقائيًا، بدل إعداد TLS يدويًا.
 
 راجع:
-- https://docs.livekit.io/transport/self-hosting/
+- https://docs.livekit.io/transport/self-hosting/vm/
 - https://docs.livekit.io/transport/self-hosting/deployment/
+- https://docs.livekit.io/transport/self-hosting/ports-firewall/
 - https://docs.livekit.io/transport/self-hosting/distributed/
 
 ## إعداد Cloudflare Worker
@@ -59,7 +61,7 @@ Worker الحالي اسمه `bawabet-live-storage-api`. احتفظ بمتغير
 
 **Variables**
 - `LIVEKIT_WS_URL=wss://live.bawabet-altamreed.com`
-- `LIVEKIT_API_URL=https://live.bawabet-altamreed.com` (عنوان HTTPS الذي يقبل LiveKit Twirp API)
+- `LIVEKIT_API_URL=https://live.bawabet-altamreed.com` (عنوان HTTPS الذي يمرر طلبات LiveKit Twirp عبر Caddy)
 
 **Secrets**
 - `LIVEKIT_API_KEY` — نفس المفتاح الموجود في إعداد LiveKit.
