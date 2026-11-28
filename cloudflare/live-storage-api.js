@@ -52,6 +52,9 @@ async function verifyTicket(key,exp,sig,env){
 }
 async function handleApi(request,url,env,origin){
  const headers=cors(origin);
+ if(!env.FIREBASE_API_KEY||!env.FIREBASE_PROJECT_ID)throw new Error("إعدادات Firebase غير مكتملة على Worker.");
+ if(url.pathname.startsWith("/api/live/")&&(!env.CF_ACCOUNT_ID||!env.REALTIMEKIT_APP_ID||!env.REALTIMEKIT_API_TOKEN))throw new Error("إعداد RealtimeKit غير مكتمل على Worker.");
+ if(url.pathname.startsWith("/api/files/")&&(!env.FILES||!env.DOWNLOAD_SIGNING_SECRET))throw new Error("إعداد تخزين R2 غير مكتمل على Worker.");
  if(request.method==="OPTIONS")return new Response(null,{status:204,headers});
  if(!allowedOrigin(origin))return json({error:"Origin not allowed"},403,headers);
  if(url.pathname==="/api/live/create"&&request.method==="POST"){
@@ -133,8 +136,8 @@ async function handleApi(request,url,env,origin){
   let object,status=200,extra={};
   if(range){
    const match=/^bytes=(\d*)-(\d*)$/.exec(range);if(!match)return new Response("Invalid range",{status:416});
-   const start=match[1]?Number(match[1]):Math.max(0,head.size-Number(match[2]||0));
-   const end=match[2]?Number(match[2]):head.size-1;
+   const suffix=!match[1]&&match[2],start=suffix?Math.max(0,head.size-Number(match[2])):(match[1]?Number(match[1]):0);
+   const end=suffix?head.size-1:(match[2]?Number(match[2]):head.size-1);
    if(start<0||end<start||start>=head.size)return new Response(null,{status:416});
    const last=Math.min(end,head.size-1);object=await env.FILES.get(key,{range:{offset:start,length:last-start+1}});status=206;
    extra["content-range"]="bytes "+start+"-"+last+"/"+head.size;
