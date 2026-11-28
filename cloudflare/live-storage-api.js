@@ -28,7 +28,7 @@ const bool=(doc,name)=>field(doc,name)?.booleanValue===true;
 const time=(doc,name)=>Date.parse(field(doc,name)?.timestampValue||"");
 async function activeTeacher(uid,user,env){
  const doc=await firestoreDoc("teachers/"+uid,user,env),now=Date.now();
- if(!doc||!bool(doc,"active")||str(doc,"status")!=="active"||time(doc,"subscriptionStartAt")>now||time(doc,"subscriptionEndAt")<=now)throw new Error("اشتراك المدرس غير نشط أو منتهي.");
+ if(!doc||!bool(doc,"active")||str(doc,"status")!=="active"||!Number.isFinite(time(doc,"subscriptionStartAt"))||!Number.isFinite(time(doc,"subscriptionEndAt"))||time(doc,"subscriptionStartAt")>now||time(doc,"subscriptionEndAt")<=now)throw new Error("اشتراك المدرس غير نشط أو منتهي.");
  return doc;
 }
 async function cloudflare(path,env,body,method="POST"){
@@ -96,7 +96,7 @@ async function handleApi(request,url,env,origin){
   const klass=await firestoreDoc("teacherClasses/"+classId,user,env);
   if(!klass||str(klass,"teacherUid")!==user.uid)throw new Error("الصف غير تابع لأكاديميتك.");
   const size=Number(body.size||0);
-  if(!Number.isSafeInteger(size)||size<1||size>5*1024*1024*1024*1024)throw new Error("حجم الملف غير مدعوم. الحد الأقصى 5 جيجابايت.");
+  if(!Number.isSafeInteger(size)||size<1||size>50*1024*1024*1024)throw new Error("حجم الملف غير مدعوم. الحد الأقصى 5 جيجابايت.");
   const name=safeName(body.fileName),type=String(body.contentType||"application/octet-stream").slice(0,120);
   const key="teachers/"+user.uid+"/"+classId+"/"+crypto.randomUUID()+"-"+name;
   const upload=await env.FILES.createMultipartUpload(key,{httpMetadata:{contentType:type},customMetadata:{teacherUid:user.uid,classId,originalName:String(body.fileName||name).slice(0,180)}});
