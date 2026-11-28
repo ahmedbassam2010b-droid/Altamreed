@@ -1,35 +1,26 @@
 # تشغيل الفصول المباشرة والتخزين داخل بوابة التمريض
 
-يستخدم هذا التكامل **Jitsi as a Service (JaaS)** للفصول المباشرة داخل صفحة المنصة، وCloudflare R2 لتخزين الملفات. لا يحتاج إلى تفعيل Cloudflare RealtimeKit أو شراء اشتراك RealtimeKit.
+**تحديث 28 نوفمبر 2026:** تم نقل تصميم الفصول الجديدة من JaaS إلى LiveKit Server ذاتي الاستضافة. تعليمات تشغيل خادم البث وإعداد متغيراته موجودة في:
+[دليل الفصول ذاتية الاستضافة](self-hosted-livekit-classrooms.md).
 
-## 1) إعداد Jitsi as a Service
+الفصول القديمة التي تم إنشاؤها بمزود JaaS لا تتحول تلقائيًا؛ أنشئ محاضرة جديدة بعد نشر إعداد LiveKit.
 
-1. افتح بوابة JaaS الرسمية وأنشئ App لحساب بوابة التمريض: https://jaas.8x8.vc/
-2. راجع شروط الخدمة وحدود الخطة المجانية قبل التفعيل. صفحة Jitsi الرسمية تعرض خطة مجانية حتى 25 endpoint؛ راجع لوحة حسابك لأن الحدود والشروط قد تتغير.
-3. من API Keys أنشئ مفتاحًا واحفظ المفتاح الخاص فور تنزيله؛ JaaS لا يحتفظ بنسخة من المفتاح الخاص.
-4. احتفظ بثلاث قيم: App ID، وKey ID، وملف Private Key بصيغة PEM PKCS8. لا تضع المفتاح الخاص في GitHub أو JavaScript المتصفح ولا ترسله في المحادثة.
+## إعداد Worker للفصول
 
-## 2) إعداد Worker
+1. استخدم Worker باسم `bawabet-live-storage-api` وملف `cloudflare/live-storage-api.js`.
+2. اربط R2 binding باسم `FILES` مع bucket باسم `bawabet-academy-files`.
+3. احتفظ بمتغير `FIREBASE_PROJECT_ID=bawabet-altamreed` وأضف `FIREBASE_API_KEY`.
+4. أضف `LIVEKIT_WS_URL` و`LIVEKIT_API_URL` كمتغيرات، و`LIVEKIT_API_KEY` و`LIVEKIT_API_SECRET` كأسرار Worker.
+5. احتفظ بـ`DOWNLOAD_SIGNING_SECRET` كسر لتذاكر تنزيل الملفات.
+6. اربط Route: `api.bawabet-altamreed.com/*`، ثم انشر Worker بعد تجهيز خادم LiveKit.
 
-1. استخدم Worker باسم bawabet-live-storage-api، وملف الدخول cloudflare/live-storage-api.js.
-2. اربط R2 binding باسم FILES مع bucket باسم bawabet-academy-files.
-3. أضف متغيرات Worker:
-   - FIREBASE_PROJECT_ID=bawabet-altamreed
-   - FIREBASE_API_KEY = Web API Key من Firebase
-   - JAAS_APP_ID = App ID من JaaS
-   - JAAS_KEY_ID = الجزء الخاص بمعرّف المفتاح من API Key ID (بدون App ID إذا كانت لوحة JaaS تعرضهما معًا).
-4. أضف الأسرار:
-   - JAAS_PRIVATE_KEY = محتوى المفتاح الخاص PEM كاملًا.
-   - DOWNLOAD_SIGNING_SECRET = قيمة عشوائية طويلة لا تقل عن 32 بايت.
-5. اربط Route: api.bawabet-altamreed.com/*، ثم انشر Worker.
-
-## 3) صلاحيات المحاضرات
+## صلاحيات المحاضرات
 
 - Worker يتحقق من Firebase ID token على الخادم.
-- المدرس يحتاج اشتراكًا نشطًا ويصدر له JWT بصلاحية moderator.
-- الطالب يحتاج عضوية نشطة في صف المحاضرة ويصدر له JWT محدود باسم غرفة المحاضرة.
-- صلاحية JWT ساعتان، واسم الغرفة مرتبط بمعرّف الجلسة.
-- إنشاء الجلسة وجدولها محفوظان في Firestore.
+- المدرس يحتاج اشتراكًا نشطًا ويحصل على صلاحيات إدارة المحاضرة والنشر.
+- الطالب يحتاج عضوية نشطة في صف المحاضرة، ويدخل بصلاحية مشاهدة ورفع اليد والمحادثة.
+- لا يحصل الطالب على صلاحية نشر الصوت أو الكاميرا إلا بعد موافقة المدرس.
+- لا تعتبر النظام جاهزًا لأكثر من 300 مشاهد قبل اختبار حمل فعلي.
 
 ## 4) تخزين الملفات
 
