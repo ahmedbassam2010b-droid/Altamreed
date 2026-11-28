@@ -24,7 +24,7 @@ $("#academyContentSelect").addEventListener("change",e=>{loadAcademyContent(e.ta
 async function loadAcademyExams(teacherUid){
  const box=$("#academyExams"),runner=$("#academyExamRunner");runner.hidden=true;box.replaceChildren();
  const m=memberships.find(x=>x.teacherUid===teacherUid);if(!m){box.textContent="اختر أكاديمية نشطة.";return;}
- const snap=await getDocs(query(collection(db,"teacherExams"),where("teacherUid","==",teacherUid)));
+ const snap=await getDocs(query(collection(db,"teacherExams"),where("teacherUid","==",teacherUid),where("published","==",true)));
  if(!snap.size){box.textContent="لا توجد امتحانات منشورة لهذه الأكاديمية حتى الآن.";return;}
  for(const d of snap.docs){const x={id:d.id,...d.data()};if(x.classId!==m.classId||x.published!==true)continue;const attemptRef=doc(db,"teacherExamAttempts",x.id+"_"+user.uid),attempt=await getDoc(attemptRef),a=attempt.exists()?attempt.data():null,row=document.createElement("article");row.className="t-item";const info=document.createElement("div");info.innerHTML="<h3>"+esc(x.title)+"</h3><p>"+esc(x.subjectName||"")+" · "+(x.questions?.length||0)+" سؤال · "+(Number(x.duration)||30)+" دقيقة</p>";if(a){const result=document.createElement("p");result.className="t-notice";result.textContent=a.status==="graded"?"تم التصحيح: "+a.score+" / "+a.maxScore+(a.feedback?" — "+a.feedback:""):"تم تسليم إجاباتك، في انتظار تصحيح المدرس.";info.append(result);}row.append(info);if(!a){const start=document.createElement("button");start.className="t-btn t-btn-primary";start.textContent="بدء الامتحان";start.addEventListener("click",()=>renderStudentExam(x,m));row.append(start);}box.append(row);}
 }
