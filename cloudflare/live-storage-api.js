@@ -45,6 +45,29 @@ async function jaasToken({uid,name,roomName,moderator},env){
  const signature=await crypto.subtle.sign("RSASSA-PKCS1-v1_5",privateKey,new TextEncoder().encode(unsigned));
  return unsigned+"."+b64url(new Uint8Array(signature));
 }
+
+async function livekitToken({identity,name,roomName,canPublish,teacher},env){
+ const apiKey=env.LIVEKIT_API_KEY,secret=env.LIVEKIT_API_SECRET;
+ if(!apiKey||!secret)throw new Error("إعداد خادم البث المستضاف غير مكتمل على Worker.");
+ const enc=new TextEncoder();
+ const b64url=bytes=>{let s="";for(const x of bytes)s+=String.fromCharCode(x);return btoa(s).replace(/=/g,"").replace(/\+/g,"-").replace(/\//g,"_");};
+ const part=value=>b64url(enc.encode(JSON.stringify(value)));
+ const now=Math.floor(Date.now()/1000),header=part({alg:"HS256",typ:"JWT"});
+ const payload=part({iss:apiKey,sub:identity,name:String(name||"مستخدم").slice(0,80),nbf:now-5,exp:now+7200,video:{roomJoin:true,room:roomName,canPublish:!!canPublish,canSubscribe:true,canPublishData:true,...(teacher?{roomAdmin:true,canPublishSources:["camera","microphone","screen_share","screen_share_audio"]}:{canPublishSources:["camera","microphone"]})}});
+ const key=await crypto.subtle.importKey("raw",enc.encode(secret),{name:"HMAC",hash:"SHA-256"},false,["sign"]);
+ const input=header+"."+payload,signature=await crypto.subtle.sign("HMAC",key,enc.encode(input));
+ return input+"."+b64url(new Uint8Array(signature));
+}
+async function livekitAdminRequest(env,roomName,identity,permission){
+ const token=await livekitToken({identity:"bawabet-moderator",name:"Bawabet Moderator",roomName,canPublish:false,teacher:true},env);
+ const base=String(env.LIVEKIT_API_URL||"").replace(/\/$/,"");
+ if(!base)throw new Error("لم يتم ضبط LIVEKIT_API_URL على Worker.");
+ const response=await fetch(base+"/twirp/livekit.RoomService/UpdateParticipant",{method:"POST",headers:{authorization:"Bearer "+token,"content-type":"application/json"},body:JSON.stringify({room:roomName,identity,permission})});
+ const data=await response.json().catch(()=>({}));
+ if(!response.ok)throw new Error(data.message||"تعذر تحديث صلاحيات مشاركة الطالب.");
+ return data;
+}
+
 function safeName(name){return String(name||"file").normalize("NFKC").replace(/[^a-zA-Z0-9._-]+/g,"_").slice(-100)||"file";}
 async function signTicket(key,exp,env){
  const secret=await crypto.subtle.importKey("raw",new TextEncoder().encode(env.DOWNLOAD_SIGNING_SECRET),{name:"HMAC",hash:"SHA-256"},false,["sign"]);
@@ -61,7 +84,7 @@ async function verifyTicket(key,exp,sig,env){
 async function handleApi(request,url,env,origin){
  const headers=cors(origin);
  if(!env.FIREBASE_API_KEY||!env.FIREBASE_PROJECT_ID)throw new Error("إعدادات Firebase غير مكتملة على Worker.");
- if(url.pathname.startsWith("/api/live/")&&(!env.JAAS_APP_ID||!env.JAAS_KEY_ID||!env.JAAS_PRIVATE_KEY))throw new Error("إعداد Jitsi as a Service غير مكتمل على Worker.");
+ if(url.pathname.startsWith("/api/live/")&&(!env.LIVEKIT_API_KEY||!env.LIVEKIT_API_SECRET||!env.LIVEKIT_WS_URL||!env.LIVEKIT_API_URL))throw new Error("إعداد خادم البث LiveKit غير مكتمل على Worker.");
  if(url.pathname.startsWith("/api/files/")&&(!env.FILES||!env.DOWNLOAD_SIGNING_SECRET))throw new Error("إعداد تخزين R2 غير مكتمل على Worker.");
  if(request.method==="OPTIONS")return new Response(null,{status:204,headers});
  if(!allowedOrigin(origin))return json({error:"Origin not allowed"},403,headers);
@@ -69,7 +92,7 @@ async function handleApi(request,url,env,origin){
   const user=await authenticate(request,env),body=await request.json();
   await activeTeacher(user.uid,user,env);
   const meetingId=crypto.randomUUID().replace(/-/g,"");
-  return json({meetingId,provider:"jaas"},200,headers);
+  return json({meetingId,provider:"livekit"},200,headers);
  }
  if(url.pathname==="/api/live/join"&&request.method==="POST"){
   const user=await authenticate(request,env),body=await request.json(),sessionId=String(body.sessionId||"");
@@ -78,7 +101,7 @@ async function handleApi(request,url,env,origin){
   if(!session)throw new Error("المحاضرة غير موجودة.");
   const teacherUid=str(session,"teacherUid"),classId=str(session,"classId"),meetingId=str(session,"meetingId");
   if(!teacherUid||!classId||!meetingId)throw new Error("بيانات البث غير مكتملة.");
-  if(str(session,"provider")!=="jaas")throw new Error("هذه المحاضرة أُنشئت بنظام البث السابق. اطلب من المدرس جدولة محاضرة جديدة.");
+  if(str(session,"provider")!=="livekit")throw new Error("هذه المحاضرة أُنشئت بنظام سابق. أنشئ محاضرة جديدة بنظام البث الحالي.");
   await activeTeacher(teacherUid,user,env);
   const isTeacher=user.uid===teacherUid;
   if(!isTeacher){
@@ -89,9 +112,19 @@ async function handleApi(request,url,env,origin){
   if(start&&Date.now()<start-15*60*1000)throw new Error("المحاضرة لم يحن موعد فتحها بعد.");
   if(start&&Date.now()>start+(duration+30)*60*1000)throw new Error("انتهى وقت الانضمام لهذه المحاضرة.");
   if(str(session,"status")==="ended")throw new Error("أنهى المدرس هذه المحاضرة.");
-  const appId=env.JAAS_APP_ID,roomName=appId+"/"+meetingId;
-  const jwt=await jaasToken({uid:user.uid,name:body.displayName||user.name,roomName,moderator:isTeacher},env);
-  return json({jwt,appId,roomName,role:isTeacher?"teacher":"student",displayName:String(body.displayName||user.name).slice(0,80)},200,headers);
+  const roomName="bawabet-"+meetingId;
+  const token=await livekitToken({identity:user.uid,name:body.displayName||user.name,roomName,canPublish:isTeacher,teacher:isTeacher},env);
+  return json({token,serverUrl:env.LIVEKIT_WS_URL,roomName,role:isTeacher?"teacher":"student",displayName:String(body.displayName||user.name).slice(0,80)},200,headers);
+ }
+ if(url.pathname==="/api/live/permissions"&&request.method==="POST"){
+  const user=await authenticate(request,env),body=await request.json(),sessionId=String(body.sessionId||""),studentUid=String(body.studentUid||""),allow=body.allow===true;
+  if(!/^[A-Za-z0-9_-]{10,150}$/.test(sessionId)||!/^[A-Za-z0-9_-]{10,150}$/.test(studentUid))throw new Error("بيانات المشاركة غير صحيحة.");
+  const session=await firestoreDoc("teacherLiveSessions/"+sessionId,user,env);
+  if(!session||str(session,"teacherUid")!==user.uid)throw new Error("إدارة المشاركات متاحة لمدرس المحاضرة فقط.");
+  await activeTeacher(user.uid,user,env);
+  const roomName="bawabet-"+str(session,"meetingId");
+  await livekitAdminRequest(env,roomName,studentUid,{canPublish:allow,canSubscribe:true,canPublishData:true,canPublishSources:allow?["camera","microphone"]:[]});
+  return json({success:true,allowed:allow},200,headers);
  }
  if(url.pathname==="/api/files/start"&&request.method==="POST"){
   const user=await authenticate(request,env),body=await request.json();
