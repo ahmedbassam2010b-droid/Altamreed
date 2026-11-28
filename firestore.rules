@@ -145,7 +145,8 @@ service cloud.firestore {
   }
   // Students submit answers once. Teachers can review and grade; students can only read their own result.
   match /teacherExamAttempts/{attemptId}{
-   allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||(signedIn()&&resource.data.studentUid==request.auth.uid);
+   allow get:if isAdmin()||academyOwner(resource.data.teacherUid)||(signedIn()&&(resource.data.studentUid==request.auth.uid||attemptId.matches(".*_"+request.auth.uid)));
+   allow list:if isAdmin()||academyOwner(resource.data.teacherUid)||(signedIn()&&resource.data.studentUid==request.auth.uid);
    allow create:if signedIn()
      &&request.resource.data.studentUid==request.auth.uid
      &&request.resource.data.teacherUid is string
