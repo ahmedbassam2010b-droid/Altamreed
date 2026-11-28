@@ -135,7 +135,42 @@ service cloud.firestore {
   match /teacherExams/{id}{
    allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||(academyMember(resource.data.teacherUid)&&resource.data.get("published",false)==true);
    allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid;
+   allow update:if academyOwner(resource.data.teacherUid)&&request.resource.data.teacherUid==resource.data.teacherUid&&request.resource.data.diff(resource.data).affectedKeys().hasOnly(["published","status","publishedAt","updatedAt"]);
+   allow delete:if academyOwner(resource.data.teacherUid);
+  }
+  // Private answer keys: never readable by academy students.
+  match /teacherExamAnswerKeys/{examId}{
+   allow read:if isAdmin()||academyOwner(resource.data.teacherUid);
+   allow create:if academyOwner(request.resource.data.teacherUid)&&request.resource.data.teacherUid==request.auth.uid&&request.resource.data.examId==examId&&request.resource.data.answerIndexes is list;
    allow update,delete:if academyOwner(resource.data.teacherUid);
+  }
+  // Students submit answers once. Teachers can review and grade; students can only read their own result.
+  match /teacherExamAttempts/{attemptId}{
+   allow get:if isAdmin()||(signedIn()&&attemptId.matches(".*_"+request.auth.uid))||academyOwner(resource.data.teacherUid)||(signedIn()&&resource.data.studentUid==request.auth.uid);
+   allow list:if isAdmin()||academyOwner(resource.data.teacherUid)||(signedIn()&&resource.data.studentUid==request.auth.uid);
+   allow create:if signedIn()
+     &&request.resource.data.studentUid==request.auth.uid
+     &&request.resource.data.teacherUid is string
+     &&request.resource.data.examId is string
+     &&request.resource.data.status=="submitted"
+     &&request.resource.data.answers is list
+     &&attemptId==request.resource.data.examId+"_"+request.auth.uid
+     &&exists(/databases/$(database)/documents/teacherExams/$(request.resource.data.examId))
+     &&get(/databases/$(database)/documents/teacherExams/$(request.resource.data.examId)).data.get("published",false)==true
+     &&get(/databases/$(database)/documents/teacherExams/$(request.resource.data.examId)).data.teacherUid==request.resource.data.teacherUid
+     &&get(/databases/$(database)/documents/teacherExams/$(request.resource.data.examId)).data.classId==request.resource.data.classId
+     &&request.resource.data.answers.size()==get(/databases/$(database)/documents/teacherExams/$(request.resource.data.examId)).data.questions.size()
+     &&academyMember(request.resource.data.teacherUid)
+     &&get(/databases/$(database)/documents/academyMemberships/$(request.auth.uid+"_"+request.resource.data.teacherUid)).data.classId==request.resource.data.classId
+     &&request.resource.data.keys().hasOnly(["teacherUid","studentUid","examId","examTitle","classId","className","answers","status","submittedAt"]);
+   allow update:if academyOwner(resource.data.teacherUid)
+     &&request.resource.data.diff(resource.data).affectedKeys().hasOnly(["score","maxScore","feedback","status","gradedAt"])
+     &&request.resource.data.status=="graded"
+     &&request.resource.data.score is number
+     &&request.resource.data.maxScore is number
+     &&request.resource.data.score>=0
+     &&request.resource.data.score<=request.resource.data.maxScore;
+   allow delete:if isAdmin();
   }
   match /teacherPosts/{id}{
    allow read:if isAdmin()||academyOwner(resource.data.teacherUid)||academyMember(resource.data.teacherUid);

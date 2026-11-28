@@ -122,3 +122,22 @@
 .founder-logo-card{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:10px}
 .founder-logo-card img{width:min(100%,130px);height:auto;object-fit:contain}
 @media(max-width:420px){.founder-gallery{grid-template-columns:1fr}.founder-photo-main{min-height:300px}.founder-photo-support{grid-template-columns:1fr 1fr;grid-template-rows:auto;min-height:0}.founder-photo-support figure:first-child img{aspect-ratio:1/1}.founder-logo-card img{width:100px}}
+
+/* Role-based entry points */
+.role-entry{padding:38px 20px 44px;background:linear-gradient(180deg,#f4f8ff,#fff)}
+.role-entry-heading{text-align:center;margin:0 auto 20px;max-width:340px}
+.role-entry-heading>span{font-size:11px;font-weight:900;color:#18a58f}
+.role-entry-heading h2{margin-top:5px;font-size:26px;font-weight:1000;color:#1b3653}
+.role-entry-heading p{margin-top:5px;font-size:11px;line-height:1.8;color:#71869b}
+.role-entry-grid{display:grid;gap:11px}
+.role-entry-card{display:flex;align-items:center;gap:12px;min-height:82px;padding:14px;border:1px solid #e2ebf5;border-radius:18px;background:#fff;box-shadow:0 7px 20px rgba(31,66,100,.045);transition:transform .18s,box-shadow .18s}
+.role-entry-card:active{transform:scale(.985)}
+.role-entry-icon{display:grid;place-items:center;width:46px;height:46px;flex:0 0 46px;border-radius:15px;background:#edf5ff;font-size:22px}
+.role-entry-card span:nth-child(2){min-width:0;flex:1}
+.role-entry-card b,.role-entry-card small{display:block}
+.role-entry-card b{font-size:14px;color:#203d5b;font-weight:1000}
+.role-entry-card small{margin-top:3px;color:#71869b;font-size:10px;line-height:1.6}
+.role-entry-card i{font-style:normal;color:#4382c0;font-size:19px}
+.role-teacher .role-entry-icon{background:#eaf8f4}
+.role-academy-student .role-entry-icon{background:#fff3e8}
+@media(min-width:560px){.role-entry-grid{grid-template-columns:1fr}.role-entry{padding-inline:28px}}
