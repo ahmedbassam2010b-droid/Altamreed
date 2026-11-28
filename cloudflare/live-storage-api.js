@@ -89,8 +89,8 @@ async function handleApi(request,url,env,origin){
   const teacherUid=str(session,"teacherUid"),classId=str(session,"classId"),meetingId=str(session,"meetingId");
   if(!teacherUid||!classId||!meetingId)throw new Error("بيانات البث غير مكتملة.");
   if(str(session,"provider")!=="livekit")throw new Error("هذه المحاضرة أُنشئت بنظام سابق. أنشئ محاضرة جديدة بنظام البث الحالي.");
-  await activeTeacher(teacherUid,user,env);
   const isTeacher=user.uid===teacherUid;
+  if(isTeacher) await activeTeacher(teacherUid,user,env);
   if(!isTeacher){
    const membership=await firestoreDoc("academyMemberships/"+user.uid+"_"+teacherUid,user,env);
    if(!membership||str(membership,"status")!=="active"||str(membership,"classId")!==classId)throw new Error("هذه المحاضرة مخصصة لطلاب الصف المرتبط بعضويتك النشطة فقط.");
